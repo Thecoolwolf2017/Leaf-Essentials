@@ -1521,9 +1521,37 @@ function toNumber(str, defaultValue = 0) {
 let rEmail =
     // eslint-disable-next-line
     /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-let rUrl =
-    // eslint-disable-next-line
-    /^((https?|ftp):)?\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i;
+function isLeafUrl(value) {
+    if (value.length > 8192 || /[\s\\\u0000-\u001f\u007f]/.test(value)) return false;
+    const separator = value.indexOf("//");
+    if (separator < 0) return false;
+    const protocol = value.slice(0, separator).toLowerCase();
+    if (protocol && protocol !== "http:" && protocol !== "https:" && protocol !== "ftp:") return false;
+    const rest = value.slice(separator + 2);
+    const delimiter = rest.search(/[/?#]/);
+    const authority = delimiter < 0 ? rest : rest.slice(0, delimiter);
+    const at = authority.lastIndexOf("@");
+    if (at >= 0 && (at === 0 || authority.indexOf("@") !== at)) return false;
+    const hostAndPort = authority.slice(at + 1);
+    const colon = hostAndPort.lastIndexOf(":");
+    if (colon >= 0) {
+        const port = hostAndPort.slice(colon + 1);
+        if (!/^[0-9]{1,5}$/.test(port) || Number(port) > 65535) return false;
+    }
+    const host = (colon < 0 ? hostAndPort : hostAndPort.slice(0, colon)).replace(/\.$/, "");
+    if (host.length > 253) return false;
+    const labels = host.split(".");
+    if (labels.length < 2) return false;
+    if (labels.length === 4 && labels.every((label) => /^[0-9]+$/.test(label))) {
+        return labels.every((label) => label.length <= 3 && Number(label) <= 255);
+    }
+    const edge = /^[a-z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef]$/i;
+    const middle = /^[a-z0-9_~\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef-]+$/i;
+    return labels.every((label) =>
+        label.length <= 63 && middle.test(label) && edge.test(label[0]) &&
+        edge.test(label[label.length - 1])
+    ) && !/^[0-9]+$/.test(labels[labels.length - 1]);
+}
 
 // eslint-disable-next-line
 let rUUID =
@@ -1654,10 +1682,11 @@ class StringSchema extends Schema {
         });
     }
     url(message = string.url) {
-        return this.matches(rUrl, {
+        return this.test({
             name: "url",
             message,
-            excludeEmptyString: true,
+            skipAbsent: true,
+            test: (value) => value === "" || isLeafUrl(value),
         });
     }
     uuid(message = string.uuid) {

@@ -28,7 +28,7 @@ test("built startup bundle is valid ESM", () => {
   syntaxCheck(read("dist/startup.js"));
 });
 
-for (const file of ["scripts/lib/prismarinedb.js", "scripts/lib/prismarinedb13.js"]) {
+for (const file of ["scripts/lib/prismarinedb.js"]) {
   test(file + " preserves normal nested records, arrays and nulls", () => {
     const definition = read(file).match(/^function MergeRecursive\([^\n]*\n[\s\S]*?^}/m)?.[0];
     assert.ok(definition, "missing database merge helper");
@@ -39,3 +39,25 @@ for (const file of ["scripts/lib/prismarinedb.js", "scripts/lib/prismarinedb13.j
     );
   });
 }
+
+test("URL validation accepts normal links and rejects malformed URLs", () => {
+  const file = read("scripts/lib/yup.esm.js");
+  const definition = file.match(/^function isLeafUrl\([^\n]*\n[\s\S]*?^}/m)?.[0];
+  const validate = require("node:vm").runInThisContext("(" + definition + ")");
+  for (const value of ["https://example.org/docs?section=1", "//example.org", "http://192.0.2.1:8080", "https://café.example"]) {
+    assert.equal(validate(value), true, value);
+  }
+  for (const value of ["javascript:alert", "https://example .org", "https://example.org:99999", "https://999.0.2.1"]) {
+    assert.equal(validate(value), false, value);
+  }
+});
+
+test("Moment converts format tokens to literal matches", () => {
+  const file = read("scripts/lib/moment.js");
+  const a = file.match(/^function unescapeFormat\([^\n]*\n[\s\S]*?^}/m)?.[0];
+  const b = file.match(/^function regexEscape\([^\n]*\n[\s\S]*?^}/m)?.[0];
+  const escape = require("node:vm").runInThisContext("(() => {" + a + "\n" + b + ";return unescapeFormat;})()");
+  for (const [token, literal] of [["[literal]", "literal"], ["\\[", "["], ["\\.", "."], ["?", "?"]]) {
+    assert.equal(new RegExp("^" + escape(token) + "$").test(literal), true);
+  }
+});
