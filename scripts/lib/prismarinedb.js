@@ -1728,19 +1728,25 @@ _controlMap = new WeakMap();
 // scripts/pdb/prismarinedb.js
 var _storage, _PrismarineDBTable_instances, genID_fn, invokeEvent_fn, keyval_fn, updateEvent_fn, _ExtensionRegistry_instances, initialize_fn, _funcs, _groupName, _stores, _table2, _db, _defaultPermissions, _reservedTable, _reservedKeyVal, _reservedKeyVals, _reservedEconomyTable, _PrismarineDB_instances, getStorage_fn, _variants;
 import { world as world4, system } from "@minecraft/server";
-function MergeRecursive(obj1, obj2) {
-  for (var p in obj2) {
-    try {
-      if (obj2[p].constructor == Object) {
-        obj1[p] = MergeRecursive(obj1[p], obj2[p]);
-      } else {
-        obj1[p] = obj2[p];
-      }
-    } catch (e) {
-      obj1[p] = obj2[p];
+function MergeRecursive(target, source) {
+  const isRecord = (value) => {
+    if (value === null || typeof value !== "object") return false;
+    const prototype = Object.getPrototypeOf(value);
+    return prototype === Object.prototype || prototype === null;
+  };
+  if (!isRecord(target)) target = {};
+  if (!isRecord(source)) return target;
+
+  for (const [key, value] of Object.entries(source)) {
+    if (key === "__proto__" || key === "constructor" || key === "prototype") continue;
+    if (isRecord(value)) {
+      const existing = Object.prototype.hasOwnProperty.call(target, key) ? target[key] : undefined;
+      target[key] = MergeRecursive(existing, value);
+    } else {
+      target[key] = value;
     }
   }
-  return obj1;
+  return target;
 }
 var nonPersistentData2 = {};
 var sessions = {};
