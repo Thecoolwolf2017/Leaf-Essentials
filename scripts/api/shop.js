@@ -2,12 +2,23 @@ import { prismarineDb } from "../lib/prismarinedb";
 import { SegmentedStoragePrismarine } from "../prismarineDbStorages/segmented";
 import playerStorage from "./playerStorage";
 
+// (birds chirping)
+
+// where's the code
+
+// i have no FUCKING idea
+
 class ShopAPI {
     constructor() {
-        this.db = prismarineDb.customStorage("Shop", SegmentedStoragePrismarine);
-        if(!this.db.findFirst({
-            type: "ADMIN_SHOP"
-        })) {
+        this.db = prismarineDb.customStorage(
+            "Shop",
+            SegmentedStoragePrismarine
+        );
+        if (
+            !this.db.findFirst({
+                type: "ADMIN_SHOP",
+            })
+        ) {
             this.db.insertDocument({
                 type: "ADMIN_SHOP",
                 title: "Shop",
@@ -15,10 +26,10 @@ class ShopAPI {
                 data: [
                     {
                         name: "Uncategorized",
-                        items: []
-                    }
-                ]
-            })
+                        items: [],
+                    },
+                ],
+            });
         }
     }
     createPlayerShop(title, body, player) {
@@ -31,9 +42,9 @@ class ShopAPI {
             data: [
                 {
                     name: "Uncategorized",
-                    items: []
-                }
-            ]
+                    items: [],
+                },
+            ],
         });
     }
     createAdminShop(title, body, player) {
@@ -46,9 +57,9 @@ class ShopAPI {
             data: [
                 {
                     name: "Uncategorized",
-                    items: []
-                }
-            ]
+                    items: [],
+                },
+            ],
         });
     }
     createAdminSellShop(title, body, player) {
@@ -61,9 +72,9 @@ class ShopAPI {
             data: [
                 {
                     name: "Uncategorized",
-                    items: []
-                }
-            ]
+                    items: [],
+                },
+            ],
         });
     }
 }

@@ -1,25 +1,32 @@
 import { world } from "@minecraft/server";
 import { prismarineDb } from "./lib/prismarinedb";
 
+let maindb = prismarineDb.table("BlockDB");
+let db = await maindb.keyval("BlockDB_V2");
 
 class BlockDB {
     constructor() {
-        this.maindb = prismarineDb.table("BlockDB");
+        this.maindb = maindb;
+        this.db = db;
         // this.maindb.clear();
-        this.db = this.maindb.keyval("BlockDB_V2");
-        world.afterEvents.playerBreakBlock.subscribe(e=>{
-            if(this.hasBlockData(e.block.location)) this.deleteBlockData(e.block.location);
-        })
-        world.afterEvents.blockExplode.subscribe(e=>{
-            if(this.hasBlockData(e.block.location)) this.deleteBlockData(e.block.location);
-        })
+        world.afterEvents.playerBreakBlock.subscribe((e) => {
+            if (this.hasBlockData(e.block.location))
+                this.deleteBlockData(e.block.location);
+        });
+        world.afterEvents.blockExplode.subscribe((e) => {
+            if (this.hasBlockData(e.block.location))
+                this.deleteBlockData(e.block.location);
+        });
     }
     stringToVec3(str) {
         return {
-            x: parseFloat(str.split(';')[0]),
-            y: parseFloat(str.split(';')[1]),
-            z: parseFloat(str.split(';')[2]),
-        }
+            x: parseFloat(str.split(";")[0]),
+            y: parseFloat(str.split(";")[1]),
+            z: parseFloat(str.split(";")[2]),
+        };
+    }
+    getBlocks() {
+        return this.db.keys().map((key) => this.stringToVec3(key));
     }
     vec3ToString(vec3) {
         return `${vec3.x};${vec3.y};${vec3.z}`;
@@ -35,7 +42,7 @@ class BlockDB {
     }
     getBlockData(vec3) {
         let val = this.db.get(this.vec3ToString(vec3));
-        if(!val) {
+        if (!val) {
             return {};
         }
         return val;

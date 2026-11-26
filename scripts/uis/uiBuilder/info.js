@@ -1,26 +1,51 @@
-import config from "../../config";
-import { ActionForm } from "../../lib/form_func";
+import { builderTabUI } from "./root";
+import uiBuilder from "../../api/uiBuilder";
 import uiManager from "../../uiManager";
-import emojis from '../../api/emojis'
+import config from "../../versionData";
 
-uiManager.addUI(config.uiNames.UIBuilderInfo, "a", (player)=>{
-    let form = new ActionForm();
-    form.title("§t§a§b§b§e§d§r§fInfo")
-    form.button(`§t§a§b§r§f${emojis.campfire} UIs`, null, (player)=>{
-        uiManager.open(player, config.uiNames.UIBuilderRoot)
-    })
-    form.button(`§t§a§b§r§f${emojis.axolotl_bucket} Presets`, null, (player)=>{
+builderTabUI.registerTab("\uE17F Info", (player) => {
+    const buttons = [
+        {
+            text: "§aRaw UI Data",
+            callback: (player) => {
+                uiManager.open(player, config.uiNames.RawUIData);
+            },
+        },
+    ];
 
-    })
-    form.button(`§t§a§b§r§f\uE66F Tab UIs`, null, (player)=>{
-        uiManager.open(player, config.uiNames.UIBuilderTabbed)
+    const infoText = [
+        "§eLeaf Essentials UI Builder",
+        "",
+        "§fEnhanced UI Builder Experiment: §aEnabled",
+        "§fVersion: §a3.0",
+        "",
+        "§bMade with <3 by TrashyKitty",
+    ];
 
-    })
-    form.button(`§t§a§b§a§c§t§i§v§e§r§f${emojis.oak_sign} Info`, null, (player)=>{
-        uiManager.open(player, config.uiNames.UIBuilderInfo)
-    })
-    form.body("§eLeaf Essentials UI Builder\n\n§fEnhanced UI Builder Experiment: §aEnabled\n§fVersion: §a2.0\n\n§bMade by TheLegendaryTrashcan")
-    form.show(player, false, (player, response)=>{
+    if (uiBuilder.db.data.length > 0) {
+        infoText.push("");
+        infoText.push("§b----- Debug Info -----");
+        infoText.push("");
+        infoText.push("§fUIs: §a" + uiBuilder.db.data.length);
+        infoText.push("");
+        infoText.push("§b----- UI IDs (debug) -----");
+        for (const ui of uiBuilder.db.data) {
+            if (ui.data.type !== 0 && ui.data.type !== 3 && ui.data.type !== 4)
+                continue;
+            infoText.push(
+                `§f${
+                    ui.data.type == 4 ? ui.data.title : ui.data.name
+                } §r§7: §a${ui.id}`
+            );
+        }
+    }
 
-    })
-})
+    return {
+        buttons,
+        body: infoText.join("\n§r§f"),
+    };
+});
+
+uiManager.addUI(config.uiNames.UIBuilderInfo, "asddsad", (player) => {
+    builderTabUI.open(player, 0);
+});

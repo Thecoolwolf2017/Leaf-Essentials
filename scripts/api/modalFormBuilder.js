@@ -1,4 +1,38 @@
 import { prismarineDb } from "../lib/prismarinedb";
+/*
+   |\---/|
+   | ,_, |
+    \_`_/-..----.
+ ___/ `   ' ,""+ \  
+(__...'   __\    |`.___.';
+  (_,...'(_,.`__)/'.....+
+
+         |      |
+        (  =^=  )
+         \  ^  /  
+      .-~'   '~-.
+     /          \
+    |            |
+    |  |  |  |  |
+     \  \/ \/  /
+      `-------'
+
+  /\___/\
+ ( o   o )
+ (  =^=  )
+  (  T  )
+  (__|__)
+
+    /\___/\
+   /       \
+  |  ^   ^  |
+  |  (o_o)  |
+   \   ^   /
+    |     |
+    |     |
+    |     |
+    \_____)
+*/
 
 class ModalFormEditor {
     constructor() {
@@ -9,31 +43,38 @@ class ModalFormEditor {
         return this.db.insertDocument({
             title,
             scriptevent,
-            controls: []
+            controls: [],
         });
     }
 
     addToggle(id, label, toggleOnCommand, toggleOffCommand, toggledOnTag) {
         let doc = this.db.getByID(id);
-        if(!doc) return;
+        if (!doc) return;
         doc.data.controls.push({
             label,
             toggleOnCommand,
             toggleOffCommand,
-            toggledOnTag
-        })
+            toggledOnTag,
+        });
         this.db.overwriteDataByID(doc.id, doc.data);
     }
 
-    editToggle(id, label, toggleOnCommand, toggleOffCommand, toggledOnTag, index) {
+    editToggle(
+        id,
+        label,
+        toggleOnCommand,
+        toggleOffCommand,
+        toggledOnTag,
+        index
+    ) {
         let doc = this.db.getByID(id);
-        if(!doc) return;
+        if (!doc) return;
         doc.data.controls[index] = {
             label,
             toggleOnCommand,
             toggleOffCommand,
-            toggledOnTag
-        }
+            toggledOnTag,
+        };
         this.db.overwriteDataByID(doc.id, doc.data);
     }
 
