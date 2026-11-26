@@ -4,7 +4,7 @@
   "description": "A free and open source MCBE essentials addon.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/pack.test.cjs"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,6 @@
     "@minecraft/server": "^1.11.0-beta.1.20.80-stable"
   },
   "dependencies": {
-    "esbuild": "^0.23.0"
+    "esbuild": "^0.25.0"
   }
 }
