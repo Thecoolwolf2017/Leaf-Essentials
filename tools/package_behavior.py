@@ -24,7 +24,7 @@ def main():
     if script_entries != ["scripts/startup.js"]:
         raise SystemExit("Manifest startup no longer matches the packaging configuration.")
     files = {"manifest.json": ROOT / "manifest.json", "pack_icon.png": ROOT / "pack_icon.png",
-             "LICENSE": ROOT / "LICENSE.v4.3"}
+             "LICENSE": ROOT / "LICENSE"}
     for directory in ASSETS:
         for path in (ROOT / directory).rglob("*"):
             if path.is_file() and not path.is_symlink():
