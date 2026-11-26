@@ -1,4194 +1,8046 @@
-let map = new Map();
-map.set("amethyst_shard", {"path":"textures/azalea_icons/icontextures/amethyst_shard","name":"amethyst_shard"})
-map.set("anvil", {"path":"textures/azalea_icons/icontextures/anvil","name":"anvil"})
-map.set("anvil_2", {"path":"textures/azalea_icons/icontextures/anvil_2","name":"anvil_2"})
-map.set("apple", {"path":"textures/azalea_icons/icontextures/apple","name":"apple"})
-map.set("armor_01a", {"path":"textures/azalea_icons/icontextures/armor_01a","name":"armor_01a"})
-map.set("armor_01b", {"path":"textures/azalea_icons/icontextures/armor_01b","name":"armor_01b"})
-map.set("armor_01c", {"path":"textures/azalea_icons/icontextures/armor_01c","name":"armor_01c"})
-map.set("armor_01d", {"path":"textures/azalea_icons/icontextures/armor_01d","name":"armor_01d"})
-map.set("armor_01e", {"path":"textures/azalea_icons/icontextures/armor_01e","name":"armor_01e"})
-map.set("armor_stand", {"path":"textures/azalea_icons/icontextures/armor_stand","name":"armor_stand"})
-map.set("arm_guard", {"path":"textures/azalea_icons/icontextures/arm_guard","name":"arm_guard"})
-map.set("arm_guard_2", {"path":"textures/azalea_icons/icontextures/arm_guard_2","name":"arm_guard_2"})
-map.set("arrow", {"path":"textures/azalea_icons/icontextures/arrow","name":"arrow"})
-map.set("arrow_01a", {"path":"textures/azalea_icons/icontextures/arrow_01a","name":"arrow_01a"})
-map.set("arrow_01b", {"path":"textures/azalea_icons/icontextures/arrow_01b","name":"arrow_01b"})
-map.set("arrow_01c", {"path":"textures/azalea_icons/icontextures/arrow_01c","name":"arrow_01c"})
-map.set("arrow_01d", {"path":"textures/azalea_icons/icontextures/arrow_01d","name":"arrow_01d"})
-map.set("arrow_01e", {"path":"textures/azalea_icons/icontextures/arrow_01e","name":"arrow_01e"})
-map.set("arrow_02a", {"path":"textures/azalea_icons/icontextures/arrow_02a","name":"arrow_02a"})
-map.set("arrow_02b", {"path":"textures/azalea_icons/icontextures/arrow_02b","name":"arrow_02b"})
-map.set("arrow_02c", {"path":"textures/azalea_icons/icontextures/arrow_02c","name":"arrow_02c"})
-map.set("arrow_02d", {"path":"textures/azalea_icons/icontextures/arrow_02d","name":"arrow_02d"})
-map.set("arrow_02e", {"path":"textures/azalea_icons/icontextures/arrow_02e","name":"arrow_02e"})
-map.set("arrow_03a", {"path":"textures/azalea_icons/icontextures/arrow_03a","name":"arrow_03a"})
-map.set("arrow_03b", {"path":"textures/azalea_icons/icontextures/arrow_03b","name":"arrow_03b"})
-map.set("arrow_03c", {"path":"textures/azalea_icons/icontextures/arrow_03c","name":"arrow_03c"})
-map.set("arrow_03d", {"path":"textures/azalea_icons/icontextures/arrow_03d","name":"arrow_03d"})
-map.set("arrow_03e", {"path":"textures/azalea_icons/icontextures/arrow_03e","name":"arrow_03e"})
-map.set("arrow_2", {"path":"textures/azalea_icons/icontextures/arrow_2","name":"arrow_2"})
-map.set("axolotl_bucket", {"path":"textures/azalea_icons/icontextures/axolotl_bucket","name":"axolotl_bucket"})
-map.set("baked_potato", {"path":"textures/azalea_icons/icontextures/baked_potato","name":"baked_potato"})
-map.set("bamboo", {"path":"textures/azalea_icons/icontextures/bamboo","name":"bamboo"})
-map.set("beef", {"path":"textures/azalea_icons/icontextures/beef","name":"beef"})
-map.set("beetroot", {"path":"textures/azalea_icons/icontextures/beetroot","name":"beetroot"})
-map.set("blaze_powder", {"path":"textures/azalea_icons/icontextures/blaze_powder","name":"blaze_powder"})
-map.set("blaze_rod", {"path":"textures/azalea_icons/icontextures/blaze_rod","name":"blaze_rod"})
-map.set("block_row_10_column_1", {"path":"textures/azalea_icons/icontextures/block_row_10_column_1","name":"block_row_10_column_1"})
-map.set("block_row_10_column_10", {"path":"textures/azalea_icons/icontextures/block_row_10_column_10","name":"block_row_10_column_10"})
-map.set("block_row_10_column_11", {"path":"textures/azalea_icons/icontextures/block_row_10_column_11","name":"block_row_10_column_11"})
-map.set("block_row_10_column_12", {"path":"textures/azalea_icons/icontextures/block_row_10_column_12","name":"block_row_10_column_12"})
-map.set("block_row_10_column_13", {"path":"textures/azalea_icons/icontextures/block_row_10_column_13","name":"block_row_10_column_13"})
-map.set("block_row_10_column_14", {"path":"textures/azalea_icons/icontextures/block_row_10_column_14","name":"block_row_10_column_14"})
-map.set("block_row_10_column_15", {"path":"textures/azalea_icons/icontextures/block_row_10_column_15","name":"block_row_10_column_15"})
-map.set("block_row_10_column_16", {"path":"textures/azalea_icons/icontextures/block_row_10_column_16","name":"block_row_10_column_16"})
-map.set("block_row_10_column_17", {"path":"textures/azalea_icons/icontextures/block_row_10_column_17","name":"block_row_10_column_17"})
-map.set("block_row_10_column_18", {"path":"textures/azalea_icons/icontextures/block_row_10_column_18","name":"block_row_10_column_18"})
-map.set("block_row_10_column_2", {"path":"textures/azalea_icons/icontextures/block_row_10_column_2","name":"block_row_10_column_2"})
-map.set("block_row_10_column_3", {"path":"textures/azalea_icons/icontextures/block_row_10_column_3","name":"block_row_10_column_3"})
-map.set("block_row_10_column_4", {"path":"textures/azalea_icons/icontextures/block_row_10_column_4","name":"block_row_10_column_4"})
-map.set("block_row_10_column_5", {"path":"textures/azalea_icons/icontextures/block_row_10_column_5","name":"block_row_10_column_5"})
-map.set("block_row_10_column_6", {"path":"textures/azalea_icons/icontextures/block_row_10_column_6","name":"block_row_10_column_6"})
-map.set("block_row_10_column_7", {"path":"textures/azalea_icons/icontextures/block_row_10_column_7","name":"block_row_10_column_7"})
-map.set("block_row_10_column_8", {"path":"textures/azalea_icons/icontextures/block_row_10_column_8","name":"block_row_10_column_8"})
-map.set("block_row_10_column_9", {"path":"textures/azalea_icons/icontextures/block_row_10_column_9","name":"block_row_10_column_9"})
-map.set("block_row_11_column_1", {"path":"textures/azalea_icons/icontextures/block_row_11_column_1","name":"block_row_11_column_1"})
-map.set("block_row_11_column_10", {"path":"textures/azalea_icons/icontextures/block_row_11_column_10","name":"block_row_11_column_10"})
-map.set("block_row_11_column_11", {"path":"textures/azalea_icons/icontextures/block_row_11_column_11","name":"block_row_11_column_11"})
-map.set("block_row_11_column_12", {"path":"textures/azalea_icons/icontextures/block_row_11_column_12","name":"block_row_11_column_12"})
-map.set("block_row_11_column_13", {"path":"textures/azalea_icons/icontextures/block_row_11_column_13","name":"block_row_11_column_13"})
-map.set("block_row_11_column_14", {"path":"textures/azalea_icons/icontextures/block_row_11_column_14","name":"block_row_11_column_14"})
-map.set("block_row_11_column_15", {"path":"textures/azalea_icons/icontextures/block_row_11_column_15","name":"block_row_11_column_15"})
-map.set("block_row_11_column_16", {"path":"textures/azalea_icons/icontextures/block_row_11_column_16","name":"block_row_11_column_16"})
-map.set("block_row_11_column_17", {"path":"textures/azalea_icons/icontextures/block_row_11_column_17","name":"block_row_11_column_17"})
-map.set("block_row_11_column_18", {"path":"textures/azalea_icons/icontextures/block_row_11_column_18","name":"block_row_11_column_18"})
-map.set("block_row_11_column_2", {"path":"textures/azalea_icons/icontextures/block_row_11_column_2","name":"block_row_11_column_2"})
-map.set("block_row_11_column_3", {"path":"textures/azalea_icons/icontextures/block_row_11_column_3","name":"block_row_11_column_3"})
-map.set("block_row_11_column_4", {"path":"textures/azalea_icons/icontextures/block_row_11_column_4","name":"block_row_11_column_4"})
-map.set("block_row_11_column_5", {"path":"textures/azalea_icons/icontextures/block_row_11_column_5","name":"block_row_11_column_5"})
-map.set("block_row_11_column_6", {"path":"textures/azalea_icons/icontextures/block_row_11_column_6","name":"block_row_11_column_6"})
-map.set("block_row_11_column_7", {"path":"textures/azalea_icons/icontextures/block_row_11_column_7","name":"block_row_11_column_7"})
-map.set("block_row_11_column_8", {"path":"textures/azalea_icons/icontextures/block_row_11_column_8","name":"block_row_11_column_8"})
-map.set("block_row_11_column_9", {"path":"textures/azalea_icons/icontextures/block_row_11_column_9","name":"block_row_11_column_9"})
-map.set("block_row_12_column_1", {"path":"textures/azalea_icons/icontextures/block_row_12_column_1","name":"block_row_12_column_1"})
-map.set("block_row_12_column_10", {"path":"textures/azalea_icons/icontextures/block_row_12_column_10","name":"block_row_12_column_10"})
-map.set("block_row_12_column_11", {"path":"textures/azalea_icons/icontextures/block_row_12_column_11","name":"block_row_12_column_11"})
-map.set("block_row_12_column_12", {"path":"textures/azalea_icons/icontextures/block_row_12_column_12","name":"block_row_12_column_12"})
-map.set("block_row_12_column_13", {"path":"textures/azalea_icons/icontextures/block_row_12_column_13","name":"block_row_12_column_13"})
-map.set("block_row_12_column_14", {"path":"textures/azalea_icons/icontextures/block_row_12_column_14","name":"block_row_12_column_14"})
-map.set("block_row_12_column_15", {"path":"textures/azalea_icons/icontextures/block_row_12_column_15","name":"block_row_12_column_15"})
-map.set("block_row_12_column_16", {"path":"textures/azalea_icons/icontextures/block_row_12_column_16","name":"block_row_12_column_16"})
-map.set("block_row_12_column_17", {"path":"textures/azalea_icons/icontextures/block_row_12_column_17","name":"block_row_12_column_17"})
-map.set("block_row_12_column_18", {"path":"textures/azalea_icons/icontextures/block_row_12_column_18","name":"block_row_12_column_18"})
-map.set("block_row_12_column_2", {"path":"textures/azalea_icons/icontextures/block_row_12_column_2","name":"block_row_12_column_2"})
-map.set("block_row_12_column_3", {"path":"textures/azalea_icons/icontextures/block_row_12_column_3","name":"block_row_12_column_3"})
-map.set("block_row_12_column_4", {"path":"textures/azalea_icons/icontextures/block_row_12_column_4","name":"block_row_12_column_4"})
-map.set("block_row_12_column_5", {"path":"textures/azalea_icons/icontextures/block_row_12_column_5","name":"block_row_12_column_5"})
-map.set("block_row_12_column_6", {"path":"textures/azalea_icons/icontextures/block_row_12_column_6","name":"block_row_12_column_6"})
-map.set("block_row_12_column_7", {"path":"textures/azalea_icons/icontextures/block_row_12_column_7","name":"block_row_12_column_7"})
-map.set("block_row_12_column_8", {"path":"textures/azalea_icons/icontextures/block_row_12_column_8","name":"block_row_12_column_8"})
-map.set("block_row_12_column_9", {"path":"textures/azalea_icons/icontextures/block_row_12_column_9","name":"block_row_12_column_9"})
-map.set("block_row_13_column_1", {"path":"textures/azalea_icons/icontextures/block_row_13_column_1","name":"block_row_13_column_1"})
-map.set("block_row_13_column_10", {"path":"textures/azalea_icons/icontextures/block_row_13_column_10","name":"block_row_13_column_10"})
-map.set("block_row_13_column_11", {"path":"textures/azalea_icons/icontextures/block_row_13_column_11","name":"block_row_13_column_11"})
-map.set("block_row_13_column_12", {"path":"textures/azalea_icons/icontextures/block_row_13_column_12","name":"block_row_13_column_12"})
-map.set("block_row_13_column_13", {"path":"textures/azalea_icons/icontextures/block_row_13_column_13","name":"block_row_13_column_13"})
-map.set("block_row_13_column_14", {"path":"textures/azalea_icons/icontextures/block_row_13_column_14","name":"block_row_13_column_14"})
-map.set("block_row_13_column_15", {"path":"textures/azalea_icons/icontextures/block_row_13_column_15","name":"block_row_13_column_15"})
-map.set("block_row_13_column_16", {"path":"textures/azalea_icons/icontextures/block_row_13_column_16","name":"block_row_13_column_16"})
-map.set("block_row_13_column_17", {"path":"textures/azalea_icons/icontextures/block_row_13_column_17","name":"block_row_13_column_17"})
-map.set("block_row_13_column_18", {"path":"textures/azalea_icons/icontextures/block_row_13_column_18","name":"block_row_13_column_18"})
-map.set("block_row_13_column_2", {"path":"textures/azalea_icons/icontextures/block_row_13_column_2","name":"block_row_13_column_2"})
-map.set("block_row_13_column_3", {"path":"textures/azalea_icons/icontextures/block_row_13_column_3","name":"block_row_13_column_3"})
-map.set("block_row_13_column_4", {"path":"textures/azalea_icons/icontextures/block_row_13_column_4","name":"block_row_13_column_4"})
-map.set("block_row_13_column_5", {"path":"textures/azalea_icons/icontextures/block_row_13_column_5","name":"block_row_13_column_5"})
-map.set("block_row_13_column_6", {"path":"textures/azalea_icons/icontextures/block_row_13_column_6","name":"block_row_13_column_6"})
-map.set("block_row_13_column_7", {"path":"textures/azalea_icons/icontextures/block_row_13_column_7","name":"block_row_13_column_7"})
-map.set("block_row_13_column_8", {"path":"textures/azalea_icons/icontextures/block_row_13_column_8","name":"block_row_13_column_8"})
-map.set("block_row_13_column_9", {"path":"textures/azalea_icons/icontextures/block_row_13_column_9","name":"block_row_13_column_9"})
-map.set("block_row_14_column_1", {"path":"textures/azalea_icons/icontextures/block_row_14_column_1","name":"block_row_14_column_1"})
-map.set("block_row_14_column_10", {"path":"textures/azalea_icons/icontextures/block_row_14_column_10","name":"block_row_14_column_10"})
-map.set("block_row_14_column_11", {"path":"textures/azalea_icons/icontextures/block_row_14_column_11","name":"block_row_14_column_11"})
-map.set("block_row_14_column_12", {"path":"textures/azalea_icons/icontextures/block_row_14_column_12","name":"block_row_14_column_12"})
-map.set("block_row_14_column_13", {"path":"textures/azalea_icons/icontextures/block_row_14_column_13","name":"block_row_14_column_13"})
-map.set("block_row_14_column_14", {"path":"textures/azalea_icons/icontextures/block_row_14_column_14","name":"block_row_14_column_14"})
-map.set("block_row_14_column_15", {"path":"textures/azalea_icons/icontextures/block_row_14_column_15","name":"block_row_14_column_15"})
-map.set("block_row_14_column_16", {"path":"textures/azalea_icons/icontextures/block_row_14_column_16","name":"block_row_14_column_16"})
-map.set("block_row_14_column_17", {"path":"textures/azalea_icons/icontextures/block_row_14_column_17","name":"block_row_14_column_17"})
-map.set("block_row_14_column_18", {"path":"textures/azalea_icons/icontextures/block_row_14_column_18","name":"block_row_14_column_18"})
-map.set("block_row_14_column_2", {"path":"textures/azalea_icons/icontextures/block_row_14_column_2","name":"block_row_14_column_2"})
-map.set("block_row_14_column_3", {"path":"textures/azalea_icons/icontextures/block_row_14_column_3","name":"block_row_14_column_3"})
-map.set("block_row_14_column_4", {"path":"textures/azalea_icons/icontextures/block_row_14_column_4","name":"block_row_14_column_4"})
-map.set("block_row_14_column_5", {"path":"textures/azalea_icons/icontextures/block_row_14_column_5","name":"block_row_14_column_5"})
-map.set("block_row_14_column_6", {"path":"textures/azalea_icons/icontextures/block_row_14_column_6","name":"block_row_14_column_6"})
-map.set("block_row_14_column_7", {"path":"textures/azalea_icons/icontextures/block_row_14_column_7","name":"block_row_14_column_7"})
-map.set("block_row_14_column_8", {"path":"textures/azalea_icons/icontextures/block_row_14_column_8","name":"block_row_14_column_8"})
-map.set("block_row_14_column_9", {"path":"textures/azalea_icons/icontextures/block_row_14_column_9","name":"block_row_14_column_9"})
-map.set("block_row_15_column_1", {"path":"textures/azalea_icons/icontextures/block_row_15_column_1","name":"block_row_15_column_1"})
-map.set("block_row_15_column_10", {"path":"textures/azalea_icons/icontextures/block_row_15_column_10","name":"block_row_15_column_10"})
-map.set("block_row_15_column_11", {"path":"textures/azalea_icons/icontextures/block_row_15_column_11","name":"block_row_15_column_11"})
-map.set("block_row_15_column_12", {"path":"textures/azalea_icons/icontextures/block_row_15_column_12","name":"block_row_15_column_12"})
-map.set("block_row_15_column_13", {"path":"textures/azalea_icons/icontextures/block_row_15_column_13","name":"block_row_15_column_13"})
-map.set("block_row_15_column_14", {"path":"textures/azalea_icons/icontextures/block_row_15_column_14","name":"block_row_15_column_14"})
-map.set("block_row_15_column_15", {"path":"textures/azalea_icons/icontextures/block_row_15_column_15","name":"block_row_15_column_15"})
-map.set("block_row_15_column_16", {"path":"textures/azalea_icons/icontextures/block_row_15_column_16","name":"block_row_15_column_16"})
-map.set("block_row_15_column_17", {"path":"textures/azalea_icons/icontextures/block_row_15_column_17","name":"block_row_15_column_17"})
-map.set("block_row_15_column_18", {"path":"textures/azalea_icons/icontextures/block_row_15_column_18","name":"block_row_15_column_18"})
-map.set("block_row_15_column_2", {"path":"textures/azalea_icons/icontextures/block_row_15_column_2","name":"block_row_15_column_2"})
-map.set("block_row_15_column_3", {"path":"textures/azalea_icons/icontextures/block_row_15_column_3","name":"block_row_15_column_3"})
-map.set("block_row_15_column_4", {"path":"textures/azalea_icons/icontextures/block_row_15_column_4","name":"block_row_15_column_4"})
-map.set("block_row_15_column_5", {"path":"textures/azalea_icons/icontextures/block_row_15_column_5","name":"block_row_15_column_5"})
-map.set("block_row_15_column_6", {"path":"textures/azalea_icons/icontextures/block_row_15_column_6","name":"block_row_15_column_6"})
-map.set("block_row_15_column_7", {"path":"textures/azalea_icons/icontextures/block_row_15_column_7","name":"block_row_15_column_7"})
-map.set("block_row_15_column_8", {"path":"textures/azalea_icons/icontextures/block_row_15_column_8","name":"block_row_15_column_8"})
-map.set("block_row_15_column_9", {"path":"textures/azalea_icons/icontextures/block_row_15_column_9","name":"block_row_15_column_9"})
-map.set("block_row_16_column_1", {"path":"textures/azalea_icons/icontextures/block_row_16_column_1","name":"block_row_16_column_1"})
-map.set("block_row_16_column_10", {"path":"textures/azalea_icons/icontextures/block_row_16_column_10","name":"block_row_16_column_10"})
-map.set("block_row_16_column_11", {"path":"textures/azalea_icons/icontextures/block_row_16_column_11","name":"block_row_16_column_11"})
-map.set("block_row_16_column_12", {"path":"textures/azalea_icons/icontextures/block_row_16_column_12","name":"block_row_16_column_12"})
-map.set("block_row_16_column_13", {"path":"textures/azalea_icons/icontextures/block_row_16_column_13","name":"block_row_16_column_13"})
-map.set("block_row_16_column_14", {"path":"textures/azalea_icons/icontextures/block_row_16_column_14","name":"block_row_16_column_14"})
-map.set("block_row_16_column_15", {"path":"textures/azalea_icons/icontextures/block_row_16_column_15","name":"block_row_16_column_15"})
-map.set("block_row_16_column_16", {"path":"textures/azalea_icons/icontextures/block_row_16_column_16","name":"block_row_16_column_16"})
-map.set("block_row_16_column_17", {"path":"textures/azalea_icons/icontextures/block_row_16_column_17","name":"block_row_16_column_17"})
-map.set("block_row_16_column_18", {"path":"textures/azalea_icons/icontextures/block_row_16_column_18","name":"block_row_16_column_18"})
-map.set("block_row_16_column_2", {"path":"textures/azalea_icons/icontextures/block_row_16_column_2","name":"block_row_16_column_2"})
-map.set("block_row_16_column_3", {"path":"textures/azalea_icons/icontextures/block_row_16_column_3","name":"block_row_16_column_3"})
-map.set("block_row_16_column_4", {"path":"textures/azalea_icons/icontextures/block_row_16_column_4","name":"block_row_16_column_4"})
-map.set("block_row_16_column_5", {"path":"textures/azalea_icons/icontextures/block_row_16_column_5","name":"block_row_16_column_5"})
-map.set("block_row_16_column_6", {"path":"textures/azalea_icons/icontextures/block_row_16_column_6","name":"block_row_16_column_6"})
-map.set("block_row_16_column_7", {"path":"textures/azalea_icons/icontextures/block_row_16_column_7","name":"block_row_16_column_7"})
-map.set("block_row_16_column_8", {"path":"textures/azalea_icons/icontextures/block_row_16_column_8","name":"block_row_16_column_8"})
-map.set("block_row_16_column_9", {"path":"textures/azalea_icons/icontextures/block_row_16_column_9","name":"block_row_16_column_9"})
-map.set("block_row_17_column_1", {"path":"textures/azalea_icons/icontextures/block_row_17_column_1","name":"block_row_17_column_1"})
-map.set("block_row_17_column_10", {"path":"textures/azalea_icons/icontextures/block_row_17_column_10","name":"block_row_17_column_10"})
-map.set("block_row_17_column_11", {"path":"textures/azalea_icons/icontextures/block_row_17_column_11","name":"block_row_17_column_11"})
-map.set("block_row_17_column_12", {"path":"textures/azalea_icons/icontextures/block_row_17_column_12","name":"block_row_17_column_12"})
-map.set("block_row_17_column_13", {"path":"textures/azalea_icons/icontextures/block_row_17_column_13","name":"block_row_17_column_13"})
-map.set("block_row_17_column_14", {"path":"textures/azalea_icons/icontextures/block_row_17_column_14","name":"block_row_17_column_14"})
-map.set("block_row_17_column_15", {"path":"textures/azalea_icons/icontextures/block_row_17_column_15","name":"block_row_17_column_15"})
-map.set("block_row_17_column_16", {"path":"textures/azalea_icons/icontextures/block_row_17_column_16","name":"block_row_17_column_16"})
-map.set("block_row_17_column_17", {"path":"textures/azalea_icons/icontextures/block_row_17_column_17","name":"block_row_17_column_17"})
-map.set("block_row_17_column_18", {"path":"textures/azalea_icons/icontextures/block_row_17_column_18","name":"block_row_17_column_18"})
-map.set("block_row_17_column_2", {"path":"textures/azalea_icons/icontextures/block_row_17_column_2","name":"block_row_17_column_2"})
-map.set("block_row_17_column_3", {"path":"textures/azalea_icons/icontextures/block_row_17_column_3","name":"block_row_17_column_3"})
-map.set("block_row_17_column_4", {"path":"textures/azalea_icons/icontextures/block_row_17_column_4","name":"block_row_17_column_4"})
-map.set("block_row_17_column_5", {"path":"textures/azalea_icons/icontextures/block_row_17_column_5","name":"block_row_17_column_5"})
-map.set("block_row_17_column_6", {"path":"textures/azalea_icons/icontextures/block_row_17_column_6","name":"block_row_17_column_6"})
-map.set("block_row_17_column_7", {"path":"textures/azalea_icons/icontextures/block_row_17_column_7","name":"block_row_17_column_7"})
-map.set("block_row_17_column_8", {"path":"textures/azalea_icons/icontextures/block_row_17_column_8","name":"block_row_17_column_8"})
-map.set("block_row_17_column_9", {"path":"textures/azalea_icons/icontextures/block_row_17_column_9","name":"block_row_17_column_9"})
-map.set("block_row_18_column_1", {"path":"textures/azalea_icons/icontextures/block_row_18_column_1","name":"block_row_18_column_1"})
-map.set("block_row_18_column_10", {"path":"textures/azalea_icons/icontextures/block_row_18_column_10","name":"block_row_18_column_10"})
-map.set("block_row_18_column_11", {"path":"textures/azalea_icons/icontextures/block_row_18_column_11","name":"block_row_18_column_11"})
-map.set("block_row_18_column_12", {"path":"textures/azalea_icons/icontextures/block_row_18_column_12","name":"block_row_18_column_12"})
-map.set("block_row_18_column_13", {"path":"textures/azalea_icons/icontextures/block_row_18_column_13","name":"block_row_18_column_13"})
-map.set("block_row_18_column_14", {"path":"textures/azalea_icons/icontextures/block_row_18_column_14","name":"block_row_18_column_14"})
-map.set("block_row_18_column_15", {"path":"textures/azalea_icons/icontextures/block_row_18_column_15","name":"block_row_18_column_15"})
-map.set("block_row_18_column_16", {"path":"textures/azalea_icons/icontextures/block_row_18_column_16","name":"block_row_18_column_16"})
-map.set("block_row_18_column_17", {"path":"textures/azalea_icons/icontextures/block_row_18_column_17","name":"block_row_18_column_17"})
-map.set("block_row_18_column_18", {"path":"textures/azalea_icons/icontextures/block_row_18_column_18","name":"block_row_18_column_18"})
-map.set("block_row_18_column_2", {"path":"textures/azalea_icons/icontextures/block_row_18_column_2","name":"block_row_18_column_2"})
-map.set("block_row_18_column_3", {"path":"textures/azalea_icons/icontextures/block_row_18_column_3","name":"block_row_18_column_3"})
-map.set("block_row_18_column_4", {"path":"textures/azalea_icons/icontextures/block_row_18_column_4","name":"block_row_18_column_4"})
-map.set("block_row_18_column_5", {"path":"textures/azalea_icons/icontextures/block_row_18_column_5","name":"block_row_18_column_5"})
-map.set("block_row_18_column_6", {"path":"textures/azalea_icons/icontextures/block_row_18_column_6","name":"block_row_18_column_6"})
-map.set("block_row_18_column_7", {"path":"textures/azalea_icons/icontextures/block_row_18_column_7","name":"block_row_18_column_7"})
-map.set("block_row_18_column_8", {"path":"textures/azalea_icons/icontextures/block_row_18_column_8","name":"block_row_18_column_8"})
-map.set("block_row_18_column_9", {"path":"textures/azalea_icons/icontextures/block_row_18_column_9","name":"block_row_18_column_9"})
-map.set("block_row_19_column_1", {"path":"textures/azalea_icons/icontextures/block_row_19_column_1","name":"block_row_19_column_1"})
-map.set("block_row_19_column_10", {"path":"textures/azalea_icons/icontextures/block_row_19_column_10","name":"block_row_19_column_10"})
-map.set("block_row_19_column_11", {"path":"textures/azalea_icons/icontextures/block_row_19_column_11","name":"block_row_19_column_11"})
-map.set("block_row_19_column_12", {"path":"textures/azalea_icons/icontextures/block_row_19_column_12","name":"block_row_19_column_12"})
-map.set("block_row_19_column_13", {"path":"textures/azalea_icons/icontextures/block_row_19_column_13","name":"block_row_19_column_13"})
-map.set("block_row_19_column_14", {"path":"textures/azalea_icons/icontextures/block_row_19_column_14","name":"block_row_19_column_14"})
-map.set("block_row_19_column_15", {"path":"textures/azalea_icons/icontextures/block_row_19_column_15","name":"block_row_19_column_15"})
-map.set("block_row_19_column_16", {"path":"textures/azalea_icons/icontextures/block_row_19_column_16","name":"block_row_19_column_16"})
-map.set("block_row_19_column_17", {"path":"textures/azalea_icons/icontextures/block_row_19_column_17","name":"block_row_19_column_17"})
-map.set("block_row_19_column_18", {"path":"textures/azalea_icons/icontextures/block_row_19_column_18","name":"block_row_19_column_18"})
-map.set("block_row_19_column_2", {"path":"textures/azalea_icons/icontextures/block_row_19_column_2","name":"block_row_19_column_2"})
-map.set("block_row_19_column_3", {"path":"textures/azalea_icons/icontextures/block_row_19_column_3","name":"block_row_19_column_3"})
-map.set("block_row_19_column_4", {"path":"textures/azalea_icons/icontextures/block_row_19_column_4","name":"block_row_19_column_4"})
-map.set("block_row_19_column_5", {"path":"textures/azalea_icons/icontextures/block_row_19_column_5","name":"block_row_19_column_5"})
-map.set("block_row_19_column_6", {"path":"textures/azalea_icons/icontextures/block_row_19_column_6","name":"block_row_19_column_6"})
-map.set("block_row_19_column_7", {"path":"textures/azalea_icons/icontextures/block_row_19_column_7","name":"block_row_19_column_7"})
-map.set("block_row_19_column_8", {"path":"textures/azalea_icons/icontextures/block_row_19_column_8","name":"block_row_19_column_8"})
-map.set("block_row_19_column_9", {"path":"textures/azalea_icons/icontextures/block_row_19_column_9","name":"block_row_19_column_9"})
-map.set("block_row_1_column_1", {"path":"textures/azalea_icons/icontextures/block_row_1_column_1","name":"block_row_1_column_1"})
-map.set("block_row_1_column_10", {"path":"textures/azalea_icons/icontextures/block_row_1_column_10","name":"block_row_1_column_10"})
-map.set("block_row_1_column_11", {"path":"textures/azalea_icons/icontextures/block_row_1_column_11","name":"block_row_1_column_11"})
-map.set("block_row_1_column_12", {"path":"textures/azalea_icons/icontextures/block_row_1_column_12","name":"block_row_1_column_12"})
-map.set("block_row_1_column_13", {"path":"textures/azalea_icons/icontextures/block_row_1_column_13","name":"block_row_1_column_13"})
-map.set("block_row_1_column_14", {"path":"textures/azalea_icons/icontextures/block_row_1_column_14","name":"block_row_1_column_14"})
-map.set("block_row_1_column_15", {"path":"textures/azalea_icons/icontextures/block_row_1_column_15","name":"block_row_1_column_15"})
-map.set("block_row_1_column_16", {"path":"textures/azalea_icons/icontextures/block_row_1_column_16","name":"block_row_1_column_16"})
-map.set("block_row_1_column_17", {"path":"textures/azalea_icons/icontextures/block_row_1_column_17","name":"block_row_1_column_17"})
-map.set("block_row_1_column_18", {"path":"textures/azalea_icons/icontextures/block_row_1_column_18","name":"block_row_1_column_18"})
-map.set("block_row_1_column_2", {"path":"textures/azalea_icons/icontextures/block_row_1_column_2","name":"block_row_1_column_2"})
-map.set("block_row_1_column_3", {"path":"textures/azalea_icons/icontextures/block_row_1_column_3","name":"block_row_1_column_3"})
-map.set("block_row_1_column_4", {"path":"textures/azalea_icons/icontextures/block_row_1_column_4","name":"block_row_1_column_4"})
-map.set("block_row_1_column_5", {"path":"textures/azalea_icons/icontextures/block_row_1_column_5","name":"block_row_1_column_5"})
-map.set("block_row_1_column_6", {"path":"textures/azalea_icons/icontextures/block_row_1_column_6","name":"block_row_1_column_6"})
-map.set("block_row_1_column_7", {"path":"textures/azalea_icons/icontextures/block_row_1_column_7","name":"block_row_1_column_7"})
-map.set("block_row_1_column_8", {"path":"textures/azalea_icons/icontextures/block_row_1_column_8","name":"block_row_1_column_8"})
-map.set("block_row_1_column_9", {"path":"textures/azalea_icons/icontextures/block_row_1_column_9","name":"block_row_1_column_9"})
-map.set("block_row_20_column_1", {"path":"textures/azalea_icons/icontextures/block_row_20_column_1","name":"block_row_20_column_1"})
-map.set("block_row_20_column_10", {"path":"textures/azalea_icons/icontextures/block_row_20_column_10","name":"block_row_20_column_10"})
-map.set("block_row_20_column_11", {"path":"textures/azalea_icons/icontextures/block_row_20_column_11","name":"block_row_20_column_11"})
-map.set("block_row_20_column_12", {"path":"textures/azalea_icons/icontextures/block_row_20_column_12","name":"block_row_20_column_12"})
-map.set("block_row_20_column_13", {"path":"textures/azalea_icons/icontextures/block_row_20_column_13","name":"block_row_20_column_13"})
-map.set("block_row_20_column_14", {"path":"textures/azalea_icons/icontextures/block_row_20_column_14","name":"block_row_20_column_14"})
-map.set("block_row_20_column_15", {"path":"textures/azalea_icons/icontextures/block_row_20_column_15","name":"block_row_20_column_15"})
-map.set("block_row_20_column_16", {"path":"textures/azalea_icons/icontextures/block_row_20_column_16","name":"block_row_20_column_16"})
-map.set("block_row_20_column_17", {"path":"textures/azalea_icons/icontextures/block_row_20_column_17","name":"block_row_20_column_17"})
-map.set("block_row_20_column_18", {"path":"textures/azalea_icons/icontextures/block_row_20_column_18","name":"block_row_20_column_18"})
-map.set("block_row_20_column_2", {"path":"textures/azalea_icons/icontextures/block_row_20_column_2","name":"block_row_20_column_2"})
-map.set("block_row_20_column_3", {"path":"textures/azalea_icons/icontextures/block_row_20_column_3","name":"block_row_20_column_3"})
-map.set("block_row_20_column_4", {"path":"textures/azalea_icons/icontextures/block_row_20_column_4","name":"block_row_20_column_4"})
-map.set("block_row_20_column_5", {"path":"textures/azalea_icons/icontextures/block_row_20_column_5","name":"block_row_20_column_5"})
-map.set("block_row_20_column_6", {"path":"textures/azalea_icons/icontextures/block_row_20_column_6","name":"block_row_20_column_6"})
-map.set("block_row_20_column_7", {"path":"textures/azalea_icons/icontextures/block_row_20_column_7","name":"block_row_20_column_7"})
-map.set("block_row_20_column_8", {"path":"textures/azalea_icons/icontextures/block_row_20_column_8","name":"block_row_20_column_8"})
-map.set("block_row_20_column_9", {"path":"textures/azalea_icons/icontextures/block_row_20_column_9","name":"block_row_20_column_9"})
-map.set("block_row_21_column_1", {"path":"textures/azalea_icons/icontextures/block_row_21_column_1","name":"block_row_21_column_1"})
-map.set("block_row_21_column_10", {"path":"textures/azalea_icons/icontextures/block_row_21_column_10","name":"block_row_21_column_10"})
-map.set("block_row_21_column_11", {"path":"textures/azalea_icons/icontextures/block_row_21_column_11","name":"block_row_21_column_11"})
-map.set("block_row_21_column_12", {"path":"textures/azalea_icons/icontextures/block_row_21_column_12","name":"block_row_21_column_12"})
-map.set("block_row_21_column_13", {"path":"textures/azalea_icons/icontextures/block_row_21_column_13","name":"block_row_21_column_13"})
-map.set("block_row_21_column_14", {"path":"textures/azalea_icons/icontextures/block_row_21_column_14","name":"block_row_21_column_14"})
-map.set("block_row_21_column_15", {"path":"textures/azalea_icons/icontextures/block_row_21_column_15","name":"block_row_21_column_15"})
-map.set("block_row_21_column_16", {"path":"textures/azalea_icons/icontextures/block_row_21_column_16","name":"block_row_21_column_16"})
-map.set("block_row_21_column_17", {"path":"textures/azalea_icons/icontextures/block_row_21_column_17","name":"block_row_21_column_17"})
-map.set("block_row_21_column_18", {"path":"textures/azalea_icons/icontextures/block_row_21_column_18","name":"block_row_21_column_18"})
-map.set("block_row_21_column_2", {"path":"textures/azalea_icons/icontextures/block_row_21_column_2","name":"block_row_21_column_2"})
-map.set("block_row_21_column_3", {"path":"textures/azalea_icons/icontextures/block_row_21_column_3","name":"block_row_21_column_3"})
-map.set("block_row_21_column_4", {"path":"textures/azalea_icons/icontextures/block_row_21_column_4","name":"block_row_21_column_4"})
-map.set("block_row_21_column_5", {"path":"textures/azalea_icons/icontextures/block_row_21_column_5","name":"block_row_21_column_5"})
-map.set("block_row_21_column_6", {"path":"textures/azalea_icons/icontextures/block_row_21_column_6","name":"block_row_21_column_6"})
-map.set("block_row_21_column_7", {"path":"textures/azalea_icons/icontextures/block_row_21_column_7","name":"block_row_21_column_7"})
-map.set("block_row_21_column_8", {"path":"textures/azalea_icons/icontextures/block_row_21_column_8","name":"block_row_21_column_8"})
-map.set("block_row_21_column_9", {"path":"textures/azalea_icons/icontextures/block_row_21_column_9","name":"block_row_21_column_9"})
-map.set("block_row_22_column_1", {"path":"textures/azalea_icons/icontextures/block_row_22_column_1","name":"block_row_22_column_1"})
-map.set("block_row_22_column_10", {"path":"textures/azalea_icons/icontextures/block_row_22_column_10","name":"block_row_22_column_10"})
-map.set("block_row_22_column_11", {"path":"textures/azalea_icons/icontextures/block_row_22_column_11","name":"block_row_22_column_11"})
-map.set("block_row_22_column_12", {"path":"textures/azalea_icons/icontextures/block_row_22_column_12","name":"block_row_22_column_12"})
-map.set("block_row_22_column_13", {"path":"textures/azalea_icons/icontextures/block_row_22_column_13","name":"block_row_22_column_13"})
-map.set("block_row_22_column_14", {"path":"textures/azalea_icons/icontextures/block_row_22_column_14","name":"block_row_22_column_14"})
-map.set("block_row_22_column_15", {"path":"textures/azalea_icons/icontextures/block_row_22_column_15","name":"block_row_22_column_15"})
-map.set("block_row_22_column_16", {"path":"textures/azalea_icons/icontextures/block_row_22_column_16","name":"block_row_22_column_16"})
-map.set("block_row_22_column_17", {"path":"textures/azalea_icons/icontextures/block_row_22_column_17","name":"block_row_22_column_17"})
-map.set("block_row_22_column_18", {"path":"textures/azalea_icons/icontextures/block_row_22_column_18","name":"block_row_22_column_18"})
-map.set("block_row_22_column_2", {"path":"textures/azalea_icons/icontextures/block_row_22_column_2","name":"block_row_22_column_2"})
-map.set("block_row_22_column_3", {"path":"textures/azalea_icons/icontextures/block_row_22_column_3","name":"block_row_22_column_3"})
-map.set("block_row_22_column_4", {"path":"textures/azalea_icons/icontextures/block_row_22_column_4","name":"block_row_22_column_4"})
-map.set("block_row_22_column_5", {"path":"textures/azalea_icons/icontextures/block_row_22_column_5","name":"block_row_22_column_5"})
-map.set("block_row_22_column_6", {"path":"textures/azalea_icons/icontextures/block_row_22_column_6","name":"block_row_22_column_6"})
-map.set("block_row_22_column_7", {"path":"textures/azalea_icons/icontextures/block_row_22_column_7","name":"block_row_22_column_7"})
-map.set("block_row_22_column_8", {"path":"textures/azalea_icons/icontextures/block_row_22_column_8","name":"block_row_22_column_8"})
-map.set("block_row_22_column_9", {"path":"textures/azalea_icons/icontextures/block_row_22_column_9","name":"block_row_22_column_9"})
-map.set("block_row_23_column_1", {"path":"textures/azalea_icons/icontextures/block_row_23_column_1","name":"block_row_23_column_1"})
-map.set("block_row_23_column_10", {"path":"textures/azalea_icons/icontextures/block_row_23_column_10","name":"block_row_23_column_10"})
-map.set("block_row_23_column_11", {"path":"textures/azalea_icons/icontextures/block_row_23_column_11","name":"block_row_23_column_11"})
-map.set("block_row_23_column_12", {"path":"textures/azalea_icons/icontextures/block_row_23_column_12","name":"block_row_23_column_12"})
-map.set("block_row_23_column_13", {"path":"textures/azalea_icons/icontextures/block_row_23_column_13","name":"block_row_23_column_13"})
-map.set("block_row_23_column_14", {"path":"textures/azalea_icons/icontextures/block_row_23_column_14","name":"block_row_23_column_14"})
-map.set("block_row_23_column_15", {"path":"textures/azalea_icons/icontextures/block_row_23_column_15","name":"block_row_23_column_15"})
-map.set("block_row_23_column_16", {"path":"textures/azalea_icons/icontextures/block_row_23_column_16","name":"block_row_23_column_16"})
-map.set("block_row_23_column_17", {"path":"textures/azalea_icons/icontextures/block_row_23_column_17","name":"block_row_23_column_17"})
-map.set("block_row_23_column_18", {"path":"textures/azalea_icons/icontextures/block_row_23_column_18","name":"block_row_23_column_18"})
-map.set("block_row_23_column_2", {"path":"textures/azalea_icons/icontextures/block_row_23_column_2","name":"block_row_23_column_2"})
-map.set("block_row_23_column_3", {"path":"textures/azalea_icons/icontextures/block_row_23_column_3","name":"block_row_23_column_3"})
-map.set("block_row_23_column_4", {"path":"textures/azalea_icons/icontextures/block_row_23_column_4","name":"block_row_23_column_4"})
-map.set("block_row_23_column_5", {"path":"textures/azalea_icons/icontextures/block_row_23_column_5","name":"block_row_23_column_5"})
-map.set("block_row_23_column_6", {"path":"textures/azalea_icons/icontextures/block_row_23_column_6","name":"block_row_23_column_6"})
-map.set("block_row_23_column_7", {"path":"textures/azalea_icons/icontextures/block_row_23_column_7","name":"block_row_23_column_7"})
-map.set("block_row_23_column_8", {"path":"textures/azalea_icons/icontextures/block_row_23_column_8","name":"block_row_23_column_8"})
-map.set("block_row_23_column_9", {"path":"textures/azalea_icons/icontextures/block_row_23_column_9","name":"block_row_23_column_9"})
-map.set("block_row_24_column_1", {"path":"textures/azalea_icons/icontextures/block_row_24_column_1","name":"block_row_24_column_1"})
-map.set("block_row_24_column_10", {"path":"textures/azalea_icons/icontextures/block_row_24_column_10","name":"block_row_24_column_10"})
-map.set("block_row_24_column_11", {"path":"textures/azalea_icons/icontextures/block_row_24_column_11","name":"block_row_24_column_11"})
-map.set("block_row_24_column_12", {"path":"textures/azalea_icons/icontextures/block_row_24_column_12","name":"block_row_24_column_12"})
-map.set("block_row_24_column_13", {"path":"textures/azalea_icons/icontextures/block_row_24_column_13","name":"block_row_24_column_13"})
-map.set("block_row_24_column_14", {"path":"textures/azalea_icons/icontextures/block_row_24_column_14","name":"block_row_24_column_14"})
-map.set("block_row_24_column_15", {"path":"textures/azalea_icons/icontextures/block_row_24_column_15","name":"block_row_24_column_15"})
-map.set("block_row_24_column_16", {"path":"textures/azalea_icons/icontextures/block_row_24_column_16","name":"block_row_24_column_16"})
-map.set("block_row_24_column_17", {"path":"textures/azalea_icons/icontextures/block_row_24_column_17","name":"block_row_24_column_17"})
-map.set("block_row_24_column_18", {"path":"textures/azalea_icons/icontextures/block_row_24_column_18","name":"block_row_24_column_18"})
-map.set("block_row_24_column_2", {"path":"textures/azalea_icons/icontextures/block_row_24_column_2","name":"block_row_24_column_2"})
-map.set("block_row_24_column_3", {"path":"textures/azalea_icons/icontextures/block_row_24_column_3","name":"block_row_24_column_3"})
-map.set("block_row_24_column_4", {"path":"textures/azalea_icons/icontextures/block_row_24_column_4","name":"block_row_24_column_4"})
-map.set("block_row_24_column_5", {"path":"textures/azalea_icons/icontextures/block_row_24_column_5","name":"block_row_24_column_5"})
-map.set("block_row_24_column_6", {"path":"textures/azalea_icons/icontextures/block_row_24_column_6","name":"block_row_24_column_6"})
-map.set("block_row_24_column_7", {"path":"textures/azalea_icons/icontextures/block_row_24_column_7","name":"block_row_24_column_7"})
-map.set("block_row_24_column_8", {"path":"textures/azalea_icons/icontextures/block_row_24_column_8","name":"block_row_24_column_8"})
-map.set("block_row_24_column_9", {"path":"textures/azalea_icons/icontextures/block_row_24_column_9","name":"block_row_24_column_9"})
-map.set("block_row_25_column_1", {"path":"textures/azalea_icons/icontextures/block_row_25_column_1","name":"block_row_25_column_1"})
-map.set("block_row_25_column_10", {"path":"textures/azalea_icons/icontextures/block_row_25_column_10","name":"block_row_25_column_10"})
-map.set("block_row_25_column_11", {"path":"textures/azalea_icons/icontextures/block_row_25_column_11","name":"block_row_25_column_11"})
-map.set("block_row_25_column_12", {"path":"textures/azalea_icons/icontextures/block_row_25_column_12","name":"block_row_25_column_12"})
-map.set("block_row_25_column_13", {"path":"textures/azalea_icons/icontextures/block_row_25_column_13","name":"block_row_25_column_13"})
-map.set("block_row_25_column_14", {"path":"textures/azalea_icons/icontextures/block_row_25_column_14","name":"block_row_25_column_14"})
-map.set("block_row_25_column_15", {"path":"textures/azalea_icons/icontextures/block_row_25_column_15","name":"block_row_25_column_15"})
-map.set("block_row_25_column_16", {"path":"textures/azalea_icons/icontextures/block_row_25_column_16","name":"block_row_25_column_16"})
-map.set("block_row_25_column_17", {"path":"textures/azalea_icons/icontextures/block_row_25_column_17","name":"block_row_25_column_17"})
-map.set("block_row_25_column_18", {"path":"textures/azalea_icons/icontextures/block_row_25_column_18","name":"block_row_25_column_18"})
-map.set("block_row_25_column_2", {"path":"textures/azalea_icons/icontextures/block_row_25_column_2","name":"block_row_25_column_2"})
-map.set("block_row_25_column_3", {"path":"textures/azalea_icons/icontextures/block_row_25_column_3","name":"block_row_25_column_3"})
-map.set("block_row_25_column_4", {"path":"textures/azalea_icons/icontextures/block_row_25_column_4","name":"block_row_25_column_4"})
-map.set("block_row_25_column_5", {"path":"textures/azalea_icons/icontextures/block_row_25_column_5","name":"block_row_25_column_5"})
-map.set("block_row_25_column_6", {"path":"textures/azalea_icons/icontextures/block_row_25_column_6","name":"block_row_25_column_6"})
-map.set("block_row_25_column_7", {"path":"textures/azalea_icons/icontextures/block_row_25_column_7","name":"block_row_25_column_7"})
-map.set("block_row_25_column_8", {"path":"textures/azalea_icons/icontextures/block_row_25_column_8","name":"block_row_25_column_8"})
-map.set("block_row_25_column_9", {"path":"textures/azalea_icons/icontextures/block_row_25_column_9","name":"block_row_25_column_9"})
-map.set("block_row_26_column_1", {"path":"textures/azalea_icons/icontextures/block_row_26_column_1","name":"block_row_26_column_1"})
-map.set("block_row_26_column_10", {"path":"textures/azalea_icons/icontextures/block_row_26_column_10","name":"block_row_26_column_10"})
-map.set("block_row_26_column_11", {"path":"textures/azalea_icons/icontextures/block_row_26_column_11","name":"block_row_26_column_11"})
-map.set("block_row_26_column_12", {"path":"textures/azalea_icons/icontextures/block_row_26_column_12","name":"block_row_26_column_12"})
-map.set("block_row_26_column_13", {"path":"textures/azalea_icons/icontextures/block_row_26_column_13","name":"block_row_26_column_13"})
-map.set("block_row_26_column_14", {"path":"textures/azalea_icons/icontextures/block_row_26_column_14","name":"block_row_26_column_14"})
-map.set("block_row_26_column_15", {"path":"textures/azalea_icons/icontextures/block_row_26_column_15","name":"block_row_26_column_15"})
-map.set("block_row_26_column_16", {"path":"textures/azalea_icons/icontextures/block_row_26_column_16","name":"block_row_26_column_16"})
-map.set("block_row_26_column_17", {"path":"textures/azalea_icons/icontextures/block_row_26_column_17","name":"block_row_26_column_17"})
-map.set("block_row_26_column_18", {"path":"textures/azalea_icons/icontextures/block_row_26_column_18","name":"block_row_26_column_18"})
-map.set("block_row_26_column_2", {"path":"textures/azalea_icons/icontextures/block_row_26_column_2","name":"block_row_26_column_2"})
-map.set("block_row_26_column_3", {"path":"textures/azalea_icons/icontextures/block_row_26_column_3","name":"block_row_26_column_3"})
-map.set("block_row_26_column_4", {"path":"textures/azalea_icons/icontextures/block_row_26_column_4","name":"block_row_26_column_4"})
-map.set("block_row_26_column_5", {"path":"textures/azalea_icons/icontextures/block_row_26_column_5","name":"block_row_26_column_5"})
-map.set("block_row_26_column_6", {"path":"textures/azalea_icons/icontextures/block_row_26_column_6","name":"block_row_26_column_6"})
-map.set("block_row_26_column_7", {"path":"textures/azalea_icons/icontextures/block_row_26_column_7","name":"block_row_26_column_7"})
-map.set("block_row_26_column_8", {"path":"textures/azalea_icons/icontextures/block_row_26_column_8","name":"block_row_26_column_8"})
-map.set("block_row_26_column_9", {"path":"textures/azalea_icons/icontextures/block_row_26_column_9","name":"block_row_26_column_9"})
-map.set("block_row_27_column_1", {"path":"textures/azalea_icons/icontextures/block_row_27_column_1","name":"block_row_27_column_1"})
-map.set("block_row_27_column_10", {"path":"textures/azalea_icons/icontextures/block_row_27_column_10","name":"block_row_27_column_10"})
-map.set("block_row_27_column_11", {"path":"textures/azalea_icons/icontextures/block_row_27_column_11","name":"block_row_27_column_11"})
-map.set("block_row_27_column_12", {"path":"textures/azalea_icons/icontextures/block_row_27_column_12","name":"block_row_27_column_12"})
-map.set("block_row_27_column_13", {"path":"textures/azalea_icons/icontextures/block_row_27_column_13","name":"block_row_27_column_13"})
-map.set("block_row_27_column_14", {"path":"textures/azalea_icons/icontextures/block_row_27_column_14","name":"block_row_27_column_14"})
-map.set("block_row_27_column_15", {"path":"textures/azalea_icons/icontextures/block_row_27_column_15","name":"block_row_27_column_15"})
-map.set("block_row_27_column_16", {"path":"textures/azalea_icons/icontextures/block_row_27_column_16","name":"block_row_27_column_16"})
-map.set("block_row_27_column_17", {"path":"textures/azalea_icons/icontextures/block_row_27_column_17","name":"block_row_27_column_17"})
-map.set("block_row_27_column_18", {"path":"textures/azalea_icons/icontextures/block_row_27_column_18","name":"block_row_27_column_18"})
-map.set("block_row_27_column_2", {"path":"textures/azalea_icons/icontextures/block_row_27_column_2","name":"block_row_27_column_2"})
-map.set("block_row_27_column_3", {"path":"textures/azalea_icons/icontextures/block_row_27_column_3","name":"block_row_27_column_3"})
-map.set("block_row_27_column_4", {"path":"textures/azalea_icons/icontextures/block_row_27_column_4","name":"block_row_27_column_4"})
-map.set("block_row_27_column_5", {"path":"textures/azalea_icons/icontextures/block_row_27_column_5","name":"block_row_27_column_5"})
-map.set("block_row_27_column_6", {"path":"textures/azalea_icons/icontextures/block_row_27_column_6","name":"block_row_27_column_6"})
-map.set("block_row_27_column_7", {"path":"textures/azalea_icons/icontextures/block_row_27_column_7","name":"block_row_27_column_7"})
-map.set("block_row_27_column_8", {"path":"textures/azalea_icons/icontextures/block_row_27_column_8","name":"block_row_27_column_8"})
-map.set("block_row_27_column_9", {"path":"textures/azalea_icons/icontextures/block_row_27_column_9","name":"block_row_27_column_9"})
-map.set("block_row_28_column_1", {"path":"textures/azalea_icons/icontextures/block_row_28_column_1","name":"block_row_28_column_1"})
-map.set("block_row_28_column_10", {"path":"textures/azalea_icons/icontextures/block_row_28_column_10","name":"block_row_28_column_10"})
-map.set("block_row_28_column_11", {"path":"textures/azalea_icons/icontextures/block_row_28_column_11","name":"block_row_28_column_11"})
-map.set("block_row_28_column_12", {"path":"textures/azalea_icons/icontextures/block_row_28_column_12","name":"block_row_28_column_12"})
-map.set("block_row_28_column_13", {"path":"textures/azalea_icons/icontextures/block_row_28_column_13","name":"block_row_28_column_13"})
-map.set("block_row_28_column_14", {"path":"textures/azalea_icons/icontextures/block_row_28_column_14","name":"block_row_28_column_14"})
-map.set("block_row_28_column_15", {"path":"textures/azalea_icons/icontextures/block_row_28_column_15","name":"block_row_28_column_15"})
-map.set("block_row_28_column_16", {"path":"textures/azalea_icons/icontextures/block_row_28_column_16","name":"block_row_28_column_16"})
-map.set("block_row_28_column_17", {"path":"textures/azalea_icons/icontextures/block_row_28_column_17","name":"block_row_28_column_17"})
-map.set("block_row_28_column_18", {"path":"textures/azalea_icons/icontextures/block_row_28_column_18","name":"block_row_28_column_18"})
-map.set("block_row_28_column_2", {"path":"textures/azalea_icons/icontextures/block_row_28_column_2","name":"block_row_28_column_2"})
-map.set("block_row_28_column_3", {"path":"textures/azalea_icons/icontextures/block_row_28_column_3","name":"block_row_28_column_3"})
-map.set("block_row_28_column_4", {"path":"textures/azalea_icons/icontextures/block_row_28_column_4","name":"block_row_28_column_4"})
-map.set("block_row_28_column_5", {"path":"textures/azalea_icons/icontextures/block_row_28_column_5","name":"block_row_28_column_5"})
-map.set("block_row_28_column_6", {"path":"textures/azalea_icons/icontextures/block_row_28_column_6","name":"block_row_28_column_6"})
-map.set("block_row_28_column_7", {"path":"textures/azalea_icons/icontextures/block_row_28_column_7","name":"block_row_28_column_7"})
-map.set("block_row_28_column_8", {"path":"textures/azalea_icons/icontextures/block_row_28_column_8","name":"block_row_28_column_8"})
-map.set("block_row_28_column_9", {"path":"textures/azalea_icons/icontextures/block_row_28_column_9","name":"block_row_28_column_9"})
-map.set("block_row_29_column_1", {"path":"textures/azalea_icons/icontextures/block_row_29_column_1","name":"block_row_29_column_1"})
-map.set("block_row_29_column_10", {"path":"textures/azalea_icons/icontextures/block_row_29_column_10","name":"block_row_29_column_10"})
-map.set("block_row_29_column_11", {"path":"textures/azalea_icons/icontextures/block_row_29_column_11","name":"block_row_29_column_11"})
-map.set("block_row_29_column_12", {"path":"textures/azalea_icons/icontextures/block_row_29_column_12","name":"block_row_29_column_12"})
-map.set("block_row_29_column_13", {"path":"textures/azalea_icons/icontextures/block_row_29_column_13","name":"block_row_29_column_13"})
-map.set("block_row_29_column_14", {"path":"textures/azalea_icons/icontextures/block_row_29_column_14","name":"block_row_29_column_14"})
-map.set("block_row_29_column_15", {"path":"textures/azalea_icons/icontextures/block_row_29_column_15","name":"block_row_29_column_15"})
-map.set("block_row_29_column_16", {"path":"textures/azalea_icons/icontextures/block_row_29_column_16","name":"block_row_29_column_16"})
-map.set("block_row_29_column_17", {"path":"textures/azalea_icons/icontextures/block_row_29_column_17","name":"block_row_29_column_17"})
-map.set("block_row_29_column_18", {"path":"textures/azalea_icons/icontextures/block_row_29_column_18","name":"block_row_29_column_18"})
-map.set("block_row_29_column_2", {"path":"textures/azalea_icons/icontextures/block_row_29_column_2","name":"block_row_29_column_2"})
-map.set("block_row_29_column_3", {"path":"textures/azalea_icons/icontextures/block_row_29_column_3","name":"block_row_29_column_3"})
-map.set("block_row_29_column_4", {"path":"textures/azalea_icons/icontextures/block_row_29_column_4","name":"block_row_29_column_4"})
-map.set("block_row_29_column_5", {"path":"textures/azalea_icons/icontextures/block_row_29_column_5","name":"block_row_29_column_5"})
-map.set("block_row_29_column_6", {"path":"textures/azalea_icons/icontextures/block_row_29_column_6","name":"block_row_29_column_6"})
-map.set("block_row_29_column_7", {"path":"textures/azalea_icons/icontextures/block_row_29_column_7","name":"block_row_29_column_7"})
-map.set("block_row_29_column_8", {"path":"textures/azalea_icons/icontextures/block_row_29_column_8","name":"block_row_29_column_8"})
-map.set("block_row_29_column_9", {"path":"textures/azalea_icons/icontextures/block_row_29_column_9","name":"block_row_29_column_9"})
-map.set("block_row_2_column_1", {"path":"textures/azalea_icons/icontextures/block_row_2_column_1","name":"block_row_2_column_1"})
-map.set("block_row_2_column_10", {"path":"textures/azalea_icons/icontextures/block_row_2_column_10","name":"block_row_2_column_10"})
-map.set("block_row_2_column_11", {"path":"textures/azalea_icons/icontextures/block_row_2_column_11","name":"block_row_2_column_11"})
-map.set("block_row_2_column_12", {"path":"textures/azalea_icons/icontextures/block_row_2_column_12","name":"block_row_2_column_12"})
-map.set("block_row_2_column_13", {"path":"textures/azalea_icons/icontextures/block_row_2_column_13","name":"block_row_2_column_13"})
-map.set("block_row_2_column_14", {"path":"textures/azalea_icons/icontextures/block_row_2_column_14","name":"block_row_2_column_14"})
-map.set("block_row_2_column_15", {"path":"textures/azalea_icons/icontextures/block_row_2_column_15","name":"block_row_2_column_15"})
-map.set("block_row_2_column_16", {"path":"textures/azalea_icons/icontextures/block_row_2_column_16","name":"block_row_2_column_16"})
-map.set("block_row_2_column_17", {"path":"textures/azalea_icons/icontextures/block_row_2_column_17","name":"block_row_2_column_17"})
-map.set("block_row_2_column_18", {"path":"textures/azalea_icons/icontextures/block_row_2_column_18","name":"block_row_2_column_18"})
-map.set("block_row_2_column_2", {"path":"textures/azalea_icons/icontextures/block_row_2_column_2","name":"block_row_2_column_2"})
-map.set("block_row_2_column_3", {"path":"textures/azalea_icons/icontextures/block_row_2_column_3","name":"block_row_2_column_3"})
-map.set("block_row_2_column_4", {"path":"textures/azalea_icons/icontextures/block_row_2_column_4","name":"block_row_2_column_4"})
-map.set("block_row_2_column_5", {"path":"textures/azalea_icons/icontextures/block_row_2_column_5","name":"block_row_2_column_5"})
-map.set("block_row_2_column_6", {"path":"textures/azalea_icons/icontextures/block_row_2_column_6","name":"block_row_2_column_6"})
-map.set("block_row_2_column_7", {"path":"textures/azalea_icons/icontextures/block_row_2_column_7","name":"block_row_2_column_7"})
-map.set("block_row_2_column_8", {"path":"textures/azalea_icons/icontextures/block_row_2_column_8","name":"block_row_2_column_8"})
-map.set("block_row_2_column_9", {"path":"textures/azalea_icons/icontextures/block_row_2_column_9","name":"block_row_2_column_9"})
-map.set("block_row_30_column_1", {"path":"textures/azalea_icons/icontextures/block_row_30_column_1","name":"block_row_30_column_1"})
-map.set("block_row_30_column_10", {"path":"textures/azalea_icons/icontextures/block_row_30_column_10","name":"block_row_30_column_10"})
-map.set("block_row_30_column_11", {"path":"textures/azalea_icons/icontextures/block_row_30_column_11","name":"block_row_30_column_11"})
-map.set("block_row_30_column_12", {"path":"textures/azalea_icons/icontextures/block_row_30_column_12","name":"block_row_30_column_12"})
-map.set("block_row_30_column_13", {"path":"textures/azalea_icons/icontextures/block_row_30_column_13","name":"block_row_30_column_13"})
-map.set("block_row_30_column_14", {"path":"textures/azalea_icons/icontextures/block_row_30_column_14","name":"block_row_30_column_14"})
-map.set("block_row_30_column_15", {"path":"textures/azalea_icons/icontextures/block_row_30_column_15","name":"block_row_30_column_15"})
-map.set("block_row_30_column_16", {"path":"textures/azalea_icons/icontextures/block_row_30_column_16","name":"block_row_30_column_16"})
-map.set("block_row_30_column_17", {"path":"textures/azalea_icons/icontextures/block_row_30_column_17","name":"block_row_30_column_17"})
-map.set("block_row_30_column_18", {"path":"textures/azalea_icons/icontextures/block_row_30_column_18","name":"block_row_30_column_18"})
-map.set("block_row_30_column_2", {"path":"textures/azalea_icons/icontextures/block_row_30_column_2","name":"block_row_30_column_2"})
-map.set("block_row_30_column_3", {"path":"textures/azalea_icons/icontextures/block_row_30_column_3","name":"block_row_30_column_3"})
-map.set("block_row_30_column_4", {"path":"textures/azalea_icons/icontextures/block_row_30_column_4","name":"block_row_30_column_4"})
-map.set("block_row_30_column_5", {"path":"textures/azalea_icons/icontextures/block_row_30_column_5","name":"block_row_30_column_5"})
-map.set("block_row_30_column_6", {"path":"textures/azalea_icons/icontextures/block_row_30_column_6","name":"block_row_30_column_6"})
-map.set("block_row_30_column_7", {"path":"textures/azalea_icons/icontextures/block_row_30_column_7","name":"block_row_30_column_7"})
-map.set("block_row_30_column_8", {"path":"textures/azalea_icons/icontextures/block_row_30_column_8","name":"block_row_30_column_8"})
-map.set("block_row_30_column_9", {"path":"textures/azalea_icons/icontextures/block_row_30_column_9","name":"block_row_30_column_9"})
-map.set("block_row_31_column_1", {"path":"textures/azalea_icons/icontextures/block_row_31_column_1","name":"block_row_31_column_1"})
-map.set("block_row_31_column_10", {"path":"textures/azalea_icons/icontextures/block_row_31_column_10","name":"block_row_31_column_10"})
-map.set("block_row_31_column_11", {"path":"textures/azalea_icons/icontextures/block_row_31_column_11","name":"block_row_31_column_11"})
-map.set("block_row_31_column_12", {"path":"textures/azalea_icons/icontextures/block_row_31_column_12","name":"block_row_31_column_12"})
-map.set("block_row_31_column_13", {"path":"textures/azalea_icons/icontextures/block_row_31_column_13","name":"block_row_31_column_13"})
-map.set("block_row_31_column_14", {"path":"textures/azalea_icons/icontextures/block_row_31_column_14","name":"block_row_31_column_14"})
-map.set("block_row_31_column_15", {"path":"textures/azalea_icons/icontextures/block_row_31_column_15","name":"block_row_31_column_15"})
-map.set("block_row_31_column_16", {"path":"textures/azalea_icons/icontextures/block_row_31_column_16","name":"block_row_31_column_16"})
-map.set("block_row_31_column_17", {"path":"textures/azalea_icons/icontextures/block_row_31_column_17","name":"block_row_31_column_17"})
-map.set("block_row_31_column_18", {"path":"textures/azalea_icons/icontextures/block_row_31_column_18","name":"block_row_31_column_18"})
-map.set("block_row_31_column_2", {"path":"textures/azalea_icons/icontextures/block_row_31_column_2","name":"block_row_31_column_2"})
-map.set("block_row_31_column_3", {"path":"textures/azalea_icons/icontextures/block_row_31_column_3","name":"block_row_31_column_3"})
-map.set("block_row_31_column_4", {"path":"textures/azalea_icons/icontextures/block_row_31_column_4","name":"block_row_31_column_4"})
-map.set("block_row_31_column_5", {"path":"textures/azalea_icons/icontextures/block_row_31_column_5","name":"block_row_31_column_5"})
-map.set("block_row_31_column_6", {"path":"textures/azalea_icons/icontextures/block_row_31_column_6","name":"block_row_31_column_6"})
-map.set("block_row_31_column_7", {"path":"textures/azalea_icons/icontextures/block_row_31_column_7","name":"block_row_31_column_7"})
-map.set("block_row_31_column_8", {"path":"textures/azalea_icons/icontextures/block_row_31_column_8","name":"block_row_31_column_8"})
-map.set("block_row_31_column_9", {"path":"textures/azalea_icons/icontextures/block_row_31_column_9","name":"block_row_31_column_9"})
-map.set("block_row_32_column_1", {"path":"textures/azalea_icons/icontextures/block_row_32_column_1","name":"block_row_32_column_1"})
-map.set("block_row_32_column_10", {"path":"textures/azalea_icons/icontextures/block_row_32_column_10","name":"block_row_32_column_10"})
-map.set("block_row_32_column_11", {"path":"textures/azalea_icons/icontextures/block_row_32_column_11","name":"block_row_32_column_11"})
-map.set("block_row_32_column_12", {"path":"textures/azalea_icons/icontextures/block_row_32_column_12","name":"block_row_32_column_12"})
-map.set("block_row_32_column_13", {"path":"textures/azalea_icons/icontextures/block_row_32_column_13","name":"block_row_32_column_13"})
-map.set("block_row_32_column_14", {"path":"textures/azalea_icons/icontextures/block_row_32_column_14","name":"block_row_32_column_14"})
-map.set("block_row_32_column_15", {"path":"textures/azalea_icons/icontextures/block_row_32_column_15","name":"block_row_32_column_15"})
-map.set("block_row_32_column_16", {"path":"textures/azalea_icons/icontextures/block_row_32_column_16","name":"block_row_32_column_16"})
-map.set("block_row_32_column_17", {"path":"textures/azalea_icons/icontextures/block_row_32_column_17","name":"block_row_32_column_17"})
-map.set("block_row_32_column_18", {"path":"textures/azalea_icons/icontextures/block_row_32_column_18","name":"block_row_32_column_18"})
-map.set("block_row_32_column_2", {"path":"textures/azalea_icons/icontextures/block_row_32_column_2","name":"block_row_32_column_2"})
-map.set("block_row_32_column_3", {"path":"textures/azalea_icons/icontextures/block_row_32_column_3","name":"block_row_32_column_3"})
-map.set("block_row_32_column_4", {"path":"textures/azalea_icons/icontextures/block_row_32_column_4","name":"block_row_32_column_4"})
-map.set("block_row_32_column_5", {"path":"textures/azalea_icons/icontextures/block_row_32_column_5","name":"block_row_32_column_5"})
-map.set("block_row_32_column_6", {"path":"textures/azalea_icons/icontextures/block_row_32_column_6","name":"block_row_32_column_6"})
-map.set("block_row_32_column_7", {"path":"textures/azalea_icons/icontextures/block_row_32_column_7","name":"block_row_32_column_7"})
-map.set("block_row_32_column_8", {"path":"textures/azalea_icons/icontextures/block_row_32_column_8","name":"block_row_32_column_8"})
-map.set("block_row_32_column_9", {"path":"textures/azalea_icons/icontextures/block_row_32_column_9","name":"block_row_32_column_9"})
-map.set("block_row_33_column_1", {"path":"textures/azalea_icons/icontextures/block_row_33_column_1","name":"block_row_33_column_1"})
-map.set("block_row_33_column_10", {"path":"textures/azalea_icons/icontextures/block_row_33_column_10","name":"block_row_33_column_10"})
-map.set("block_row_33_column_11", {"path":"textures/azalea_icons/icontextures/block_row_33_column_11","name":"block_row_33_column_11"})
-map.set("block_row_33_column_12", {"path":"textures/azalea_icons/icontextures/block_row_33_column_12","name":"block_row_33_column_12"})
-map.set("block_row_33_column_13", {"path":"textures/azalea_icons/icontextures/block_row_33_column_13","name":"block_row_33_column_13"})
-map.set("block_row_33_column_14", {"path":"textures/azalea_icons/icontextures/block_row_33_column_14","name":"block_row_33_column_14"})
-map.set("block_row_33_column_15", {"path":"textures/azalea_icons/icontextures/block_row_33_column_15","name":"block_row_33_column_15"})
-map.set("block_row_33_column_16", {"path":"textures/azalea_icons/icontextures/block_row_33_column_16","name":"block_row_33_column_16"})
-map.set("block_row_33_column_17", {"path":"textures/azalea_icons/icontextures/block_row_33_column_17","name":"block_row_33_column_17"})
-map.set("block_row_33_column_18", {"path":"textures/azalea_icons/icontextures/block_row_33_column_18","name":"block_row_33_column_18"})
-map.set("block_row_33_column_2", {"path":"textures/azalea_icons/icontextures/block_row_33_column_2","name":"block_row_33_column_2"})
-map.set("block_row_33_column_3", {"path":"textures/azalea_icons/icontextures/block_row_33_column_3","name":"block_row_33_column_3"})
-map.set("block_row_33_column_4", {"path":"textures/azalea_icons/icontextures/block_row_33_column_4","name":"block_row_33_column_4"})
-map.set("block_row_33_column_5", {"path":"textures/azalea_icons/icontextures/block_row_33_column_5","name":"block_row_33_column_5"})
-map.set("block_row_33_column_6", {"path":"textures/azalea_icons/icontextures/block_row_33_column_6","name":"block_row_33_column_6"})
-map.set("block_row_33_column_7", {"path":"textures/azalea_icons/icontextures/block_row_33_column_7","name":"block_row_33_column_7"})
-map.set("block_row_33_column_8", {"path":"textures/azalea_icons/icontextures/block_row_33_column_8","name":"block_row_33_column_8"})
-map.set("block_row_33_column_9", {"path":"textures/azalea_icons/icontextures/block_row_33_column_9","name":"block_row_33_column_9"})
-map.set("block_row_34_column_1", {"path":"textures/azalea_icons/icontextures/block_row_34_column_1","name":"block_row_34_column_1"})
-map.set("block_row_34_column_10", {"path":"textures/azalea_icons/icontextures/block_row_34_column_10","name":"block_row_34_column_10"})
-map.set("block_row_34_column_11", {"path":"textures/azalea_icons/icontextures/block_row_34_column_11","name":"block_row_34_column_11"})
-map.set("block_row_34_column_12", {"path":"textures/azalea_icons/icontextures/block_row_34_column_12","name":"block_row_34_column_12"})
-map.set("block_row_34_column_13", {"path":"textures/azalea_icons/icontextures/block_row_34_column_13","name":"block_row_34_column_13"})
-map.set("block_row_34_column_14", {"path":"textures/azalea_icons/icontextures/block_row_34_column_14","name":"block_row_34_column_14"})
-map.set("block_row_34_column_15", {"path":"textures/azalea_icons/icontextures/block_row_34_column_15","name":"block_row_34_column_15"})
-map.set("block_row_34_column_16", {"path":"textures/azalea_icons/icontextures/block_row_34_column_16","name":"block_row_34_column_16"})
-map.set("block_row_34_column_17", {"path":"textures/azalea_icons/icontextures/block_row_34_column_17","name":"block_row_34_column_17"})
-map.set("block_row_34_column_18", {"path":"textures/azalea_icons/icontextures/block_row_34_column_18","name":"block_row_34_column_18"})
-map.set("block_row_34_column_2", {"path":"textures/azalea_icons/icontextures/block_row_34_column_2","name":"block_row_34_column_2"})
-map.set("block_row_34_column_3", {"path":"textures/azalea_icons/icontextures/block_row_34_column_3","name":"block_row_34_column_3"})
-map.set("block_row_34_column_4", {"path":"textures/azalea_icons/icontextures/block_row_34_column_4","name":"block_row_34_column_4"})
-map.set("block_row_34_column_5", {"path":"textures/azalea_icons/icontextures/block_row_34_column_5","name":"block_row_34_column_5"})
-map.set("block_row_34_column_6", {"path":"textures/azalea_icons/icontextures/block_row_34_column_6","name":"block_row_34_column_6"})
-map.set("block_row_34_column_7", {"path":"textures/azalea_icons/icontextures/block_row_34_column_7","name":"block_row_34_column_7"})
-map.set("block_row_34_column_8", {"path":"textures/azalea_icons/icontextures/block_row_34_column_8","name":"block_row_34_column_8"})
-map.set("block_row_34_column_9", {"path":"textures/azalea_icons/icontextures/block_row_34_column_9","name":"block_row_34_column_9"})
-map.set("block_row_35_column_1", {"path":"textures/azalea_icons/icontextures/block_row_35_column_1","name":"block_row_35_column_1"})
-map.set("block_row_35_column_10", {"path":"textures/azalea_icons/icontextures/block_row_35_column_10","name":"block_row_35_column_10"})
-map.set("block_row_35_column_11", {"path":"textures/azalea_icons/icontextures/block_row_35_column_11","name":"block_row_35_column_11"})
-map.set("block_row_35_column_12", {"path":"textures/azalea_icons/icontextures/block_row_35_column_12","name":"block_row_35_column_12"})
-map.set("block_row_35_column_13", {"path":"textures/azalea_icons/icontextures/block_row_35_column_13","name":"block_row_35_column_13"})
-map.set("block_row_35_column_14", {"path":"textures/azalea_icons/icontextures/block_row_35_column_14","name":"block_row_35_column_14"})
-map.set("block_row_35_column_15", {"path":"textures/azalea_icons/icontextures/block_row_35_column_15","name":"block_row_35_column_15"})
-map.set("block_row_35_column_16", {"path":"textures/azalea_icons/icontextures/block_row_35_column_16","name":"block_row_35_column_16"})
-map.set("block_row_35_column_17", {"path":"textures/azalea_icons/icontextures/block_row_35_column_17","name":"block_row_35_column_17"})
-map.set("block_row_35_column_18", {"path":"textures/azalea_icons/icontextures/block_row_35_column_18","name":"block_row_35_column_18"})
-map.set("block_row_35_column_2", {"path":"textures/azalea_icons/icontextures/block_row_35_column_2","name":"block_row_35_column_2"})
-map.set("block_row_35_column_3", {"path":"textures/azalea_icons/icontextures/block_row_35_column_3","name":"block_row_35_column_3"})
-map.set("block_row_35_column_4", {"path":"textures/azalea_icons/icontextures/block_row_35_column_4","name":"block_row_35_column_4"})
-map.set("block_row_35_column_5", {"path":"textures/azalea_icons/icontextures/block_row_35_column_5","name":"block_row_35_column_5"})
-map.set("block_row_35_column_6", {"path":"textures/azalea_icons/icontextures/block_row_35_column_6","name":"block_row_35_column_6"})
-map.set("block_row_35_column_7", {"path":"textures/azalea_icons/icontextures/block_row_35_column_7","name":"block_row_35_column_7"})
-map.set("block_row_35_column_8", {"path":"textures/azalea_icons/icontextures/block_row_35_column_8","name":"block_row_35_column_8"})
-map.set("block_row_35_column_9", {"path":"textures/azalea_icons/icontextures/block_row_35_column_9","name":"block_row_35_column_9"})
-map.set("block_row_36_column_1", {"path":"textures/azalea_icons/icontextures/block_row_36_column_1","name":"block_row_36_column_1"})
-map.set("block_row_36_column_10", {"path":"textures/azalea_icons/icontextures/block_row_36_column_10","name":"block_row_36_column_10"})
-map.set("block_row_36_column_11", {"path":"textures/azalea_icons/icontextures/block_row_36_column_11","name":"block_row_36_column_11"})
-map.set("block_row_36_column_12", {"path":"textures/azalea_icons/icontextures/block_row_36_column_12","name":"block_row_36_column_12"})
-map.set("block_row_36_column_13", {"path":"textures/azalea_icons/icontextures/block_row_36_column_13","name":"block_row_36_column_13"})
-map.set("block_row_36_column_14", {"path":"textures/azalea_icons/icontextures/block_row_36_column_14","name":"block_row_36_column_14"})
-map.set("block_row_36_column_15", {"path":"textures/azalea_icons/icontextures/block_row_36_column_15","name":"block_row_36_column_15"})
-map.set("block_row_36_column_16", {"path":"textures/azalea_icons/icontextures/block_row_36_column_16","name":"block_row_36_column_16"})
-map.set("block_row_36_column_17", {"path":"textures/azalea_icons/icontextures/block_row_36_column_17","name":"block_row_36_column_17"})
-map.set("block_row_36_column_18", {"path":"textures/azalea_icons/icontextures/block_row_36_column_18","name":"block_row_36_column_18"})
-map.set("block_row_36_column_2", {"path":"textures/azalea_icons/icontextures/block_row_36_column_2","name":"block_row_36_column_2"})
-map.set("block_row_36_column_3", {"path":"textures/azalea_icons/icontextures/block_row_36_column_3","name":"block_row_36_column_3"})
-map.set("block_row_36_column_4", {"path":"textures/azalea_icons/icontextures/block_row_36_column_4","name":"block_row_36_column_4"})
-map.set("block_row_36_column_5", {"path":"textures/azalea_icons/icontextures/block_row_36_column_5","name":"block_row_36_column_5"})
-map.set("block_row_36_column_6", {"path":"textures/azalea_icons/icontextures/block_row_36_column_6","name":"block_row_36_column_6"})
-map.set("block_row_36_column_7", {"path":"textures/azalea_icons/icontextures/block_row_36_column_7","name":"block_row_36_column_7"})
-map.set("block_row_36_column_8", {"path":"textures/azalea_icons/icontextures/block_row_36_column_8","name":"block_row_36_column_8"})
-map.set("block_row_36_column_9", {"path":"textures/azalea_icons/icontextures/block_row_36_column_9","name":"block_row_36_column_9"})
-map.set("block_row_37_column_1", {"path":"textures/azalea_icons/icontextures/block_row_37_column_1","name":"block_row_37_column_1"})
-map.set("block_row_37_column_10", {"path":"textures/azalea_icons/icontextures/block_row_37_column_10","name":"block_row_37_column_10"})
-map.set("block_row_37_column_11", {"path":"textures/azalea_icons/icontextures/block_row_37_column_11","name":"block_row_37_column_11"})
-map.set("block_row_37_column_12", {"path":"textures/azalea_icons/icontextures/block_row_37_column_12","name":"block_row_37_column_12"})
-map.set("block_row_37_column_13", {"path":"textures/azalea_icons/icontextures/block_row_37_column_13","name":"block_row_37_column_13"})
-map.set("block_row_37_column_14", {"path":"textures/azalea_icons/icontextures/block_row_37_column_14","name":"block_row_37_column_14"})
-map.set("block_row_37_column_15", {"path":"textures/azalea_icons/icontextures/block_row_37_column_15","name":"block_row_37_column_15"})
-map.set("block_row_37_column_16", {"path":"textures/azalea_icons/icontextures/block_row_37_column_16","name":"block_row_37_column_16"})
-map.set("block_row_37_column_17", {"path":"textures/azalea_icons/icontextures/block_row_37_column_17","name":"block_row_37_column_17"})
-map.set("block_row_37_column_18", {"path":"textures/azalea_icons/icontextures/block_row_37_column_18","name":"block_row_37_column_18"})
-map.set("block_row_37_column_2", {"path":"textures/azalea_icons/icontextures/block_row_37_column_2","name":"block_row_37_column_2"})
-map.set("block_row_37_column_3", {"path":"textures/azalea_icons/icontextures/block_row_37_column_3","name":"block_row_37_column_3"})
-map.set("block_row_37_column_4", {"path":"textures/azalea_icons/icontextures/block_row_37_column_4","name":"block_row_37_column_4"})
-map.set("block_row_37_column_5", {"path":"textures/azalea_icons/icontextures/block_row_37_column_5","name":"block_row_37_column_5"})
-map.set("block_row_37_column_6", {"path":"textures/azalea_icons/icontextures/block_row_37_column_6","name":"block_row_37_column_6"})
-map.set("block_row_37_column_7", {"path":"textures/azalea_icons/icontextures/block_row_37_column_7","name":"block_row_37_column_7"})
-map.set("block_row_37_column_8", {"path":"textures/azalea_icons/icontextures/block_row_37_column_8","name":"block_row_37_column_8"})
-map.set("block_row_37_column_9", {"path":"textures/azalea_icons/icontextures/block_row_37_column_9","name":"block_row_37_column_9"})
-map.set("block_row_38_column_1", {"path":"textures/azalea_icons/icontextures/block_row_38_column_1","name":"block_row_38_column_1"})
-map.set("block_row_38_column_10", {"path":"textures/azalea_icons/icontextures/block_row_38_column_10","name":"block_row_38_column_10"})
-map.set("block_row_38_column_11", {"path":"textures/azalea_icons/icontextures/block_row_38_column_11","name":"block_row_38_column_11"})
-map.set("block_row_38_column_12", {"path":"textures/azalea_icons/icontextures/block_row_38_column_12","name":"block_row_38_column_12"})
-map.set("block_row_38_column_13", {"path":"textures/azalea_icons/icontextures/block_row_38_column_13","name":"block_row_38_column_13"})
-map.set("block_row_38_column_14", {"path":"textures/azalea_icons/icontextures/block_row_38_column_14","name":"block_row_38_column_14"})
-map.set("block_row_38_column_15", {"path":"textures/azalea_icons/icontextures/block_row_38_column_15","name":"block_row_38_column_15"})
-map.set("block_row_38_column_16", {"path":"textures/azalea_icons/icontextures/block_row_38_column_16","name":"block_row_38_column_16"})
-map.set("block_row_38_column_17", {"path":"textures/azalea_icons/icontextures/block_row_38_column_17","name":"block_row_38_column_17"})
-map.set("block_row_38_column_18", {"path":"textures/azalea_icons/icontextures/block_row_38_column_18","name":"block_row_38_column_18"})
-map.set("block_row_38_column_2", {"path":"textures/azalea_icons/icontextures/block_row_38_column_2","name":"block_row_38_column_2"})
-map.set("block_row_38_column_3", {"path":"textures/azalea_icons/icontextures/block_row_38_column_3","name":"block_row_38_column_3"})
-map.set("block_row_38_column_4", {"path":"textures/azalea_icons/icontextures/block_row_38_column_4","name":"block_row_38_column_4"})
-map.set("block_row_38_column_5", {"path":"textures/azalea_icons/icontextures/block_row_38_column_5","name":"block_row_38_column_5"})
-map.set("block_row_38_column_6", {"path":"textures/azalea_icons/icontextures/block_row_38_column_6","name":"block_row_38_column_6"})
-map.set("block_row_38_column_7", {"path":"textures/azalea_icons/icontextures/block_row_38_column_7","name":"block_row_38_column_7"})
-map.set("block_row_38_column_8", {"path":"textures/azalea_icons/icontextures/block_row_38_column_8","name":"block_row_38_column_8"})
-map.set("block_row_38_column_9", {"path":"textures/azalea_icons/icontextures/block_row_38_column_9","name":"block_row_38_column_9"})
-map.set("block_row_39_column_1", {"path":"textures/azalea_icons/icontextures/block_row_39_column_1","name":"block_row_39_column_1"})
-map.set("block_row_39_column_10", {"path":"textures/azalea_icons/icontextures/block_row_39_column_10","name":"block_row_39_column_10"})
-map.set("block_row_39_column_11", {"path":"textures/azalea_icons/icontextures/block_row_39_column_11","name":"block_row_39_column_11"})
-map.set("block_row_39_column_12", {"path":"textures/azalea_icons/icontextures/block_row_39_column_12","name":"block_row_39_column_12"})
-map.set("block_row_39_column_13", {"path":"textures/azalea_icons/icontextures/block_row_39_column_13","name":"block_row_39_column_13"})
-map.set("block_row_39_column_14", {"path":"textures/azalea_icons/icontextures/block_row_39_column_14","name":"block_row_39_column_14"})
-map.set("block_row_39_column_15", {"path":"textures/azalea_icons/icontextures/block_row_39_column_15","name":"block_row_39_column_15"})
-map.set("block_row_39_column_16", {"path":"textures/azalea_icons/icontextures/block_row_39_column_16","name":"block_row_39_column_16"})
-map.set("block_row_39_column_17", {"path":"textures/azalea_icons/icontextures/block_row_39_column_17","name":"block_row_39_column_17"})
-map.set("block_row_39_column_18", {"path":"textures/azalea_icons/icontextures/block_row_39_column_18","name":"block_row_39_column_18"})
-map.set("block_row_39_column_2", {"path":"textures/azalea_icons/icontextures/block_row_39_column_2","name":"block_row_39_column_2"})
-map.set("block_row_39_column_3", {"path":"textures/azalea_icons/icontextures/block_row_39_column_3","name":"block_row_39_column_3"})
-map.set("block_row_39_column_4", {"path":"textures/azalea_icons/icontextures/block_row_39_column_4","name":"block_row_39_column_4"})
-map.set("block_row_39_column_5", {"path":"textures/azalea_icons/icontextures/block_row_39_column_5","name":"block_row_39_column_5"})
-map.set("block_row_39_column_6", {"path":"textures/azalea_icons/icontextures/block_row_39_column_6","name":"block_row_39_column_6"})
-map.set("block_row_39_column_7", {"path":"textures/azalea_icons/icontextures/block_row_39_column_7","name":"block_row_39_column_7"})
-map.set("block_row_39_column_8", {"path":"textures/azalea_icons/icontextures/block_row_39_column_8","name":"block_row_39_column_8"})
-map.set("block_row_39_column_9", {"path":"textures/azalea_icons/icontextures/block_row_39_column_9","name":"block_row_39_column_9"})
-map.set("block_row_3_column_1", {"path":"textures/azalea_icons/icontextures/block_row_3_column_1","name":"block_row_3_column_1"})
-map.set("block_row_3_column_10", {"path":"textures/azalea_icons/icontextures/block_row_3_column_10","name":"block_row_3_column_10"})
-map.set("block_row_3_column_11", {"path":"textures/azalea_icons/icontextures/block_row_3_column_11","name":"block_row_3_column_11"})
-map.set("block_row_3_column_12", {"path":"textures/azalea_icons/icontextures/block_row_3_column_12","name":"block_row_3_column_12"})
-map.set("block_row_3_column_13", {"path":"textures/azalea_icons/icontextures/block_row_3_column_13","name":"block_row_3_column_13"})
-map.set("block_row_3_column_14", {"path":"textures/azalea_icons/icontextures/block_row_3_column_14","name":"block_row_3_column_14"})
-map.set("block_row_3_column_15", {"path":"textures/azalea_icons/icontextures/block_row_3_column_15","name":"block_row_3_column_15"})
-map.set("block_row_3_column_16", {"path":"textures/azalea_icons/icontextures/block_row_3_column_16","name":"block_row_3_column_16"})
-map.set("block_row_3_column_17", {"path":"textures/azalea_icons/icontextures/block_row_3_column_17","name":"block_row_3_column_17"})
-map.set("block_row_3_column_18", {"path":"textures/azalea_icons/icontextures/block_row_3_column_18","name":"block_row_3_column_18"})
-map.set("block_row_3_column_2", {"path":"textures/azalea_icons/icontextures/block_row_3_column_2","name":"block_row_3_column_2"})
-map.set("block_row_3_column_3", {"path":"textures/azalea_icons/icontextures/block_row_3_column_3","name":"block_row_3_column_3"})
-map.set("block_row_3_column_4", {"path":"textures/azalea_icons/icontextures/block_row_3_column_4","name":"block_row_3_column_4"})
-map.set("block_row_3_column_5", {"path":"textures/azalea_icons/icontextures/block_row_3_column_5","name":"block_row_3_column_5"})
-map.set("block_row_3_column_6", {"path":"textures/azalea_icons/icontextures/block_row_3_column_6","name":"block_row_3_column_6"})
-map.set("block_row_3_column_7", {"path":"textures/azalea_icons/icontextures/block_row_3_column_7","name":"block_row_3_column_7"})
-map.set("block_row_3_column_8", {"path":"textures/azalea_icons/icontextures/block_row_3_column_8","name":"block_row_3_column_8"})
-map.set("block_row_3_column_9", {"path":"textures/azalea_icons/icontextures/block_row_3_column_9","name":"block_row_3_column_9"})
-map.set("block_row_40_column_1", {"path":"textures/azalea_icons/icontextures/block_row_40_column_1","name":"block_row_40_column_1"})
-map.set("block_row_40_column_10", {"path":"textures/azalea_icons/icontextures/block_row_40_column_10","name":"block_row_40_column_10"})
-map.set("block_row_40_column_11", {"path":"textures/azalea_icons/icontextures/block_row_40_column_11","name":"block_row_40_column_11"})
-map.set("block_row_40_column_12", {"path":"textures/azalea_icons/icontextures/block_row_40_column_12","name":"block_row_40_column_12"})
-map.set("block_row_40_column_13", {"path":"textures/azalea_icons/icontextures/block_row_40_column_13","name":"block_row_40_column_13"})
-map.set("block_row_40_column_14", {"path":"textures/azalea_icons/icontextures/block_row_40_column_14","name":"block_row_40_column_14"})
-map.set("block_row_40_column_15", {"path":"textures/azalea_icons/icontextures/block_row_40_column_15","name":"block_row_40_column_15"})
-map.set("block_row_40_column_16", {"path":"textures/azalea_icons/icontextures/block_row_40_column_16","name":"block_row_40_column_16"})
-map.set("block_row_40_column_17", {"path":"textures/azalea_icons/icontextures/block_row_40_column_17","name":"block_row_40_column_17"})
-map.set("block_row_40_column_18", {"path":"textures/azalea_icons/icontextures/block_row_40_column_18","name":"block_row_40_column_18"})
-map.set("block_row_40_column_2", {"path":"textures/azalea_icons/icontextures/block_row_40_column_2","name":"block_row_40_column_2"})
-map.set("block_row_40_column_3", {"path":"textures/azalea_icons/icontextures/block_row_40_column_3","name":"block_row_40_column_3"})
-map.set("block_row_40_column_4", {"path":"textures/azalea_icons/icontextures/block_row_40_column_4","name":"block_row_40_column_4"})
-map.set("block_row_40_column_5", {"path":"textures/azalea_icons/icontextures/block_row_40_column_5","name":"block_row_40_column_5"})
-map.set("block_row_40_column_6", {"path":"textures/azalea_icons/icontextures/block_row_40_column_6","name":"block_row_40_column_6"})
-map.set("block_row_40_column_7", {"path":"textures/azalea_icons/icontextures/block_row_40_column_7","name":"block_row_40_column_7"})
-map.set("block_row_40_column_8", {"path":"textures/azalea_icons/icontextures/block_row_40_column_8","name":"block_row_40_column_8"})
-map.set("block_row_40_column_9", {"path":"textures/azalea_icons/icontextures/block_row_40_column_9","name":"block_row_40_column_9"})
-map.set("block_row_41_column_1", {"path":"textures/azalea_icons/icontextures/block_row_41_column_1","name":"block_row_41_column_1"})
-map.set("block_row_41_column_10", {"path":"textures/azalea_icons/icontextures/block_row_41_column_10","name":"block_row_41_column_10"})
-map.set("block_row_41_column_11", {"path":"textures/azalea_icons/icontextures/block_row_41_column_11","name":"block_row_41_column_11"})
-map.set("block_row_41_column_12", {"path":"textures/azalea_icons/icontextures/block_row_41_column_12","name":"block_row_41_column_12"})
-map.set("block_row_41_column_13", {"path":"textures/azalea_icons/icontextures/block_row_41_column_13","name":"block_row_41_column_13"})
-map.set("block_row_41_column_14", {"path":"textures/azalea_icons/icontextures/block_row_41_column_14","name":"block_row_41_column_14"})
-map.set("block_row_41_column_15", {"path":"textures/azalea_icons/icontextures/block_row_41_column_15","name":"block_row_41_column_15"})
-map.set("block_row_41_column_16", {"path":"textures/azalea_icons/icontextures/block_row_41_column_16","name":"block_row_41_column_16"})
-map.set("block_row_41_column_17", {"path":"textures/azalea_icons/icontextures/block_row_41_column_17","name":"block_row_41_column_17"})
-map.set("block_row_41_column_18", {"path":"textures/azalea_icons/icontextures/block_row_41_column_18","name":"block_row_41_column_18"})
-map.set("block_row_41_column_2", {"path":"textures/azalea_icons/icontextures/block_row_41_column_2","name":"block_row_41_column_2"})
-map.set("block_row_41_column_3", {"path":"textures/azalea_icons/icontextures/block_row_41_column_3","name":"block_row_41_column_3"})
-map.set("block_row_41_column_4", {"path":"textures/azalea_icons/icontextures/block_row_41_column_4","name":"block_row_41_column_4"})
-map.set("block_row_41_column_5", {"path":"textures/azalea_icons/icontextures/block_row_41_column_5","name":"block_row_41_column_5"})
-map.set("block_row_41_column_6", {"path":"textures/azalea_icons/icontextures/block_row_41_column_6","name":"block_row_41_column_6"})
-map.set("block_row_41_column_7", {"path":"textures/azalea_icons/icontextures/block_row_41_column_7","name":"block_row_41_column_7"})
-map.set("block_row_41_column_8", {"path":"textures/azalea_icons/icontextures/block_row_41_column_8","name":"block_row_41_column_8"})
-map.set("block_row_41_column_9", {"path":"textures/azalea_icons/icontextures/block_row_41_column_9","name":"block_row_41_column_9"})
-map.set("block_row_42_column_1", {"path":"textures/azalea_icons/icontextures/block_row_42_column_1","name":"block_row_42_column_1"})
-map.set("block_row_42_column_10", {"path":"textures/azalea_icons/icontextures/block_row_42_column_10","name":"block_row_42_column_10"})
-map.set("block_row_42_column_11", {"path":"textures/azalea_icons/icontextures/block_row_42_column_11","name":"block_row_42_column_11"})
-map.set("block_row_42_column_12", {"path":"textures/azalea_icons/icontextures/block_row_42_column_12","name":"block_row_42_column_12"})
-map.set("block_row_42_column_13", {"path":"textures/azalea_icons/icontextures/block_row_42_column_13","name":"block_row_42_column_13"})
-map.set("block_row_42_column_14", {"path":"textures/azalea_icons/icontextures/block_row_42_column_14","name":"block_row_42_column_14"})
-map.set("block_row_42_column_15", {"path":"textures/azalea_icons/icontextures/block_row_42_column_15","name":"block_row_42_column_15"})
-map.set("block_row_42_column_16", {"path":"textures/azalea_icons/icontextures/block_row_42_column_16","name":"block_row_42_column_16"})
-map.set("block_row_42_column_17", {"path":"textures/azalea_icons/icontextures/block_row_42_column_17","name":"block_row_42_column_17"})
-map.set("block_row_42_column_18", {"path":"textures/azalea_icons/icontextures/block_row_42_column_18","name":"block_row_42_column_18"})
-map.set("block_row_42_column_2", {"path":"textures/azalea_icons/icontextures/block_row_42_column_2","name":"block_row_42_column_2"})
-map.set("block_row_42_column_3", {"path":"textures/azalea_icons/icontextures/block_row_42_column_3","name":"block_row_42_column_3"})
-map.set("block_row_42_column_4", {"path":"textures/azalea_icons/icontextures/block_row_42_column_4","name":"block_row_42_column_4"})
-map.set("block_row_42_column_5", {"path":"textures/azalea_icons/icontextures/block_row_42_column_5","name":"block_row_42_column_5"})
-map.set("block_row_42_column_6", {"path":"textures/azalea_icons/icontextures/block_row_42_column_6","name":"block_row_42_column_6"})
-map.set("block_row_42_column_7", {"path":"textures/azalea_icons/icontextures/block_row_42_column_7","name":"block_row_42_column_7"})
-map.set("block_row_42_column_8", {"path":"textures/azalea_icons/icontextures/block_row_42_column_8","name":"block_row_42_column_8"})
-map.set("block_row_42_column_9", {"path":"textures/azalea_icons/icontextures/block_row_42_column_9","name":"block_row_42_column_9"})
-map.set("block_row_43_column_1", {"path":"textures/azalea_icons/icontextures/block_row_43_column_1","name":"block_row_43_column_1"})
-map.set("block_row_43_column_10", {"path":"textures/azalea_icons/icontextures/block_row_43_column_10","name":"block_row_43_column_10"})
-map.set("block_row_43_column_11", {"path":"textures/azalea_icons/icontextures/block_row_43_column_11","name":"block_row_43_column_11"})
-map.set("block_row_43_column_12", {"path":"textures/azalea_icons/icontextures/block_row_43_column_12","name":"block_row_43_column_12"})
-map.set("block_row_43_column_13", {"path":"textures/azalea_icons/icontextures/block_row_43_column_13","name":"block_row_43_column_13"})
-map.set("block_row_43_column_14", {"path":"textures/azalea_icons/icontextures/block_row_43_column_14","name":"block_row_43_column_14"})
-map.set("block_row_43_column_15", {"path":"textures/azalea_icons/icontextures/block_row_43_column_15","name":"block_row_43_column_15"})
-map.set("block_row_43_column_16", {"path":"textures/azalea_icons/icontextures/block_row_43_column_16","name":"block_row_43_column_16"})
-map.set("block_row_43_column_17", {"path":"textures/azalea_icons/icontextures/block_row_43_column_17","name":"block_row_43_column_17"})
-map.set("block_row_43_column_18", {"path":"textures/azalea_icons/icontextures/block_row_43_column_18","name":"block_row_43_column_18"})
-map.set("block_row_43_column_2", {"path":"textures/azalea_icons/icontextures/block_row_43_column_2","name":"block_row_43_column_2"})
-map.set("block_row_43_column_3", {"path":"textures/azalea_icons/icontextures/block_row_43_column_3","name":"block_row_43_column_3"})
-map.set("block_row_43_column_4", {"path":"textures/azalea_icons/icontextures/block_row_43_column_4","name":"block_row_43_column_4"})
-map.set("block_row_43_column_5", {"path":"textures/azalea_icons/icontextures/block_row_43_column_5","name":"block_row_43_column_5"})
-map.set("block_row_43_column_6", {"path":"textures/azalea_icons/icontextures/block_row_43_column_6","name":"block_row_43_column_6"})
-map.set("block_row_43_column_7", {"path":"textures/azalea_icons/icontextures/block_row_43_column_7","name":"block_row_43_column_7"})
-map.set("block_row_43_column_8", {"path":"textures/azalea_icons/icontextures/block_row_43_column_8","name":"block_row_43_column_8"})
-map.set("block_row_43_column_9", {"path":"textures/azalea_icons/icontextures/block_row_43_column_9","name":"block_row_43_column_9"})
-map.set("block_row_44_column_1", {"path":"textures/azalea_icons/icontextures/block_row_44_column_1","name":"block_row_44_column_1"})
-map.set("block_row_44_column_10", {"path":"textures/azalea_icons/icontextures/block_row_44_column_10","name":"block_row_44_column_10"})
-map.set("block_row_44_column_11", {"path":"textures/azalea_icons/icontextures/block_row_44_column_11","name":"block_row_44_column_11"})
-map.set("block_row_44_column_12", {"path":"textures/azalea_icons/icontextures/block_row_44_column_12","name":"block_row_44_column_12"})
-map.set("block_row_44_column_13", {"path":"textures/azalea_icons/icontextures/block_row_44_column_13","name":"block_row_44_column_13"})
-map.set("block_row_44_column_14", {"path":"textures/azalea_icons/icontextures/block_row_44_column_14","name":"block_row_44_column_14"})
-map.set("block_row_44_column_15", {"path":"textures/azalea_icons/icontextures/block_row_44_column_15","name":"block_row_44_column_15"})
-map.set("block_row_44_column_16", {"path":"textures/azalea_icons/icontextures/block_row_44_column_16","name":"block_row_44_column_16"})
-map.set("block_row_44_column_17", {"path":"textures/azalea_icons/icontextures/block_row_44_column_17","name":"block_row_44_column_17"})
-map.set("block_row_44_column_18", {"path":"textures/azalea_icons/icontextures/block_row_44_column_18","name":"block_row_44_column_18"})
-map.set("block_row_44_column_2", {"path":"textures/azalea_icons/icontextures/block_row_44_column_2","name":"block_row_44_column_2"})
-map.set("block_row_44_column_3", {"path":"textures/azalea_icons/icontextures/block_row_44_column_3","name":"block_row_44_column_3"})
-map.set("block_row_44_column_4", {"path":"textures/azalea_icons/icontextures/block_row_44_column_4","name":"block_row_44_column_4"})
-map.set("block_row_44_column_5", {"path":"textures/azalea_icons/icontextures/block_row_44_column_5","name":"block_row_44_column_5"})
-map.set("block_row_44_column_6", {"path":"textures/azalea_icons/icontextures/block_row_44_column_6","name":"block_row_44_column_6"})
-map.set("block_row_44_column_7", {"path":"textures/azalea_icons/icontextures/block_row_44_column_7","name":"block_row_44_column_7"})
-map.set("block_row_44_column_8", {"path":"textures/azalea_icons/icontextures/block_row_44_column_8","name":"block_row_44_column_8"})
-map.set("block_row_44_column_9", {"path":"textures/azalea_icons/icontextures/block_row_44_column_9","name":"block_row_44_column_9"})
-map.set("block_row_45_column_1", {"path":"textures/azalea_icons/icontextures/block_row_45_column_1","name":"block_row_45_column_1"})
-map.set("block_row_45_column_10", {"path":"textures/azalea_icons/icontextures/block_row_45_column_10","name":"block_row_45_column_10"})
-map.set("block_row_45_column_11", {"path":"textures/azalea_icons/icontextures/block_row_45_column_11","name":"block_row_45_column_11"})
-map.set("block_row_45_column_12", {"path":"textures/azalea_icons/icontextures/block_row_45_column_12","name":"block_row_45_column_12"})
-map.set("block_row_45_column_13", {"path":"textures/azalea_icons/icontextures/block_row_45_column_13","name":"block_row_45_column_13"})
-map.set("block_row_45_column_14", {"path":"textures/azalea_icons/icontextures/block_row_45_column_14","name":"block_row_45_column_14"})
-map.set("block_row_45_column_15", {"path":"textures/azalea_icons/icontextures/block_row_45_column_15","name":"block_row_45_column_15"})
-map.set("block_row_45_column_16", {"path":"textures/azalea_icons/icontextures/block_row_45_column_16","name":"block_row_45_column_16"})
-map.set("block_row_45_column_17", {"path":"textures/azalea_icons/icontextures/block_row_45_column_17","name":"block_row_45_column_17"})
-map.set("block_row_45_column_18", {"path":"textures/azalea_icons/icontextures/block_row_45_column_18","name":"block_row_45_column_18"})
-map.set("block_row_45_column_2", {"path":"textures/azalea_icons/icontextures/block_row_45_column_2","name":"block_row_45_column_2"})
-map.set("block_row_45_column_3", {"path":"textures/azalea_icons/icontextures/block_row_45_column_3","name":"block_row_45_column_3"})
-map.set("block_row_45_column_4", {"path":"textures/azalea_icons/icontextures/block_row_45_column_4","name":"block_row_45_column_4"})
-map.set("block_row_45_column_5", {"path":"textures/azalea_icons/icontextures/block_row_45_column_5","name":"block_row_45_column_5"})
-map.set("block_row_45_column_6", {"path":"textures/azalea_icons/icontextures/block_row_45_column_6","name":"block_row_45_column_6"})
-map.set("block_row_45_column_7", {"path":"textures/azalea_icons/icontextures/block_row_45_column_7","name":"block_row_45_column_7"})
-map.set("block_row_45_column_8", {"path":"textures/azalea_icons/icontextures/block_row_45_column_8","name":"block_row_45_column_8"})
-map.set("block_row_45_column_9", {"path":"textures/azalea_icons/icontextures/block_row_45_column_9","name":"block_row_45_column_9"})
-map.set("block_row_46_column_1", {"path":"textures/azalea_icons/icontextures/block_row_46_column_1","name":"block_row_46_column_1"})
-map.set("block_row_46_column_10", {"path":"textures/azalea_icons/icontextures/block_row_46_column_10","name":"block_row_46_column_10"})
-map.set("block_row_46_column_11", {"path":"textures/azalea_icons/icontextures/block_row_46_column_11","name":"block_row_46_column_11"})
-map.set("block_row_46_column_12", {"path":"textures/azalea_icons/icontextures/block_row_46_column_12","name":"block_row_46_column_12"})
-map.set("block_row_46_column_13", {"path":"textures/azalea_icons/icontextures/block_row_46_column_13","name":"block_row_46_column_13"})
-map.set("block_row_46_column_14", {"path":"textures/azalea_icons/icontextures/block_row_46_column_14","name":"block_row_46_column_14"})
-map.set("block_row_46_column_15", {"path":"textures/azalea_icons/icontextures/block_row_46_column_15","name":"block_row_46_column_15"})
-map.set("block_row_46_column_16", {"path":"textures/azalea_icons/icontextures/block_row_46_column_16","name":"block_row_46_column_16"})
-map.set("block_row_46_column_17", {"path":"textures/azalea_icons/icontextures/block_row_46_column_17","name":"block_row_46_column_17"})
-map.set("block_row_46_column_18", {"path":"textures/azalea_icons/icontextures/block_row_46_column_18","name":"block_row_46_column_18"})
-map.set("block_row_46_column_2", {"path":"textures/azalea_icons/icontextures/block_row_46_column_2","name":"block_row_46_column_2"})
-map.set("block_row_46_column_3", {"path":"textures/azalea_icons/icontextures/block_row_46_column_3","name":"block_row_46_column_3"})
-map.set("block_row_46_column_4", {"path":"textures/azalea_icons/icontextures/block_row_46_column_4","name":"block_row_46_column_4"})
-map.set("block_row_46_column_5", {"path":"textures/azalea_icons/icontextures/block_row_46_column_5","name":"block_row_46_column_5"})
-map.set("block_row_46_column_6", {"path":"textures/azalea_icons/icontextures/block_row_46_column_6","name":"block_row_46_column_6"})
-map.set("block_row_46_column_7", {"path":"textures/azalea_icons/icontextures/block_row_46_column_7","name":"block_row_46_column_7"})
-map.set("block_row_46_column_8", {"path":"textures/azalea_icons/icontextures/block_row_46_column_8","name":"block_row_46_column_8"})
-map.set("block_row_46_column_9", {"path":"textures/azalea_icons/icontextures/block_row_46_column_9","name":"block_row_46_column_9"})
-map.set("block_row_47_column_1", {"path":"textures/azalea_icons/icontextures/block_row_47_column_1","name":"block_row_47_column_1"})
-map.set("block_row_47_column_10", {"path":"textures/azalea_icons/icontextures/block_row_47_column_10","name":"block_row_47_column_10"})
-map.set("block_row_47_column_11", {"path":"textures/azalea_icons/icontextures/block_row_47_column_11","name":"block_row_47_column_11"})
-map.set("block_row_47_column_12", {"path":"textures/azalea_icons/icontextures/block_row_47_column_12","name":"block_row_47_column_12"})
-map.set("block_row_47_column_13", {"path":"textures/azalea_icons/icontextures/block_row_47_column_13","name":"block_row_47_column_13"})
-map.set("block_row_47_column_14", {"path":"textures/azalea_icons/icontextures/block_row_47_column_14","name":"block_row_47_column_14"})
-map.set("block_row_47_column_15", {"path":"textures/azalea_icons/icontextures/block_row_47_column_15","name":"block_row_47_column_15"})
-map.set("block_row_47_column_16", {"path":"textures/azalea_icons/icontextures/block_row_47_column_16","name":"block_row_47_column_16"})
-map.set("block_row_47_column_17", {"path":"textures/azalea_icons/icontextures/block_row_47_column_17","name":"block_row_47_column_17"})
-map.set("block_row_47_column_18", {"path":"textures/azalea_icons/icontextures/block_row_47_column_18","name":"block_row_47_column_18"})
-map.set("block_row_47_column_2", {"path":"textures/azalea_icons/icontextures/block_row_47_column_2","name":"block_row_47_column_2"})
-map.set("block_row_47_column_3", {"path":"textures/azalea_icons/icontextures/block_row_47_column_3","name":"block_row_47_column_3"})
-map.set("block_row_47_column_4", {"path":"textures/azalea_icons/icontextures/block_row_47_column_4","name":"block_row_47_column_4"})
-map.set("block_row_47_column_5", {"path":"textures/azalea_icons/icontextures/block_row_47_column_5","name":"block_row_47_column_5"})
-map.set("block_row_47_column_6", {"path":"textures/azalea_icons/icontextures/block_row_47_column_6","name":"block_row_47_column_6"})
-map.set("block_row_47_column_7", {"path":"textures/azalea_icons/icontextures/block_row_47_column_7","name":"block_row_47_column_7"})
-map.set("block_row_47_column_8", {"path":"textures/azalea_icons/icontextures/block_row_47_column_8","name":"block_row_47_column_8"})
-map.set("block_row_47_column_9", {"path":"textures/azalea_icons/icontextures/block_row_47_column_9","name":"block_row_47_column_9"})
-map.set("block_row_48_column_1", {"path":"textures/azalea_icons/icontextures/block_row_48_column_1","name":"block_row_48_column_1"})
-map.set("block_row_48_column_10", {"path":"textures/azalea_icons/icontextures/block_row_48_column_10","name":"block_row_48_column_10"})
-map.set("block_row_48_column_11", {"path":"textures/azalea_icons/icontextures/block_row_48_column_11","name":"block_row_48_column_11"})
-map.set("block_row_48_column_12", {"path":"textures/azalea_icons/icontextures/block_row_48_column_12","name":"block_row_48_column_12"})
-map.set("block_row_48_column_13", {"path":"textures/azalea_icons/icontextures/block_row_48_column_13","name":"block_row_48_column_13"})
-map.set("block_row_48_column_14", {"path":"textures/azalea_icons/icontextures/block_row_48_column_14","name":"block_row_48_column_14"})
-map.set("block_row_48_column_15", {"path":"textures/azalea_icons/icontextures/block_row_48_column_15","name":"block_row_48_column_15"})
-map.set("block_row_48_column_16", {"path":"textures/azalea_icons/icontextures/block_row_48_column_16","name":"block_row_48_column_16"})
-map.set("block_row_48_column_17", {"path":"textures/azalea_icons/icontextures/block_row_48_column_17","name":"block_row_48_column_17"})
-map.set("block_row_48_column_18", {"path":"textures/azalea_icons/icontextures/block_row_48_column_18","name":"block_row_48_column_18"})
-map.set("block_row_48_column_2", {"path":"textures/azalea_icons/icontextures/block_row_48_column_2","name":"block_row_48_column_2"})
-map.set("block_row_48_column_3", {"path":"textures/azalea_icons/icontextures/block_row_48_column_3","name":"block_row_48_column_3"})
-map.set("block_row_48_column_4", {"path":"textures/azalea_icons/icontextures/block_row_48_column_4","name":"block_row_48_column_4"})
-map.set("block_row_48_column_5", {"path":"textures/azalea_icons/icontextures/block_row_48_column_5","name":"block_row_48_column_5"})
-map.set("block_row_48_column_6", {"path":"textures/azalea_icons/icontextures/block_row_48_column_6","name":"block_row_48_column_6"})
-map.set("block_row_48_column_7", {"path":"textures/azalea_icons/icontextures/block_row_48_column_7","name":"block_row_48_column_7"})
-map.set("block_row_48_column_8", {"path":"textures/azalea_icons/icontextures/block_row_48_column_8","name":"block_row_48_column_8"})
-map.set("block_row_48_column_9", {"path":"textures/azalea_icons/icontextures/block_row_48_column_9","name":"block_row_48_column_9"})
-map.set("block_row_49_column_1", {"path":"textures/azalea_icons/icontextures/block_row_49_column_1","name":"block_row_49_column_1"})
-map.set("block_row_49_column_10", {"path":"textures/azalea_icons/icontextures/block_row_49_column_10","name":"block_row_49_column_10"})
-map.set("block_row_49_column_11", {"path":"textures/azalea_icons/icontextures/block_row_49_column_11","name":"block_row_49_column_11"})
-map.set("block_row_49_column_12", {"path":"textures/azalea_icons/icontextures/block_row_49_column_12","name":"block_row_49_column_12"})
-map.set("block_row_49_column_13", {"path":"textures/azalea_icons/icontextures/block_row_49_column_13","name":"block_row_49_column_13"})
-map.set("block_row_49_column_14", {"path":"textures/azalea_icons/icontextures/block_row_49_column_14","name":"block_row_49_column_14"})
-map.set("block_row_49_column_15", {"path":"textures/azalea_icons/icontextures/block_row_49_column_15","name":"block_row_49_column_15"})
-map.set("block_row_49_column_16", {"path":"textures/azalea_icons/icontextures/block_row_49_column_16","name":"block_row_49_column_16"})
-map.set("block_row_49_column_17", {"path":"textures/azalea_icons/icontextures/block_row_49_column_17","name":"block_row_49_column_17"})
-map.set("block_row_49_column_18", {"path":"textures/azalea_icons/icontextures/block_row_49_column_18","name":"block_row_49_column_18"})
-map.set("block_row_49_column_2", {"path":"textures/azalea_icons/icontextures/block_row_49_column_2","name":"block_row_49_column_2"})
-map.set("block_row_49_column_3", {"path":"textures/azalea_icons/icontextures/block_row_49_column_3","name":"block_row_49_column_3"})
-map.set("block_row_49_column_4", {"path":"textures/azalea_icons/icontextures/block_row_49_column_4","name":"block_row_49_column_4"})
-map.set("block_row_49_column_5", {"path":"textures/azalea_icons/icontextures/block_row_49_column_5","name":"block_row_49_column_5"})
-map.set("block_row_49_column_6", {"path":"textures/azalea_icons/icontextures/block_row_49_column_6","name":"block_row_49_column_6"})
-map.set("block_row_49_column_7", {"path":"textures/azalea_icons/icontextures/block_row_49_column_7","name":"block_row_49_column_7"})
-map.set("block_row_49_column_8", {"path":"textures/azalea_icons/icontextures/block_row_49_column_8","name":"block_row_49_column_8"})
-map.set("block_row_49_column_9", {"path":"textures/azalea_icons/icontextures/block_row_49_column_9","name":"block_row_49_column_9"})
-map.set("block_row_4_column_1", {"path":"textures/azalea_icons/icontextures/block_row_4_column_1","name":"block_row_4_column_1"})
-map.set("block_row_4_column_10", {"path":"textures/azalea_icons/icontextures/block_row_4_column_10","name":"block_row_4_column_10"})
-map.set("block_row_4_column_11", {"path":"textures/azalea_icons/icontextures/block_row_4_column_11","name":"block_row_4_column_11"})
-map.set("block_row_4_column_12", {"path":"textures/azalea_icons/icontextures/block_row_4_column_12","name":"block_row_4_column_12"})
-map.set("block_row_4_column_13", {"path":"textures/azalea_icons/icontextures/block_row_4_column_13","name":"block_row_4_column_13"})
-map.set("block_row_4_column_14", {"path":"textures/azalea_icons/icontextures/block_row_4_column_14","name":"block_row_4_column_14"})
-map.set("block_row_4_column_15", {"path":"textures/azalea_icons/icontextures/block_row_4_column_15","name":"block_row_4_column_15"})
-map.set("block_row_4_column_16", {"path":"textures/azalea_icons/icontextures/block_row_4_column_16","name":"block_row_4_column_16"})
-map.set("block_row_4_column_17", {"path":"textures/azalea_icons/icontextures/block_row_4_column_17","name":"block_row_4_column_17"})
-map.set("block_row_4_column_18", {"path":"textures/azalea_icons/icontextures/block_row_4_column_18","name":"block_row_4_column_18"})
-map.set("block_row_4_column_2", {"path":"textures/azalea_icons/icontextures/block_row_4_column_2","name":"block_row_4_column_2"})
-map.set("block_row_4_column_3", {"path":"textures/azalea_icons/icontextures/block_row_4_column_3","name":"block_row_4_column_3"})
-map.set("block_row_4_column_4", {"path":"textures/azalea_icons/icontextures/block_row_4_column_4","name":"block_row_4_column_4"})
-map.set("block_row_4_column_5", {"path":"textures/azalea_icons/icontextures/block_row_4_column_5","name":"block_row_4_column_5"})
-map.set("block_row_4_column_6", {"path":"textures/azalea_icons/icontextures/block_row_4_column_6","name":"block_row_4_column_6"})
-map.set("block_row_4_column_7", {"path":"textures/azalea_icons/icontextures/block_row_4_column_7","name":"block_row_4_column_7"})
-map.set("block_row_4_column_8", {"path":"textures/azalea_icons/icontextures/block_row_4_column_8","name":"block_row_4_column_8"})
-map.set("block_row_4_column_9", {"path":"textures/azalea_icons/icontextures/block_row_4_column_9","name":"block_row_4_column_9"})
-map.set("block_row_50_column_1", {"path":"textures/azalea_icons/icontextures/block_row_50_column_1","name":"block_row_50_column_1"})
-map.set("block_row_50_column_10", {"path":"textures/azalea_icons/icontextures/block_row_50_column_10","name":"block_row_50_column_10"})
-map.set("block_row_50_column_11", {"path":"textures/azalea_icons/icontextures/block_row_50_column_11","name":"block_row_50_column_11"})
-map.set("block_row_50_column_12", {"path":"textures/azalea_icons/icontextures/block_row_50_column_12","name":"block_row_50_column_12"})
-map.set("block_row_50_column_13", {"path":"textures/azalea_icons/icontextures/block_row_50_column_13","name":"block_row_50_column_13"})
-map.set("block_row_50_column_14", {"path":"textures/azalea_icons/icontextures/block_row_50_column_14","name":"block_row_50_column_14"})
-map.set("block_row_50_column_15", {"path":"textures/azalea_icons/icontextures/block_row_50_column_15","name":"block_row_50_column_15"})
-map.set("block_row_50_column_16", {"path":"textures/azalea_icons/icontextures/block_row_50_column_16","name":"block_row_50_column_16"})
-map.set("block_row_50_column_17", {"path":"textures/azalea_icons/icontextures/block_row_50_column_17","name":"block_row_50_column_17"})
-map.set("block_row_50_column_18", {"path":"textures/azalea_icons/icontextures/block_row_50_column_18","name":"block_row_50_column_18"})
-map.set("block_row_50_column_2", {"path":"textures/azalea_icons/icontextures/block_row_50_column_2","name":"block_row_50_column_2"})
-map.set("block_row_50_column_3", {"path":"textures/azalea_icons/icontextures/block_row_50_column_3","name":"block_row_50_column_3"})
-map.set("block_row_50_column_4", {"path":"textures/azalea_icons/icontextures/block_row_50_column_4","name":"block_row_50_column_4"})
-map.set("block_row_50_column_5", {"path":"textures/azalea_icons/icontextures/block_row_50_column_5","name":"block_row_50_column_5"})
-map.set("block_row_50_column_6", {"path":"textures/azalea_icons/icontextures/block_row_50_column_6","name":"block_row_50_column_6"})
-map.set("block_row_50_column_7", {"path":"textures/azalea_icons/icontextures/block_row_50_column_7","name":"block_row_50_column_7"})
-map.set("block_row_50_column_8", {"path":"textures/azalea_icons/icontextures/block_row_50_column_8","name":"block_row_50_column_8"})
-map.set("block_row_50_column_9", {"path":"textures/azalea_icons/icontextures/block_row_50_column_9","name":"block_row_50_column_9"})
-map.set("block_row_51_column_1", {"path":"textures/azalea_icons/icontextures/block_row_51_column_1","name":"block_row_51_column_1"})
-map.set("block_row_51_column_10", {"path":"textures/azalea_icons/icontextures/block_row_51_column_10","name":"block_row_51_column_10"})
-map.set("block_row_51_column_11", {"path":"textures/azalea_icons/icontextures/block_row_51_column_11","name":"block_row_51_column_11"})
-map.set("block_row_51_column_12", {"path":"textures/azalea_icons/icontextures/block_row_51_column_12","name":"block_row_51_column_12"})
-map.set("block_row_51_column_13", {"path":"textures/azalea_icons/icontextures/block_row_51_column_13","name":"block_row_51_column_13"})
-map.set("block_row_51_column_14", {"path":"textures/azalea_icons/icontextures/block_row_51_column_14","name":"block_row_51_column_14"})
-map.set("block_row_51_column_15", {"path":"textures/azalea_icons/icontextures/block_row_51_column_15","name":"block_row_51_column_15"})
-map.set("block_row_51_column_16", {"path":"textures/azalea_icons/icontextures/block_row_51_column_16","name":"block_row_51_column_16"})
-map.set("block_row_51_column_17", {"path":"textures/azalea_icons/icontextures/block_row_51_column_17","name":"block_row_51_column_17"})
-map.set("block_row_51_column_18", {"path":"textures/azalea_icons/icontextures/block_row_51_column_18","name":"block_row_51_column_18"})
-map.set("block_row_51_column_2", {"path":"textures/azalea_icons/icontextures/block_row_51_column_2","name":"block_row_51_column_2"})
-map.set("block_row_51_column_3", {"path":"textures/azalea_icons/icontextures/block_row_51_column_3","name":"block_row_51_column_3"})
-map.set("block_row_51_column_4", {"path":"textures/azalea_icons/icontextures/block_row_51_column_4","name":"block_row_51_column_4"})
-map.set("block_row_51_column_5", {"path":"textures/azalea_icons/icontextures/block_row_51_column_5","name":"block_row_51_column_5"})
-map.set("block_row_51_column_6", {"path":"textures/azalea_icons/icontextures/block_row_51_column_6","name":"block_row_51_column_6"})
-map.set("block_row_51_column_7", {"path":"textures/azalea_icons/icontextures/block_row_51_column_7","name":"block_row_51_column_7"})
-map.set("block_row_51_column_8", {"path":"textures/azalea_icons/icontextures/block_row_51_column_8","name":"block_row_51_column_8"})
-map.set("block_row_51_column_9", {"path":"textures/azalea_icons/icontextures/block_row_51_column_9","name":"block_row_51_column_9"})
-map.set("block_row_52_column_1", {"path":"textures/azalea_icons/icontextures/block_row_52_column_1","name":"block_row_52_column_1"})
-map.set("block_row_52_column_10", {"path":"textures/azalea_icons/icontextures/block_row_52_column_10","name":"block_row_52_column_10"})
-map.set("block_row_52_column_11", {"path":"textures/azalea_icons/icontextures/block_row_52_column_11","name":"block_row_52_column_11"})
-map.set("block_row_52_column_12", {"path":"textures/azalea_icons/icontextures/block_row_52_column_12","name":"block_row_52_column_12"})
-map.set("block_row_52_column_13", {"path":"textures/azalea_icons/icontextures/block_row_52_column_13","name":"block_row_52_column_13"})
-map.set("block_row_52_column_14", {"path":"textures/azalea_icons/icontextures/block_row_52_column_14","name":"block_row_52_column_14"})
-map.set("block_row_52_column_15", {"path":"textures/azalea_icons/icontextures/block_row_52_column_15","name":"block_row_52_column_15"})
-map.set("block_row_52_column_16", {"path":"textures/azalea_icons/icontextures/block_row_52_column_16","name":"block_row_52_column_16"})
-map.set("block_row_52_column_17", {"path":"textures/azalea_icons/icontextures/block_row_52_column_17","name":"block_row_52_column_17"})
-map.set("block_row_52_column_18", {"path":"textures/azalea_icons/icontextures/block_row_52_column_18","name":"block_row_52_column_18"})
-map.set("block_row_52_column_2", {"path":"textures/azalea_icons/icontextures/block_row_52_column_2","name":"block_row_52_column_2"})
-map.set("block_row_52_column_3", {"path":"textures/azalea_icons/icontextures/block_row_52_column_3","name":"block_row_52_column_3"})
-map.set("block_row_52_column_4", {"path":"textures/azalea_icons/icontextures/block_row_52_column_4","name":"block_row_52_column_4"})
-map.set("block_row_52_column_5", {"path":"textures/azalea_icons/icontextures/block_row_52_column_5","name":"block_row_52_column_5"})
-map.set("block_row_52_column_6", {"path":"textures/azalea_icons/icontextures/block_row_52_column_6","name":"block_row_52_column_6"})
-map.set("block_row_52_column_7", {"path":"textures/azalea_icons/icontextures/block_row_52_column_7","name":"block_row_52_column_7"})
-map.set("block_row_52_column_8", {"path":"textures/azalea_icons/icontextures/block_row_52_column_8","name":"block_row_52_column_8"})
-map.set("block_row_52_column_9", {"path":"textures/azalea_icons/icontextures/block_row_52_column_9","name":"block_row_52_column_9"})
-map.set("block_row_53_column_1", {"path":"textures/azalea_icons/icontextures/block_row_53_column_1","name":"block_row_53_column_1"})
-map.set("block_row_53_column_10", {"path":"textures/azalea_icons/icontextures/block_row_53_column_10","name":"block_row_53_column_10"})
-map.set("block_row_53_column_11", {"path":"textures/azalea_icons/icontextures/block_row_53_column_11","name":"block_row_53_column_11"})
-map.set("block_row_53_column_12", {"path":"textures/azalea_icons/icontextures/block_row_53_column_12","name":"block_row_53_column_12"})
-map.set("block_row_53_column_13", {"path":"textures/azalea_icons/icontextures/block_row_53_column_13","name":"block_row_53_column_13"})
-map.set("block_row_53_column_14", {"path":"textures/azalea_icons/icontextures/block_row_53_column_14","name":"block_row_53_column_14"})
-map.set("block_row_53_column_15", {"path":"textures/azalea_icons/icontextures/block_row_53_column_15","name":"block_row_53_column_15"})
-map.set("block_row_53_column_16", {"path":"textures/azalea_icons/icontextures/block_row_53_column_16","name":"block_row_53_column_16"})
-map.set("block_row_53_column_17", {"path":"textures/azalea_icons/icontextures/block_row_53_column_17","name":"block_row_53_column_17"})
-map.set("block_row_53_column_18", {"path":"textures/azalea_icons/icontextures/block_row_53_column_18","name":"block_row_53_column_18"})
-map.set("block_row_53_column_2", {"path":"textures/azalea_icons/icontextures/block_row_53_column_2","name":"block_row_53_column_2"})
-map.set("block_row_53_column_3", {"path":"textures/azalea_icons/icontextures/block_row_53_column_3","name":"block_row_53_column_3"})
-map.set("block_row_53_column_4", {"path":"textures/azalea_icons/icontextures/block_row_53_column_4","name":"block_row_53_column_4"})
-map.set("block_row_53_column_5", {"path":"textures/azalea_icons/icontextures/block_row_53_column_5","name":"block_row_53_column_5"})
-map.set("block_row_53_column_6", {"path":"textures/azalea_icons/icontextures/block_row_53_column_6","name":"block_row_53_column_6"})
-map.set("block_row_53_column_7", {"path":"textures/azalea_icons/icontextures/block_row_53_column_7","name":"block_row_53_column_7"})
-map.set("block_row_53_column_8", {"path":"textures/azalea_icons/icontextures/block_row_53_column_8","name":"block_row_53_column_8"})
-map.set("block_row_53_column_9", {"path":"textures/azalea_icons/icontextures/block_row_53_column_9","name":"block_row_53_column_9"})
-map.set("block_row_54_column_1", {"path":"textures/azalea_icons/icontextures/block_row_54_column_1","name":"block_row_54_column_1"})
-map.set("block_row_54_column_10", {"path":"textures/azalea_icons/icontextures/block_row_54_column_10","name":"block_row_54_column_10"})
-map.set("block_row_54_column_11", {"path":"textures/azalea_icons/icontextures/block_row_54_column_11","name":"block_row_54_column_11"})
-map.set("block_row_54_column_12", {"path":"textures/azalea_icons/icontextures/block_row_54_column_12","name":"block_row_54_column_12"})
-map.set("block_row_54_column_13", {"path":"textures/azalea_icons/icontextures/block_row_54_column_13","name":"block_row_54_column_13"})
-map.set("block_row_54_column_14", {"path":"textures/azalea_icons/icontextures/block_row_54_column_14","name":"block_row_54_column_14"})
-map.set("block_row_54_column_15", {"path":"textures/azalea_icons/icontextures/block_row_54_column_15","name":"block_row_54_column_15"})
-map.set("block_row_54_column_16", {"path":"textures/azalea_icons/icontextures/block_row_54_column_16","name":"block_row_54_column_16"})
-map.set("block_row_54_column_17", {"path":"textures/azalea_icons/icontextures/block_row_54_column_17","name":"block_row_54_column_17"})
-map.set("block_row_54_column_18", {"path":"textures/azalea_icons/icontextures/block_row_54_column_18","name":"block_row_54_column_18"})
-map.set("block_row_54_column_2", {"path":"textures/azalea_icons/icontextures/block_row_54_column_2","name":"block_row_54_column_2"})
-map.set("block_row_54_column_3", {"path":"textures/azalea_icons/icontextures/block_row_54_column_3","name":"block_row_54_column_3"})
-map.set("block_row_54_column_4", {"path":"textures/azalea_icons/icontextures/block_row_54_column_4","name":"block_row_54_column_4"})
-map.set("block_row_54_column_5", {"path":"textures/azalea_icons/icontextures/block_row_54_column_5","name":"block_row_54_column_5"})
-map.set("block_row_54_column_6", {"path":"textures/azalea_icons/icontextures/block_row_54_column_6","name":"block_row_54_column_6"})
-map.set("block_row_54_column_7", {"path":"textures/azalea_icons/icontextures/block_row_54_column_7","name":"block_row_54_column_7"})
-map.set("block_row_54_column_8", {"path":"textures/azalea_icons/icontextures/block_row_54_column_8","name":"block_row_54_column_8"})
-map.set("block_row_54_column_9", {"path":"textures/azalea_icons/icontextures/block_row_54_column_9","name":"block_row_54_column_9"})
-map.set("block_row_55_column_1", {"path":"textures/azalea_icons/icontextures/block_row_55_column_1","name":"block_row_55_column_1"})
-map.set("block_row_55_column_10", {"path":"textures/azalea_icons/icontextures/block_row_55_column_10","name":"block_row_55_column_10"})
-map.set("block_row_55_column_11", {"path":"textures/azalea_icons/icontextures/block_row_55_column_11","name":"block_row_55_column_11"})
-map.set("block_row_55_column_12", {"path":"textures/azalea_icons/icontextures/block_row_55_column_12","name":"block_row_55_column_12"})
-map.set("block_row_55_column_13", {"path":"textures/azalea_icons/icontextures/block_row_55_column_13","name":"block_row_55_column_13"})
-map.set("block_row_55_column_14", {"path":"textures/azalea_icons/icontextures/block_row_55_column_14","name":"block_row_55_column_14"})
-map.set("block_row_55_column_15", {"path":"textures/azalea_icons/icontextures/block_row_55_column_15","name":"block_row_55_column_15"})
-map.set("block_row_55_column_16", {"path":"textures/azalea_icons/icontextures/block_row_55_column_16","name":"block_row_55_column_16"})
-map.set("block_row_55_column_17", {"path":"textures/azalea_icons/icontextures/block_row_55_column_17","name":"block_row_55_column_17"})
-map.set("block_row_55_column_18", {"path":"textures/azalea_icons/icontextures/block_row_55_column_18","name":"block_row_55_column_18"})
-map.set("block_row_55_column_2", {"path":"textures/azalea_icons/icontextures/block_row_55_column_2","name":"block_row_55_column_2"})
-map.set("block_row_55_column_3", {"path":"textures/azalea_icons/icontextures/block_row_55_column_3","name":"block_row_55_column_3"})
-map.set("block_row_55_column_4", {"path":"textures/azalea_icons/icontextures/block_row_55_column_4","name":"block_row_55_column_4"})
-map.set("block_row_55_column_5", {"path":"textures/azalea_icons/icontextures/block_row_55_column_5","name":"block_row_55_column_5"})
-map.set("block_row_55_column_6", {"path":"textures/azalea_icons/icontextures/block_row_55_column_6","name":"block_row_55_column_6"})
-map.set("block_row_55_column_7", {"path":"textures/azalea_icons/icontextures/block_row_55_column_7","name":"block_row_55_column_7"})
-map.set("block_row_55_column_8", {"path":"textures/azalea_icons/icontextures/block_row_55_column_8","name":"block_row_55_column_8"})
-map.set("block_row_55_column_9", {"path":"textures/azalea_icons/icontextures/block_row_55_column_9","name":"block_row_55_column_9"})
-map.set("block_row_56_column_1", {"path":"textures/azalea_icons/icontextures/block_row_56_column_1","name":"block_row_56_column_1"})
-map.set("block_row_56_column_10", {"path":"textures/azalea_icons/icontextures/block_row_56_column_10","name":"block_row_56_column_10"})
-map.set("block_row_56_column_11", {"path":"textures/azalea_icons/icontextures/block_row_56_column_11","name":"block_row_56_column_11"})
-map.set("block_row_56_column_12", {"path":"textures/azalea_icons/icontextures/block_row_56_column_12","name":"block_row_56_column_12"})
-map.set("block_row_56_column_13", {"path":"textures/azalea_icons/icontextures/block_row_56_column_13","name":"block_row_56_column_13"})
-map.set("block_row_56_column_14", {"path":"textures/azalea_icons/icontextures/block_row_56_column_14","name":"block_row_56_column_14"})
-map.set("block_row_56_column_15", {"path":"textures/azalea_icons/icontextures/block_row_56_column_15","name":"block_row_56_column_15"})
-map.set("block_row_56_column_16", {"path":"textures/azalea_icons/icontextures/block_row_56_column_16","name":"block_row_56_column_16"})
-map.set("block_row_56_column_17", {"path":"textures/azalea_icons/icontextures/block_row_56_column_17","name":"block_row_56_column_17"})
-map.set("block_row_56_column_18", {"path":"textures/azalea_icons/icontextures/block_row_56_column_18","name":"block_row_56_column_18"})
-map.set("block_row_56_column_2", {"path":"textures/azalea_icons/icontextures/block_row_56_column_2","name":"block_row_56_column_2"})
-map.set("block_row_56_column_3", {"path":"textures/azalea_icons/icontextures/block_row_56_column_3","name":"block_row_56_column_3"})
-map.set("block_row_56_column_4", {"path":"textures/azalea_icons/icontextures/block_row_56_column_4","name":"block_row_56_column_4"})
-map.set("block_row_56_column_5", {"path":"textures/azalea_icons/icontextures/block_row_56_column_5","name":"block_row_56_column_5"})
-map.set("block_row_56_column_6", {"path":"textures/azalea_icons/icontextures/block_row_56_column_6","name":"block_row_56_column_6"})
-map.set("block_row_56_column_7", {"path":"textures/azalea_icons/icontextures/block_row_56_column_7","name":"block_row_56_column_7"})
-map.set("block_row_56_column_8", {"path":"textures/azalea_icons/icontextures/block_row_56_column_8","name":"block_row_56_column_8"})
-map.set("block_row_56_column_9", {"path":"textures/azalea_icons/icontextures/block_row_56_column_9","name":"block_row_56_column_9"})
-map.set("block_row_57_column_1", {"path":"textures/azalea_icons/icontextures/block_row_57_column_1","name":"block_row_57_column_1"})
-map.set("block_row_57_column_10", {"path":"textures/azalea_icons/icontextures/block_row_57_column_10","name":"block_row_57_column_10"})
-map.set("block_row_57_column_11", {"path":"textures/azalea_icons/icontextures/block_row_57_column_11","name":"block_row_57_column_11"})
-map.set("block_row_57_column_12", {"path":"textures/azalea_icons/icontextures/block_row_57_column_12","name":"block_row_57_column_12"})
-map.set("block_row_57_column_13", {"path":"textures/azalea_icons/icontextures/block_row_57_column_13","name":"block_row_57_column_13"})
-map.set("block_row_57_column_14", {"path":"textures/azalea_icons/icontextures/block_row_57_column_14","name":"block_row_57_column_14"})
-map.set("block_row_57_column_15", {"path":"textures/azalea_icons/icontextures/block_row_57_column_15","name":"block_row_57_column_15"})
-map.set("block_row_57_column_16", {"path":"textures/azalea_icons/icontextures/block_row_57_column_16","name":"block_row_57_column_16"})
-map.set("block_row_57_column_17", {"path":"textures/azalea_icons/icontextures/block_row_57_column_17","name":"block_row_57_column_17"})
-map.set("block_row_57_column_18", {"path":"textures/azalea_icons/icontextures/block_row_57_column_18","name":"block_row_57_column_18"})
-map.set("block_row_57_column_2", {"path":"textures/azalea_icons/icontextures/block_row_57_column_2","name":"block_row_57_column_2"})
-map.set("block_row_57_column_3", {"path":"textures/azalea_icons/icontextures/block_row_57_column_3","name":"block_row_57_column_3"})
-map.set("block_row_57_column_4", {"path":"textures/azalea_icons/icontextures/block_row_57_column_4","name":"block_row_57_column_4"})
-map.set("block_row_57_column_5", {"path":"textures/azalea_icons/icontextures/block_row_57_column_5","name":"block_row_57_column_5"})
-map.set("block_row_57_column_6", {"path":"textures/azalea_icons/icontextures/block_row_57_column_6","name":"block_row_57_column_6"})
-map.set("block_row_57_column_7", {"path":"textures/azalea_icons/icontextures/block_row_57_column_7","name":"block_row_57_column_7"})
-map.set("block_row_57_column_8", {"path":"textures/azalea_icons/icontextures/block_row_57_column_8","name":"block_row_57_column_8"})
-map.set("block_row_57_column_9", {"path":"textures/azalea_icons/icontextures/block_row_57_column_9","name":"block_row_57_column_9"})
-map.set("block_row_58_column_1", {"path":"textures/azalea_icons/icontextures/block_row_58_column_1","name":"block_row_58_column_1"})
-map.set("block_row_58_column_10", {"path":"textures/azalea_icons/icontextures/block_row_58_column_10","name":"block_row_58_column_10"})
-map.set("block_row_58_column_11", {"path":"textures/azalea_icons/icontextures/block_row_58_column_11","name":"block_row_58_column_11"})
-map.set("block_row_58_column_12", {"path":"textures/azalea_icons/icontextures/block_row_58_column_12","name":"block_row_58_column_12"})
-map.set("block_row_58_column_13", {"path":"textures/azalea_icons/icontextures/block_row_58_column_13","name":"block_row_58_column_13"})
-map.set("block_row_58_column_14", {"path":"textures/azalea_icons/icontextures/block_row_58_column_14","name":"block_row_58_column_14"})
-map.set("block_row_58_column_15", {"path":"textures/azalea_icons/icontextures/block_row_58_column_15","name":"block_row_58_column_15"})
-map.set("block_row_58_column_16", {"path":"textures/azalea_icons/icontextures/block_row_58_column_16","name":"block_row_58_column_16"})
-map.set("block_row_58_column_17", {"path":"textures/azalea_icons/icontextures/block_row_58_column_17","name":"block_row_58_column_17"})
-map.set("block_row_58_column_18", {"path":"textures/azalea_icons/icontextures/block_row_58_column_18","name":"block_row_58_column_18"})
-map.set("block_row_58_column_2", {"path":"textures/azalea_icons/icontextures/block_row_58_column_2","name":"block_row_58_column_2"})
-map.set("block_row_58_column_3", {"path":"textures/azalea_icons/icontextures/block_row_58_column_3","name":"block_row_58_column_3"})
-map.set("block_row_58_column_4", {"path":"textures/azalea_icons/icontextures/block_row_58_column_4","name":"block_row_58_column_4"})
-map.set("block_row_58_column_5", {"path":"textures/azalea_icons/icontextures/block_row_58_column_5","name":"block_row_58_column_5"})
-map.set("block_row_58_column_6", {"path":"textures/azalea_icons/icontextures/block_row_58_column_6","name":"block_row_58_column_6"})
-map.set("block_row_58_column_7", {"path":"textures/azalea_icons/icontextures/block_row_58_column_7","name":"block_row_58_column_7"})
-map.set("block_row_58_column_8", {"path":"textures/azalea_icons/icontextures/block_row_58_column_8","name":"block_row_58_column_8"})
-map.set("block_row_58_column_9", {"path":"textures/azalea_icons/icontextures/block_row_58_column_9","name":"block_row_58_column_9"})
-map.set("block_row_59_column_1", {"path":"textures/azalea_icons/icontextures/block_row_59_column_1","name":"block_row_59_column_1"})
-map.set("block_row_59_column_10", {"path":"textures/azalea_icons/icontextures/block_row_59_column_10","name":"block_row_59_column_10"})
-map.set("block_row_59_column_11", {"path":"textures/azalea_icons/icontextures/block_row_59_column_11","name":"block_row_59_column_11"})
-map.set("block_row_59_column_12", {"path":"textures/azalea_icons/icontextures/block_row_59_column_12","name":"block_row_59_column_12"})
-map.set("block_row_59_column_13", {"path":"textures/azalea_icons/icontextures/block_row_59_column_13","name":"block_row_59_column_13"})
-map.set("block_row_59_column_14", {"path":"textures/azalea_icons/icontextures/block_row_59_column_14","name":"block_row_59_column_14"})
-map.set("block_row_59_column_15", {"path":"textures/azalea_icons/icontextures/block_row_59_column_15","name":"block_row_59_column_15"})
-map.set("block_row_59_column_16", {"path":"textures/azalea_icons/icontextures/block_row_59_column_16","name":"block_row_59_column_16"})
-map.set("block_row_59_column_17", {"path":"textures/azalea_icons/icontextures/block_row_59_column_17","name":"block_row_59_column_17"})
-map.set("block_row_59_column_18", {"path":"textures/azalea_icons/icontextures/block_row_59_column_18","name":"block_row_59_column_18"})
-map.set("block_row_59_column_2", {"path":"textures/azalea_icons/icontextures/block_row_59_column_2","name":"block_row_59_column_2"})
-map.set("block_row_59_column_3", {"path":"textures/azalea_icons/icontextures/block_row_59_column_3","name":"block_row_59_column_3"})
-map.set("block_row_59_column_4", {"path":"textures/azalea_icons/icontextures/block_row_59_column_4","name":"block_row_59_column_4"})
-map.set("block_row_59_column_5", {"path":"textures/azalea_icons/icontextures/block_row_59_column_5","name":"block_row_59_column_5"})
-map.set("block_row_59_column_6", {"path":"textures/azalea_icons/icontextures/block_row_59_column_6","name":"block_row_59_column_6"})
-map.set("block_row_59_column_7", {"path":"textures/azalea_icons/icontextures/block_row_59_column_7","name":"block_row_59_column_7"})
-map.set("block_row_59_column_8", {"path":"textures/azalea_icons/icontextures/block_row_59_column_8","name":"block_row_59_column_8"})
-map.set("block_row_59_column_9", {"path":"textures/azalea_icons/icontextures/block_row_59_column_9","name":"block_row_59_column_9"})
-map.set("block_row_5_column_1", {"path":"textures/azalea_icons/icontextures/block_row_5_column_1","name":"block_row_5_column_1"})
-map.set("block_row_5_column_10", {"path":"textures/azalea_icons/icontextures/block_row_5_column_10","name":"block_row_5_column_10"})
-map.set("block_row_5_column_11", {"path":"textures/azalea_icons/icontextures/block_row_5_column_11","name":"block_row_5_column_11"})
-map.set("block_row_5_column_12", {"path":"textures/azalea_icons/icontextures/block_row_5_column_12","name":"block_row_5_column_12"})
-map.set("block_row_5_column_13", {"path":"textures/azalea_icons/icontextures/block_row_5_column_13","name":"block_row_5_column_13"})
-map.set("block_row_5_column_14", {"path":"textures/azalea_icons/icontextures/block_row_5_column_14","name":"block_row_5_column_14"})
-map.set("block_row_5_column_15", {"path":"textures/azalea_icons/icontextures/block_row_5_column_15","name":"block_row_5_column_15"})
-map.set("block_row_5_column_16", {"path":"textures/azalea_icons/icontextures/block_row_5_column_16","name":"block_row_5_column_16"})
-map.set("block_row_5_column_17", {"path":"textures/azalea_icons/icontextures/block_row_5_column_17","name":"block_row_5_column_17"})
-map.set("block_row_5_column_18", {"path":"textures/azalea_icons/icontextures/block_row_5_column_18","name":"block_row_5_column_18"})
-map.set("block_row_5_column_2", {"path":"textures/azalea_icons/icontextures/block_row_5_column_2","name":"block_row_5_column_2"})
-map.set("block_row_5_column_3", {"path":"textures/azalea_icons/icontextures/block_row_5_column_3","name":"block_row_5_column_3"})
-map.set("block_row_5_column_4", {"path":"textures/azalea_icons/icontextures/block_row_5_column_4","name":"block_row_5_column_4"})
-map.set("block_row_5_column_5", {"path":"textures/azalea_icons/icontextures/block_row_5_column_5","name":"block_row_5_column_5"})
-map.set("block_row_5_column_6", {"path":"textures/azalea_icons/icontextures/block_row_5_column_6","name":"block_row_5_column_6"})
-map.set("block_row_5_column_7", {"path":"textures/azalea_icons/icontextures/block_row_5_column_7","name":"block_row_5_column_7"})
-map.set("block_row_5_column_8", {"path":"textures/azalea_icons/icontextures/block_row_5_column_8","name":"block_row_5_column_8"})
-map.set("block_row_5_column_9", {"path":"textures/azalea_icons/icontextures/block_row_5_column_9","name":"block_row_5_column_9"})
-map.set("block_row_60_column_1", {"path":"textures/azalea_icons/icontextures/block_row_60_column_1","name":"block_row_60_column_1"})
-map.set("block_row_60_column_10", {"path":"textures/azalea_icons/icontextures/block_row_60_column_10","name":"block_row_60_column_10"})
-map.set("block_row_60_column_11", {"path":"textures/azalea_icons/icontextures/block_row_60_column_11","name":"block_row_60_column_11"})
-map.set("block_row_60_column_12", {"path":"textures/azalea_icons/icontextures/block_row_60_column_12","name":"block_row_60_column_12"})
-map.set("block_row_60_column_13", {"path":"textures/azalea_icons/icontextures/block_row_60_column_13","name":"block_row_60_column_13"})
-map.set("block_row_60_column_14", {"path":"textures/azalea_icons/icontextures/block_row_60_column_14","name":"block_row_60_column_14"})
-map.set("block_row_60_column_15", {"path":"textures/azalea_icons/icontextures/block_row_60_column_15","name":"block_row_60_column_15"})
-map.set("block_row_60_column_16", {"path":"textures/azalea_icons/icontextures/block_row_60_column_16","name":"block_row_60_column_16"})
-map.set("block_row_60_column_17", {"path":"textures/azalea_icons/icontextures/block_row_60_column_17","name":"block_row_60_column_17"})
-map.set("block_row_60_column_18", {"path":"textures/azalea_icons/icontextures/block_row_60_column_18","name":"block_row_60_column_18"})
-map.set("block_row_60_column_2", {"path":"textures/azalea_icons/icontextures/block_row_60_column_2","name":"block_row_60_column_2"})
-map.set("block_row_60_column_3", {"path":"textures/azalea_icons/icontextures/block_row_60_column_3","name":"block_row_60_column_3"})
-map.set("block_row_60_column_4", {"path":"textures/azalea_icons/icontextures/block_row_60_column_4","name":"block_row_60_column_4"})
-map.set("block_row_60_column_5", {"path":"textures/azalea_icons/icontextures/block_row_60_column_5","name":"block_row_60_column_5"})
-map.set("block_row_60_column_6", {"path":"textures/azalea_icons/icontextures/block_row_60_column_6","name":"block_row_60_column_6"})
-map.set("block_row_60_column_7", {"path":"textures/azalea_icons/icontextures/block_row_60_column_7","name":"block_row_60_column_7"})
-map.set("block_row_60_column_8", {"path":"textures/azalea_icons/icontextures/block_row_60_column_8","name":"block_row_60_column_8"})
-map.set("block_row_60_column_9", {"path":"textures/azalea_icons/icontextures/block_row_60_column_9","name":"block_row_60_column_9"})
-map.set("block_row_61_column_1", {"path":"textures/azalea_icons/icontextures/block_row_61_column_1","name":"block_row_61_column_1"})
-map.set("block_row_61_column_10", {"path":"textures/azalea_icons/icontextures/block_row_61_column_10","name":"block_row_61_column_10"})
-map.set("block_row_61_column_11", {"path":"textures/azalea_icons/icontextures/block_row_61_column_11","name":"block_row_61_column_11"})
-map.set("block_row_61_column_12", {"path":"textures/azalea_icons/icontextures/block_row_61_column_12","name":"block_row_61_column_12"})
-map.set("block_row_61_column_13", {"path":"textures/azalea_icons/icontextures/block_row_61_column_13","name":"block_row_61_column_13"})
-map.set("block_row_61_column_14", {"path":"textures/azalea_icons/icontextures/block_row_61_column_14","name":"block_row_61_column_14"})
-map.set("block_row_61_column_15", {"path":"textures/azalea_icons/icontextures/block_row_61_column_15","name":"block_row_61_column_15"})
-map.set("block_row_61_column_16", {"path":"textures/azalea_icons/icontextures/block_row_61_column_16","name":"block_row_61_column_16"})
-map.set("block_row_61_column_17", {"path":"textures/azalea_icons/icontextures/block_row_61_column_17","name":"block_row_61_column_17"})
-map.set("block_row_61_column_18", {"path":"textures/azalea_icons/icontextures/block_row_61_column_18","name":"block_row_61_column_18"})
-map.set("block_row_61_column_2", {"path":"textures/azalea_icons/icontextures/block_row_61_column_2","name":"block_row_61_column_2"})
-map.set("block_row_61_column_3", {"path":"textures/azalea_icons/icontextures/block_row_61_column_3","name":"block_row_61_column_3"})
-map.set("block_row_61_column_4", {"path":"textures/azalea_icons/icontextures/block_row_61_column_4","name":"block_row_61_column_4"})
-map.set("block_row_61_column_5", {"path":"textures/azalea_icons/icontextures/block_row_61_column_5","name":"block_row_61_column_5"})
-map.set("block_row_61_column_6", {"path":"textures/azalea_icons/icontextures/block_row_61_column_6","name":"block_row_61_column_6"})
-map.set("block_row_61_column_7", {"path":"textures/azalea_icons/icontextures/block_row_61_column_7","name":"block_row_61_column_7"})
-map.set("block_row_61_column_8", {"path":"textures/azalea_icons/icontextures/block_row_61_column_8","name":"block_row_61_column_8"})
-map.set("block_row_61_column_9", {"path":"textures/azalea_icons/icontextures/block_row_61_column_9","name":"block_row_61_column_9"})
-map.set("block_row_62_column_1", {"path":"textures/azalea_icons/icontextures/block_row_62_column_1","name":"block_row_62_column_1"})
-map.set("block_row_62_column_10", {"path":"textures/azalea_icons/icontextures/block_row_62_column_10","name":"block_row_62_column_10"})
-map.set("block_row_62_column_11", {"path":"textures/azalea_icons/icontextures/block_row_62_column_11","name":"block_row_62_column_11"})
-map.set("block_row_62_column_12", {"path":"textures/azalea_icons/icontextures/block_row_62_column_12","name":"block_row_62_column_12"})
-map.set("block_row_62_column_13", {"path":"textures/azalea_icons/icontextures/block_row_62_column_13","name":"block_row_62_column_13"})
-map.set("block_row_62_column_14", {"path":"textures/azalea_icons/icontextures/block_row_62_column_14","name":"block_row_62_column_14"})
-map.set("block_row_62_column_15", {"path":"textures/azalea_icons/icontextures/block_row_62_column_15","name":"block_row_62_column_15"})
-map.set("block_row_62_column_16", {"path":"textures/azalea_icons/icontextures/block_row_62_column_16","name":"block_row_62_column_16"})
-map.set("block_row_62_column_17", {"path":"textures/azalea_icons/icontextures/block_row_62_column_17","name":"block_row_62_column_17"})
-map.set("block_row_62_column_18", {"path":"textures/azalea_icons/icontextures/block_row_62_column_18","name":"block_row_62_column_18"})
-map.set("block_row_62_column_2", {"path":"textures/azalea_icons/icontextures/block_row_62_column_2","name":"block_row_62_column_2"})
-map.set("block_row_62_column_3", {"path":"textures/azalea_icons/icontextures/block_row_62_column_3","name":"block_row_62_column_3"})
-map.set("block_row_62_column_4", {"path":"textures/azalea_icons/icontextures/block_row_62_column_4","name":"block_row_62_column_4"})
-map.set("block_row_62_column_5", {"path":"textures/azalea_icons/icontextures/block_row_62_column_5","name":"block_row_62_column_5"})
-map.set("block_row_62_column_6", {"path":"textures/azalea_icons/icontextures/block_row_62_column_6","name":"block_row_62_column_6"})
-map.set("block_row_62_column_7", {"path":"textures/azalea_icons/icontextures/block_row_62_column_7","name":"block_row_62_column_7"})
-map.set("block_row_62_column_8", {"path":"textures/azalea_icons/icontextures/block_row_62_column_8","name":"block_row_62_column_8"})
-map.set("block_row_62_column_9", {"path":"textures/azalea_icons/icontextures/block_row_62_column_9","name":"block_row_62_column_9"})
-map.set("block_row_63_column_1", {"path":"textures/azalea_icons/icontextures/block_row_63_column_1","name":"block_row_63_column_1"})
-map.set("block_row_63_column_10", {"path":"textures/azalea_icons/icontextures/block_row_63_column_10","name":"block_row_63_column_10"})
-map.set("block_row_63_column_11", {"path":"textures/azalea_icons/icontextures/block_row_63_column_11","name":"block_row_63_column_11"})
-map.set("block_row_63_column_12", {"path":"textures/azalea_icons/icontextures/block_row_63_column_12","name":"block_row_63_column_12"})
-map.set("block_row_63_column_13", {"path":"textures/azalea_icons/icontextures/block_row_63_column_13","name":"block_row_63_column_13"})
-map.set("block_row_63_column_14", {"path":"textures/azalea_icons/icontextures/block_row_63_column_14","name":"block_row_63_column_14"})
-map.set("block_row_63_column_15", {"path":"textures/azalea_icons/icontextures/block_row_63_column_15","name":"block_row_63_column_15"})
-map.set("block_row_63_column_16", {"path":"textures/azalea_icons/icontextures/block_row_63_column_16","name":"block_row_63_column_16"})
-map.set("block_row_63_column_17", {"path":"textures/azalea_icons/icontextures/block_row_63_column_17","name":"block_row_63_column_17"})
-map.set("block_row_63_column_18", {"path":"textures/azalea_icons/icontextures/block_row_63_column_18","name":"block_row_63_column_18"})
-map.set("block_row_63_column_2", {"path":"textures/azalea_icons/icontextures/block_row_63_column_2","name":"block_row_63_column_2"})
-map.set("block_row_63_column_3", {"path":"textures/azalea_icons/icontextures/block_row_63_column_3","name":"block_row_63_column_3"})
-map.set("block_row_63_column_4", {"path":"textures/azalea_icons/icontextures/block_row_63_column_4","name":"block_row_63_column_4"})
-map.set("block_row_63_column_5", {"path":"textures/azalea_icons/icontextures/block_row_63_column_5","name":"block_row_63_column_5"})
-map.set("block_row_63_column_6", {"path":"textures/azalea_icons/icontextures/block_row_63_column_6","name":"block_row_63_column_6"})
-map.set("block_row_63_column_7", {"path":"textures/azalea_icons/icontextures/block_row_63_column_7","name":"block_row_63_column_7"})
-map.set("block_row_63_column_8", {"path":"textures/azalea_icons/icontextures/block_row_63_column_8","name":"block_row_63_column_8"})
-map.set("block_row_63_column_9", {"path":"textures/azalea_icons/icontextures/block_row_63_column_9","name":"block_row_63_column_9"})
-map.set("block_row_64_column_1", {"path":"textures/azalea_icons/icontextures/block_row_64_column_1","name":"block_row_64_column_1"})
-map.set("block_row_64_column_10", {"path":"textures/azalea_icons/icontextures/block_row_64_column_10","name":"block_row_64_column_10"})
-map.set("block_row_64_column_11", {"path":"textures/azalea_icons/icontextures/block_row_64_column_11","name":"block_row_64_column_11"})
-map.set("block_row_64_column_12", {"path":"textures/azalea_icons/icontextures/block_row_64_column_12","name":"block_row_64_column_12"})
-map.set("block_row_64_column_13", {"path":"textures/azalea_icons/icontextures/block_row_64_column_13","name":"block_row_64_column_13"})
-map.set("block_row_64_column_14", {"path":"textures/azalea_icons/icontextures/block_row_64_column_14","name":"block_row_64_column_14"})
-map.set("block_row_64_column_15", {"path":"textures/azalea_icons/icontextures/block_row_64_column_15","name":"block_row_64_column_15"})
-map.set("block_row_64_column_16", {"path":"textures/azalea_icons/icontextures/block_row_64_column_16","name":"block_row_64_column_16"})
-map.set("block_row_64_column_17", {"path":"textures/azalea_icons/icontextures/block_row_64_column_17","name":"block_row_64_column_17"})
-map.set("block_row_64_column_18", {"path":"textures/azalea_icons/icontextures/block_row_64_column_18","name":"block_row_64_column_18"})
-map.set("block_row_64_column_2", {"path":"textures/azalea_icons/icontextures/block_row_64_column_2","name":"block_row_64_column_2"})
-map.set("block_row_64_column_3", {"path":"textures/azalea_icons/icontextures/block_row_64_column_3","name":"block_row_64_column_3"})
-map.set("block_row_64_column_4", {"path":"textures/azalea_icons/icontextures/block_row_64_column_4","name":"block_row_64_column_4"})
-map.set("block_row_64_column_5", {"path":"textures/azalea_icons/icontextures/block_row_64_column_5","name":"block_row_64_column_5"})
-map.set("block_row_64_column_6", {"path":"textures/azalea_icons/icontextures/block_row_64_column_6","name":"block_row_64_column_6"})
-map.set("block_row_64_column_7", {"path":"textures/azalea_icons/icontextures/block_row_64_column_7","name":"block_row_64_column_7"})
-map.set("block_row_64_column_8", {"path":"textures/azalea_icons/icontextures/block_row_64_column_8","name":"block_row_64_column_8"})
-map.set("block_row_64_column_9", {"path":"textures/azalea_icons/icontextures/block_row_64_column_9","name":"block_row_64_column_9"})
-map.set("block_row_65_column_1", {"path":"textures/azalea_icons/icontextures/block_row_65_column_1","name":"block_row_65_column_1"})
-map.set("block_row_65_column_2", {"path":"textures/azalea_icons/icontextures/block_row_65_column_2","name":"block_row_65_column_2"})
-map.set("block_row_65_column_3", {"path":"textures/azalea_icons/icontextures/block_row_65_column_3","name":"block_row_65_column_3"})
-map.set("block_row_65_column_4", {"path":"textures/azalea_icons/icontextures/block_row_65_column_4","name":"block_row_65_column_4"})
-map.set("block_row_65_column_5", {"path":"textures/azalea_icons/icontextures/block_row_65_column_5","name":"block_row_65_column_5"})
-map.set("block_row_65_column_6", {"path":"textures/azalea_icons/icontextures/block_row_65_column_6","name":"block_row_65_column_6"})
-map.set("block_row_6_column_1", {"path":"textures/azalea_icons/icontextures/block_row_6_column_1","name":"block_row_6_column_1"})
-map.set("block_row_6_column_10", {"path":"textures/azalea_icons/icontextures/block_row_6_column_10","name":"block_row_6_column_10"})
-map.set("block_row_6_column_11", {"path":"textures/azalea_icons/icontextures/block_row_6_column_11","name":"block_row_6_column_11"})
-map.set("block_row_6_column_12", {"path":"textures/azalea_icons/icontextures/block_row_6_column_12","name":"block_row_6_column_12"})
-map.set("block_row_6_column_13", {"path":"textures/azalea_icons/icontextures/block_row_6_column_13","name":"block_row_6_column_13"})
-map.set("block_row_6_column_14", {"path":"textures/azalea_icons/icontextures/block_row_6_column_14","name":"block_row_6_column_14"})
-map.set("block_row_6_column_15", {"path":"textures/azalea_icons/icontextures/block_row_6_column_15","name":"block_row_6_column_15"})
-map.set("block_row_6_column_16", {"path":"textures/azalea_icons/icontextures/block_row_6_column_16","name":"block_row_6_column_16"})
-map.set("block_row_6_column_17", {"path":"textures/azalea_icons/icontextures/block_row_6_column_17","name":"block_row_6_column_17"})
-map.set("block_row_6_column_18", {"path":"textures/azalea_icons/icontextures/block_row_6_column_18","name":"block_row_6_column_18"})
-map.set("block_row_6_column_2", {"path":"textures/azalea_icons/icontextures/block_row_6_column_2","name":"block_row_6_column_2"})
-map.set("block_row_6_column_3", {"path":"textures/azalea_icons/icontextures/block_row_6_column_3","name":"block_row_6_column_3"})
-map.set("block_row_6_column_4", {"path":"textures/azalea_icons/icontextures/block_row_6_column_4","name":"block_row_6_column_4"})
-map.set("block_row_6_column_5", {"path":"textures/azalea_icons/icontextures/block_row_6_column_5","name":"block_row_6_column_5"})
-map.set("block_row_6_column_6", {"path":"textures/azalea_icons/icontextures/block_row_6_column_6","name":"block_row_6_column_6"})
-map.set("block_row_6_column_7", {"path":"textures/azalea_icons/icontextures/block_row_6_column_7","name":"block_row_6_column_7"})
-map.set("block_row_6_column_8", {"path":"textures/azalea_icons/icontextures/block_row_6_column_8","name":"block_row_6_column_8"})
-map.set("block_row_6_column_9", {"path":"textures/azalea_icons/icontextures/block_row_6_column_9","name":"block_row_6_column_9"})
-map.set("block_row_7_column_1", {"path":"textures/azalea_icons/icontextures/block_row_7_column_1","name":"block_row_7_column_1"})
-map.set("block_row_7_column_10", {"path":"textures/azalea_icons/icontextures/block_row_7_column_10","name":"block_row_7_column_10"})
-map.set("block_row_7_column_11", {"path":"textures/azalea_icons/icontextures/block_row_7_column_11","name":"block_row_7_column_11"})
-map.set("block_row_7_column_12", {"path":"textures/azalea_icons/icontextures/block_row_7_column_12","name":"block_row_7_column_12"})
-map.set("block_row_7_column_13", {"path":"textures/azalea_icons/icontextures/block_row_7_column_13","name":"block_row_7_column_13"})
-map.set("block_row_7_column_14", {"path":"textures/azalea_icons/icontextures/block_row_7_column_14","name":"block_row_7_column_14"})
-map.set("block_row_7_column_15", {"path":"textures/azalea_icons/icontextures/block_row_7_column_15","name":"block_row_7_column_15"})
-map.set("block_row_7_column_16", {"path":"textures/azalea_icons/icontextures/block_row_7_column_16","name":"block_row_7_column_16"})
-map.set("block_row_7_column_17", {"path":"textures/azalea_icons/icontextures/block_row_7_column_17","name":"block_row_7_column_17"})
-map.set("block_row_7_column_18", {"path":"textures/azalea_icons/icontextures/block_row_7_column_18","name":"block_row_7_column_18"})
-map.set("block_row_7_column_2", {"path":"textures/azalea_icons/icontextures/block_row_7_column_2","name":"block_row_7_column_2"})
-map.set("block_row_7_column_3", {"path":"textures/azalea_icons/icontextures/block_row_7_column_3","name":"block_row_7_column_3"})
-map.set("block_row_7_column_4", {"path":"textures/azalea_icons/icontextures/block_row_7_column_4","name":"block_row_7_column_4"})
-map.set("block_row_7_column_5", {"path":"textures/azalea_icons/icontextures/block_row_7_column_5","name":"block_row_7_column_5"})
-map.set("block_row_7_column_6", {"path":"textures/azalea_icons/icontextures/block_row_7_column_6","name":"block_row_7_column_6"})
-map.set("block_row_7_column_7", {"path":"textures/azalea_icons/icontextures/block_row_7_column_7","name":"block_row_7_column_7"})
-map.set("block_row_7_column_8", {"path":"textures/azalea_icons/icontextures/block_row_7_column_8","name":"block_row_7_column_8"})
-map.set("block_row_7_column_9", {"path":"textures/azalea_icons/icontextures/block_row_7_column_9","name":"block_row_7_column_9"})
-map.set("block_row_8_column_1", {"path":"textures/azalea_icons/icontextures/block_row_8_column_1","name":"block_row_8_column_1"})
-map.set("block_row_8_column_10", {"path":"textures/azalea_icons/icontextures/block_row_8_column_10","name":"block_row_8_column_10"})
-map.set("block_row_8_column_11", {"path":"textures/azalea_icons/icontextures/block_row_8_column_11","name":"block_row_8_column_11"})
-map.set("block_row_8_column_12", {"path":"textures/azalea_icons/icontextures/block_row_8_column_12","name":"block_row_8_column_12"})
-map.set("block_row_8_column_13", {"path":"textures/azalea_icons/icontextures/block_row_8_column_13","name":"block_row_8_column_13"})
-map.set("block_row_8_column_14", {"path":"textures/azalea_icons/icontextures/block_row_8_column_14","name":"block_row_8_column_14"})
-map.set("block_row_8_column_15", {"path":"textures/azalea_icons/icontextures/block_row_8_column_15","name":"block_row_8_column_15"})
-map.set("block_row_8_column_16", {"path":"textures/azalea_icons/icontextures/block_row_8_column_16","name":"block_row_8_column_16"})
-map.set("block_row_8_column_17", {"path":"textures/azalea_icons/icontextures/block_row_8_column_17","name":"block_row_8_column_17"})
-map.set("block_row_8_column_18", {"path":"textures/azalea_icons/icontextures/block_row_8_column_18","name":"block_row_8_column_18"})
-map.set("block_row_8_column_2", {"path":"textures/azalea_icons/icontextures/block_row_8_column_2","name":"block_row_8_column_2"})
-map.set("block_row_8_column_3", {"path":"textures/azalea_icons/icontextures/block_row_8_column_3","name":"block_row_8_column_3"})
-map.set("block_row_8_column_4", {"path":"textures/azalea_icons/icontextures/block_row_8_column_4","name":"block_row_8_column_4"})
-map.set("block_row_8_column_5", {"path":"textures/azalea_icons/icontextures/block_row_8_column_5","name":"block_row_8_column_5"})
-map.set("block_row_8_column_6", {"path":"textures/azalea_icons/icontextures/block_row_8_column_6","name":"block_row_8_column_6"})
-map.set("block_row_8_column_7", {"path":"textures/azalea_icons/icontextures/block_row_8_column_7","name":"block_row_8_column_7"})
-map.set("block_row_8_column_8", {"path":"textures/azalea_icons/icontextures/block_row_8_column_8","name":"block_row_8_column_8"})
-map.set("block_row_8_column_9", {"path":"textures/azalea_icons/icontextures/block_row_8_column_9","name":"block_row_8_column_9"})
-map.set("block_row_9_column_1", {"path":"textures/azalea_icons/icontextures/block_row_9_column_1","name":"block_row_9_column_1"})
-map.set("block_row_9_column_10", {"path":"textures/azalea_icons/icontextures/block_row_9_column_10","name":"block_row_9_column_10"})
-map.set("block_row_9_column_11", {"path":"textures/azalea_icons/icontextures/block_row_9_column_11","name":"block_row_9_column_11"})
-map.set("block_row_9_column_12", {"path":"textures/azalea_icons/icontextures/block_row_9_column_12","name":"block_row_9_column_12"})
-map.set("block_row_9_column_13", {"path":"textures/azalea_icons/icontextures/block_row_9_column_13","name":"block_row_9_column_13"})
-map.set("block_row_9_column_14", {"path":"textures/azalea_icons/icontextures/block_row_9_column_14","name":"block_row_9_column_14"})
-map.set("block_row_9_column_15", {"path":"textures/azalea_icons/icontextures/block_row_9_column_15","name":"block_row_9_column_15"})
-map.set("block_row_9_column_16", {"path":"textures/azalea_icons/icontextures/block_row_9_column_16","name":"block_row_9_column_16"})
-map.set("block_row_9_column_17", {"path":"textures/azalea_icons/icontextures/block_row_9_column_17","name":"block_row_9_column_17"})
-map.set("block_row_9_column_18", {"path":"textures/azalea_icons/icontextures/block_row_9_column_18","name":"block_row_9_column_18"})
-map.set("block_row_9_column_2", {"path":"textures/azalea_icons/icontextures/block_row_9_column_2","name":"block_row_9_column_2"})
-map.set("block_row_9_column_3", {"path":"textures/azalea_icons/icontextures/block_row_9_column_3","name":"block_row_9_column_3"})
-map.set("block_row_9_column_4", {"path":"textures/azalea_icons/icontextures/block_row_9_column_4","name":"block_row_9_column_4"})
-map.set("block_row_9_column_5", {"path":"textures/azalea_icons/icontextures/block_row_9_column_5","name":"block_row_9_column_5"})
-map.set("block_row_9_column_6", {"path":"textures/azalea_icons/icontextures/block_row_9_column_6","name":"block_row_9_column_6"})
-map.set("block_row_9_column_7", {"path":"textures/azalea_icons/icontextures/block_row_9_column_7","name":"block_row_9_column_7"})
-map.set("block_row_9_column_8", {"path":"textures/azalea_icons/icontextures/block_row_9_column_8","name":"block_row_9_column_8"})
-map.set("block_row_9_column_9", {"path":"textures/azalea_icons/icontextures/block_row_9_column_9","name":"block_row_9_column_9"})
-map.set("bone", {"path":"textures/azalea_icons/icontextures/bone","name":"bone"})
-map.set("bone01a", {"path":"textures/azalea_icons/icontextures/bone01a","name":"bone01a"})
-map.set("bone_meal", {"path":"textures/azalea_icons/icontextures/bone_meal","name":"bone_meal"})
-map.set("book", {"path":"textures/azalea_icons/icontextures/book","name":"book"})
-map.set("book_01a", {"path":"textures/azalea_icons/icontextures/book_01a","name":"book_01a"})
-map.set("book_01b", {"path":"textures/azalea_icons/icontextures/book_01b","name":"book_01b"})
-map.set("book_01c", {"path":"textures/azalea_icons/icontextures/book_01c","name":"book_01c"})
-map.set("book_01d", {"path":"textures/azalea_icons/icontextures/book_01d","name":"book_01d"})
-map.set("book_01e", {"path":"textures/azalea_icons/icontextures/book_01e","name":"book_01e"})
-map.set("book_01f", {"path":"textures/azalea_icons/icontextures/book_01f","name":"book_01f"})
-map.set("book_01g", {"path":"textures/azalea_icons/icontextures/book_01g","name":"book_01g"})
-map.set("book_02a", {"path":"textures/azalea_icons/icontextures/book_02a","name":"book_02a"})
-map.set("book_02b", {"path":"textures/azalea_icons/icontextures/book_02b","name":"book_02b"})
-map.set("book_02c", {"path":"textures/azalea_icons/icontextures/book_02c","name":"book_02c"})
-map.set("book_02d", {"path":"textures/azalea_icons/icontextures/book_02d","name":"book_02d"})
-map.set("book_02e", {"path":"textures/azalea_icons/icontextures/book_02e","name":"book_02e"})
-map.set("book_02f", {"path":"textures/azalea_icons/icontextures/book_02f","name":"book_02f"})
-map.set("book_02g", {"path":"textures/azalea_icons/icontextures/book_02g","name":"book_02g"})
-map.set("book_03a", {"path":"textures/azalea_icons/icontextures/book_03a","name":"book_03a"})
-map.set("book_03b", {"path":"textures/azalea_icons/icontextures/book_03b","name":"book_03b"})
-map.set("book_03c", {"path":"textures/azalea_icons/icontextures/book_03c","name":"book_03c"})
-map.set("book_03d", {"path":"textures/azalea_icons/icontextures/book_03d","name":"book_03d"})
-map.set("book_03e", {"path":"textures/azalea_icons/icontextures/book_03e","name":"book_03e"})
-map.set("book_03f", {"path":"textures/azalea_icons/icontextures/book_03f","name":"book_03f"})
-map.set("book_03g", {"path":"textures/azalea_icons/icontextures/book_03g","name":"book_03g"})
-map.set("book_04a", {"path":"textures/azalea_icons/icontextures/book_04a","name":"book_04a"})
-map.set("book_04b", {"path":"textures/azalea_icons/icontextures/book_04b","name":"book_04b"})
-map.set("book_04c", {"path":"textures/azalea_icons/icontextures/book_04c","name":"book_04c"})
-map.set("book_04d", {"path":"textures/azalea_icons/icontextures/book_04d","name":"book_04d"})
-map.set("book_04e", {"path":"textures/azalea_icons/icontextures/book_04e","name":"book_04e"})
-map.set("book_04f", {"path":"textures/azalea_icons/icontextures/book_04f","name":"book_04f"})
-map.set("book_04g", {"path":"textures/azalea_icons/icontextures/book_04g","name":"book_04g"})
-map.set("book_05a", {"path":"textures/azalea_icons/icontextures/book_05a","name":"book_05a"})
-map.set("book_05b", {"path":"textures/azalea_icons/icontextures/book_05b","name":"book_05b"})
-map.set("book_05c", {"path":"textures/azalea_icons/icontextures/book_05c","name":"book_05c"})
-map.set("book_05d", {"path":"textures/azalea_icons/icontextures/book_05d","name":"book_05d"})
-map.set("book_05e", {"path":"textures/azalea_icons/icontextures/book_05e","name":"book_05e"})
-map.set("book_05f", {"path":"textures/azalea_icons/icontextures/book_05f","name":"book_05f"})
-map.set("book_05g", {"path":"textures/azalea_icons/icontextures/book_05g","name":"book_05g"})
-map.set("book_06a", {"path":"textures/azalea_icons/icontextures/book_06a","name":"book_06a"})
-map.set("book_06b", {"path":"textures/azalea_icons/icontextures/book_06b","name":"book_06b"})
-map.set("book_06c", {"path":"textures/azalea_icons/icontextures/book_06c","name":"book_06c"})
-map.set("book_06d", {"path":"textures/azalea_icons/icontextures/book_06d","name":"book_06d"})
-map.set("book_06e", {"path":"textures/azalea_icons/icontextures/book_06e","name":"book_06e"})
-map.set("book_06f", {"path":"textures/azalea_icons/icontextures/book_06f","name":"book_06f"})
-map.set("book_06g", {"path":"textures/azalea_icons/icontextures/book_06g","name":"book_06g"})
-map.set("book_2", {"path":"textures/azalea_icons/icontextures/book_2","name":"book_2"})
-map.set("boots_01", {"path":"textures/azalea_icons/icontextures/boots_01","name":"boots_01"})
-map.set("boots_01a", {"path":"textures/azalea_icons/icontextures/boots_01a","name":"boots_01a"})
-map.set("boots_01b", {"path":"textures/azalea_icons/icontextures/boots_01b","name":"boots_01b"})
-map.set("boots_01c", {"path":"textures/azalea_icons/icontextures/boots_01c","name":"boots_01c"})
-map.set("boots_01d", {"path":"textures/azalea_icons/icontextures/boots_01d","name":"boots_01d"})
-map.set("boots_01e", {"path":"textures/azalea_icons/icontextures/boots_01e","name":"boots_01e"})
-map.set("boots_01_2", {"path":"textures/azalea_icons/icontextures/boots_01_2","name":"boots_01_2"})
-map.set("boots_02", {"path":"textures/azalea_icons/icontextures/boots_02","name":"boots_02"})
-map.set("boots_02_2", {"path":"textures/azalea_icons/icontextures/boots_02_2","name":"boots_02_2"})
-map.set("bow", {"path":"textures/azalea_icons/icontextures/bow","name":"bow"})
-map.set("bowl", {"path":"textures/azalea_icons/icontextures/bowl","name":"bowl"})
-map.set("bow_01", {"path":"textures/azalea_icons/icontextures/bow_01","name":"bow_01"})
-map.set("bow_01a", {"path":"textures/azalea_icons/icontextures/bow_01a","name":"bow_01a"})
-map.set("bow_01b", {"path":"textures/azalea_icons/icontextures/bow_01b","name":"bow_01b"})
-map.set("bow_01cc", {"path":"textures/azalea_icons/icontextures/bow_01cc","name":"bow_01cc"})
-map.set("bow_01d", {"path":"textures/azalea_icons/icontextures/bow_01d","name":"bow_01d"})
-map.set("bow_01e", {"path":"textures/azalea_icons/icontextures/bow_01e","name":"bow_01e"})
-map.set("bow_01_2", {"path":"textures/azalea_icons/icontextures/bow_01_2","name":"bow_01_2"})
-map.set("bow_02", {"path":"textures/azalea_icons/icontextures/bow_02","name":"bow_02"})
-map.set("bow_02a", {"path":"textures/azalea_icons/icontextures/bow_02a","name":"bow_02a"})
-map.set("bow_02b", {"path":"textures/azalea_icons/icontextures/bow_02b","name":"bow_02b"})
-map.set("bow_02cc", {"path":"textures/azalea_icons/icontextures/bow_02cc","name":"bow_02cc"})
-map.set("bow_02d", {"path":"textures/azalea_icons/icontextures/bow_02d","name":"bow_02d"})
-map.set("bow_02e", {"path":"textures/azalea_icons/icontextures/bow_02e","name":"bow_02e"})
-map.set("bow_02_2", {"path":"textures/azalea_icons/icontextures/bow_02_2","name":"bow_02_2"})
-map.set("bow_03a", {"path":"textures/azalea_icons/icontextures/bow_03a","name":"bow_03a"})
-map.set("bow_03b", {"path":"textures/azalea_icons/icontextures/bow_03b","name":"bow_03b"})
-map.set("bow_03c", {"path":"textures/azalea_icons/icontextures/bow_03c","name":"bow_03c"})
-map.set("bow_03d", {"path":"textures/azalea_icons/icontextures/bow_03d","name":"bow_03d"})
-map.set("bow_03e", {"path":"textures/azalea_icons/icontextures/bow_03e","name":"bow_03e"})
-map.set("bread", {"path":"textures/azalea_icons/icontextures/bread","name":"bread"})
-map.set("brick", {"path":"textures/azalea_icons/icontextures/brick","name":"brick"})
-map.set("brie", {"path":"textures/azalea_icons/icontextures/brie","name":"brie"})
-map.set("broken_elytra", {"path":"textures/azalea_icons/icontextures/broken_elytra","name":"broken_elytra"})
-map.set("brunost", {"path":"textures/azalea_icons/icontextures/brunost","name":"brunost"})
-map.set("bucheron", {"path":"textures/azalea_icons/icontextures/bucheron","name":"bucheron"})
-map.set("bucket", {"path":"textures/azalea_icons/icontextures/bucket","name":"bucket"})
-map.set("cabrales", {"path":"textures/azalea_icons/icontextures/cabrales","name":"cabrales"})
-map.set("cake", {"path":"textures/azalea_icons/icontextures/cake","name":"cake"})
-map.set("camembert", {"path":"textures/azalea_icons/icontextures/camembert","name":"camembert"})
-map.set("candle", {"path":"textures/azalea_icons/icontextures/candle","name":"candle"})
-map.set("candle_01a", {"path":"textures/azalea_icons/icontextures/candle_01a","name":"candle_01a"})
-map.set("candle_01b", {"path":"textures/azalea_icons/icontextures/candle_01b","name":"candle_01b"})
-map.set("candy_01a", {"path":"textures/azalea_icons/icontextures/candy_01a","name":"candy_01a"})
-map.set("candy_01b", {"path":"textures/azalea_icons/icontextures/candy_01b","name":"candy_01b"})
-map.set("candy_01c", {"path":"textures/azalea_icons/icontextures/candy_01c","name":"candy_01c"})
-map.set("candy_01d", {"path":"textures/azalea_icons/icontextures/candy_01d","name":"candy_01d"})
-map.set("candy_01e", {"path":"textures/azalea_icons/icontextures/candy_01e","name":"candy_01e"})
-map.set("candy_01f", {"path":"textures/azalea_icons/icontextures/candy_01f","name":"candy_01f"})
-map.set("candy_01g", {"path":"textures/azalea_icons/icontextures/candy_01g","name":"candy_01g"})
-map.set("candy_02a", {"path":"textures/azalea_icons/icontextures/candy_02a","name":"candy_02a"})
-map.set("candy_02b", {"path":"textures/azalea_icons/icontextures/candy_02b","name":"candy_02b"})
-map.set("candy_02c", {"path":"textures/azalea_icons/icontextures/candy_02c","name":"candy_02c"})
-map.set("candy_02d", {"path":"textures/azalea_icons/icontextures/candy_02d","name":"candy_02d"})
-map.set("candy_02e", {"path":"textures/azalea_icons/icontextures/candy_02e","name":"candy_02e"})
-map.set("candy_02f", {"path":"textures/azalea_icons/icontextures/candy_02f","name":"candy_02f"})
-map.set("candy_02g", {"path":"textures/azalea_icons/icontextures/candy_02g","name":"candy_02g"})
-map.set("caprino", {"path":"textures/azalea_icons/icontextures/caprino","name":"caprino"})
-map.set("carrot", {"path":"textures/azalea_icons/icontextures/carrot","name":"carrot"})
-map.set("chain", {"path":"textures/azalea_icons/icontextures/chain","name":"chain"})
-map.set("chainmail_boots", {"path":"textures/azalea_icons/icontextures/chainmail_boots","name":"chainmail_boots"})
-map.set("chainmail_chestplate", {"path":"textures/azalea_icons/icontextures/chainmail_chestplate","name":"chainmail_chestplate"})
-map.set("chainmail_helmet", {"path":"textures/azalea_icons/icontextures/chainmail_helmet","name":"chainmail_helmet"})
-map.set("chainmail_leggings", {"path":"textures/azalea_icons/icontextures/chainmail_leggings","name":"chainmail_leggings"})
-map.set("charcoal", {"path":"textures/azalea_icons/icontextures/charcoal","name":"charcoal"})
-map.set("cheddar", {"path":"textures/azalea_icons/icontextures/cheddar","name":"cheddar"})
-map.set("cheshire", {"path":"textures/azalea_icons/icontextures/cheshire","name":"cheshire"})
-map.set("chest_minecart", {"path":"textures/azalea_icons/icontextures/chest_minecart","name":"chest_minecart"})
-map.set("chicken", {"path":"textures/azalea_icons/icontextures/chicken","name":"chicken"})
-map.set("chorus_fruit", {"path":"textures/azalea_icons/icontextures/chorus_fruit","name":"chorus_fruit"})
-map.set("circlet", {"path":"textures/azalea_icons/icontextures/circlet","name":"circlet"})
-map.set("circlet_2", {"path":"textures/azalea_icons/icontextures/circlet_2","name":"circlet_2"})
-map.set("clay_ball", {"path":"textures/azalea_icons/icontextures/clay_ball","name":"clay_ball"})
-map.set("clover_leaf", {"path":"textures/azalea_icons/icontextures/clover_leaf","name":"clover_leaf"})
-map.set("clover_leaf_2", {"path":"textures/azalea_icons/icontextures/clover_leaf_2","name":"clover_leaf_2"})
-map.set("coal", {"path":"textures/azalea_icons/icontextures/coal","name":"coal"})
-map.set("cod", {"path":"textures/azalea_icons/icontextures/cod","name":"cod"})
-map.set("coin_01a", {"path":"textures/azalea_icons/icontextures/coin_01a","name":"coin_01a"})
-map.set("coin_01b", {"path":"textures/azalea_icons/icontextures/coin_01b","name":"coin_01b"})
-map.set("coin_01c", {"path":"textures/azalea_icons/icontextures/coin_01c","name":"coin_01c"})
-map.set("coin_01d", {"path":"textures/azalea_icons/icontextures/coin_01d","name":"coin_01d"})
-map.set("coin_01e", {"path":"textures/azalea_icons/icontextures/coin_01e","name":"coin_01e"})
-map.set("coin_02a", {"path":"textures/azalea_icons/icontextures/coin_02a","name":"coin_02a"})
-map.set("coin_02b", {"path":"textures/azalea_icons/icontextures/coin_02b","name":"coin_02b"})
-map.set("coin_02c", {"path":"textures/azalea_icons/icontextures/coin_02c","name":"coin_02c"})
-map.set("coin_02d", {"path":"textures/azalea_icons/icontextures/coin_02d","name":"coin_02d"})
-map.set("coin_02e", {"path":"textures/azalea_icons/icontextures/coin_02e","name":"coin_02e"})
-map.set("coin_03a", {"path":"textures/azalea_icons/icontextures/coin_03a","name":"coin_03a"})
-map.set("coin_03b", {"path":"textures/azalea_icons/icontextures/coin_03b","name":"coin_03b"})
-map.set("coin_03c", {"path":"textures/azalea_icons/icontextures/coin_03c","name":"coin_03c"})
-map.set("coin_03d", {"path":"textures/azalea_icons/icontextures/coin_03d","name":"coin_03d"})
-map.set("coin_03e", {"path":"textures/azalea_icons/icontextures/coin_03e","name":"coin_03e"})
-map.set("coin_04a", {"path":"textures/azalea_icons/icontextures/coin_04a","name":"coin_04a"})
-map.set("coin_04b", {"path":"textures/azalea_icons/icontextures/coin_04b","name":"coin_04b"})
-map.set("coin_04c", {"path":"textures/azalea_icons/icontextures/coin_04c","name":"coin_04c"})
-map.set("coin_04d", {"path":"textures/azalea_icons/icontextures/coin_04d","name":"coin_04d"})
-map.set("coin_04e", {"path":"textures/azalea_icons/icontextures/coin_04e","name":"coin_04e"})
-map.set("coin_05a", {"path":"textures/azalea_icons/icontextures/coin_05a","name":"coin_05a"})
-map.set("coin_05b", {"path":"textures/azalea_icons/icontextures/coin_05b","name":"coin_05b"})
-map.set("coin_05c", {"path":"textures/azalea_icons/icontextures/coin_05c","name":"coin_05c"})
-map.set("coin_05d", {"path":"textures/azalea_icons/icontextures/coin_05d","name":"coin_05d"})
-map.set("coin_05e", {"path":"textures/azalea_icons/icontextures/coin_05e","name":"coin_05e"})
-map.set("colby_jack", {"path":"textures/azalea_icons/icontextures/colby_jack","name":"colby_jack"})
-map.set("compass", {"path":"textures/azalea_icons/icontextures/compass","name":"compass"})
-map.set("compass_00", {"path":"textures/azalea_icons/icontextures/compass_00","name":"compass_00"})
-map.set("compass_2", {"path":"textures/azalea_icons/icontextures/compass_2","name":"compass_2"})
-map.set("comte", {"path":"textures/azalea_icons/icontextures/comte","name":"comte"})
-map.set("cooked_beef", {"path":"textures/azalea_icons/icontextures/cooked_beef","name":"cooked_beef"})
-map.set("cooked_chicken", {"path":"textures/azalea_icons/icontextures/cooked_chicken","name":"cooked_chicken"})
-map.set("cooked_cod", {"path":"textures/azalea_icons/icontextures/cooked_cod","name":"cooked_cod"})
-map.set("cooked_mutton", {"path":"textures/azalea_icons/icontextures/cooked_mutton","name":"cooked_mutton"})
-map.set("cooked_porkchop", {"path":"textures/azalea_icons/icontextures/cooked_porkchop","name":"cooked_porkchop"})
-map.set("cooked_rabbit", {"path":"textures/azalea_icons/icontextures/cooked_rabbit","name":"cooked_rabbit"})
-map.set("cooked_salmon", {"path":"textures/azalea_icons/icontextures/cooked_salmon","name":"cooked_salmon"})
-map.set("cookie", {"path":"textures/azalea_icons/icontextures/cookie","name":"cookie"})
-map.set("cookies", {"path":"textures/azalea_icons/icontextures/cookies","name":"cookies"})
-map.set("cookies_2", {"path":"textures/azalea_icons/icontextures/cookies_2","name":"cookies_2"})
-map.set("cookie_01a", {"path":"textures/azalea_icons/icontextures/cookie_01a","name":"cookie_01a"})
-map.set("copper_ingot", {"path":"textures/azalea_icons/icontextures/copper_ingot","name":"copper_ingot"})
-map.set("copper_ingot_2", {"path":"textures/azalea_icons/icontextures/copper_ingot_2","name":"copper_ingot_2"})
-map.set("copper_ore", {"path":"textures/azalea_icons/icontextures/copper_ore","name":"copper_ore"})
-map.set("copper_ore_2", {"path":"textures/azalea_icons/icontextures/copper_ore_2","name":"copper_ore_2"})
-map.set("cotton_01a", {"path":"textures/azalea_icons/icontextures/cotton_01a","name":"cotton_01a"})
-map.set("crossbow_standby", {"path":"textures/azalea_icons/icontextures/crossbow_standby","name":"crossbow_standby"})
-map.set("crottin_de_chavignol", {"path":"textures/azalea_icons/icontextures/crottin_de_chavignol","name":"crottin_de_chavignol"})
-map.set("crystal_01a", {"path":"textures/azalea_icons/icontextures/crystal_01a","name":"crystal_01a"})
-map.set("crystal_01b", {"path":"textures/azalea_icons/icontextures/crystal_01b","name":"crystal_01b"})
-map.set("crystal_01c", {"path":"textures/azalea_icons/icontextures/crystal_01c","name":"crystal_01c"})
-map.set("crystal_01d", {"path":"textures/azalea_icons/icontextures/crystal_01d","name":"crystal_01d"})
-map.set("crystal_01e", {"path":"textures/azalea_icons/icontextures/crystal_01e","name":"crystal_01e"})
-map.set("crystal_01f", {"path":"textures/azalea_icons/icontextures/crystal_01f","name":"crystal_01f"})
-map.set("crystal_01g", {"path":"textures/azalea_icons/icontextures/crystal_01g","name":"crystal_01g"})
-map.set("crystal_01h", {"path":"textures/azalea_icons/icontextures/crystal_01h","name":"crystal_01h"})
-map.set("crystal_01i", {"path":"textures/azalea_icons/icontextures/crystal_01i","name":"crystal_01i"})
-map.set("crystal_01j", {"path":"textures/azalea_icons/icontextures/crystal_01j","name":"crystal_01j"})
-map.set("cup_01a", {"path":"textures/azalea_icons/icontextures/cup_01a","name":"cup_01a"})
-map.set("cup_01b", {"path":"textures/azalea_icons/icontextures/cup_01b","name":"cup_01b"})
-map.set("cup_02a", {"path":"textures/azalea_icons/icontextures/cup_02a","name":"cup_02a"})
-map.set("cup_02b", {"path":"textures/azalea_icons/icontextures/cup_02b","name":"cup_02b"})
-map.set("demo_icons_no_outline1", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline1","name":"demo_icons_no_outline1"})
-map.set("demo_icons_no_outline10", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline10","name":"demo_icons_no_outline10"})
-map.set("demo_icons_no_outline11", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline11","name":"demo_icons_no_outline11"})
-map.set("demo_icons_no_outline2", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline2","name":"demo_icons_no_outline2"})
-map.set("demo_icons_no_outline3", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline3","name":"demo_icons_no_outline3"})
-map.set("demo_icons_no_outline4", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline4","name":"demo_icons_no_outline4"})
-map.set("demo_icons_no_outline5", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline5","name":"demo_icons_no_outline5"})
-map.set("demo_icons_no_outline6", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline6","name":"demo_icons_no_outline6"})
-map.set("demo_icons_no_outline7", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline7","name":"demo_icons_no_outline7"})
-map.set("demo_icons_no_outline8", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline8","name":"demo_icons_no_outline8"})
-map.set("demo_icons_no_outline9", {"path":"textures/azalea_icons/icontextures/demo_icons_no_outline9","name":"demo_icons_no_outline9"})
-map.set("demo_icons_thick_outline1", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline1","name":"demo_icons_thick_outline1"})
-map.set("demo_icons_thick_outline10", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline10","name":"demo_icons_thick_outline10"})
-map.set("demo_icons_thick_outline11", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline11","name":"demo_icons_thick_outline11"})
-map.set("demo_icons_thick_outline2", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline2","name":"demo_icons_thick_outline2"})
-map.set("demo_icons_thick_outline3", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline3","name":"demo_icons_thick_outline3"})
-map.set("demo_icons_thick_outline4", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline4","name":"demo_icons_thick_outline4"})
-map.set("demo_icons_thick_outline5", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline5","name":"demo_icons_thick_outline5"})
-map.set("demo_icons_thick_outline6", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline6","name":"demo_icons_thick_outline6"})
-map.set("demo_icons_thick_outline7", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline7","name":"demo_icons_thick_outline7"})
-map.set("demo_icons_thick_outline8", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline8","name":"demo_icons_thick_outline8"})
-map.set("demo_icons_thick_outline9", {"path":"textures/azalea_icons/icontextures/demo_icons_thick_outline9","name":"demo_icons_thick_outline9"})
-map.set("diamond", {"path":"textures/azalea_icons/icontextures/diamond","name":"diamond"})
-map.set("diamond_axe", {"path":"textures/azalea_icons/icontextures/diamond_axe","name":"diamond_axe"})
-map.set("diamond_boots", {"path":"textures/azalea_icons/icontextures/diamond_boots","name":"diamond_boots"})
-map.set("diamond_chestplate", {"path":"textures/azalea_icons/icontextures/diamond_chestplate","name":"diamond_chestplate"})
-map.set("diamond_helmet", {"path":"textures/azalea_icons/icontextures/diamond_helmet","name":"diamond_helmet"})
-map.set("diamond_hoe", {"path":"textures/azalea_icons/icontextures/diamond_hoe","name":"diamond_hoe"})
-map.set("diamond_horse_armor", {"path":"textures/azalea_icons/icontextures/diamond_horse_armor","name":"diamond_horse_armor"})
-map.set("diamond_leggings", {"path":"textures/azalea_icons/icontextures/diamond_leggings","name":"diamond_leggings"})
-map.set("diamond_pickaxe", {"path":"textures/azalea_icons/icontextures/diamond_pickaxe","name":"diamond_pickaxe"})
-map.set("diamond_shovel", {"path":"textures/azalea_icons/icontextures/diamond_shovel","name":"diamond_shovel"})
-map.set("diamond_sword", {"path":"textures/azalea_icons/icontextures/diamond_sword","name":"diamond_sword"})
-map.set("dorset_blue_vinny", {"path":"textures/azalea_icons/icontextures/dorset_blue_vinny","name":"dorset_blue_vinny"})
-map.set("dried_kelp", {"path":"textures/azalea_icons/icontextures/dried_kelp","name":"dried_kelp"})
-map.set("egg", {"path":"textures/azalea_icons/icontextures/egg","name":"egg"})
-map.set("elytra", {"path":"textures/azalea_icons/icontextures/elytra","name":"elytra"})
-map.set("emerald", {"path":"textures/azalea_icons/icontextures/emerald","name":"emerald"})
-map.set("emmentaler", {"path":"textures/azalea_icons/icontextures/emmentaler","name":"emmentaler"})
-map.set("enchanted_book", {"path":"textures/azalea_icons/icontextures/enchanted_book","name":"enchanted_book"})
-map.set("ender_eye", {"path":"textures/azalea_icons/icontextures/ender_eye","name":"ender_eye"})
-map.set("ender_pearl", {"path":"textures/azalea_icons/icontextures/ender_pearl","name":"ender_pearl"})
-map.set("experience_bottle", {"path":"textures/azalea_icons/icontextures/experience_bottle","name":"experience_bottle"})
-map.set("fablic_clothe", {"path":"textures/azalea_icons/icontextures/fablic_clothe","name":"fablic_clothe"})
-map.set("fablic_clothe_2", {"path":"textures/azalea_icons/icontextures/fablic_clothe_2","name":"fablic_clothe_2"})
-map.set("fabric", {"path":"textures/azalea_icons/icontextures/fabric","name":"fabric"})
-map.set("fabric_2", {"path":"textures/azalea_icons/icontextures/fabric_2","name":"fabric_2"})
-map.set("feather", {"path":"textures/azalea_icons/icontextures/feather","name":"feather"})
-map.set("feather_a", {"path":"textures/azalea_icons/icontextures/feather_a","name":"feather_a"})
-map.set("feather_a_2", {"path":"textures/azalea_icons/icontextures/feather_a_2","name":"feather_a_2"})
-map.set("fermented_spider_eye", {"path":"textures/azalea_icons/icontextures/fermented_spider_eye","name":"fermented_spider_eye"})
-map.set("feta", {"path":"textures/azalea_icons/icontextures/feta","name":"feta"})
-map.set("firework_rocket", {"path":"textures/azalea_icons/icontextures/firework_rocket","name":"firework_rocket"})
-map.set("fire_charge", {"path":"textures/azalea_icons/icontextures/fire_charge","name":"fire_charge"})
-map.set("fish_01a", {"path":"textures/azalea_icons/icontextures/fish_01a","name":"fish_01a"})
-map.set("fish_01b", {"path":"textures/azalea_icons/icontextures/fish_01b","name":"fish_01b"})
-map.set("fish_01c", {"path":"textures/azalea_icons/icontextures/fish_01c","name":"fish_01c"})
-map.set("fish_01d", {"path":"textures/azalea_icons/icontextures/fish_01d","name":"fish_01d"})
-map.set("fish_01e", {"path":"textures/azalea_icons/icontextures/fish_01e","name":"fish_01e"})
-map.set("fish_a", {"path":"textures/azalea_icons/icontextures/fish_a","name":"fish_a"})
-map.set("fish_a_2", {"path":"textures/azalea_icons/icontextures/fish_a_2","name":"fish_a_2"})
-map.set("flint", {"path":"textures/azalea_icons/icontextures/flint","name":"flint"})
-map.set("flint_and_steel", {"path":"textures/azalea_icons/icontextures/flint_and_steel","name":"flint_and_steel"})
-map.set("flower_01a", {"path":"textures/azalea_icons/icontextures/flower_01a","name":"flower_01a"})
-map.set("flower_02a", {"path":"textures/azalea_icons/icontextures/flower_02a","name":"flower_02a"})
-map.set("flower_pot", {"path":"textures/azalea_icons/icontextures/flower_pot","name":"flower_pot"})
-map.set("fontina", {"path":"textures/azalea_icons/icontextures/fontina","name":"fontina"})
-map.set("fromage_frais", {"path":"textures/azalea_icons/icontextures/fromage_frais","name":"fromage_frais"})
-map.set("fruit_01a", {"path":"textures/azalea_icons/icontextures/fruit_01a","name":"fruit_01a"})
-map.set("fruit_01b", {"path":"textures/azalea_icons/icontextures/fruit_01b","name":"fruit_01b"})
-map.set("fur_a", {"path":"textures/azalea_icons/icontextures/fur_a","name":"fur_a"})
-map.set("fur_a_2", {"path":"textures/azalea_icons/icontextures/fur_a_2","name":"fur_a_2"})
-map.set("gem_01a", {"path":"textures/azalea_icons/icontextures/gem_01a","name":"gem_01a"})
-map.set("gem_01b", {"path":"textures/azalea_icons/icontextures/gem_01b","name":"gem_01b"})
-map.set("gem_01c", {"path":"textures/azalea_icons/icontextures/gem_01c","name":"gem_01c"})
-map.set("gem_01d", {"path":"textures/azalea_icons/icontextures/gem_01d","name":"gem_01d"})
-map.set("gem_01e", {"path":"textures/azalea_icons/icontextures/gem_01e","name":"gem_01e"})
-map.set("gem_01f", {"path":"textures/azalea_icons/icontextures/gem_01f","name":"gem_01f"})
-map.set("gem_01g", {"path":"textures/azalea_icons/icontextures/gem_01g","name":"gem_01g"})
-map.set("gem_01h", {"path":"textures/azalea_icons/icontextures/gem_01h","name":"gem_01h"})
-map.set("gem_01i", {"path":"textures/azalea_icons/icontextures/gem_01i","name":"gem_01i"})
-map.set("gem_01j", {"path":"textures/azalea_icons/icontextures/gem_01j","name":"gem_01j"})
-map.set("ghast_tear", {"path":"textures/azalea_icons/icontextures/ghast_tear","name":"ghast_tear"})
-map.set("giftopen_01a", {"path":"textures/azalea_icons/icontextures/giftopen_01a","name":"giftopen_01a"})
-map.set("giftopen_01b", {"path":"textures/azalea_icons/icontextures/giftopen_01b","name":"giftopen_01b"})
-map.set("giftopen_01c", {"path":"textures/azalea_icons/icontextures/giftopen_01c","name":"giftopen_01c"})
-map.set("giftopen_01d", {"path":"textures/azalea_icons/icontextures/giftopen_01d","name":"giftopen_01d"})
-map.set("giftopen_01e", {"path":"textures/azalea_icons/icontextures/giftopen_01e","name":"giftopen_01e"})
-map.set("giftopen_01f", {"path":"textures/azalea_icons/icontextures/giftopen_01f","name":"giftopen_01f"})
-map.set("gift_01a", {"path":"textures/azalea_icons/icontextures/gift_01a","name":"gift_01a"})
-map.set("gift_01b", {"path":"textures/azalea_icons/icontextures/gift_01b","name":"gift_01b"})
-map.set("gift_01c", {"path":"textures/azalea_icons/icontextures/gift_01c","name":"gift_01c"})
-map.set("gift_01d", {"path":"textures/azalea_icons/icontextures/gift_01d","name":"gift_01d"})
-map.set("gift_01e", {"path":"textures/azalea_icons/icontextures/gift_01e","name":"gift_01e"})
-map.set("gift_01f", {"path":"textures/azalea_icons/icontextures/gift_01f","name":"gift_01f"})
-map.set("glasses", {"path":"textures/azalea_icons/icontextures/glasses","name":"glasses"})
-map.set("glasses_2", {"path":"textures/azalea_icons/icontextures/glasses_2","name":"glasses_2"})
-map.set("glass_bottle", {"path":"textures/azalea_icons/icontextures/glass_bottle","name":"glass_bottle"})
-map.set("glistering_melon_slice", {"path":"textures/azalea_icons/icontextures/glistering_melon_slice","name":"glistering_melon_slice"})
-map.set("gloves_01a", {"path":"textures/azalea_icons/icontextures/gloves_01a","name":"gloves_01a"})
-map.set("gloves_01b", {"path":"textures/azalea_icons/icontextures/gloves_01b","name":"gloves_01b"})
-map.set("gloves_01c", {"path":"textures/azalea_icons/icontextures/gloves_01c","name":"gloves_01c"})
-map.set("gloves_01d", {"path":"textures/azalea_icons/icontextures/gloves_01d","name":"gloves_01d"})
-map.set("gloves_01e", {"path":"textures/azalea_icons/icontextures/gloves_01e","name":"gloves_01e"})
-map.set("glove_01", {"path":"textures/azalea_icons/icontextures/glove_01","name":"glove_01"})
-map.set("glove_01_2", {"path":"textures/azalea_icons/icontextures/glove_01_2","name":"glove_01_2"})
-map.set("glove_02", {"path":"textures/azalea_icons/icontextures/glove_02","name":"glove_02"})
-map.set("glove_02_2", {"path":"textures/azalea_icons/icontextures/glove_02_2","name":"glove_02_2"})
-map.set("glowing_dust", {"path":"textures/azalea_icons/icontextures/glowing_dust","name":"glowing_dust"})
-map.set("glowing_dust_2", {"path":"textures/azalea_icons/icontextures/glowing_dust_2","name":"glowing_dust_2"})
-map.set("glow_berries", {"path":"textures/azalea_icons/icontextures/glow_berries","name":"glow_berries"})
-map.set("glow_ink_sac", {"path":"textures/azalea_icons/icontextures/glow_ink_sac","name":"glow_ink_sac"})
-map.set("golden_apple", {"path":"textures/azalea_icons/icontextures/golden_apple","name":"golden_apple"})
-map.set("golden_axe", {"path":"textures/azalea_icons/icontextures/golden_axe","name":"golden_axe"})
-map.set("golden_boots", {"path":"textures/azalea_icons/icontextures/golden_boots","name":"golden_boots"})
-map.set("golden_carrot", {"path":"textures/azalea_icons/icontextures/golden_carrot","name":"golden_carrot"})
-map.set("golden_chestplate", {"path":"textures/azalea_icons/icontextures/golden_chestplate","name":"golden_chestplate"})
-map.set("golden_helmet", {"path":"textures/azalea_icons/icontextures/golden_helmet","name":"golden_helmet"})
-map.set("golden_hoe", {"path":"textures/azalea_icons/icontextures/golden_hoe","name":"golden_hoe"})
-map.set("golden_horse_armor", {"path":"textures/azalea_icons/icontextures/golden_horse_armor","name":"golden_horse_armor"})
-map.set("golden_leggings", {"path":"textures/azalea_icons/icontextures/golden_leggings","name":"golden_leggings"})
-map.set("golden_pickaxe", {"path":"textures/azalea_icons/icontextures/golden_pickaxe","name":"golden_pickaxe"})
-map.set("golden_shovel", {"path":"textures/azalea_icons/icontextures/golden_shovel","name":"golden_shovel"})
-map.set("golden_sword", {"path":"textures/azalea_icons/icontextures/golden_sword","name":"golden_sword"})
-map.set("gold_ingot", {"path":"textures/azalea_icons/icontextures/gold_ingot","name":"gold_ingot"})
-map.set("gold_ingot_2", {"path":"textures/azalea_icons/icontextures/gold_ingot_2","name":"gold_ingot_2"})
-map.set("gold_nugget", {"path":"textures/azalea_icons/icontextures/gold_nugget","name":"gold_nugget"})
-map.set("gold_ore", {"path":"textures/azalea_icons/icontextures/gold_ore","name":"gold_ore"})
-map.set("gold_ore_2", {"path":"textures/azalea_icons/icontextures/gold_ore_2","name":"gold_ore_2"})
-map.set("gorgonzola", {"path":"textures/azalea_icons/icontextures/gorgonzola","name":"gorgonzola"})
-map.set("gouda", {"path":"textures/azalea_icons/icontextures/gouda","name":"gouda"})
-map.set("grasp", {"path":"textures/azalea_icons/icontextures/grasp","name":"grasp"})
-map.set("green_mushroom", {"path":"textures/azalea_icons/icontextures/green_mushroom","name":"green_mushroom"})
-map.set("green_mushroom_2", {"path":"textures/azalea_icons/icontextures/green_mushroom_2","name":"green_mushroom_2"})
-map.set("gruyere", {"path":"textures/azalea_icons/icontextures/gruyere","name":"gruyere"})
-map.set("gunpowder", {"path":"textures/azalea_icons/icontextures/gunpowder","name":"gunpowder"})
-map.set("halloumi", {"path":"textures/azalea_icons/icontextures/halloumi","name":"halloumi"})
-map.set("hat_01a", {"path":"textures/azalea_icons/icontextures/hat_01a","name":"hat_01a"})
-map.set("hat_01b", {"path":"textures/azalea_icons/icontextures/hat_01b","name":"hat_01b"})
-map.set("hat_01c", {"path":"textures/azalea_icons/icontextures/hat_01c","name":"hat_01c"})
-map.set("hat_01d", {"path":"textures/azalea_icons/icontextures/hat_01d","name":"hat_01d"})
-map.set("hat_01e", {"path":"textures/azalea_icons/icontextures/hat_01e","name":"hat_01e"})
-map.set("hat_01f", {"path":"textures/azalea_icons/icontextures/hat_01f","name":"hat_01f"})
-map.set("headgear_01", {"path":"textures/azalea_icons/icontextures/headgear_01","name":"headgear_01"})
-map.set("headgear_01_2", {"path":"textures/azalea_icons/icontextures/headgear_01_2","name":"headgear_01_2"})
-map.set("headgear_02", {"path":"textures/azalea_icons/icontextures/headgear_02","name":"headgear_02"})
-map.set("headgear_02_2", {"path":"textures/azalea_icons/icontextures/headgear_02_2","name":"headgear_02_2"})
-map.set("heart_of_the_sea", {"path":"textures/azalea_icons/icontextures/heart_of_the_sea","name":"heart_of_the_sea"})
-map.set("helmet_01a", {"path":"textures/azalea_icons/icontextures/helmet_01a","name":"helmet_01a"})
-map.set("helmet_01b", {"path":"textures/azalea_icons/icontextures/helmet_01b","name":"helmet_01b"})
-map.set("helmet_01c", {"path":"textures/azalea_icons/icontextures/helmet_01c","name":"helmet_01c"})
-map.set("helmet_01d", {"path":"textures/azalea_icons/icontextures/helmet_01d","name":"helmet_01d"})
-map.set("helmet_01e", {"path":"textures/azalea_icons/icontextures/helmet_01e","name":"helmet_01e"})
-map.set("helmet_02a", {"path":"textures/azalea_icons/icontextures/helmet_02a","name":"helmet_02a"})
-map.set("helmet_02b", {"path":"textures/azalea_icons/icontextures/helmet_02b","name":"helmet_02b"})
-map.set("helmet_02c", {"path":"textures/azalea_icons/icontextures/helmet_02c","name":"helmet_02c"})
-map.set("helmet_02d", {"path":"textures/azalea_icons/icontextures/helmet_02d","name":"helmet_02d"})
-map.set("helmet_02e", {"path":"textures/azalea_icons/icontextures/helmet_02e","name":"helmet_02e"})
-map.set("herb", {"path":"textures/azalea_icons/icontextures/herb","name":"herb"})
-map.set("herb_2", {"path":"textures/azalea_icons/icontextures/herb_2","name":"herb_2"})
-map.set("hi_quality_pickaxe", {"path":"textures/azalea_icons/icontextures/hi_quality_pickaxe","name":"hi_quality_pickaxe"})
-map.set("hi_quality_pickaxe_2", {"path":"textures/azalea_icons/icontextures/hi_quality_pickaxe_2","name":"hi_quality_pickaxe_2"})
-map.set("hi_quality_scethe", {"path":"textures/azalea_icons/icontextures/hi_quality_scethe","name":"hi_quality_scethe"})
-map.set("hi_quality_scethe_2", {"path":"textures/azalea_icons/icontextures/hi_quality_scethe_2","name":"hi_quality_scethe_2"})
-map.set("hoe", {"path":"textures/azalea_icons/icontextures/hoe","name":"hoe"})
-map.set("hoe_2", {"path":"textures/azalea_icons/icontextures/hoe_2","name":"hoe_2"})
-map.set("honeycomb", {"path":"textures/azalea_icons/icontextures/honeycomb","name":"honeycomb"})
-map.set("honey_bottle", {"path":"textures/azalea_icons/icontextures/honey_bottle","name":"honey_bottle"})
-map.set("hopper", {"path":"textures/azalea_icons/icontextures/hopper","name":"hopper"})
-map.set("hp_potion", {"path":"textures/azalea_icons/icontextures/hp_potion","name":"hp_potion"})
-map.set("hp_potion_2", {"path":"textures/azalea_icons/icontextures/hp_potion_2","name":"hp_potion_2"})
-map.set("Icon14_01", {"path":"textures/azalea_icons/icontextures/Icon14_01","name":"Icon14_01"})
-map.set("Icon14_02", {"path":"textures/azalea_icons/icontextures/Icon14_02","name":"Icon14_02"})
-map.set("Icon14_03", {"path":"textures/azalea_icons/icontextures/Icon14_03","name":"Icon14_03"})
-map.set("Icon14_04", {"path":"textures/azalea_icons/icontextures/Icon14_04","name":"Icon14_04"})
-map.set("Icon14_05", {"path":"textures/azalea_icons/icontextures/Icon14_05","name":"Icon14_05"})
-map.set("Icon14_06", {"path":"textures/azalea_icons/icontextures/Icon14_06","name":"Icon14_06"})
-map.set("Icon14_07", {"path":"textures/azalea_icons/icontextures/Icon14_07","name":"Icon14_07"})
-map.set("Icon14_08", {"path":"textures/azalea_icons/icontextures/Icon14_08","name":"Icon14_08"})
-map.set("Icon14_09", {"path":"textures/azalea_icons/icontextures/Icon14_09","name":"Icon14_09"})
-map.set("Icon14_10", {"path":"textures/azalea_icons/icontextures/Icon14_10","name":"Icon14_10"})
-map.set("Icon14_11", {"path":"textures/azalea_icons/icontextures/Icon14_11","name":"Icon14_11"})
-map.set("Icon14_12", {"path":"textures/azalea_icons/icontextures/Icon14_12","name":"Icon14_12"})
-map.set("Icon14_13", {"path":"textures/azalea_icons/icontextures/Icon14_13","name":"Icon14_13"})
-map.set("Icon14_14", {"path":"textures/azalea_icons/icontextures/Icon14_14","name":"Icon14_14"})
-map.set("Icon14_15", {"path":"textures/azalea_icons/icontextures/Icon14_15","name":"Icon14_15"})
-map.set("Icon14_16", {"path":"textures/azalea_icons/icontextures/Icon14_16","name":"Icon14_16"})
-map.set("Icon14_17", {"path":"textures/azalea_icons/icontextures/Icon14_17","name":"Icon14_17"})
-map.set("Icon14_18", {"path":"textures/azalea_icons/icontextures/Icon14_18","name":"Icon14_18"})
-map.set("Icon14_19", {"path":"textures/azalea_icons/icontextures/Icon14_19","name":"Icon14_19"})
-map.set("Icon14_20", {"path":"textures/azalea_icons/icontextures/Icon14_20","name":"Icon14_20"})
-map.set("Icon14_21", {"path":"textures/azalea_icons/icontextures/Icon14_21","name":"Icon14_21"})
-map.set("Icon14_22", {"path":"textures/azalea_icons/icontextures/Icon14_22","name":"Icon14_22"})
-map.set("Icon14_23", {"path":"textures/azalea_icons/icontextures/Icon14_23","name":"Icon14_23"})
-map.set("Icon14_24", {"path":"textures/azalea_icons/icontextures/Icon14_24","name":"Icon14_24"})
-map.set("Icon14_25", {"path":"textures/azalea_icons/icontextures/Icon14_25","name":"Icon14_25"})
-map.set("Icon14_26", {"path":"textures/azalea_icons/icontextures/Icon14_26","name":"Icon14_26"})
-map.set("Icon14_27", {"path":"textures/azalea_icons/icontextures/Icon14_27","name":"Icon14_27"})
-map.set("Icon14_28", {"path":"textures/azalea_icons/icontextures/Icon14_28","name":"Icon14_28"})
-map.set("Icon14_29", {"path":"textures/azalea_icons/icontextures/Icon14_29","name":"Icon14_29"})
-map.set("Icon14_30", {"path":"textures/azalea_icons/icontextures/Icon14_30","name":"Icon14_30"})
-map.set("Icon14_31", {"path":"textures/azalea_icons/icontextures/Icon14_31","name":"Icon14_31"})
-map.set("Icon14_32", {"path":"textures/azalea_icons/icontextures/Icon14_32","name":"Icon14_32"})
-map.set("Icon14_33", {"path":"textures/azalea_icons/icontextures/Icon14_33","name":"Icon14_33"})
-map.set("Icon14_34", {"path":"textures/azalea_icons/icontextures/Icon14_34","name":"Icon14_34"})
-map.set("Icon14_35", {"path":"textures/azalea_icons/icontextures/Icon14_35","name":"Icon14_35"})
-map.set("Icon14_36", {"path":"textures/azalea_icons/icontextures/Icon14_36","name":"Icon14_36"})
-map.set("Icon14_37", {"path":"textures/azalea_icons/icontextures/Icon14_37","name":"Icon14_37"})
-map.set("Icon14_38", {"path":"textures/azalea_icons/icontextures/Icon14_38","name":"Icon14_38"})
-map.set("Icon14_39", {"path":"textures/azalea_icons/icontextures/Icon14_39","name":"Icon14_39"})
-map.set("Icon14_40", {"path":"textures/azalea_icons/icontextures/Icon14_40","name":"Icon14_40"})
-map.set("ingot_01a", {"path":"textures/azalea_icons/icontextures/ingot_01a","name":"ingot_01a"})
-map.set("ingot_01b", {"path":"textures/azalea_icons/icontextures/ingot_01b","name":"ingot_01b"})
-map.set("ingot_01c", {"path":"textures/azalea_icons/icontextures/ingot_01c","name":"ingot_01c"})
-map.set("ingot_01d", {"path":"textures/azalea_icons/icontextures/ingot_01d","name":"ingot_01d"})
-map.set("ingot_01e", {"path":"textures/azalea_icons/icontextures/ingot_01e","name":"ingot_01e"})
-map.set("ink_sac", {"path":"textures/azalea_icons/icontextures/ink_sac","name":"ink_sac"})
-map.set("iron_armor", {"path":"textures/azalea_icons/icontextures/iron_armor","name":"iron_armor"})
-map.set("iron_armor_2", {"path":"textures/azalea_icons/icontextures/iron_armor_2","name":"iron_armor_2"})
-map.set("iron_axe", {"path":"textures/azalea_icons/icontextures/iron_axe","name":"iron_axe"})
-map.set("iron_boots", {"path":"textures/azalea_icons/icontextures/iron_boots","name":"iron_boots"})
-map.set("iron_chestplate", {"path":"textures/azalea_icons/icontextures/iron_chestplate","name":"iron_chestplate"})
-map.set("iron_helmet", {"path":"textures/azalea_icons/icontextures/iron_helmet","name":"iron_helmet"})
-map.set("iron_hoe", {"path":"textures/azalea_icons/icontextures/iron_hoe","name":"iron_hoe"})
-map.set("iron_horse_armor", {"path":"textures/azalea_icons/icontextures/iron_horse_armor","name":"iron_horse_armor"})
-map.set("iron_ingot", {"path":"textures/azalea_icons/icontextures/iron_ingot","name":"iron_ingot"})
-map.set("iron_ingot_2", {"path":"textures/azalea_icons/icontextures/iron_ingot_2","name":"iron_ingot_2"})
-map.set("iron_leggings", {"path":"textures/azalea_icons/icontextures/iron_leggings","name":"iron_leggings"})
-map.set("iron_nugget", {"path":"textures/azalea_icons/icontextures/iron_nugget","name":"iron_nugget"})
-map.set("iron_ore", {"path":"textures/azalea_icons/icontextures/iron_ore","name":"iron_ore"})
-map.set("iron_ore_2", {"path":"textures/azalea_icons/icontextures/iron_ore_2","name":"iron_ore_2"})
-map.set("iron_pickaxe", {"path":"textures/azalea_icons/icontextures/iron_pickaxe","name":"iron_pickaxe"})
-map.set("iron_shovel", {"path":"textures/azalea_icons/icontextures/iron_shovel","name":"iron_shovel"})
-map.set("iron_sword", {"path":"textures/azalea_icons/icontextures/iron_sword","name":"iron_sword"})
-map.set("kelp", {"path":"textures/azalea_icons/icontextures/kelp","name":"kelp"})
-map.set("key_01a", {"path":"textures/azalea_icons/icontextures/key_01a","name":"key_01a"})
-map.set("key_01b", {"path":"textures/azalea_icons/icontextures/key_01b","name":"key_01b"})
-map.set("key_01c", {"path":"textures/azalea_icons/icontextures/key_01c","name":"key_01c"})
-map.set("key_01d", {"path":"textures/azalea_icons/icontextures/key_01d","name":"key_01d"})
-map.set("key_01e", {"path":"textures/azalea_icons/icontextures/key_01e","name":"key_01e"})
-map.set("key_02a", {"path":"textures/azalea_icons/icontextures/key_02a","name":"key_02a"})
-map.set("key_02b", {"path":"textures/azalea_icons/icontextures/key_02b","name":"key_02b"})
-map.set("key_02c", {"path":"textures/azalea_icons/icontextures/key_02c","name":"key_02c"})
-map.set("key_02d", {"path":"textures/azalea_icons/icontextures/key_02d","name":"key_02d"})
-map.set("key_02e", {"path":"textures/azalea_icons/icontextures/key_02e","name":"key_02e"})
-map.set("lantern", {"path":"textures/azalea_icons/icontextures/lantern","name":"lantern"})
-map.set("lapis_lazuli", {"path":"textures/azalea_icons/icontextures/lapis_lazuli","name":"lapis_lazuli"})
-map.set("lava_bucket", {"path":"textures/azalea_icons/icontextures/lava_bucket","name":"lava_bucket"})
-map.set("leaf_01a", {"path":"textures/azalea_icons/icontextures/leaf_01a","name":"leaf_01a"})
-map.set("leather", {"path":"textures/azalea_icons/icontextures/leather","name":"leather"})
-map.set("leather_armor", {"path":"textures/azalea_icons/icontextures/leather_armor","name":"leather_armor"})
-map.set("leather_armor_2", {"path":"textures/azalea_icons/icontextures/leather_armor_2","name":"leather_armor_2"})
-map.set("leather_arm_guard", {"path":"textures/azalea_icons/icontextures/leather_arm_guard","name":"leather_arm_guard"})
-map.set("leather_arm_guard_2", {"path":"textures/azalea_icons/icontextures/leather_arm_guard_2","name":"leather_arm_guard_2"})
-map.set("leather_boots", {"path":"textures/azalea_icons/icontextures/leather_boots","name":"leather_boots"})
-map.set("leather_boots_01", {"path":"textures/azalea_icons/icontextures/leather_boots_01","name":"leather_boots_01"})
-map.set("leather_boots_01_2", {"path":"textures/azalea_icons/icontextures/leather_boots_01_2","name":"leather_boots_01_2"})
-map.set("leather_boots_02", {"path":"textures/azalea_icons/icontextures/leather_boots_02","name":"leather_boots_02"})
-map.set("leather_boots_02_2", {"path":"textures/azalea_icons/icontextures/leather_boots_02_2","name":"leather_boots_02_2"})
-map.set("leather_boots_overlay", {"path":"textures/azalea_icons/icontextures/leather_boots_overlay","name":"leather_boots_overlay"})
-map.set("leather_chestplate", {"path":"textures/azalea_icons/icontextures/leather_chestplate","name":"leather_chestplate"})
-map.set("leather_glove", {"path":"textures/azalea_icons/icontextures/leather_glove","name":"leather_glove"})
-map.set("leather_glove_2", {"path":"textures/azalea_icons/icontextures/leather_glove_2","name":"leather_glove_2"})
-map.set("leather_helmet", {"path":"textures/azalea_icons/icontextures/leather_helmet","name":"leather_helmet"})
-map.set("leather_horse_armor", {"path":"textures/azalea_icons/icontextures/leather_horse_armor","name":"leather_horse_armor"})
-map.set("leather_leggings", {"path":"textures/azalea_icons/icontextures/leather_leggings","name":"leather_leggings"})
-map.set("limburger", {"path":"textures/azalea_icons/icontextures/limburger","name":"limburger"})
-map.set("log", {"path":"textures/azalea_icons/icontextures/log","name":"log"})
-map.set("log_2", {"path":"textures/azalea_icons/icontextures/log_2","name":"log_2"})
-map.set("maasdam", {"path":"textures/azalea_icons/icontextures/maasdam","name":"maasdam"})
-map.set("magma_cream", {"path":"textures/azalea_icons/icontextures/magma_cream","name":"magma_cream"})
-map.set("mana_potion", {"path":"textures/azalea_icons/icontextures/mana_potion","name":"mana_potion"})
-map.set("mana_potion_2", {"path":"textures/azalea_icons/icontextures/mana_potion_2","name":"mana_potion_2"})
-map.set("manchego", {"path":"textures/azalea_icons/icontextures/manchego","name":"manchego"})
-map.set("mantua", {"path":"textures/azalea_icons/icontextures/mantua","name":"mantua"})
-map.set("mantua_2", {"path":"textures/azalea_icons/icontextures/mantua_2","name":"mantua_2"})
-map.set("map", {"path":"textures/azalea_icons/icontextures/map","name":"map"})
-map.set("mascarpone", {"path":"textures/azalea_icons/icontextures/mascarpone","name":"mascarpone"})
-map.set("meat", {"path":"textures/azalea_icons/icontextures/meat","name":"meat"})
-map.set("meat_2", {"path":"textures/azalea_icons/icontextures/meat_2","name":"meat_2"})
-map.set("melon_slice", {"path":"textures/azalea_icons/icontextures/melon_slice","name":"melon_slice"})
-map.set("mf_items_amphibian_reptile_1", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_1","name":"mf_items_amphibian_reptile_1"})
-map.set("mf_items_amphibian_reptile_10", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_10","name":"mf_items_amphibian_reptile_10"})
-map.set("mf_items_amphibian_reptile_11", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_11","name":"mf_items_amphibian_reptile_11"})
-map.set("mf_items_amphibian_reptile_12", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_12","name":"mf_items_amphibian_reptile_12"})
-map.set("mf_items_amphibian_reptile_2", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_2","name":"mf_items_amphibian_reptile_2"})
-map.set("mf_items_amphibian_reptile_3", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_3","name":"mf_items_amphibian_reptile_3"})
-map.set("mf_items_amphibian_reptile_4", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_4","name":"mf_items_amphibian_reptile_4"})
-map.set("mf_items_amphibian_reptile_5", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_5","name":"mf_items_amphibian_reptile_5"})
-map.set("mf_items_amphibian_reptile_6", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_6","name":"mf_items_amphibian_reptile_6"})
-map.set("mf_items_amphibian_reptile_7", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_7","name":"mf_items_amphibian_reptile_7"})
-map.set("mf_items_amphibian_reptile_8", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_8","name":"mf_items_amphibian_reptile_8"})
-map.set("mf_items_amphibian_reptile_9", {"path":"textures/azalea_icons/icontextures/mf_items_amphibian_reptile_9","name":"mf_items_amphibian_reptile_9"})
-map.set("mf_items_animal_tool_1", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_1","name":"mf_items_animal_tool_1"})
-map.set("mf_items_animal_tool_10", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_10","name":"mf_items_animal_tool_10"})
-map.set("mf_items_animal_tool_11", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_11","name":"mf_items_animal_tool_11"})
-map.set("mf_items_animal_tool_12", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_12","name":"mf_items_animal_tool_12"})
-map.set("mf_items_animal_tool_2", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_2","name":"mf_items_animal_tool_2"})
-map.set("mf_items_animal_tool_3", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_3","name":"mf_items_animal_tool_3"})
-map.set("mf_items_animal_tool_4", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_4","name":"mf_items_animal_tool_4"})
-map.set("mf_items_animal_tool_5", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_5","name":"mf_items_animal_tool_5"})
-map.set("mf_items_animal_tool_6", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_6","name":"mf_items_animal_tool_6"})
-map.set("mf_items_animal_tool_7", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_7","name":"mf_items_animal_tool_7"})
-map.set("mf_items_animal_tool_8", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_8","name":"mf_items_animal_tool_8"})
-map.set("mf_items_animal_tool_9", {"path":"textures/azalea_icons/icontextures/mf_items_animal_tool_9","name":"mf_items_animal_tool_9"})
-map.set("mf_items_armour_1", {"path":"textures/azalea_icons/icontextures/mf_items_armour_1","name":"mf_items_armour_1"})
-map.set("mf_items_armour_10", {"path":"textures/azalea_icons/icontextures/mf_items_armour_10","name":"mf_items_armour_10"})
-map.set("mf_items_armour_11", {"path":"textures/azalea_icons/icontextures/mf_items_armour_11","name":"mf_items_armour_11"})
-map.set("mf_items_armour_12", {"path":"textures/azalea_icons/icontextures/mf_items_armour_12","name":"mf_items_armour_12"})
-map.set("mf_items_armour_2", {"path":"textures/azalea_icons/icontextures/mf_items_armour_2","name":"mf_items_armour_2"})
-map.set("mf_items_armour_3", {"path":"textures/azalea_icons/icontextures/mf_items_armour_3","name":"mf_items_armour_3"})
-map.set("mf_items_armour_4", {"path":"textures/azalea_icons/icontextures/mf_items_armour_4","name":"mf_items_armour_4"})
-map.set("mf_items_armour_5", {"path":"textures/azalea_icons/icontextures/mf_items_armour_5","name":"mf_items_armour_5"})
-map.set("mf_items_armour_6", {"path":"textures/azalea_icons/icontextures/mf_items_armour_6","name":"mf_items_armour_6"})
-map.set("mf_items_armour_7", {"path":"textures/azalea_icons/icontextures/mf_items_armour_7","name":"mf_items_armour_7"})
-map.set("mf_items_armour_8", {"path":"textures/azalea_icons/icontextures/mf_items_armour_8","name":"mf_items_armour_8"})
-map.set("mf_items_armour_9", {"path":"textures/azalea_icons/icontextures/mf_items_armour_9","name":"mf_items_armour_9"})
-map.set("mf_items_bakery_misc_1", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_1","name":"mf_items_bakery_misc_1"})
-map.set("mf_items_bakery_misc_10", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_10","name":"mf_items_bakery_misc_10"})
-map.set("mf_items_bakery_misc_11", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_11","name":"mf_items_bakery_misc_11"})
-map.set("mf_items_bakery_misc_12", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_12","name":"mf_items_bakery_misc_12"})
-map.set("mf_items_bakery_misc_2", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_2","name":"mf_items_bakery_misc_2"})
-map.set("mf_items_bakery_misc_3", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_3","name":"mf_items_bakery_misc_3"})
-map.set("mf_items_bakery_misc_4", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_4","name":"mf_items_bakery_misc_4"})
-map.set("mf_items_bakery_misc_5", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_5","name":"mf_items_bakery_misc_5"})
-map.set("mf_items_bakery_misc_6", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_6","name":"mf_items_bakery_misc_6"})
-map.set("mf_items_bakery_misc_7", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_7","name":"mf_items_bakery_misc_7"})
-map.set("mf_items_bakery_misc_8", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_8","name":"mf_items_bakery_misc_8"})
-map.set("mf_items_bakery_misc_9", {"path":"textures/azalea_icons/icontextures/mf_items_bakery_misc_9","name":"mf_items_bakery_misc_9"})
-map.set("mf_items_clothes_1", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_1","name":"mf_items_clothes_1"})
-map.set("mf_items_clothes_10", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_10","name":"mf_items_clothes_10"})
-map.set("mf_items_clothes_11", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_11","name":"mf_items_clothes_11"})
-map.set("mf_items_clothes_12", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_12","name":"mf_items_clothes_12"})
-map.set("mf_items_clothes_2", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_2","name":"mf_items_clothes_2"})
-map.set("mf_items_clothes_3", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_3","name":"mf_items_clothes_3"})
-map.set("mf_items_clothes_4", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_4","name":"mf_items_clothes_4"})
-map.set("mf_items_clothes_5", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_5","name":"mf_items_clothes_5"})
-map.set("mf_items_clothes_6", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_6","name":"mf_items_clothes_6"})
-map.set("mf_items_clothes_7", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_7","name":"mf_items_clothes_7"})
-map.set("mf_items_clothes_8", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_8","name":"mf_items_clothes_8"})
-map.set("mf_items_clothes_9", {"path":"textures/azalea_icons/icontextures/mf_items_clothes_9","name":"mf_items_clothes_9"})
-map.set("mf_items_cooking_tool_1", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_1","name":"mf_items_cooking_tool_1"})
-map.set("mf_items_cooking_tool_10", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_10","name":"mf_items_cooking_tool_10"})
-map.set("mf_items_cooking_tool_11", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_11","name":"mf_items_cooking_tool_11"})
-map.set("mf_items_cooking_tool_12", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_12","name":"mf_items_cooking_tool_12"})
-map.set("mf_items_cooking_tool_2", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_2","name":"mf_items_cooking_tool_2"})
-map.set("mf_items_cooking_tool_3", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_3","name":"mf_items_cooking_tool_3"})
-map.set("mf_items_cooking_tool_4", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_4","name":"mf_items_cooking_tool_4"})
-map.set("mf_items_cooking_tool_5", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_5","name":"mf_items_cooking_tool_5"})
-map.set("mf_items_cooking_tool_6", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_6","name":"mf_items_cooking_tool_6"})
-map.set("mf_items_cooking_tool_7", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_7","name":"mf_items_cooking_tool_7"})
-map.set("mf_items_cooking_tool_8", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_8","name":"mf_items_cooking_tool_8"})
-map.set("mf_items_cooking_tool_9", {"path":"textures/azalea_icons/icontextures/mf_items_cooking_tool_9","name":"mf_items_cooking_tool_9"})
-map.set("mf_items_craft_1", {"path":"textures/azalea_icons/icontextures/mf_items_craft_1","name":"mf_items_craft_1"})
-map.set("mf_items_craft_10", {"path":"textures/azalea_icons/icontextures/mf_items_craft_10","name":"mf_items_craft_10"})
-map.set("mf_items_craft_11", {"path":"textures/azalea_icons/icontextures/mf_items_craft_11","name":"mf_items_craft_11"})
-map.set("mf_items_craft_12", {"path":"textures/azalea_icons/icontextures/mf_items_craft_12","name":"mf_items_craft_12"})
-map.set("mf_items_craft_2", {"path":"textures/azalea_icons/icontextures/mf_items_craft_2","name":"mf_items_craft_2"})
-map.set("mf_items_craft_3", {"path":"textures/azalea_icons/icontextures/mf_items_craft_3","name":"mf_items_craft_3"})
-map.set("mf_items_craft_4", {"path":"textures/azalea_icons/icontextures/mf_items_craft_4","name":"mf_items_craft_4"})
-map.set("mf_items_craft_5", {"path":"textures/azalea_icons/icontextures/mf_items_craft_5","name":"mf_items_craft_5"})
-map.set("mf_items_craft_6", {"path":"textures/azalea_icons/icontextures/mf_items_craft_6","name":"mf_items_craft_6"})
-map.set("mf_items_craft_7", {"path":"textures/azalea_icons/icontextures/mf_items_craft_7","name":"mf_items_craft_7"})
-map.set("mf_items_craft_8", {"path":"textures/azalea_icons/icontextures/mf_items_craft_8","name":"mf_items_craft_8"})
-map.set("mf_items_craft_9", {"path":"textures/azalea_icons/icontextures/mf_items_craft_9","name":"mf_items_craft_9"})
-map.set("mf_items_crustacean_1", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_1","name":"mf_items_crustacean_1"})
-map.set("mf_items_crustacean_10", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_10","name":"mf_items_crustacean_10"})
-map.set("mf_items_crustacean_11", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_11","name":"mf_items_crustacean_11"})
-map.set("mf_items_crustacean_12", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_12","name":"mf_items_crustacean_12"})
-map.set("mf_items_crustacean_2", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_2","name":"mf_items_crustacean_2"})
-map.set("mf_items_crustacean_3", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_3","name":"mf_items_crustacean_3"})
-map.set("mf_items_crustacean_4", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_4","name":"mf_items_crustacean_4"})
-map.set("mf_items_crustacean_5", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_5","name":"mf_items_crustacean_5"})
-map.set("mf_items_crustacean_6", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_6","name":"mf_items_crustacean_6"})
-map.set("mf_items_crustacean_7", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_7","name":"mf_items_crustacean_7"})
-map.set("mf_items_crustacean_8", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_8","name":"mf_items_crustacean_8"})
-map.set("mf_items_crustacean_9", {"path":"textures/azalea_icons/icontextures/mf_items_crustacean_9","name":"mf_items_crustacean_9"})
-map.set("mf_items_dish_1", {"path":"textures/azalea_icons/icontextures/mf_items_dish_1","name":"mf_items_dish_1"})
-map.set("mf_items_dish_10", {"path":"textures/azalea_icons/icontextures/mf_items_dish_10","name":"mf_items_dish_10"})
-map.set("mf_items_dish_11", {"path":"textures/azalea_icons/icontextures/mf_items_dish_11","name":"mf_items_dish_11"})
-map.set("mf_items_dish_12", {"path":"textures/azalea_icons/icontextures/mf_items_dish_12","name":"mf_items_dish_12"})
-map.set("mf_items_dish_2", {"path":"textures/azalea_icons/icontextures/mf_items_dish_2","name":"mf_items_dish_2"})
-map.set("mf_items_dish_3", {"path":"textures/azalea_icons/icontextures/mf_items_dish_3","name":"mf_items_dish_3"})
-map.set("mf_items_dish_4", {"path":"textures/azalea_icons/icontextures/mf_items_dish_4","name":"mf_items_dish_4"})
-map.set("mf_items_dish_5", {"path":"textures/azalea_icons/icontextures/mf_items_dish_5","name":"mf_items_dish_5"})
-map.set("mf_items_dish_6", {"path":"textures/azalea_icons/icontextures/mf_items_dish_6","name":"mf_items_dish_6"})
-map.set("mf_items_dish_7", {"path":"textures/azalea_icons/icontextures/mf_items_dish_7","name":"mf_items_dish_7"})
-map.set("mf_items_dish_8", {"path":"textures/azalea_icons/icontextures/mf_items_dish_8","name":"mf_items_dish_8"})
-map.set("mf_items_dish_9", {"path":"textures/azalea_icons/icontextures/mf_items_dish_9","name":"mf_items_dish_9"})
-map.set("mf_items_drink_oil_1", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_1","name":"mf_items_drink_oil_1"})
-map.set("mf_items_drink_oil_10", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_10","name":"mf_items_drink_oil_10"})
-map.set("mf_items_drink_oil_11", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_11","name":"mf_items_drink_oil_11"})
-map.set("mf_items_drink_oil_12", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_12","name":"mf_items_drink_oil_12"})
-map.set("mf_items_drink_oil_2", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_2","name":"mf_items_drink_oil_2"})
-map.set("mf_items_drink_oil_3", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_3","name":"mf_items_drink_oil_3"})
-map.set("mf_items_drink_oil_4", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_4","name":"mf_items_drink_oil_4"})
-map.set("mf_items_drink_oil_5", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_5","name":"mf_items_drink_oil_5"})
-map.set("mf_items_drink_oil_6", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_6","name":"mf_items_drink_oil_6"})
-map.set("mf_items_drink_oil_7", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_7","name":"mf_items_drink_oil_7"})
-map.set("mf_items_drink_oil_8", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_8","name":"mf_items_drink_oil_8"})
-map.set("mf_items_drink_oil_9", {"path":"textures/azalea_icons/icontextures/mf_items_drink_oil_9","name":"mf_items_drink_oil_9"})
-map.set("mf_items_farming_tool_1", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_1","name":"mf_items_farming_tool_1"})
-map.set("mf_items_farming_tool_10", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_10","name":"mf_items_farming_tool_10"})
-map.set("mf_items_farming_tool_11", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_11","name":"mf_items_farming_tool_11"})
-map.set("mf_items_farming_tool_12", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_12","name":"mf_items_farming_tool_12"})
-map.set("mf_items_farming_tool_2", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_2","name":"mf_items_farming_tool_2"})
-map.set("mf_items_farming_tool_3", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_3","name":"mf_items_farming_tool_3"})
-map.set("mf_items_farming_tool_4", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_4","name":"mf_items_farming_tool_4"})
-map.set("mf_items_farming_tool_5", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_5","name":"mf_items_farming_tool_5"})
-map.set("mf_items_farming_tool_6", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_6","name":"mf_items_farming_tool_6"})
-map.set("mf_items_farming_tool_7", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_7","name":"mf_items_farming_tool_7"})
-map.set("mf_items_farming_tool_8", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_8","name":"mf_items_farming_tool_8"})
-map.set("mf_items_farming_tool_9", {"path":"textures/azalea_icons/icontextures/mf_items_farming_tool_9","name":"mf_items_farming_tool_9"})
-map.set("mf_items_farm_1", {"path":"textures/azalea_icons/icontextures/mf_items_farm_1","name":"mf_items_farm_1"})
-map.set("mf_items_farm_10", {"path":"textures/azalea_icons/icontextures/mf_items_farm_10","name":"mf_items_farm_10"})
-map.set("mf_items_farm_11", {"path":"textures/azalea_icons/icontextures/mf_items_farm_11","name":"mf_items_farm_11"})
-map.set("mf_items_farm_12", {"path":"textures/azalea_icons/icontextures/mf_items_farm_12","name":"mf_items_farm_12"})
-map.set("mf_items_farm_2", {"path":"textures/azalea_icons/icontextures/mf_items_farm_2","name":"mf_items_farm_2"})
-map.set("mf_items_farm_3", {"path":"textures/azalea_icons/icontextures/mf_items_farm_3","name":"mf_items_farm_3"})
-map.set("mf_items_farm_4", {"path":"textures/azalea_icons/icontextures/mf_items_farm_4","name":"mf_items_farm_4"})
-map.set("mf_items_farm_5", {"path":"textures/azalea_icons/icontextures/mf_items_farm_5","name":"mf_items_farm_5"})
-map.set("mf_items_farm_6", {"path":"textures/azalea_icons/icontextures/mf_items_farm_6","name":"mf_items_farm_6"})
-map.set("mf_items_farm_7", {"path":"textures/azalea_icons/icontextures/mf_items_farm_7","name":"mf_items_farm_7"})
-map.set("mf_items_farm_8", {"path":"textures/azalea_icons/icontextures/mf_items_farm_8","name":"mf_items_farm_8"})
-map.set("mf_items_farm_9", {"path":"textures/azalea_icons/icontextures/mf_items_farm_9","name":"mf_items_farm_9"})
-map.set("mf_items_fishing_tool_1", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_1","name":"mf_items_fishing_tool_1"})
-map.set("mf_items_fishing_tool_10", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_10","name":"mf_items_fishing_tool_10"})
-map.set("mf_items_fishing_tool_11", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_11","name":"mf_items_fishing_tool_11"})
-map.set("mf_items_fishing_tool_12", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_12","name":"mf_items_fishing_tool_12"})
-map.set("mf_items_fishing_tool_2", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_2","name":"mf_items_fishing_tool_2"})
-map.set("mf_items_fishing_tool_3", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_3","name":"mf_items_fishing_tool_3"})
-map.set("mf_items_fishing_tool_4", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_4","name":"mf_items_fishing_tool_4"})
-map.set("mf_items_fishing_tool_5", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_5","name":"mf_items_fishing_tool_5"})
-map.set("mf_items_fishing_tool_6", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_6","name":"mf_items_fishing_tool_6"})
-map.set("mf_items_fishing_tool_7", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_7","name":"mf_items_fishing_tool_7"})
-map.set("mf_items_fishing_tool_8", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_8","name":"mf_items_fishing_tool_8"})
-map.set("mf_items_fishing_tool_9", {"path":"textures/azalea_icons/icontextures/mf_items_fishing_tool_9","name":"mf_items_fishing_tool_9"})
-map.set("mf_items_flower_1", {"path":"textures/azalea_icons/icontextures/mf_items_flower_1","name":"mf_items_flower_1"})
-map.set("mf_items_flower_10", {"path":"textures/azalea_icons/icontextures/mf_items_flower_10","name":"mf_items_flower_10"})
-map.set("mf_items_flower_11", {"path":"textures/azalea_icons/icontextures/mf_items_flower_11","name":"mf_items_flower_11"})
-map.set("mf_items_flower_12", {"path":"textures/azalea_icons/icontextures/mf_items_flower_12","name":"mf_items_flower_12"})
-map.set("mf_items_flower_2", {"path":"textures/azalea_icons/icontextures/mf_items_flower_2","name":"mf_items_flower_2"})
-map.set("mf_items_flower_3", {"path":"textures/azalea_icons/icontextures/mf_items_flower_3","name":"mf_items_flower_3"})
-map.set("mf_items_flower_4", {"path":"textures/azalea_icons/icontextures/mf_items_flower_4","name":"mf_items_flower_4"})
-map.set("mf_items_flower_5", {"path":"textures/azalea_icons/icontextures/mf_items_flower_5","name":"mf_items_flower_5"})
-map.set("mf_items_flower_6", {"path":"textures/azalea_icons/icontextures/mf_items_flower_6","name":"mf_items_flower_6"})
-map.set("mf_items_flower_7", {"path":"textures/azalea_icons/icontextures/mf_items_flower_7","name":"mf_items_flower_7"})
-map.set("mf_items_flower_8", {"path":"textures/azalea_icons/icontextures/mf_items_flower_8","name":"mf_items_flower_8"})
-map.set("mf_items_flower_9", {"path":"textures/azalea_icons/icontextures/mf_items_flower_9","name":"mf_items_flower_9"})
-map.set("mf_items_fruit2_1", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_1","name":"mf_items_fruit2_1"})
-map.set("mf_items_fruit2_10", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_10","name":"mf_items_fruit2_10"})
-map.set("mf_items_fruit2_11", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_11","name":"mf_items_fruit2_11"})
-map.set("mf_items_fruit2_12", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_12","name":"mf_items_fruit2_12"})
-map.set("mf_items_fruit2_2", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_2","name":"mf_items_fruit2_2"})
-map.set("mf_items_fruit2_3", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_3","name":"mf_items_fruit2_3"})
-map.set("mf_items_fruit2_4", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_4","name":"mf_items_fruit2_4"})
-map.set("mf_items_fruit2_5", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_5","name":"mf_items_fruit2_5"})
-map.set("mf_items_fruit2_6", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_6","name":"mf_items_fruit2_6"})
-map.set("mf_items_fruit2_7", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_7","name":"mf_items_fruit2_7"})
-map.set("mf_items_fruit2_8", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_8","name":"mf_items_fruit2_8"})
-map.set("mf_items_fruit2_9", {"path":"textures/azalea_icons/icontextures/mf_items_fruit2_9","name":"mf_items_fruit2_9"})
-map.set("mf_items_fruit3_1", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_1","name":"mf_items_fruit3_1"})
-map.set("mf_items_fruit3_10", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_10","name":"mf_items_fruit3_10"})
-map.set("mf_items_fruit3_11", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_11","name":"mf_items_fruit3_11"})
-map.set("mf_items_fruit3_12", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_12","name":"mf_items_fruit3_12"})
-map.set("mf_items_fruit3_2", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_2","name":"mf_items_fruit3_2"})
-map.set("mf_items_fruit3_3", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_3","name":"mf_items_fruit3_3"})
-map.set("mf_items_fruit3_4", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_4","name":"mf_items_fruit3_4"})
-map.set("mf_items_fruit3_5", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_5","name":"mf_items_fruit3_5"})
-map.set("mf_items_fruit3_6", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_6","name":"mf_items_fruit3_6"})
-map.set("mf_items_fruit3_7", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_7","name":"mf_items_fruit3_7"})
-map.set("mf_items_fruit3_8", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_8","name":"mf_items_fruit3_8"})
-map.set("mf_items_fruit3_9", {"path":"textures/azalea_icons/icontextures/mf_items_fruit3_9","name":"mf_items_fruit3_9"})
-map.set("mf_items_fruit_1", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_1","name":"mf_items_fruit_1"})
-map.set("mf_items_fruit_10", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_10","name":"mf_items_fruit_10"})
-map.set("mf_items_fruit_11", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_11","name":"mf_items_fruit_11"})
-map.set("mf_items_fruit_12", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_12","name":"mf_items_fruit_12"})
-map.set("mf_items_fruit_2", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_2","name":"mf_items_fruit_2"})
-map.set("mf_items_fruit_3", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_3","name":"mf_items_fruit_3"})
-map.set("mf_items_fruit_4", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_4","name":"mf_items_fruit_4"})
-map.set("mf_items_fruit_5", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_5","name":"mf_items_fruit_5"})
-map.set("mf_items_fruit_6", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_6","name":"mf_items_fruit_6"})
-map.set("mf_items_fruit_7", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_7","name":"mf_items_fruit_7"})
-map.set("mf_items_fruit_8", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_8","name":"mf_items_fruit_8"})
-map.set("mf_items_fruit_9", {"path":"textures/azalea_icons/icontextures/mf_items_fruit_9","name":"mf_items_fruit_9"})
-map.set("mf_items_gasteropods_1", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_1","name":"mf_items_gasteropods_1"})
-map.set("mf_items_gasteropods_10", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_10","name":"mf_items_gasteropods_10"})
-map.set("mf_items_gasteropods_11", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_11","name":"mf_items_gasteropods_11"})
-map.set("mf_items_gasteropods_12", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_12","name":"mf_items_gasteropods_12"})
-map.set("mf_items_gasteropods_2", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_2","name":"mf_items_gasteropods_2"})
-map.set("mf_items_gasteropods_3", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_3","name":"mf_items_gasteropods_3"})
-map.set("mf_items_gasteropods_4", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_4","name":"mf_items_gasteropods_4"})
-map.set("mf_items_gasteropods_5", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_5","name":"mf_items_gasteropods_5"})
-map.set("mf_items_gasteropods_6", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_6","name":"mf_items_gasteropods_6"})
-map.set("mf_items_gasteropods_7", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_7","name":"mf_items_gasteropods_7"})
-map.set("mf_items_gasteropods_8", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_8","name":"mf_items_gasteropods_8"})
-map.set("mf_items_gasteropods_9", {"path":"textures/azalea_icons/icontextures/mf_items_gasteropods_9","name":"mf_items_gasteropods_9"})
-map.set("mf_items_ingredients_1", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_1","name":"mf_items_ingredients_1"})
-map.set("mf_items_ingredients_10", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_10","name":"mf_items_ingredients_10"})
-map.set("mf_items_ingredients_11", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_11","name":"mf_items_ingredients_11"})
-map.set("mf_items_ingredients_12", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_12","name":"mf_items_ingredients_12"})
-map.set("mf_items_ingredients_2", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_2","name":"mf_items_ingredients_2"})
-map.set("mf_items_ingredients_3", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_3","name":"mf_items_ingredients_3"})
-map.set("mf_items_ingredients_4", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_4","name":"mf_items_ingredients_4"})
-map.set("mf_items_ingredients_5", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_5","name":"mf_items_ingredients_5"})
-map.set("mf_items_ingredients_6", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_6","name":"mf_items_ingredients_6"})
-map.set("mf_items_ingredients_7", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_7","name":"mf_items_ingredients_7"})
-map.set("mf_items_ingredients_8", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_8","name":"mf_items_ingredients_8"})
-map.set("mf_items_ingredients_9", {"path":"textures/azalea_icons/icontextures/mf_items_ingredients_9","name":"mf_items_ingredients_9"})
-map.set("mf_items_insect1_1", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_1","name":"mf_items_insect1_1"})
-map.set("mf_items_insect1_10", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_10","name":"mf_items_insect1_10"})
-map.set("mf_items_insect1_11", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_11","name":"mf_items_insect1_11"})
-map.set("mf_items_insect1_12", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_12","name":"mf_items_insect1_12"})
-map.set("mf_items_insect1_2", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_2","name":"mf_items_insect1_2"})
-map.set("mf_items_insect1_3", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_3","name":"mf_items_insect1_3"})
-map.set("mf_items_insect1_4", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_4","name":"mf_items_insect1_4"})
-map.set("mf_items_insect1_5", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_5","name":"mf_items_insect1_5"})
-map.set("mf_items_insect1_6", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_6","name":"mf_items_insect1_6"})
-map.set("mf_items_insect1_7", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_7","name":"mf_items_insect1_7"})
-map.set("mf_items_insect1_8", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_8","name":"mf_items_insect1_8"})
-map.set("mf_items_insect1_9", {"path":"textures/azalea_icons/icontextures/mf_items_insect1_9","name":"mf_items_insect1_9"})
-map.set("mf_items_insect2_1", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_1","name":"mf_items_insect2_1"})
-map.set("mf_items_insect2_10", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_10","name":"mf_items_insect2_10"})
-map.set("mf_items_insect2_11", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_11","name":"mf_items_insect2_11"})
-map.set("mf_items_insect2_12", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_12","name":"mf_items_insect2_12"})
-map.set("mf_items_insect2_2", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_2","name":"mf_items_insect2_2"})
-map.set("mf_items_insect2_3", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_3","name":"mf_items_insect2_3"})
-map.set("mf_items_insect2_4", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_4","name":"mf_items_insect2_4"})
-map.set("mf_items_insect2_5", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_5","name":"mf_items_insect2_5"})
-map.set("mf_items_insect2_6", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_6","name":"mf_items_insect2_6"})
-map.set("mf_items_insect2_7", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_7","name":"mf_items_insect2_7"})
-map.set("mf_items_insect2_8", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_8","name":"mf_items_insect2_8"})
-map.set("mf_items_insect2_9", {"path":"textures/azalea_icons/icontextures/mf_items_insect2_9","name":"mf_items_insect2_9"})
-map.set("mf_items_juice_1", {"path":"textures/azalea_icons/icontextures/mf_items_juice_1","name":"mf_items_juice_1"})
-map.set("mf_items_juice_10", {"path":"textures/azalea_icons/icontextures/mf_items_juice_10","name":"mf_items_juice_10"})
-map.set("mf_items_juice_11", {"path":"textures/azalea_icons/icontextures/mf_items_juice_11","name":"mf_items_juice_11"})
-map.set("mf_items_juice_12", {"path":"textures/azalea_icons/icontextures/mf_items_juice_12","name":"mf_items_juice_12"})
-map.set("mf_items_juice_2", {"path":"textures/azalea_icons/icontextures/mf_items_juice_2","name":"mf_items_juice_2"})
-map.set("mf_items_juice_3", {"path":"textures/azalea_icons/icontextures/mf_items_juice_3","name":"mf_items_juice_3"})
-map.set("mf_items_juice_4", {"path":"textures/azalea_icons/icontextures/mf_items_juice_4","name":"mf_items_juice_4"})
-map.set("mf_items_juice_5", {"path":"textures/azalea_icons/icontextures/mf_items_juice_5","name":"mf_items_juice_5"})
-map.set("mf_items_juice_6", {"path":"textures/azalea_icons/icontextures/mf_items_juice_6","name":"mf_items_juice_6"})
-map.set("mf_items_juice_7", {"path":"textures/azalea_icons/icontextures/mf_items_juice_7","name":"mf_items_juice_7"})
-map.set("mf_items_juice_8", {"path":"textures/azalea_icons/icontextures/mf_items_juice_8","name":"mf_items_juice_8"})
-map.set("mf_items_juice_9", {"path":"textures/azalea_icons/icontextures/mf_items_juice_9","name":"mf_items_juice_9"})
-map.set("mf_items_liquids_1", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_1","name":"mf_items_liquids_1"})
-map.set("mf_items_liquids_10", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_10","name":"mf_items_liquids_10"})
-map.set("mf_items_liquids_11", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_11","name":"mf_items_liquids_11"})
-map.set("mf_items_liquids_12", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_12","name":"mf_items_liquids_12"})
-map.set("mf_items_liquids_2", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_2","name":"mf_items_liquids_2"})
-map.set("mf_items_liquids_3", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_3","name":"mf_items_liquids_3"})
-map.set("mf_items_liquids_4", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_4","name":"mf_items_liquids_4"})
-map.set("mf_items_liquids_5", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_5","name":"mf_items_liquids_5"})
-map.set("mf_items_liquids_6", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_6","name":"mf_items_liquids_6"})
-map.set("mf_items_liquids_7", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_7","name":"mf_items_liquids_7"})
-map.set("mf_items_liquids_8", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_8","name":"mf_items_liquids_8"})
-map.set("mf_items_liquids_9", {"path":"textures/azalea_icons/icontextures/mf_items_liquids_9","name":"mf_items_liquids_9"})
-map.set("mf_items_loot_1", {"path":"textures/azalea_icons/icontextures/mf_items_loot_1","name":"mf_items_loot_1"})
-map.set("mf_items_loot_10", {"path":"textures/azalea_icons/icontextures/mf_items_loot_10","name":"mf_items_loot_10"})
-map.set("mf_items_loot_11", {"path":"textures/azalea_icons/icontextures/mf_items_loot_11","name":"mf_items_loot_11"})
-map.set("mf_items_loot_12", {"path":"textures/azalea_icons/icontextures/mf_items_loot_12","name":"mf_items_loot_12"})
-map.set("mf_items_loot_2", {"path":"textures/azalea_icons/icontextures/mf_items_loot_2","name":"mf_items_loot_2"})
-map.set("mf_items_loot_3", {"path":"textures/azalea_icons/icontextures/mf_items_loot_3","name":"mf_items_loot_3"})
-map.set("mf_items_loot_4", {"path":"textures/azalea_icons/icontextures/mf_items_loot_4","name":"mf_items_loot_4"})
-map.set("mf_items_loot_5", {"path":"textures/azalea_icons/icontextures/mf_items_loot_5","name":"mf_items_loot_5"})
-map.set("mf_items_loot_6", {"path":"textures/azalea_icons/icontextures/mf_items_loot_6","name":"mf_items_loot_6"})
-map.set("mf_items_loot_7", {"path":"textures/azalea_icons/icontextures/mf_items_loot_7","name":"mf_items_loot_7"})
-map.set("mf_items_loot_8", {"path":"textures/azalea_icons/icontextures/mf_items_loot_8","name":"mf_items_loot_8"})
-map.set("mf_items_loot_9", {"path":"textures/azalea_icons/icontextures/mf_items_loot_9","name":"mf_items_loot_9"})
-map.set("mf_items_marine_fauna1_1", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_1","name":"mf_items_marine_fauna1_1"})
-map.set("mf_items_marine_fauna1_10", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_10","name":"mf_items_marine_fauna1_10"})
-map.set("mf_items_marine_fauna1_11", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_11","name":"mf_items_marine_fauna1_11"})
-map.set("mf_items_marine_fauna1_12", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_12","name":"mf_items_marine_fauna1_12"})
-map.set("mf_items_marine_fauna1_2", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_2","name":"mf_items_marine_fauna1_2"})
-map.set("mf_items_marine_fauna1_3", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_3","name":"mf_items_marine_fauna1_3"})
-map.set("mf_items_marine_fauna1_4", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_4","name":"mf_items_marine_fauna1_4"})
-map.set("mf_items_marine_fauna1_5", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_5","name":"mf_items_marine_fauna1_5"})
-map.set("mf_items_marine_fauna1_6", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_6","name":"mf_items_marine_fauna1_6"})
-map.set("mf_items_marine_fauna1_7", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_7","name":"mf_items_marine_fauna1_7"})
-map.set("mf_items_marine_fauna1_8", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_8","name":"mf_items_marine_fauna1_8"})
-map.set("mf_items_marine_fauna1_9", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna1_9","name":"mf_items_marine_fauna1_9"})
-map.set("mf_items_marine_fauna2_1", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_1","name":"mf_items_marine_fauna2_1"})
-map.set("mf_items_marine_fauna2_10", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_10","name":"mf_items_marine_fauna2_10"})
-map.set("mf_items_marine_fauna2_11", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_11","name":"mf_items_marine_fauna2_11"})
-map.set("mf_items_marine_fauna2_12", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_12","name":"mf_items_marine_fauna2_12"})
-map.set("mf_items_marine_fauna2_2", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_2","name":"mf_items_marine_fauna2_2"})
-map.set("mf_items_marine_fauna2_3", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_3","name":"mf_items_marine_fauna2_3"})
-map.set("mf_items_marine_fauna2_4", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_4","name":"mf_items_marine_fauna2_4"})
-map.set("mf_items_marine_fauna2_5", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_5","name":"mf_items_marine_fauna2_5"})
-map.set("mf_items_marine_fauna2_6", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_6","name":"mf_items_marine_fauna2_6"})
-map.set("mf_items_marine_fauna2_7", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_7","name":"mf_items_marine_fauna2_7"})
-map.set("mf_items_marine_fauna2_8", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_8","name":"mf_items_marine_fauna2_8"})
-map.set("mf_items_marine_fauna2_9", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna2_9","name":"mf_items_marine_fauna2_9"})
-map.set("mf_items_marine_fauna3_1", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_1","name":"mf_items_marine_fauna3_1"})
-map.set("mf_items_marine_fauna3_10", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_10","name":"mf_items_marine_fauna3_10"})
-map.set("mf_items_marine_fauna3_11", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_11","name":"mf_items_marine_fauna3_11"})
-map.set("mf_items_marine_fauna3_12", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_12","name":"mf_items_marine_fauna3_12"})
-map.set("mf_items_marine_fauna3_2", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_2","name":"mf_items_marine_fauna3_2"})
-map.set("mf_items_marine_fauna3_3", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_3","name":"mf_items_marine_fauna3_3"})
-map.set("mf_items_marine_fauna3_4", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_4","name":"mf_items_marine_fauna3_4"})
-map.set("mf_items_marine_fauna3_5", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_5","name":"mf_items_marine_fauna3_5"})
-map.set("mf_items_marine_fauna3_6", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_6","name":"mf_items_marine_fauna3_6"})
-map.set("mf_items_marine_fauna3_7", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_7","name":"mf_items_marine_fauna3_7"})
-map.set("mf_items_marine_fauna3_8", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_8","name":"mf_items_marine_fauna3_8"})
-map.set("mf_items_marine_fauna3_9", {"path":"textures/azalea_icons/icontextures/mf_items_marine_fauna3_9","name":"mf_items_marine_fauna3_9"})
-map.set("mf_items_meat_fish_1", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_1","name":"mf_items_meat_fish_1"})
-map.set("mf_items_meat_fish_10", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_10","name":"mf_items_meat_fish_10"})
-map.set("mf_items_meat_fish_11", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_11","name":"mf_items_meat_fish_11"})
-map.set("mf_items_meat_fish_12", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_12","name":"mf_items_meat_fish_12"})
-map.set("mf_items_meat_fish_2", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_2","name":"mf_items_meat_fish_2"})
-map.set("mf_items_meat_fish_3", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_3","name":"mf_items_meat_fish_3"})
-map.set("mf_items_meat_fish_4", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_4","name":"mf_items_meat_fish_4"})
-map.set("mf_items_meat_fish_5", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_5","name":"mf_items_meat_fish_5"})
-map.set("mf_items_meat_fish_6", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_6","name":"mf_items_meat_fish_6"})
-map.set("mf_items_meat_fish_7", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_7","name":"mf_items_meat_fish_7"})
-map.set("mf_items_meat_fish_8", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_8","name":"mf_items_meat_fish_8"})
-map.set("mf_items_meat_fish_9", {"path":"textures/azalea_icons/icontextures/mf_items_meat_fish_9","name":"mf_items_meat_fish_9"})
-map.set("mf_items_mineral_1", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_1","name":"mf_items_mineral_1"})
-map.set("mf_items_mineral_10", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_10","name":"mf_items_mineral_10"})
-map.set("mf_items_mineral_11", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_11","name":"mf_items_mineral_11"})
-map.set("mf_items_mineral_12", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_12","name":"mf_items_mineral_12"})
-map.set("mf_items_mineral_2", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_2","name":"mf_items_mineral_2"})
-map.set("mf_items_mineral_3", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_3","name":"mf_items_mineral_3"})
-map.set("mf_items_mineral_4", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_4","name":"mf_items_mineral_4"})
-map.set("mf_items_mineral_5", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_5","name":"mf_items_mineral_5"})
-map.set("mf_items_mineral_6", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_6","name":"mf_items_mineral_6"})
-map.set("mf_items_mineral_7", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_7","name":"mf_items_mineral_7"})
-map.set("mf_items_mineral_8", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_8","name":"mf_items_mineral_8"})
-map.set("mf_items_mineral_9", {"path":"textures/azalea_icons/icontextures/mf_items_mineral_9","name":"mf_items_mineral_9"})
-map.set("mf_items_mushroom_1", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_1","name":"mf_items_mushroom_1"})
-map.set("mf_items_mushroom_10", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_10","name":"mf_items_mushroom_10"})
-map.set("mf_items_mushroom_11", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_11","name":"mf_items_mushroom_11"})
-map.set("mf_items_mushroom_12", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_12","name":"mf_items_mushroom_12"})
-map.set("mf_items_mushroom_2", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_2","name":"mf_items_mushroom_2"})
-map.set("mf_items_mushroom_3", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_3","name":"mf_items_mushroom_3"})
-map.set("mf_items_mushroom_4", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_4","name":"mf_items_mushroom_4"})
-map.set("mf_items_mushroom_5", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_5","name":"mf_items_mushroom_5"})
-map.set("mf_items_mushroom_6", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_6","name":"mf_items_mushroom_6"})
-map.set("mf_items_mushroom_7", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_7","name":"mf_items_mushroom_7"})
-map.set("mf_items_mushroom_8", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_8","name":"mf_items_mushroom_8"})
-map.set("mf_items_mushroom_9", {"path":"textures/azalea_icons/icontextures/mf_items_mushroom_9","name":"mf_items_mushroom_9"})
-map.set("mf_items_nature_1", {"path":"textures/azalea_icons/icontextures/mf_items_nature_1","name":"mf_items_nature_1"})
-map.set("mf_items_nature_10", {"path":"textures/azalea_icons/icontextures/mf_items_nature_10","name":"mf_items_nature_10"})
-map.set("mf_items_nature_11", {"path":"textures/azalea_icons/icontextures/mf_items_nature_11","name":"mf_items_nature_11"})
-map.set("mf_items_nature_12", {"path":"textures/azalea_icons/icontextures/mf_items_nature_12","name":"mf_items_nature_12"})
-map.set("mf_items_nature_2", {"path":"textures/azalea_icons/icontextures/mf_items_nature_2","name":"mf_items_nature_2"})
-map.set("mf_items_nature_3", {"path":"textures/azalea_icons/icontextures/mf_items_nature_3","name":"mf_items_nature_3"})
-map.set("mf_items_nature_4", {"path":"textures/azalea_icons/icontextures/mf_items_nature_4","name":"mf_items_nature_4"})
-map.set("mf_items_nature_5", {"path":"textures/azalea_icons/icontextures/mf_items_nature_5","name":"mf_items_nature_5"})
-map.set("mf_items_nature_6", {"path":"textures/azalea_icons/icontextures/mf_items_nature_6","name":"mf_items_nature_6"})
-map.set("mf_items_nature_7", {"path":"textures/azalea_icons/icontextures/mf_items_nature_7","name":"mf_items_nature_7"})
-map.set("mf_items_nature_8", {"path":"textures/azalea_icons/icontextures/mf_items_nature_8","name":"mf_items_nature_8"})
-map.set("mf_items_nature_9", {"path":"textures/azalea_icons/icontextures/mf_items_nature_9","name":"mf_items_nature_9"})
-map.set("mf_items_potions_1", {"path":"textures/azalea_icons/icontextures/mf_items_potions_1","name":"mf_items_potions_1"})
-map.set("mf_items_potions_10", {"path":"textures/azalea_icons/icontextures/mf_items_potions_10","name":"mf_items_potions_10"})
-map.set("mf_items_potions_11", {"path":"textures/azalea_icons/icontextures/mf_items_potions_11","name":"mf_items_potions_11"})
-map.set("mf_items_potions_12", {"path":"textures/azalea_icons/icontextures/mf_items_potions_12","name":"mf_items_potions_12"})
-map.set("mf_items_potions_2", {"path":"textures/azalea_icons/icontextures/mf_items_potions_2","name":"mf_items_potions_2"})
-map.set("mf_items_potions_3", {"path":"textures/azalea_icons/icontextures/mf_items_potions_3","name":"mf_items_potions_3"})
-map.set("mf_items_potions_4", {"path":"textures/azalea_icons/icontextures/mf_items_potions_4","name":"mf_items_potions_4"})
-map.set("mf_items_potions_5", {"path":"textures/azalea_icons/icontextures/mf_items_potions_5","name":"mf_items_potions_5"})
-map.set("mf_items_potions_6", {"path":"textures/azalea_icons/icontextures/mf_items_potions_6","name":"mf_items_potions_6"})
-map.set("mf_items_potions_7", {"path":"textures/azalea_icons/icontextures/mf_items_potions_7","name":"mf_items_potions_7"})
-map.set("mf_items_potions_8", {"path":"textures/azalea_icons/icontextures/mf_items_potions_8","name":"mf_items_potions_8"})
-map.set("mf_items_potions_9", {"path":"textures/azalea_icons/icontextures/mf_items_potions_9","name":"mf_items_potions_9"})
-map.set("mf_items_precious_1", {"path":"textures/azalea_icons/icontextures/mf_items_precious_1","name":"mf_items_precious_1"})
-map.set("mf_items_precious_10", {"path":"textures/azalea_icons/icontextures/mf_items_precious_10","name":"mf_items_precious_10"})
-map.set("mf_items_precious_11", {"path":"textures/azalea_icons/icontextures/mf_items_precious_11","name":"mf_items_precious_11"})
-map.set("mf_items_precious_12", {"path":"textures/azalea_icons/icontextures/mf_items_precious_12","name":"mf_items_precious_12"})
-map.set("mf_items_precious_2", {"path":"textures/azalea_icons/icontextures/mf_items_precious_2","name":"mf_items_precious_2"})
-map.set("mf_items_precious_3", {"path":"textures/azalea_icons/icontextures/mf_items_precious_3","name":"mf_items_precious_3"})
-map.set("mf_items_precious_4", {"path":"textures/azalea_icons/icontextures/mf_items_precious_4","name":"mf_items_precious_4"})
-map.set("mf_items_precious_5", {"path":"textures/azalea_icons/icontextures/mf_items_precious_5","name":"mf_items_precious_5"})
-map.set("mf_items_precious_6", {"path":"textures/azalea_icons/icontextures/mf_items_precious_6","name":"mf_items_precious_6"})
-map.set("mf_items_precious_7", {"path":"textures/azalea_icons/icontextures/mf_items_precious_7","name":"mf_items_precious_7"})
-map.set("mf_items_precious_8", {"path":"textures/azalea_icons/icontextures/mf_items_precious_8","name":"mf_items_precious_8"})
-map.set("mf_items_precious_9", {"path":"textures/azalea_icons/icontextures/mf_items_precious_9","name":"mf_items_precious_9"})
-map.set("mf_items_rodents_1", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_1","name":"mf_items_rodents_1"})
-map.set("mf_items_rodents_10", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_10","name":"mf_items_rodents_10"})
-map.set("mf_items_rodents_11", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_11","name":"mf_items_rodents_11"})
-map.set("mf_items_rodents_12", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_12","name":"mf_items_rodents_12"})
-map.set("mf_items_rodents_2", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_2","name":"mf_items_rodents_2"})
-map.set("mf_items_rodents_3", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_3","name":"mf_items_rodents_3"})
-map.set("mf_items_rodents_4", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_4","name":"mf_items_rodents_4"})
-map.set("mf_items_rodents_5", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_5","name":"mf_items_rodents_5"})
-map.set("mf_items_rodents_6", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_6","name":"mf_items_rodents_6"})
-map.set("mf_items_rodents_7", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_7","name":"mf_items_rodents_7"})
-map.set("mf_items_rodents_8", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_8","name":"mf_items_rodents_8"})
-map.set("mf_items_rodents_9", {"path":"textures/azalea_icons/icontextures/mf_items_rodents_9","name":"mf_items_rodents_9"})
-map.set("mf_items_seed_1", {"path":"textures/azalea_icons/icontextures/mf_items_seed_1","name":"mf_items_seed_1"})
-map.set("mf_items_seed_10", {"path":"textures/azalea_icons/icontextures/mf_items_seed_10","name":"mf_items_seed_10"})
-map.set("mf_items_seed_11", {"path":"textures/azalea_icons/icontextures/mf_items_seed_11","name":"mf_items_seed_11"})
-map.set("mf_items_seed_12", {"path":"textures/azalea_icons/icontextures/mf_items_seed_12","name":"mf_items_seed_12"})
-map.set("mf_items_seed_2", {"path":"textures/azalea_icons/icontextures/mf_items_seed_2","name":"mf_items_seed_2"})
-map.set("mf_items_seed_3", {"path":"textures/azalea_icons/icontextures/mf_items_seed_3","name":"mf_items_seed_3"})
-map.set("mf_items_seed_4", {"path":"textures/azalea_icons/icontextures/mf_items_seed_4","name":"mf_items_seed_4"})
-map.set("mf_items_seed_5", {"path":"textures/azalea_icons/icontextures/mf_items_seed_5","name":"mf_items_seed_5"})
-map.set("mf_items_seed_6", {"path":"textures/azalea_icons/icontextures/mf_items_seed_6","name":"mf_items_seed_6"})
-map.set("mf_items_seed_7", {"path":"textures/azalea_icons/icontextures/mf_items_seed_7","name":"mf_items_seed_7"})
-map.set("mf_items_seed_8", {"path":"textures/azalea_icons/icontextures/mf_items_seed_8","name":"mf_items_seed_8"})
-map.set("mf_items_seed_9", {"path":"textures/azalea_icons/icontextures/mf_items_seed_9","name":"mf_items_seed_9"})
-map.set("mf_items_shell_1", {"path":"textures/azalea_icons/icontextures/mf_items_shell_1","name":"mf_items_shell_1"})
-map.set("mf_items_shell_10", {"path":"textures/azalea_icons/icontextures/mf_items_shell_10","name":"mf_items_shell_10"})
-map.set("mf_items_shell_11", {"path":"textures/azalea_icons/icontextures/mf_items_shell_11","name":"mf_items_shell_11"})
-map.set("mf_items_shell_12", {"path":"textures/azalea_icons/icontextures/mf_items_shell_12","name":"mf_items_shell_12"})
-map.set("mf_items_shell_2", {"path":"textures/azalea_icons/icontextures/mf_items_shell_2","name":"mf_items_shell_2"})
-map.set("mf_items_shell_3", {"path":"textures/azalea_icons/icontextures/mf_items_shell_3","name":"mf_items_shell_3"})
-map.set("mf_items_shell_4", {"path":"textures/azalea_icons/icontextures/mf_items_shell_4","name":"mf_items_shell_4"})
-map.set("mf_items_shell_5", {"path":"textures/azalea_icons/icontextures/mf_items_shell_5","name":"mf_items_shell_5"})
-map.set("mf_items_shell_6", {"path":"textures/azalea_icons/icontextures/mf_items_shell_6","name":"mf_items_shell_6"})
-map.set("mf_items_shell_7", {"path":"textures/azalea_icons/icontextures/mf_items_shell_7","name":"mf_items_shell_7"})
-map.set("mf_items_shell_8", {"path":"textures/azalea_icons/icontextures/mf_items_shell_8","name":"mf_items_shell_8"})
-map.set("mf_items_shell_9", {"path":"textures/azalea_icons/icontextures/mf_items_shell_9","name":"mf_items_shell_9"})
-map.set("mf_items_tool_1", {"path":"textures/azalea_icons/icontextures/mf_items_tool_1","name":"mf_items_tool_1"})
-map.set("mf_items_tool_10", {"path":"textures/azalea_icons/icontextures/mf_items_tool_10","name":"mf_items_tool_10"})
-map.set("mf_items_tool_11", {"path":"textures/azalea_icons/icontextures/mf_items_tool_11","name":"mf_items_tool_11"})
-map.set("mf_items_tool_12", {"path":"textures/azalea_icons/icontextures/mf_items_tool_12","name":"mf_items_tool_12"})
-map.set("mf_items_tool_2", {"path":"textures/azalea_icons/icontextures/mf_items_tool_2","name":"mf_items_tool_2"})
-map.set("mf_items_tool_3", {"path":"textures/azalea_icons/icontextures/mf_items_tool_3","name":"mf_items_tool_3"})
-map.set("mf_items_tool_4", {"path":"textures/azalea_icons/icontextures/mf_items_tool_4","name":"mf_items_tool_4"})
-map.set("mf_items_tool_5", {"path":"textures/azalea_icons/icontextures/mf_items_tool_5","name":"mf_items_tool_5"})
-map.set("mf_items_tool_6", {"path":"textures/azalea_icons/icontextures/mf_items_tool_6","name":"mf_items_tool_6"})
-map.set("mf_items_tool_7", {"path":"textures/azalea_icons/icontextures/mf_items_tool_7","name":"mf_items_tool_7"})
-map.set("mf_items_tool_8", {"path":"textures/azalea_icons/icontextures/mf_items_tool_8","name":"mf_items_tool_8"})
-map.set("mf_items_tool_9", {"path":"textures/azalea_icons/icontextures/mf_items_tool_9","name":"mf_items_tool_9"})
-map.set("mf_items_vegetable2_1", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_1","name":"mf_items_vegetable2_1"})
-map.set("mf_items_vegetable2_10", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_10","name":"mf_items_vegetable2_10"})
-map.set("mf_items_vegetable2_11", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_11","name":"mf_items_vegetable2_11"})
-map.set("mf_items_vegetable2_12", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_12","name":"mf_items_vegetable2_12"})
-map.set("mf_items_vegetable2_2", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_2","name":"mf_items_vegetable2_2"})
-map.set("mf_items_vegetable2_3", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_3","name":"mf_items_vegetable2_3"})
-map.set("mf_items_vegetable2_4", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_4","name":"mf_items_vegetable2_4"})
-map.set("mf_items_vegetable2_5", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_5","name":"mf_items_vegetable2_5"})
-map.set("mf_items_vegetable2_6", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_6","name":"mf_items_vegetable2_6"})
-map.set("mf_items_vegetable2_7", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_7","name":"mf_items_vegetable2_7"})
-map.set("mf_items_vegetable2_8", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_8","name":"mf_items_vegetable2_8"})
-map.set("mf_items_vegetable2_9", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable2_9","name":"mf_items_vegetable2_9"})
-map.set("mf_items_vegetable_1", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_1","name":"mf_items_vegetable_1"})
-map.set("mf_items_vegetable_10", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_10","name":"mf_items_vegetable_10"})
-map.set("mf_items_vegetable_11", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_11","name":"mf_items_vegetable_11"})
-map.set("mf_items_vegetable_12", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_12","name":"mf_items_vegetable_12"})
-map.set("mf_items_vegetable_2", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_2","name":"mf_items_vegetable_2"})
-map.set("mf_items_vegetable_3", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_3","name":"mf_items_vegetable_3"})
-map.set("mf_items_vegetable_4", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_4","name":"mf_items_vegetable_4"})
-map.set("mf_items_vegetable_5", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_5","name":"mf_items_vegetable_5"})
-map.set("mf_items_vegetable_6", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_6","name":"mf_items_vegetable_6"})
-map.set("mf_items_vegetable_7", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_7","name":"mf_items_vegetable_7"})
-map.set("mf_items_vegetable_8", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_8","name":"mf_items_vegetable_8"})
-map.set("mf_items_vegetable_9", {"path":"textures/azalea_icons/icontextures/mf_items_vegetable_9","name":"mf_items_vegetable_9"})
-map.set("mf_items_weapon_1", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_1","name":"mf_items_weapon_1"})
-map.set("mf_items_weapon_10", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_10","name":"mf_items_weapon_10"})
-map.set("mf_items_weapon_11", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_11","name":"mf_items_weapon_11"})
-map.set("mf_items_weapon_12", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_12","name":"mf_items_weapon_12"})
-map.set("mf_items_weapon_2", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_2","name":"mf_items_weapon_2"})
-map.set("mf_items_weapon_3", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_3","name":"mf_items_weapon_3"})
-map.set("mf_items_weapon_4", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_4","name":"mf_items_weapon_4"})
-map.set("mf_items_weapon_5", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_5","name":"mf_items_weapon_5"})
-map.set("mf_items_weapon_6", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_6","name":"mf_items_weapon_6"})
-map.set("mf_items_weapon_7", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_7","name":"mf_items_weapon_7"})
-map.set("mf_items_weapon_8", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_8","name":"mf_items_weapon_8"})
-map.set("mf_items_weapon_9", {"path":"textures/azalea_icons/icontextures/mf_items_weapon_9","name":"mf_items_weapon_9"})
-map.set("milk_bucket", {"path":"textures/azalea_icons/icontextures/milk_bucket","name":"milk_bucket"})
-map.set("mimolette", {"path":"textures/azalea_icons/icontextures/mimolette","name":"mimolette"})
-map.set("montasio", {"path":"textures/azalea_icons/icontextures/montasio","name":"montasio"})
-map.set("muenster", {"path":"textures/azalea_icons/icontextures/muenster","name":"muenster"})
-map.set("mutton", {"path":"textures/azalea_icons/icontextures/mutton","name":"mutton"})
-map.set("myzithra", {"path":"textures/azalea_icons/icontextures/myzithra","name":"myzithra"})
-map.set("name_tag", {"path":"textures/azalea_icons/icontextures/name_tag","name":"name_tag"})
-map.set("nautilus_shell", {"path":"textures/azalea_icons/icontextures/nautilus_shell","name":"nautilus_shell"})
-map.set("necklace_01", {"path":"textures/azalea_icons/icontextures/necklace_01","name":"necklace_01"})
-map.set("necklace_01a", {"path":"textures/azalea_icons/icontextures/necklace_01a","name":"necklace_01a"})
-map.set("necklace_01b", {"path":"textures/azalea_icons/icontextures/necklace_01b","name":"necklace_01b"})
-map.set("necklace_01c", {"path":"textures/azalea_icons/icontextures/necklace_01c","name":"necklace_01c"})
-map.set("necklace_01d", {"path":"textures/azalea_icons/icontextures/necklace_01d","name":"necklace_01d"})
-map.set("necklace_01e", {"path":"textures/azalea_icons/icontextures/necklace_01e","name":"necklace_01e"})
-map.set("necklace_01_2", {"path":"textures/azalea_icons/icontextures/necklace_01_2","name":"necklace_01_2"})
-map.set("necklace_02", {"path":"textures/azalea_icons/icontextures/necklace_02","name":"necklace_02"})
-map.set("necklace_02a", {"path":"textures/azalea_icons/icontextures/necklace_02a","name":"necklace_02a"})
-map.set("necklace_02b", {"path":"textures/azalea_icons/icontextures/necklace_02b","name":"necklace_02b"})
-map.set("necklace_02c", {"path":"textures/azalea_icons/icontextures/necklace_02c","name":"necklace_02c"})
-map.set("necklace_02d", {"path":"textures/azalea_icons/icontextures/necklace_02d","name":"necklace_02d"})
-map.set("necklace_02e", {"path":"textures/azalea_icons/icontextures/necklace_02e","name":"necklace_02e"})
-map.set("necklace_02_2", {"path":"textures/azalea_icons/icontextures/necklace_02_2","name":"necklace_02_2"})
-map.set("necklace_03a", {"path":"textures/azalea_icons/icontextures/necklace_03a","name":"necklace_03a"})
-map.set("necklace_03b", {"path":"textures/azalea_icons/icontextures/necklace_03b","name":"necklace_03b"})
-map.set("necklace_03c", {"path":"textures/azalea_icons/icontextures/necklace_03c","name":"necklace_03c"})
-map.set("necklace_03d", {"path":"textures/azalea_icons/icontextures/necklace_03d","name":"necklace_03d"})
-map.set("necklace_03e", {"path":"textures/azalea_icons/icontextures/necklace_03e","name":"necklace_03e"})
-map.set("netherite_axe", {"path":"textures/azalea_icons/icontextures/netherite_axe","name":"netherite_axe"})
-map.set("netherite_boots", {"path":"textures/azalea_icons/icontextures/netherite_boots","name":"netherite_boots"})
-map.set("netherite_chestplate", {"path":"textures/azalea_icons/icontextures/netherite_chestplate","name":"netherite_chestplate"})
-map.set("netherite_helmet", {"path":"textures/azalea_icons/icontextures/netherite_helmet","name":"netherite_helmet"})
-map.set("netherite_hoe", {"path":"textures/azalea_icons/icontextures/netherite_hoe","name":"netherite_hoe"})
-map.set("netherite_ingot", {"path":"textures/azalea_icons/icontextures/netherite_ingot","name":"netherite_ingot"})
-map.set("netherite_leggings", {"path":"textures/azalea_icons/icontextures/netherite_leggings","name":"netherite_leggings"})
-map.set("netherite_pickaxe", {"path":"textures/azalea_icons/icontextures/netherite_pickaxe","name":"netherite_pickaxe"})
-map.set("netherite_scrap", {"path":"textures/azalea_icons/icontextures/netherite_scrap","name":"netherite_scrap"})
-map.set("netherite_shovel", {"path":"textures/azalea_icons/icontextures/netherite_shovel","name":"netherite_shovel"})
-map.set("netherite_sword", {"path":"textures/azalea_icons/icontextures/netherite_sword","name":"netherite_sword"})
-map.set("nether_brick", {"path":"textures/azalea_icons/icontextures/nether_brick","name":"nether_brick"})
-map.set("nether_star", {"path":"textures/azalea_icons/icontextures/nether_star","name":"nether_star"})
-map.set("nether_wart", {"path":"textures/azalea_icons/icontextures/nether_wart","name":"nether_wart"})
-map.set("oaxaca_cheese", {"path":"textures/azalea_icons/icontextures/oaxaca_cheese","name":"oaxaca_cheese"})
-map.set("onigiri", {"path":"textures/azalea_icons/icontextures/onigiri","name":"onigiri"})
-map.set("onigiri_2", {"path":"textures/azalea_icons/icontextures/onigiri_2","name":"onigiri_2"})
-map.set("paint_icon_1", {"path":"textures/azalea_icons/icontextures/paint_icon_1","name":"paint_icon_1"})
-map.set("paint_icon_10", {"path":"textures/azalea_icons/icontextures/paint_icon_10","name":"paint_icon_10"})
-map.set("paint_icon_11", {"path":"textures/azalea_icons/icontextures/paint_icon_11","name":"paint_icon_11"})
-map.set("paint_icon_12", {"path":"textures/azalea_icons/icontextures/paint_icon_12","name":"paint_icon_12"})
-map.set("paint_icon_13", {"path":"textures/azalea_icons/icontextures/paint_icon_13","name":"paint_icon_13"})
-map.set("paint_icon_14", {"path":"textures/azalea_icons/icontextures/paint_icon_14","name":"paint_icon_14"})
-map.set("paint_icon_15", {"path":"textures/azalea_icons/icontextures/paint_icon_15","name":"paint_icon_15"})
-map.set("paint_icon_16", {"path":"textures/azalea_icons/icontextures/paint_icon_16","name":"paint_icon_16"})
-map.set("paint_icon_17", {"path":"textures/azalea_icons/icontextures/paint_icon_17","name":"paint_icon_17"})
-map.set("paint_icon_18", {"path":"textures/azalea_icons/icontextures/paint_icon_18","name":"paint_icon_18"})
-map.set("paint_icon_19", {"path":"textures/azalea_icons/icontextures/paint_icon_19","name":"paint_icon_19"})
-map.set("paint_icon_2", {"path":"textures/azalea_icons/icontextures/paint_icon_2","name":"paint_icon_2"})
-map.set("paint_icon_20", {"path":"textures/azalea_icons/icontextures/paint_icon_20","name":"paint_icon_20"})
-map.set("paint_icon_21", {"path":"textures/azalea_icons/icontextures/paint_icon_21","name":"paint_icon_21"})
-map.set("paint_icon_22", {"path":"textures/azalea_icons/icontextures/paint_icon_22","name":"paint_icon_22"})
-map.set("paint_icon_23", {"path":"textures/azalea_icons/icontextures/paint_icon_23","name":"paint_icon_23"})
-map.set("paint_icon_24", {"path":"textures/azalea_icons/icontextures/paint_icon_24","name":"paint_icon_24"})
-map.set("paint_icon_25", {"path":"textures/azalea_icons/icontextures/paint_icon_25","name":"paint_icon_25"})
-map.set("paint_icon_26", {"path":"textures/azalea_icons/icontextures/paint_icon_26","name":"paint_icon_26"})
-map.set("paint_icon_27", {"path":"textures/azalea_icons/icontextures/paint_icon_27","name":"paint_icon_27"})
-map.set("paint_icon_28", {"path":"textures/azalea_icons/icontextures/paint_icon_28","name":"paint_icon_28"})
-map.set("paint_icon_29", {"path":"textures/azalea_icons/icontextures/paint_icon_29","name":"paint_icon_29"})
-map.set("paint_icon_3", {"path":"textures/azalea_icons/icontextures/paint_icon_3","name":"paint_icon_3"})
-map.set("paint_icon_30", {"path":"textures/azalea_icons/icontextures/paint_icon_30","name":"paint_icon_30"})
-map.set("paint_icon_31", {"path":"textures/azalea_icons/icontextures/paint_icon_31","name":"paint_icon_31"})
-map.set("paint_icon_32", {"path":"textures/azalea_icons/icontextures/paint_icon_32","name":"paint_icon_32"})
-map.set("paint_icon_33", {"path":"textures/azalea_icons/icontextures/paint_icon_33","name":"paint_icon_33"})
-map.set("paint_icon_34", {"path":"textures/azalea_icons/icontextures/paint_icon_34","name":"paint_icon_34"})
-map.set("paint_icon_35", {"path":"textures/azalea_icons/icontextures/paint_icon_35","name":"paint_icon_35"})
-map.set("paint_icon_36", {"path":"textures/azalea_icons/icontextures/paint_icon_36","name":"paint_icon_36"})
-map.set("paint_icon_37", {"path":"textures/azalea_icons/icontextures/paint_icon_37","name":"paint_icon_37"})
-map.set("paint_icon_38", {"path":"textures/azalea_icons/icontextures/paint_icon_38","name":"paint_icon_38"})
-map.set("paint_icon_39", {"path":"textures/azalea_icons/icontextures/paint_icon_39","name":"paint_icon_39"})
-map.set("paint_icon_4", {"path":"textures/azalea_icons/icontextures/paint_icon_4","name":"paint_icon_4"})
-map.set("paint_icon_40", {"path":"textures/azalea_icons/icontextures/paint_icon_40","name":"paint_icon_40"})
-map.set("paint_icon_41", {"path":"textures/azalea_icons/icontextures/paint_icon_41","name":"paint_icon_41"})
-map.set("paint_icon_42", {"path":"textures/azalea_icons/icontextures/paint_icon_42","name":"paint_icon_42"})
-map.set("paint_icon_43", {"path":"textures/azalea_icons/icontextures/paint_icon_43","name":"paint_icon_43"})
-map.set("paint_icon_44", {"path":"textures/azalea_icons/icontextures/paint_icon_44","name":"paint_icon_44"})
-map.set("paint_icon_45", {"path":"textures/azalea_icons/icontextures/paint_icon_45","name":"paint_icon_45"})
-map.set("paint_icon_46", {"path":"textures/azalea_icons/icontextures/paint_icon_46","name":"paint_icon_46"})
-map.set("paint_icon_47", {"path":"textures/azalea_icons/icontextures/paint_icon_47","name":"paint_icon_47"})
-map.set("paint_icon_48", {"path":"textures/azalea_icons/icontextures/paint_icon_48","name":"paint_icon_48"})
-map.set("paint_icon_5", {"path":"textures/azalea_icons/icontextures/paint_icon_5","name":"paint_icon_5"})
-map.set("paint_icon_6", {"path":"textures/azalea_icons/icontextures/paint_icon_6","name":"paint_icon_6"})
-map.set("paint_icon_7", {"path":"textures/azalea_icons/icontextures/paint_icon_7","name":"paint_icon_7"})
-map.set("paint_icon_8", {"path":"textures/azalea_icons/icontextures/paint_icon_8","name":"paint_icon_8"})
-map.set("paint_icon_9", {"path":"textures/azalea_icons/icontextures/paint_icon_9","name":"paint_icon_9"})
-map.set("paneer", {"path":"textures/azalea_icons/icontextures/paneer","name":"paneer"})
-map.set("paper", {"path":"textures/azalea_icons/icontextures/paper","name":"paper"})
-map.set("parmesan", {"path":"textures/azalea_icons/icontextures/parmesan","name":"parmesan"})
-map.set("parmigiano_reggiano", {"path":"textures/azalea_icons/icontextures/parmigiano_reggiano","name":"parmigiano_reggiano"})
-map.set("paski_sir", {"path":"textures/azalea_icons/icontextures/paski_sir","name":"paski_sir"})
-map.set("pearl_01a", {"path":"textures/azalea_icons/icontextures/pearl_01a","name":"pearl_01a"})
-map.set("pearl_01b", {"path":"textures/azalea_icons/icontextures/pearl_01b","name":"pearl_01b"})
-map.set("pearl_01c", {"path":"textures/azalea_icons/icontextures/pearl_01c","name":"pearl_01c"})
-map.set("pearl_01d", {"path":"textures/azalea_icons/icontextures/pearl_01d","name":"pearl_01d"})
-map.set("pearl_01e", {"path":"textures/azalea_icons/icontextures/pearl_01e","name":"pearl_01e"})
-map.set("pecorino_romano", {"path":"textures/azalea_icons/icontextures/pecorino_romano","name":"pecorino_romano"})
-map.set("phantom_membrane", {"path":"textures/azalea_icons/icontextures/phantom_membrane","name":"phantom_membrane"})
-map.set("pixilart-drawing_3", {"path":"textures/azalea_icons/icontextures/pixilart-drawing_3","name":"pixilart-drawing_3"})
-map.set("plank_01a", {"path":"textures/azalea_icons/icontextures/plank_01a","name":"plank_01a"})
-map.set("popped_chorus_fruit", {"path":"textures/azalea_icons/icontextures/popped_chorus_fruit","name":"popped_chorus_fruit"})
-map.set("porkchop", {"path":"textures/azalea_icons/icontextures/porkchop","name":"porkchop"})
-map.set("potato", {"path":"textures/azalea_icons/icontextures/potato","name":"potato"})
-map.set("potion", {"path":"textures/azalea_icons/icontextures/potion","name":"potion"})
-map.set("potion_01a", {"path":"textures/azalea_icons/icontextures/potion_01a","name":"potion_01a"})
-map.set("potion_01b", {"path":"textures/azalea_icons/icontextures/potion_01b","name":"potion_01b"})
-map.set("potion_01c", {"path":"textures/azalea_icons/icontextures/potion_01c","name":"potion_01c"})
-map.set("potion_01d", {"path":"textures/azalea_icons/icontextures/potion_01d","name":"potion_01d"})
-map.set("potion_01e", {"path":"textures/azalea_icons/icontextures/potion_01e","name":"potion_01e"})
-map.set("potion_01f", {"path":"textures/azalea_icons/icontextures/potion_01f","name":"potion_01f"})
-map.set("potion_01g", {"path":"textures/azalea_icons/icontextures/potion_01g","name":"potion_01g"})
-map.set("potion_01h", {"path":"textures/azalea_icons/icontextures/potion_01h","name":"potion_01h"})
-map.set("potion_02a", {"path":"textures/azalea_icons/icontextures/potion_02a","name":"potion_02a"})
-map.set("potion_02b", {"path":"textures/azalea_icons/icontextures/potion_02b","name":"potion_02b"})
-map.set("potion_02c", {"path":"textures/azalea_icons/icontextures/potion_02c","name":"potion_02c"})
-map.set("potion_02d", {"path":"textures/azalea_icons/icontextures/potion_02d","name":"potion_02d"})
-map.set("potion_02e", {"path":"textures/azalea_icons/icontextures/potion_02e","name":"potion_02e"})
-map.set("potion_02f", {"path":"textures/azalea_icons/icontextures/potion_02f","name":"potion_02f"})
-map.set("potion_02g", {"path":"textures/azalea_icons/icontextures/potion_02g","name":"potion_02g"})
-map.set("potion_02h", {"path":"textures/azalea_icons/icontextures/potion_02h","name":"potion_02h"})
-map.set("potion_03a", {"path":"textures/azalea_icons/icontextures/potion_03a","name":"potion_03a"})
-map.set("potion_03b", {"path":"textures/azalea_icons/icontextures/potion_03b","name":"potion_03b"})
-map.set("potion_03c", {"path":"textures/azalea_icons/icontextures/potion_03c","name":"potion_03c"})
-map.set("potion_03d", {"path":"textures/azalea_icons/icontextures/potion_03d","name":"potion_03d"})
-map.set("potion_03e", {"path":"textures/azalea_icons/icontextures/potion_03e","name":"potion_03e"})
-map.set("potion_03f", {"path":"textures/azalea_icons/icontextures/potion_03f","name":"potion_03f"})
-map.set("potion_03g", {"path":"textures/azalea_icons/icontextures/potion_03g","name":"potion_03g"})
-map.set("potion_03h", {"path":"textures/azalea_icons/icontextures/potion_03h","name":"potion_03h"})
-map.set("pouch", {"path":"textures/azalea_icons/icontextures/pouch","name":"pouch"})
-map.set("pouch_2", {"path":"textures/azalea_icons/icontextures/pouch_2","name":"pouch_2"})
-map.set("powder_snow_bucket", {"path":"textures/azalea_icons/icontextures/powder_snow_bucket","name":"powder_snow_bucket"})
-map.set("prismarine_crystals", {"path":"textures/azalea_icons/icontextures/prismarine_crystals","name":"prismarine_crystals"})
-map.set("prismarine_shard", {"path":"textures/azalea_icons/icontextures/prismarine_shard","name":"prismarine_shard"})
-map.set("provolone", {"path":"textures/azalea_icons/icontextures/provolone","name":"provolone"})
-map.set("pufferfish", {"path":"textures/azalea_icons/icontextures/pufferfish","name":"pufferfish"})
-map.set("pufferfish_bucket", {"path":"textures/azalea_icons/icontextures/pufferfish_bucket","name":"pufferfish_bucket"})
-map.set("pumpkin_pie", {"path":"textures/azalea_icons/icontextures/pumpkin_pie","name":"pumpkin_pie"})
-map.set("quartz", {"path":"textures/azalea_icons/icontextures/quartz","name":"quartz"})
-map.set("quiver", {"path":"textures/azalea_icons/icontextures/quiver","name":"quiver"})
-map.set("quiver_2", {"path":"textures/azalea_icons/icontextures/quiver_2","name":"quiver_2"})
-map.set("rabbit", {"path":"textures/azalea_icons/icontextures/rabbit","name":"rabbit"})
-map.set("raw_copper", {"path":"textures/azalea_icons/icontextures/raw_copper","name":"raw_copper"})
-map.set("raw_gold", {"path":"textures/azalea_icons/icontextures/raw_gold","name":"raw_gold"})
-map.set("raw_iron", {"path":"textures/azalea_icons/icontextures/raw_iron","name":"raw_iron"})
-map.set("reblochon", {"path":"textures/azalea_icons/icontextures/reblochon","name":"reblochon"})
-map.set("redstone", {"path":"textures/azalea_icons/icontextures/redstone","name":"redstone"})
-map.set("red_dye", {"path":"textures/azalea_icons/icontextures/red_dye","name":"red_dye"})
-map.set("ricotta", {"path":"textures/azalea_icons/icontextures/ricotta","name":"ricotta"})
-map.set("ring_01", {"path":"textures/azalea_icons/icontextures/ring_01","name":"ring_01"})
-map.set("ring_01a", {"path":"textures/azalea_icons/icontextures/ring_01a","name":"ring_01a"})
-map.set("ring_01b", {"path":"textures/azalea_icons/icontextures/ring_01b","name":"ring_01b"})
-map.set("ring_01c", {"path":"textures/azalea_icons/icontextures/ring_01c","name":"ring_01c"})
-map.set("ring_01d", {"path":"textures/azalea_icons/icontextures/ring_01d","name":"ring_01d"})
-map.set("ring_01e", {"path":"textures/azalea_icons/icontextures/ring_01e","name":"ring_01e"})
-map.set("ring_01_2", {"path":"textures/azalea_icons/icontextures/ring_01_2","name":"ring_01_2"})
-map.set("ring_02", {"path":"textures/azalea_icons/icontextures/ring_02","name":"ring_02"})
-map.set("ring_02a", {"path":"textures/azalea_icons/icontextures/ring_02a","name":"ring_02a"})
-map.set("ring_02b", {"path":"textures/azalea_icons/icontextures/ring_02b","name":"ring_02b"})
-map.set("ring_02c", {"path":"textures/azalea_icons/icontextures/ring_02c","name":"ring_02c"})
-map.set("ring_02d", {"path":"textures/azalea_icons/icontextures/ring_02d","name":"ring_02d"})
-map.set("ring_02e", {"path":"textures/azalea_icons/icontextures/ring_02e","name":"ring_02e"})
-map.set("ring_02_2", {"path":"textures/azalea_icons/icontextures/ring_02_2","name":"ring_02_2"})
-map.set("ring_03a", {"path":"textures/azalea_icons/icontextures/ring_03a","name":"ring_03a"})
-map.set("ring_03b", {"path":"textures/azalea_icons/icontextures/ring_03b","name":"ring_03b"})
-map.set("ring_03c", {"path":"textures/azalea_icons/icontextures/ring_03c","name":"ring_03c"})
-map.set("ring_03d", {"path":"textures/azalea_icons/icontextures/ring_03d","name":"ring_03d"})
-map.set("ring_03e", {"path":"textures/azalea_icons/icontextures/ring_03e","name":"ring_03e"})
-map.set("roquefort", {"path":"textures/azalea_icons/icontextures/roquefort","name":"roquefort"})
-map.set("rotten_flesh", {"path":"textures/azalea_icons/icontextures/rotten_flesh","name":"rotten_flesh"})
-map.set("saddle", {"path":"textures/azalea_icons/icontextures/saddle","name":"saddle"})
-map.set("salmon", {"path":"textures/azalea_icons/icontextures/salmon","name":"salmon"})
-map.set("sandwich", {"path":"textures/azalea_icons/icontextures/sandwich","name":"sandwich"})
-map.set("sandwich_2", {"path":"textures/azalea_icons/icontextures/sandwich_2","name":"sandwich_2"})
-map.set("scamorza", {"path":"textures/azalea_icons/icontextures/scamorza","name":"scamorza"})
-map.set("scroll_01a", {"path":"textures/azalea_icons/icontextures/scroll_01a","name":"scroll_01a"})
-map.set("scroll_01b", {"path":"textures/azalea_icons/icontextures/scroll_01b","name":"scroll_01b"})
-map.set("scroll_01c", {"path":"textures/azalea_icons/icontextures/scroll_01c","name":"scroll_01c"})
-map.set("scroll_01d", {"path":"textures/azalea_icons/icontextures/scroll_01d","name":"scroll_01d"})
-map.set("scroll_01e", {"path":"textures/azalea_icons/icontextures/scroll_01e","name":"scroll_01e"})
-map.set("scroll_01f", {"path":"textures/azalea_icons/icontextures/scroll_01f","name":"scroll_01f"})
-map.set("scroll_01g", {"path":"textures/azalea_icons/icontextures/scroll_01g","name":"scroll_01g"})
-map.set("scroll_01h", {"path":"textures/azalea_icons/icontextures/scroll_01h","name":"scroll_01h"})
-map.set("scroll_leather", {"path":"textures/azalea_icons/icontextures/scroll_leather","name":"scroll_leather"})
-map.set("scroll_leather_2", {"path":"textures/azalea_icons/icontextures/scroll_leather_2","name":"scroll_leather_2"})
-map.set("scute", {"path":"textures/azalea_icons/icontextures/scute","name":"scute"})
-map.set("shard_01a", {"path":"textures/azalea_icons/icontextures/shard_01a","name":"shard_01a"})
-map.set("shard_01b", {"path":"textures/azalea_icons/icontextures/shard_01b","name":"shard_01b"})
-map.set("shard_01c", {"path":"textures/azalea_icons/icontextures/shard_01c","name":"shard_01c"})
-map.set("shard_01d", {"path":"textures/azalea_icons/icontextures/shard_01d","name":"shard_01d"})
-map.set("shard_01e", {"path":"textures/azalea_icons/icontextures/shard_01e","name":"shard_01e"})
-map.set("shard_01f", {"path":"textures/azalea_icons/icontextures/shard_01f","name":"shard_01f"})
-map.set("shard_01g", {"path":"textures/azalea_icons/icontextures/shard_01g","name":"shard_01g"})
-map.set("shard_01h", {"path":"textures/azalea_icons/icontextures/shard_01h","name":"shard_01h"})
-map.set("shard_01i", {"path":"textures/azalea_icons/icontextures/shard_01i","name":"shard_01i"})
-map.set("shard_01j", {"path":"textures/azalea_icons/icontextures/shard_01j","name":"shard_01j"})
-map.set("shears", {"path":"textures/azalea_icons/icontextures/shears","name":"shears"})
-map.set("shield_01", {"path":"textures/azalea_icons/icontextures/shield_01","name":"shield_01"})
-map.set("shield_01a", {"path":"textures/azalea_icons/icontextures/shield_01a","name":"shield_01a"})
-map.set("shield_01b", {"path":"textures/azalea_icons/icontextures/shield_01b","name":"shield_01b"})
-map.set("shield_01c", {"path":"textures/azalea_icons/icontextures/shield_01c","name":"shield_01c"})
-map.set("shield_01d", {"path":"textures/azalea_icons/icontextures/shield_01d","name":"shield_01d"})
-map.set("shield_01e", {"path":"textures/azalea_icons/icontextures/shield_01e","name":"shield_01e"})
-map.set("shield_01_2", {"path":"textures/azalea_icons/icontextures/shield_01_2","name":"shield_01_2"})
-map.set("shield_02", {"path":"textures/azalea_icons/icontextures/shield_02","name":"shield_02"})
-map.set("shield_02a", {"path":"textures/azalea_icons/icontextures/shield_02a","name":"shield_02a"})
-map.set("shield_02b", {"path":"textures/azalea_icons/icontextures/shield_02b","name":"shield_02b"})
-map.set("shield_02c", {"path":"textures/azalea_icons/icontextures/shield_02c","name":"shield_02c"})
-map.set("shield_02d", {"path":"textures/azalea_icons/icontextures/shield_02d","name":"shield_02d"})
-map.set("shield_02e", {"path":"textures/azalea_icons/icontextures/shield_02e","name":"shield_02e"})
-map.set("shield_02_2", {"path":"textures/azalea_icons/icontextures/shield_02_2","name":"shield_02_2"})
-map.set("shield_03a", {"path":"textures/azalea_icons/icontextures/shield_03a","name":"shield_03a"})
-map.set("shield_03b", {"path":"textures/azalea_icons/icontextures/shield_03b","name":"shield_03b"})
-map.set("shield_03c", {"path":"textures/azalea_icons/icontextures/shield_03c","name":"shield_03c"})
-map.set("shield_03d", {"path":"textures/azalea_icons/icontextures/shield_03d","name":"shield_03d"})
-map.set("shield_03e", {"path":"textures/azalea_icons/icontextures/shield_03e","name":"shield_03e"})
-map.set("shropshire_blue", {"path":"textures/azalea_icons/icontextures/shropshire_blue","name":"shropshire_blue"})
-map.set("shulker_shell", {"path":"textures/azalea_icons/icontextures/shulker_shell","name":"shulker_shell"})
-map.set("skull_01a", {"path":"textures/azalea_icons/icontextures/skull_01a","name":"skull_01a"})
-map.set("skull_01b", {"path":"textures/azalea_icons/icontextures/skull_01b","name":"skull_01b"})
-map.set("slime_ball", {"path":"textures/azalea_icons/icontextures/slime_ball","name":"slime_ball"})
-map.set("snowball", {"path":"textures/azalea_icons/icontextures/snowball","name":"snowball"})
-map.set("spear_01", {"path":"textures/azalea_icons/icontextures/spear_01","name":"spear_01"})
-map.set("spear_01_2", {"path":"textures/azalea_icons/icontextures/spear_01_2","name":"spear_01_2"})
-map.set("spear_02", {"path":"textures/azalea_icons/icontextures/spear_02","name":"spear_02"})
-map.set("spear_02_2", {"path":"textures/azalea_icons/icontextures/spear_02_2","name":"spear_02_2"})
-map.set("spellbook_01a", {"path":"textures/azalea_icons/icontextures/spellbook_01a","name":"spellbook_01a"})
-map.set("spellbook_01b", {"path":"textures/azalea_icons/icontextures/spellbook_01b","name":"spellbook_01b"})
-map.set("spellbook_01c", {"path":"textures/azalea_icons/icontextures/spellbook_01c","name":"spellbook_01c"})
-map.set("spellbook_01d", {"path":"textures/azalea_icons/icontextures/spellbook_01d","name":"spellbook_01d"})
-map.set("spellbook_01e", {"path":"textures/azalea_icons/icontextures/spellbook_01e","name":"spellbook_01e"})
-map.set("spellbook_02a", {"path":"textures/azalea_icons/icontextures/spellbook_02a","name":"spellbook_02a"})
-map.set("spellbook_02b", {"path":"textures/azalea_icons/icontextures/spellbook_02b","name":"spellbook_02b"})
-map.set("spellbook_02c", {"path":"textures/azalea_icons/icontextures/spellbook_02c","name":"spellbook_02c"})
-map.set("spellbook_02d", {"path":"textures/azalea_icons/icontextures/spellbook_02d","name":"spellbook_02d"})
-map.set("spellbook_02e", {"path":"textures/azalea_icons/icontextures/spellbook_02e","name":"spellbook_02e"})
-map.set("spellbook_03a", {"path":"textures/azalea_icons/icontextures/spellbook_03a","name":"spellbook_03a"})
-map.set("spellbook_03b", {"path":"textures/azalea_icons/icontextures/spellbook_03b","name":"spellbook_03b"})
-map.set("spellbook_03c", {"path":"textures/azalea_icons/icontextures/spellbook_03c","name":"spellbook_03c"})
-map.set("spellbook_03d", {"path":"textures/azalea_icons/icontextures/spellbook_03d","name":"spellbook_03d"})
-map.set("spellbook_03e", {"path":"textures/azalea_icons/icontextures/spellbook_03e","name":"spellbook_03e"})
-map.set("spider_eye", {"path":"textures/azalea_icons/icontextures/spider_eye","name":"spider_eye"})
-map.set("splash_potion", {"path":"textures/azalea_icons/icontextures/splash_potion","name":"splash_potion"})
-map.set("spyglass", {"path":"textures/azalea_icons/icontextures/spyglass","name":"spyglass"})
-map.set("staff_01a", {"path":"textures/azalea_icons/icontextures/staff_01a","name":"staff_01a"})
-map.set("staff_01b", {"path":"textures/azalea_icons/icontextures/staff_01b","name":"staff_01b"})
-map.set("staff_01c", {"path":"textures/azalea_icons/icontextures/staff_01c","name":"staff_01c"})
-map.set("staff_01d", {"path":"textures/azalea_icons/icontextures/staff_01d","name":"staff_01d"})
-map.set("staff_01e", {"path":"textures/azalea_icons/icontextures/staff_01e","name":"staff_01e"})
-map.set("staff_02ab", {"path":"textures/azalea_icons/icontextures/staff_02ab","name":"staff_02ab"})
-map.set("staff_02b", {"path":"textures/azalea_icons/icontextures/staff_02b","name":"staff_02b"})
-map.set("staff_02c", {"path":"textures/azalea_icons/icontextures/staff_02c","name":"staff_02c"})
-map.set("staff_02d", {"path":"textures/azalea_icons/icontextures/staff_02d","name":"staff_02d"})
-map.set("staff_02e", {"path":"textures/azalea_icons/icontextures/staff_02e","name":"staff_02e"})
-map.set("staff_03a", {"path":"textures/azalea_icons/icontextures/staff_03a","name":"staff_03a"})
-map.set("staff_03b", {"path":"textures/azalea_icons/icontextures/staff_03b","name":"staff_03b"})
-map.set("staff_03c", {"path":"textures/azalea_icons/icontextures/staff_03c","name":"staff_03c"})
-map.set("staff_03d", {"path":"textures/azalea_icons/icontextures/staff_03d","name":"staff_03d"})
-map.set("staff_03e", {"path":"textures/azalea_icons/icontextures/staff_03e","name":"staff_03e"})
-map.set("stick", {"path":"textures/azalea_icons/icontextures/stick","name":"stick"})
-map.set("stilton", {"path":"textures/azalea_icons/icontextures/stilton","name":"stilton"})
-map.set("stone sword", {"path":"textures/azalea_icons/icontextures/stone sword","name":"stone sword"})
-map.set("stone sword_2", {"path":"textures/azalea_icons/icontextures/stone sword_2","name":"stone sword_2"})
-map.set("stone", {"path":"textures/azalea_icons/icontextures/stone","name":"stone"})
-map.set("stoneblock_01a", {"path":"textures/azalea_icons/icontextures/stoneblock_01a","name":"stoneblock_01a"})
-map.set("stone_2", {"path":"textures/azalea_icons/icontextures/stone_2","name":"stone_2"})
-map.set("stone_axe", {"path":"textures/azalea_icons/icontextures/stone_axe","name":"stone_axe"})
-map.set("stone_hoe", {"path":"textures/azalea_icons/icontextures/stone_hoe","name":"stone_hoe"})
-map.set("stone_pickaxe", {"path":"textures/azalea_icons/icontextures/stone_pickaxe","name":"stone_pickaxe"})
-map.set("stone_shovel", {"path":"textures/azalea_icons/icontextures/stone_shovel","name":"stone_shovel"})
-map.set("stone_sword", {"path":"textures/azalea_icons/icontextures/stone_sword","name":"stone_sword"})
-map.set("string", {"path":"textures/azalea_icons/icontextures/string","name":"string"})
-map.set("sugar_cane", {"path":"textures/azalea_icons/icontextures/sugar_cane","name":"sugar_cane"})
-map.set("sweet_berries", {"path":"textures/azalea_icons/icontextures/sweet_berries","name":"sweet_berries"})
-map.set("swiss", {"path":"textures/azalea_icons/icontextures/swiss","name":"swiss"})
-map.set("sword_01", {"path":"textures/azalea_icons/icontextures/sword_01","name":"sword_01"})
-map.set("sword_01a", {"path":"textures/azalea_icons/icontextures/sword_01a","name":"sword_01a"})
-map.set("sword_01b", {"path":"textures/azalea_icons/icontextures/sword_01b","name":"sword_01b"})
-map.set("sword_01c", {"path":"textures/azalea_icons/icontextures/sword_01c","name":"sword_01c"})
-map.set("sword_01d", {"path":"textures/azalea_icons/icontextures/sword_01d","name":"sword_01d"})
-map.set("sword_01e", {"path":"textures/azalea_icons/icontextures/sword_01e","name":"sword_01e"})
-map.set("sword_01_2", {"path":"textures/azalea_icons/icontextures/sword_01_2","name":"sword_01_2"})
-map.set("sword_02", {"path":"textures/azalea_icons/icontextures/sword_02","name":"sword_02"})
-map.set("sword_02a", {"path":"textures/azalea_icons/icontextures/sword_02a","name":"sword_02a"})
-map.set("sword_02b", {"path":"textures/azalea_icons/icontextures/sword_02b","name":"sword_02b"})
-map.set("sword_02c", {"path":"textures/azalea_icons/icontextures/sword_02c","name":"sword_02c"})
-map.set("sword_02d", {"path":"textures/azalea_icons/icontextures/sword_02d","name":"sword_02d"})
-map.set("sword_02e", {"path":"textures/azalea_icons/icontextures/sword_02e","name":"sword_02e"})
-map.set("sword_02_2", {"path":"textures/azalea_icons/icontextures/sword_02_2","name":"sword_02_2"})
-map.set("sword_03a", {"path":"textures/azalea_icons/icontextures/sword_03a","name":"sword_03a"})
-map.set("sword_03b", {"path":"textures/azalea_icons/icontextures/sword_03b","name":"sword_03b"})
-map.set("sword_03c", {"path":"textures/azalea_icons/icontextures/sword_03c","name":"sword_03c"})
-map.set("sword_03d", {"path":"textures/azalea_icons/icontextures/sword_03d","name":"sword_03d"})
-map.set("sword_03e", {"path":"textures/azalea_icons/icontextures/sword_03e","name":"sword_03e"})
-map.set("tail", {"path":"textures/azalea_icons/icontextures/tail","name":"tail"})
-map.set("tail_2", {"path":"textures/azalea_icons/icontextures/tail_2","name":"tail_2"})
-map.set("taleggio", {"path":"textures/azalea_icons/icontextures/taleggio","name":"taleggio"})
-map.set("tile000", {"path":"textures/azalea_icons/icontextures/tile000","name":"tile000"})
-map.set("tile001", {"path":"textures/azalea_icons/icontextures/tile001","name":"tile001"})
-map.set("tile002", {"path":"textures/azalea_icons/icontextures/tile002","name":"tile002"})
-map.set("tile003", {"path":"textures/azalea_icons/icontextures/tile003","name":"tile003"})
-map.set("tile004", {"path":"textures/azalea_icons/icontextures/tile004","name":"tile004"})
-map.set("tile005", {"path":"textures/azalea_icons/icontextures/tile005","name":"tile005"})
-map.set("tile006", {"path":"textures/azalea_icons/icontextures/tile006","name":"tile006"})
-map.set("tile007", {"path":"textures/azalea_icons/icontextures/tile007","name":"tile007"})
-map.set("tile008", {"path":"textures/azalea_icons/icontextures/tile008","name":"tile008"})
-map.set("tile009", {"path":"textures/azalea_icons/icontextures/tile009","name":"tile009"})
-map.set("tile010", {"path":"textures/azalea_icons/icontextures/tile010","name":"tile010"})
-map.set("tile011", {"path":"textures/azalea_icons/icontextures/tile011","name":"tile011"})
-map.set("tile012", {"path":"textures/azalea_icons/icontextures/tile012","name":"tile012"})
-map.set("tile013", {"path":"textures/azalea_icons/icontextures/tile013","name":"tile013"})
-map.set("tile014", {"path":"textures/azalea_icons/icontextures/tile014","name":"tile014"})
-map.set("tile015", {"path":"textures/azalea_icons/icontextures/tile015","name":"tile015"})
-map.set("tile016", {"path":"textures/azalea_icons/icontextures/tile016","name":"tile016"})
-map.set("tile017", {"path":"textures/azalea_icons/icontextures/tile017","name":"tile017"})
-map.set("tile018", {"path":"textures/azalea_icons/icontextures/tile018","name":"tile018"})
-map.set("tile019", {"path":"textures/azalea_icons/icontextures/tile019","name":"tile019"})
-map.set("tile020", {"path":"textures/azalea_icons/icontextures/tile020","name":"tile020"})
-map.set("tile021", {"path":"textures/azalea_icons/icontextures/tile021","name":"tile021"})
-map.set("tile022", {"path":"textures/azalea_icons/icontextures/tile022","name":"tile022"})
-map.set("tile023", {"path":"textures/azalea_icons/icontextures/tile023","name":"tile023"})
-map.set("tile024", {"path":"textures/azalea_icons/icontextures/tile024","name":"tile024"})
-map.set("tile025", {"path":"textures/azalea_icons/icontextures/tile025","name":"tile025"})
-map.set("tile026", {"path":"textures/azalea_icons/icontextures/tile026","name":"tile026"})
-map.set("tile027", {"path":"textures/azalea_icons/icontextures/tile027","name":"tile027"})
-map.set("tile028", {"path":"textures/azalea_icons/icontextures/tile028","name":"tile028"})
-map.set("tile029", {"path":"textures/azalea_icons/icontextures/tile029","name":"tile029"})
-map.set("tile030", {"path":"textures/azalea_icons/icontextures/tile030","name":"tile030"})
-map.set("tile031", {"path":"textures/azalea_icons/icontextures/tile031","name":"tile031"})
-map.set("tile032", {"path":"textures/azalea_icons/icontextures/tile032","name":"tile032"})
-map.set("tile033", {"path":"textures/azalea_icons/icontextures/tile033","name":"tile033"})
-map.set("tile034", {"path":"textures/azalea_icons/icontextures/tile034","name":"tile034"})
-map.set("tile035", {"path":"textures/azalea_icons/icontextures/tile035","name":"tile035"})
-map.set("tile036", {"path":"textures/azalea_icons/icontextures/tile036","name":"tile036"})
-map.set("tile037", {"path":"textures/azalea_icons/icontextures/tile037","name":"tile037"})
-map.set("tile038", {"path":"textures/azalea_icons/icontextures/tile038","name":"tile038"})
-map.set("tile039", {"path":"textures/azalea_icons/icontextures/tile039","name":"tile039"})
-map.set("tile040", {"path":"textures/azalea_icons/icontextures/tile040","name":"tile040"})
-map.set("tile041", {"path":"textures/azalea_icons/icontextures/tile041","name":"tile041"})
-map.set("tile042", {"path":"textures/azalea_icons/icontextures/tile042","name":"tile042"})
-map.set("tile043", {"path":"textures/azalea_icons/icontextures/tile043","name":"tile043"})
-map.set("tile044", {"path":"textures/azalea_icons/icontextures/tile044","name":"tile044"})
-map.set("tile045", {"path":"textures/azalea_icons/icontextures/tile045","name":"tile045"})
-map.set("tile046", {"path":"textures/azalea_icons/icontextures/tile046","name":"tile046"})
-map.set("tile047", {"path":"textures/azalea_icons/icontextures/tile047","name":"tile047"})
-map.set("tile048", {"path":"textures/azalea_icons/icontextures/tile048","name":"tile048"})
-map.set("tile049", {"path":"textures/azalea_icons/icontextures/tile049","name":"tile049"})
-map.set("tile050", {"path":"textures/azalea_icons/icontextures/tile050","name":"tile050"})
-map.set("tile051", {"path":"textures/azalea_icons/icontextures/tile051","name":"tile051"})
-map.set("tile052", {"path":"textures/azalea_icons/icontextures/tile052","name":"tile052"})
-map.set("tile053", {"path":"textures/azalea_icons/icontextures/tile053","name":"tile053"})
-map.set("tile054", {"path":"textures/azalea_icons/icontextures/tile054","name":"tile054"})
-map.set("tile055", {"path":"textures/azalea_icons/icontextures/tile055","name":"tile055"})
-map.set("tile056", {"path":"textures/azalea_icons/icontextures/tile056","name":"tile056"})
-map.set("tile057", {"path":"textures/azalea_icons/icontextures/tile057","name":"tile057"})
-map.set("tile058", {"path":"textures/azalea_icons/icontextures/tile058","name":"tile058"})
-map.set("tile059", {"path":"textures/azalea_icons/icontextures/tile059","name":"tile059"})
-map.set("tile060", {"path":"textures/azalea_icons/icontextures/tile060","name":"tile060"})
-map.set("tile061", {"path":"textures/azalea_icons/icontextures/tile061","name":"tile061"})
-map.set("tile062", {"path":"textures/azalea_icons/icontextures/tile062","name":"tile062"})
-map.set("tile063", {"path":"textures/azalea_icons/icontextures/tile063","name":"tile063"})
-map.set("tile064", {"path":"textures/azalea_icons/icontextures/tile064","name":"tile064"})
-map.set("tile065", {"path":"textures/azalea_icons/icontextures/tile065","name":"tile065"})
-map.set("tile066", {"path":"textures/azalea_icons/icontextures/tile066","name":"tile066"})
-map.set("tile067", {"path":"textures/azalea_icons/icontextures/tile067","name":"tile067"})
-map.set("tile068", {"path":"textures/azalea_icons/icontextures/tile068","name":"tile068"})
-map.set("tile069", {"path":"textures/azalea_icons/icontextures/tile069","name":"tile069"})
-map.set("tile070", {"path":"textures/azalea_icons/icontextures/tile070","name":"tile070"})
-map.set("tile071", {"path":"textures/azalea_icons/icontextures/tile071","name":"tile071"})
-map.set("tile072", {"path":"textures/azalea_icons/icontextures/tile072","name":"tile072"})
-map.set("tile073", {"path":"textures/azalea_icons/icontextures/tile073","name":"tile073"})
-map.set("tile074", {"path":"textures/azalea_icons/icontextures/tile074","name":"tile074"})
-map.set("tile075", {"path":"textures/azalea_icons/icontextures/tile075","name":"tile075"})
-map.set("tile076", {"path":"textures/azalea_icons/icontextures/tile076","name":"tile076"})
-map.set("tile077", {"path":"textures/azalea_icons/icontextures/tile077","name":"tile077"})
-map.set("tile078", {"path":"textures/azalea_icons/icontextures/tile078","name":"tile078"})
-map.set("tile079", {"path":"textures/azalea_icons/icontextures/tile079","name":"tile079"})
-map.set("tile080", {"path":"textures/azalea_icons/icontextures/tile080","name":"tile080"})
-map.set("tile081", {"path":"textures/azalea_icons/icontextures/tile081","name":"tile081"})
-map.set("tile082", {"path":"textures/azalea_icons/icontextures/tile082","name":"tile082"})
-map.set("tile083", {"path":"textures/azalea_icons/icontextures/tile083","name":"tile083"})
-map.set("tile084", {"path":"textures/azalea_icons/icontextures/tile084","name":"tile084"})
-map.set("tile085", {"path":"textures/azalea_icons/icontextures/tile085","name":"tile085"})
-map.set("tile086", {"path":"textures/azalea_icons/icontextures/tile086","name":"tile086"})
-map.set("tile087", {"path":"textures/azalea_icons/icontextures/tile087","name":"tile087"})
-map.set("tile088", {"path":"textures/azalea_icons/icontextures/tile088","name":"tile088"})
-map.set("tile089", {"path":"textures/azalea_icons/icontextures/tile089","name":"tile089"})
-map.set("tile090", {"path":"textures/azalea_icons/icontextures/tile090","name":"tile090"})
-map.set("tile091", {"path":"textures/azalea_icons/icontextures/tile091","name":"tile091"})
-map.set("tile092", {"path":"textures/azalea_icons/icontextures/tile092","name":"tile092"})
-map.set("tile093", {"path":"textures/azalea_icons/icontextures/tile093","name":"tile093"})
-map.set("tile094", {"path":"textures/azalea_icons/icontextures/tile094","name":"tile094"})
-map.set("tile095", {"path":"textures/azalea_icons/icontextures/tile095","name":"tile095"})
-map.set("tile096", {"path":"textures/azalea_icons/icontextures/tile096","name":"tile096"})
-map.set("tile097", {"path":"textures/azalea_icons/icontextures/tile097","name":"tile097"})
-map.set("tile098", {"path":"textures/azalea_icons/icontextures/tile098","name":"tile098"})
-map.set("tile099", {"path":"textures/azalea_icons/icontextures/tile099","name":"tile099"})
-map.set("tile100", {"path":"textures/azalea_icons/icontextures/tile100","name":"tile100"})
-map.set("tile101", {"path":"textures/azalea_icons/icontextures/tile101","name":"tile101"})
-map.set("tile102", {"path":"textures/azalea_icons/icontextures/tile102","name":"tile102"})
-map.set("tile103", {"path":"textures/azalea_icons/icontextures/tile103","name":"tile103"})
-map.set("tile104", {"path":"textures/azalea_icons/icontextures/tile104","name":"tile104"})
-map.set("tile105", {"path":"textures/azalea_icons/icontextures/tile105","name":"tile105"})
-map.set("tile106", {"path":"textures/azalea_icons/icontextures/tile106","name":"tile106"})
-map.set("tile107", {"path":"textures/azalea_icons/icontextures/tile107","name":"tile107"})
-map.set("tile108", {"path":"textures/azalea_icons/icontextures/tile108","name":"tile108"})
-map.set("tile109", {"path":"textures/azalea_icons/icontextures/tile109","name":"tile109"})
-map.set("tile110", {"path":"textures/azalea_icons/icontextures/tile110","name":"tile110"})
-map.set("tile111", {"path":"textures/azalea_icons/icontextures/tile111","name":"tile111"})
-map.set("tile112", {"path":"textures/azalea_icons/icontextures/tile112","name":"tile112"})
-map.set("tile113", {"path":"textures/azalea_icons/icontextures/tile113","name":"tile113"})
-map.set("tile114", {"path":"textures/azalea_icons/icontextures/tile114","name":"tile114"})
-map.set("tile115", {"path":"textures/azalea_icons/icontextures/tile115","name":"tile115"})
-map.set("tile116", {"path":"textures/azalea_icons/icontextures/tile116","name":"tile116"})
-map.set("tile117", {"path":"textures/azalea_icons/icontextures/tile117","name":"tile117"})
-map.set("tile118", {"path":"textures/azalea_icons/icontextures/tile118","name":"tile118"})
-map.set("tile119", {"path":"textures/azalea_icons/icontextures/tile119","name":"tile119"})
-map.set("tile120", {"path":"textures/azalea_icons/icontextures/tile120","name":"tile120"})
-map.set("tile121", {"path":"textures/azalea_icons/icontextures/tile121","name":"tile121"})
-map.set("tile122", {"path":"textures/azalea_icons/icontextures/tile122","name":"tile122"})
-map.set("tile123", {"path":"textures/azalea_icons/icontextures/tile123","name":"tile123"})
-map.set("tile124", {"path":"textures/azalea_icons/icontextures/tile124","name":"tile124"})
-map.set("tile125", {"path":"textures/azalea_icons/icontextures/tile125","name":"tile125"})
-map.set("tile126", {"path":"textures/azalea_icons/icontextures/tile126","name":"tile126"})
-map.set("tile127", {"path":"textures/azalea_icons/icontextures/tile127","name":"tile127"})
-map.set("tile128", {"path":"textures/azalea_icons/icontextures/tile128","name":"tile128"})
-map.set("tile129", {"path":"textures/azalea_icons/icontextures/tile129","name":"tile129"})
-map.set("tile130", {"path":"textures/azalea_icons/icontextures/tile130","name":"tile130"})
-map.set("tile131", {"path":"textures/azalea_icons/icontextures/tile131","name":"tile131"})
-map.set("tile132", {"path":"textures/azalea_icons/icontextures/tile132","name":"tile132"})
-map.set("tile133", {"path":"textures/azalea_icons/icontextures/tile133","name":"tile133"})
-map.set("tile134", {"path":"textures/azalea_icons/icontextures/tile134","name":"tile134"})
-map.set("tile135", {"path":"textures/azalea_icons/icontextures/tile135","name":"tile135"})
-map.set("tile136", {"path":"textures/azalea_icons/icontextures/tile136","name":"tile136"})
-map.set("tile137", {"path":"textures/azalea_icons/icontextures/tile137","name":"tile137"})
-map.set("tile138", {"path":"textures/azalea_icons/icontextures/tile138","name":"tile138"})
-map.set("tile139", {"path":"textures/azalea_icons/icontextures/tile139","name":"tile139"})
-map.set("tile140", {"path":"textures/azalea_icons/icontextures/tile140","name":"tile140"})
-map.set("tile141", {"path":"textures/azalea_icons/icontextures/tile141","name":"tile141"})
-map.set("tile142", {"path":"textures/azalea_icons/icontextures/tile142","name":"tile142"})
-map.set("tile143", {"path":"textures/azalea_icons/icontextures/tile143","name":"tile143"})
-map.set("tile144", {"path":"textures/azalea_icons/icontextures/tile144","name":"tile144"})
-map.set("tile145", {"path":"textures/azalea_icons/icontextures/tile145","name":"tile145"})
-map.set("tile146", {"path":"textures/azalea_icons/icontextures/tile146","name":"tile146"})
-map.set("tile147", {"path":"textures/azalea_icons/icontextures/tile147","name":"tile147"})
-map.set("tile148", {"path":"textures/azalea_icons/icontextures/tile148","name":"tile148"})
-map.set("tile149", {"path":"textures/azalea_icons/icontextures/tile149","name":"tile149"})
-map.set("tile150", {"path":"textures/azalea_icons/icontextures/tile150","name":"tile150"})
-map.set("tile151", {"path":"textures/azalea_icons/icontextures/tile151","name":"tile151"})
-map.set("tile152", {"path":"textures/azalea_icons/icontextures/tile152","name":"tile152"})
-map.set("tile153", {"path":"textures/azalea_icons/icontextures/tile153","name":"tile153"})
-map.set("tile154", {"path":"textures/azalea_icons/icontextures/tile154","name":"tile154"})
-map.set("tile155", {"path":"textures/azalea_icons/icontextures/tile155","name":"tile155"})
-map.set("tile156", {"path":"textures/azalea_icons/icontextures/tile156","name":"tile156"})
-map.set("tile157", {"path":"textures/azalea_icons/icontextures/tile157","name":"tile157"})
-map.set("tile158", {"path":"textures/azalea_icons/icontextures/tile158","name":"tile158"})
-map.set("tile159", {"path":"textures/azalea_icons/icontextures/tile159","name":"tile159"})
-map.set("tile160", {"path":"textures/azalea_icons/icontextures/tile160","name":"tile160"})
-map.set("tile161", {"path":"textures/azalea_icons/icontextures/tile161","name":"tile161"})
-map.set("tile162", {"path":"textures/azalea_icons/icontextures/tile162","name":"tile162"})
-map.set("tile163", {"path":"textures/azalea_icons/icontextures/tile163","name":"tile163"})
-map.set("tile164", {"path":"textures/azalea_icons/icontextures/tile164","name":"tile164"})
-map.set("tile165", {"path":"textures/azalea_icons/icontextures/tile165","name":"tile165"})
-map.set("tile166", {"path":"textures/azalea_icons/icontextures/tile166","name":"tile166"})
-map.set("tile167", {"path":"textures/azalea_icons/icontextures/tile167","name":"tile167"})
-map.set("tile168", {"path":"textures/azalea_icons/icontextures/tile168","name":"tile168"})
-map.set("tile169", {"path":"textures/azalea_icons/icontextures/tile169","name":"tile169"})
-map.set("tile170", {"path":"textures/azalea_icons/icontextures/tile170","name":"tile170"})
-map.set("tile171", {"path":"textures/azalea_icons/icontextures/tile171","name":"tile171"})
-map.set("tile172", {"path":"textures/azalea_icons/icontextures/tile172","name":"tile172"})
-map.set("tile173", {"path":"textures/azalea_icons/icontextures/tile173","name":"tile173"})
-map.set("tile174", {"path":"textures/azalea_icons/icontextures/tile174","name":"tile174"})
-map.set("tile175", {"path":"textures/azalea_icons/icontextures/tile175","name":"tile175"})
-map.set("tile176", {"path":"textures/azalea_icons/icontextures/tile176","name":"tile176"})
-map.set("tile177", {"path":"textures/azalea_icons/icontextures/tile177","name":"tile177"})
-map.set("tile178", {"path":"textures/azalea_icons/icontextures/tile178","name":"tile178"})
-map.set("tile179", {"path":"textures/azalea_icons/icontextures/tile179","name":"tile179"})
-map.set("tile180", {"path":"textures/azalea_icons/icontextures/tile180","name":"tile180"})
-map.set("tile181", {"path":"textures/azalea_icons/icontextures/tile181","name":"tile181"})
-map.set("tile182", {"path":"textures/azalea_icons/icontextures/tile182","name":"tile182"})
-map.set("tile183", {"path":"textures/azalea_icons/icontextures/tile183","name":"tile183"})
-map.set("tile184", {"path":"textures/azalea_icons/icontextures/tile184","name":"tile184"})
-map.set("tile185", {"path":"textures/azalea_icons/icontextures/tile185","name":"tile185"})
-map.set("tile186", {"path":"textures/azalea_icons/icontextures/tile186","name":"tile186"})
-map.set("tile187", {"path":"textures/azalea_icons/icontextures/tile187","name":"tile187"})
-map.set("tile188", {"path":"textures/azalea_icons/icontextures/tile188","name":"tile188"})
-map.set("tile189", {"path":"textures/azalea_icons/icontextures/tile189","name":"tile189"})
-map.set("tile190", {"path":"textures/azalea_icons/icontextures/tile190","name":"tile190"})
-map.set("tile191", {"path":"textures/azalea_icons/icontextures/tile191","name":"tile191"})
-map.set("tile192", {"path":"textures/azalea_icons/icontextures/tile192","name":"tile192"})
-map.set("tile193", {"path":"textures/azalea_icons/icontextures/tile193","name":"tile193"})
-map.set("tile194", {"path":"textures/azalea_icons/icontextures/tile194","name":"tile194"})
-map.set("tile195", {"path":"textures/azalea_icons/icontextures/tile195","name":"tile195"})
-map.set("tile196", {"path":"textures/azalea_icons/icontextures/tile196","name":"tile196"})
-map.set("tile197", {"path":"textures/azalea_icons/icontextures/tile197","name":"tile197"})
-map.set("tile198", {"path":"textures/azalea_icons/icontextures/tile198","name":"tile198"})
-map.set("tile199", {"path":"textures/azalea_icons/icontextures/tile199","name":"tile199"})
-map.set("tile200", {"path":"textures/azalea_icons/icontextures/tile200","name":"tile200"})
-map.set("tile201", {"path":"textures/azalea_icons/icontextures/tile201","name":"tile201"})
-map.set("tile202", {"path":"textures/azalea_icons/icontextures/tile202","name":"tile202"})
-map.set("tile203", {"path":"textures/azalea_icons/icontextures/tile203","name":"tile203"})
-map.set("tile204", {"path":"textures/azalea_icons/icontextures/tile204","name":"tile204"})
-map.set("tile205", {"path":"textures/azalea_icons/icontextures/tile205","name":"tile205"})
-map.set("tile206", {"path":"textures/azalea_icons/icontextures/tile206","name":"tile206"})
-map.set("tile207", {"path":"textures/azalea_icons/icontextures/tile207","name":"tile207"})
-map.set("tile208", {"path":"textures/azalea_icons/icontextures/tile208","name":"tile208"})
-map.set("tile209", {"path":"textures/azalea_icons/icontextures/tile209","name":"tile209"})
-map.set("tile210", {"path":"textures/azalea_icons/icontextures/tile210","name":"tile210"})
-map.set("tile211", {"path":"textures/azalea_icons/icontextures/tile211","name":"tile211"})
-map.set("tile212", {"path":"textures/azalea_icons/icontextures/tile212","name":"tile212"})
-map.set("tile213", {"path":"textures/azalea_icons/icontextures/tile213","name":"tile213"})
-map.set("tile214", {"path":"textures/azalea_icons/icontextures/tile214","name":"tile214"})
-map.set("tile215", {"path":"textures/azalea_icons/icontextures/tile215","name":"tile215"})
-map.set("tile216", {"path":"textures/azalea_icons/icontextures/tile216","name":"tile216"})
-map.set("tile217", {"path":"textures/azalea_icons/icontextures/tile217","name":"tile217"})
-map.set("tile218", {"path":"textures/azalea_icons/icontextures/tile218","name":"tile218"})
-map.set("tile219", {"path":"textures/azalea_icons/icontextures/tile219","name":"tile219"})
-map.set("tile220", {"path":"textures/azalea_icons/icontextures/tile220","name":"tile220"})
-map.set("tile221", {"path":"textures/azalea_icons/icontextures/tile221","name":"tile221"})
-map.set("tile222", {"path":"textures/azalea_icons/icontextures/tile222","name":"tile222"})
-map.set("tile223", {"path":"textures/azalea_icons/icontextures/tile223","name":"tile223"})
-map.set("tile224", {"path":"textures/azalea_icons/icontextures/tile224","name":"tile224"})
-map.set("tile225", {"path":"textures/azalea_icons/icontextures/tile225","name":"tile225"})
-map.set("tile226", {"path":"textures/azalea_icons/icontextures/tile226","name":"tile226"})
-map.set("tile227", {"path":"textures/azalea_icons/icontextures/tile227","name":"tile227"})
-map.set("tile228", {"path":"textures/azalea_icons/icontextures/tile228","name":"tile228"})
-map.set("tile229", {"path":"textures/azalea_icons/icontextures/tile229","name":"tile229"})
-map.set("tile230", {"path":"textures/azalea_icons/icontextures/tile230","name":"tile230"})
-map.set("tile231", {"path":"textures/azalea_icons/icontextures/tile231","name":"tile231"})
-map.set("tile232", {"path":"textures/azalea_icons/icontextures/tile232","name":"tile232"})
-map.set("tile233", {"path":"textures/azalea_icons/icontextures/tile233","name":"tile233"})
-map.set("tile234", {"path":"textures/azalea_icons/icontextures/tile234","name":"tile234"})
-map.set("tile235", {"path":"textures/azalea_icons/icontextures/tile235","name":"tile235"})
-map.set("tile236", {"path":"textures/azalea_icons/icontextures/tile236","name":"tile236"})
-map.set("tile237", {"path":"textures/azalea_icons/icontextures/tile237","name":"tile237"})
-map.set("tile238", {"path":"textures/azalea_icons/icontextures/tile238","name":"tile238"})
-map.set("tile239", {"path":"textures/azalea_icons/icontextures/tile239","name":"tile239"})
-map.set("tile240", {"path":"textures/azalea_icons/icontextures/tile240","name":"tile240"})
-map.set("tile241", {"path":"textures/azalea_icons/icontextures/tile241","name":"tile241"})
-map.set("tile242", {"path":"textures/azalea_icons/icontextures/tile242","name":"tile242"})
-map.set("tile243", {"path":"textures/azalea_icons/icontextures/tile243","name":"tile243"})
-map.set("tile244", {"path":"textures/azalea_icons/icontextures/tile244","name":"tile244"})
-map.set("tile245", {"path":"textures/azalea_icons/icontextures/tile245","name":"tile245"})
-map.set("tile246", {"path":"textures/azalea_icons/icontextures/tile246","name":"tile246"})
-map.set("tile247", {"path":"textures/azalea_icons/icontextures/tile247","name":"tile247"})
-map.set("tile248", {"path":"textures/azalea_icons/icontextures/tile248","name":"tile248"})
-map.set("tile249", {"path":"textures/azalea_icons/icontextures/tile249","name":"tile249"})
-map.set("tile250", {"path":"textures/azalea_icons/icontextures/tile250","name":"tile250"})
-map.set("tile251", {"path":"textures/azalea_icons/icontextures/tile251","name":"tile251"})
-map.set("tile252", {"path":"textures/azalea_icons/icontextures/tile252","name":"tile252"})
-map.set("tile253", {"path":"textures/azalea_icons/icontextures/tile253","name":"tile253"})
-map.set("tile254", {"path":"textures/azalea_icons/icontextures/tile254","name":"tile254"})
-map.set("tile255", {"path":"textures/azalea_icons/icontextures/tile255","name":"tile255"})
-map.set("tile256", {"path":"textures/azalea_icons/icontextures/tile256","name":"tile256"})
-map.set("tile257", {"path":"textures/azalea_icons/icontextures/tile257","name":"tile257"})
-map.set("tile258", {"path":"textures/azalea_icons/icontextures/tile258","name":"tile258"})
-map.set("tile259", {"path":"textures/azalea_icons/icontextures/tile259","name":"tile259"})
-map.set("tile260", {"path":"textures/azalea_icons/icontextures/tile260","name":"tile260"})
-map.set("tile261", {"path":"textures/azalea_icons/icontextures/tile261","name":"tile261"})
-map.set("tile262", {"path":"textures/azalea_icons/icontextures/tile262","name":"tile262"})
-map.set("tile263", {"path":"textures/azalea_icons/icontextures/tile263","name":"tile263"})
-map.set("tile264", {"path":"textures/azalea_icons/icontextures/tile264","name":"tile264"})
-map.set("tile265", {"path":"textures/azalea_icons/icontextures/tile265","name":"tile265"})
-map.set("tile266", {"path":"textures/azalea_icons/icontextures/tile266","name":"tile266"})
-map.set("tile267", {"path":"textures/azalea_icons/icontextures/tile267","name":"tile267"})
-map.set("tile268", {"path":"textures/azalea_icons/icontextures/tile268","name":"tile268"})
-map.set("tile269", {"path":"textures/azalea_icons/icontextures/tile269","name":"tile269"})
-map.set("tile270", {"path":"textures/azalea_icons/icontextures/tile270","name":"tile270"})
-map.set("tile271", {"path":"textures/azalea_icons/icontextures/tile271","name":"tile271"})
-map.set("tile272", {"path":"textures/azalea_icons/icontextures/tile272","name":"tile272"})
-map.set("tile273", {"path":"textures/azalea_icons/icontextures/tile273","name":"tile273"})
-map.set("tile274", {"path":"textures/azalea_icons/icontextures/tile274","name":"tile274"})
-map.set("tile275", {"path":"textures/azalea_icons/icontextures/tile275","name":"tile275"})
-map.set("tile276", {"path":"textures/azalea_icons/icontextures/tile276","name":"tile276"})
-map.set("tile277", {"path":"textures/azalea_icons/icontextures/tile277","name":"tile277"})
-map.set("tile278", {"path":"textures/azalea_icons/icontextures/tile278","name":"tile278"})
-map.set("tile279", {"path":"textures/azalea_icons/icontextures/tile279","name":"tile279"})
-map.set("tile280", {"path":"textures/azalea_icons/icontextures/tile280","name":"tile280"})
-map.set("tile281", {"path":"textures/azalea_icons/icontextures/tile281","name":"tile281"})
-map.set("tile282", {"path":"textures/azalea_icons/icontextures/tile282","name":"tile282"})
-map.set("tile283", {"path":"textures/azalea_icons/icontextures/tile283","name":"tile283"})
-map.set("tile284", {"path":"textures/azalea_icons/icontextures/tile284","name":"tile284"})
-map.set("tile285", {"path":"textures/azalea_icons/icontextures/tile285","name":"tile285"})
-map.set("tile286", {"path":"textures/azalea_icons/icontextures/tile286","name":"tile286"})
-map.set("tile287", {"path":"textures/azalea_icons/icontextures/tile287","name":"tile287"})
-map.set("tile288", {"path":"textures/azalea_icons/icontextures/tile288","name":"tile288"})
-map.set("tile289", {"path":"textures/azalea_icons/icontextures/tile289","name":"tile289"})
-map.set("tile290", {"path":"textures/azalea_icons/icontextures/tile290","name":"tile290"})
-map.set("tile291", {"path":"textures/azalea_icons/icontextures/tile291","name":"tile291"})
-map.set("tile292", {"path":"textures/azalea_icons/icontextures/tile292","name":"tile292"})
-map.set("tile293", {"path":"textures/azalea_icons/icontextures/tile293","name":"tile293"})
-map.set("tile294", {"path":"textures/azalea_icons/icontextures/tile294","name":"tile294"})
-map.set("tile295", {"path":"textures/azalea_icons/icontextures/tile295","name":"tile295"})
-map.set("tile296", {"path":"textures/azalea_icons/icontextures/tile296","name":"tile296"})
-map.set("tile297", {"path":"textures/azalea_icons/icontextures/tile297","name":"tile297"})
-map.set("tile298", {"path":"textures/azalea_icons/icontextures/tile298","name":"tile298"})
-map.set("tile299", {"path":"textures/azalea_icons/icontextures/tile299","name":"tile299"})
-map.set("tile2_000", {"path":"textures/azalea_icons/icontextures/tile2_000","name":"tile2_000"})
-map.set("tile2_001", {"path":"textures/azalea_icons/icontextures/tile2_001","name":"tile2_001"})
-map.set("tile2_002", {"path":"textures/azalea_icons/icontextures/tile2_002","name":"tile2_002"})
-map.set("tile2_003", {"path":"textures/azalea_icons/icontextures/tile2_003","name":"tile2_003"})
-map.set("tile2_004", {"path":"textures/azalea_icons/icontextures/tile2_004","name":"tile2_004"})
-map.set("tile2_005", {"path":"textures/azalea_icons/icontextures/tile2_005","name":"tile2_005"})
-map.set("tile2_006", {"path":"textures/azalea_icons/icontextures/tile2_006","name":"tile2_006"})
-map.set("tile2_007", {"path":"textures/azalea_icons/icontextures/tile2_007","name":"tile2_007"})
-map.set("tile2_008", {"path":"textures/azalea_icons/icontextures/tile2_008","name":"tile2_008"})
-map.set("tile2_009", {"path":"textures/azalea_icons/icontextures/tile2_009","name":"tile2_009"})
-map.set("tile2_010", {"path":"textures/azalea_icons/icontextures/tile2_010","name":"tile2_010"})
-map.set("tile2_011", {"path":"textures/azalea_icons/icontextures/tile2_011","name":"tile2_011"})
-map.set("tile2_012", {"path":"textures/azalea_icons/icontextures/tile2_012","name":"tile2_012"})
-map.set("tile2_013", {"path":"textures/azalea_icons/icontextures/tile2_013","name":"tile2_013"})
-map.set("tile2_014", {"path":"textures/azalea_icons/icontextures/tile2_014","name":"tile2_014"})
-map.set("tile2_015", {"path":"textures/azalea_icons/icontextures/tile2_015","name":"tile2_015"})
-map.set("tile2_016", {"path":"textures/azalea_icons/icontextures/tile2_016","name":"tile2_016"})
-map.set("tile2_017", {"path":"textures/azalea_icons/icontextures/tile2_017","name":"tile2_017"})
-map.set("tile2_018", {"path":"textures/azalea_icons/icontextures/tile2_018","name":"tile2_018"})
-map.set("tile2_019", {"path":"textures/azalea_icons/icontextures/tile2_019","name":"tile2_019"})
-map.set("tile2_020", {"path":"textures/azalea_icons/icontextures/tile2_020","name":"tile2_020"})
-map.set("tile2_021", {"path":"textures/azalea_icons/icontextures/tile2_021","name":"tile2_021"})
-map.set("tile2_022", {"path":"textures/azalea_icons/icontextures/tile2_022","name":"tile2_022"})
-map.set("tile2_023", {"path":"textures/azalea_icons/icontextures/tile2_023","name":"tile2_023"})
-map.set("tile2_024", {"path":"textures/azalea_icons/icontextures/tile2_024","name":"tile2_024"})
-map.set("tile2_025", {"path":"textures/azalea_icons/icontextures/tile2_025","name":"tile2_025"})
-map.set("tile2_026", {"path":"textures/azalea_icons/icontextures/tile2_026","name":"tile2_026"})
-map.set("tile2_027", {"path":"textures/azalea_icons/icontextures/tile2_027","name":"tile2_027"})
-map.set("tile2_028", {"path":"textures/azalea_icons/icontextures/tile2_028","name":"tile2_028"})
-map.set("tile2_029", {"path":"textures/azalea_icons/icontextures/tile2_029","name":"tile2_029"})
-map.set("tile2_030", {"path":"textures/azalea_icons/icontextures/tile2_030","name":"tile2_030"})
-map.set("tile2_031", {"path":"textures/azalea_icons/icontextures/tile2_031","name":"tile2_031"})
-map.set("tile300", {"path":"textures/azalea_icons/icontextures/tile300","name":"tile300"})
-map.set("tile301", {"path":"textures/azalea_icons/icontextures/tile301","name":"tile301"})
-map.set("tile302", {"path":"textures/azalea_icons/icontextures/tile302","name":"tile302"})
-map.set("tile303", {"path":"textures/azalea_icons/icontextures/tile303","name":"tile303"})
-map.set("tile304", {"path":"textures/azalea_icons/icontextures/tile304","name":"tile304"})
-map.set("tile305", {"path":"textures/azalea_icons/icontextures/tile305","name":"tile305"})
-map.set("tile306", {"path":"textures/azalea_icons/icontextures/tile306","name":"tile306"})
-map.set("tile307", {"path":"textures/azalea_icons/icontextures/tile307","name":"tile307"})
-map.set("tile308", {"path":"textures/azalea_icons/icontextures/tile308","name":"tile308"})
-map.set("tile309", {"path":"textures/azalea_icons/icontextures/tile309","name":"tile309"})
-map.set("tile310", {"path":"textures/azalea_icons/icontextures/tile310","name":"tile310"})
-map.set("tile311", {"path":"textures/azalea_icons/icontextures/tile311","name":"tile311"})
-map.set("tile312", {"path":"textures/azalea_icons/icontextures/tile312","name":"tile312"})
-map.set("tile313", {"path":"textures/azalea_icons/icontextures/tile313","name":"tile313"})
-map.set("tile314", {"path":"textures/azalea_icons/icontextures/tile314","name":"tile314"})
-map.set("tile315", {"path":"textures/azalea_icons/icontextures/tile315","name":"tile315"})
-map.set("tile316", {"path":"textures/azalea_icons/icontextures/tile316","name":"tile316"})
-map.set("tile317", {"path":"textures/azalea_icons/icontextures/tile317","name":"tile317"})
-map.set("tile318", {"path":"textures/azalea_icons/icontextures/tile318","name":"tile318"})
-map.set("tile319", {"path":"textures/azalea_icons/icontextures/tile319","name":"tile319"})
-map.set("tile320", {"path":"textures/azalea_icons/icontextures/tile320","name":"tile320"})
-map.set("tile321", {"path":"textures/azalea_icons/icontextures/tile321","name":"tile321"})
-map.set("tile322", {"path":"textures/azalea_icons/icontextures/tile322","name":"tile322"})
-map.set("tile323", {"path":"textures/azalea_icons/icontextures/tile323","name":"tile323"})
-map.set("tile324", {"path":"textures/azalea_icons/icontextures/tile324","name":"tile324"})
-map.set("tile325", {"path":"textures/azalea_icons/icontextures/tile325","name":"tile325"})
-map.set("tile326", {"path":"textures/azalea_icons/icontextures/tile326","name":"tile326"})
-map.set("tile327", {"path":"textures/azalea_icons/icontextures/tile327","name":"tile327"})
-map.set("tile328", {"path":"textures/azalea_icons/icontextures/tile328","name":"tile328"})
-map.set("tile329", {"path":"textures/azalea_icons/icontextures/tile329","name":"tile329"})
-map.set("tile330", {"path":"textures/azalea_icons/icontextures/tile330","name":"tile330"})
-map.set("tile331", {"path":"textures/azalea_icons/icontextures/tile331","name":"tile331"})
-map.set("tile332", {"path":"textures/azalea_icons/icontextures/tile332","name":"tile332"})
-map.set("tile333", {"path":"textures/azalea_icons/icontextures/tile333","name":"tile333"})
-map.set("tile334", {"path":"textures/azalea_icons/icontextures/tile334","name":"tile334"})
-map.set("tile335", {"path":"textures/azalea_icons/icontextures/tile335","name":"tile335"})
-map.set("tile336", {"path":"textures/azalea_icons/icontextures/tile336","name":"tile336"})
-map.set("tile337", {"path":"textures/azalea_icons/icontextures/tile337","name":"tile337"})
-map.set("tile338", {"path":"textures/azalea_icons/icontextures/tile338","name":"tile338"})
-map.set("tile339", {"path":"textures/azalea_icons/icontextures/tile339","name":"tile339"})
-map.set("tile340", {"path":"textures/azalea_icons/icontextures/tile340","name":"tile340"})
-map.set("tile341", {"path":"textures/azalea_icons/icontextures/tile341","name":"tile341"})
-map.set("tile342", {"path":"textures/azalea_icons/icontextures/tile342","name":"tile342"})
-map.set("tile343", {"path":"textures/azalea_icons/icontextures/tile343","name":"tile343"})
-map.set("tile344", {"path":"textures/azalea_icons/icontextures/tile344","name":"tile344"})
-map.set("tile345", {"path":"textures/azalea_icons/icontextures/tile345","name":"tile345"})
-map.set("tile346", {"path":"textures/azalea_icons/icontextures/tile346","name":"tile346"})
-map.set("tile347", {"path":"textures/azalea_icons/icontextures/tile347","name":"tile347"})
-map.set("tile348", {"path":"textures/azalea_icons/icontextures/tile348","name":"tile348"})
-map.set("tile349", {"path":"textures/azalea_icons/icontextures/tile349","name":"tile349"})
-map.set("tile350", {"path":"textures/azalea_icons/icontextures/tile350","name":"tile350"})
-map.set("tile351", {"path":"textures/azalea_icons/icontextures/tile351","name":"tile351"})
-map.set("tile352", {"path":"textures/azalea_icons/icontextures/tile352","name":"tile352"})
-map.set("tile353", {"path":"textures/azalea_icons/icontextures/tile353","name":"tile353"})
-map.set("tile354", {"path":"textures/azalea_icons/icontextures/tile354","name":"tile354"})
-map.set("tile355", {"path":"textures/azalea_icons/icontextures/tile355","name":"tile355"})
-map.set("tile356", {"path":"textures/azalea_icons/icontextures/tile356","name":"tile356"})
-map.set("tile357", {"path":"textures/azalea_icons/icontextures/tile357","name":"tile357"})
-map.set("tile358", {"path":"textures/azalea_icons/icontextures/tile358","name":"tile358"})
-map.set("tile359", {"path":"textures/azalea_icons/icontextures/tile359","name":"tile359"})
-map.set("tile360", {"path":"textures/azalea_icons/icontextures/tile360","name":"tile360"})
-map.set("tile361", {"path":"textures/azalea_icons/icontextures/tile361","name":"tile361"})
-map.set("tile362", {"path":"textures/azalea_icons/icontextures/tile362","name":"tile362"})
-map.set("tile363", {"path":"textures/azalea_icons/icontextures/tile363","name":"tile363"})
-map.set("tile364", {"path":"textures/azalea_icons/icontextures/tile364","name":"tile364"})
-map.set("tile365", {"path":"textures/azalea_icons/icontextures/tile365","name":"tile365"})
-map.set("tile366", {"path":"textures/azalea_icons/icontextures/tile366","name":"tile366"})
-map.set("tile367", {"path":"textures/azalea_icons/icontextures/tile367","name":"tile367"})
-map.set("tile368", {"path":"textures/azalea_icons/icontextures/tile368","name":"tile368"})
-map.set("tile369", {"path":"textures/azalea_icons/icontextures/tile369","name":"tile369"})
-map.set("tile370", {"path":"textures/azalea_icons/icontextures/tile370","name":"tile370"})
-map.set("tile371", {"path":"textures/azalea_icons/icontextures/tile371","name":"tile371"})
-map.set("tile372", {"path":"textures/azalea_icons/icontextures/tile372","name":"tile372"})
-map.set("tile373", {"path":"textures/azalea_icons/icontextures/tile373","name":"tile373"})
-map.set("tile374", {"path":"textures/azalea_icons/icontextures/tile374","name":"tile374"})
-map.set("tile375", {"path":"textures/azalea_icons/icontextures/tile375","name":"tile375"})
-map.set("tile376", {"path":"textures/azalea_icons/icontextures/tile376","name":"tile376"})
-map.set("tile377", {"path":"textures/azalea_icons/icontextures/tile377","name":"tile377"})
-map.set("tile378", {"path":"textures/azalea_icons/icontextures/tile378","name":"tile378"})
-map.set("tile379", {"path":"textures/azalea_icons/icontextures/tile379","name":"tile379"})
-map.set("tile380", {"path":"textures/azalea_icons/icontextures/tile380","name":"tile380"})
-map.set("tile381", {"path":"textures/azalea_icons/icontextures/tile381","name":"tile381"})
-map.set("tile382", {"path":"textures/azalea_icons/icontextures/tile382","name":"tile382"})
-map.set("tile383", {"path":"textures/azalea_icons/icontextures/tile383","name":"tile383"})
-map.set("tile384", {"path":"textures/azalea_icons/icontextures/tile384","name":"tile384"})
-map.set("tile385", {"path":"textures/azalea_icons/icontextures/tile385","name":"tile385"})
-map.set("tile386", {"path":"textures/azalea_icons/icontextures/tile386","name":"tile386"})
-map.set("tile387", {"path":"textures/azalea_icons/icontextures/tile387","name":"tile387"})
-map.set("tile388", {"path":"textures/azalea_icons/icontextures/tile388","name":"tile388"})
-map.set("tile389", {"path":"textures/azalea_icons/icontextures/tile389","name":"tile389"})
-map.set("tile390", {"path":"textures/azalea_icons/icontextures/tile390","name":"tile390"})
-map.set("tile391", {"path":"textures/azalea_icons/icontextures/tile391","name":"tile391"})
-map.set("tile392", {"path":"textures/azalea_icons/icontextures/tile392","name":"tile392"})
-map.set("tile393", {"path":"textures/azalea_icons/icontextures/tile393","name":"tile393"})
-map.set("tile394", {"path":"textures/azalea_icons/icontextures/tile394","name":"tile394"})
-map.set("tile395", {"path":"textures/azalea_icons/icontextures/tile395","name":"tile395"})
-map.set("tile396", {"path":"textures/azalea_icons/icontextures/tile396","name":"tile396"})
-map.set("tile397", {"path":"textures/azalea_icons/icontextures/tile397","name":"tile397"})
-map.set("tile398", {"path":"textures/azalea_icons/icontextures/tile398","name":"tile398"})
-map.set("tile399", {"path":"textures/azalea_icons/icontextures/tile399","name":"tile399"})
-map.set("tile400", {"path":"textures/azalea_icons/icontextures/tile400","name":"tile400"})
-map.set("tile401", {"path":"textures/azalea_icons/icontextures/tile401","name":"tile401"})
-map.set("tile402", {"path":"textures/azalea_icons/icontextures/tile402","name":"tile402"})
-map.set("tile403", {"path":"textures/azalea_icons/icontextures/tile403","name":"tile403"})
-map.set("tile404", {"path":"textures/azalea_icons/icontextures/tile404","name":"tile404"})
-map.set("tile405", {"path":"textures/azalea_icons/icontextures/tile405","name":"tile405"})
-map.set("tile406", {"path":"textures/azalea_icons/icontextures/tile406","name":"tile406"})
-map.set("tile407", {"path":"textures/azalea_icons/icontextures/tile407","name":"tile407"})
-map.set("tile408", {"path":"textures/azalea_icons/icontextures/tile408","name":"tile408"})
-map.set("tile409", {"path":"textures/azalea_icons/icontextures/tile409","name":"tile409"})
-map.set("tile410", {"path":"textures/azalea_icons/icontextures/tile410","name":"tile410"})
-map.set("tile411", {"path":"textures/azalea_icons/icontextures/tile411","name":"tile411"})
-map.set("tile412", {"path":"textures/azalea_icons/icontextures/tile412","name":"tile412"})
-map.set("tile413", {"path":"textures/azalea_icons/icontextures/tile413","name":"tile413"})
-map.set("tile414", {"path":"textures/azalea_icons/icontextures/tile414","name":"tile414"})
-map.set("tile415", {"path":"textures/azalea_icons/icontextures/tile415","name":"tile415"})
-map.set("tile416", {"path":"textures/azalea_icons/icontextures/tile416","name":"tile416"})
-map.set("tile417", {"path":"textures/azalea_icons/icontextures/tile417","name":"tile417"})
-map.set("tile418", {"path":"textures/azalea_icons/icontextures/tile418","name":"tile418"})
-map.set("tile419", {"path":"textures/azalea_icons/icontextures/tile419","name":"tile419"})
-map.set("tile420", {"path":"textures/azalea_icons/icontextures/tile420","name":"tile420"})
-map.set("tile421", {"path":"textures/azalea_icons/icontextures/tile421","name":"tile421"})
-map.set("tile422", {"path":"textures/azalea_icons/icontextures/tile422","name":"tile422"})
-map.set("tile423", {"path":"textures/azalea_icons/icontextures/tile423","name":"tile423"})
-map.set("tile424", {"path":"textures/azalea_icons/icontextures/tile424","name":"tile424"})
-map.set("tile425", {"path":"textures/azalea_icons/icontextures/tile425","name":"tile425"})
-map.set("tile426", {"path":"textures/azalea_icons/icontextures/tile426","name":"tile426"})
-map.set("tile427", {"path":"textures/azalea_icons/icontextures/tile427","name":"tile427"})
-map.set("tile428", {"path":"textures/azalea_icons/icontextures/tile428","name":"tile428"})
-map.set("tile429", {"path":"textures/azalea_icons/icontextures/tile429","name":"tile429"})
-map.set("tile430", {"path":"textures/azalea_icons/icontextures/tile430","name":"tile430"})
-map.set("tile431", {"path":"textures/azalea_icons/icontextures/tile431","name":"tile431"})
-map.set("tile432", {"path":"textures/azalea_icons/icontextures/tile432","name":"tile432"})
-map.set("tile433", {"path":"textures/azalea_icons/icontextures/tile433","name":"tile433"})
-map.set("tile434", {"path":"textures/azalea_icons/icontextures/tile434","name":"tile434"})
-map.set("tile435", {"path":"textures/azalea_icons/icontextures/tile435","name":"tile435"})
-map.set("tile436", {"path":"textures/azalea_icons/icontextures/tile436","name":"tile436"})
-map.set("tile437", {"path":"textures/azalea_icons/icontextures/tile437","name":"tile437"})
-map.set("tile438", {"path":"textures/azalea_icons/icontextures/tile438","name":"tile438"})
-map.set("tile439", {"path":"textures/azalea_icons/icontextures/tile439","name":"tile439"})
-map.set("tile440", {"path":"textures/azalea_icons/icontextures/tile440","name":"tile440"})
-map.set("tile441", {"path":"textures/azalea_icons/icontextures/tile441","name":"tile441"})
-map.set("tile442", {"path":"textures/azalea_icons/icontextures/tile442","name":"tile442"})
-map.set("tile443", {"path":"textures/azalea_icons/icontextures/tile443","name":"tile443"})
-map.set("tile444", {"path":"textures/azalea_icons/icontextures/tile444","name":"tile444"})
-map.set("tile445", {"path":"textures/azalea_icons/icontextures/tile445","name":"tile445"})
-map.set("tile446", {"path":"textures/azalea_icons/icontextures/tile446","name":"tile446"})
-map.set("tile447", {"path":"textures/azalea_icons/icontextures/tile447","name":"tile447"})
-map.set("tile448", {"path":"textures/azalea_icons/icontextures/tile448","name":"tile448"})
-map.set("tile449", {"path":"textures/azalea_icons/icontextures/tile449","name":"tile449"})
-map.set("tile450", {"path":"textures/azalea_icons/icontextures/tile450","name":"tile450"})
-map.set("tile451", {"path":"textures/azalea_icons/icontextures/tile451","name":"tile451"})
-map.set("tile452", {"path":"textures/azalea_icons/icontextures/tile452","name":"tile452"})
-map.set("tile453", {"path":"textures/azalea_icons/icontextures/tile453","name":"tile453"})
-map.set("tile454", {"path":"textures/azalea_icons/icontextures/tile454","name":"tile454"})
-map.set("tile455", {"path":"textures/azalea_icons/icontextures/tile455","name":"tile455"})
-map.set("tile456", {"path":"textures/azalea_icons/icontextures/tile456","name":"tile456"})
-map.set("tile457", {"path":"textures/azalea_icons/icontextures/tile457","name":"tile457"})
-map.set("tile458", {"path":"textures/azalea_icons/icontextures/tile458","name":"tile458"})
-map.set("tile459", {"path":"textures/azalea_icons/icontextures/tile459","name":"tile459"})
-map.set("tile460", {"path":"textures/azalea_icons/icontextures/tile460","name":"tile460"})
-map.set("tile461", {"path":"textures/azalea_icons/icontextures/tile461","name":"tile461"})
-map.set("tile462", {"path":"textures/azalea_icons/icontextures/tile462","name":"tile462"})
-map.set("tile463", {"path":"textures/azalea_icons/icontextures/tile463","name":"tile463"})
-map.set("tile464", {"path":"textures/azalea_icons/icontextures/tile464","name":"tile464"})
-map.set("tile465", {"path":"textures/azalea_icons/icontextures/tile465","name":"tile465"})
-map.set("tile466", {"path":"textures/azalea_icons/icontextures/tile466","name":"tile466"})
-map.set("tile467", {"path":"textures/azalea_icons/icontextures/tile467","name":"tile467"})
-map.set("tile468", {"path":"textures/azalea_icons/icontextures/tile468","name":"tile468"})
-map.set("tile469", {"path":"textures/azalea_icons/icontextures/tile469","name":"tile469"})
-map.set("tile470", {"path":"textures/azalea_icons/icontextures/tile470","name":"tile470"})
-map.set("tile471", {"path":"textures/azalea_icons/icontextures/tile471","name":"tile471"})
-map.set("tile472", {"path":"textures/azalea_icons/icontextures/tile472","name":"tile472"})
-map.set("tile473", {"path":"textures/azalea_icons/icontextures/tile473","name":"tile473"})
-map.set("tile474", {"path":"textures/azalea_icons/icontextures/tile474","name":"tile474"})
-map.set("tile475", {"path":"textures/azalea_icons/icontextures/tile475","name":"tile475"})
-map.set("tile476", {"path":"textures/azalea_icons/icontextures/tile476","name":"tile476"})
-map.set("tile477", {"path":"textures/azalea_icons/icontextures/tile477","name":"tile477"})
-map.set("tile478", {"path":"textures/azalea_icons/icontextures/tile478","name":"tile478"})
-map.set("tile479", {"path":"textures/azalea_icons/icontextures/tile479","name":"tile479"})
-map.set("tile480", {"path":"textures/azalea_icons/icontextures/tile480","name":"tile480"})
-map.set("tile481", {"path":"textures/azalea_icons/icontextures/tile481","name":"tile481"})
-map.set("tile482", {"path":"textures/azalea_icons/icontextures/tile482","name":"tile482"})
-map.set("tile483", {"path":"textures/azalea_icons/icontextures/tile483","name":"tile483"})
-map.set("tile484", {"path":"textures/azalea_icons/icontextures/tile484","name":"tile484"})
-map.set("tile485", {"path":"textures/azalea_icons/icontextures/tile485","name":"tile485"})
-map.set("tile486", {"path":"textures/azalea_icons/icontextures/tile486","name":"tile486"})
-map.set("tile487", {"path":"textures/azalea_icons/icontextures/tile487","name":"tile487"})
-map.set("tile488", {"path":"textures/azalea_icons/icontextures/tile488","name":"tile488"})
-map.set("tile489", {"path":"textures/azalea_icons/icontextures/tile489","name":"tile489"})
-map.set("tile490", {"path":"textures/azalea_icons/icontextures/tile490","name":"tile490"})
-map.set("tile491", {"path":"textures/azalea_icons/icontextures/tile491","name":"tile491"})
-map.set("tile492", {"path":"textures/azalea_icons/icontextures/tile492","name":"tile492"})
-map.set("tile493", {"path":"textures/azalea_icons/icontextures/tile493","name":"tile493"})
-map.set("tile494", {"path":"textures/azalea_icons/icontextures/tile494","name":"tile494"})
-map.set("tile495", {"path":"textures/azalea_icons/icontextures/tile495","name":"tile495"})
-map.set("tile496", {"path":"textures/azalea_icons/icontextures/tile496","name":"tile496"})
-map.set("tile497", {"path":"textures/azalea_icons/icontextures/tile497","name":"tile497"})
-map.set("tile498", {"path":"textures/azalea_icons/icontextures/tile498","name":"tile498"})
-map.set("tile499", {"path":"textures/azalea_icons/icontextures/tile499","name":"tile499"})
-map.set("tile500", {"path":"textures/azalea_icons/icontextures/tile500","name":"tile500"})
-map.set("tile501", {"path":"textures/azalea_icons/icontextures/tile501","name":"tile501"})
-map.set("tile502", {"path":"textures/azalea_icons/icontextures/tile502","name":"tile502"})
-map.set("tile503", {"path":"textures/azalea_icons/icontextures/tile503","name":"tile503"})
-map.set("tile504", {"path":"textures/azalea_icons/icontextures/tile504","name":"tile504"})
-map.set("tile505", {"path":"textures/azalea_icons/icontextures/tile505","name":"tile505"})
-map.set("tomino", {"path":"textures/azalea_icons/icontextures/tomino","name":"tomino"})
-map.set("tomme_de_savoie", {"path":"textures/azalea_icons/icontextures/tomme_de_savoie","name":"tomme_de_savoie"})
-map.set("totem_of_undying", {"path":"textures/azalea_icons/icontextures/totem_of_undying","name":"totem_of_undying"})
-map.set("trident", {"path":"textures/azalea_icons/icontextures/trident","name":"trident"})
-map.set("tropical_fish", {"path":"textures/azalea_icons/icontextures/tropical_fish","name":"tropical_fish"})
-map.set("turtle_egg", {"path":"textures/azalea_icons/icontextures/turtle_egg","name":"turtle_egg"})
-map.set("turtle_helmet", {"path":"textures/azalea_icons/icontextures/turtle_helmet","name":"turtle_helmet"})
-map.set("ubriaco", {"path":"textures/azalea_icons/icontextures/ubriaco","name":"ubriaco"})
-map.set("urda", {"path":"textures/azalea_icons/icontextures/urda","name":"urda"})
-map.set("vacherin", {"path":"textures/azalea_icons/icontextures/vacherin","name":"vacherin"})
-map.set("veggie", {"path":"textures/azalea_icons/icontextures/veggie","name":"veggie"})
-map.set("veggie_2", {"path":"textures/azalea_icons/icontextures/veggie_2","name":"veggie_2"})
-map.set("wand_01", {"path":"textures/azalea_icons/icontextures/wand_01","name":"wand_01"})
-map.set("wand_01_2", {"path":"textures/azalea_icons/icontextures/wand_01_2","name":"wand_01_2"})
-map.set("wand_02", {"path":"textures/azalea_icons/icontextures/wand_02","name":"wand_02"})
-map.set("wand_02_2", {"path":"textures/azalea_icons/icontextures/wand_02_2","name":"wand_02_2"})
-map.set("watering_can", {"path":"textures/azalea_icons/icontextures/watering_can","name":"watering_can"})
-map.set("watering_can_2", {"path":"textures/azalea_icons/icontextures/watering_can_2","name":"watering_can_2"})
-map.set("watermelon", {"path":"textures/azalea_icons/icontextures/watermelon","name":"watermelon"})
-map.set("watermelon_2", {"path":"textures/azalea_icons/icontextures/watermelon_2","name":"watermelon_2"})
-map.set("water_bucket", {"path":"textures/azalea_icons/icontextures/water_bucket","name":"water_bucket"})
-map.set("wheat", {"path":"textures/azalea_icons/icontextures/wheat","name":"wheat"})
-map.set("wheat_seeds", {"path":"textures/azalea_icons/icontextures/wheat_seeds","name":"wheat_seeds"})
-map.set("wooden_axe", {"path":"textures/azalea_icons/icontextures/wooden_axe","name":"wooden_axe"})
-map.set("wooden_box", {"path":"textures/azalea_icons/icontextures/wooden_box","name":"wooden_box"})
-map.set("wooden_box_2", {"path":"textures/azalea_icons/icontextures/wooden_box_2","name":"wooden_box_2"})
-map.set("wooden_hoe", {"path":"textures/azalea_icons/icontextures/wooden_hoe","name":"wooden_hoe"})
-map.set("wooden_pickaxe", {"path":"textures/azalea_icons/icontextures/wooden_pickaxe","name":"wooden_pickaxe"})
-map.set("wooden_shield", {"path":"textures/azalea_icons/icontextures/wooden_shield","name":"wooden_shield"})
-map.set("wooden_shield_2", {"path":"textures/azalea_icons/icontextures/wooden_shield_2","name":"wooden_shield_2"})
-map.set("wooden_shovel", {"path":"textures/azalea_icons/icontextures/wooden_shovel","name":"wooden_shovel"})
-map.set("wooden_sword", {"path":"textures/azalea_icons/icontextures/wooden_sword","name":"wooden_sword"})
-map.set("wood_01a", {"path":"textures/azalea_icons/icontextures/wood_01a","name":"wood_01a"})
-map.set("writable_book", {"path":"textures/azalea_icons/icontextures/writable_book","name":"writable_book"})
-map.set("zobble_cant_be_pissed", {"path":"textures/azalea_icons/icontextures/zobble_cant_be_pissed","name":"zobble_cant_be_pissed"})
-map.set("Packs/Weapons/weapons-1-1", {"name":"Packs/Weapons/weapons-1-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-1"})
-map.set("Packs/Weapons/weapons-1-10", {"name":"Packs/Weapons/weapons-1-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-10"})
-map.set("Packs/Weapons/weapons-1-11", {"name":"Packs/Weapons/weapons-1-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-11"})
-map.set("Packs/Weapons/weapons-1-12", {"name":"Packs/Weapons/weapons-1-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-12"})
-map.set("Packs/Weapons/weapons-1-13", {"name":"Packs/Weapons/weapons-1-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-13"})
-map.set("Packs/Weapons/weapons-1-14", {"name":"Packs/Weapons/weapons-1-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-14"})
-map.set("Packs/Weapons/weapons-1-15", {"name":"Packs/Weapons/weapons-1-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-15"})
-map.set("Packs/Weapons/weapons-1-16", {"name":"Packs/Weapons/weapons-1-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-16"})
-map.set("Packs/Weapons/weapons-1-17", {"name":"Packs/Weapons/weapons-1-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-17"})
-map.set("Packs/Weapons/weapons-1-18", {"name":"Packs/Weapons/weapons-1-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-18"})
-map.set("Packs/Weapons/weapons-1-19", {"name":"Packs/Weapons/weapons-1-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-19"})
-map.set("Packs/Weapons/weapons-1-2", {"name":"Packs/Weapons/weapons-1-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-2"})
-map.set("Packs/Weapons/weapons-1-20", {"name":"Packs/Weapons/weapons-1-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-20"})
-map.set("Packs/Weapons/weapons-1-21", {"name":"Packs/Weapons/weapons-1-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-21"})
-map.set("Packs/Weapons/weapons-1-22", {"name":"Packs/Weapons/weapons-1-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-22"})
-map.set("Packs/Weapons/weapons-1-23", {"name":"Packs/Weapons/weapons-1-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-23"})
-map.set("Packs/Weapons/weapons-1-24", {"name":"Packs/Weapons/weapons-1-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-24"})
-map.set("Packs/Weapons/weapons-1-25", {"name":"Packs/Weapons/weapons-1-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-25"})
-map.set("Packs/Weapons/weapons-1-26", {"name":"Packs/Weapons/weapons-1-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-26"})
-map.set("Packs/Weapons/weapons-1-27", {"name":"Packs/Weapons/weapons-1-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-27"})
-map.set("Packs/Weapons/weapons-1-28", {"name":"Packs/Weapons/weapons-1-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-28"})
-map.set("Packs/Weapons/weapons-1-3", {"name":"Packs/Weapons/weapons-1-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-3"})
-map.set("Packs/Weapons/weapons-1-4", {"name":"Packs/Weapons/weapons-1-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-4"})
-map.set("Packs/Weapons/weapons-1-5", {"name":"Packs/Weapons/weapons-1-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-5"})
-map.set("Packs/Weapons/weapons-1-6", {"name":"Packs/Weapons/weapons-1-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-6"})
-map.set("Packs/Weapons/weapons-1-7", {"name":"Packs/Weapons/weapons-1-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-7"})
-map.set("Packs/Weapons/weapons-1-8", {"name":"Packs/Weapons/weapons-1-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-8"})
-map.set("Packs/Weapons/weapons-1-9", {"name":"Packs/Weapons/weapons-1-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-1-9"})
-map.set("Packs/Weapons/weapons-10-1", {"name":"Packs/Weapons/weapons-10-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-1"})
-map.set("Packs/Weapons/weapons-10-10", {"name":"Packs/Weapons/weapons-10-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-10"})
-map.set("Packs/Weapons/weapons-10-11", {"name":"Packs/Weapons/weapons-10-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-11"})
-map.set("Packs/Weapons/weapons-10-12", {"name":"Packs/Weapons/weapons-10-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-12"})
-map.set("Packs/Weapons/weapons-10-13", {"name":"Packs/Weapons/weapons-10-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-13"})
-map.set("Packs/Weapons/weapons-10-14", {"name":"Packs/Weapons/weapons-10-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-14"})
-map.set("Packs/Weapons/weapons-10-15", {"name":"Packs/Weapons/weapons-10-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-15"})
-map.set("Packs/Weapons/weapons-10-16", {"name":"Packs/Weapons/weapons-10-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-16"})
-map.set("Packs/Weapons/weapons-10-17", {"name":"Packs/Weapons/weapons-10-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-17"})
-map.set("Packs/Weapons/weapons-10-18", {"name":"Packs/Weapons/weapons-10-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-18"})
-map.set("Packs/Weapons/weapons-10-19", {"name":"Packs/Weapons/weapons-10-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-19"})
-map.set("Packs/Weapons/weapons-10-2", {"name":"Packs/Weapons/weapons-10-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-2"})
-map.set("Packs/Weapons/weapons-10-20", {"name":"Packs/Weapons/weapons-10-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-20"})
-map.set("Packs/Weapons/weapons-10-21", {"name":"Packs/Weapons/weapons-10-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-21"})
-map.set("Packs/Weapons/weapons-10-22", {"name":"Packs/Weapons/weapons-10-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-22"})
-map.set("Packs/Weapons/weapons-10-23", {"name":"Packs/Weapons/weapons-10-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-23"})
-map.set("Packs/Weapons/weapons-10-24", {"name":"Packs/Weapons/weapons-10-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-24"})
-map.set("Packs/Weapons/weapons-10-25", {"name":"Packs/Weapons/weapons-10-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-25"})
-map.set("Packs/Weapons/weapons-10-26", {"name":"Packs/Weapons/weapons-10-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-26"})
-map.set("Packs/Weapons/weapons-10-27", {"name":"Packs/Weapons/weapons-10-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-27"})
-map.set("Packs/Weapons/weapons-10-28", {"name":"Packs/Weapons/weapons-10-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-28"})
-map.set("Packs/Weapons/weapons-10-3", {"name":"Packs/Weapons/weapons-10-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-3"})
-map.set("Packs/Weapons/weapons-10-4", {"name":"Packs/Weapons/weapons-10-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-4"})
-map.set("Packs/Weapons/weapons-10-5", {"name":"Packs/Weapons/weapons-10-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-5"})
-map.set("Packs/Weapons/weapons-10-6", {"name":"Packs/Weapons/weapons-10-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-6"})
-map.set("Packs/Weapons/weapons-10-7", {"name":"Packs/Weapons/weapons-10-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-7"})
-map.set("Packs/Weapons/weapons-10-8", {"name":"Packs/Weapons/weapons-10-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-8"})
-map.set("Packs/Weapons/weapons-10-9", {"name":"Packs/Weapons/weapons-10-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-10-9"})
-map.set("Packs/Weapons/weapons-11-1", {"name":"Packs/Weapons/weapons-11-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-1"})
-map.set("Packs/Weapons/weapons-11-10", {"name":"Packs/Weapons/weapons-11-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-10"})
-map.set("Packs/Weapons/weapons-11-11", {"name":"Packs/Weapons/weapons-11-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-11"})
-map.set("Packs/Weapons/weapons-11-12", {"name":"Packs/Weapons/weapons-11-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-12"})
-map.set("Packs/Weapons/weapons-11-13", {"name":"Packs/Weapons/weapons-11-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-13"})
-map.set("Packs/Weapons/weapons-11-14", {"name":"Packs/Weapons/weapons-11-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-14"})
-map.set("Packs/Weapons/weapons-11-15", {"name":"Packs/Weapons/weapons-11-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-15"})
-map.set("Packs/Weapons/weapons-11-16", {"name":"Packs/Weapons/weapons-11-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-16"})
-map.set("Packs/Weapons/weapons-11-17", {"name":"Packs/Weapons/weapons-11-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-17"})
-map.set("Packs/Weapons/weapons-11-18", {"name":"Packs/Weapons/weapons-11-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-18"})
-map.set("Packs/Weapons/weapons-11-19", {"name":"Packs/Weapons/weapons-11-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-19"})
-map.set("Packs/Weapons/weapons-11-2", {"name":"Packs/Weapons/weapons-11-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-2"})
-map.set("Packs/Weapons/weapons-11-20", {"name":"Packs/Weapons/weapons-11-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-20"})
-map.set("Packs/Weapons/weapons-11-21", {"name":"Packs/Weapons/weapons-11-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-21"})
-map.set("Packs/Weapons/weapons-11-22", {"name":"Packs/Weapons/weapons-11-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-22"})
-map.set("Packs/Weapons/weapons-11-23", {"name":"Packs/Weapons/weapons-11-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-23"})
-map.set("Packs/Weapons/weapons-11-24", {"name":"Packs/Weapons/weapons-11-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-24"})
-map.set("Packs/Weapons/weapons-11-25", {"name":"Packs/Weapons/weapons-11-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-25"})
-map.set("Packs/Weapons/weapons-11-26", {"name":"Packs/Weapons/weapons-11-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-26"})
-map.set("Packs/Weapons/weapons-11-27", {"name":"Packs/Weapons/weapons-11-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-27"})
-map.set("Packs/Weapons/weapons-11-28", {"name":"Packs/Weapons/weapons-11-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-28"})
-map.set("Packs/Weapons/weapons-11-3", {"name":"Packs/Weapons/weapons-11-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-3"})
-map.set("Packs/Weapons/weapons-11-4", {"name":"Packs/Weapons/weapons-11-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-4"})
-map.set("Packs/Weapons/weapons-11-5", {"name":"Packs/Weapons/weapons-11-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-5"})
-map.set("Packs/Weapons/weapons-11-6", {"name":"Packs/Weapons/weapons-11-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-6"})
-map.set("Packs/Weapons/weapons-11-7", {"name":"Packs/Weapons/weapons-11-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-7"})
-map.set("Packs/Weapons/weapons-11-8", {"name":"Packs/Weapons/weapons-11-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-8"})
-map.set("Packs/Weapons/weapons-11-9", {"name":"Packs/Weapons/weapons-11-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-11-9"})
-map.set("Packs/Weapons/weapons-12-1", {"name":"Packs/Weapons/weapons-12-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-1"})
-map.set("Packs/Weapons/weapons-12-10", {"name":"Packs/Weapons/weapons-12-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-10"})
-map.set("Packs/Weapons/weapons-12-11", {"name":"Packs/Weapons/weapons-12-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-11"})
-map.set("Packs/Weapons/weapons-12-12", {"name":"Packs/Weapons/weapons-12-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-12"})
-map.set("Packs/Weapons/weapons-12-13", {"name":"Packs/Weapons/weapons-12-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-13"})
-map.set("Packs/Weapons/weapons-12-14", {"name":"Packs/Weapons/weapons-12-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-14"})
-map.set("Packs/Weapons/weapons-12-15", {"name":"Packs/Weapons/weapons-12-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-15"})
-map.set("Packs/Weapons/weapons-12-16", {"name":"Packs/Weapons/weapons-12-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-16"})
-map.set("Packs/Weapons/weapons-12-17", {"name":"Packs/Weapons/weapons-12-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-17"})
-map.set("Packs/Weapons/weapons-12-18", {"name":"Packs/Weapons/weapons-12-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-18"})
-map.set("Packs/Weapons/weapons-12-19", {"name":"Packs/Weapons/weapons-12-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-19"})
-map.set("Packs/Weapons/weapons-12-2", {"name":"Packs/Weapons/weapons-12-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-2"})
-map.set("Packs/Weapons/weapons-12-20", {"name":"Packs/Weapons/weapons-12-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-20"})
-map.set("Packs/Weapons/weapons-12-21", {"name":"Packs/Weapons/weapons-12-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-21"})
-map.set("Packs/Weapons/weapons-12-22", {"name":"Packs/Weapons/weapons-12-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-22"})
-map.set("Packs/Weapons/weapons-12-23", {"name":"Packs/Weapons/weapons-12-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-23"})
-map.set("Packs/Weapons/weapons-12-24", {"name":"Packs/Weapons/weapons-12-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-24"})
-map.set("Packs/Weapons/weapons-12-25", {"name":"Packs/Weapons/weapons-12-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-25"})
-map.set("Packs/Weapons/weapons-12-26", {"name":"Packs/Weapons/weapons-12-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-26"})
-map.set("Packs/Weapons/weapons-12-27", {"name":"Packs/Weapons/weapons-12-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-27"})
-map.set("Packs/Weapons/weapons-12-28", {"name":"Packs/Weapons/weapons-12-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-28"})
-map.set("Packs/Weapons/weapons-12-3", {"name":"Packs/Weapons/weapons-12-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-3"})
-map.set("Packs/Weapons/weapons-12-4", {"name":"Packs/Weapons/weapons-12-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-4"})
-map.set("Packs/Weapons/weapons-12-5", {"name":"Packs/Weapons/weapons-12-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-5"})
-map.set("Packs/Weapons/weapons-12-6", {"name":"Packs/Weapons/weapons-12-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-6"})
-map.set("Packs/Weapons/weapons-12-7", {"name":"Packs/Weapons/weapons-12-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-7"})
-map.set("Packs/Weapons/weapons-12-8", {"name":"Packs/Weapons/weapons-12-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-8"})
-map.set("Packs/Weapons/weapons-12-9", {"name":"Packs/Weapons/weapons-12-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-12-9"})
-map.set("Packs/Weapons/weapons-13-1", {"name":"Packs/Weapons/weapons-13-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-1"})
-map.set("Packs/Weapons/weapons-13-10", {"name":"Packs/Weapons/weapons-13-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-10"})
-map.set("Packs/Weapons/weapons-13-11", {"name":"Packs/Weapons/weapons-13-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-11"})
-map.set("Packs/Weapons/weapons-13-12", {"name":"Packs/Weapons/weapons-13-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-12"})
-map.set("Packs/Weapons/weapons-13-13", {"name":"Packs/Weapons/weapons-13-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-13"})
-map.set("Packs/Weapons/weapons-13-14", {"name":"Packs/Weapons/weapons-13-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-14"})
-map.set("Packs/Weapons/weapons-13-15", {"name":"Packs/Weapons/weapons-13-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-15"})
-map.set("Packs/Weapons/weapons-13-16", {"name":"Packs/Weapons/weapons-13-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-16"})
-map.set("Packs/Weapons/weapons-13-17", {"name":"Packs/Weapons/weapons-13-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-17"})
-map.set("Packs/Weapons/weapons-13-18", {"name":"Packs/Weapons/weapons-13-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-18"})
-map.set("Packs/Weapons/weapons-13-19", {"name":"Packs/Weapons/weapons-13-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-19"})
-map.set("Packs/Weapons/weapons-13-2", {"name":"Packs/Weapons/weapons-13-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-2"})
-map.set("Packs/Weapons/weapons-13-20", {"name":"Packs/Weapons/weapons-13-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-20"})
-map.set("Packs/Weapons/weapons-13-21", {"name":"Packs/Weapons/weapons-13-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-21"})
-map.set("Packs/Weapons/weapons-13-22", {"name":"Packs/Weapons/weapons-13-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-22"})
-map.set("Packs/Weapons/weapons-13-23", {"name":"Packs/Weapons/weapons-13-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-23"})
-map.set("Packs/Weapons/weapons-13-24", {"name":"Packs/Weapons/weapons-13-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-24"})
-map.set("Packs/Weapons/weapons-13-25", {"name":"Packs/Weapons/weapons-13-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-25"})
-map.set("Packs/Weapons/weapons-13-26", {"name":"Packs/Weapons/weapons-13-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-26"})
-map.set("Packs/Weapons/weapons-13-27", {"name":"Packs/Weapons/weapons-13-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-27"})
-map.set("Packs/Weapons/weapons-13-28", {"name":"Packs/Weapons/weapons-13-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-28"})
-map.set("Packs/Weapons/weapons-13-3", {"name":"Packs/Weapons/weapons-13-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-3"})
-map.set("Packs/Weapons/weapons-13-4", {"name":"Packs/Weapons/weapons-13-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-4"})
-map.set("Packs/Weapons/weapons-13-5", {"name":"Packs/Weapons/weapons-13-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-5"})
-map.set("Packs/Weapons/weapons-13-6", {"name":"Packs/Weapons/weapons-13-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-6"})
-map.set("Packs/Weapons/weapons-13-7", {"name":"Packs/Weapons/weapons-13-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-7"})
-map.set("Packs/Weapons/weapons-13-8", {"name":"Packs/Weapons/weapons-13-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-8"})
-map.set("Packs/Weapons/weapons-13-9", {"name":"Packs/Weapons/weapons-13-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-13-9"})
-map.set("Packs/Weapons/weapons-14-1", {"name":"Packs/Weapons/weapons-14-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-1"})
-map.set("Packs/Weapons/weapons-14-10", {"name":"Packs/Weapons/weapons-14-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-10"})
-map.set("Packs/Weapons/weapons-14-11", {"name":"Packs/Weapons/weapons-14-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-11"})
-map.set("Packs/Weapons/weapons-14-12", {"name":"Packs/Weapons/weapons-14-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-12"})
-map.set("Packs/Weapons/weapons-14-13", {"name":"Packs/Weapons/weapons-14-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-13"})
-map.set("Packs/Weapons/weapons-14-14", {"name":"Packs/Weapons/weapons-14-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-14"})
-map.set("Packs/Weapons/weapons-14-15", {"name":"Packs/Weapons/weapons-14-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-15"})
-map.set("Packs/Weapons/weapons-14-16", {"name":"Packs/Weapons/weapons-14-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-16"})
-map.set("Packs/Weapons/weapons-14-17", {"name":"Packs/Weapons/weapons-14-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-17"})
-map.set("Packs/Weapons/weapons-14-18", {"name":"Packs/Weapons/weapons-14-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-18"})
-map.set("Packs/Weapons/weapons-14-19", {"name":"Packs/Weapons/weapons-14-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-19"})
-map.set("Packs/Weapons/weapons-14-2", {"name":"Packs/Weapons/weapons-14-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-2"})
-map.set("Packs/Weapons/weapons-14-20", {"name":"Packs/Weapons/weapons-14-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-20"})
-map.set("Packs/Weapons/weapons-14-21", {"name":"Packs/Weapons/weapons-14-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-21"})
-map.set("Packs/Weapons/weapons-14-22", {"name":"Packs/Weapons/weapons-14-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-22"})
-map.set("Packs/Weapons/weapons-14-23", {"name":"Packs/Weapons/weapons-14-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-23"})
-map.set("Packs/Weapons/weapons-14-24", {"name":"Packs/Weapons/weapons-14-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-24"})
-map.set("Packs/Weapons/weapons-14-25", {"name":"Packs/Weapons/weapons-14-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-25"})
-map.set("Packs/Weapons/weapons-14-26", {"name":"Packs/Weapons/weapons-14-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-26"})
-map.set("Packs/Weapons/weapons-14-27", {"name":"Packs/Weapons/weapons-14-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-27"})
-map.set("Packs/Weapons/weapons-14-28", {"name":"Packs/Weapons/weapons-14-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-28"})
-map.set("Packs/Weapons/weapons-14-3", {"name":"Packs/Weapons/weapons-14-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-3"})
-map.set("Packs/Weapons/weapons-14-4", {"name":"Packs/Weapons/weapons-14-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-4"})
-map.set("Packs/Weapons/weapons-14-5", {"name":"Packs/Weapons/weapons-14-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-5"})
-map.set("Packs/Weapons/weapons-14-6", {"name":"Packs/Weapons/weapons-14-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-6"})
-map.set("Packs/Weapons/weapons-14-7", {"name":"Packs/Weapons/weapons-14-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-7"})
-map.set("Packs/Weapons/weapons-14-8", {"name":"Packs/Weapons/weapons-14-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-8"})
-map.set("Packs/Weapons/weapons-14-9", {"name":"Packs/Weapons/weapons-14-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-14-9"})
-map.set("Packs/Weapons/weapons-15-1", {"name":"Packs/Weapons/weapons-15-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-1"})
-map.set("Packs/Weapons/weapons-15-10", {"name":"Packs/Weapons/weapons-15-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-10"})
-map.set("Packs/Weapons/weapons-15-11", {"name":"Packs/Weapons/weapons-15-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-11"})
-map.set("Packs/Weapons/weapons-15-12", {"name":"Packs/Weapons/weapons-15-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-12"})
-map.set("Packs/Weapons/weapons-15-13", {"name":"Packs/Weapons/weapons-15-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-13"})
-map.set("Packs/Weapons/weapons-15-14", {"name":"Packs/Weapons/weapons-15-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-14"})
-map.set("Packs/Weapons/weapons-15-15", {"name":"Packs/Weapons/weapons-15-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-15"})
-map.set("Packs/Weapons/weapons-15-16", {"name":"Packs/Weapons/weapons-15-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-16"})
-map.set("Packs/Weapons/weapons-15-17", {"name":"Packs/Weapons/weapons-15-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-17"})
-map.set("Packs/Weapons/weapons-15-18", {"name":"Packs/Weapons/weapons-15-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-18"})
-map.set("Packs/Weapons/weapons-15-19", {"name":"Packs/Weapons/weapons-15-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-19"})
-map.set("Packs/Weapons/weapons-15-2", {"name":"Packs/Weapons/weapons-15-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-2"})
-map.set("Packs/Weapons/weapons-15-20", {"name":"Packs/Weapons/weapons-15-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-20"})
-map.set("Packs/Weapons/weapons-15-21", {"name":"Packs/Weapons/weapons-15-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-21"})
-map.set("Packs/Weapons/weapons-15-22", {"name":"Packs/Weapons/weapons-15-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-22"})
-map.set("Packs/Weapons/weapons-15-23", {"name":"Packs/Weapons/weapons-15-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-23"})
-map.set("Packs/Weapons/weapons-15-24", {"name":"Packs/Weapons/weapons-15-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-24"})
-map.set("Packs/Weapons/weapons-15-25", {"name":"Packs/Weapons/weapons-15-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-25"})
-map.set("Packs/Weapons/weapons-15-26", {"name":"Packs/Weapons/weapons-15-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-26"})
-map.set("Packs/Weapons/weapons-15-27", {"name":"Packs/Weapons/weapons-15-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-27"})
-map.set("Packs/Weapons/weapons-15-28", {"name":"Packs/Weapons/weapons-15-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-28"})
-map.set("Packs/Weapons/weapons-15-3", {"name":"Packs/Weapons/weapons-15-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-3"})
-map.set("Packs/Weapons/weapons-15-4", {"name":"Packs/Weapons/weapons-15-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-4"})
-map.set("Packs/Weapons/weapons-15-5", {"name":"Packs/Weapons/weapons-15-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-5"})
-map.set("Packs/Weapons/weapons-15-6", {"name":"Packs/Weapons/weapons-15-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-6"})
-map.set("Packs/Weapons/weapons-15-7", {"name":"Packs/Weapons/weapons-15-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-7"})
-map.set("Packs/Weapons/weapons-15-8", {"name":"Packs/Weapons/weapons-15-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-8"})
-map.set("Packs/Weapons/weapons-15-9", {"name":"Packs/Weapons/weapons-15-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-15-9"})
-map.set("Packs/Weapons/weapons-16-1", {"name":"Packs/Weapons/weapons-16-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-1"})
-map.set("Packs/Weapons/weapons-16-10", {"name":"Packs/Weapons/weapons-16-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-10"})
-map.set("Packs/Weapons/weapons-16-11", {"name":"Packs/Weapons/weapons-16-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-11"})
-map.set("Packs/Weapons/weapons-16-12", {"name":"Packs/Weapons/weapons-16-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-12"})
-map.set("Packs/Weapons/weapons-16-13", {"name":"Packs/Weapons/weapons-16-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-13"})
-map.set("Packs/Weapons/weapons-16-14", {"name":"Packs/Weapons/weapons-16-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-14"})
-map.set("Packs/Weapons/weapons-16-15", {"name":"Packs/Weapons/weapons-16-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-15"})
-map.set("Packs/Weapons/weapons-16-16", {"name":"Packs/Weapons/weapons-16-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-16"})
-map.set("Packs/Weapons/weapons-16-17", {"name":"Packs/Weapons/weapons-16-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-17"})
-map.set("Packs/Weapons/weapons-16-18", {"name":"Packs/Weapons/weapons-16-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-18"})
-map.set("Packs/Weapons/weapons-16-19", {"name":"Packs/Weapons/weapons-16-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-19"})
-map.set("Packs/Weapons/weapons-16-2", {"name":"Packs/Weapons/weapons-16-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-2"})
-map.set("Packs/Weapons/weapons-16-20", {"name":"Packs/Weapons/weapons-16-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-20"})
-map.set("Packs/Weapons/weapons-16-21", {"name":"Packs/Weapons/weapons-16-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-21"})
-map.set("Packs/Weapons/weapons-16-22", {"name":"Packs/Weapons/weapons-16-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-22"})
-map.set("Packs/Weapons/weapons-16-23", {"name":"Packs/Weapons/weapons-16-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-23"})
-map.set("Packs/Weapons/weapons-16-24", {"name":"Packs/Weapons/weapons-16-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-24"})
-map.set("Packs/Weapons/weapons-16-25", {"name":"Packs/Weapons/weapons-16-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-25"})
-map.set("Packs/Weapons/weapons-16-26", {"name":"Packs/Weapons/weapons-16-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-26"})
-map.set("Packs/Weapons/weapons-16-27", {"name":"Packs/Weapons/weapons-16-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-27"})
-map.set("Packs/Weapons/weapons-16-28", {"name":"Packs/Weapons/weapons-16-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-28"})
-map.set("Packs/Weapons/weapons-16-3", {"name":"Packs/Weapons/weapons-16-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-3"})
-map.set("Packs/Weapons/weapons-16-4", {"name":"Packs/Weapons/weapons-16-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-4"})
-map.set("Packs/Weapons/weapons-16-5", {"name":"Packs/Weapons/weapons-16-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-5"})
-map.set("Packs/Weapons/weapons-16-6", {"name":"Packs/Weapons/weapons-16-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-6"})
-map.set("Packs/Weapons/weapons-16-7", {"name":"Packs/Weapons/weapons-16-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-7"})
-map.set("Packs/Weapons/weapons-16-8", {"name":"Packs/Weapons/weapons-16-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-8"})
-map.set("Packs/Weapons/weapons-16-9", {"name":"Packs/Weapons/weapons-16-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-16-9"})
-map.set("Packs/Weapons/weapons-17-1", {"name":"Packs/Weapons/weapons-17-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-1"})
-map.set("Packs/Weapons/weapons-17-10", {"name":"Packs/Weapons/weapons-17-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-10"})
-map.set("Packs/Weapons/weapons-17-11", {"name":"Packs/Weapons/weapons-17-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-11"})
-map.set("Packs/Weapons/weapons-17-12", {"name":"Packs/Weapons/weapons-17-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-12"})
-map.set("Packs/Weapons/weapons-17-13", {"name":"Packs/Weapons/weapons-17-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-13"})
-map.set("Packs/Weapons/weapons-17-14", {"name":"Packs/Weapons/weapons-17-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-14"})
-map.set("Packs/Weapons/weapons-17-15", {"name":"Packs/Weapons/weapons-17-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-15"})
-map.set("Packs/Weapons/weapons-17-16", {"name":"Packs/Weapons/weapons-17-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-16"})
-map.set("Packs/Weapons/weapons-17-17", {"name":"Packs/Weapons/weapons-17-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-17"})
-map.set("Packs/Weapons/weapons-17-18", {"name":"Packs/Weapons/weapons-17-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-18"})
-map.set("Packs/Weapons/weapons-17-19", {"name":"Packs/Weapons/weapons-17-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-19"})
-map.set("Packs/Weapons/weapons-17-2", {"name":"Packs/Weapons/weapons-17-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-2"})
-map.set("Packs/Weapons/weapons-17-20", {"name":"Packs/Weapons/weapons-17-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-20"})
-map.set("Packs/Weapons/weapons-17-21", {"name":"Packs/Weapons/weapons-17-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-21"})
-map.set("Packs/Weapons/weapons-17-22", {"name":"Packs/Weapons/weapons-17-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-22"})
-map.set("Packs/Weapons/weapons-17-23", {"name":"Packs/Weapons/weapons-17-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-23"})
-map.set("Packs/Weapons/weapons-17-24", {"name":"Packs/Weapons/weapons-17-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-24"})
-map.set("Packs/Weapons/weapons-17-25", {"name":"Packs/Weapons/weapons-17-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-25"})
-map.set("Packs/Weapons/weapons-17-26", {"name":"Packs/Weapons/weapons-17-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-26"})
-map.set("Packs/Weapons/weapons-17-27", {"name":"Packs/Weapons/weapons-17-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-27"})
-map.set("Packs/Weapons/weapons-17-28", {"name":"Packs/Weapons/weapons-17-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-28"})
-map.set("Packs/Weapons/weapons-17-3", {"name":"Packs/Weapons/weapons-17-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-3"})
-map.set("Packs/Weapons/weapons-17-4", {"name":"Packs/Weapons/weapons-17-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-4"})
-map.set("Packs/Weapons/weapons-17-5", {"name":"Packs/Weapons/weapons-17-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-5"})
-map.set("Packs/Weapons/weapons-17-6", {"name":"Packs/Weapons/weapons-17-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-6"})
-map.set("Packs/Weapons/weapons-17-7", {"name":"Packs/Weapons/weapons-17-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-7"})
-map.set("Packs/Weapons/weapons-17-8", {"name":"Packs/Weapons/weapons-17-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-8"})
-map.set("Packs/Weapons/weapons-17-9", {"name":"Packs/Weapons/weapons-17-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-17-9"})
-map.set("Packs/Weapons/weapons-18-1", {"name":"Packs/Weapons/weapons-18-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-1"})
-map.set("Packs/Weapons/weapons-18-10", {"name":"Packs/Weapons/weapons-18-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-10"})
-map.set("Packs/Weapons/weapons-18-11", {"name":"Packs/Weapons/weapons-18-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-11"})
-map.set("Packs/Weapons/weapons-18-12", {"name":"Packs/Weapons/weapons-18-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-12"})
-map.set("Packs/Weapons/weapons-18-13", {"name":"Packs/Weapons/weapons-18-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-13"})
-map.set("Packs/Weapons/weapons-18-14", {"name":"Packs/Weapons/weapons-18-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-14"})
-map.set("Packs/Weapons/weapons-18-15", {"name":"Packs/Weapons/weapons-18-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-15"})
-map.set("Packs/Weapons/weapons-18-16", {"name":"Packs/Weapons/weapons-18-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-16"})
-map.set("Packs/Weapons/weapons-18-17", {"name":"Packs/Weapons/weapons-18-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-17"})
-map.set("Packs/Weapons/weapons-18-18", {"name":"Packs/Weapons/weapons-18-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-18"})
-map.set("Packs/Weapons/weapons-18-19", {"name":"Packs/Weapons/weapons-18-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-19"})
-map.set("Packs/Weapons/weapons-18-2", {"name":"Packs/Weapons/weapons-18-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-2"})
-map.set("Packs/Weapons/weapons-18-20", {"name":"Packs/Weapons/weapons-18-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-20"})
-map.set("Packs/Weapons/weapons-18-21", {"name":"Packs/Weapons/weapons-18-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-21"})
-map.set("Packs/Weapons/weapons-18-22", {"name":"Packs/Weapons/weapons-18-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-22"})
-map.set("Packs/Weapons/weapons-18-23", {"name":"Packs/Weapons/weapons-18-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-23"})
-map.set("Packs/Weapons/weapons-18-24", {"name":"Packs/Weapons/weapons-18-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-24"})
-map.set("Packs/Weapons/weapons-18-25", {"name":"Packs/Weapons/weapons-18-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-25"})
-map.set("Packs/Weapons/weapons-18-26", {"name":"Packs/Weapons/weapons-18-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-26"})
-map.set("Packs/Weapons/weapons-18-27", {"name":"Packs/Weapons/weapons-18-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-27"})
-map.set("Packs/Weapons/weapons-18-28", {"name":"Packs/Weapons/weapons-18-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-28"})
-map.set("Packs/Weapons/weapons-18-3", {"name":"Packs/Weapons/weapons-18-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-3"})
-map.set("Packs/Weapons/weapons-18-4", {"name":"Packs/Weapons/weapons-18-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-4"})
-map.set("Packs/Weapons/weapons-18-5", {"name":"Packs/Weapons/weapons-18-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-5"})
-map.set("Packs/Weapons/weapons-18-6", {"name":"Packs/Weapons/weapons-18-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-6"})
-map.set("Packs/Weapons/weapons-18-7", {"name":"Packs/Weapons/weapons-18-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-7"})
-map.set("Packs/Weapons/weapons-18-8", {"name":"Packs/Weapons/weapons-18-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-8"})
-map.set("Packs/Weapons/weapons-18-9", {"name":"Packs/Weapons/weapons-18-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-18-9"})
-map.set("Packs/Weapons/weapons-19-1", {"name":"Packs/Weapons/weapons-19-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-1"})
-map.set("Packs/Weapons/weapons-19-10", {"name":"Packs/Weapons/weapons-19-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-10"})
-map.set("Packs/Weapons/weapons-19-11", {"name":"Packs/Weapons/weapons-19-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-11"})
-map.set("Packs/Weapons/weapons-19-12", {"name":"Packs/Weapons/weapons-19-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-12"})
-map.set("Packs/Weapons/weapons-19-13", {"name":"Packs/Weapons/weapons-19-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-13"})
-map.set("Packs/Weapons/weapons-19-14", {"name":"Packs/Weapons/weapons-19-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-14"})
-map.set("Packs/Weapons/weapons-19-15", {"name":"Packs/Weapons/weapons-19-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-15"})
-map.set("Packs/Weapons/weapons-19-16", {"name":"Packs/Weapons/weapons-19-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-16"})
-map.set("Packs/Weapons/weapons-19-17", {"name":"Packs/Weapons/weapons-19-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-17"})
-map.set("Packs/Weapons/weapons-19-18", {"name":"Packs/Weapons/weapons-19-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-18"})
-map.set("Packs/Weapons/weapons-19-19", {"name":"Packs/Weapons/weapons-19-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-19"})
-map.set("Packs/Weapons/weapons-19-2", {"name":"Packs/Weapons/weapons-19-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-2"})
-map.set("Packs/Weapons/weapons-19-20", {"name":"Packs/Weapons/weapons-19-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-20"})
-map.set("Packs/Weapons/weapons-19-21", {"name":"Packs/Weapons/weapons-19-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-21"})
-map.set("Packs/Weapons/weapons-19-22", {"name":"Packs/Weapons/weapons-19-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-22"})
-map.set("Packs/Weapons/weapons-19-23", {"name":"Packs/Weapons/weapons-19-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-23"})
-map.set("Packs/Weapons/weapons-19-24", {"name":"Packs/Weapons/weapons-19-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-24"})
-map.set("Packs/Weapons/weapons-19-25", {"name":"Packs/Weapons/weapons-19-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-25"})
-map.set("Packs/Weapons/weapons-19-26", {"name":"Packs/Weapons/weapons-19-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-26"})
-map.set("Packs/Weapons/weapons-19-27", {"name":"Packs/Weapons/weapons-19-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-27"})
-map.set("Packs/Weapons/weapons-19-28", {"name":"Packs/Weapons/weapons-19-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-28"})
-map.set("Packs/Weapons/weapons-19-3", {"name":"Packs/Weapons/weapons-19-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-3"})
-map.set("Packs/Weapons/weapons-19-4", {"name":"Packs/Weapons/weapons-19-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-4"})
-map.set("Packs/Weapons/weapons-19-5", {"name":"Packs/Weapons/weapons-19-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-5"})
-map.set("Packs/Weapons/weapons-19-6", {"name":"Packs/Weapons/weapons-19-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-6"})
-map.set("Packs/Weapons/weapons-19-7", {"name":"Packs/Weapons/weapons-19-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-7"})
-map.set("Packs/Weapons/weapons-19-8", {"name":"Packs/Weapons/weapons-19-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-8"})
-map.set("Packs/Weapons/weapons-19-9", {"name":"Packs/Weapons/weapons-19-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-19-9"})
-map.set("Packs/Weapons/weapons-2-1", {"name":"Packs/Weapons/weapons-2-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-1"})
-map.set("Packs/Weapons/weapons-2-10", {"name":"Packs/Weapons/weapons-2-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-10"})
-map.set("Packs/Weapons/weapons-2-11", {"name":"Packs/Weapons/weapons-2-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-11"})
-map.set("Packs/Weapons/weapons-2-12", {"name":"Packs/Weapons/weapons-2-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-12"})
-map.set("Packs/Weapons/weapons-2-13", {"name":"Packs/Weapons/weapons-2-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-13"})
-map.set("Packs/Weapons/weapons-2-14", {"name":"Packs/Weapons/weapons-2-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-14"})
-map.set("Packs/Weapons/weapons-2-15", {"name":"Packs/Weapons/weapons-2-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-15"})
-map.set("Packs/Weapons/weapons-2-16", {"name":"Packs/Weapons/weapons-2-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-16"})
-map.set("Packs/Weapons/weapons-2-17", {"name":"Packs/Weapons/weapons-2-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-17"})
-map.set("Packs/Weapons/weapons-2-18", {"name":"Packs/Weapons/weapons-2-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-18"})
-map.set("Packs/Weapons/weapons-2-19", {"name":"Packs/Weapons/weapons-2-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-19"})
-map.set("Packs/Weapons/weapons-2-2", {"name":"Packs/Weapons/weapons-2-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-2"})
-map.set("Packs/Weapons/weapons-2-20", {"name":"Packs/Weapons/weapons-2-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-20"})
-map.set("Packs/Weapons/weapons-2-21", {"name":"Packs/Weapons/weapons-2-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-21"})
-map.set("Packs/Weapons/weapons-2-22", {"name":"Packs/Weapons/weapons-2-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-22"})
-map.set("Packs/Weapons/weapons-2-23", {"name":"Packs/Weapons/weapons-2-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-23"})
-map.set("Packs/Weapons/weapons-2-24", {"name":"Packs/Weapons/weapons-2-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-24"})
-map.set("Packs/Weapons/weapons-2-25", {"name":"Packs/Weapons/weapons-2-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-25"})
-map.set("Packs/Weapons/weapons-2-26", {"name":"Packs/Weapons/weapons-2-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-26"})
-map.set("Packs/Weapons/weapons-2-27", {"name":"Packs/Weapons/weapons-2-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-27"})
-map.set("Packs/Weapons/weapons-2-28", {"name":"Packs/Weapons/weapons-2-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-28"})
-map.set("Packs/Weapons/weapons-2-3", {"name":"Packs/Weapons/weapons-2-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-3"})
-map.set("Packs/Weapons/weapons-2-4", {"name":"Packs/Weapons/weapons-2-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-4"})
-map.set("Packs/Weapons/weapons-2-5", {"name":"Packs/Weapons/weapons-2-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-5"})
-map.set("Packs/Weapons/weapons-2-6", {"name":"Packs/Weapons/weapons-2-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-6"})
-map.set("Packs/Weapons/weapons-2-7", {"name":"Packs/Weapons/weapons-2-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-7"})
-map.set("Packs/Weapons/weapons-2-8", {"name":"Packs/Weapons/weapons-2-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-8"})
-map.set("Packs/Weapons/weapons-2-9", {"name":"Packs/Weapons/weapons-2-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-2-9"})
-map.set("Packs/Weapons/weapons-20-1", {"name":"Packs/Weapons/weapons-20-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-1"})
-map.set("Packs/Weapons/weapons-20-10", {"name":"Packs/Weapons/weapons-20-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-10"})
-map.set("Packs/Weapons/weapons-20-11", {"name":"Packs/Weapons/weapons-20-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-11"})
-map.set("Packs/Weapons/weapons-20-12", {"name":"Packs/Weapons/weapons-20-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-12"})
-map.set("Packs/Weapons/weapons-20-13", {"name":"Packs/Weapons/weapons-20-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-13"})
-map.set("Packs/Weapons/weapons-20-14", {"name":"Packs/Weapons/weapons-20-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-14"})
-map.set("Packs/Weapons/weapons-20-15", {"name":"Packs/Weapons/weapons-20-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-15"})
-map.set("Packs/Weapons/weapons-20-16", {"name":"Packs/Weapons/weapons-20-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-16"})
-map.set("Packs/Weapons/weapons-20-17", {"name":"Packs/Weapons/weapons-20-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-17"})
-map.set("Packs/Weapons/weapons-20-18", {"name":"Packs/Weapons/weapons-20-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-18"})
-map.set("Packs/Weapons/weapons-20-19", {"name":"Packs/Weapons/weapons-20-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-19"})
-map.set("Packs/Weapons/weapons-20-2", {"name":"Packs/Weapons/weapons-20-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-2"})
-map.set("Packs/Weapons/weapons-20-20", {"name":"Packs/Weapons/weapons-20-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-20"})
-map.set("Packs/Weapons/weapons-20-21", {"name":"Packs/Weapons/weapons-20-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-21"})
-map.set("Packs/Weapons/weapons-20-22", {"name":"Packs/Weapons/weapons-20-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-22"})
-map.set("Packs/Weapons/weapons-20-23", {"name":"Packs/Weapons/weapons-20-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-23"})
-map.set("Packs/Weapons/weapons-20-24", {"name":"Packs/Weapons/weapons-20-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-24"})
-map.set("Packs/Weapons/weapons-20-25", {"name":"Packs/Weapons/weapons-20-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-25"})
-map.set("Packs/Weapons/weapons-20-26", {"name":"Packs/Weapons/weapons-20-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-26"})
-map.set("Packs/Weapons/weapons-20-27", {"name":"Packs/Weapons/weapons-20-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-27"})
-map.set("Packs/Weapons/weapons-20-28", {"name":"Packs/Weapons/weapons-20-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-28"})
-map.set("Packs/Weapons/weapons-20-3", {"name":"Packs/Weapons/weapons-20-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-3"})
-map.set("Packs/Weapons/weapons-20-4", {"name":"Packs/Weapons/weapons-20-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-4"})
-map.set("Packs/Weapons/weapons-20-5", {"name":"Packs/Weapons/weapons-20-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-5"})
-map.set("Packs/Weapons/weapons-20-6", {"name":"Packs/Weapons/weapons-20-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-6"})
-map.set("Packs/Weapons/weapons-20-7", {"name":"Packs/Weapons/weapons-20-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-7"})
-map.set("Packs/Weapons/weapons-20-8", {"name":"Packs/Weapons/weapons-20-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-8"})
-map.set("Packs/Weapons/weapons-20-9", {"name":"Packs/Weapons/weapons-20-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-20-9"})
-map.set("Packs/Weapons/weapons-21-1", {"name":"Packs/Weapons/weapons-21-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-1"})
-map.set("Packs/Weapons/weapons-21-10", {"name":"Packs/Weapons/weapons-21-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-10"})
-map.set("Packs/Weapons/weapons-21-11", {"name":"Packs/Weapons/weapons-21-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-11"})
-map.set("Packs/Weapons/weapons-21-12", {"name":"Packs/Weapons/weapons-21-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-12"})
-map.set("Packs/Weapons/weapons-21-13", {"name":"Packs/Weapons/weapons-21-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-13"})
-map.set("Packs/Weapons/weapons-21-14", {"name":"Packs/Weapons/weapons-21-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-14"})
-map.set("Packs/Weapons/weapons-21-15", {"name":"Packs/Weapons/weapons-21-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-15"})
-map.set("Packs/Weapons/weapons-21-16", {"name":"Packs/Weapons/weapons-21-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-16"})
-map.set("Packs/Weapons/weapons-21-17", {"name":"Packs/Weapons/weapons-21-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-17"})
-map.set("Packs/Weapons/weapons-21-18", {"name":"Packs/Weapons/weapons-21-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-18"})
-map.set("Packs/Weapons/weapons-21-19", {"name":"Packs/Weapons/weapons-21-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-19"})
-map.set("Packs/Weapons/weapons-21-2", {"name":"Packs/Weapons/weapons-21-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-2"})
-map.set("Packs/Weapons/weapons-21-20", {"name":"Packs/Weapons/weapons-21-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-20"})
-map.set("Packs/Weapons/weapons-21-21", {"name":"Packs/Weapons/weapons-21-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-21"})
-map.set("Packs/Weapons/weapons-21-22", {"name":"Packs/Weapons/weapons-21-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-22"})
-map.set("Packs/Weapons/weapons-21-23", {"name":"Packs/Weapons/weapons-21-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-23"})
-map.set("Packs/Weapons/weapons-21-24", {"name":"Packs/Weapons/weapons-21-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-24"})
-map.set("Packs/Weapons/weapons-21-25", {"name":"Packs/Weapons/weapons-21-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-25"})
-map.set("Packs/Weapons/weapons-21-26", {"name":"Packs/Weapons/weapons-21-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-26"})
-map.set("Packs/Weapons/weapons-21-27", {"name":"Packs/Weapons/weapons-21-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-27"})
-map.set("Packs/Weapons/weapons-21-28", {"name":"Packs/Weapons/weapons-21-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-28"})
-map.set("Packs/Weapons/weapons-21-3", {"name":"Packs/Weapons/weapons-21-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-3"})
-map.set("Packs/Weapons/weapons-21-4", {"name":"Packs/Weapons/weapons-21-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-4"})
-map.set("Packs/Weapons/weapons-21-5", {"name":"Packs/Weapons/weapons-21-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-5"})
-map.set("Packs/Weapons/weapons-21-6", {"name":"Packs/Weapons/weapons-21-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-6"})
-map.set("Packs/Weapons/weapons-21-7", {"name":"Packs/Weapons/weapons-21-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-7"})
-map.set("Packs/Weapons/weapons-21-8", {"name":"Packs/Weapons/weapons-21-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-8"})
-map.set("Packs/Weapons/weapons-21-9", {"name":"Packs/Weapons/weapons-21-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-21-9"})
-map.set("Packs/Weapons/weapons-22-1", {"name":"Packs/Weapons/weapons-22-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-1"})
-map.set("Packs/Weapons/weapons-22-10", {"name":"Packs/Weapons/weapons-22-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-10"})
-map.set("Packs/Weapons/weapons-22-11", {"name":"Packs/Weapons/weapons-22-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-11"})
-map.set("Packs/Weapons/weapons-22-12", {"name":"Packs/Weapons/weapons-22-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-12"})
-map.set("Packs/Weapons/weapons-22-13", {"name":"Packs/Weapons/weapons-22-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-13"})
-map.set("Packs/Weapons/weapons-22-14", {"name":"Packs/Weapons/weapons-22-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-14"})
-map.set("Packs/Weapons/weapons-22-15", {"name":"Packs/Weapons/weapons-22-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-15"})
-map.set("Packs/Weapons/weapons-22-16", {"name":"Packs/Weapons/weapons-22-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-16"})
-map.set("Packs/Weapons/weapons-22-17", {"name":"Packs/Weapons/weapons-22-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-17"})
-map.set("Packs/Weapons/weapons-22-18", {"name":"Packs/Weapons/weapons-22-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-18"})
-map.set("Packs/Weapons/weapons-22-19", {"name":"Packs/Weapons/weapons-22-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-19"})
-map.set("Packs/Weapons/weapons-22-2", {"name":"Packs/Weapons/weapons-22-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-2"})
-map.set("Packs/Weapons/weapons-22-20", {"name":"Packs/Weapons/weapons-22-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-20"})
-map.set("Packs/Weapons/weapons-22-21", {"name":"Packs/Weapons/weapons-22-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-21"})
-map.set("Packs/Weapons/weapons-22-22", {"name":"Packs/Weapons/weapons-22-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-22"})
-map.set("Packs/Weapons/weapons-22-23", {"name":"Packs/Weapons/weapons-22-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-23"})
-map.set("Packs/Weapons/weapons-22-24", {"name":"Packs/Weapons/weapons-22-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-24"})
-map.set("Packs/Weapons/weapons-22-25", {"name":"Packs/Weapons/weapons-22-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-25"})
-map.set("Packs/Weapons/weapons-22-26", {"name":"Packs/Weapons/weapons-22-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-26"})
-map.set("Packs/Weapons/weapons-22-27", {"name":"Packs/Weapons/weapons-22-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-27"})
-map.set("Packs/Weapons/weapons-22-28", {"name":"Packs/Weapons/weapons-22-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-28"})
-map.set("Packs/Weapons/weapons-22-3", {"name":"Packs/Weapons/weapons-22-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-3"})
-map.set("Packs/Weapons/weapons-22-4", {"name":"Packs/Weapons/weapons-22-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-4"})
-map.set("Packs/Weapons/weapons-22-5", {"name":"Packs/Weapons/weapons-22-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-5"})
-map.set("Packs/Weapons/weapons-22-6", {"name":"Packs/Weapons/weapons-22-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-6"})
-map.set("Packs/Weapons/weapons-22-7", {"name":"Packs/Weapons/weapons-22-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-7"})
-map.set("Packs/Weapons/weapons-22-8", {"name":"Packs/Weapons/weapons-22-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-8"})
-map.set("Packs/Weapons/weapons-22-9", {"name":"Packs/Weapons/weapons-22-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-22-9"})
-map.set("Packs/Weapons/weapons-23-1", {"name":"Packs/Weapons/weapons-23-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-1"})
-map.set("Packs/Weapons/weapons-23-10", {"name":"Packs/Weapons/weapons-23-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-10"})
-map.set("Packs/Weapons/weapons-23-11", {"name":"Packs/Weapons/weapons-23-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-11"})
-map.set("Packs/Weapons/weapons-23-12", {"name":"Packs/Weapons/weapons-23-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-12"})
-map.set("Packs/Weapons/weapons-23-13", {"name":"Packs/Weapons/weapons-23-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-13"})
-map.set("Packs/Weapons/weapons-23-14", {"name":"Packs/Weapons/weapons-23-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-14"})
-map.set("Packs/Weapons/weapons-23-15", {"name":"Packs/Weapons/weapons-23-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-15"})
-map.set("Packs/Weapons/weapons-23-16", {"name":"Packs/Weapons/weapons-23-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-16"})
-map.set("Packs/Weapons/weapons-23-17", {"name":"Packs/Weapons/weapons-23-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-17"})
-map.set("Packs/Weapons/weapons-23-18", {"name":"Packs/Weapons/weapons-23-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-18"})
-map.set("Packs/Weapons/weapons-23-19", {"name":"Packs/Weapons/weapons-23-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-19"})
-map.set("Packs/Weapons/weapons-23-2", {"name":"Packs/Weapons/weapons-23-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-2"})
-map.set("Packs/Weapons/weapons-23-20", {"name":"Packs/Weapons/weapons-23-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-20"})
-map.set("Packs/Weapons/weapons-23-21", {"name":"Packs/Weapons/weapons-23-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-21"})
-map.set("Packs/Weapons/weapons-23-22", {"name":"Packs/Weapons/weapons-23-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-22"})
-map.set("Packs/Weapons/weapons-23-23", {"name":"Packs/Weapons/weapons-23-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-23"})
-map.set("Packs/Weapons/weapons-23-24", {"name":"Packs/Weapons/weapons-23-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-24"})
-map.set("Packs/Weapons/weapons-23-25", {"name":"Packs/Weapons/weapons-23-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-25"})
-map.set("Packs/Weapons/weapons-23-26", {"name":"Packs/Weapons/weapons-23-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-26"})
-map.set("Packs/Weapons/weapons-23-27", {"name":"Packs/Weapons/weapons-23-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-27"})
-map.set("Packs/Weapons/weapons-23-28", {"name":"Packs/Weapons/weapons-23-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-28"})
-map.set("Packs/Weapons/weapons-23-3", {"name":"Packs/Weapons/weapons-23-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-3"})
-map.set("Packs/Weapons/weapons-23-4", {"name":"Packs/Weapons/weapons-23-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-4"})
-map.set("Packs/Weapons/weapons-23-5", {"name":"Packs/Weapons/weapons-23-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-5"})
-map.set("Packs/Weapons/weapons-23-6", {"name":"Packs/Weapons/weapons-23-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-6"})
-map.set("Packs/Weapons/weapons-23-7", {"name":"Packs/Weapons/weapons-23-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-7"})
-map.set("Packs/Weapons/weapons-23-8", {"name":"Packs/Weapons/weapons-23-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-8"})
-map.set("Packs/Weapons/weapons-23-9", {"name":"Packs/Weapons/weapons-23-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-23-9"})
-map.set("Packs/Weapons/weapons-24-1", {"name":"Packs/Weapons/weapons-24-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-1"})
-map.set("Packs/Weapons/weapons-24-10", {"name":"Packs/Weapons/weapons-24-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-10"})
-map.set("Packs/Weapons/weapons-24-11", {"name":"Packs/Weapons/weapons-24-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-11"})
-map.set("Packs/Weapons/weapons-24-12", {"name":"Packs/Weapons/weapons-24-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-12"})
-map.set("Packs/Weapons/weapons-24-13", {"name":"Packs/Weapons/weapons-24-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-13"})
-map.set("Packs/Weapons/weapons-24-14", {"name":"Packs/Weapons/weapons-24-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-14"})
-map.set("Packs/Weapons/weapons-24-15", {"name":"Packs/Weapons/weapons-24-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-15"})
-map.set("Packs/Weapons/weapons-24-16", {"name":"Packs/Weapons/weapons-24-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-16"})
-map.set("Packs/Weapons/weapons-24-17", {"name":"Packs/Weapons/weapons-24-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-17"})
-map.set("Packs/Weapons/weapons-24-18", {"name":"Packs/Weapons/weapons-24-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-18"})
-map.set("Packs/Weapons/weapons-24-19", {"name":"Packs/Weapons/weapons-24-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-19"})
-map.set("Packs/Weapons/weapons-24-2", {"name":"Packs/Weapons/weapons-24-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-2"})
-map.set("Packs/Weapons/weapons-24-20", {"name":"Packs/Weapons/weapons-24-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-20"})
-map.set("Packs/Weapons/weapons-24-21", {"name":"Packs/Weapons/weapons-24-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-21"})
-map.set("Packs/Weapons/weapons-24-22", {"name":"Packs/Weapons/weapons-24-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-22"})
-map.set("Packs/Weapons/weapons-24-23", {"name":"Packs/Weapons/weapons-24-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-23"})
-map.set("Packs/Weapons/weapons-24-24", {"name":"Packs/Weapons/weapons-24-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-24"})
-map.set("Packs/Weapons/weapons-24-25", {"name":"Packs/Weapons/weapons-24-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-25"})
-map.set("Packs/Weapons/weapons-24-26", {"name":"Packs/Weapons/weapons-24-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-26"})
-map.set("Packs/Weapons/weapons-24-27", {"name":"Packs/Weapons/weapons-24-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-27"})
-map.set("Packs/Weapons/weapons-24-28", {"name":"Packs/Weapons/weapons-24-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-28"})
-map.set("Packs/Weapons/weapons-24-3", {"name":"Packs/Weapons/weapons-24-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-3"})
-map.set("Packs/Weapons/weapons-24-4", {"name":"Packs/Weapons/weapons-24-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-4"})
-map.set("Packs/Weapons/weapons-24-5", {"name":"Packs/Weapons/weapons-24-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-5"})
-map.set("Packs/Weapons/weapons-24-6", {"name":"Packs/Weapons/weapons-24-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-6"})
-map.set("Packs/Weapons/weapons-24-7", {"name":"Packs/Weapons/weapons-24-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-7"})
-map.set("Packs/Weapons/weapons-24-8", {"name":"Packs/Weapons/weapons-24-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-8"})
-map.set("Packs/Weapons/weapons-24-9", {"name":"Packs/Weapons/weapons-24-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-24-9"})
-map.set("Packs/Weapons/weapons-25-1", {"name":"Packs/Weapons/weapons-25-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-1"})
-map.set("Packs/Weapons/weapons-25-10", {"name":"Packs/Weapons/weapons-25-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-10"})
-map.set("Packs/Weapons/weapons-25-11", {"name":"Packs/Weapons/weapons-25-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-11"})
-map.set("Packs/Weapons/weapons-25-12", {"name":"Packs/Weapons/weapons-25-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-12"})
-map.set("Packs/Weapons/weapons-25-13", {"name":"Packs/Weapons/weapons-25-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-13"})
-map.set("Packs/Weapons/weapons-25-14", {"name":"Packs/Weapons/weapons-25-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-14"})
-map.set("Packs/Weapons/weapons-25-15", {"name":"Packs/Weapons/weapons-25-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-15"})
-map.set("Packs/Weapons/weapons-25-16", {"name":"Packs/Weapons/weapons-25-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-16"})
-map.set("Packs/Weapons/weapons-25-17", {"name":"Packs/Weapons/weapons-25-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-17"})
-map.set("Packs/Weapons/weapons-25-18", {"name":"Packs/Weapons/weapons-25-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-18"})
-map.set("Packs/Weapons/weapons-25-19", {"name":"Packs/Weapons/weapons-25-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-19"})
-map.set("Packs/Weapons/weapons-25-2", {"name":"Packs/Weapons/weapons-25-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-2"})
-map.set("Packs/Weapons/weapons-25-20", {"name":"Packs/Weapons/weapons-25-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-20"})
-map.set("Packs/Weapons/weapons-25-21", {"name":"Packs/Weapons/weapons-25-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-21"})
-map.set("Packs/Weapons/weapons-25-22", {"name":"Packs/Weapons/weapons-25-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-22"})
-map.set("Packs/Weapons/weapons-25-23", {"name":"Packs/Weapons/weapons-25-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-23"})
-map.set("Packs/Weapons/weapons-25-24", {"name":"Packs/Weapons/weapons-25-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-24"})
-map.set("Packs/Weapons/weapons-25-25", {"name":"Packs/Weapons/weapons-25-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-25"})
-map.set("Packs/Weapons/weapons-25-26", {"name":"Packs/Weapons/weapons-25-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-26"})
-map.set("Packs/Weapons/weapons-25-27", {"name":"Packs/Weapons/weapons-25-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-27"})
-map.set("Packs/Weapons/weapons-25-28", {"name":"Packs/Weapons/weapons-25-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-28"})
-map.set("Packs/Weapons/weapons-25-3", {"name":"Packs/Weapons/weapons-25-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-3"})
-map.set("Packs/Weapons/weapons-25-4", {"name":"Packs/Weapons/weapons-25-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-4"})
-map.set("Packs/Weapons/weapons-25-5", {"name":"Packs/Weapons/weapons-25-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-5"})
-map.set("Packs/Weapons/weapons-25-6", {"name":"Packs/Weapons/weapons-25-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-6"})
-map.set("Packs/Weapons/weapons-25-7", {"name":"Packs/Weapons/weapons-25-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-7"})
-map.set("Packs/Weapons/weapons-25-8", {"name":"Packs/Weapons/weapons-25-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-8"})
-map.set("Packs/Weapons/weapons-25-9", {"name":"Packs/Weapons/weapons-25-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-25-9"})
-map.set("Packs/Weapons/weapons-26-1", {"name":"Packs/Weapons/weapons-26-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-1"})
-map.set("Packs/Weapons/weapons-26-10", {"name":"Packs/Weapons/weapons-26-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-10"})
-map.set("Packs/Weapons/weapons-26-11", {"name":"Packs/Weapons/weapons-26-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-11"})
-map.set("Packs/Weapons/weapons-26-12", {"name":"Packs/Weapons/weapons-26-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-12"})
-map.set("Packs/Weapons/weapons-26-13", {"name":"Packs/Weapons/weapons-26-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-13"})
-map.set("Packs/Weapons/weapons-26-14", {"name":"Packs/Weapons/weapons-26-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-14"})
-map.set("Packs/Weapons/weapons-26-15", {"name":"Packs/Weapons/weapons-26-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-15"})
-map.set("Packs/Weapons/weapons-26-16", {"name":"Packs/Weapons/weapons-26-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-16"})
-map.set("Packs/Weapons/weapons-26-17", {"name":"Packs/Weapons/weapons-26-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-17"})
-map.set("Packs/Weapons/weapons-26-18", {"name":"Packs/Weapons/weapons-26-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-18"})
-map.set("Packs/Weapons/weapons-26-19", {"name":"Packs/Weapons/weapons-26-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-19"})
-map.set("Packs/Weapons/weapons-26-2", {"name":"Packs/Weapons/weapons-26-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-2"})
-map.set("Packs/Weapons/weapons-26-20", {"name":"Packs/Weapons/weapons-26-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-20"})
-map.set("Packs/Weapons/weapons-26-21", {"name":"Packs/Weapons/weapons-26-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-21"})
-map.set("Packs/Weapons/weapons-26-22", {"name":"Packs/Weapons/weapons-26-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-22"})
-map.set("Packs/Weapons/weapons-26-23", {"name":"Packs/Weapons/weapons-26-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-23"})
-map.set("Packs/Weapons/weapons-26-24", {"name":"Packs/Weapons/weapons-26-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-24"})
-map.set("Packs/Weapons/weapons-26-25", {"name":"Packs/Weapons/weapons-26-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-25"})
-map.set("Packs/Weapons/weapons-26-26", {"name":"Packs/Weapons/weapons-26-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-26"})
-map.set("Packs/Weapons/weapons-26-27", {"name":"Packs/Weapons/weapons-26-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-27"})
-map.set("Packs/Weapons/weapons-26-28", {"name":"Packs/Weapons/weapons-26-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-28"})
-map.set("Packs/Weapons/weapons-26-3", {"name":"Packs/Weapons/weapons-26-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-3"})
-map.set("Packs/Weapons/weapons-26-4", {"name":"Packs/Weapons/weapons-26-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-4"})
-map.set("Packs/Weapons/weapons-26-5", {"name":"Packs/Weapons/weapons-26-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-5"})
-map.set("Packs/Weapons/weapons-26-6", {"name":"Packs/Weapons/weapons-26-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-6"})
-map.set("Packs/Weapons/weapons-26-7", {"name":"Packs/Weapons/weapons-26-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-7"})
-map.set("Packs/Weapons/weapons-26-8", {"name":"Packs/Weapons/weapons-26-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-8"})
-map.set("Packs/Weapons/weapons-26-9", {"name":"Packs/Weapons/weapons-26-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-26-9"})
-map.set("Packs/Weapons/weapons-27-1", {"name":"Packs/Weapons/weapons-27-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-1"})
-map.set("Packs/Weapons/weapons-27-10", {"name":"Packs/Weapons/weapons-27-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-10"})
-map.set("Packs/Weapons/weapons-27-11", {"name":"Packs/Weapons/weapons-27-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-11"})
-map.set("Packs/Weapons/weapons-27-12", {"name":"Packs/Weapons/weapons-27-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-12"})
-map.set("Packs/Weapons/weapons-27-13", {"name":"Packs/Weapons/weapons-27-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-13"})
-map.set("Packs/Weapons/weapons-27-14", {"name":"Packs/Weapons/weapons-27-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-14"})
-map.set("Packs/Weapons/weapons-27-15", {"name":"Packs/Weapons/weapons-27-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-15"})
-map.set("Packs/Weapons/weapons-27-16", {"name":"Packs/Weapons/weapons-27-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-16"})
-map.set("Packs/Weapons/weapons-27-17", {"name":"Packs/Weapons/weapons-27-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-17"})
-map.set("Packs/Weapons/weapons-27-18", {"name":"Packs/Weapons/weapons-27-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-18"})
-map.set("Packs/Weapons/weapons-27-19", {"name":"Packs/Weapons/weapons-27-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-19"})
-map.set("Packs/Weapons/weapons-27-2", {"name":"Packs/Weapons/weapons-27-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-2"})
-map.set("Packs/Weapons/weapons-27-20", {"name":"Packs/Weapons/weapons-27-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-20"})
-map.set("Packs/Weapons/weapons-27-21", {"name":"Packs/Weapons/weapons-27-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-21"})
-map.set("Packs/Weapons/weapons-27-22", {"name":"Packs/Weapons/weapons-27-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-22"})
-map.set("Packs/Weapons/weapons-27-23", {"name":"Packs/Weapons/weapons-27-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-23"})
-map.set("Packs/Weapons/weapons-27-24", {"name":"Packs/Weapons/weapons-27-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-24"})
-map.set("Packs/Weapons/weapons-27-25", {"name":"Packs/Weapons/weapons-27-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-25"})
-map.set("Packs/Weapons/weapons-27-26", {"name":"Packs/Weapons/weapons-27-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-26"})
-map.set("Packs/Weapons/weapons-27-27", {"name":"Packs/Weapons/weapons-27-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-27"})
-map.set("Packs/Weapons/weapons-27-28", {"name":"Packs/Weapons/weapons-27-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-28"})
-map.set("Packs/Weapons/weapons-27-3", {"name":"Packs/Weapons/weapons-27-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-3"})
-map.set("Packs/Weapons/weapons-27-4", {"name":"Packs/Weapons/weapons-27-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-4"})
-map.set("Packs/Weapons/weapons-27-5", {"name":"Packs/Weapons/weapons-27-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-5"})
-map.set("Packs/Weapons/weapons-27-6", {"name":"Packs/Weapons/weapons-27-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-6"})
-map.set("Packs/Weapons/weapons-27-7", {"name":"Packs/Weapons/weapons-27-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-7"})
-map.set("Packs/Weapons/weapons-27-8", {"name":"Packs/Weapons/weapons-27-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-8"})
-map.set("Packs/Weapons/weapons-27-9", {"name":"Packs/Weapons/weapons-27-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-27-9"})
-map.set("Packs/Weapons/weapons-28-1", {"name":"Packs/Weapons/weapons-28-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-1"})
-map.set("Packs/Weapons/weapons-28-10", {"name":"Packs/Weapons/weapons-28-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-10"})
-map.set("Packs/Weapons/weapons-28-11", {"name":"Packs/Weapons/weapons-28-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-11"})
-map.set("Packs/Weapons/weapons-28-12", {"name":"Packs/Weapons/weapons-28-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-12"})
-map.set("Packs/Weapons/weapons-28-13", {"name":"Packs/Weapons/weapons-28-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-13"})
-map.set("Packs/Weapons/weapons-28-14", {"name":"Packs/Weapons/weapons-28-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-14"})
-map.set("Packs/Weapons/weapons-28-15", {"name":"Packs/Weapons/weapons-28-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-15"})
-map.set("Packs/Weapons/weapons-28-16", {"name":"Packs/Weapons/weapons-28-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-16"})
-map.set("Packs/Weapons/weapons-28-17", {"name":"Packs/Weapons/weapons-28-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-17"})
-map.set("Packs/Weapons/weapons-28-18", {"name":"Packs/Weapons/weapons-28-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-18"})
-map.set("Packs/Weapons/weapons-28-19", {"name":"Packs/Weapons/weapons-28-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-19"})
-map.set("Packs/Weapons/weapons-28-2", {"name":"Packs/Weapons/weapons-28-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-2"})
-map.set("Packs/Weapons/weapons-28-20", {"name":"Packs/Weapons/weapons-28-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-20"})
-map.set("Packs/Weapons/weapons-28-21", {"name":"Packs/Weapons/weapons-28-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-21"})
-map.set("Packs/Weapons/weapons-28-22", {"name":"Packs/Weapons/weapons-28-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-22"})
-map.set("Packs/Weapons/weapons-28-23", {"name":"Packs/Weapons/weapons-28-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-23"})
-map.set("Packs/Weapons/weapons-28-24", {"name":"Packs/Weapons/weapons-28-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-24"})
-map.set("Packs/Weapons/weapons-28-25", {"name":"Packs/Weapons/weapons-28-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-25"})
-map.set("Packs/Weapons/weapons-28-26", {"name":"Packs/Weapons/weapons-28-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-26"})
-map.set("Packs/Weapons/weapons-28-27", {"name":"Packs/Weapons/weapons-28-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-27"})
-map.set("Packs/Weapons/weapons-28-28", {"name":"Packs/Weapons/weapons-28-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-28"})
-map.set("Packs/Weapons/weapons-28-3", {"name":"Packs/Weapons/weapons-28-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-3"})
-map.set("Packs/Weapons/weapons-28-4", {"name":"Packs/Weapons/weapons-28-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-4"})
-map.set("Packs/Weapons/weapons-28-5", {"name":"Packs/Weapons/weapons-28-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-5"})
-map.set("Packs/Weapons/weapons-28-6", {"name":"Packs/Weapons/weapons-28-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-6"})
-map.set("Packs/Weapons/weapons-28-7", {"name":"Packs/Weapons/weapons-28-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-7"})
-map.set("Packs/Weapons/weapons-28-8", {"name":"Packs/Weapons/weapons-28-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-8"})
-map.set("Packs/Weapons/weapons-28-9", {"name":"Packs/Weapons/weapons-28-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-28-9"})
-map.set("Packs/Weapons/weapons-3-1", {"name":"Packs/Weapons/weapons-3-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-1"})
-map.set("Packs/Weapons/weapons-3-10", {"name":"Packs/Weapons/weapons-3-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-10"})
-map.set("Packs/Weapons/weapons-3-11", {"name":"Packs/Weapons/weapons-3-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-11"})
-map.set("Packs/Weapons/weapons-3-12", {"name":"Packs/Weapons/weapons-3-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-12"})
-map.set("Packs/Weapons/weapons-3-13", {"name":"Packs/Weapons/weapons-3-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-13"})
-map.set("Packs/Weapons/weapons-3-14", {"name":"Packs/Weapons/weapons-3-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-14"})
-map.set("Packs/Weapons/weapons-3-15", {"name":"Packs/Weapons/weapons-3-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-15"})
-map.set("Packs/Weapons/weapons-3-16", {"name":"Packs/Weapons/weapons-3-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-16"})
-map.set("Packs/Weapons/weapons-3-17", {"name":"Packs/Weapons/weapons-3-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-17"})
-map.set("Packs/Weapons/weapons-3-18", {"name":"Packs/Weapons/weapons-3-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-18"})
-map.set("Packs/Weapons/weapons-3-19", {"name":"Packs/Weapons/weapons-3-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-19"})
-map.set("Packs/Weapons/weapons-3-2", {"name":"Packs/Weapons/weapons-3-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-2"})
-map.set("Packs/Weapons/weapons-3-20", {"name":"Packs/Weapons/weapons-3-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-20"})
-map.set("Packs/Weapons/weapons-3-21", {"name":"Packs/Weapons/weapons-3-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-21"})
-map.set("Packs/Weapons/weapons-3-22", {"name":"Packs/Weapons/weapons-3-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-22"})
-map.set("Packs/Weapons/weapons-3-23", {"name":"Packs/Weapons/weapons-3-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-23"})
-map.set("Packs/Weapons/weapons-3-24", {"name":"Packs/Weapons/weapons-3-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-24"})
-map.set("Packs/Weapons/weapons-3-25", {"name":"Packs/Weapons/weapons-3-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-25"})
-map.set("Packs/Weapons/weapons-3-26", {"name":"Packs/Weapons/weapons-3-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-26"})
-map.set("Packs/Weapons/weapons-3-27", {"name":"Packs/Weapons/weapons-3-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-27"})
-map.set("Packs/Weapons/weapons-3-28", {"name":"Packs/Weapons/weapons-3-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-28"})
-map.set("Packs/Weapons/weapons-3-3", {"name":"Packs/Weapons/weapons-3-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-3"})
-map.set("Packs/Weapons/weapons-3-4", {"name":"Packs/Weapons/weapons-3-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-4"})
-map.set("Packs/Weapons/weapons-3-5", {"name":"Packs/Weapons/weapons-3-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-5"})
-map.set("Packs/Weapons/weapons-3-6", {"name":"Packs/Weapons/weapons-3-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-6"})
-map.set("Packs/Weapons/weapons-3-7", {"name":"Packs/Weapons/weapons-3-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-7"})
-map.set("Packs/Weapons/weapons-3-8", {"name":"Packs/Weapons/weapons-3-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-8"})
-map.set("Packs/Weapons/weapons-3-9", {"name":"Packs/Weapons/weapons-3-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-3-9"})
-map.set("Packs/Weapons/weapons-4-1", {"name":"Packs/Weapons/weapons-4-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-1"})
-map.set("Packs/Weapons/weapons-4-10", {"name":"Packs/Weapons/weapons-4-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-10"})
-map.set("Packs/Weapons/weapons-4-11", {"name":"Packs/Weapons/weapons-4-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-11"})
-map.set("Packs/Weapons/weapons-4-12", {"name":"Packs/Weapons/weapons-4-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-12"})
-map.set("Packs/Weapons/weapons-4-13", {"name":"Packs/Weapons/weapons-4-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-13"})
-map.set("Packs/Weapons/weapons-4-14", {"name":"Packs/Weapons/weapons-4-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-14"})
-map.set("Packs/Weapons/weapons-4-15", {"name":"Packs/Weapons/weapons-4-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-15"})
-map.set("Packs/Weapons/weapons-4-16", {"name":"Packs/Weapons/weapons-4-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-16"})
-map.set("Packs/Weapons/weapons-4-17", {"name":"Packs/Weapons/weapons-4-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-17"})
-map.set("Packs/Weapons/weapons-4-18", {"name":"Packs/Weapons/weapons-4-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-18"})
-map.set("Packs/Weapons/weapons-4-19", {"name":"Packs/Weapons/weapons-4-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-19"})
-map.set("Packs/Weapons/weapons-4-2", {"name":"Packs/Weapons/weapons-4-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-2"})
-map.set("Packs/Weapons/weapons-4-20", {"name":"Packs/Weapons/weapons-4-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-20"})
-map.set("Packs/Weapons/weapons-4-21", {"name":"Packs/Weapons/weapons-4-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-21"})
-map.set("Packs/Weapons/weapons-4-22", {"name":"Packs/Weapons/weapons-4-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-22"})
-map.set("Packs/Weapons/weapons-4-23", {"name":"Packs/Weapons/weapons-4-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-23"})
-map.set("Packs/Weapons/weapons-4-24", {"name":"Packs/Weapons/weapons-4-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-24"})
-map.set("Packs/Weapons/weapons-4-25", {"name":"Packs/Weapons/weapons-4-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-25"})
-map.set("Packs/Weapons/weapons-4-26", {"name":"Packs/Weapons/weapons-4-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-26"})
-map.set("Packs/Weapons/weapons-4-27", {"name":"Packs/Weapons/weapons-4-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-27"})
-map.set("Packs/Weapons/weapons-4-28", {"name":"Packs/Weapons/weapons-4-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-28"})
-map.set("Packs/Weapons/weapons-4-3", {"name":"Packs/Weapons/weapons-4-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-3"})
-map.set("Packs/Weapons/weapons-4-4", {"name":"Packs/Weapons/weapons-4-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-4"})
-map.set("Packs/Weapons/weapons-4-5", {"name":"Packs/Weapons/weapons-4-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-5"})
-map.set("Packs/Weapons/weapons-4-6", {"name":"Packs/Weapons/weapons-4-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-6"})
-map.set("Packs/Weapons/weapons-4-7", {"name":"Packs/Weapons/weapons-4-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-7"})
-map.set("Packs/Weapons/weapons-4-8", {"name":"Packs/Weapons/weapons-4-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-8"})
-map.set("Packs/Weapons/weapons-4-9", {"name":"Packs/Weapons/weapons-4-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-4-9"})
-map.set("Packs/Weapons/weapons-5-1", {"name":"Packs/Weapons/weapons-5-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-1"})
-map.set("Packs/Weapons/weapons-5-10", {"name":"Packs/Weapons/weapons-5-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-10"})
-map.set("Packs/Weapons/weapons-5-11", {"name":"Packs/Weapons/weapons-5-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-11"})
-map.set("Packs/Weapons/weapons-5-12", {"name":"Packs/Weapons/weapons-5-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-12"})
-map.set("Packs/Weapons/weapons-5-13", {"name":"Packs/Weapons/weapons-5-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-13"})
-map.set("Packs/Weapons/weapons-5-14", {"name":"Packs/Weapons/weapons-5-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-14"})
-map.set("Packs/Weapons/weapons-5-15", {"name":"Packs/Weapons/weapons-5-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-15"})
-map.set("Packs/Weapons/weapons-5-16", {"name":"Packs/Weapons/weapons-5-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-16"})
-map.set("Packs/Weapons/weapons-5-17", {"name":"Packs/Weapons/weapons-5-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-17"})
-map.set("Packs/Weapons/weapons-5-18", {"name":"Packs/Weapons/weapons-5-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-18"})
-map.set("Packs/Weapons/weapons-5-19", {"name":"Packs/Weapons/weapons-5-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-19"})
-map.set("Packs/Weapons/weapons-5-2", {"name":"Packs/Weapons/weapons-5-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-2"})
-map.set("Packs/Weapons/weapons-5-20", {"name":"Packs/Weapons/weapons-5-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-20"})
-map.set("Packs/Weapons/weapons-5-21", {"name":"Packs/Weapons/weapons-5-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-21"})
-map.set("Packs/Weapons/weapons-5-22", {"name":"Packs/Weapons/weapons-5-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-22"})
-map.set("Packs/Weapons/weapons-5-23", {"name":"Packs/Weapons/weapons-5-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-23"})
-map.set("Packs/Weapons/weapons-5-24", {"name":"Packs/Weapons/weapons-5-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-24"})
-map.set("Packs/Weapons/weapons-5-25", {"name":"Packs/Weapons/weapons-5-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-25"})
-map.set("Packs/Weapons/weapons-5-26", {"name":"Packs/Weapons/weapons-5-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-26"})
-map.set("Packs/Weapons/weapons-5-27", {"name":"Packs/Weapons/weapons-5-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-27"})
-map.set("Packs/Weapons/weapons-5-28", {"name":"Packs/Weapons/weapons-5-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-28"})
-map.set("Packs/Weapons/weapons-5-3", {"name":"Packs/Weapons/weapons-5-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-3"})
-map.set("Packs/Weapons/weapons-5-4", {"name":"Packs/Weapons/weapons-5-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-4"})
-map.set("Packs/Weapons/weapons-5-5", {"name":"Packs/Weapons/weapons-5-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-5"})
-map.set("Packs/Weapons/weapons-5-6", {"name":"Packs/Weapons/weapons-5-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-6"})
-map.set("Packs/Weapons/weapons-5-7", {"name":"Packs/Weapons/weapons-5-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-7"})
-map.set("Packs/Weapons/weapons-5-8", {"name":"Packs/Weapons/weapons-5-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-8"})
-map.set("Packs/Weapons/weapons-5-9", {"name":"Packs/Weapons/weapons-5-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-5-9"})
-map.set("Packs/Weapons/weapons-6-1", {"name":"Packs/Weapons/weapons-6-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-1"})
-map.set("Packs/Weapons/weapons-6-10", {"name":"Packs/Weapons/weapons-6-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-10"})
-map.set("Packs/Weapons/weapons-6-11", {"name":"Packs/Weapons/weapons-6-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-11"})
-map.set("Packs/Weapons/weapons-6-12", {"name":"Packs/Weapons/weapons-6-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-12"})
-map.set("Packs/Weapons/weapons-6-13", {"name":"Packs/Weapons/weapons-6-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-13"})
-map.set("Packs/Weapons/weapons-6-14", {"name":"Packs/Weapons/weapons-6-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-14"})
-map.set("Packs/Weapons/weapons-6-15", {"name":"Packs/Weapons/weapons-6-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-15"})
-map.set("Packs/Weapons/weapons-6-16", {"name":"Packs/Weapons/weapons-6-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-16"})
-map.set("Packs/Weapons/weapons-6-17", {"name":"Packs/Weapons/weapons-6-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-17"})
-map.set("Packs/Weapons/weapons-6-18", {"name":"Packs/Weapons/weapons-6-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-18"})
-map.set("Packs/Weapons/weapons-6-19", {"name":"Packs/Weapons/weapons-6-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-19"})
-map.set("Packs/Weapons/weapons-6-2", {"name":"Packs/Weapons/weapons-6-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-2"})
-map.set("Packs/Weapons/weapons-6-20", {"name":"Packs/Weapons/weapons-6-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-20"})
-map.set("Packs/Weapons/weapons-6-21", {"name":"Packs/Weapons/weapons-6-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-21"})
-map.set("Packs/Weapons/weapons-6-22", {"name":"Packs/Weapons/weapons-6-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-22"})
-map.set("Packs/Weapons/weapons-6-23", {"name":"Packs/Weapons/weapons-6-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-23"})
-map.set("Packs/Weapons/weapons-6-24", {"name":"Packs/Weapons/weapons-6-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-24"})
-map.set("Packs/Weapons/weapons-6-25", {"name":"Packs/Weapons/weapons-6-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-25"})
-map.set("Packs/Weapons/weapons-6-26", {"name":"Packs/Weapons/weapons-6-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-26"})
-map.set("Packs/Weapons/weapons-6-27", {"name":"Packs/Weapons/weapons-6-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-27"})
-map.set("Packs/Weapons/weapons-6-28", {"name":"Packs/Weapons/weapons-6-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-28"})
-map.set("Packs/Weapons/weapons-6-3", {"name":"Packs/Weapons/weapons-6-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-3"})
-map.set("Packs/Weapons/weapons-6-4", {"name":"Packs/Weapons/weapons-6-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-4"})
-map.set("Packs/Weapons/weapons-6-5", {"name":"Packs/Weapons/weapons-6-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-5"})
-map.set("Packs/Weapons/weapons-6-6", {"name":"Packs/Weapons/weapons-6-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-6"})
-map.set("Packs/Weapons/weapons-6-7", {"name":"Packs/Weapons/weapons-6-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-7"})
-map.set("Packs/Weapons/weapons-6-8", {"name":"Packs/Weapons/weapons-6-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-8"})
-map.set("Packs/Weapons/weapons-6-9", {"name":"Packs/Weapons/weapons-6-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-6-9"})
-map.set("Packs/Weapons/weapons-7-1", {"name":"Packs/Weapons/weapons-7-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-1"})
-map.set("Packs/Weapons/weapons-7-10", {"name":"Packs/Weapons/weapons-7-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-10"})
-map.set("Packs/Weapons/weapons-7-11", {"name":"Packs/Weapons/weapons-7-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-11"})
-map.set("Packs/Weapons/weapons-7-12", {"name":"Packs/Weapons/weapons-7-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-12"})
-map.set("Packs/Weapons/weapons-7-13", {"name":"Packs/Weapons/weapons-7-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-13"})
-map.set("Packs/Weapons/weapons-7-14", {"name":"Packs/Weapons/weapons-7-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-14"})
-map.set("Packs/Weapons/weapons-7-15", {"name":"Packs/Weapons/weapons-7-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-15"})
-map.set("Packs/Weapons/weapons-7-16", {"name":"Packs/Weapons/weapons-7-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-16"})
-map.set("Packs/Weapons/weapons-7-17", {"name":"Packs/Weapons/weapons-7-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-17"})
-map.set("Packs/Weapons/weapons-7-18", {"name":"Packs/Weapons/weapons-7-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-18"})
-map.set("Packs/Weapons/weapons-7-19", {"name":"Packs/Weapons/weapons-7-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-19"})
-map.set("Packs/Weapons/weapons-7-2", {"name":"Packs/Weapons/weapons-7-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-2"})
-map.set("Packs/Weapons/weapons-7-20", {"name":"Packs/Weapons/weapons-7-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-20"})
-map.set("Packs/Weapons/weapons-7-21", {"name":"Packs/Weapons/weapons-7-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-21"})
-map.set("Packs/Weapons/weapons-7-22", {"name":"Packs/Weapons/weapons-7-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-22"})
-map.set("Packs/Weapons/weapons-7-23", {"name":"Packs/Weapons/weapons-7-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-23"})
-map.set("Packs/Weapons/weapons-7-24", {"name":"Packs/Weapons/weapons-7-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-24"})
-map.set("Packs/Weapons/weapons-7-25", {"name":"Packs/Weapons/weapons-7-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-25"})
-map.set("Packs/Weapons/weapons-7-26", {"name":"Packs/Weapons/weapons-7-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-26"})
-map.set("Packs/Weapons/weapons-7-27", {"name":"Packs/Weapons/weapons-7-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-27"})
-map.set("Packs/Weapons/weapons-7-28", {"name":"Packs/Weapons/weapons-7-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-28"})
-map.set("Packs/Weapons/weapons-7-3", {"name":"Packs/Weapons/weapons-7-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-3"})
-map.set("Packs/Weapons/weapons-7-4", {"name":"Packs/Weapons/weapons-7-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-4"})
-map.set("Packs/Weapons/weapons-7-5", {"name":"Packs/Weapons/weapons-7-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-5"})
-map.set("Packs/Weapons/weapons-7-6", {"name":"Packs/Weapons/weapons-7-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-6"})
-map.set("Packs/Weapons/weapons-7-7", {"name":"Packs/Weapons/weapons-7-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-7"})
-map.set("Packs/Weapons/weapons-7-8", {"name":"Packs/Weapons/weapons-7-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-8"})
-map.set("Packs/Weapons/weapons-7-9", {"name":"Packs/Weapons/weapons-7-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-7-9"})
-map.set("Packs/Weapons/weapons-8-1", {"name":"Packs/Weapons/weapons-8-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-1"})
-map.set("Packs/Weapons/weapons-8-10", {"name":"Packs/Weapons/weapons-8-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-10"})
-map.set("Packs/Weapons/weapons-8-11", {"name":"Packs/Weapons/weapons-8-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-11"})
-map.set("Packs/Weapons/weapons-8-12", {"name":"Packs/Weapons/weapons-8-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-12"})
-map.set("Packs/Weapons/weapons-8-13", {"name":"Packs/Weapons/weapons-8-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-13"})
-map.set("Packs/Weapons/weapons-8-14", {"name":"Packs/Weapons/weapons-8-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-14"})
-map.set("Packs/Weapons/weapons-8-15", {"name":"Packs/Weapons/weapons-8-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-15"})
-map.set("Packs/Weapons/weapons-8-16", {"name":"Packs/Weapons/weapons-8-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-16"})
-map.set("Packs/Weapons/weapons-8-17", {"name":"Packs/Weapons/weapons-8-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-17"})
-map.set("Packs/Weapons/weapons-8-18", {"name":"Packs/Weapons/weapons-8-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-18"})
-map.set("Packs/Weapons/weapons-8-19", {"name":"Packs/Weapons/weapons-8-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-19"})
-map.set("Packs/Weapons/weapons-8-2", {"name":"Packs/Weapons/weapons-8-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-2"})
-map.set("Packs/Weapons/weapons-8-20", {"name":"Packs/Weapons/weapons-8-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-20"})
-map.set("Packs/Weapons/weapons-8-21", {"name":"Packs/Weapons/weapons-8-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-21"})
-map.set("Packs/Weapons/weapons-8-22", {"name":"Packs/Weapons/weapons-8-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-22"})
-map.set("Packs/Weapons/weapons-8-23", {"name":"Packs/Weapons/weapons-8-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-23"})
-map.set("Packs/Weapons/weapons-8-24", {"name":"Packs/Weapons/weapons-8-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-24"})
-map.set("Packs/Weapons/weapons-8-25", {"name":"Packs/Weapons/weapons-8-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-25"})
-map.set("Packs/Weapons/weapons-8-26", {"name":"Packs/Weapons/weapons-8-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-26"})
-map.set("Packs/Weapons/weapons-8-27", {"name":"Packs/Weapons/weapons-8-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-27"})
-map.set("Packs/Weapons/weapons-8-28", {"name":"Packs/Weapons/weapons-8-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-28"})
-map.set("Packs/Weapons/weapons-8-3", {"name":"Packs/Weapons/weapons-8-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-3"})
-map.set("Packs/Weapons/weapons-8-4", {"name":"Packs/Weapons/weapons-8-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-4"})
-map.set("Packs/Weapons/weapons-8-5", {"name":"Packs/Weapons/weapons-8-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-5"})
-map.set("Packs/Weapons/weapons-8-6", {"name":"Packs/Weapons/weapons-8-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-6"})
-map.set("Packs/Weapons/weapons-8-7", {"name":"Packs/Weapons/weapons-8-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-7"})
-map.set("Packs/Weapons/weapons-8-8", {"name":"Packs/Weapons/weapons-8-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-8"})
-map.set("Packs/Weapons/weapons-8-9", {"name":"Packs/Weapons/weapons-8-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-8-9"})
-map.set("Packs/Weapons/weapons-9-1", {"name":"Packs/Weapons/weapons-9-1","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-1"})
-map.set("Packs/Weapons/weapons-9-10", {"name":"Packs/Weapons/weapons-9-10","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-10"})
-map.set("Packs/Weapons/weapons-9-11", {"name":"Packs/Weapons/weapons-9-11","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-11"})
-map.set("Packs/Weapons/weapons-9-12", {"name":"Packs/Weapons/weapons-9-12","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-12"})
-map.set("Packs/Weapons/weapons-9-13", {"name":"Packs/Weapons/weapons-9-13","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-13"})
-map.set("Packs/Weapons/weapons-9-14", {"name":"Packs/Weapons/weapons-9-14","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-14"})
-map.set("Packs/Weapons/weapons-9-15", {"name":"Packs/Weapons/weapons-9-15","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-15"})
-map.set("Packs/Weapons/weapons-9-16", {"name":"Packs/Weapons/weapons-9-16","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-16"})
-map.set("Packs/Weapons/weapons-9-17", {"name":"Packs/Weapons/weapons-9-17","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-17"})
-map.set("Packs/Weapons/weapons-9-18", {"name":"Packs/Weapons/weapons-9-18","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-18"})
-map.set("Packs/Weapons/weapons-9-19", {"name":"Packs/Weapons/weapons-9-19","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-19"})
-map.set("Packs/Weapons/weapons-9-2", {"name":"Packs/Weapons/weapons-9-2","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-2"})
-map.set("Packs/Weapons/weapons-9-20", {"name":"Packs/Weapons/weapons-9-20","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-20"})
-map.set("Packs/Weapons/weapons-9-21", {"name":"Packs/Weapons/weapons-9-21","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-21"})
-map.set("Packs/Weapons/weapons-9-22", {"name":"Packs/Weapons/weapons-9-22","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-22"})
-map.set("Packs/Weapons/weapons-9-23", {"name":"Packs/Weapons/weapons-9-23","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-23"})
-map.set("Packs/Weapons/weapons-9-24", {"name":"Packs/Weapons/weapons-9-24","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-24"})
-map.set("Packs/Weapons/weapons-9-25", {"name":"Packs/Weapons/weapons-9-25","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-25"})
-map.set("Packs/Weapons/weapons-9-26", {"name":"Packs/Weapons/weapons-9-26","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-26"})
-map.set("Packs/Weapons/weapons-9-27", {"name":"Packs/Weapons/weapons-9-27","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-27"})
-map.set("Packs/Weapons/weapons-9-28", {"name":"Packs/Weapons/weapons-9-28","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-28"})
-map.set("Packs/Weapons/weapons-9-3", {"name":"Packs/Weapons/weapons-9-3","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-3"})
-map.set("Packs/Weapons/weapons-9-4", {"name":"Packs/Weapons/weapons-9-4","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-4"})
-map.set("Packs/Weapons/weapons-9-5", {"name":"Packs/Weapons/weapons-9-5","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-5"})
-map.set("Packs/Weapons/weapons-9-6", {"name":"Packs/Weapons/weapons-9-6","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-6"})
-map.set("Packs/Weapons/weapons-9-7", {"name":"Packs/Weapons/weapons-9-7","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-7"})
-map.set("Packs/Weapons/weapons-9-8", {"name":"Packs/Weapons/weapons-9-8","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-8"})
-map.set("Packs/Weapons/weapons-9-9", {"name":"Packs/Weapons/weapons-9-9","path":"textures/amethyst_icons/Packs/WeaponPack/weapons-9-9"})
-map.set("Packs/Asteroid/ErrorGlyph", {"name":"Packs/Asteroid/ErrorGlyph","path":"textures/amethyst_icons/Packs/asteroid_icons/ErrorGlyph"})
-map.set("Packs/Asteroid/Feedback", {"name":"Packs/Asteroid/Feedback","path":"textures/amethyst_icons/Packs/asteroid_icons/Feedback"})
-map.set("Packs/Asteroid/accessibility_glyph_color", {"name":"Packs/Asteroid/accessibility_glyph_color","path":"textures/amethyst_icons/Packs/asteroid_icons/accessibility_glyph_color"})
-map.set("Packs/Asteroid/adventure_chest_common", {"name":"Packs/Asteroid/adventure_chest_common","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_chest_common"})
-map.set("Packs/Asteroid/adventure_chest_epic", {"name":"Packs/Asteroid/adventure_chest_epic","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_chest_epic"})
-map.set("Packs/Asteroid/adventure_chest_legendary", {"name":"Packs/Asteroid/adventure_chest_legendary","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_chest_legendary"})
-map.set("Packs/Asteroid/adventure_chest_rare", {"name":"Packs/Asteroid/adventure_chest_rare","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_chest_rare"})
-map.set("Packs/Asteroid/adventure_chest_uncommon", {"name":"Packs/Asteroid/adventure_chest_uncommon","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_chest_uncommon"})
-map.set("Packs/Asteroid/adventure_crystal_common", {"name":"Packs/Asteroid/adventure_crystal_common","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_crystal_common"})
-map.set("Packs/Asteroid/adventure_crystal_epic", {"name":"Packs/Asteroid/adventure_crystal_epic","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_crystal_epic"})
-map.set("Packs/Asteroid/adventure_crystal_legendary", {"name":"Packs/Asteroid/adventure_crystal_legendary","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_crystal_legendary"})
-map.set("Packs/Asteroid/adventure_crystal_rare", {"name":"Packs/Asteroid/adventure_crystal_rare","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_crystal_rare"})
-map.set("Packs/Asteroid/adventure_crystal_uncommon", {"name":"Packs/Asteroid/adventure_crystal_uncommon","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_crystal_uncommon"})
-map.set("Packs/Asteroid/adventure_menu_icon", {"name":"Packs/Asteroid/adventure_menu_icon","path":"textures/amethyst_icons/Packs/asteroid_icons/adventure_menu_icon"})
-map.set("Packs/Asteroid/anvil_icon", {"name":"Packs/Asteroid/anvil_icon","path":"textures/amethyst_icons/Packs/asteroid_icons/anvil_icon"})
-map.set("Packs/Asteroid/baby_moolip", {"name":"Packs/Asteroid/baby_moolip","path":"textures/amethyst_icons/Packs/asteroid_icons/baby_moolip"})
-map.set("Packs/Asteroid/beacon", {"name":"Packs/Asteroid/beacon","path":"textures/amethyst_icons/Packs/asteroid_icons/beacon"})
-map.set("Packs/Asteroid/bedrock", {"name":"Packs/Asteroid/bedrock","path":"textures/amethyst_icons/Packs/asteroid_icons/bedrock"})
-map.set("Packs/Asteroid/bigg", {"name":"Packs/Asteroid/bigg","path":"textures/amethyst_icons/Packs/asteroid_icons/bigg"})
-map.set("Packs/Asteroid/birch_leaves", {"name":"Packs/Asteroid/birch_leaves","path":"textures/amethyst_icons/Packs/asteroid_icons/birch_leaves"})
-map.set("Packs/Asteroid/birch_log", {"name":"Packs/Asteroid/birch_log","path":"textures/amethyst_icons/Packs/asteroid_icons/birch_log"})
-map.set("Packs/Asteroid/block", {"name":"Packs/Asteroid/block","path":"textures/amethyst_icons/Packs/asteroid_icons/block"})
-map.set("Packs/Asteroid/blue_wool", {"name":"Packs/Asteroid/blue_wool","path":"textures/amethyst_icons/Packs/asteroid_icons/blue_wool"})
-map.set("Packs/Asteroid/bricks", {"name":"Packs/Asteroid/bricks","path":"textures/amethyst_icons/Packs/asteroid_icons/bricks"})
-map.set("Packs/Asteroid/bronzed_chicken", {"name":"Packs/Asteroid/bronzed_chicken","path":"textures/amethyst_icons/Packs/asteroid_icons/bronzed_chicken"})
-map.set("Packs/Asteroid/challenges", {"name":"Packs/Asteroid/challenges","path":"textures/amethyst_icons/Packs/asteroid_icons/challenges"})
-map.set("Packs/Asteroid/change", {"name":"Packs/Asteroid/change","path":"textures/amethyst_icons/Packs/asteroid_icons/change"})
-map.set("Packs/Asteroid/change2", {"name":"Packs/Asteroid/change2","path":"textures/amethyst_icons/Packs/asteroid_icons/change2"})
-map.set("Packs/Asteroid/chest_tappable", {"name":"Packs/Asteroid/chest_tappable","path":"textures/amethyst_icons/Packs/asteroid_icons/chest_tappable"})
-map.set("Packs/Asteroid/cluckshroom", {"name":"Packs/Asteroid/cluckshroom","path":"textures/amethyst_icons/Packs/asteroid_icons/cluckshroom"})
-map.set("Packs/Asteroid/cobweb", {"name":"Packs/Asteroid/cobweb","path":"textures/amethyst_icons/Packs/asteroid_icons/cobweb"})
-map.set("Packs/Asteroid/cod", {"name":"Packs/Asteroid/cod","path":"textures/amethyst_icons/Packs/asteroid_icons/cod"})
-map.set("Packs/Asteroid/coin", {"name":"Packs/Asteroid/coin","path":"textures/amethyst_icons/Packs/asteroid_icons/coin"})
-map.set("Packs/Asteroid/coins", {"name":"Packs/Asteroid/coins","path":"textures/amethyst_icons/Packs/asteroid_icons/coins"})
-map.set("Packs/Asteroid/crafting_boost_3", {"name":"Packs/Asteroid/crafting_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/crafting_boost_3"})
-map.set("Packs/Asteroid/cream_cow", {"name":"Packs/Asteroid/cream_cow","path":"textures/amethyst_icons/Packs/asteroid_icons/cream_cow"})
-map.set("Packs/Asteroid/creative_icon", {"name":"Packs/Asteroid/creative_icon","path":"textures/amethyst_icons/Packs/asteroid_icons/creative_icon"})
-map.set("Packs/Asteroid/creator_glyph_color", {"name":"Packs/Asteroid/creator_glyph_color","path":"textures/amethyst_icons/Packs/asteroid_icons/creator_glyph_color"})
-map.set("Packs/Asteroid/custom", {"name":"Packs/Asteroid/custom","path":"textures/amethyst_icons/Packs/asteroid_icons/custom"})
-map.set("Packs/Asteroid/cut", {"name":"Packs/Asteroid/cut","path":"textures/amethyst_icons/Packs/asteroid_icons/cut"})
-map.set("Packs/Asteroid/cyan_wool", {"name":"Packs/Asteroid/cyan_wool","path":"textures/amethyst_icons/Packs/asteroid_icons/cyan_wool"})
-map.set("Packs/Asteroid/defense_boost_1", {"name":"Packs/Asteroid/defense_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/defense_boost_1"})
-map.set("Packs/Asteroid/defense_boost_2", {"name":"Packs/Asteroid/defense_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/defense_boost_2"})
-map.set("Packs/Asteroid/defense_boost_3", {"name":"Packs/Asteroid/defense_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/defense_boost_3"})
-map.set("Packs/Asteroid/desert_rabbit", {"name":"Packs/Asteroid/desert_rabbit","path":"textures/amethyst_icons/Packs/asteroid_icons/desert_rabbit"})
-map.set("Packs/Asteroid/dev", {"name":"Packs/Asteroid/dev","path":"textures/amethyst_icons/Packs/asteroid_icons/dev"})
-map.set("Packs/Asteroid/diamond_axe", {"name":"Packs/Asteroid/diamond_axe","path":"textures/amethyst_icons/Packs/asteroid_icons/diamond_axe"})
-map.set("Packs/Asteroid/diamond_block", {"name":"Packs/Asteroid/diamond_block","path":"textures/amethyst_icons/Packs/asteroid_icons/diamond_block"})
-map.set("Packs/Asteroid/fail", {"name":"Packs/Asteroid/fail","path":"textures/amethyst_icons/Packs/asteroid_icons/fail"})
-map.set("Packs/Asteroid/fancy_chicken", {"name":"Packs/Asteroid/fancy_chicken","path":"textures/amethyst_icons/Packs/asteroid_icons/fancy_chicken"})
-map.set("Packs/Asteroid/feather", {"name":"Packs/Asteroid/feather","path":"textures/amethyst_icons/Packs/asteroid_icons/feather"})
-map.set("Packs/Asteroid/files", {"name":"Packs/Asteroid/files","path":"textures/amethyst_icons/Packs/asteroid_icons/files"})
-map.set("Packs/Asteroid/food_boost_1", {"name":"Packs/Asteroid/food_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/food_boost_1"})
-map.set("Packs/Asteroid/food_boost_2", {"name":"Packs/Asteroid/food_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/food_boost_2"})
-map.set("Packs/Asteroid/food_boost_3", {"name":"Packs/Asteroid/food_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/food_boost_3"})
-map.set("Packs/Asteroid/garbage", {"name":"Packs/Asteroid/garbage","path":"textures/amethyst_icons/Packs/asteroid_icons/garbage"})
-map.set("Packs/Asteroid/global", {"name":"Packs/Asteroid/global","path":"textures/amethyst_icons/Packs/asteroid_icons/global"})
-map.set("Packs/Asteroid/glow_squid", {"name":"Packs/Asteroid/glow_squid","path":"textures/amethyst_icons/Packs/asteroid_icons/glow_squid"})
-map.set("Packs/Asteroid/glowstone", {"name":"Packs/Asteroid/glowstone","path":"textures/amethyst_icons/Packs/asteroid_icons/glowstone"})
-map.set("Packs/Asteroid/gold_block", {"name":"Packs/Asteroid/gold_block","path":"textures/amethyst_icons/Packs/asteroid_icons/gold_block"})
-map.set("Packs/Asteroid/gold_crested_chicken", {"name":"Packs/Asteroid/gold_crested_chicken","path":"textures/amethyst_icons/Packs/asteroid_icons/gold_crested_chicken"})
-map.set("Packs/Asteroid/gold_ore", {"name":"Packs/Asteroid/gold_ore","path":"textures/amethyst_icons/Packs/asteroid_icons/gold_ore"})
-map.set("Packs/Asteroid/granite_wall", {"name":"Packs/Asteroid/granite_wall","path":"textures/amethyst_icons/Packs/asteroid_icons/granite_wall"})
-map.set("Packs/Asteroid/grass_block", {"name":"Packs/Asteroid/grass_block","path":"textures/amethyst_icons/Packs/asteroid_icons/grass_block"})
-map.set("Packs/Asteroid/gravel", {"name":"Packs/Asteroid/gravel","path":"textures/amethyst_icons/Packs/asteroid_icons/gravel"})
-map.set("Packs/Asteroid/green_wool", {"name":"Packs/Asteroid/green_wool","path":"textures/amethyst_icons/Packs/asteroid_icons/green_wool"})
-map.set("Packs/Asteroid/hasItems", {"name":"Packs/Asteroid/hasItems","path":"textures/amethyst_icons/Packs/asteroid_icons/hasItems"})
-map.set("Packs/Asteroid/health_boost_1", {"name":"Packs/Asteroid/health_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/health_boost_1"})
-map.set("Packs/Asteroid/health_boost_2", {"name":"Packs/Asteroid/health_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/health_boost_2"})
-map.set("Packs/Asteroid/health_boost_3", {"name":"Packs/Asteroid/health_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/health_boost_3"})
-map.set("Packs/Asteroid/heart_of_the_sea", {"name":"Packs/Asteroid/heart_of_the_sea","path":"textures/amethyst_icons/Packs/asteroid_icons/heart_of_the_sea"})
-map.set("Packs/Asteroid/hoarding_boost_1", {"name":"Packs/Asteroid/hoarding_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/hoarding_boost_1"})
-map.set("Packs/Asteroid/hoarding_boost_2", {"name":"Packs/Asteroid/hoarding_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/hoarding_boost_2"})
-map.set("Packs/Asteroid/hoarding_boost_3", {"name":"Packs/Asteroid/hoarding_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/hoarding_boost_3"})
-map.set("Packs/Asteroid/ice", {"name":"Packs/Asteroid/ice","path":"textures/amethyst_icons/Packs/asteroid_icons/ice"})
-map.set("Packs/Asteroid/icon_recipe_item", {"name":"Packs/Asteroid/icon_recipe_item","path":"textures/amethyst_icons/Packs/asteroid_icons/icon_recipe_item"})
-map.set("Packs/Asteroid/journal_open", {"name":"Packs/Asteroid/journal_open","path":"textures/amethyst_icons/Packs/asteroid_icons/journal_open"})
-map.set("Packs/Asteroid/jumbog", {"name":"Packs/Asteroid/jumbog","path":"textures/amethyst_icons/Packs/asteroid_icons/jumbog"})
-map.set("Packs/Asteroid/jungle_leaves", {"name":"Packs/Asteroid/jungle_leaves","path":"textures/amethyst_icons/Packs/asteroid_icons/jungle_leaves"})
-map.set("Packs/Asteroid/keeper_boost_1", {"name":"Packs/Asteroid/keeper_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/keeper_boost_1"})
-map.set("Packs/Asteroid/keeper_boost_2", {"name":"Packs/Asteroid/keeper_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/keeper_boost_2"})
-map.set("Packs/Asteroid/keeper_boost_3", {"name":"Packs/Asteroid/keeper_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/keeper_boost_3"})
-map.set("Packs/Asteroid/leave", {"name":"Packs/Asteroid/leave","path":"textures/amethyst_icons/Packs/asteroid_icons/leave"})
-map.set("Packs/Asteroid/lime_teracotta", {"name":"Packs/Asteroid/lime_teracotta","path":"textures/amethyst_icons/Packs/asteroid_icons/lime_teracotta"})
-map.set("Packs/Asteroid/littleg", {"name":"Packs/Asteroid/littleg","path":"textures/amethyst_icons/Packs/asteroid_icons/littleg"})
-map.set("Packs/Asteroid/lobber_zombie", {"name":"Packs/Asteroid/lobber_zombie","path":"textures/amethyst_icons/Packs/asteroid_icons/lobber_zombie"})
-map.set("Packs/Asteroid/magenta_concrete", {"name":"Packs/Asteroid/magenta_concrete","path":"textures/amethyst_icons/Packs/asteroid_icons/magenta_concrete"})
-map.set("Packs/Asteroid/magnifyingGlass", {"name":"Packs/Asteroid/magnifyingGlass","path":"textures/amethyst_icons/Packs/asteroid_icons/magnifyingGlass"})
-map.set("Packs/Asteroid/market", {"name":"Packs/Asteroid/market","path":"textures/amethyst_icons/Packs/asteroid_icons/market"})
-map.set("Packs/Asteroid/mashup_PaintBrush", {"name":"Packs/Asteroid/mashup_PaintBrush","path":"textures/amethyst_icons/Packs/asteroid_icons/mashup_PaintBrush"})
-map.set("Packs/Asteroid/mediumg", {"name":"Packs/Asteroid/mediumg","path":"textures/amethyst_icons/Packs/asteroid_icons/mediumg"})
-map.set("Packs/Asteroid/midnight_chicken", {"name":"Packs/Asteroid/midnight_chicken","path":"textures/amethyst_icons/Packs/asteroid_icons/midnight_chicken"})
-map.set("Packs/Asteroid/minig", {"name":"Packs/Asteroid/minig","path":"textures/amethyst_icons/Packs/asteroid_icons/minig"})
-map.set("Packs/Asteroid/mining_boost_1", {"name":"Packs/Asteroid/mining_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/mining_boost_1"})
-map.set("Packs/Asteroid/mining_boost_2", {"name":"Packs/Asteroid/mining_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/mining_boost_2"})
-map.set("Packs/Asteroid/mining_boost_3", {"name":"Packs/Asteroid/mining_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/mining_boost_3"})
-map.set("Packs/Asteroid/misventas", {"name":"Packs/Asteroid/misventas","path":"textures/amethyst_icons/Packs/asteroid_icons/misventas"})
-map.set("Packs/Asteroid/mob_xp_boost_1", {"name":"Packs/Asteroid/mob_xp_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/mob_xp_boost_1"})
-map.set("Packs/Asteroid/mob_xp_boost_2", {"name":"Packs/Asteroid/mob_xp_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/mob_xp_boost_2"})
-map.set("Packs/Asteroid/mob_xp_boost_3", {"name":"Packs/Asteroid/mob_xp_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/mob_xp_boost_3"})
-map.set("Packs/Asteroid/moobloom", {"name":"Packs/Asteroid/moobloom","path":"textures/amethyst_icons/Packs/asteroid_icons/moobloom"})
-map.set("Packs/Asteroid/moolip", {"name":"Packs/Asteroid/moolip","path":"textures/amethyst_icons/Packs/asteroid_icons/moolip"})
-map.set("Packs/Asteroid/muddy_pig", {"name":"Packs/Asteroid/muddy_pig","path":"textures/amethyst_icons/Packs/asteroid_icons/muddy_pig"})
-map.set("Packs/Asteroid/mycelium", {"name":"Packs/Asteroid/mycelium","path":"textures/amethyst_icons/Packs/asteroid_icons/mycelium"})
-map.set("Packs/Asteroid/nether_wart_block", {"name":"Packs/Asteroid/nether_wart_block","path":"textures/amethyst_icons/Packs/asteroid_icons/nether_wart_block"})
-map.set("Packs/Asteroid/netherrack", {"name":"Packs/Asteroid/netherrack","path":"textures/amethyst_icons/Packs/asteroid_icons/netherrack"})
-map.set("Packs/Asteroid/noItems", {"name":"Packs/Asteroid/noItems","path":"textures/amethyst_icons/Packs/asteroid_icons/noItems"})
-map.set("Packs/Asteroid/note_block", {"name":"Packs/Asteroid/note_block","path":"textures/amethyst_icons/Packs/asteroid_icons/note_block"})
-map.set("Packs/Asteroid/notsmelting", {"name":"Packs/Asteroid/notsmelting","path":"textures/amethyst_icons/Packs/asteroid_icons/notsmelting"})
-map.set("Packs/Asteroid/observer", {"name":"Packs/Asteroid/observer","path":"textures/amethyst_icons/Packs/asteroid_icons/observer"})
-map.set("Packs/Asteroid/old_ruby", {"name":"Packs/Asteroid/old_ruby","path":"textures/amethyst_icons/Packs/asteroid_icons/old_ruby"})
-map.set("Packs/Asteroid/panda", {"name":"Packs/Asteroid/panda","path":"textures/amethyst_icons/Packs/asteroid_icons/panda"})
-map.set("Packs/Asteroid/polished_andesite", {"name":"Packs/Asteroid/polished_andesite","path":"textures/amethyst_icons/Packs/asteroid_icons/polished_andesite"})
-map.set("Packs/Asteroid/prismarine_bricks", {"name":"Packs/Asteroid/prismarine_bricks","path":"textures/amethyst_icons/Packs/asteroid_icons/prismarine_bricks"})
-map.set("Packs/Asteroid/profile_glyph_color", {"name":"Packs/Asteroid/profile_glyph_color","path":"textures/amethyst_icons/Packs/asteroid_icons/profile_glyph_color"})
-map.set("Packs/Asteroid/quick_craft", {"name":"Packs/Asteroid/quick_craft","path":"textures/amethyst_icons/Packs/asteroid_icons/quick_craft"})
-map.set("Packs/Asteroid/quit", {"name":"Packs/Asteroid/quit","path":"textures/amethyst_icons/Packs/asteroid_icons/quit"})
-map.set("Packs/Asteroid/radius_boost_1", {"name":"Packs/Asteroid/radius_boost_1","path":"textures/amethyst_icons/Packs/asteroid_icons/radius_boost_1"})
-map.set("Packs/Asteroid/radius_boost_2", {"name":"Packs/Asteroid/radius_boost_2","path":"textures/amethyst_icons/Packs/asteroid_icons/radius_boost_2"})
-map.set("Packs/Asteroid/radius_boost_3", {"name":"Packs/Asteroid/radius_boost_3","path":"textures/amethyst_icons/Packs/asteroid_icons/radius_boost_3"})
-map.set("Packs/Asteroid/random1", {"name":"Packs/Asteroid/random1","path":"textures/amethyst_icons/Packs/asteroid_icons/random1"})
-map.set("Packs/Asteroid/random10", {"name":"Packs/Asteroid/random10","path":"textures/amethyst_icons/Packs/asteroid_icons/random10"})
-map.set("Packs/Asteroid/random11", {"name":"Packs/Asteroid/random11","path":"textures/amethyst_icons/Packs/asteroid_icons/random11"})
-map.set("Packs/Asteroid/random12", {"name":"Packs/Asteroid/random12","path":"textures/amethyst_icons/Packs/asteroid_icons/random12"})
-map.set("Packs/Asteroid/random13", {"name":"Packs/Asteroid/random13","path":"textures/amethyst_icons/Packs/asteroid_icons/random13"})
-map.set("Packs/Asteroid/random14", {"name":"Packs/Asteroid/random14","path":"textures/amethyst_icons/Packs/asteroid_icons/random14"})
-map.set("Packs/Asteroid/random15", {"name":"Packs/Asteroid/random15","path":"textures/amethyst_icons/Packs/asteroid_icons/random15"})
-map.set("Packs/Asteroid/random16", {"name":"Packs/Asteroid/random16","path":"textures/amethyst_icons/Packs/asteroid_icons/random16"})
-map.set("Packs/Asteroid/random17", {"name":"Packs/Asteroid/random17","path":"textures/amethyst_icons/Packs/asteroid_icons/random17"})
-map.set("Packs/Asteroid/random18", {"name":"Packs/Asteroid/random18","path":"textures/amethyst_icons/Packs/asteroid_icons/random18"})
-map.set("Packs/Asteroid/random19", {"name":"Packs/Asteroid/random19","path":"textures/amethyst_icons/Packs/asteroid_icons/random19"})
-map.set("Packs/Asteroid/random2", {"name":"Packs/Asteroid/random2","path":"textures/amethyst_icons/Packs/asteroid_icons/random2"})
-map.set("Packs/Asteroid/random20", {"name":"Packs/Asteroid/random20","path":"textures/amethyst_icons/Packs/asteroid_icons/random20"})
-map.set("Packs/Asteroid/random21", {"name":"Packs/Asteroid/random21","path":"textures/amethyst_icons/Packs/asteroid_icons/random21"})
-map.set("Packs/Asteroid/random22", {"name":"Packs/Asteroid/random22","path":"textures/amethyst_icons/Packs/asteroid_icons/random22"})
-map.set("Packs/Asteroid/random23", {"name":"Packs/Asteroid/random23","path":"textures/amethyst_icons/Packs/asteroid_icons/random23"})
-map.set("Packs/Asteroid/random24", {"name":"Packs/Asteroid/random24","path":"textures/amethyst_icons/Packs/asteroid_icons/random24"})
-map.set("Packs/Asteroid/random25", {"name":"Packs/Asteroid/random25","path":"textures/amethyst_icons/Packs/asteroid_icons/random25"})
-map.set("Packs/Asteroid/random26", {"name":"Packs/Asteroid/random26","path":"textures/amethyst_icons/Packs/asteroid_icons/random26"})
-map.set("Packs/Asteroid/random27", {"name":"Packs/Asteroid/random27","path":"textures/amethyst_icons/Packs/asteroid_icons/random27"})
-map.set("Packs/Asteroid/random28", {"name":"Packs/Asteroid/random28","path":"textures/amethyst_icons/Packs/asteroid_icons/random28"})
-map.set("Packs/Asteroid/random29", {"name":"Packs/Asteroid/random29","path":"textures/amethyst_icons/Packs/asteroid_icons/random29"})
-map.set("Packs/Asteroid/random3", {"name":"Packs/Asteroid/random3","path":"textures/amethyst_icons/Packs/asteroid_icons/random3"})
-map.set("Packs/Asteroid/random30", {"name":"Packs/Asteroid/random30","path":"textures/amethyst_icons/Packs/asteroid_icons/random30"})
-map.set("Packs/Asteroid/random31", {"name":"Packs/Asteroid/random31","path":"textures/amethyst_icons/Packs/asteroid_icons/random31"})
-map.set("Packs/Asteroid/random32", {"name":"Packs/Asteroid/random32","path":"textures/amethyst_icons/Packs/asteroid_icons/random32"})
-map.set("Packs/Asteroid/random33", {"name":"Packs/Asteroid/random33","path":"textures/amethyst_icons/Packs/asteroid_icons/random33"})
-map.set("Packs/Asteroid/random34", {"name":"Packs/Asteroid/random34","path":"textures/amethyst_icons/Packs/asteroid_icons/random34"})
-map.set("Packs/Asteroid/random35", {"name":"Packs/Asteroid/random35","path":"textures/amethyst_icons/Packs/asteroid_icons/random35"})
-map.set("Packs/Asteroid/random36", {"name":"Packs/Asteroid/random36","path":"textures/amethyst_icons/Packs/asteroid_icons/random36"})
-map.set("Packs/Asteroid/random37", {"name":"Packs/Asteroid/random37","path":"textures/amethyst_icons/Packs/asteroid_icons/random37"})
-map.set("Packs/Asteroid/random38", {"name":"Packs/Asteroid/random38","path":"textures/amethyst_icons/Packs/asteroid_icons/random38"})
-map.set("Packs/Asteroid/random39", {"name":"Packs/Asteroid/random39","path":"textures/amethyst_icons/Packs/asteroid_icons/random39"})
-map.set("Packs/Asteroid/random4", {"name":"Packs/Asteroid/random4","path":"textures/amethyst_icons/Packs/asteroid_icons/random4"})
-map.set("Packs/Asteroid/random40", {"name":"Packs/Asteroid/random40","path":"textures/amethyst_icons/Packs/asteroid_icons/random40"})
-map.set("Packs/Asteroid/random5", {"name":"Packs/Asteroid/random5","path":"textures/amethyst_icons/Packs/asteroid_icons/random5"})
-map.set("Packs/Asteroid/random6", {"name":"Packs/Asteroid/random6","path":"textures/amethyst_icons/Packs/asteroid_icons/random6"})
-map.set("Packs/Asteroid/random7", {"name":"Packs/Asteroid/random7","path":"textures/amethyst_icons/Packs/asteroid_icons/random7"})
-map.set("Packs/Asteroid/random8", {"name":"Packs/Asteroid/random8","path":"textures/amethyst_icons/Packs/asteroid_icons/random8"})
-map.set("Packs/Asteroid/random9", {"name":"Packs/Asteroid/random9","path":"textures/amethyst_icons/Packs/asteroid_icons/random9"})
-map.set("Packs/Asteroid/recipe_book_icon", {"name":"Packs/Asteroid/recipe_book_icon","path":"textures/amethyst_icons/Packs/asteroid_icons/recipe_book_icon"})
-map.set("Packs/Asteroid/redstone", {"name":"Packs/Asteroid/redstone","path":"textures/amethyst_icons/Packs/asteroid_icons/redstone"})
-map.set("Packs/Asteroid/redstone_lamp", {"name":"Packs/Asteroid/redstone_lamp","path":"textures/amethyst_icons/Packs/asteroid_icons/redstone_lamp"})
-map.set("Packs/Asteroid/ruby", {"name":"Packs/Asteroid/ruby","path":"textures/amethyst_icons/Packs/asteroid_icons/ruby"})
-map.set("Packs/Asteroid/servers", {"name":"Packs/Asteroid/servers","path":"textures/amethyst_icons/Packs/asteroid_icons/servers"})
-map.set("Packs/Asteroid/skeleton", {"name":"Packs/Asteroid/skeleton","path":"textures/amethyst_icons/Packs/asteroid_icons/skeleton"})
-map.set("Packs/Asteroid/skeleton_wolf", {"name":"Packs/Asteroid/skeleton_wolf","path":"textures/amethyst_icons/Packs/asteroid_icons/skeleton_wolf"})
-map.set("Packs/Asteroid/slash", {"name":"Packs/Asteroid/slash","path":"textures/amethyst_icons/Packs/asteroid_icons/slash"})
-map.set("Packs/Asteroid/slime_block", {"name":"Packs/Asteroid/slime_block","path":"textures/amethyst_icons/Packs/asteroid_icons/slime_block"})
-map.set("Packs/Asteroid/smithing_icon", {"name":"Packs/Asteroid/smithing_icon","path":"textures/amethyst_icons/Packs/asteroid_icons/smithing_icon"})
-map.set("Packs/Asteroid/spyglass_flat", {"name":"Packs/Asteroid/spyglass_flat","path":"textures/amethyst_icons/Packs/asteroid_icons/spyglass_flat"})
-map.set("Packs/Asteroid/stone_bricks", {"name":"Packs/Asteroid/stone_bricks","path":"textures/amethyst_icons/Packs/asteroid_icons/stone_bricks"})
-map.set("Packs/Asteroid/storageIconColor", {"name":"Packs/Asteroid/storageIconColor","path":"textures/amethyst_icons/Packs/asteroid_icons/storageIconColor"})
-map.set("Packs/Asteroid/stripped_acacia_log", {"name":"Packs/Asteroid/stripped_acacia_log","path":"textures/amethyst_icons/Packs/asteroid_icons/stripped_acacia_log"})
-map.set("Packs/Asteroid/stripped_birch_log", {"name":"Packs/Asteroid/stripped_birch_log","path":"textures/amethyst_icons/Packs/asteroid_icons/stripped_birch_log"})
-map.set("Packs/Asteroid/stripped_dark_oak_log", {"name":"Packs/Asteroid/stripped_dark_oak_log","path":"textures/amethyst_icons/Packs/asteroid_icons/stripped_dark_oak_log"})
-map.set("Packs/Asteroid/stripped_jungle_log", {"name":"Packs/Asteroid/stripped_jungle_log","path":"textures/amethyst_icons/Packs/asteroid_icons/stripped_jungle_log"})
-map.set("Packs/Asteroid/sweet_berries", {"name":"Packs/Asteroid/sweet_berries","path":"textures/amethyst_icons/Packs/asteroid_icons/sweet_berries"})
-map.set("Packs/Asteroid/timer", {"name":"Packs/Asteroid/timer","path":"textures/amethyst_icons/Packs/asteroid_icons/timer"})
-map.set("Packs/Asteroid/ui", {"name":"Packs/Asteroid/ui","path":"textures/amethyst_icons/Packs/asteroid_icons/ui"})
-map.set("Packs/Asteroid/ultra", {"name":"Packs/Asteroid/ultra","path":"textures/amethyst_icons/Packs/asteroid_icons/ultra"})
-map.set("Packs/Asteroid/vault", {"name":"Packs/Asteroid/vault","path":"textures/amethyst_icons/Packs/asteroid_icons/vault"})
-map.set("Packs/Asteroid/vender", {"name":"Packs/Asteroid/vender","path":"textures/amethyst_icons/Packs/asteroid_icons/vender"})
-map.set("Packs/Asteroid/win", {"name":"Packs/Asteroid/win","path":"textures/amethyst_icons/Packs/asteroid_icons/win"})
-map.set("Packs/Asteroid/winPING", {"name":"Packs/Asteroid/winPING","path":"textures/amethyst_icons/Packs/asteroid_icons/winPING"})
-map.set("furry", {"name":"furry","path":"textures/blocks/furry_block"})
-map.set("2.2/!", {"name":"2.2/!","path":"textures/amethyst_icons/Packs/2.2/!"})
-map.set("2.2/1", {"name":"2.2/1","path":"textures/amethyst_icons/Packs/2.2/1"})
-map.set("2.2/2", {"name":"2.2/2","path":"textures/amethyst_icons/Packs/2.2/2"})
-map.set("2.2/3", {"name":"2.2/3","path":"textures/amethyst_icons/Packs/2.2/3"})
-map.set("2.2/accept", {"name":"2.2/accept","path":"textures/amethyst_icons/Packs/2.2/accept"})
-map.set("2.2/administrator", {"name":"2.2/administrator","path":"textures/amethyst_icons/Packs/2.2/administrator"})
-map.set("2.2/agent", {"name":"2.2/agent","path":"textures/amethyst_icons/Packs/2.2/agent"})
-map.set("2.2/alex", {"name":"2.2/alex","path":"textures/amethyst_icons/Packs/2.2/alex"})
-map.set("2.2/alex_green", {"name":"2.2/alex_green","path":"textures/amethyst_icons/Packs/2.2/alex_green"})
-map.set("2.2/alex_red", {"name":"2.2/alex_red","path":"textures/amethyst_icons/Packs/2.2/alex_red"})
-map.set("2.2/alex_steve", {"name":"2.2/alex_steve","path":"textures/amethyst_icons/Packs/2.2/alex_steve"})
-map.set("2.2/alex_steve_gray", {"name":"2.2/alex_steve_gray","path":"textures/amethyst_icons/Packs/2.2/alex_steve_gray"})
-map.set("2.2/amethyst", {"name":"2.2/amethyst","path":"textures/amethyst_icons/Packs/2.2/amethyst"})
-map.set("2.2/apple", {"name":"2.2/apple","path":"textures/amethyst_icons/Packs/2.2/apple"})
-map.set("2.2/arrow", {"name":"2.2/arrow","path":"textures/amethyst_icons/Packs/2.2/arrow"})
-map.set("2.2/azalea2.2", {"name":"2.2/azalea2.2","path":"textures/amethyst_icons/Packs/2.2/azalea2.2"})
-map.set("2.2/banner_blue", {"name":"2.2/banner_blue","path":"textures/amethyst_icons/Packs/2.2/banner_blue"})
-map.set("2.2/banner_red", {"name":"2.2/banner_red","path":"textures/amethyst_icons/Packs/2.2/banner_red"})
-map.set("2.2/banner_red_blue", {"name":"2.2/banner_red_blue","path":"textures/amethyst_icons/Packs/2.2/banner_red_blue"})
-map.set("2.2/banner_rgb", {"name":"2.2/banner_rgb","path":"textures/amethyst_icons/Packs/2.2/banner_rgb"})
-map.set("2.2/banner_white", {"name":"2.2/banner_white","path":"textures/amethyst_icons/Packs/2.2/banner_white"})
-map.set("2.2/bed", {"name":"2.2/bed","path":"textures/amethyst_icons/Packs/2.2/bed"})
-map.set("2.2/bed_remove", {"name":"2.2/bed_remove","path":"textures/amethyst_icons/Packs/2.2/bed_remove"})
-map.set("2.2/berries", {"name":"2.2/berries","path":"textures/amethyst_icons/Packs/2.2/berries"})
-map.set("2.2/blockparty", {"name":"2.2/blockparty","path":"textures/amethyst_icons/Packs/2.2/blockparty"})
-map.set("2.2/blue_accept", {"name":"2.2/blue_accept","path":"textures/amethyst_icons/Packs/2.2/blue_accept"})
-map.set("2.2/blue_bed", {"name":"2.2/blue_bed","path":"textures/amethyst_icons/Packs/2.2/blue_bed"})
-map.set("2.2/blue_bed_remove", {"name":"2.2/blue_bed_remove","path":"textures/amethyst_icons/Packs/2.2/blue_bed_remove"})
-map.set("2.2/blue_dot", {"name":"2.2/blue_dot","path":"textures/amethyst_icons/Packs/2.2/blue_dot"})
-map.set("2.2/blue_dot2", {"name":"2.2/blue_dot2","path":"textures/amethyst_icons/Packs/2.2/blue_dot2"})
-map.set("2.2/blue_no", {"name":"2.2/blue_no","path":"textures/amethyst_icons/Packs/2.2/blue_no"})
-map.set("2.2/blue_square", {"name":"2.2/blue_square","path":"textures/amethyst_icons/Packs/2.2/blue_square"})
-map.set("2.2/blue_square2", {"name":"2.2/blue_square2","path":"textures/amethyst_icons/Packs/2.2/blue_square2"})
-map.set("2.2/book", {"name":"2.2/book","path":"textures/amethyst_icons/Packs/2.2/book"})
-map.set("2.2/boots_outline", {"name":"2.2/boots_outline","path":"textures/amethyst_icons/Packs/2.2/boots_outline"})
-map.set("2.2/bow_shoot", {"name":"2.2/bow_shoot","path":"textures/amethyst_icons/Packs/2.2/bow_shoot"})
-map.set("2.2/bw", {"name":"2.2/bw","path":"textures/amethyst_icons/Packs/2.2/bw"})
-map.set("2.2/cake", {"name":"2.2/cake","path":"textures/amethyst_icons/Packs/2.2/cake"})
-map.set("2.2/chat", {"name":"2.2/chat","path":"textures/amethyst_icons/Packs/2.2/chat"})
-map.set("2.2/chat_bubble", {"name":"2.2/chat_bubble","path":"textures/amethyst_icons/Packs/2.2/chat_bubble"})
-map.set("2.2/chestplate", {"name":"2.2/chestplate","path":"textures/amethyst_icons/Packs/2.2/chestplate"})
-map.set("2.2/chestplate_outline", {"name":"2.2/chestplate_outline","path":"textures/amethyst_icons/Packs/2.2/chestplate_outline"})
-map.set("2.2/chest_small", {"name":"2.2/chest_small","path":"textures/amethyst_icons/Packs/2.2/chest_small"})
-map.set("2.2/chicken", {"name":"2.2/chicken","path":"textures/amethyst_icons/Packs/2.2/chicken"})
-map.set("2.2/chicken_spider", {"name":"2.2/chicken_spider","path":"textures/amethyst_icons/Packs/2.2/chicken_spider"})
-map.set("2.2/clock", {"name":"2.2/clock","path":"textures/amethyst_icons/Packs/2.2/clock"})
-map.set("2.2/coal", {"name":"2.2/coal","path":"textures/amethyst_icons/Packs/2.2/coal"})
-map.set("2.2/coin", {"name":"2.2/coin","path":"textures/amethyst_icons/Packs/2.2/coin"})
-map.set("2.2/coins", {"name":"2.2/coins","path":"textures/amethyst_icons/Packs/2.2/coins"})
-map.set("2.2/compass", {"name":"2.2/compass","path":"textures/amethyst_icons/Packs/2.2/compass"})
-map.set("2.2/confetti", {"name":"2.2/confetti","path":"textures/amethyst_icons/Packs/2.2/confetti"})
-map.set("2.2/controller", {"name":"2.2/controller","path":"textures/amethyst_icons/Packs/2.2/controller"})
-map.set("2.2/cooked_chicken", {"name":"2.2/cooked_chicken","path":"textures/amethyst_icons/Packs/2.2/cooked_chicken"})
-map.set("2.2/copper", {"name":"2.2/copper","path":"textures/amethyst_icons/Packs/2.2/copper"})
-map.set("2.2/deathrun", {"name":"2.2/deathrun","path":"textures/amethyst_icons/Packs/2.2/deathrun"})
-map.set("2.2/diamond", {"name":"2.2/diamond","path":"textures/amethyst_icons/Packs/2.2/diamond"})
-map.set("2.2/diamond_dot", {"name":"2.2/diamond_dot","path":"textures/amethyst_icons/Packs/2.2/diamond_dot"})
-map.set("2.2/ding", {"name":"2.2/ding","path":"textures/amethyst_icons/Packs/2.2/ding"})
-map.set("2.2/document", {"name":"2.2/document","path":"textures/amethyst_icons/Packs/2.2/document"})
-map.set("2.2/dropper", {"name":"2.2/dropper","path":"textures/amethyst_icons/Packs/2.2/dropper"})
-map.set("2.2/earth", {"name":"2.2/earth","path":"textures/amethyst_icons/Packs/2.2/earth"})
-map.set("2.2/echo_shard", {"name":"2.2/echo_shard","path":"textures/amethyst_icons/Packs/2.2/echo_shard"})
-map.set("2.2/emerald", {"name":"2.2/emerald","path":"textures/amethyst_icons/Packs/2.2/emerald"})
-map.set("2.2/emerald2", {"name":"2.2/emerald2","path":"textures/amethyst_icons/Packs/2.2/emerald2"})
-map.set("2.2/emoij_cat", {"name":"2.2/emoij_cat","path":"textures/amethyst_icons/Packs/2.2/emoij_cat"})
-map.set("2.2/emoji_angry", {"name":"2.2/emoji_angry","path":"textures/amethyst_icons/Packs/2.2/emoji_angry"})
-map.set("2.2/emoji_clown", {"name":"2.2/emoji_clown","path":"textures/amethyst_icons/Packs/2.2/emoji_clown"})
-map.set("2.2/emoji_green_mystery_substance", {"name":"2.2/emoji_green_mystery_substance","path":"textures/amethyst_icons/Packs/2.2/emoji_green_mystery_substance"})
-map.set("2.2/emoji_laugh", {"name":"2.2/emoji_laugh","path":"textures/amethyst_icons/Packs/2.2/emoji_laugh"})
-map.set("2.2/emoji_no_smile", {"name":"2.2/emoji_no_smile","path":"textures/amethyst_icons/Packs/2.2/emoji_no_smile"})
-map.set("2.2/emoji_random", {"name":"2.2/emoji_random","path":"textures/amethyst_icons/Packs/2.2/emoji_random"})
-map.set("2.2/emoji_smile", {"name":"2.2/emoji_smile","path":"textures/amethyst_icons/Packs/2.2/emoji_smile"})
-map.set("2.2/emoji_thing2", {"name":"2.2/emoji_thing2","path":"textures/amethyst_icons/Packs/2.2/emoji_thing2"})
-map.set("2.2/feather", {"name":"2.2/feather","path":"textures/amethyst_icons/Packs/2.2/feather"})
-map.set("2.2/flagwars", {"name":"2.2/flagwars","path":"textures/amethyst_icons/Packs/2.2/flagwars"})
-map.set("2.2/gay_bed", {"name":"2.2/gay_bed","path":"textures/amethyst_icons/Packs/2.2/gay_bed"})
-map.set("2.2/golden_apple", {"name":"2.2/golden_apple","path":"textures/amethyst_icons/Packs/2.2/golden_apple"})
-map.set("2.2/gold_accept", {"name":"2.2/gold_accept","path":"textures/amethyst_icons/Packs/2.2/gold_accept"})
-map.set("2.2/gold_dot", {"name":"2.2/gold_dot","path":"textures/amethyst_icons/Packs/2.2/gold_dot"})
-map.set("2.2/gold_inot", {"name":"2.2/gold_inot","path":"textures/amethyst_icons/Packs/2.2/gold_inot"})
-map.set("2.2/gold_no", {"name":"2.2/gold_no","path":"textures/amethyst_icons/Packs/2.2/gold_no"})
-map.set("2.2/gold_square", {"name":"2.2/gold_square","path":"textures/amethyst_icons/Packs/2.2/gold_square"})
-map.set("2.2/gray_dot", {"name":"2.2/gray_dot","path":"textures/amethyst_icons/Packs/2.2/gray_dot"})
-map.set("2.2/green_bed", {"name":"2.2/green_bed","path":"textures/amethyst_icons/Packs/2.2/green_bed"})
-map.set("2.2/green_bed_remove", {"name":"2.2/green_bed_remove","path":"textures/amethyst_icons/Packs/2.2/green_bed_remove"})
-map.set("2.2/green_dot", {"name":"2.2/green_dot","path":"textures/amethyst_icons/Packs/2.2/green_dot"})
-map.set("2.2/green_dot2", {"name":"2.2/green_dot2","path":"textures/amethyst_icons/Packs/2.2/green_dot2"})
-map.set("2.2/green_flag", {"name":"2.2/green_flag","path":"textures/amethyst_icons/Packs/2.2/green_flag"})
-map.set("2.2/green_no", {"name":"2.2/green_no","path":"textures/amethyst_icons/Packs/2.2/green_no"})
-map.set("2.2/green_skull", {"name":"2.2/green_skull","path":"textures/amethyst_icons/Packs/2.2/green_skull"})
-map.set("2.2/green_square", {"name":"2.2/green_square","path":"textures/amethyst_icons/Packs/2.2/green_square"})
-map.set("2.2/green_square2", {"name":"2.2/green_square2","path":"textures/amethyst_icons/Packs/2.2/green_square2"})
-map.set("2.2/green_thing", {"name":"2.2/green_thing","path":"textures/amethyst_icons/Packs/2.2/green_thing"})
-map.set("2.2/green_up", {"name":"2.2/green_up","path":"textures/amethyst_icons/Packs/2.2/green_up"})
-map.set("2.2/guy", {"name":"2.2/guy","path":"textures/amethyst_icons/Packs/2.2/guy"})
-map.set("2.2/hand1", {"name":"2.2/hand1","path":"textures/amethyst_icons/Packs/2.2/hand1"})
-map.set("2.2/hand2", {"name":"2.2/hand2","path":"textures/amethyst_icons/Packs/2.2/hand2"})
-map.set("2.2/hand3", {"name":"2.2/hand3","path":"textures/amethyst_icons/Packs/2.2/hand3"})
-map.set("2.2/head_outline", {"name":"2.2/head_outline","path":"textures/amethyst_icons/Packs/2.2/head_outline"})
-map.set("2.2/heart", {"name":"2.2/heart","path":"textures/amethyst_icons/Packs/2.2/heart"})
-map.set("2.2/heart_empty", {"name":"2.2/heart_empty","path":"textures/amethyst_icons/Packs/2.2/heart_empty"})
-map.set("2.2/heart_empty_outline", {"name":"2.2/heart_empty_outline","path":"textures/amethyst_icons/Packs/2.2/heart_empty_outline"})
-map.set("2.2/heart_half", {"name":"2.2/heart_half","path":"textures/amethyst_icons/Packs/2.2/heart_half"})
-map.set("2.2/hg", {"name":"2.2/hg","path":"textures/amethyst_icons/Packs/2.2/hg"})
-map.set("2.2/hunger", {"name":"2.2/hunger","path":"textures/amethyst_icons/Packs/2.2/hunger"})
-map.set("2.2/iron_ingot", {"name":"2.2/iron_ingot","path":"textures/amethyst_icons/Packs/2.2/iron_ingot"})
-map.set("2.2/iron_no", {"name":"2.2/iron_no","path":"textures/amethyst_icons/Packs/2.2/iron_no"})
-map.set("2.2/javascript", {"name":"2.2/javascript","path":"textures/amethyst_icons/Packs/2.2/javascript"})
-map.set("2.2/jump_boost", {"name":"2.2/jump_boost","path":"textures/amethyst_icons/Packs/2.2/jump_boost"})
-map.set("2.2/lapis", {"name":"2.2/lapis","path":"textures/amethyst_icons/Packs/2.2/lapis"})
-map.set("2.2/lava_floor", {"name":"2.2/lava_floor","path":"textures/amethyst_icons/Packs/2.2/lava_floor"})
-map.set("2.2/left", {"name":"2.2/left","path":"textures/amethyst_icons/Packs/2.2/left"})
-map.set("2.2/leggings_outline", {"name":"2.2/leggings_outline","path":"textures/amethyst_icons/Packs/2.2/leggings_outline"})
-map.set("2.2/lock", {"name":"2.2/lock","path":"textures/amethyst_icons/Packs/2.2/lock"})
-map.set("2.2/magenta_accept", {"name":"2.2/magenta_accept","path":"textures/amethyst_icons/Packs/2.2/magenta_accept"})
-map.set("2.2/magenta_dot", {"name":"2.2/magenta_dot","path":"textures/amethyst_icons/Packs/2.2/magenta_dot"})
-map.set("2.2/magenta_no", {"name":"2.2/magenta_no","path":"textures/amethyst_icons/Packs/2.2/magenta_no"})
-map.set("2.2/magenta_square", {"name":"2.2/magenta_square","path":"textures/amethyst_icons/Packs/2.2/magenta_square"})
-map.set("2.2/magnifying_glass", {"name":"2.2/magnifying_glass","path":"textures/amethyst_icons/Packs/2.2/magnifying_glass"})
-map.set("2.2/map", {"name":"2.2/map","path":"textures/amethyst_icons/Packs/2.2/map"})
-map.set("2.2/minecoin", {"name":"2.2/minecoin","path":"textures/amethyst_icons/Packs/2.2/minecoin"})
-map.set("2.2/minefield", {"name":"2.2/minefield","path":"textures/amethyst_icons/Packs/2.2/minefield"})
-map.set("2.2/multicolor_square", {"name":"2.2/multicolor_square","path":"textures/amethyst_icons/Packs/2.2/multicolor_square"})
-map.set("2.2/namemc", {"name":"2.2/namemc","path":"textures/amethyst_icons/Packs/2.2/namemc"})
-map.set("2.2/night", {"name":"2.2/night","path":"textures/amethyst_icons/Packs/2.2/night"})
-map.set("2.2/no_blue", {"name":"2.2/no_blue","path":"textures/amethyst_icons/Packs/2.2/no_blue"})
-map.set("2.2/no_red", {"name":"2.2/no_red","path":"textures/amethyst_icons/Packs/2.2/no_red"})
-map.set("2.2/orange_dot", {"name":"2.2/orange_dot","path":"textures/amethyst_icons/Packs/2.2/orange_dot"})
-map.set("2.2/orange_square", {"name":"2.2/orange_square","path":"textures/amethyst_icons/Packs/2.2/orange_square"})
-map.set("2.2/paper", {"name":"2.2/paper","path":"textures/amethyst_icons/Packs/2.2/paper"})
-map.set("2.2/piss_bed", {"name":"2.2/piss_bed","path":"textures/amethyst_icons/Packs/2.2/piss_bed"})
-map.set("2.2/piss_bed_remove", {"name":"2.2/piss_bed_remove","path":"textures/amethyst_icons/Packs/2.2/piss_bed_remove"})
-map.set("2.2/piss_flag", {"name":"2.2/piss_flag","path":"textures/amethyst_icons/Packs/2.2/piss_flag"})
-map.set("2.2/poison", {"name":"2.2/poison","path":"textures/amethyst_icons/Packs/2.2/poison"})
-map.set("2.2/portal", {"name":"2.2/portal","path":"textures/amethyst_icons/Packs/2.2/portal"})
-map.set("2.2/portal2", {"name":"2.2/portal2","path":"textures/amethyst_icons/Packs/2.2/portal2"})
-map.set("2.2/prk", {"name":"2.2/prk","path":"textures/amethyst_icons/Packs/2.2/prk"})
-map.set("2.2/purple_dot", {"name":"2.2/purple_dot","path":"textures/amethyst_icons/Packs/2.2/purple_dot"})
-map.set("2.2/pvp", {"name":"2.2/pvp","path":"textures/amethyst_icons/Packs/2.2/pvp"})
-map.set("2.2/question", {"name":"2.2/question","path":"textures/amethyst_icons/Packs/2.2/question"})
-map.set("2.2/question_square", {"name":"2.2/question_square","path":"textures/amethyst_icons/Packs/2.2/question_square"})
-map.set("2.2/random", {"name":"2.2/random","path":"textures/amethyst_icons/Packs/2.2/random"})
-map.set("2.2/random2", {"name":"2.2/random2","path":"textures/amethyst_icons/Packs/2.2/random2"})
-map.set("2.2/random3", {"name":"2.2/random3","path":"textures/amethyst_icons/Packs/2.2/random3"})
-map.set("2.2/random4", {"name":"2.2/random4","path":"textures/amethyst_icons/Packs/2.2/random4"})
-map.set("2.2/reader", {"name":"2.2/reader","path":"textures/amethyst_icons/Packs/2.2/reader"})
-map.set("2.2/red_accept", {"name":"2.2/red_accept","path":"textures/amethyst_icons/Packs/2.2/red_accept"})
-map.set("2.2/red_dot", {"name":"2.2/red_dot","path":"textures/amethyst_icons/Packs/2.2/red_dot"})
-map.set("2.2/red_skull", {"name":"2.2/red_skull","path":"textures/amethyst_icons/Packs/2.2/red_skull"})
-map.set("2.2/red_square", {"name":"2.2/red_square","path":"textures/amethyst_icons/Packs/2.2/red_square"})
-map.set("2.2/reload", {"name":"2.2/reload","path":"textures/amethyst_icons/Packs/2.2/reload"})
-map.set("2.2/right", {"name":"2.2/right","path":"textures/amethyst_icons/Packs/2.2/right"})
-map.set("2.2/sand_block", {"name":"2.2/sand_block","path":"textures/amethyst_icons/Packs/2.2/sand_block"})
-map.set("2.2/settings", {"name":"2.2/settings","path":"textures/amethyst_icons/Packs/2.2/settings"})
-map.set("2.2/shears", {"name":"2.2/shears","path":"textures/amethyst_icons/Packs/2.2/shears"})
-map.set("2.2/shovels", {"name":"2.2/shovels","path":"textures/amethyst_icons/Packs/2.2/shovels"})
-map.set("2.2/shovel_iron", {"name":"2.2/shovel_iron","path":"textures/amethyst_icons/Packs/2.2/shovel_iron"})
-map.set("2.2/shulker", {"name":"2.2/shulker","path":"textures/amethyst_icons/Packs/2.2/shulker"})
-map.set("2.2/skull", {"name":"2.2/skull","path":"textures/amethyst_icons/Packs/2.2/skull"})
-map.set("2.2/small_axe_diamond", {"name":"2.2/small_axe_diamond","path":"textures/amethyst_icons/Packs/2.2/small_axe_diamond"})
-map.set("2.2/small_axe_gold", {"name":"2.2/small_axe_gold","path":"textures/amethyst_icons/Packs/2.2/small_axe_gold"})
-map.set("2.2/small_axe_iron", {"name":"2.2/small_axe_iron","path":"textures/amethyst_icons/Packs/2.2/small_axe_iron"})
-map.set("2.2/small_axe_netherite", {"name":"2.2/small_axe_netherite","path":"textures/amethyst_icons/Packs/2.2/small_axe_netherite"})
-map.set("2.2/small_axe_stone", {"name":"2.2/small_axe_stone","path":"textures/amethyst_icons/Packs/2.2/small_axe_stone"})
-map.set("2.2/small_axe_wood", {"name":"2.2/small_axe_wood","path":"textures/amethyst_icons/Packs/2.2/small_axe_wood"})
-map.set("2.2/small_diamond", {"name":"2.2/small_diamond","path":"textures/amethyst_icons/Packs/2.2/small_diamond"})
-map.set("2.2/small_iron_sword", {"name":"2.2/small_iron_sword","path":"textures/amethyst_icons/Packs/2.2/small_iron_sword"})
-map.set("2.2/small_pickaxe_diamond", {"name":"2.2/small_pickaxe_diamond","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_diamond"})
-map.set("2.2/small_pickaxe_gold", {"name":"2.2/small_pickaxe_gold","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_gold"})
-map.set("2.2/small_pickaxe_iron", {"name":"2.2/small_pickaxe_iron","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_iron"})
-map.set("2.2/small_pickaxe_netherite", {"name":"2.2/small_pickaxe_netherite","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_netherite"})
-map.set("2.2/small_pickaxe_stone", {"name":"2.2/small_pickaxe_stone","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_stone"})
-map.set("2.2/small_pickaxe_wood", {"name":"2.2/small_pickaxe_wood","path":"textures/amethyst_icons/Packs/2.2/small_pickaxe_wood"})
-map.set("2.2/small_sword_diamond", {"name":"2.2/small_sword_diamond","path":"textures/amethyst_icons/Packs/2.2/small_sword_diamond"})
-map.set("2.2/small_sword_gold", {"name":"2.2/small_sword_gold","path":"textures/amethyst_icons/Packs/2.2/small_sword_gold"})
-map.set("2.2/small_sword_netherite", {"name":"2.2/small_sword_netherite","path":"textures/amethyst_icons/Packs/2.2/small_sword_netherite"})
-map.set("2.2/small_sword_stone", {"name":"2.2/small_sword_stone","path":"textures/amethyst_icons/Packs/2.2/small_sword_stone"})
-map.set("2.2/small_sword_wood", {"name":"2.2/small_sword_wood","path":"textures/amethyst_icons/Packs/2.2/small_sword_wood"})
-map.set("2.2/snowball", {"name":"2.2/snowball","path":"textures/amethyst_icons/Packs/2.2/snowball"})
-map.set("2.2/speed", {"name":"2.2/speed","path":"textures/amethyst_icons/Packs/2.2/speed"})
-map.set("2.2/spleef", {"name":"2.2/spleef","path":"textures/amethyst_icons/Packs/2.2/spleef"})
-map.set("2.2/steak", {"name":"2.2/steak","path":"textures/amethyst_icons/Packs/2.2/steak"})
-map.set("2.2/steve", {"name":"2.2/steve","path":"textures/amethyst_icons/Packs/2.2/steve"})
-map.set("2.2/sword_axe", {"name":"2.2/sword_axe","path":"textures/amethyst_icons/Packs/2.2/sword_axe"})
-map.set("2.2/terminal", {"name":"2.2/terminal","path":"textures/amethyst_icons/Packs/2.2/terminal"})
-map.set("2.2/thing", {"name":"2.2/thing","path":"textures/amethyst_icons/Packs/2.2/thing"})
-map.set("2.2/thumbsdown", {"name":"2.2/thumbsdown","path":"textures/amethyst_icons/Packs/2.2/thumbsdown"})
-map.set("2.2/thumbsup", {"name":"2.2/thumbsup","path":"textures/amethyst_icons/Packs/2.2/thumbsup"})
-map.set("2.2/timer", {"name":"2.2/timer","path":"textures/amethyst_icons/Packs/2.2/timer"})
-map.set("2.2/tntrun", {"name":"2.2/tntrun","path":"textures/amethyst_icons/Packs/2.2/tntrun"})
-map.set("2.2/token", {"name":"2.2/token","path":"textures/amethyst_icons/Packs/2.2/token"})
-map.set("2.2/totem", {"name":"2.2/totem","path":"textures/amethyst_icons/Packs/2.2/totem"})
-map.set("2.2/unlock", {"name":"2.2/unlock","path":"textures/amethyst_icons/Packs/2.2/unlock"})
-map.set("2.2/visibility", {"name":"2.2/visibility","path":"textures/amethyst_icons/Packs/2.2/visibility"})
-map.set("2.2/watermelon", {"name":"2.2/watermelon","path":"textures/amethyst_icons/Packs/2.2/watermelon"})
-map.set("2.2/water_bucket", {"name":"2.2/water_bucket","path":"textures/amethyst_icons/Packs/2.2/water_bucket"})
-map.set("2.2/white_and_black_square", {"name":"2.2/white_and_black_square","path":"textures/amethyst_icons/Packs/2.2/white_and_black_square"})
-map.set("2.2/white_dot", {"name":"2.2/white_dot","path":"textures/amethyst_icons/Packs/2.2/white_dot"})
-map.set("2.2/white_square", {"name":"2.2/white_square","path":"textures/amethyst_icons/Packs/2.2/white_square"})
-map.set("2.2/x", {"name":"2.2/x","path":"textures/amethyst_icons/Packs/2.2/x"})
-map.set("2.2/xyz", {"name":"2.2/xyz","path":"textures/amethyst_icons/Packs/2.2/xyz"})
-let iconPack = new Map();
-iconPack.set("pack_name", "Azalea")
-iconPack.set("pack_namespace", "azalea")
-iconPack.set("pack_icon", "textures/items/iron_sword")
-iconPack.set("pack_data", map);
-export default iconPack;
+let map = new Map([
+    ["pack_name", "Azalea Icons"],
+    ["pack_icon", "textures/azalea_icons/other/object"],
+    ["pack_namespace", "azalea"],
+    [
+        "pack_data",
+        new Map([
+            [
+                "amethyst_shard",
+                "textures/azalea_icons/icontextures/amethyst_shard",
+            ],
+            ["anvil", "textures/azalea_icons/icontextures/anvil"],
+            ["anvil_2", "textures/azalea_icons/icontextures/anvil_2"],
+            ["apple", "textures/azalea_icons/icontextures/apple"],
+            ["armor_01a", "textures/azalea_icons/icontextures/armor_01a"],
+            ["armor_01b", "textures/azalea_icons/icontextures/armor_01b"],
+            ["armor_01c", "textures/azalea_icons/icontextures/armor_01c"],
+            ["armor_01d", "textures/azalea_icons/icontextures/armor_01d"],
+            ["armor_01e", "textures/azalea_icons/icontextures/armor_01e"],
+            ["armor_stand", "textures/azalea_icons/icontextures/armor_stand"],
+            ["arm_guard", "textures/azalea_icons/icontextures/arm_guard"],
+            ["arm_guard_2", "textures/azalea_icons/icontextures/arm_guard_2"],
+            ["arrow", "textures/azalea_icons/icontextures/arrow"],
+            ["arrow_01a", "textures/azalea_icons/icontextures/arrow_01a"],
+            ["arrow_01b", "textures/azalea_icons/icontextures/arrow_01b"],
+            ["arrow_01c", "textures/azalea_icons/icontextures/arrow_01c"],
+            ["arrow_01d", "textures/azalea_icons/icontextures/arrow_01d"],
+            ["arrow_01e", "textures/azalea_icons/icontextures/arrow_01e"],
+            ["arrow_02a", "textures/azalea_icons/icontextures/arrow_02a"],
+            ["arrow_02b", "textures/azalea_icons/icontextures/arrow_02b"],
+            ["arrow_02c", "textures/azalea_icons/icontextures/arrow_02c"],
+            ["arrow_02d", "textures/azalea_icons/icontextures/arrow_02d"],
+            ["arrow_02e", "textures/azalea_icons/icontextures/arrow_02e"],
+            ["arrow_03a", "textures/azalea_icons/icontextures/arrow_03a"],
+            ["arrow_03b", "textures/azalea_icons/icontextures/arrow_03b"],
+            ["arrow_03c", "textures/azalea_icons/icontextures/arrow_03c"],
+            ["arrow_03d", "textures/azalea_icons/icontextures/arrow_03d"],
+            ["arrow_03e", "textures/azalea_icons/icontextures/arrow_03e"],
+            ["arrow_2", "textures/azalea_icons/icontextures/arrow_2"],
+            [
+                "axolotl_bucket",
+                "textures/azalea_icons/icontextures/axolotl_bucket",
+            ],
+            ["baked_potato", "textures/azalea_icons/icontextures/baked_potato"],
+            ["bamboo", "textures/azalea_icons/icontextures/bamboo"],
+            ["beef", "textures/azalea_icons/icontextures/beef"],
+            ["beetroot", "textures/azalea_icons/icontextures/beetroot"],
+            ["blaze_powder", "textures/azalea_icons/icontextures/blaze_powder"],
+            ["blaze_rod", "textures/azalea_icons/icontextures/blaze_rod"],
+            [
+                "block_row_10_column_1",
+                "textures/azalea_icons/icontextures/block_row_10_column_1",
+            ],
+            [
+                "block_row_10_column_10",
+                "textures/azalea_icons/icontextures/block_row_10_column_10",
+            ],
+            [
+                "block_row_10_column_11",
+                "textures/azalea_icons/icontextures/block_row_10_column_11",
+            ],
+            [
+                "block_row_10_column_12",
+                "textures/azalea_icons/icontextures/block_row_10_column_12",
+            ],
+            [
+                "block_row_10_column_13",
+                "textures/azalea_icons/icontextures/block_row_10_column_13",
+            ],
+            [
+                "block_row_10_column_14",
+                "textures/azalea_icons/icontextures/block_row_10_column_14",
+            ],
+            [
+                "block_row_10_column_15",
+                "textures/azalea_icons/icontextures/block_row_10_column_15",
+            ],
+            [
+                "block_row_10_column_16",
+                "textures/azalea_icons/icontextures/block_row_10_column_16",
+            ],
+            [
+                "block_row_10_column_17",
+                "textures/azalea_icons/icontextures/block_row_10_column_17",
+            ],
+            [
+                "block_row_10_column_18",
+                "textures/azalea_icons/icontextures/block_row_10_column_18",
+            ],
+            [
+                "block_row_10_column_2",
+                "textures/azalea_icons/icontextures/block_row_10_column_2",
+            ],
+            [
+                "block_row_10_column_3",
+                "textures/azalea_icons/icontextures/block_row_10_column_3",
+            ],
+            [
+                "block_row_10_column_4",
+                "textures/azalea_icons/icontextures/block_row_10_column_4",
+            ],
+            [
+                "block_row_10_column_5",
+                "textures/azalea_icons/icontextures/block_row_10_column_5",
+            ],
+            [
+                "block_row_10_column_6",
+                "textures/azalea_icons/icontextures/block_row_10_column_6",
+            ],
+            [
+                "block_row_10_column_7",
+                "textures/azalea_icons/icontextures/block_row_10_column_7",
+            ],
+            [
+                "block_row_10_column_8",
+                "textures/azalea_icons/icontextures/block_row_10_column_8",
+            ],
+            [
+                "block_row_10_column_9",
+                "textures/azalea_icons/icontextures/block_row_10_column_9",
+            ],
+            [
+                "block_row_11_column_1",
+                "textures/azalea_icons/icontextures/block_row_11_column_1",
+            ],
+            [
+                "block_row_11_column_10",
+                "textures/azalea_icons/icontextures/block_row_11_column_10",
+            ],
+            [
+                "block_row_11_column_11",
+                "textures/azalea_icons/icontextures/block_row_11_column_11",
+            ],
+            [
+                "block_row_11_column_12",
+                "textures/azalea_icons/icontextures/block_row_11_column_12",
+            ],
+            [
+                "block_row_11_column_13",
+                "textures/azalea_icons/icontextures/block_row_11_column_13",
+            ],
+            [
+                "block_row_11_column_14",
+                "textures/azalea_icons/icontextures/block_row_11_column_14",
+            ],
+            [
+                "block_row_11_column_15",
+                "textures/azalea_icons/icontextures/block_row_11_column_15",
+            ],
+            [
+                "block_row_11_column_16",
+                "textures/azalea_icons/icontextures/block_row_11_column_16",
+            ],
+            [
+                "block_row_11_column_17",
+                "textures/azalea_icons/icontextures/block_row_11_column_17",
+            ],
+            [
+                "block_row_11_column_18",
+                "textures/azalea_icons/icontextures/block_row_11_column_18",
+            ],
+            [
+                "block_row_11_column_2",
+                "textures/azalea_icons/icontextures/block_row_11_column_2",
+            ],
+            [
+                "block_row_11_column_3",
+                "textures/azalea_icons/icontextures/block_row_11_column_3",
+            ],
+            [
+                "block_row_11_column_4",
+                "textures/azalea_icons/icontextures/block_row_11_column_4",
+            ],
+            [
+                "block_row_11_column_5",
+                "textures/azalea_icons/icontextures/block_row_11_column_5",
+            ],
+            [
+                "block_row_11_column_6",
+                "textures/azalea_icons/icontextures/block_row_11_column_6",
+            ],
+            [
+                "block_row_11_column_7",
+                "textures/azalea_icons/icontextures/block_row_11_column_7",
+            ],
+            [
+                "block_row_11_column_8",
+                "textures/azalea_icons/icontextures/block_row_11_column_8",
+            ],
+            [
+                "block_row_11_column_9",
+                "textures/azalea_icons/icontextures/block_row_11_column_9",
+            ],
+            [
+                "block_row_12_column_1",
+                "textures/azalea_icons/icontextures/block_row_12_column_1",
+            ],
+            [
+                "block_row_12_column_10",
+                "textures/azalea_icons/icontextures/block_row_12_column_10",
+            ],
+            [
+                "block_row_12_column_11",
+                "textures/azalea_icons/icontextures/block_row_12_column_11",
+            ],
+            [
+                "block_row_12_column_12",
+                "textures/azalea_icons/icontextures/block_row_12_column_12",
+            ],
+            [
+                "block_row_12_column_13",
+                "textures/azalea_icons/icontextures/block_row_12_column_13",
+            ],
+            [
+                "block_row_12_column_14",
+                "textures/azalea_icons/icontextures/block_row_12_column_14",
+            ],
+            [
+                "block_row_12_column_15",
+                "textures/azalea_icons/icontextures/block_row_12_column_15",
+            ],
+            [
+                "block_row_12_column_16",
+                "textures/azalea_icons/icontextures/block_row_12_column_16",
+            ],
+            [
+                "block_row_12_column_17",
+                "textures/azalea_icons/icontextures/block_row_12_column_17",
+            ],
+            [
+                "block_row_12_column_18",
+                "textures/azalea_icons/icontextures/block_row_12_column_18",
+            ],
+            [
+                "block_row_12_column_2",
+                "textures/azalea_icons/icontextures/block_row_12_column_2",
+            ],
+            [
+                "block_row_12_column_3",
+                "textures/azalea_icons/icontextures/block_row_12_column_3",
+            ],
+            [
+                "block_row_12_column_4",
+                "textures/azalea_icons/icontextures/block_row_12_column_4",
+            ],
+            [
+                "block_row_12_column_5",
+                "textures/azalea_icons/icontextures/block_row_12_column_5",
+            ],
+            [
+                "block_row_12_column_6",
+                "textures/azalea_icons/icontextures/block_row_12_column_6",
+            ],
+            [
+                "block_row_12_column_7",
+                "textures/azalea_icons/icontextures/block_row_12_column_7",
+            ],
+            [
+                "block_row_12_column_8",
+                "textures/azalea_icons/icontextures/block_row_12_column_8",
+            ],
+            [
+                "block_row_12_column_9",
+                "textures/azalea_icons/icontextures/block_row_12_column_9",
+            ],
+            [
+                "block_row_13_column_1",
+                "textures/azalea_icons/icontextures/block_row_13_column_1",
+            ],
+            [
+                "block_row_13_column_10",
+                "textures/azalea_icons/icontextures/block_row_13_column_10",
+            ],
+            [
+                "block_row_13_column_11",
+                "textures/azalea_icons/icontextures/block_row_13_column_11",
+            ],
+            [
+                "block_row_13_column_12",
+                "textures/azalea_icons/icontextures/block_row_13_column_12",
+            ],
+            [
+                "block_row_13_column_13",
+                "textures/azalea_icons/icontextures/block_row_13_column_13",
+            ],
+            [
+                "block_row_13_column_14",
+                "textures/azalea_icons/icontextures/block_row_13_column_14",
+            ],
+            [
+                "block_row_13_column_15",
+                "textures/azalea_icons/icontextures/block_row_13_column_15",
+            ],
+            [
+                "block_row_13_column_16",
+                "textures/azalea_icons/icontextures/block_row_13_column_16",
+            ],
+            [
+                "block_row_13_column_17",
+                "textures/azalea_icons/icontextures/block_row_13_column_17",
+            ],
+            [
+                "block_row_13_column_18",
+                "textures/azalea_icons/icontextures/block_row_13_column_18",
+            ],
+            [
+                "block_row_13_column_2",
+                "textures/azalea_icons/icontextures/block_row_13_column_2",
+            ],
+            [
+                "block_row_13_column_3",
+                "textures/azalea_icons/icontextures/block_row_13_column_3",
+            ],
+            [
+                "block_row_13_column_4",
+                "textures/azalea_icons/icontextures/block_row_13_column_4",
+            ],
+            [
+                "block_row_13_column_5",
+                "textures/azalea_icons/icontextures/block_row_13_column_5",
+            ],
+            [
+                "block_row_13_column_6",
+                "textures/azalea_icons/icontextures/block_row_13_column_6",
+            ],
+            [
+                "block_row_13_column_7",
+                "textures/azalea_icons/icontextures/block_row_13_column_7",
+            ],
+            [
+                "block_row_13_column_8",
+                "textures/azalea_icons/icontextures/block_row_13_column_8",
+            ],
+            [
+                "block_row_13_column_9",
+                "textures/azalea_icons/icontextures/block_row_13_column_9",
+            ],
+            [
+                "block_row_14_column_1",
+                "textures/azalea_icons/icontextures/block_row_14_column_1",
+            ],
+            [
+                "block_row_14_column_10",
+                "textures/azalea_icons/icontextures/block_row_14_column_10",
+            ],
+            [
+                "block_row_14_column_11",
+                "textures/azalea_icons/icontextures/block_row_14_column_11",
+            ],
+            [
+                "block_row_14_column_12",
+                "textures/azalea_icons/icontextures/block_row_14_column_12",
+            ],
+            [
+                "block_row_14_column_13",
+                "textures/azalea_icons/icontextures/block_row_14_column_13",
+            ],
+            [
+                "block_row_14_column_14",
+                "textures/azalea_icons/icontextures/block_row_14_column_14",
+            ],
+            [
+                "block_row_14_column_15",
+                "textures/azalea_icons/icontextures/block_row_14_column_15",
+            ],
+            [
+                "block_row_14_column_16",
+                "textures/azalea_icons/icontextures/block_row_14_column_16",
+            ],
+            [
+                "block_row_14_column_17",
+                "textures/azalea_icons/icontextures/block_row_14_column_17",
+            ],
+            [
+                "block_row_14_column_18",
+                "textures/azalea_icons/icontextures/block_row_14_column_18",
+            ],
+            [
+                "block_row_14_column_2",
+                "textures/azalea_icons/icontextures/block_row_14_column_2",
+            ],
+            [
+                "block_row_14_column_3",
+                "textures/azalea_icons/icontextures/block_row_14_column_3",
+            ],
+            [
+                "block_row_14_column_4",
+                "textures/azalea_icons/icontextures/block_row_14_column_4",
+            ],
+            [
+                "block_row_14_column_5",
+                "textures/azalea_icons/icontextures/block_row_14_column_5",
+            ],
+            [
+                "block_row_14_column_6",
+                "textures/azalea_icons/icontextures/block_row_14_column_6",
+            ],
+            [
+                "block_row_14_column_7",
+                "textures/azalea_icons/icontextures/block_row_14_column_7",
+            ],
+            [
+                "block_row_14_column_8",
+                "textures/azalea_icons/icontextures/block_row_14_column_8",
+            ],
+            [
+                "block_row_14_column_9",
+                "textures/azalea_icons/icontextures/block_row_14_column_9",
+            ],
+            [
+                "block_row_15_column_1",
+                "textures/azalea_icons/icontextures/block_row_15_column_1",
+            ],
+            [
+                "block_row_15_column_10",
+                "textures/azalea_icons/icontextures/block_row_15_column_10",
+            ],
+            [
+                "block_row_15_column_11",
+                "textures/azalea_icons/icontextures/block_row_15_column_11",
+            ],
+            [
+                "block_row_15_column_12",
+                "textures/azalea_icons/icontextures/block_row_15_column_12",
+            ],
+            [
+                "block_row_15_column_13",
+                "textures/azalea_icons/icontextures/block_row_15_column_13",
+            ],
+            [
+                "block_row_15_column_14",
+                "textures/azalea_icons/icontextures/block_row_15_column_14",
+            ],
+            [
+                "block_row_15_column_15",
+                "textures/azalea_icons/icontextures/block_row_15_column_15",
+            ],
+            [
+                "block_row_15_column_16",
+                "textures/azalea_icons/icontextures/block_row_15_column_16",
+            ],
+            [
+                "block_row_15_column_17",
+                "textures/azalea_icons/icontextures/block_row_15_column_17",
+            ],
+            [
+                "block_row_15_column_18",
+                "textures/azalea_icons/icontextures/block_row_15_column_18",
+            ],
+            [
+                "block_row_15_column_2",
+                "textures/azalea_icons/icontextures/block_row_15_column_2",
+            ],
+            [
+                "block_row_15_column_3",
+                "textures/azalea_icons/icontextures/block_row_15_column_3",
+            ],
+            [
+                "block_row_15_column_4",
+                "textures/azalea_icons/icontextures/block_row_15_column_4",
+            ],
+            [
+                "block_row_15_column_5",
+                "textures/azalea_icons/icontextures/block_row_15_column_5",
+            ],
+            [
+                "block_row_15_column_6",
+                "textures/azalea_icons/icontextures/block_row_15_column_6",
+            ],
+            [
+                "block_row_15_column_7",
+                "textures/azalea_icons/icontextures/block_row_15_column_7",
+            ],
+            [
+                "block_row_15_column_8",
+                "textures/azalea_icons/icontextures/block_row_15_column_8",
+            ],
+            [
+                "block_row_15_column_9",
+                "textures/azalea_icons/icontextures/block_row_15_column_9",
+            ],
+            [
+                "block_row_16_column_1",
+                "textures/azalea_icons/icontextures/block_row_16_column_1",
+            ],
+            [
+                "block_row_16_column_10",
+                "textures/azalea_icons/icontextures/block_row_16_column_10",
+            ],
+            [
+                "block_row_16_column_11",
+                "textures/azalea_icons/icontextures/block_row_16_column_11",
+            ],
+            [
+                "block_row_16_column_12",
+                "textures/azalea_icons/icontextures/block_row_16_column_12",
+            ],
+            [
+                "block_row_16_column_13",
+                "textures/azalea_icons/icontextures/block_row_16_column_13",
+            ],
+            [
+                "block_row_16_column_14",
+                "textures/azalea_icons/icontextures/block_row_16_column_14",
+            ],
+            [
+                "block_row_16_column_15",
+                "textures/azalea_icons/icontextures/block_row_16_column_15",
+            ],
+            [
+                "block_row_16_column_16",
+                "textures/azalea_icons/icontextures/block_row_16_column_16",
+            ],
+            [
+                "block_row_16_column_17",
+                "textures/azalea_icons/icontextures/block_row_16_column_17",
+            ],
+            [
+                "block_row_16_column_18",
+                "textures/azalea_icons/icontextures/block_row_16_column_18",
+            ],
+            [
+                "block_row_16_column_2",
+                "textures/azalea_icons/icontextures/block_row_16_column_2",
+            ],
+            [
+                "block_row_16_column_3",
+                "textures/azalea_icons/icontextures/block_row_16_column_3",
+            ],
+            [
+                "block_row_16_column_4",
+                "textures/azalea_icons/icontextures/block_row_16_column_4",
+            ],
+            [
+                "block_row_16_column_5",
+                "textures/azalea_icons/icontextures/block_row_16_column_5",
+            ],
+            [
+                "block_row_16_column_6",
+                "textures/azalea_icons/icontextures/block_row_16_column_6",
+            ],
+            [
+                "block_row_16_column_7",
+                "textures/azalea_icons/icontextures/block_row_16_column_7",
+            ],
+            [
+                "block_row_16_column_8",
+                "textures/azalea_icons/icontextures/block_row_16_column_8",
+            ],
+            [
+                "block_row_16_column_9",
+                "textures/azalea_icons/icontextures/block_row_16_column_9",
+            ],
+            [
+                "block_row_17_column_1",
+                "textures/azalea_icons/icontextures/block_row_17_column_1",
+            ],
+            [
+                "block_row_17_column_10",
+                "textures/azalea_icons/icontextures/block_row_17_column_10",
+            ],
+            [
+                "block_row_17_column_11",
+                "textures/azalea_icons/icontextures/block_row_17_column_11",
+            ],
+            [
+                "block_row_17_column_12",
+                "textures/azalea_icons/icontextures/block_row_17_column_12",
+            ],
+            [
+                "block_row_17_column_13",
+                "textures/azalea_icons/icontextures/block_row_17_column_13",
+            ],
+            [
+                "block_row_17_column_14",
+                "textures/azalea_icons/icontextures/block_row_17_column_14",
+            ],
+            [
+                "block_row_17_column_15",
+                "textures/azalea_icons/icontextures/block_row_17_column_15",
+            ],
+            [
+                "block_row_17_column_16",
+                "textures/azalea_icons/icontextures/block_row_17_column_16",
+            ],
+            [
+                "block_row_17_column_17",
+                "textures/azalea_icons/icontextures/block_row_17_column_17",
+            ],
+            [
+                "block_row_17_column_18",
+                "textures/azalea_icons/icontextures/block_row_17_column_18",
+            ],
+            [
+                "block_row_17_column_2",
+                "textures/azalea_icons/icontextures/block_row_17_column_2",
+            ],
+            [
+                "block_row_17_column_3",
+                "textures/azalea_icons/icontextures/block_row_17_column_3",
+            ],
+            [
+                "block_row_17_column_4",
+                "textures/azalea_icons/icontextures/block_row_17_column_4",
+            ],
+            [
+                "block_row_17_column_5",
+                "textures/azalea_icons/icontextures/block_row_17_column_5",
+            ],
+            [
+                "block_row_17_column_6",
+                "textures/azalea_icons/icontextures/block_row_17_column_6",
+            ],
+            [
+                "block_row_17_column_7",
+                "textures/azalea_icons/icontextures/block_row_17_column_7",
+            ],
+            [
+                "block_row_17_column_8",
+                "textures/azalea_icons/icontextures/block_row_17_column_8",
+            ],
+            [
+                "block_row_17_column_9",
+                "textures/azalea_icons/icontextures/block_row_17_column_9",
+            ],
+            [
+                "block_row_18_column_1",
+                "textures/azalea_icons/icontextures/block_row_18_column_1",
+            ],
+            [
+                "block_row_18_column_10",
+                "textures/azalea_icons/icontextures/block_row_18_column_10",
+            ],
+            [
+                "block_row_18_column_11",
+                "textures/azalea_icons/icontextures/block_row_18_column_11",
+            ],
+            [
+                "block_row_18_column_12",
+                "textures/azalea_icons/icontextures/block_row_18_column_12",
+            ],
+            [
+                "block_row_18_column_13",
+                "textures/azalea_icons/icontextures/block_row_18_column_13",
+            ],
+            [
+                "block_row_18_column_14",
+                "textures/azalea_icons/icontextures/block_row_18_column_14",
+            ],
+            [
+                "block_row_18_column_15",
+                "textures/azalea_icons/icontextures/block_row_18_column_15",
+            ],
+            [
+                "block_row_18_column_16",
+                "textures/azalea_icons/icontextures/block_row_18_column_16",
+            ],
+            [
+                "block_row_18_column_17",
+                "textures/azalea_icons/icontextures/block_row_18_column_17",
+            ],
+            [
+                "block_row_18_column_18",
+                "textures/azalea_icons/icontextures/block_row_18_column_18",
+            ],
+            [
+                "block_row_18_column_2",
+                "textures/azalea_icons/icontextures/block_row_18_column_2",
+            ],
+            [
+                "block_row_18_column_3",
+                "textures/azalea_icons/icontextures/block_row_18_column_3",
+            ],
+            [
+                "block_row_18_column_4",
+                "textures/azalea_icons/icontextures/block_row_18_column_4",
+            ],
+            [
+                "block_row_18_column_5",
+                "textures/azalea_icons/icontextures/block_row_18_column_5",
+            ],
+            [
+                "block_row_18_column_6",
+                "textures/azalea_icons/icontextures/block_row_18_column_6",
+            ],
+            [
+                "block_row_18_column_7",
+                "textures/azalea_icons/icontextures/block_row_18_column_7",
+            ],
+            [
+                "block_row_18_column_8",
+                "textures/azalea_icons/icontextures/block_row_18_column_8",
+            ],
+            [
+                "block_row_18_column_9",
+                "textures/azalea_icons/icontextures/block_row_18_column_9",
+            ],
+            [
+                "block_row_19_column_1",
+                "textures/azalea_icons/icontextures/block_row_19_column_1",
+            ],
+            [
+                "block_row_19_column_10",
+                "textures/azalea_icons/icontextures/block_row_19_column_10",
+            ],
+            [
+                "block_row_19_column_11",
+                "textures/azalea_icons/icontextures/block_row_19_column_11",
+            ],
+            [
+                "block_row_19_column_12",
+                "textures/azalea_icons/icontextures/block_row_19_column_12",
+            ],
+            [
+                "block_row_19_column_13",
+                "textures/azalea_icons/icontextures/block_row_19_column_13",
+            ],
+            [
+                "block_row_19_column_14",
+                "textures/azalea_icons/icontextures/block_row_19_column_14",
+            ],
+            [
+                "block_row_19_column_15",
+                "textures/azalea_icons/icontextures/block_row_19_column_15",
+            ],
+            [
+                "block_row_19_column_16",
+                "textures/azalea_icons/icontextures/block_row_19_column_16",
+            ],
+            [
+                "block_row_19_column_17",
+                "textures/azalea_icons/icontextures/block_row_19_column_17",
+            ],
+            [
+                "block_row_19_column_18",
+                "textures/azalea_icons/icontextures/block_row_19_column_18",
+            ],
+            [
+                "block_row_19_column_2",
+                "textures/azalea_icons/icontextures/block_row_19_column_2",
+            ],
+            [
+                "block_row_19_column_3",
+                "textures/azalea_icons/icontextures/block_row_19_column_3",
+            ],
+            [
+                "block_row_19_column_4",
+                "textures/azalea_icons/icontextures/block_row_19_column_4",
+            ],
+            [
+                "block_row_19_column_5",
+                "textures/azalea_icons/icontextures/block_row_19_column_5",
+            ],
+            [
+                "block_row_19_column_6",
+                "textures/azalea_icons/icontextures/block_row_19_column_6",
+            ],
+            [
+                "block_row_19_column_7",
+                "textures/azalea_icons/icontextures/block_row_19_column_7",
+            ],
+            [
+                "block_row_19_column_8",
+                "textures/azalea_icons/icontextures/block_row_19_column_8",
+            ],
+            [
+                "block_row_19_column_9",
+                "textures/azalea_icons/icontextures/block_row_19_column_9",
+            ],
+            [
+                "block_row_1_column_1",
+                "textures/azalea_icons/icontextures/block_row_1_column_1",
+            ],
+            [
+                "block_row_1_column_10",
+                "textures/azalea_icons/icontextures/block_row_1_column_10",
+            ],
+            [
+                "block_row_1_column_11",
+                "textures/azalea_icons/icontextures/block_row_1_column_11",
+            ],
+            [
+                "block_row_1_column_12",
+                "textures/azalea_icons/icontextures/block_row_1_column_12",
+            ],
+            [
+                "block_row_1_column_13",
+                "textures/azalea_icons/icontextures/block_row_1_column_13",
+            ],
+            [
+                "block_row_1_column_14",
+                "textures/azalea_icons/icontextures/block_row_1_column_14",
+            ],
+            [
+                "block_row_1_column_15",
+                "textures/azalea_icons/icontextures/block_row_1_column_15",
+            ],
+            [
+                "block_row_1_column_16",
+                "textures/azalea_icons/icontextures/block_row_1_column_16",
+            ],
+            [
+                "block_row_1_column_17",
+                "textures/azalea_icons/icontextures/block_row_1_column_17",
+            ],
+            [
+                "block_row_1_column_18",
+                "textures/azalea_icons/icontextures/block_row_1_column_18",
+            ],
+            [
+                "block_row_1_column_2",
+                "textures/azalea_icons/icontextures/block_row_1_column_2",
+            ],
+            [
+                "block_row_1_column_3",
+                "textures/azalea_icons/icontextures/block_row_1_column_3",
+            ],
+            [
+                "block_row_1_column_4",
+                "textures/azalea_icons/icontextures/block_row_1_column_4",
+            ],
+            [
+                "block_row_1_column_5",
+                "textures/azalea_icons/icontextures/block_row_1_column_5",
+            ],
+            [
+                "block_row_1_column_6",
+                "textures/azalea_icons/icontextures/block_row_1_column_6",
+            ],
+            [
+                "block_row_1_column_7",
+                "textures/azalea_icons/icontextures/block_row_1_column_7",
+            ],
+            [
+                "block_row_1_column_8",
+                "textures/azalea_icons/icontextures/block_row_1_column_8",
+            ],
+            [
+                "block_row_1_column_9",
+                "textures/azalea_icons/icontextures/block_row_1_column_9",
+            ],
+            [
+                "block_row_20_column_1",
+                "textures/azalea_icons/icontextures/block_row_20_column_1",
+            ],
+            [
+                "block_row_20_column_10",
+                "textures/azalea_icons/icontextures/block_row_20_column_10",
+            ],
+            [
+                "block_row_20_column_11",
+                "textures/azalea_icons/icontextures/block_row_20_column_11",
+            ],
+            [
+                "block_row_20_column_12",
+                "textures/azalea_icons/icontextures/block_row_20_column_12",
+            ],
+            [
+                "block_row_20_column_13",
+                "textures/azalea_icons/icontextures/block_row_20_column_13",
+            ],
+            [
+                "block_row_20_column_14",
+                "textures/azalea_icons/icontextures/block_row_20_column_14",
+            ],
+            [
+                "block_row_20_column_15",
+                "textures/azalea_icons/icontextures/block_row_20_column_15",
+            ],
+            [
+                "block_row_20_column_16",
+                "textures/azalea_icons/icontextures/block_row_20_column_16",
+            ],
+            [
+                "block_row_20_column_17",
+                "textures/azalea_icons/icontextures/block_row_20_column_17",
+            ],
+            [
+                "block_row_20_column_18",
+                "textures/azalea_icons/icontextures/block_row_20_column_18",
+            ],
+            [
+                "block_row_20_column_2",
+                "textures/azalea_icons/icontextures/block_row_20_column_2",
+            ],
+            [
+                "block_row_20_column_3",
+                "textures/azalea_icons/icontextures/block_row_20_column_3",
+            ],
+            [
+                "block_row_20_column_4",
+                "textures/azalea_icons/icontextures/block_row_20_column_4",
+            ],
+            [
+                "block_row_20_column_5",
+                "textures/azalea_icons/icontextures/block_row_20_column_5",
+            ],
+            [
+                "block_row_20_column_6",
+                "textures/azalea_icons/icontextures/block_row_20_column_6",
+            ],
+            [
+                "block_row_20_column_7",
+                "textures/azalea_icons/icontextures/block_row_20_column_7",
+            ],
+            [
+                "block_row_20_column_8",
+                "textures/azalea_icons/icontextures/block_row_20_column_8",
+            ],
+            [
+                "block_row_20_column_9",
+                "textures/azalea_icons/icontextures/block_row_20_column_9",
+            ],
+            [
+                "block_row_21_column_1",
+                "textures/azalea_icons/icontextures/block_row_21_column_1",
+            ],
+            [
+                "block_row_21_column_10",
+                "textures/azalea_icons/icontextures/block_row_21_column_10",
+            ],
+            [
+                "block_row_21_column_11",
+                "textures/azalea_icons/icontextures/block_row_21_column_11",
+            ],
+            [
+                "block_row_21_column_12",
+                "textures/azalea_icons/icontextures/block_row_21_column_12",
+            ],
+            [
+                "block_row_21_column_13",
+                "textures/azalea_icons/icontextures/block_row_21_column_13",
+            ],
+            [
+                "block_row_21_column_14",
+                "textures/azalea_icons/icontextures/block_row_21_column_14",
+            ],
+            [
+                "block_row_21_column_15",
+                "textures/azalea_icons/icontextures/block_row_21_column_15",
+            ],
+            [
+                "block_row_21_column_16",
+                "textures/azalea_icons/icontextures/block_row_21_column_16",
+            ],
+            [
+                "block_row_21_column_17",
+                "textures/azalea_icons/icontextures/block_row_21_column_17",
+            ],
+            [
+                "block_row_21_column_18",
+                "textures/azalea_icons/icontextures/block_row_21_column_18",
+            ],
+            [
+                "block_row_21_column_2",
+                "textures/azalea_icons/icontextures/block_row_21_column_2",
+            ],
+            [
+                "block_row_21_column_3",
+                "textures/azalea_icons/icontextures/block_row_21_column_3",
+            ],
+            [
+                "block_row_21_column_4",
+                "textures/azalea_icons/icontextures/block_row_21_column_4",
+            ],
+            [
+                "block_row_21_column_5",
+                "textures/azalea_icons/icontextures/block_row_21_column_5",
+            ],
+            [
+                "block_row_21_column_6",
+                "textures/azalea_icons/icontextures/block_row_21_column_6",
+            ],
+            [
+                "block_row_21_column_7",
+                "textures/azalea_icons/icontextures/block_row_21_column_7",
+            ],
+            [
+                "block_row_21_column_8",
+                "textures/azalea_icons/icontextures/block_row_21_column_8",
+            ],
+            [
+                "block_row_21_column_9",
+                "textures/azalea_icons/icontextures/block_row_21_column_9",
+            ],
+            [
+                "block_row_22_column_1",
+                "textures/azalea_icons/icontextures/block_row_22_column_1",
+            ],
+            [
+                "block_row_22_column_10",
+                "textures/azalea_icons/icontextures/block_row_22_column_10",
+            ],
+            [
+                "block_row_22_column_11",
+                "textures/azalea_icons/icontextures/block_row_22_column_11",
+            ],
+            [
+                "block_row_22_column_12",
+                "textures/azalea_icons/icontextures/block_row_22_column_12",
+            ],
+            [
+                "block_row_22_column_13",
+                "textures/azalea_icons/icontextures/block_row_22_column_13",
+            ],
+            [
+                "block_row_22_column_14",
+                "textures/azalea_icons/icontextures/block_row_22_column_14",
+            ],
+            [
+                "block_row_22_column_15",
+                "textures/azalea_icons/icontextures/block_row_22_column_15",
+            ],
+            [
+                "block_row_22_column_16",
+                "textures/azalea_icons/icontextures/block_row_22_column_16",
+            ],
+            [
+                "block_row_22_column_17",
+                "textures/azalea_icons/icontextures/block_row_22_column_17",
+            ],
+            [
+                "block_row_22_column_18",
+                "textures/azalea_icons/icontextures/block_row_22_column_18",
+            ],
+            [
+                "block_row_22_column_2",
+                "textures/azalea_icons/icontextures/block_row_22_column_2",
+            ],
+            [
+                "block_row_22_column_3",
+                "textures/azalea_icons/icontextures/block_row_22_column_3",
+            ],
+            [
+                "block_row_22_column_4",
+                "textures/azalea_icons/icontextures/block_row_22_column_4",
+            ],
+            [
+                "block_row_22_column_5",
+                "textures/azalea_icons/icontextures/block_row_22_column_5",
+            ],
+            [
+                "block_row_22_column_6",
+                "textures/azalea_icons/icontextures/block_row_22_column_6",
+            ],
+            [
+                "block_row_22_column_7",
+                "textures/azalea_icons/icontextures/block_row_22_column_7",
+            ],
+            [
+                "block_row_22_column_8",
+                "textures/azalea_icons/icontextures/block_row_22_column_8",
+            ],
+            [
+                "block_row_22_column_9",
+                "textures/azalea_icons/icontextures/block_row_22_column_9",
+            ],
+            [
+                "block_row_23_column_1",
+                "textures/azalea_icons/icontextures/block_row_23_column_1",
+            ],
+            [
+                "block_row_23_column_10",
+                "textures/azalea_icons/icontextures/block_row_23_column_10",
+            ],
+            [
+                "block_row_23_column_11",
+                "textures/azalea_icons/icontextures/block_row_23_column_11",
+            ],
+            [
+                "block_row_23_column_12",
+                "textures/azalea_icons/icontextures/block_row_23_column_12",
+            ],
+            [
+                "block_row_23_column_13",
+                "textures/azalea_icons/icontextures/block_row_23_column_13",
+            ],
+            [
+                "block_row_23_column_14",
+                "textures/azalea_icons/icontextures/block_row_23_column_14",
+            ],
+            [
+                "block_row_23_column_15",
+                "textures/azalea_icons/icontextures/block_row_23_column_15",
+            ],
+            [
+                "block_row_23_column_16",
+                "textures/azalea_icons/icontextures/block_row_23_column_16",
+            ],
+            [
+                "block_row_23_column_17",
+                "textures/azalea_icons/icontextures/block_row_23_column_17",
+            ],
+            [
+                "block_row_23_column_18",
+                "textures/azalea_icons/icontextures/block_row_23_column_18",
+            ],
+            [
+                "block_row_23_column_2",
+                "textures/azalea_icons/icontextures/block_row_23_column_2",
+            ],
+            [
+                "block_row_23_column_3",
+                "textures/azalea_icons/icontextures/block_row_23_column_3",
+            ],
+            [
+                "block_row_23_column_4",
+                "textures/azalea_icons/icontextures/block_row_23_column_4",
+            ],
+            [
+                "block_row_23_column_5",
+                "textures/azalea_icons/icontextures/block_row_23_column_5",
+            ],
+            [
+                "block_row_23_column_6",
+                "textures/azalea_icons/icontextures/block_row_23_column_6",
+            ],
+            [
+                "block_row_23_column_7",
+                "textures/azalea_icons/icontextures/block_row_23_column_7",
+            ],
+            [
+                "block_row_23_column_8",
+                "textures/azalea_icons/icontextures/block_row_23_column_8",
+            ],
+            [
+                "block_row_23_column_9",
+                "textures/azalea_icons/icontextures/block_row_23_column_9",
+            ],
+            [
+                "block_row_24_column_1",
+                "textures/azalea_icons/icontextures/block_row_24_column_1",
+            ],
+            [
+                "block_row_24_column_10",
+                "textures/azalea_icons/icontextures/block_row_24_column_10",
+            ],
+            [
+                "block_row_24_column_11",
+                "textures/azalea_icons/icontextures/block_row_24_column_11",
+            ],
+            [
+                "block_row_24_column_12",
+                "textures/azalea_icons/icontextures/block_row_24_column_12",
+            ],
+            [
+                "block_row_24_column_13",
+                "textures/azalea_icons/icontextures/block_row_24_column_13",
+            ],
+            [
+                "block_row_24_column_14",
+                "textures/azalea_icons/icontextures/block_row_24_column_14",
+            ],
+            [
+                "block_row_24_column_15",
+                "textures/azalea_icons/icontextures/block_row_24_column_15",
+            ],
+            [
+                "block_row_24_column_16",
+                "textures/azalea_icons/icontextures/block_row_24_column_16",
+            ],
+            [
+                "block_row_24_column_17",
+                "textures/azalea_icons/icontextures/block_row_24_column_17",
+            ],
+            [
+                "block_row_24_column_18",
+                "textures/azalea_icons/icontextures/block_row_24_column_18",
+            ],
+            [
+                "block_row_24_column_2",
+                "textures/azalea_icons/icontextures/block_row_24_column_2",
+            ],
+            [
+                "block_row_24_column_3",
+                "textures/azalea_icons/icontextures/block_row_24_column_3",
+            ],
+            [
+                "block_row_24_column_4",
+                "textures/azalea_icons/icontextures/block_row_24_column_4",
+            ],
+            [
+                "block_row_24_column_5",
+                "textures/azalea_icons/icontextures/block_row_24_column_5",
+            ],
+            [
+                "block_row_24_column_6",
+                "textures/azalea_icons/icontextures/block_row_24_column_6",
+            ],
+            [
+                "block_row_24_column_7",
+                "textures/azalea_icons/icontextures/block_row_24_column_7",
+            ],
+            [
+                "block_row_24_column_8",
+                "textures/azalea_icons/icontextures/block_row_24_column_8",
+            ],
+            [
+                "block_row_24_column_9",
+                "textures/azalea_icons/icontextures/block_row_24_column_9",
+            ],
+            [
+                "block_row_25_column_1",
+                "textures/azalea_icons/icontextures/block_row_25_column_1",
+            ],
+            [
+                "block_row_25_column_10",
+                "textures/azalea_icons/icontextures/block_row_25_column_10",
+            ],
+            [
+                "block_row_25_column_11",
+                "textures/azalea_icons/icontextures/block_row_25_column_11",
+            ],
+            [
+                "block_row_25_column_12",
+                "textures/azalea_icons/icontextures/block_row_25_column_12",
+            ],
+            [
+                "block_row_25_column_13",
+                "textures/azalea_icons/icontextures/block_row_25_column_13",
+            ],
+            [
+                "block_row_25_column_14",
+                "textures/azalea_icons/icontextures/block_row_25_column_14",
+            ],
+            [
+                "block_row_25_column_15",
+                "textures/azalea_icons/icontextures/block_row_25_column_15",
+            ],
+            [
+                "block_row_25_column_16",
+                "textures/azalea_icons/icontextures/block_row_25_column_16",
+            ],
+            [
+                "block_row_25_column_17",
+                "textures/azalea_icons/icontextures/block_row_25_column_17",
+            ],
+            [
+                "block_row_25_column_18",
+                "textures/azalea_icons/icontextures/block_row_25_column_18",
+            ],
+            [
+                "block_row_25_column_2",
+                "textures/azalea_icons/icontextures/block_row_25_column_2",
+            ],
+            [
+                "block_row_25_column_3",
+                "textures/azalea_icons/icontextures/block_row_25_column_3",
+            ],
+            [
+                "block_row_25_column_4",
+                "textures/azalea_icons/icontextures/block_row_25_column_4",
+            ],
+            [
+                "block_row_25_column_5",
+                "textures/azalea_icons/icontextures/block_row_25_column_5",
+            ],
+            [
+                "block_row_25_column_6",
+                "textures/azalea_icons/icontextures/block_row_25_column_6",
+            ],
+            [
+                "block_row_25_column_7",
+                "textures/azalea_icons/icontextures/block_row_25_column_7",
+            ],
+            [
+                "block_row_25_column_8",
+                "textures/azalea_icons/icontextures/block_row_25_column_8",
+            ],
+            [
+                "block_row_25_column_9",
+                "textures/azalea_icons/icontextures/block_row_25_column_9",
+            ],
+            [
+                "block_row_26_column_1",
+                "textures/azalea_icons/icontextures/block_row_26_column_1",
+            ],
+            [
+                "block_row_26_column_10",
+                "textures/azalea_icons/icontextures/block_row_26_column_10",
+            ],
+            [
+                "block_row_26_column_11",
+                "textures/azalea_icons/icontextures/block_row_26_column_11",
+            ],
+            [
+                "block_row_26_column_12",
+                "textures/azalea_icons/icontextures/block_row_26_column_12",
+            ],
+            [
+                "block_row_26_column_13",
+                "textures/azalea_icons/icontextures/block_row_26_column_13",
+            ],
+            [
+                "block_row_26_column_14",
+                "textures/azalea_icons/icontextures/block_row_26_column_14",
+            ],
+            [
+                "block_row_26_column_15",
+                "textures/azalea_icons/icontextures/block_row_26_column_15",
+            ],
+            [
+                "block_row_26_column_16",
+                "textures/azalea_icons/icontextures/block_row_26_column_16",
+            ],
+            [
+                "block_row_26_column_17",
+                "textures/azalea_icons/icontextures/block_row_26_column_17",
+            ],
+            [
+                "block_row_26_column_18",
+                "textures/azalea_icons/icontextures/block_row_26_column_18",
+            ],
+            [
+                "block_row_26_column_2",
+                "textures/azalea_icons/icontextures/block_row_26_column_2",
+            ],
+            [
+                "block_row_26_column_3",
+                "textures/azalea_icons/icontextures/block_row_26_column_3",
+            ],
+            [
+                "block_row_26_column_4",
+                "textures/azalea_icons/icontextures/block_row_26_column_4",
+            ],
+            [
+                "block_row_26_column_5",
+                "textures/azalea_icons/icontextures/block_row_26_column_5",
+            ],
+            [
+                "block_row_26_column_6",
+                "textures/azalea_icons/icontextures/block_row_26_column_6",
+            ],
+            [
+                "block_row_26_column_7",
+                "textures/azalea_icons/icontextures/block_row_26_column_7",
+            ],
+            [
+                "block_row_26_column_8",
+                "textures/azalea_icons/icontextures/block_row_26_column_8",
+            ],
+            [
+                "block_row_26_column_9",
+                "textures/azalea_icons/icontextures/block_row_26_column_9",
+            ],
+            [
+                "block_row_27_column_1",
+                "textures/azalea_icons/icontextures/block_row_27_column_1",
+            ],
+            [
+                "block_row_27_column_10",
+                "textures/azalea_icons/icontextures/block_row_27_column_10",
+            ],
+            [
+                "block_row_27_column_11",
+                "textures/azalea_icons/icontextures/block_row_27_column_11",
+            ],
+            [
+                "block_row_27_column_12",
+                "textures/azalea_icons/icontextures/block_row_27_column_12",
+            ],
+            [
+                "block_row_27_column_13",
+                "textures/azalea_icons/icontextures/block_row_27_column_13",
+            ],
+            [
+                "block_row_27_column_14",
+                "textures/azalea_icons/icontextures/block_row_27_column_14",
+            ],
+            [
+                "block_row_27_column_15",
+                "textures/azalea_icons/icontextures/block_row_27_column_15",
+            ],
+            [
+                "block_row_27_column_16",
+                "textures/azalea_icons/icontextures/block_row_27_column_16",
+            ],
+            [
+                "block_row_27_column_17",
+                "textures/azalea_icons/icontextures/block_row_27_column_17",
+            ],
+            [
+                "block_row_27_column_18",
+                "textures/azalea_icons/icontextures/block_row_27_column_18",
+            ],
+            [
+                "block_row_27_column_2",
+                "textures/azalea_icons/icontextures/block_row_27_column_2",
+            ],
+            [
+                "block_row_27_column_3",
+                "textures/azalea_icons/icontextures/block_row_27_column_3",
+            ],
+            [
+                "block_row_27_column_4",
+                "textures/azalea_icons/icontextures/block_row_27_column_4",
+            ],
+            [
+                "block_row_27_column_5",
+                "textures/azalea_icons/icontextures/block_row_27_column_5",
+            ],
+            [
+                "block_row_27_column_6",
+                "textures/azalea_icons/icontextures/block_row_27_column_6",
+            ],
+            [
+                "block_row_27_column_7",
+                "textures/azalea_icons/icontextures/block_row_27_column_7",
+            ],
+            [
+                "block_row_27_column_8",
+                "textures/azalea_icons/icontextures/block_row_27_column_8",
+            ],
+            [
+                "block_row_27_column_9",
+                "textures/azalea_icons/icontextures/block_row_27_column_9",
+            ],
+            [
+                "block_row_28_column_1",
+                "textures/azalea_icons/icontextures/block_row_28_column_1",
+            ],
+            [
+                "block_row_28_column_10",
+                "textures/azalea_icons/icontextures/block_row_28_column_10",
+            ],
+            [
+                "block_row_28_column_11",
+                "textures/azalea_icons/icontextures/block_row_28_column_11",
+            ],
+            [
+                "block_row_28_column_12",
+                "textures/azalea_icons/icontextures/block_row_28_column_12",
+            ],
+            [
+                "block_row_28_column_13",
+                "textures/azalea_icons/icontextures/block_row_28_column_13",
+            ],
+            [
+                "block_row_28_column_14",
+                "textures/azalea_icons/icontextures/block_row_28_column_14",
+            ],
+            [
+                "block_row_28_column_15",
+                "textures/azalea_icons/icontextures/block_row_28_column_15",
+            ],
+            [
+                "block_row_28_column_16",
+                "textures/azalea_icons/icontextures/block_row_28_column_16",
+            ],
+            [
+                "block_row_28_column_17",
+                "textures/azalea_icons/icontextures/block_row_28_column_17",
+            ],
+            [
+                "block_row_28_column_18",
+                "textures/azalea_icons/icontextures/block_row_28_column_18",
+            ],
+            [
+                "block_row_28_column_2",
+                "textures/azalea_icons/icontextures/block_row_28_column_2",
+            ],
+            [
+                "block_row_28_column_3",
+                "textures/azalea_icons/icontextures/block_row_28_column_3",
+            ],
+            [
+                "block_row_28_column_4",
+                "textures/azalea_icons/icontextures/block_row_28_column_4",
+            ],
+            [
+                "block_row_28_column_5",
+                "textures/azalea_icons/icontextures/block_row_28_column_5",
+            ],
+            [
+                "block_row_28_column_6",
+                "textures/azalea_icons/icontextures/block_row_28_column_6",
+            ],
+            [
+                "block_row_28_column_7",
+                "textures/azalea_icons/icontextures/block_row_28_column_7",
+            ],
+            [
+                "block_row_28_column_8",
+                "textures/azalea_icons/icontextures/block_row_28_column_8",
+            ],
+            [
+                "block_row_28_column_9",
+                "textures/azalea_icons/icontextures/block_row_28_column_9",
+            ],
+            [
+                "block_row_29_column_1",
+                "textures/azalea_icons/icontextures/block_row_29_column_1",
+            ],
+            [
+                "block_row_29_column_10",
+                "textures/azalea_icons/icontextures/block_row_29_column_10",
+            ],
+            [
+                "block_row_29_column_11",
+                "textures/azalea_icons/icontextures/block_row_29_column_11",
+            ],
+            [
+                "block_row_29_column_12",
+                "textures/azalea_icons/icontextures/block_row_29_column_12",
+            ],
+            [
+                "block_row_29_column_13",
+                "textures/azalea_icons/icontextures/block_row_29_column_13",
+            ],
+            [
+                "block_row_29_column_14",
+                "textures/azalea_icons/icontextures/block_row_29_column_14",
+            ],
+            [
+                "block_row_29_column_15",
+                "textures/azalea_icons/icontextures/block_row_29_column_15",
+            ],
+            [
+                "block_row_29_column_16",
+                "textures/azalea_icons/icontextures/block_row_29_column_16",
+            ],
+            [
+                "block_row_29_column_17",
+                "textures/azalea_icons/icontextures/block_row_29_column_17",
+            ],
+            [
+                "block_row_29_column_18",
+                "textures/azalea_icons/icontextures/block_row_29_column_18",
+            ],
+            [
+                "block_row_29_column_2",
+                "textures/azalea_icons/icontextures/block_row_29_column_2",
+            ],
+            [
+                "block_row_29_column_3",
+                "textures/azalea_icons/icontextures/block_row_29_column_3",
+            ],
+            [
+                "block_row_29_column_4",
+                "textures/azalea_icons/icontextures/block_row_29_column_4",
+            ],
+            [
+                "block_row_29_column_5",
+                "textures/azalea_icons/icontextures/block_row_29_column_5",
+            ],
+            [
+                "block_row_29_column_6",
+                "textures/azalea_icons/icontextures/block_row_29_column_6",
+            ],
+            [
+                "block_row_29_column_7",
+                "textures/azalea_icons/icontextures/block_row_29_column_7",
+            ],
+            [
+                "block_row_29_column_8",
+                "textures/azalea_icons/icontextures/block_row_29_column_8",
+            ],
+            [
+                "block_row_29_column_9",
+                "textures/azalea_icons/icontextures/block_row_29_column_9",
+            ],
+            [
+                "block_row_2_column_1",
+                "textures/azalea_icons/icontextures/block_row_2_column_1",
+            ],
+            [
+                "block_row_2_column_10",
+                "textures/azalea_icons/icontextures/block_row_2_column_10",
+            ],
+            [
+                "block_row_2_column_11",
+                "textures/azalea_icons/icontextures/block_row_2_column_11",
+            ],
+            [
+                "block_row_2_column_12",
+                "textures/azalea_icons/icontextures/block_row_2_column_12",
+            ],
+            [
+                "block_row_2_column_13",
+                "textures/azalea_icons/icontextures/block_row_2_column_13",
+            ],
+            [
+                "block_row_2_column_14",
+                "textures/azalea_icons/icontextures/block_row_2_column_14",
+            ],
+            [
+                "block_row_2_column_15",
+                "textures/azalea_icons/icontextures/block_row_2_column_15",
+            ],
+            [
+                "block_row_2_column_16",
+                "textures/azalea_icons/icontextures/block_row_2_column_16",
+            ],
+            [
+                "block_row_2_column_17",
+                "textures/azalea_icons/icontextures/block_row_2_column_17",
+            ],
+            [
+                "block_row_2_column_18",
+                "textures/azalea_icons/icontextures/block_row_2_column_18",
+            ],
+            [
+                "block_row_2_column_2",
+                "textures/azalea_icons/icontextures/block_row_2_column_2",
+            ],
+            [
+                "block_row_2_column_3",
+                "textures/azalea_icons/icontextures/block_row_2_column_3",
+            ],
+            [
+                "block_row_2_column_4",
+                "textures/azalea_icons/icontextures/block_row_2_column_4",
+            ],
+            [
+                "block_row_2_column_5",
+                "textures/azalea_icons/icontextures/block_row_2_column_5",
+            ],
+            [
+                "block_row_2_column_6",
+                "textures/azalea_icons/icontextures/block_row_2_column_6",
+            ],
+            [
+                "block_row_2_column_7",
+                "textures/azalea_icons/icontextures/block_row_2_column_7",
+            ],
+            [
+                "block_row_2_column_8",
+                "textures/azalea_icons/icontextures/block_row_2_column_8",
+            ],
+            [
+                "block_row_2_column_9",
+                "textures/azalea_icons/icontextures/block_row_2_column_9",
+            ],
+            [
+                "block_row_30_column_1",
+                "textures/azalea_icons/icontextures/block_row_30_column_1",
+            ],
+            [
+                "block_row_30_column_10",
+                "textures/azalea_icons/icontextures/block_row_30_column_10",
+            ],
+            [
+                "block_row_30_column_11",
+                "textures/azalea_icons/icontextures/block_row_30_column_11",
+            ],
+            [
+                "block_row_30_column_12",
+                "textures/azalea_icons/icontextures/block_row_30_column_12",
+            ],
+            [
+                "block_row_30_column_13",
+                "textures/azalea_icons/icontextures/block_row_30_column_13",
+            ],
+            [
+                "block_row_30_column_14",
+                "textures/azalea_icons/icontextures/block_row_30_column_14",
+            ],
+            [
+                "block_row_30_column_15",
+                "textures/azalea_icons/icontextures/block_row_30_column_15",
+            ],
+            [
+                "block_row_30_column_16",
+                "textures/azalea_icons/icontextures/block_row_30_column_16",
+            ],
+            [
+                "block_row_30_column_17",
+                "textures/azalea_icons/icontextures/block_row_30_column_17",
+            ],
+            [
+                "block_row_30_column_18",
+                "textures/azalea_icons/icontextures/block_row_30_column_18",
+            ],
+            [
+                "block_row_30_column_2",
+                "textures/azalea_icons/icontextures/block_row_30_column_2",
+            ],
+            [
+                "block_row_30_column_3",
+                "textures/azalea_icons/icontextures/block_row_30_column_3",
+            ],
+            [
+                "block_row_30_column_4",
+                "textures/azalea_icons/icontextures/block_row_30_column_4",
+            ],
+            [
+                "block_row_30_column_5",
+                "textures/azalea_icons/icontextures/block_row_30_column_5",
+            ],
+            [
+                "block_row_30_column_6",
+                "textures/azalea_icons/icontextures/block_row_30_column_6",
+            ],
+            [
+                "block_row_30_column_7",
+                "textures/azalea_icons/icontextures/block_row_30_column_7",
+            ],
+            [
+                "block_row_30_column_8",
+                "textures/azalea_icons/icontextures/block_row_30_column_8",
+            ],
+            [
+                "block_row_30_column_9",
+                "textures/azalea_icons/icontextures/block_row_30_column_9",
+            ],
+            [
+                "block_row_31_column_1",
+                "textures/azalea_icons/icontextures/block_row_31_column_1",
+            ],
+            [
+                "block_row_31_column_10",
+                "textures/azalea_icons/icontextures/block_row_31_column_10",
+            ],
+            [
+                "block_row_31_column_11",
+                "textures/azalea_icons/icontextures/block_row_31_column_11",
+            ],
+            [
+                "block_row_31_column_12",
+                "textures/azalea_icons/icontextures/block_row_31_column_12",
+            ],
+            [
+                "block_row_31_column_13",
+                "textures/azalea_icons/icontextures/block_row_31_column_13",
+            ],
+            [
+                "block_row_31_column_14",
+                "textures/azalea_icons/icontextures/block_row_31_column_14",
+            ],
+            [
+                "block_row_31_column_15",
+                "textures/azalea_icons/icontextures/block_row_31_column_15",
+            ],
+            [
+                "block_row_31_column_16",
+                "textures/azalea_icons/icontextures/block_row_31_column_16",
+            ],
+            [
+                "block_row_31_column_17",
+                "textures/azalea_icons/icontextures/block_row_31_column_17",
+            ],
+            [
+                "block_row_31_column_18",
+                "textures/azalea_icons/icontextures/block_row_31_column_18",
+            ],
+            [
+                "block_row_31_column_2",
+                "textures/azalea_icons/icontextures/block_row_31_column_2",
+            ],
+            [
+                "block_row_31_column_3",
+                "textures/azalea_icons/icontextures/block_row_31_column_3",
+            ],
+            [
+                "block_row_31_column_4",
+                "textures/azalea_icons/icontextures/block_row_31_column_4",
+            ],
+            [
+                "block_row_31_column_5",
+                "textures/azalea_icons/icontextures/block_row_31_column_5",
+            ],
+            [
+                "block_row_31_column_6",
+                "textures/azalea_icons/icontextures/block_row_31_column_6",
+            ],
+            [
+                "block_row_31_column_7",
+                "textures/azalea_icons/icontextures/block_row_31_column_7",
+            ],
+            [
+                "block_row_31_column_8",
+                "textures/azalea_icons/icontextures/block_row_31_column_8",
+            ],
+            [
+                "block_row_31_column_9",
+                "textures/azalea_icons/icontextures/block_row_31_column_9",
+            ],
+            [
+                "block_row_32_column_1",
+                "textures/azalea_icons/icontextures/block_row_32_column_1",
+            ],
+            [
+                "block_row_32_column_10",
+                "textures/azalea_icons/icontextures/block_row_32_column_10",
+            ],
+            [
+                "block_row_32_column_11",
+                "textures/azalea_icons/icontextures/block_row_32_column_11",
+            ],
+            [
+                "block_row_32_column_12",
+                "textures/azalea_icons/icontextures/block_row_32_column_12",
+            ],
+            [
+                "block_row_32_column_13",
+                "textures/azalea_icons/icontextures/block_row_32_column_13",
+            ],
+            [
+                "block_row_32_column_14",
+                "textures/azalea_icons/icontextures/block_row_32_column_14",
+            ],
+            [
+                "block_row_32_column_15",
+                "textures/azalea_icons/icontextures/block_row_32_column_15",
+            ],
+            [
+                "block_row_32_column_16",
+                "textures/azalea_icons/icontextures/block_row_32_column_16",
+            ],
+            [
+                "block_row_32_column_17",
+                "textures/azalea_icons/icontextures/block_row_32_column_17",
+            ],
+            [
+                "block_row_32_column_18",
+                "textures/azalea_icons/icontextures/block_row_32_column_18",
+            ],
+            [
+                "block_row_32_column_2",
+                "textures/azalea_icons/icontextures/block_row_32_column_2",
+            ],
+            [
+                "block_row_32_column_3",
+                "textures/azalea_icons/icontextures/block_row_32_column_3",
+            ],
+            [
+                "block_row_32_column_4",
+                "textures/azalea_icons/icontextures/block_row_32_column_4",
+            ],
+            [
+                "block_row_32_column_5",
+                "textures/azalea_icons/icontextures/block_row_32_column_5",
+            ],
+            [
+                "block_row_32_column_6",
+                "textures/azalea_icons/icontextures/block_row_32_column_6",
+            ],
+            [
+                "block_row_32_column_7",
+                "textures/azalea_icons/icontextures/block_row_32_column_7",
+            ],
+            [
+                "block_row_32_column_8",
+                "textures/azalea_icons/icontextures/block_row_32_column_8",
+            ],
+            [
+                "block_row_32_column_9",
+                "textures/azalea_icons/icontextures/block_row_32_column_9",
+            ],
+            [
+                "block_row_33_column_1",
+                "textures/azalea_icons/icontextures/block_row_33_column_1",
+            ],
+            [
+                "block_row_33_column_10",
+                "textures/azalea_icons/icontextures/block_row_33_column_10",
+            ],
+            [
+                "block_row_33_column_11",
+                "textures/azalea_icons/icontextures/block_row_33_column_11",
+            ],
+            [
+                "block_row_33_column_12",
+                "textures/azalea_icons/icontextures/block_row_33_column_12",
+            ],
+            [
+                "block_row_33_column_13",
+                "textures/azalea_icons/icontextures/block_row_33_column_13",
+            ],
+            [
+                "block_row_33_column_14",
+                "textures/azalea_icons/icontextures/block_row_33_column_14",
+            ],
+            [
+                "block_row_33_column_15",
+                "textures/azalea_icons/icontextures/block_row_33_column_15",
+            ],
+            [
+                "block_row_33_column_16",
+                "textures/azalea_icons/icontextures/block_row_33_column_16",
+            ],
+            [
+                "block_row_33_column_17",
+                "textures/azalea_icons/icontextures/block_row_33_column_17",
+            ],
+            [
+                "block_row_33_column_18",
+                "textures/azalea_icons/icontextures/block_row_33_column_18",
+            ],
+            [
+                "block_row_33_column_2",
+                "textures/azalea_icons/icontextures/block_row_33_column_2",
+            ],
+            [
+                "block_row_33_column_3",
+                "textures/azalea_icons/icontextures/block_row_33_column_3",
+            ],
+            [
+                "block_row_33_column_4",
+                "textures/azalea_icons/icontextures/block_row_33_column_4",
+            ],
+            [
+                "block_row_33_column_5",
+                "textures/azalea_icons/icontextures/block_row_33_column_5",
+            ],
+            [
+                "block_row_33_column_6",
+                "textures/azalea_icons/icontextures/block_row_33_column_6",
+            ],
+            [
+                "block_row_33_column_7",
+                "textures/azalea_icons/icontextures/block_row_33_column_7",
+            ],
+            [
+                "block_row_33_column_8",
+                "textures/azalea_icons/icontextures/block_row_33_column_8",
+            ],
+            [
+                "block_row_33_column_9",
+                "textures/azalea_icons/icontextures/block_row_33_column_9",
+            ],
+            [
+                "block_row_34_column_1",
+                "textures/azalea_icons/icontextures/block_row_34_column_1",
+            ],
+            [
+                "block_row_34_column_10",
+                "textures/azalea_icons/icontextures/block_row_34_column_10",
+            ],
+            [
+                "block_row_34_column_11",
+                "textures/azalea_icons/icontextures/block_row_34_column_11",
+            ],
+            [
+                "block_row_34_column_12",
+                "textures/azalea_icons/icontextures/block_row_34_column_12",
+            ],
+            [
+                "block_row_34_column_13",
+                "textures/azalea_icons/icontextures/block_row_34_column_13",
+            ],
+            [
+                "block_row_34_column_14",
+                "textures/azalea_icons/icontextures/block_row_34_column_14",
+            ],
+            [
+                "block_row_34_column_15",
+                "textures/azalea_icons/icontextures/block_row_34_column_15",
+            ],
+            [
+                "block_row_34_column_16",
+                "textures/azalea_icons/icontextures/block_row_34_column_16",
+            ],
+            [
+                "block_row_34_column_17",
+                "textures/azalea_icons/icontextures/block_row_34_column_17",
+            ],
+            [
+                "block_row_34_column_18",
+                "textures/azalea_icons/icontextures/block_row_34_column_18",
+            ],
+            [
+                "block_row_34_column_2",
+                "textures/azalea_icons/icontextures/block_row_34_column_2",
+            ],
+            [
+                "block_row_34_column_3",
+                "textures/azalea_icons/icontextures/block_row_34_column_3",
+            ],
+            [
+                "block_row_34_column_4",
+                "textures/azalea_icons/icontextures/block_row_34_column_4",
+            ],
+            [
+                "block_row_34_column_5",
+                "textures/azalea_icons/icontextures/block_row_34_column_5",
+            ],
+            [
+                "block_row_34_column_6",
+                "textures/azalea_icons/icontextures/block_row_34_column_6",
+            ],
+            [
+                "block_row_34_column_7",
+                "textures/azalea_icons/icontextures/block_row_34_column_7",
+            ],
+            [
+                "block_row_34_column_8",
+                "textures/azalea_icons/icontextures/block_row_34_column_8",
+            ],
+            [
+                "block_row_34_column_9",
+                "textures/azalea_icons/icontextures/block_row_34_column_9",
+            ],
+            [
+                "block_row_35_column_1",
+                "textures/azalea_icons/icontextures/block_row_35_column_1",
+            ],
+            [
+                "block_row_35_column_10",
+                "textures/azalea_icons/icontextures/block_row_35_column_10",
+            ],
+            [
+                "block_row_35_column_11",
+                "textures/azalea_icons/icontextures/block_row_35_column_11",
+            ],
+            [
+                "block_row_35_column_12",
+                "textures/azalea_icons/icontextures/block_row_35_column_12",
+            ],
+            [
+                "block_row_35_column_13",
+                "textures/azalea_icons/icontextures/block_row_35_column_13",
+            ],
+            [
+                "block_row_35_column_14",
+                "textures/azalea_icons/icontextures/block_row_35_column_14",
+            ],
+            [
+                "block_row_35_column_15",
+                "textures/azalea_icons/icontextures/block_row_35_column_15",
+            ],
+            [
+                "block_row_35_column_16",
+                "textures/azalea_icons/icontextures/block_row_35_column_16",
+            ],
+            [
+                "block_row_35_column_17",
+                "textures/azalea_icons/icontextures/block_row_35_column_17",
+            ],
+            [
+                "block_row_35_column_18",
+                "textures/azalea_icons/icontextures/block_row_35_column_18",
+            ],
+            [
+                "block_row_35_column_2",
+                "textures/azalea_icons/icontextures/block_row_35_column_2",
+            ],
+            [
+                "block_row_35_column_3",
+                "textures/azalea_icons/icontextures/block_row_35_column_3",
+            ],
+            [
+                "block_row_35_column_4",
+                "textures/azalea_icons/icontextures/block_row_35_column_4",
+            ],
+            [
+                "block_row_35_column_5",
+                "textures/azalea_icons/icontextures/block_row_35_column_5",
+            ],
+            [
+                "block_row_35_column_6",
+                "textures/azalea_icons/icontextures/block_row_35_column_6",
+            ],
+            [
+                "block_row_35_column_7",
+                "textures/azalea_icons/icontextures/block_row_35_column_7",
+            ],
+            [
+                "block_row_35_column_8",
+                "textures/azalea_icons/icontextures/block_row_35_column_8",
+            ],
+            [
+                "block_row_35_column_9",
+                "textures/azalea_icons/icontextures/block_row_35_column_9",
+            ],
+            [
+                "block_row_36_column_1",
+                "textures/azalea_icons/icontextures/block_row_36_column_1",
+            ],
+            [
+                "block_row_36_column_10",
+                "textures/azalea_icons/icontextures/block_row_36_column_10",
+            ],
+            [
+                "block_row_36_column_11",
+                "textures/azalea_icons/icontextures/block_row_36_column_11",
+            ],
+            [
+                "block_row_36_column_12",
+                "textures/azalea_icons/icontextures/block_row_36_column_12",
+            ],
+            [
+                "block_row_36_column_13",
+                "textures/azalea_icons/icontextures/block_row_36_column_13",
+            ],
+            [
+                "block_row_36_column_14",
+                "textures/azalea_icons/icontextures/block_row_36_column_14",
+            ],
+            [
+                "block_row_36_column_15",
+                "textures/azalea_icons/icontextures/block_row_36_column_15",
+            ],
+            [
+                "block_row_36_column_16",
+                "textures/azalea_icons/icontextures/block_row_36_column_16",
+            ],
+            [
+                "block_row_36_column_17",
+                "textures/azalea_icons/icontextures/block_row_36_column_17",
+            ],
+            [
+                "block_row_36_column_18",
+                "textures/azalea_icons/icontextures/block_row_36_column_18",
+            ],
+            [
+                "block_row_36_column_2",
+                "textures/azalea_icons/icontextures/block_row_36_column_2",
+            ],
+            [
+                "block_row_36_column_3",
+                "textures/azalea_icons/icontextures/block_row_36_column_3",
+            ],
+            [
+                "block_row_36_column_4",
+                "textures/azalea_icons/icontextures/block_row_36_column_4",
+            ],
+            [
+                "block_row_36_column_5",
+                "textures/azalea_icons/icontextures/block_row_36_column_5",
+            ],
+            [
+                "block_row_36_column_6",
+                "textures/azalea_icons/icontextures/block_row_36_column_6",
+            ],
+            [
+                "block_row_36_column_7",
+                "textures/azalea_icons/icontextures/block_row_36_column_7",
+            ],
+            [
+                "block_row_36_column_8",
+                "textures/azalea_icons/icontextures/block_row_36_column_8",
+            ],
+            [
+                "block_row_36_column_9",
+                "textures/azalea_icons/icontextures/block_row_36_column_9",
+            ],
+            [
+                "block_row_37_column_1",
+                "textures/azalea_icons/icontextures/block_row_37_column_1",
+            ],
+            [
+                "block_row_37_column_10",
+                "textures/azalea_icons/icontextures/block_row_37_column_10",
+            ],
+            [
+                "block_row_37_column_11",
+                "textures/azalea_icons/icontextures/block_row_37_column_11",
+            ],
+            [
+                "block_row_37_column_12",
+                "textures/azalea_icons/icontextures/block_row_37_column_12",
+            ],
+            [
+                "block_row_37_column_13",
+                "textures/azalea_icons/icontextures/block_row_37_column_13",
+            ],
+            [
+                "block_row_37_column_14",
+                "textures/azalea_icons/icontextures/block_row_37_column_14",
+            ],
+            [
+                "block_row_37_column_15",
+                "textures/azalea_icons/icontextures/block_row_37_column_15",
+            ],
+            [
+                "block_row_37_column_16",
+                "textures/azalea_icons/icontextures/block_row_37_column_16",
+            ],
+            [
+                "block_row_37_column_17",
+                "textures/azalea_icons/icontextures/block_row_37_column_17",
+            ],
+            [
+                "block_row_37_column_18",
+                "textures/azalea_icons/icontextures/block_row_37_column_18",
+            ],
+            [
+                "block_row_37_column_2",
+                "textures/azalea_icons/icontextures/block_row_37_column_2",
+            ],
+            [
+                "block_row_37_column_3",
+                "textures/azalea_icons/icontextures/block_row_37_column_3",
+            ],
+            [
+                "block_row_37_column_4",
+                "textures/azalea_icons/icontextures/block_row_37_column_4",
+            ],
+            [
+                "block_row_37_column_5",
+                "textures/azalea_icons/icontextures/block_row_37_column_5",
+            ],
+            [
+                "block_row_37_column_6",
+                "textures/azalea_icons/icontextures/block_row_37_column_6",
+            ],
+            [
+                "block_row_37_column_7",
+                "textures/azalea_icons/icontextures/block_row_37_column_7",
+            ],
+            [
+                "block_row_37_column_8",
+                "textures/azalea_icons/icontextures/block_row_37_column_8",
+            ],
+            [
+                "block_row_37_column_9",
+                "textures/azalea_icons/icontextures/block_row_37_column_9",
+            ],
+            [
+                "block_row_38_column_1",
+                "textures/azalea_icons/icontextures/block_row_38_column_1",
+            ],
+            [
+                "block_row_38_column_10",
+                "textures/azalea_icons/icontextures/block_row_38_column_10",
+            ],
+            [
+                "block_row_38_column_11",
+                "textures/azalea_icons/icontextures/block_row_38_column_11",
+            ],
+            [
+                "block_row_38_column_12",
+                "textures/azalea_icons/icontextures/block_row_38_column_12",
+            ],
+            [
+                "block_row_38_column_13",
+                "textures/azalea_icons/icontextures/block_row_38_column_13",
+            ],
+            [
+                "block_row_38_column_14",
+                "textures/azalea_icons/icontextures/block_row_38_column_14",
+            ],
+            [
+                "block_row_38_column_15",
+                "textures/azalea_icons/icontextures/block_row_38_column_15",
+            ],
+            [
+                "block_row_38_column_16",
+                "textures/azalea_icons/icontextures/block_row_38_column_16",
+            ],
+            [
+                "block_row_38_column_17",
+                "textures/azalea_icons/icontextures/block_row_38_column_17",
+            ],
+            [
+                "block_row_38_column_18",
+                "textures/azalea_icons/icontextures/block_row_38_column_18",
+            ],
+            [
+                "block_row_38_column_2",
+                "textures/azalea_icons/icontextures/block_row_38_column_2",
+            ],
+            [
+                "block_row_38_column_3",
+                "textures/azalea_icons/icontextures/block_row_38_column_3",
+            ],
+            [
+                "block_row_38_column_4",
+                "textures/azalea_icons/icontextures/block_row_38_column_4",
+            ],
+            [
+                "block_row_38_column_5",
+                "textures/azalea_icons/icontextures/block_row_38_column_5",
+            ],
+            [
+                "block_row_38_column_6",
+                "textures/azalea_icons/icontextures/block_row_38_column_6",
+            ],
+            [
+                "block_row_38_column_7",
+                "textures/azalea_icons/icontextures/block_row_38_column_7",
+            ],
+            [
+                "block_row_38_column_8",
+                "textures/azalea_icons/icontextures/block_row_38_column_8",
+            ],
+            [
+                "block_row_38_column_9",
+                "textures/azalea_icons/icontextures/block_row_38_column_9",
+            ],
+            [
+                "block_row_39_column_1",
+                "textures/azalea_icons/icontextures/block_row_39_column_1",
+            ],
+            [
+                "block_row_39_column_10",
+                "textures/azalea_icons/icontextures/block_row_39_column_10",
+            ],
+            [
+                "block_row_39_column_11",
+                "textures/azalea_icons/icontextures/block_row_39_column_11",
+            ],
+            [
+                "block_row_39_column_12",
+                "textures/azalea_icons/icontextures/block_row_39_column_12",
+            ],
+            [
+                "block_row_39_column_13",
+                "textures/azalea_icons/icontextures/block_row_39_column_13",
+            ],
+            [
+                "block_row_39_column_14",
+                "textures/azalea_icons/icontextures/block_row_39_column_14",
+            ],
+            [
+                "block_row_39_column_15",
+                "textures/azalea_icons/icontextures/block_row_39_column_15",
+            ],
+            [
+                "block_row_39_column_16",
+                "textures/azalea_icons/icontextures/block_row_39_column_16",
+            ],
+            [
+                "block_row_39_column_17",
+                "textures/azalea_icons/icontextures/block_row_39_column_17",
+            ],
+            [
+                "block_row_39_column_18",
+                "textures/azalea_icons/icontextures/block_row_39_column_18",
+            ],
+            [
+                "block_row_39_column_2",
+                "textures/azalea_icons/icontextures/block_row_39_column_2",
+            ],
+            [
+                "block_row_39_column_3",
+                "textures/azalea_icons/icontextures/block_row_39_column_3",
+            ],
+            [
+                "block_row_39_column_4",
+                "textures/azalea_icons/icontextures/block_row_39_column_4",
+            ],
+            [
+                "block_row_39_column_5",
+                "textures/azalea_icons/icontextures/block_row_39_column_5",
+            ],
+            [
+                "block_row_39_column_6",
+                "textures/azalea_icons/icontextures/block_row_39_column_6",
+            ],
+            [
+                "block_row_39_column_7",
+                "textures/azalea_icons/icontextures/block_row_39_column_7",
+            ],
+            [
+                "block_row_39_column_8",
+                "textures/azalea_icons/icontextures/block_row_39_column_8",
+            ],
+            [
+                "block_row_39_column_9",
+                "textures/azalea_icons/icontextures/block_row_39_column_9",
+            ],
+            [
+                "block_row_3_column_1",
+                "textures/azalea_icons/icontextures/block_row_3_column_1",
+            ],
+            [
+                "block_row_3_column_10",
+                "textures/azalea_icons/icontextures/block_row_3_column_10",
+            ],
+            [
+                "block_row_3_column_11",
+                "textures/azalea_icons/icontextures/block_row_3_column_11",
+            ],
+            [
+                "block_row_3_column_12",
+                "textures/azalea_icons/icontextures/block_row_3_column_12",
+            ],
+            [
+                "block_row_3_column_13",
+                "textures/azalea_icons/icontextures/block_row_3_column_13",
+            ],
+            [
+                "block_row_3_column_14",
+                "textures/azalea_icons/icontextures/block_row_3_column_14",
+            ],
+            [
+                "block_row_3_column_15",
+                "textures/azalea_icons/icontextures/block_row_3_column_15",
+            ],
+            [
+                "block_row_3_column_16",
+                "textures/azalea_icons/icontextures/block_row_3_column_16",
+            ],
+            [
+                "block_row_3_column_17",
+                "textures/azalea_icons/icontextures/block_row_3_column_17",
+            ],
+            [
+                "block_row_3_column_18",
+                "textures/azalea_icons/icontextures/block_row_3_column_18",
+            ],
+            [
+                "block_row_3_column_2",
+                "textures/azalea_icons/icontextures/block_row_3_column_2",
+            ],
+            [
+                "block_row_3_column_3",
+                "textures/azalea_icons/icontextures/block_row_3_column_3",
+            ],
+            [
+                "block_row_3_column_4",
+                "textures/azalea_icons/icontextures/block_row_3_column_4",
+            ],
+            [
+                "block_row_3_column_5",
+                "textures/azalea_icons/icontextures/block_row_3_column_5",
+            ],
+            [
+                "block_row_3_column_6",
+                "textures/azalea_icons/icontextures/block_row_3_column_6",
+            ],
+            [
+                "block_row_3_column_7",
+                "textures/azalea_icons/icontextures/block_row_3_column_7",
+            ],
+            [
+                "block_row_3_column_8",
+                "textures/azalea_icons/icontextures/block_row_3_column_8",
+            ],
+            [
+                "block_row_3_column_9",
+                "textures/azalea_icons/icontextures/block_row_3_column_9",
+            ],
+            [
+                "block_row_40_column_1",
+                "textures/azalea_icons/icontextures/block_row_40_column_1",
+            ],
+            [
+                "block_row_40_column_10",
+                "textures/azalea_icons/icontextures/block_row_40_column_10",
+            ],
+            [
+                "block_row_40_column_11",
+                "textures/azalea_icons/icontextures/block_row_40_column_11",
+            ],
+            [
+                "block_row_40_column_12",
+                "textures/azalea_icons/icontextures/block_row_40_column_12",
+            ],
+            [
+                "block_row_40_column_13",
+                "textures/azalea_icons/icontextures/block_row_40_column_13",
+            ],
+            [
+                "block_row_40_column_14",
+                "textures/azalea_icons/icontextures/block_row_40_column_14",
+            ],
+            [
+                "block_row_40_column_15",
+                "textures/azalea_icons/icontextures/block_row_40_column_15",
+            ],
+            [
+                "block_row_40_column_16",
+                "textures/azalea_icons/icontextures/block_row_40_column_16",
+            ],
+            [
+                "block_row_40_column_17",
+                "textures/azalea_icons/icontextures/block_row_40_column_17",
+            ],
+            [
+                "block_row_40_column_18",
+                "textures/azalea_icons/icontextures/block_row_40_column_18",
+            ],
+            [
+                "block_row_40_column_2",
+                "textures/azalea_icons/icontextures/block_row_40_column_2",
+            ],
+            [
+                "block_row_40_column_3",
+                "textures/azalea_icons/icontextures/block_row_40_column_3",
+            ],
+            [
+                "block_row_40_column_4",
+                "textures/azalea_icons/icontextures/block_row_40_column_4",
+            ],
+            [
+                "block_row_40_column_5",
+                "textures/azalea_icons/icontextures/block_row_40_column_5",
+            ],
+            [
+                "block_row_40_column_6",
+                "textures/azalea_icons/icontextures/block_row_40_column_6",
+            ],
+            [
+                "block_row_40_column_7",
+                "textures/azalea_icons/icontextures/block_row_40_column_7",
+            ],
+            [
+                "block_row_40_column_8",
+                "textures/azalea_icons/icontextures/block_row_40_column_8",
+            ],
+            [
+                "block_row_40_column_9",
+                "textures/azalea_icons/icontextures/block_row_40_column_9",
+            ],
+            [
+                "block_row_41_column_1",
+                "textures/azalea_icons/icontextures/block_row_41_column_1",
+            ],
+            [
+                "block_row_41_column_10",
+                "textures/azalea_icons/icontextures/block_row_41_column_10",
+            ],
+            [
+                "block_row_41_column_11",
+                "textures/azalea_icons/icontextures/block_row_41_column_11",
+            ],
+            [
+                "block_row_41_column_12",
+                "textures/azalea_icons/icontextures/block_row_41_column_12",
+            ],
+            [
+                "block_row_41_column_13",
+                "textures/azalea_icons/icontextures/block_row_41_column_13",
+            ],
+            [
+                "block_row_41_column_14",
+                "textures/azalea_icons/icontextures/block_row_41_column_14",
+            ],
+            [
+                "block_row_41_column_15",
+                "textures/azalea_icons/icontextures/block_row_41_column_15",
+            ],
+            [
+                "block_row_41_column_16",
+                "textures/azalea_icons/icontextures/block_row_41_column_16",
+            ],
+            [
+                "block_row_41_column_2",
+                "textures/azalea_icons/icontextures/block_row_41_column_2",
+            ],
+            [
+                "block_row_41_column_3",
+                "textures/azalea_icons/icontextures/block_row_41_column_3",
+            ],
+            [
+                "block_row_41_column_4",
+                "textures/azalea_icons/icontextures/block_row_41_column_4",
+            ],
+            [
+                "block_row_41_column_5",
+                "textures/azalea_icons/icontextures/block_row_41_column_5",
+            ],
+            [
+                "block_row_41_column_6",
+                "textures/azalea_icons/icontextures/block_row_41_column_6",
+            ],
+            [
+                "block_row_41_column_7",
+                "textures/azalea_icons/icontextures/block_row_41_column_7",
+            ],
+            [
+                "block_row_41_column_8",
+                "textures/azalea_icons/icontextures/block_row_41_column_8",
+            ],
+            [
+                "block_row_41_column_9",
+                "textures/azalea_icons/icontextures/block_row_41_column_9",
+            ],
+            [
+                "block_row_44_column_10",
+                "textures/azalea_icons/icontextures/block_row_44_column_10",
+            ],
+            [
+                "block_row_44_column_11",
+                "textures/azalea_icons/icontextures/block_row_44_column_11",
+            ],
+            [
+                "block_row_44_column_12",
+                "textures/azalea_icons/icontextures/block_row_44_column_12",
+            ],
+            [
+                "block_row_44_column_13",
+                "textures/azalea_icons/icontextures/block_row_44_column_13",
+            ],
+            [
+                "block_row_44_column_14",
+                "textures/azalea_icons/icontextures/block_row_44_column_14",
+            ],
+            [
+                "block_row_44_column_15",
+                "textures/azalea_icons/icontextures/block_row_44_column_15",
+            ],
+            [
+                "block_row_44_column_16",
+                "textures/azalea_icons/icontextures/block_row_44_column_16",
+            ],
+            [
+                "block_row_44_column_17",
+                "textures/azalea_icons/icontextures/block_row_44_column_17",
+            ],
+            [
+                "block_row_44_column_18",
+                "textures/azalea_icons/icontextures/block_row_44_column_18",
+            ],
+            [
+                "block_row_44_column_3",
+                "textures/azalea_icons/icontextures/block_row_44_column_3",
+            ],
+            [
+                "block_row_44_column_4",
+                "textures/azalea_icons/icontextures/block_row_44_column_4",
+            ],
+            [
+                "block_row_44_column_5",
+                "textures/azalea_icons/icontextures/block_row_44_column_5",
+            ],
+            [
+                "block_row_44_column_6",
+                "textures/azalea_icons/icontextures/block_row_44_column_6",
+            ],
+            [
+                "block_row_44_column_7",
+                "textures/azalea_icons/icontextures/block_row_44_column_7",
+            ],
+            [
+                "block_row_44_column_8",
+                "textures/azalea_icons/icontextures/block_row_44_column_8",
+            ],
+            [
+                "block_row_44_column_9",
+                "textures/azalea_icons/icontextures/block_row_44_column_9",
+            ],
+            [
+                "block_row_45_column_10",
+                "textures/azalea_icons/icontextures/block_row_45_column_10",
+            ],
+            [
+                "block_row_45_column_11",
+                "textures/azalea_icons/icontextures/block_row_45_column_11",
+            ],
+            [
+                "block_row_45_column_12",
+                "textures/azalea_icons/icontextures/block_row_45_column_12",
+            ],
+            [
+                "block_row_45_column_13",
+                "textures/azalea_icons/icontextures/block_row_45_column_13",
+            ],
+            [
+                "block_row_45_column_14",
+                "textures/azalea_icons/icontextures/block_row_45_column_14",
+            ],
+            [
+                "block_row_45_column_15",
+                "textures/azalea_icons/icontextures/block_row_45_column_15",
+            ],
+            [
+                "block_row_45_column_16",
+                "textures/azalea_icons/icontextures/block_row_45_column_16",
+            ],
+            [
+                "block_row_45_column_17",
+                "textures/azalea_icons/icontextures/block_row_45_column_17",
+            ],
+            [
+                "block_row_45_column_18",
+                "textures/azalea_icons/icontextures/block_row_45_column_18",
+            ],
+            [
+                "block_row_45_column_5",
+                "textures/azalea_icons/icontextures/block_row_45_column_5",
+            ],
+            [
+                "block_row_45_column_6",
+                "textures/azalea_icons/icontextures/block_row_45_column_6",
+            ],
+            [
+                "block_row_45_column_7",
+                "textures/azalea_icons/icontextures/block_row_45_column_7",
+            ],
+            [
+                "block_row_45_column_8",
+                "textures/azalea_icons/icontextures/block_row_45_column_8",
+            ],
+            [
+                "block_row_45_column_9",
+                "textures/azalea_icons/icontextures/block_row_45_column_9",
+            ],
+            [
+                "block_row_46_column_1",
+                "textures/azalea_icons/icontextures/block_row_46_column_1",
+            ],
+            [
+                "block_row_46_column_10",
+                "textures/azalea_icons/icontextures/block_row_46_column_10",
+            ],
+            [
+                "block_row_46_column_11",
+                "textures/azalea_icons/icontextures/block_row_46_column_11",
+            ],
+            [
+                "block_row_46_column_12",
+                "textures/azalea_icons/icontextures/block_row_46_column_12",
+            ],
+            [
+                "block_row_46_column_13",
+                "textures/azalea_icons/icontextures/block_row_46_column_13",
+            ],
+            [
+                "block_row_46_column_14",
+                "textures/azalea_icons/icontextures/block_row_46_column_14",
+            ],
+            [
+                "block_row_46_column_15",
+                "textures/azalea_icons/icontextures/block_row_46_column_15",
+            ],
+            [
+                "block_row_46_column_16",
+                "textures/azalea_icons/icontextures/block_row_46_column_16",
+            ],
+            [
+                "block_row_46_column_17",
+                "textures/azalea_icons/icontextures/block_row_46_column_17",
+            ],
+            [
+                "block_row_46_column_18",
+                "textures/azalea_icons/icontextures/block_row_46_column_18",
+            ],
+            [
+                "block_row_46_column_2",
+                "textures/azalea_icons/icontextures/block_row_46_column_2",
+            ],
+            [
+                "block_row_46_column_3",
+                "textures/azalea_icons/icontextures/block_row_46_column_3",
+            ],
+            [
+                "block_row_46_column_4",
+                "textures/azalea_icons/icontextures/block_row_46_column_4",
+            ],
+            [
+                "block_row_46_column_5",
+                "textures/azalea_icons/icontextures/block_row_46_column_5",
+            ],
+            [
+                "block_row_46_column_6",
+                "textures/azalea_icons/icontextures/block_row_46_column_6",
+            ],
+            [
+                "block_row_46_column_7",
+                "textures/azalea_icons/icontextures/block_row_46_column_7",
+            ],
+            [
+                "block_row_46_column_8",
+                "textures/azalea_icons/icontextures/block_row_46_column_8",
+            ],
+            [
+                "block_row_46_column_9",
+                "textures/azalea_icons/icontextures/block_row_46_column_9",
+            ],
+            [
+                "block_row_47_column_1",
+                "textures/azalea_icons/icontextures/block_row_47_column_1",
+            ],
+            [
+                "block_row_47_column_10",
+                "textures/azalea_icons/icontextures/block_row_47_column_10",
+            ],
+            [
+                "block_row_47_column_11",
+                "textures/azalea_icons/icontextures/block_row_47_column_11",
+            ],
+            [
+                "block_row_47_column_12",
+                "textures/azalea_icons/icontextures/block_row_47_column_12",
+            ],
+            [
+                "block_row_47_column_13",
+                "textures/azalea_icons/icontextures/block_row_47_column_13",
+            ],
+            [
+                "block_row_47_column_14",
+                "textures/azalea_icons/icontextures/block_row_47_column_14",
+            ],
+            [
+                "block_row_47_column_15",
+                "textures/azalea_icons/icontextures/block_row_47_column_15",
+            ],
+            [
+                "block_row_47_column_16",
+                "textures/azalea_icons/icontextures/block_row_47_column_16",
+            ],
+            [
+                "block_row_47_column_17",
+                "textures/azalea_icons/icontextures/block_row_47_column_17",
+            ],
+            [
+                "block_row_47_column_18",
+                "textures/azalea_icons/icontextures/block_row_47_column_18",
+            ],
+            [
+                "block_row_47_column_2",
+                "textures/azalea_icons/icontextures/block_row_47_column_2",
+            ],
+            [
+                "block_row_47_column_3",
+                "textures/azalea_icons/icontextures/block_row_47_column_3",
+            ],
+            [
+                "block_row_47_column_4",
+                "textures/azalea_icons/icontextures/block_row_47_column_4",
+            ],
+            [
+                "block_row_47_column_5",
+                "textures/azalea_icons/icontextures/block_row_47_column_5",
+            ],
+            [
+                "block_row_47_column_6",
+                "textures/azalea_icons/icontextures/block_row_47_column_6",
+            ],
+            [
+                "block_row_47_column_7",
+                "textures/azalea_icons/icontextures/block_row_47_column_7",
+            ],
+            [
+                "block_row_47_column_8",
+                "textures/azalea_icons/icontextures/block_row_47_column_8",
+            ],
+            [
+                "block_row_47_column_9",
+                "textures/azalea_icons/icontextures/block_row_47_column_9",
+            ],
+            [
+                "block_row_48_column_1",
+                "textures/azalea_icons/icontextures/block_row_48_column_1",
+            ],
+            [
+                "block_row_48_column_10",
+                "textures/azalea_icons/icontextures/block_row_48_column_10",
+            ],
+            [
+                "block_row_48_column_11",
+                "textures/azalea_icons/icontextures/block_row_48_column_11",
+            ],
+            [
+                "block_row_48_column_12",
+                "textures/azalea_icons/icontextures/block_row_48_column_12",
+            ],
+            [
+                "block_row_48_column_13",
+                "textures/azalea_icons/icontextures/block_row_48_column_13",
+            ],
+            [
+                "block_row_48_column_14",
+                "textures/azalea_icons/icontextures/block_row_48_column_14",
+            ],
+            [
+                "block_row_48_column_15",
+                "textures/azalea_icons/icontextures/block_row_48_column_15",
+            ],
+            [
+                "block_row_48_column_16",
+                "textures/azalea_icons/icontextures/block_row_48_column_16",
+            ],
+            [
+                "block_row_48_column_17",
+                "textures/azalea_icons/icontextures/block_row_48_column_17",
+            ],
+            [
+                "block_row_48_column_18",
+                "textures/azalea_icons/icontextures/block_row_48_column_18",
+            ],
+            [
+                "block_row_48_column_2",
+                "textures/azalea_icons/icontextures/block_row_48_column_2",
+            ],
+            [
+                "block_row_48_column_3",
+                "textures/azalea_icons/icontextures/block_row_48_column_3",
+            ],
+            [
+                "block_row_48_column_4",
+                "textures/azalea_icons/icontextures/block_row_48_column_4",
+            ],
+            [
+                "block_row_48_column_5",
+                "textures/azalea_icons/icontextures/block_row_48_column_5",
+            ],
+            [
+                "block_row_48_column_6",
+                "textures/azalea_icons/icontextures/block_row_48_column_6",
+            ],
+            [
+                "block_row_48_column_7",
+                "textures/azalea_icons/icontextures/block_row_48_column_7",
+            ],
+            [
+                "block_row_48_column_8",
+                "textures/azalea_icons/icontextures/block_row_48_column_8",
+            ],
+            [
+                "block_row_48_column_9",
+                "textures/azalea_icons/icontextures/block_row_48_column_9",
+            ],
+            [
+                "block_row_49_column_1",
+                "textures/azalea_icons/icontextures/block_row_49_column_1",
+            ],
+            [
+                "block_row_49_column_10",
+                "textures/azalea_icons/icontextures/block_row_49_column_10",
+            ],
+            [
+                "block_row_49_column_11",
+                "textures/azalea_icons/icontextures/block_row_49_column_11",
+            ],
+            [
+                "block_row_49_column_12",
+                "textures/azalea_icons/icontextures/block_row_49_column_12",
+            ],
+            [
+                "block_row_49_column_13",
+                "textures/azalea_icons/icontextures/block_row_49_column_13",
+            ],
+            [
+                "block_row_49_column_14",
+                "textures/azalea_icons/icontextures/block_row_49_column_14",
+            ],
+            [
+                "block_row_49_column_15",
+                "textures/azalea_icons/icontextures/block_row_49_column_15",
+            ],
+            [
+                "block_row_49_column_16",
+                "textures/azalea_icons/icontextures/block_row_49_column_16",
+            ],
+            [
+                "block_row_49_column_17",
+                "textures/azalea_icons/icontextures/block_row_49_column_17",
+            ],
+            [
+                "block_row_49_column_18",
+                "textures/azalea_icons/icontextures/block_row_49_column_18",
+            ],
+            [
+                "block_row_49_column_2",
+                "textures/azalea_icons/icontextures/block_row_49_column_2",
+            ],
+            [
+                "block_row_49_column_3",
+                "textures/azalea_icons/icontextures/block_row_49_column_3",
+            ],
+            [
+                "block_row_49_column_4",
+                "textures/azalea_icons/icontextures/block_row_49_column_4",
+            ],
+            [
+                "block_row_49_column_5",
+                "textures/azalea_icons/icontextures/block_row_49_column_5",
+            ],
+            [
+                "block_row_49_column_6",
+                "textures/azalea_icons/icontextures/block_row_49_column_6",
+            ],
+            [
+                "block_row_49_column_7",
+                "textures/azalea_icons/icontextures/block_row_49_column_7",
+            ],
+            [
+                "block_row_49_column_8",
+                "textures/azalea_icons/icontextures/block_row_49_column_8",
+            ],
+            [
+                "block_row_49_column_9",
+                "textures/azalea_icons/icontextures/block_row_49_column_9",
+            ],
+            [
+                "block_row_4_column_1",
+                "textures/azalea_icons/icontextures/block_row_4_column_1",
+            ],
+            [
+                "block_row_4_column_10",
+                "textures/azalea_icons/icontextures/block_row_4_column_10",
+            ],
+            [
+                "block_row_4_column_11",
+                "textures/azalea_icons/icontextures/block_row_4_column_11",
+            ],
+            [
+                "block_row_4_column_12",
+                "textures/azalea_icons/icontextures/block_row_4_column_12",
+            ],
+            [
+                "block_row_4_column_13",
+                "textures/azalea_icons/icontextures/block_row_4_column_13",
+            ],
+            [
+                "block_row_4_column_14",
+                "textures/azalea_icons/icontextures/block_row_4_column_14",
+            ],
+            [
+                "block_row_4_column_15",
+                "textures/azalea_icons/icontextures/block_row_4_column_15",
+            ],
+            [
+                "block_row_4_column_16",
+                "textures/azalea_icons/icontextures/block_row_4_column_16",
+            ],
+            [
+                "block_row_4_column_17",
+                "textures/azalea_icons/icontextures/block_row_4_column_17",
+            ],
+            [
+                "block_row_4_column_18",
+                "textures/azalea_icons/icontextures/block_row_4_column_18",
+            ],
+            [
+                "block_row_4_column_2",
+                "textures/azalea_icons/icontextures/block_row_4_column_2",
+            ],
+            [
+                "block_row_4_column_3",
+                "textures/azalea_icons/icontextures/block_row_4_column_3",
+            ],
+            [
+                "block_row_4_column_4",
+                "textures/azalea_icons/icontextures/block_row_4_column_4",
+            ],
+            [
+                "block_row_4_column_5",
+                "textures/azalea_icons/icontextures/block_row_4_column_5",
+            ],
+            [
+                "block_row_4_column_6",
+                "textures/azalea_icons/icontextures/block_row_4_column_6",
+            ],
+            [
+                "block_row_4_column_7",
+                "textures/azalea_icons/icontextures/block_row_4_column_7",
+            ],
+            [
+                "block_row_4_column_8",
+                "textures/azalea_icons/icontextures/block_row_4_column_8",
+            ],
+            [
+                "block_row_4_column_9",
+                "textures/azalea_icons/icontextures/block_row_4_column_9",
+            ],
+            [
+                "block_row_50_column_1",
+                "textures/azalea_icons/icontextures/block_row_50_column_1",
+            ],
+            [
+                "block_row_50_column_10",
+                "textures/azalea_icons/icontextures/block_row_50_column_10",
+            ],
+            [
+                "block_row_50_column_11",
+                "textures/azalea_icons/icontextures/block_row_50_column_11",
+            ],
+            [
+                "block_row_50_column_12",
+                "textures/azalea_icons/icontextures/block_row_50_column_12",
+            ],
+            [
+                "block_row_50_column_13",
+                "textures/azalea_icons/icontextures/block_row_50_column_13",
+            ],
+            [
+                "block_row_50_column_14",
+                "textures/azalea_icons/icontextures/block_row_50_column_14",
+            ],
+            [
+                "block_row_50_column_15",
+                "textures/azalea_icons/icontextures/block_row_50_column_15",
+            ],
+            [
+                "block_row_50_column_16",
+                "textures/azalea_icons/icontextures/block_row_50_column_16",
+            ],
+            [
+                "block_row_50_column_17",
+                "textures/azalea_icons/icontextures/block_row_50_column_17",
+            ],
+            [
+                "block_row_50_column_18",
+                "textures/azalea_icons/icontextures/block_row_50_column_18",
+            ],
+            [
+                "block_row_50_column_2",
+                "textures/azalea_icons/icontextures/block_row_50_column_2",
+            ],
+            [
+                "block_row_50_column_3",
+                "textures/azalea_icons/icontextures/block_row_50_column_3",
+            ],
+            [
+                "block_row_50_column_4",
+                "textures/azalea_icons/icontextures/block_row_50_column_4",
+            ],
+            [
+                "block_row_50_column_5",
+                "textures/azalea_icons/icontextures/block_row_50_column_5",
+            ],
+            [
+                "block_row_50_column_6",
+                "textures/azalea_icons/icontextures/block_row_50_column_6",
+            ],
+            [
+                "block_row_50_column_7",
+                "textures/azalea_icons/icontextures/block_row_50_column_7",
+            ],
+            [
+                "block_row_50_column_8",
+                "textures/azalea_icons/icontextures/block_row_50_column_8",
+            ],
+            [
+                "block_row_50_column_9",
+                "textures/azalea_icons/icontextures/block_row_50_column_9",
+            ],
+            [
+                "block_row_51_column_1",
+                "textures/azalea_icons/icontextures/block_row_51_column_1",
+            ],
+            [
+                "block_row_51_column_10",
+                "textures/azalea_icons/icontextures/block_row_51_column_10",
+            ],
+            [
+                "block_row_51_column_11",
+                "textures/azalea_icons/icontextures/block_row_51_column_11",
+            ],
+            [
+                "block_row_51_column_12",
+                "textures/azalea_icons/icontextures/block_row_51_column_12",
+            ],
+            [
+                "block_row_51_column_13",
+                "textures/azalea_icons/icontextures/block_row_51_column_13",
+            ],
+            [
+                "block_row_51_column_14",
+                "textures/azalea_icons/icontextures/block_row_51_column_14",
+            ],
+            [
+                "block_row_51_column_15",
+                "textures/azalea_icons/icontextures/block_row_51_column_15",
+            ],
+            [
+                "block_row_51_column_16",
+                "textures/azalea_icons/icontextures/block_row_51_column_16",
+            ],
+            [
+                "block_row_51_column_17",
+                "textures/azalea_icons/icontextures/block_row_51_column_17",
+            ],
+            [
+                "block_row_51_column_2",
+                "textures/azalea_icons/icontextures/block_row_51_column_2",
+            ],
+            [
+                "block_row_51_column_3",
+                "textures/azalea_icons/icontextures/block_row_51_column_3",
+            ],
+            [
+                "block_row_51_column_4",
+                "textures/azalea_icons/icontextures/block_row_51_column_4",
+            ],
+            [
+                "block_row_51_column_5",
+                "textures/azalea_icons/icontextures/block_row_51_column_5",
+            ],
+            [
+                "block_row_51_column_6",
+                "textures/azalea_icons/icontextures/block_row_51_column_6",
+            ],
+            [
+                "block_row_51_column_7",
+                "textures/azalea_icons/icontextures/block_row_51_column_7",
+            ],
+            [
+                "block_row_51_column_8",
+                "textures/azalea_icons/icontextures/block_row_51_column_8",
+            ],
+            [
+                "block_row_51_column_9",
+                "textures/azalea_icons/icontextures/block_row_51_column_9",
+            ],
+            [
+                "block_row_52_column_10",
+                "textures/azalea_icons/icontextures/block_row_52_column_10",
+            ],
+            [
+                "block_row_52_column_11",
+                "textures/azalea_icons/icontextures/block_row_52_column_11",
+            ],
+            [
+                "block_row_52_column_12",
+                "textures/azalea_icons/icontextures/block_row_52_column_12",
+            ],
+            [
+                "block_row_52_column_13",
+                "textures/azalea_icons/icontextures/block_row_52_column_13",
+            ],
+            [
+                "block_row_52_column_14",
+                "textures/azalea_icons/icontextures/block_row_52_column_14",
+            ],
+            [
+                "block_row_52_column_15",
+                "textures/azalea_icons/icontextures/block_row_52_column_15",
+            ],
+            [
+                "block_row_52_column_16",
+                "textures/azalea_icons/icontextures/block_row_52_column_16",
+            ],
+            [
+                "block_row_52_column_17",
+                "textures/azalea_icons/icontextures/block_row_52_column_17",
+            ],
+            [
+                "block_row_52_column_18",
+                "textures/azalea_icons/icontextures/block_row_52_column_18",
+            ],
+            [
+                "block_row_52_column_4",
+                "textures/azalea_icons/icontextures/block_row_52_column_4",
+            ],
+            [
+                "block_row_52_column_5",
+                "textures/azalea_icons/icontextures/block_row_52_column_5",
+            ],
+            [
+                "block_row_52_column_6",
+                "textures/azalea_icons/icontextures/block_row_52_column_6",
+            ],
+            [
+                "block_row_52_column_7",
+                "textures/azalea_icons/icontextures/block_row_52_column_7",
+            ],
+            [
+                "block_row_52_column_8",
+                "textures/azalea_icons/icontextures/block_row_52_column_8",
+            ],
+            [
+                "block_row_52_column_9",
+                "textures/azalea_icons/icontextures/block_row_52_column_9",
+            ],
+            [
+                "block_row_53_column_1",
+                "textures/azalea_icons/icontextures/block_row_53_column_1",
+            ],
+            [
+                "block_row_53_column_10",
+                "textures/azalea_icons/icontextures/block_row_53_column_10",
+            ],
+            [
+                "block_row_53_column_11",
+                "textures/azalea_icons/icontextures/block_row_53_column_11",
+            ],
+            [
+                "block_row_53_column_12",
+                "textures/azalea_icons/icontextures/block_row_53_column_12",
+            ],
+            [
+                "block_row_53_column_13",
+                "textures/azalea_icons/icontextures/block_row_53_column_13",
+            ],
+            [
+                "block_row_53_column_14",
+                "textures/azalea_icons/icontextures/block_row_53_column_14",
+            ],
+            [
+                "block_row_53_column_15",
+                "textures/azalea_icons/icontextures/block_row_53_column_15",
+            ],
+            [
+                "block_row_53_column_16",
+                "textures/azalea_icons/icontextures/block_row_53_column_16",
+            ],
+            [
+                "block_row_53_column_17",
+                "textures/azalea_icons/icontextures/block_row_53_column_17",
+            ],
+            [
+                "block_row_53_column_18",
+                "textures/azalea_icons/icontextures/block_row_53_column_18",
+            ],
+            [
+                "block_row_53_column_2",
+                "textures/azalea_icons/icontextures/block_row_53_column_2",
+            ],
+            [
+                "block_row_53_column_3",
+                "textures/azalea_icons/icontextures/block_row_53_column_3",
+            ],
+            [
+                "block_row_53_column_4",
+                "textures/azalea_icons/icontextures/block_row_53_column_4",
+            ],
+            [
+                "block_row_53_column_5",
+                "textures/azalea_icons/icontextures/block_row_53_column_5",
+            ],
+            [
+                "block_row_53_column_6",
+                "textures/azalea_icons/icontextures/block_row_53_column_6",
+            ],
+            [
+                "block_row_53_column_7",
+                "textures/azalea_icons/icontextures/block_row_53_column_7",
+            ],
+            [
+                "block_row_53_column_8",
+                "textures/azalea_icons/icontextures/block_row_53_column_8",
+            ],
+            [
+                "block_row_53_column_9",
+                "textures/azalea_icons/icontextures/block_row_53_column_9",
+            ],
+            [
+                "block_row_54_column_1",
+                "textures/azalea_icons/icontextures/block_row_54_column_1",
+            ],
+            [
+                "block_row_54_column_10",
+                "textures/azalea_icons/icontextures/block_row_54_column_10",
+            ],
+            [
+                "block_row_54_column_11",
+                "textures/azalea_icons/icontextures/block_row_54_column_11",
+            ],
+            [
+                "block_row_54_column_12",
+                "textures/azalea_icons/icontextures/block_row_54_column_12",
+            ],
+            [
+                "block_row_54_column_13",
+                "textures/azalea_icons/icontextures/block_row_54_column_13",
+            ],
+            [
+                "block_row_54_column_14",
+                "textures/azalea_icons/icontextures/block_row_54_column_14",
+            ],
+            [
+                "block_row_54_column_15",
+                "textures/azalea_icons/icontextures/block_row_54_column_15",
+            ],
+            [
+                "block_row_54_column_16",
+                "textures/azalea_icons/icontextures/block_row_54_column_16",
+            ],
+            [
+                "block_row_54_column_17",
+                "textures/azalea_icons/icontextures/block_row_54_column_17",
+            ],
+            [
+                "block_row_54_column_18",
+                "textures/azalea_icons/icontextures/block_row_54_column_18",
+            ],
+            [
+                "block_row_54_column_2",
+                "textures/azalea_icons/icontextures/block_row_54_column_2",
+            ],
+            [
+                "block_row_54_column_3",
+                "textures/azalea_icons/icontextures/block_row_54_column_3",
+            ],
+            [
+                "block_row_54_column_4",
+                "textures/azalea_icons/icontextures/block_row_54_column_4",
+            ],
+            [
+                "block_row_54_column_5",
+                "textures/azalea_icons/icontextures/block_row_54_column_5",
+            ],
+            [
+                "block_row_54_column_6",
+                "textures/azalea_icons/icontextures/block_row_54_column_6",
+            ],
+            [
+                "block_row_54_column_7",
+                "textures/azalea_icons/icontextures/block_row_54_column_7",
+            ],
+            [
+                "block_row_54_column_8",
+                "textures/azalea_icons/icontextures/block_row_54_column_8",
+            ],
+            [
+                "block_row_54_column_9",
+                "textures/azalea_icons/icontextures/block_row_54_column_9",
+            ],
+            [
+                "block_row_55_column_1",
+                "textures/azalea_icons/icontextures/block_row_55_column_1",
+            ],
+            [
+                "block_row_55_column_10",
+                "textures/azalea_icons/icontextures/block_row_55_column_10",
+            ],
+            [
+                "block_row_55_column_11",
+                "textures/azalea_icons/icontextures/block_row_55_column_11",
+            ],
+            [
+                "block_row_55_column_12",
+                "textures/azalea_icons/icontextures/block_row_55_column_12",
+            ],
+            [
+                "block_row_55_column_13",
+                "textures/azalea_icons/icontextures/block_row_55_column_13",
+            ],
+            [
+                "block_row_55_column_14",
+                "textures/azalea_icons/icontextures/block_row_55_column_14",
+            ],
+            [
+                "block_row_55_column_2",
+                "textures/azalea_icons/icontextures/block_row_55_column_2",
+            ],
+            [
+                "block_row_55_column_3",
+                "textures/azalea_icons/icontextures/block_row_55_column_3",
+            ],
+            [
+                "block_row_55_column_4",
+                "textures/azalea_icons/icontextures/block_row_55_column_4",
+            ],
+            [
+                "block_row_55_column_5",
+                "textures/azalea_icons/icontextures/block_row_55_column_5",
+            ],
+            [
+                "block_row_55_column_6",
+                "textures/azalea_icons/icontextures/block_row_55_column_6",
+            ],
+            [
+                "block_row_55_column_7",
+                "textures/azalea_icons/icontextures/block_row_55_column_7",
+            ],
+            [
+                "block_row_55_column_8",
+                "textures/azalea_icons/icontextures/block_row_55_column_8",
+            ],
+            [
+                "block_row_55_column_9",
+                "textures/azalea_icons/icontextures/block_row_55_column_9",
+            ],
+            [
+                "block_row_58_column_12",
+                "textures/azalea_icons/icontextures/block_row_58_column_12",
+            ],
+            [
+                "block_row_58_column_13",
+                "textures/azalea_icons/icontextures/block_row_58_column_13",
+            ],
+            [
+                "block_row_58_column_14",
+                "textures/azalea_icons/icontextures/block_row_58_column_14",
+            ],
+            [
+                "block_row_58_column_15",
+                "textures/azalea_icons/icontextures/block_row_58_column_15",
+            ],
+            [
+                "block_row_58_column_16",
+                "textures/azalea_icons/icontextures/block_row_58_column_16",
+            ],
+            [
+                "block_row_58_column_17",
+                "textures/azalea_icons/icontextures/block_row_58_column_17",
+            ],
+            [
+                "block_row_58_column_18",
+                "textures/azalea_icons/icontextures/block_row_58_column_18",
+            ],
+            [
+                "block_row_59_column_1",
+                "textures/azalea_icons/icontextures/block_row_59_column_1",
+            ],
+            [
+                "block_row_59_column_10",
+                "textures/azalea_icons/icontextures/block_row_59_column_10",
+            ],
+            [
+                "block_row_59_column_11",
+                "textures/azalea_icons/icontextures/block_row_59_column_11",
+            ],
+            [
+                "block_row_59_column_12",
+                "textures/azalea_icons/icontextures/block_row_59_column_12",
+            ],
+            [
+                "block_row_59_column_13",
+                "textures/azalea_icons/icontextures/block_row_59_column_13",
+            ],
+            [
+                "block_row_59_column_14",
+                "textures/azalea_icons/icontextures/block_row_59_column_14",
+            ],
+            [
+                "block_row_59_column_15",
+                "textures/azalea_icons/icontextures/block_row_59_column_15",
+            ],
+            [
+                "block_row_59_column_16",
+                "textures/azalea_icons/icontextures/block_row_59_column_16",
+            ],
+            [
+                "block_row_59_column_17",
+                "textures/azalea_icons/icontextures/block_row_59_column_17",
+            ],
+            [
+                "block_row_59_column_18",
+                "textures/azalea_icons/icontextures/block_row_59_column_18",
+            ],
+            [
+                "block_row_59_column_2",
+                "textures/azalea_icons/icontextures/block_row_59_column_2",
+            ],
+            [
+                "block_row_59_column_3",
+                "textures/azalea_icons/icontextures/block_row_59_column_3",
+            ],
+            [
+                "block_row_59_column_4",
+                "textures/azalea_icons/icontextures/block_row_59_column_4",
+            ],
+            [
+                "block_row_59_column_5",
+                "textures/azalea_icons/icontextures/block_row_59_column_5",
+            ],
+            [
+                "block_row_59_column_6",
+                "textures/azalea_icons/icontextures/block_row_59_column_6",
+            ],
+            [
+                "block_row_59_column_7",
+                "textures/azalea_icons/icontextures/block_row_59_column_7",
+            ],
+            [
+                "block_row_59_column_8",
+                "textures/azalea_icons/icontextures/block_row_59_column_8",
+            ],
+            [
+                "block_row_59_column_9",
+                "textures/azalea_icons/icontextures/block_row_59_column_9",
+            ],
+            [
+                "block_row_5_column_1",
+                "textures/azalea_icons/icontextures/block_row_5_column_1",
+            ],
+            [
+                "block_row_5_column_10",
+                "textures/azalea_icons/icontextures/block_row_5_column_10",
+            ],
+            [
+                "block_row_5_column_11",
+                "textures/azalea_icons/icontextures/block_row_5_column_11",
+            ],
+            [
+                "block_row_5_column_12",
+                "textures/azalea_icons/icontextures/block_row_5_column_12",
+            ],
+            [
+                "block_row_5_column_13",
+                "textures/azalea_icons/icontextures/block_row_5_column_13",
+            ],
+            [
+                "block_row_5_column_14",
+                "textures/azalea_icons/icontextures/block_row_5_column_14",
+            ],
+            [
+                "block_row_5_column_15",
+                "textures/azalea_icons/icontextures/block_row_5_column_15",
+            ],
+            [
+                "block_row_5_column_16",
+                "textures/azalea_icons/icontextures/block_row_5_column_16",
+            ],
+            [
+                "block_row_5_column_17",
+                "textures/azalea_icons/icontextures/block_row_5_column_17",
+            ],
+            [
+                "block_row_5_column_18",
+                "textures/azalea_icons/icontextures/block_row_5_column_18",
+            ],
+            [
+                "block_row_5_column_2",
+                "textures/azalea_icons/icontextures/block_row_5_column_2",
+            ],
+            [
+                "block_row_5_column_3",
+                "textures/azalea_icons/icontextures/block_row_5_column_3",
+            ],
+            [
+                "block_row_5_column_4",
+                "textures/azalea_icons/icontextures/block_row_5_column_4",
+            ],
+            [
+                "block_row_5_column_5",
+                "textures/azalea_icons/icontextures/block_row_5_column_5",
+            ],
+            [
+                "block_row_5_column_6",
+                "textures/azalea_icons/icontextures/block_row_5_column_6",
+            ],
+            [
+                "block_row_5_column_7",
+                "textures/azalea_icons/icontextures/block_row_5_column_7",
+            ],
+            [
+                "block_row_5_column_8",
+                "textures/azalea_icons/icontextures/block_row_5_column_8",
+            ],
+            [
+                "block_row_5_column_9",
+                "textures/azalea_icons/icontextures/block_row_5_column_9",
+            ],
+            [
+                "block_row_60_column_1",
+                "textures/azalea_icons/icontextures/block_row_60_column_1",
+            ],
+            [
+                "block_row_60_column_10",
+                "textures/azalea_icons/icontextures/block_row_60_column_10",
+            ],
+            [
+                "block_row_60_column_11",
+                "textures/azalea_icons/icontextures/block_row_60_column_11",
+            ],
+            [
+                "block_row_60_column_12",
+                "textures/azalea_icons/icontextures/block_row_60_column_12",
+            ],
+            [
+                "block_row_60_column_13",
+                "textures/azalea_icons/icontextures/block_row_60_column_13",
+            ],
+            [
+                "block_row_60_column_14",
+                "textures/azalea_icons/icontextures/block_row_60_column_14",
+            ],
+            [
+                "block_row_60_column_15",
+                "textures/azalea_icons/icontextures/block_row_60_column_15",
+            ],
+            [
+                "block_row_60_column_16",
+                "textures/azalea_icons/icontextures/block_row_60_column_16",
+            ],
+            [
+                "block_row_60_column_17",
+                "textures/azalea_icons/icontextures/block_row_60_column_17",
+            ],
+            [
+                "block_row_60_column_18",
+                "textures/azalea_icons/icontextures/block_row_60_column_18",
+            ],
+            [
+                "block_row_60_column_2",
+                "textures/azalea_icons/icontextures/block_row_60_column_2",
+            ],
+            [
+                "block_row_60_column_3",
+                "textures/azalea_icons/icontextures/block_row_60_column_3",
+            ],
+            [
+                "block_row_60_column_4",
+                "textures/azalea_icons/icontextures/block_row_60_column_4",
+            ],
+            [
+                "block_row_60_column_5",
+                "textures/azalea_icons/icontextures/block_row_60_column_5",
+            ],
+            [
+                "block_row_60_column_6",
+                "textures/azalea_icons/icontextures/block_row_60_column_6",
+            ],
+            [
+                "block_row_60_column_7",
+                "textures/azalea_icons/icontextures/block_row_60_column_7",
+            ],
+            [
+                "block_row_60_column_8",
+                "textures/azalea_icons/icontextures/block_row_60_column_8",
+            ],
+            [
+                "block_row_60_column_9",
+                "textures/azalea_icons/icontextures/block_row_60_column_9",
+            ],
+            [
+                "block_row_61_column_1",
+                "textures/azalea_icons/icontextures/block_row_61_column_1",
+            ],
+            [
+                "block_row_61_column_2",
+                "textures/azalea_icons/icontextures/block_row_61_column_2",
+            ],
+            [
+                "block_row_61_column_3",
+                "textures/azalea_icons/icontextures/block_row_61_column_3",
+            ],
+            [
+                "block_row_61_column_4",
+                "textures/azalea_icons/icontextures/block_row_61_column_4",
+            ],
+            [
+                "block_row_62_column_15",
+                "textures/azalea_icons/icontextures/block_row_62_column_15",
+            ],
+            [
+                "block_row_62_column_16",
+                "textures/azalea_icons/icontextures/block_row_62_column_16",
+            ],
+            [
+                "block_row_62_column_17",
+                "textures/azalea_icons/icontextures/block_row_62_column_17",
+            ],
+            [
+                "block_row_62_column_18",
+                "textures/azalea_icons/icontextures/block_row_62_column_18",
+            ],
+            [
+                "block_row_63_column_1",
+                "textures/azalea_icons/icontextures/block_row_63_column_1",
+            ],
+            [
+                "block_row_63_column_10",
+                "textures/azalea_icons/icontextures/block_row_63_column_10",
+            ],
+            [
+                "block_row_63_column_11",
+                "textures/azalea_icons/icontextures/block_row_63_column_11",
+            ],
+            [
+                "block_row_63_column_12",
+                "textures/azalea_icons/icontextures/block_row_63_column_12",
+            ],
+            [
+                "block_row_63_column_13",
+                "textures/azalea_icons/icontextures/block_row_63_column_13",
+            ],
+            [
+                "block_row_63_column_14",
+                "textures/azalea_icons/icontextures/block_row_63_column_14",
+            ],
+            [
+                "block_row_63_column_15",
+                "textures/azalea_icons/icontextures/block_row_63_column_15",
+            ],
+            [
+                "block_row_63_column_16",
+                "textures/azalea_icons/icontextures/block_row_63_column_16",
+            ],
+            [
+                "block_row_63_column_17",
+                "textures/azalea_icons/icontextures/block_row_63_column_17",
+            ],
+            [
+                "block_row_63_column_18",
+                "textures/azalea_icons/icontextures/block_row_63_column_18",
+            ],
+            [
+                "block_row_63_column_2",
+                "textures/azalea_icons/icontextures/block_row_63_column_2",
+            ],
+            [
+                "block_row_63_column_3",
+                "textures/azalea_icons/icontextures/block_row_63_column_3",
+            ],
+            [
+                "block_row_63_column_4",
+                "textures/azalea_icons/icontextures/block_row_63_column_4",
+            ],
+            [
+                "block_row_63_column_5",
+                "textures/azalea_icons/icontextures/block_row_63_column_5",
+            ],
+            [
+                "block_row_63_column_6",
+                "textures/azalea_icons/icontextures/block_row_63_column_6",
+            ],
+            [
+                "block_row_63_column_7",
+                "textures/azalea_icons/icontextures/block_row_63_column_7",
+            ],
+            [
+                "block_row_63_column_8",
+                "textures/azalea_icons/icontextures/block_row_63_column_8",
+            ],
+            [
+                "block_row_63_column_9",
+                "textures/azalea_icons/icontextures/block_row_63_column_9",
+            ],
+            [
+                "block_row_64_column_1",
+                "textures/azalea_icons/icontextures/block_row_64_column_1",
+            ],
+            [
+                "block_row_64_column_10",
+                "textures/azalea_icons/icontextures/block_row_64_column_10",
+            ],
+            [
+                "block_row_64_column_11",
+                "textures/azalea_icons/icontextures/block_row_64_column_11",
+            ],
+            [
+                "block_row_64_column_12",
+                "textures/azalea_icons/icontextures/block_row_64_column_12",
+            ],
+            [
+                "block_row_64_column_13",
+                "textures/azalea_icons/icontextures/block_row_64_column_13",
+            ],
+            [
+                "block_row_64_column_14",
+                "textures/azalea_icons/icontextures/block_row_64_column_14",
+            ],
+            [
+                "block_row_64_column_15",
+                "textures/azalea_icons/icontextures/block_row_64_column_15",
+            ],
+            [
+                "block_row_64_column_16",
+                "textures/azalea_icons/icontextures/block_row_64_column_16",
+            ],
+            [
+                "block_row_64_column_17",
+                "textures/azalea_icons/icontextures/block_row_64_column_17",
+            ],
+            [
+                "block_row_64_column_18",
+                "textures/azalea_icons/icontextures/block_row_64_column_18",
+            ],
+            [
+                "block_row_64_column_2",
+                "textures/azalea_icons/icontextures/block_row_64_column_2",
+            ],
+            [
+                "block_row_64_column_3",
+                "textures/azalea_icons/icontextures/block_row_64_column_3",
+            ],
+            [
+                "block_row_64_column_4",
+                "textures/azalea_icons/icontextures/block_row_64_column_4",
+            ],
+            [
+                "block_row_64_column_5",
+                "textures/azalea_icons/icontextures/block_row_64_column_5",
+            ],
+            [
+                "block_row_64_column_6",
+                "textures/azalea_icons/icontextures/block_row_64_column_6",
+            ],
+            [
+                "block_row_64_column_7",
+                "textures/azalea_icons/icontextures/block_row_64_column_7",
+            ],
+            [
+                "block_row_64_column_8",
+                "textures/azalea_icons/icontextures/block_row_64_column_8",
+            ],
+            [
+                "block_row_64_column_9",
+                "textures/azalea_icons/icontextures/block_row_64_column_9",
+            ],
+            [
+                "block_row_65_column_1",
+                "textures/azalea_icons/icontextures/block_row_65_column_1",
+            ],
+            [
+                "block_row_65_column_2",
+                "textures/azalea_icons/icontextures/block_row_65_column_2",
+            ],
+            [
+                "block_row_65_column_3",
+                "textures/azalea_icons/icontextures/block_row_65_column_3",
+            ],
+            [
+                "block_row_65_column_4",
+                "textures/azalea_icons/icontextures/block_row_65_column_4",
+            ],
+            [
+                "block_row_65_column_5",
+                "textures/azalea_icons/icontextures/block_row_65_column_5",
+            ],
+            [
+                "block_row_65_column_6",
+                "textures/azalea_icons/icontextures/block_row_65_column_6",
+            ],
+            [
+                "block_row_6_column_1",
+                "textures/azalea_icons/icontextures/block_row_6_column_1",
+            ],
+            [
+                "block_row_6_column_10",
+                "textures/azalea_icons/icontextures/block_row_6_column_10",
+            ],
+            [
+                "block_row_6_column_11",
+                "textures/azalea_icons/icontextures/block_row_6_column_11",
+            ],
+            [
+                "block_row_6_column_12",
+                "textures/azalea_icons/icontextures/block_row_6_column_12",
+            ],
+            [
+                "block_row_6_column_13",
+                "textures/azalea_icons/icontextures/block_row_6_column_13",
+            ],
+            [
+                "block_row_6_column_14",
+                "textures/azalea_icons/icontextures/block_row_6_column_14",
+            ],
+            [
+                "block_row_6_column_15",
+                "textures/azalea_icons/icontextures/block_row_6_column_15",
+            ],
+            [
+                "block_row_6_column_16",
+                "textures/azalea_icons/icontextures/block_row_6_column_16",
+            ],
+            [
+                "block_row_6_column_17",
+                "textures/azalea_icons/icontextures/block_row_6_column_17",
+            ],
+            [
+                "block_row_6_column_18",
+                "textures/azalea_icons/icontextures/block_row_6_column_18",
+            ],
+            [
+                "block_row_6_column_2",
+                "textures/azalea_icons/icontextures/block_row_6_column_2",
+            ],
+            [
+                "block_row_6_column_3",
+                "textures/azalea_icons/icontextures/block_row_6_column_3",
+            ],
+            [
+                "block_row_6_column_4",
+                "textures/azalea_icons/icontextures/block_row_6_column_4",
+            ],
+            [
+                "block_row_6_column_5",
+                "textures/azalea_icons/icontextures/block_row_6_column_5",
+            ],
+            [
+                "block_row_6_column_6",
+                "textures/azalea_icons/icontextures/block_row_6_column_6",
+            ],
+            [
+                "block_row_6_column_7",
+                "textures/azalea_icons/icontextures/block_row_6_column_7",
+            ],
+            [
+                "block_row_6_column_8",
+                "textures/azalea_icons/icontextures/block_row_6_column_8",
+            ],
+            [
+                "block_row_6_column_9",
+                "textures/azalea_icons/icontextures/block_row_6_column_9",
+            ],
+            [
+                "block_row_7_column_1",
+                "textures/azalea_icons/icontextures/block_row_7_column_1",
+            ],
+            [
+                "block_row_7_column_10",
+                "textures/azalea_icons/icontextures/block_row_7_column_10",
+            ],
+            [
+                "block_row_7_column_11",
+                "textures/azalea_icons/icontextures/block_row_7_column_11",
+            ],
+            [
+                "block_row_7_column_12",
+                "textures/azalea_icons/icontextures/block_row_7_column_12",
+            ],
+            [
+                "block_row_7_column_13",
+                "textures/azalea_icons/icontextures/block_row_7_column_13",
+            ],
+            [
+                "block_row_7_column_14",
+                "textures/azalea_icons/icontextures/block_row_7_column_14",
+            ],
+            [
+                "block_row_7_column_15",
+                "textures/azalea_icons/icontextures/block_row_7_column_15",
+            ],
+            [
+                "block_row_7_column_16",
+                "textures/azalea_icons/icontextures/block_row_7_column_16",
+            ],
+            [
+                "block_row_7_column_17",
+                "textures/azalea_icons/icontextures/block_row_7_column_17",
+            ],
+            [
+                "block_row_7_column_18",
+                "textures/azalea_icons/icontextures/block_row_7_column_18",
+            ],
+            [
+                "block_row_7_column_2",
+                "textures/azalea_icons/icontextures/block_row_7_column_2",
+            ],
+            [
+                "block_row_7_column_3",
+                "textures/azalea_icons/icontextures/block_row_7_column_3",
+            ],
+            [
+                "block_row_7_column_4",
+                "textures/azalea_icons/icontextures/block_row_7_column_4",
+            ],
+            [
+                "block_row_7_column_5",
+                "textures/azalea_icons/icontextures/block_row_7_column_5",
+            ],
+            [
+                "block_row_7_column_6",
+                "textures/azalea_icons/icontextures/block_row_7_column_6",
+            ],
+            [
+                "block_row_7_column_7",
+                "textures/azalea_icons/icontextures/block_row_7_column_7",
+            ],
+            [
+                "block_row_7_column_8",
+                "textures/azalea_icons/icontextures/block_row_7_column_8",
+            ],
+            [
+                "block_row_7_column_9",
+                "textures/azalea_icons/icontextures/block_row_7_column_9",
+            ],
+            [
+                "block_row_8_column_1",
+                "textures/azalea_icons/icontextures/block_row_8_column_1",
+            ],
+            [
+                "block_row_8_column_10",
+                "textures/azalea_icons/icontextures/block_row_8_column_10",
+            ],
+            [
+                "block_row_8_column_11",
+                "textures/azalea_icons/icontextures/block_row_8_column_11",
+            ],
+            [
+                "block_row_8_column_12",
+                "textures/azalea_icons/icontextures/block_row_8_column_12",
+            ],
+            [
+                "block_row_8_column_13",
+                "textures/azalea_icons/icontextures/block_row_8_column_13",
+            ],
+            [
+                "block_row_8_column_14",
+                "textures/azalea_icons/icontextures/block_row_8_column_14",
+            ],
+            [
+                "block_row_8_column_15",
+                "textures/azalea_icons/icontextures/block_row_8_column_15",
+            ],
+            [
+                "block_row_8_column_16",
+                "textures/azalea_icons/icontextures/block_row_8_column_16",
+            ],
+            [
+                "block_row_8_column_17",
+                "textures/azalea_icons/icontextures/block_row_8_column_17",
+            ],
+            [
+                "block_row_8_column_18",
+                "textures/azalea_icons/icontextures/block_row_8_column_18",
+            ],
+            [
+                "block_row_8_column_2",
+                "textures/azalea_icons/icontextures/block_row_8_column_2",
+            ],
+            [
+                "block_row_8_column_3",
+                "textures/azalea_icons/icontextures/block_row_8_column_3",
+            ],
+            [
+                "block_row_8_column_4",
+                "textures/azalea_icons/icontextures/block_row_8_column_4",
+            ],
+            [
+                "block_row_8_column_5",
+                "textures/azalea_icons/icontextures/block_row_8_column_5",
+            ],
+            [
+                "block_row_8_column_6",
+                "textures/azalea_icons/icontextures/block_row_8_column_6",
+            ],
+            [
+                "block_row_8_column_7",
+                "textures/azalea_icons/icontextures/block_row_8_column_7",
+            ],
+            [
+                "block_row_8_column_8",
+                "textures/azalea_icons/icontextures/block_row_8_column_8",
+            ],
+            [
+                "block_row_8_column_9",
+                "textures/azalea_icons/icontextures/block_row_8_column_9",
+            ],
+            [
+                "block_row_9_column_1",
+                "textures/azalea_icons/icontextures/block_row_9_column_1",
+            ],
+            [
+                "block_row_9_column_10",
+                "textures/azalea_icons/icontextures/block_row_9_column_10",
+            ],
+            [
+                "block_row_9_column_11",
+                "textures/azalea_icons/icontextures/block_row_9_column_11",
+            ],
+            [
+                "block_row_9_column_12",
+                "textures/azalea_icons/icontextures/block_row_9_column_12",
+            ],
+            [
+                "block_row_9_column_13",
+                "textures/azalea_icons/icontextures/block_row_9_column_13",
+            ],
+            [
+                "block_row_9_column_14",
+                "textures/azalea_icons/icontextures/block_row_9_column_14",
+            ],
+            [
+                "block_row_9_column_15",
+                "textures/azalea_icons/icontextures/block_row_9_column_15",
+            ],
+            [
+                "block_row_9_column_16",
+                "textures/azalea_icons/icontextures/block_row_9_column_16",
+            ],
+            [
+                "block_row_9_column_17",
+                "textures/azalea_icons/icontextures/block_row_9_column_17",
+            ],
+            [
+                "block_row_9_column_18",
+                "textures/azalea_icons/icontextures/block_row_9_column_18",
+            ],
+            [
+                "block_row_9_column_2",
+                "textures/azalea_icons/icontextures/block_row_9_column_2",
+            ],
+            [
+                "block_row_9_column_3",
+                "textures/azalea_icons/icontextures/block_row_9_column_3",
+            ],
+            [
+                "block_row_9_column_4",
+                "textures/azalea_icons/icontextures/block_row_9_column_4",
+            ],
+            [
+                "block_row_9_column_5",
+                "textures/azalea_icons/icontextures/block_row_9_column_5",
+            ],
+            [
+                "block_row_9_column_6",
+                "textures/azalea_icons/icontextures/block_row_9_column_6",
+            ],
+            [
+                "block_row_9_column_7",
+                "textures/azalea_icons/icontextures/block_row_9_column_7",
+            ],
+            [
+                "block_row_9_column_8",
+                "textures/azalea_icons/icontextures/block_row_9_column_8",
+            ],
+            [
+                "block_row_9_column_9",
+                "textures/azalea_icons/icontextures/block_row_9_column_9",
+            ],
+            ["bone", "textures/azalea_icons/icontextures/bone"],
+            ["bone01a", "textures/azalea_icons/icontextures/bone01a"],
+            ["bone_meal", "textures/azalea_icons/icontextures/bone_meal"],
+            ["book", "textures/azalea_icons/icontextures/book"],
+            ["book_01a", "textures/azalea_icons/icontextures/book_01a"],
+            ["book_01b", "textures/azalea_icons/icontextures/book_01b"],
+            ["book_01c", "textures/azalea_icons/icontextures/book_01c"],
+            ["book_01d", "textures/azalea_icons/icontextures/book_01d"],
+            ["book_01e", "textures/azalea_icons/icontextures/book_01e"],
+            ["book_01f", "textures/azalea_icons/icontextures/book_01f"],
+            ["book_01g", "textures/azalea_icons/icontextures/book_01g"],
+            ["book_02a", "textures/azalea_icons/icontextures/book_02a"],
+            ["book_02b", "textures/azalea_icons/icontextures/book_02b"],
+            ["book_02c", "textures/azalea_icons/icontextures/book_02c"],
+            ["book_02d", "textures/azalea_icons/icontextures/book_02d"],
+            ["book_02e", "textures/azalea_icons/icontextures/book_02e"],
+            ["book_02f", "textures/azalea_icons/icontextures/book_02f"],
+            ["book_02g", "textures/azalea_icons/icontextures/book_02g"],
+            ["book_03a", "textures/azalea_icons/icontextures/book_03a"],
+            ["book_03b", "textures/azalea_icons/icontextures/book_03b"],
+            ["book_03c", "textures/azalea_icons/icontextures/book_03c"],
+            ["book_03d", "textures/azalea_icons/icontextures/book_03d"],
+            ["book_03e", "textures/azalea_icons/icontextures/book_03e"],
+            ["book_03f", "textures/azalea_icons/icontextures/book_03f"],
+            ["book_03g", "textures/azalea_icons/icontextures/book_03g"],
+            ["book_04a", "textures/azalea_icons/icontextures/book_04a"],
+            ["book_04b", "textures/azalea_icons/icontextures/book_04b"],
+            ["book_04c", "textures/azalea_icons/icontextures/book_04c"],
+            ["book_04d", "textures/azalea_icons/icontextures/book_04d"],
+            ["book_04e", "textures/azalea_icons/icontextures/book_04e"],
+            ["book_04f", "textures/azalea_icons/icontextures/book_04f"],
+            ["book_04g", "textures/azalea_icons/icontextures/book_04g"],
+            ["book_05a", "textures/azalea_icons/icontextures/book_05a"],
+            ["book_05b", "textures/azalea_icons/icontextures/book_05b"],
+            ["book_05c", "textures/azalea_icons/icontextures/book_05c"],
+            ["book_05d", "textures/azalea_icons/icontextures/book_05d"],
+            ["book_05e", "textures/azalea_icons/icontextures/book_05e"],
+            ["book_05f", "textures/azalea_icons/icontextures/book_05f"],
+            ["book_05g", "textures/azalea_icons/icontextures/book_05g"],
+            ["book_06a", "textures/azalea_icons/icontextures/book_06a"],
+            ["book_06b", "textures/azalea_icons/icontextures/book_06b"],
+            ["book_06c", "textures/azalea_icons/icontextures/book_06c"],
+            ["book_06d", "textures/azalea_icons/icontextures/book_06d"],
+            ["book_06e", "textures/azalea_icons/icontextures/book_06e"],
+            ["book_06f", "textures/azalea_icons/icontextures/book_06f"],
+            ["book_06g", "textures/azalea_icons/icontextures/book_06g"],
+            ["book_2", "textures/azalea_icons/icontextures/book_2"],
+            ["boots_01", "textures/azalea_icons/icontextures/boots_01"],
+            ["boots_01a", "textures/azalea_icons/icontextures/boots_01a"],
+            ["boots_01b", "textures/azalea_icons/icontextures/boots_01b"],
+            ["boots_01c", "textures/azalea_icons/icontextures/boots_01c"],
+            ["boots_01d", "textures/azalea_icons/icontextures/boots_01d"],
+            ["boots_01e", "textures/azalea_icons/icontextures/boots_01e"],
+            ["boots_01_2", "textures/azalea_icons/icontextures/boots_01_2"],
+            ["boots_02", "textures/azalea_icons/icontextures/boots_02"],
+            ["boots_02_2", "textures/azalea_icons/icontextures/boots_02_2"],
+            ["bow", "textures/azalea_icons/icontextures/bow"],
+            ["bowl", "textures/azalea_icons/icontextures/bowl"],
+            ["bow_01", "textures/azalea_icons/icontextures/bow_01"],
+            ["bow_01a", "textures/azalea_icons/icontextures/bow_01a"],
+            ["bow_01b", "textures/azalea_icons/icontextures/bow_01b"],
+            ["bow_01cc", "textures/azalea_icons/icontextures/bow_01cc"],
+            ["bow_01d", "textures/azalea_icons/icontextures/bow_01d"],
+            ["bow_01e", "textures/azalea_icons/icontextures/bow_01e"],
+            ["bow_01_2", "textures/azalea_icons/icontextures/bow_01_2"],
+            ["bow_02", "textures/azalea_icons/icontextures/bow_02"],
+            ["bow_02a", "textures/azalea_icons/icontextures/bow_02a"],
+            ["bow_02b", "textures/azalea_icons/icontextures/bow_02b"],
+            ["bow_02cc", "textures/azalea_icons/icontextures/bow_02cc"],
+            ["bow_02d", "textures/azalea_icons/icontextures/bow_02d"],
+            ["bow_02e", "textures/azalea_icons/icontextures/bow_02e"],
+            ["bow_02_2", "textures/azalea_icons/icontextures/bow_02_2"],
+            ["bow_03a", "textures/azalea_icons/icontextures/bow_03a"],
+            ["bow_03b", "textures/azalea_icons/icontextures/bow_03b"],
+            ["bow_03c", "textures/azalea_icons/icontextures/bow_03c"],
+            ["bow_03d", "textures/azalea_icons/icontextures/bow_03d"],
+            ["bow_03e", "textures/azalea_icons/icontextures/bow_03e"],
+            ["bread", "textures/azalea_icons/icontextures/bread"],
+            ["brick", "textures/azalea_icons/icontextures/brick"],
+            ["brie", "textures/azalea_icons/icontextures/brie"],
+            [
+                "broken_elytra",
+                "textures/azalea_icons/icontextures/broken_elytra",
+            ],
+            ["brunost", "textures/azalea_icons/icontextures/brunost"],
+            ["bucheron", "textures/azalea_icons/icontextures/bucheron"],
+            ["bucket", "textures/azalea_icons/icontextures/bucket"],
+            ["cabrales", "textures/azalea_icons/icontextures/cabrales"],
+            ["cake", "textures/azalea_icons/icontextures/cake"],
+            ["camembert", "textures/azalea_icons/icontextures/camembert"],
+            ["candle", "textures/azalea_icons/icontextures/candle"],
+            ["candle_01a", "textures/azalea_icons/icontextures/candle_01a"],
+            ["candle_01b", "textures/azalea_icons/icontextures/candle_01b"],
+            ["candy_01a", "textures/azalea_icons/icontextures/candy_01a"],
+            ["candy_01b", "textures/azalea_icons/icontextures/candy_01b"],
+            ["candy_01c", "textures/azalea_icons/icontextures/candy_01c"],
+            ["candy_01d", "textures/azalea_icons/icontextures/candy_01d"],
+            ["candy_01e", "textures/azalea_icons/icontextures/candy_01e"],
+            ["candy_01f", "textures/azalea_icons/icontextures/candy_01f"],
+            ["candy_01g", "textures/azalea_icons/icontextures/candy_01g"],
+            ["candy_02a", "textures/azalea_icons/icontextures/candy_02a"],
+            ["candy_02b", "textures/azalea_icons/icontextures/candy_02b"],
+            ["candy_02c", "textures/azalea_icons/icontextures/candy_02c"],
+            ["candy_02d", "textures/azalea_icons/icontextures/candy_02d"],
+            ["candy_02e", "textures/azalea_icons/icontextures/candy_02e"],
+            ["candy_02f", "textures/azalea_icons/icontextures/candy_02f"],
+            ["candy_02g", "textures/azalea_icons/icontextures/candy_02g"],
+            ["caprino", "textures/azalea_icons/icontextures/caprino"],
+            ["carrot", "textures/azalea_icons/icontextures/carrot"],
+            ["chain", "textures/azalea_icons/icontextures/chain"],
+            [
+                "chainmail_boots",
+                "textures/azalea_icons/icontextures/chainmail_boots",
+            ],
+            [
+                "chainmail_chestplate",
+                "textures/azalea_icons/icontextures/chainmail_chestplate",
+            ],
+            [
+                "chainmail_helmet",
+                "textures/azalea_icons/icontextures/chainmail_helmet",
+            ],
+            [
+                "chainmail_leggings",
+                "textures/azalea_icons/icontextures/chainmail_leggings",
+            ],
+            ["charcoal", "textures/azalea_icons/icontextures/charcoal"],
+            ["cheddar", "textures/azalea_icons/icontextures/cheddar"],
+            ["cheshire", "textures/azalea_icons/icontextures/cheshire"],
+            [
+                "chest_minecart",
+                "textures/azalea_icons/icontextures/chest_minecart",
+            ],
+            ["chicken", "textures/azalea_icons/icontextures/chicken"],
+            ["chorus_fruit", "textures/azalea_icons/icontextures/chorus_fruit"],
+            ["circlet", "textures/azalea_icons/icontextures/circlet"],
+            ["circlet_2", "textures/azalea_icons/icontextures/circlet_2"],
+            ["clay_ball", "textures/azalea_icons/icontextures/clay_ball"],
+            ["clover_leaf", "textures/azalea_icons/icontextures/clover_leaf"],
+            [
+                "clover_leaf_2",
+                "textures/azalea_icons/icontextures/clover_leaf_2",
+            ],
+            ["coal", "textures/azalea_icons/icontextures/coal"],
+            ["cod", "textures/azalea_icons/icontextures/cod"],
+            ["coin_01a", "textures/azalea_icons/icontextures/coin_01a"],
+            ["coin_01b", "textures/azalea_icons/icontextures/coin_01b"],
+            ["coin_01c", "textures/azalea_icons/icontextures/coin_01c"],
+            ["coin_01d", "textures/azalea_icons/icontextures/coin_01d"],
+            ["coin_01e", "textures/azalea_icons/icontextures/coin_01e"],
+            ["coin_02a", "textures/azalea_icons/icontextures/coin_02a"],
+            ["coin_02b", "textures/azalea_icons/icontextures/coin_02b"],
+            ["coin_02c", "textures/azalea_icons/icontextures/coin_02c"],
+            ["coin_02d", "textures/azalea_icons/icontextures/coin_02d"],
+            ["coin_02e", "textures/azalea_icons/icontextures/coin_02e"],
+            ["coin_03a", "textures/azalea_icons/icontextures/coin_03a"],
+            ["coin_03b", "textures/azalea_icons/icontextures/coin_03b"],
+            ["coin_03c", "textures/azalea_icons/icontextures/coin_03c"],
+            ["coin_03d", "textures/azalea_icons/icontextures/coin_03d"],
+            ["coin_03e", "textures/azalea_icons/icontextures/coin_03e"],
+            ["coin_04a", "textures/azalea_icons/icontextures/coin_04a"],
+            ["coin_04b", "textures/azalea_icons/icontextures/coin_04b"],
+            ["coin_04c", "textures/azalea_icons/icontextures/coin_04c"],
+            ["coin_04d", "textures/azalea_icons/icontextures/coin_04d"],
+            ["coin_04e", "textures/azalea_icons/icontextures/coin_04e"],
+            ["coin_05a", "textures/azalea_icons/icontextures/coin_05a"],
+            ["coin_05b", "textures/azalea_icons/icontextures/coin_05b"],
+            ["coin_05c", "textures/azalea_icons/icontextures/coin_05c"],
+            ["coin_05d", "textures/azalea_icons/icontextures/coin_05d"],
+            ["coin_05e", "textures/azalea_icons/icontextures/coin_05e"],
+            ["colby_jack", "textures/azalea_icons/icontextures/colby_jack"],
+            ["compass", "textures/azalea_icons/icontextures/compass"],
+            ["compass_00", "textures/azalea_icons/icontextures/compass_00"],
+            ["compass_2", "textures/azalea_icons/icontextures/compass_2"],
+            ["comte", "textures/azalea_icons/icontextures/comte"],
+            ["cooked_beef", "textures/azalea_icons/icontextures/cooked_beef"],
+            [
+                "cooked_chicken",
+                "textures/azalea_icons/icontextures/cooked_chicken",
+            ],
+            ["cooked_cod", "textures/azalea_icons/icontextures/cooked_cod"],
+            [
+                "cooked_mutton",
+                "textures/azalea_icons/icontextures/cooked_mutton",
+            ],
+            [
+                "cooked_porkchop",
+                "textures/azalea_icons/icontextures/cooked_porkchop",
+            ],
+            [
+                "cooked_rabbit",
+                "textures/azalea_icons/icontextures/cooked_rabbit",
+            ],
+            [
+                "cooked_salmon",
+                "textures/azalea_icons/icontextures/cooked_salmon",
+            ],
+            ["cookie", "textures/azalea_icons/icontextures/cookie"],
+            ["cookies", "textures/azalea_icons/icontextures/cookies"],
+            ["cookies_2", "textures/azalea_icons/icontextures/cookies_2"],
+            ["cookie_01a", "textures/azalea_icons/icontextures/cookie_01a"],
+            ["copper_ingot", "textures/azalea_icons/icontextures/copper_ingot"],
+            [
+                "copper_ingot_2",
+                "textures/azalea_icons/icontextures/copper_ingot_2",
+            ],
+            ["copper_ore", "textures/azalea_icons/icontextures/copper_ore"],
+            ["copper_ore_2", "textures/azalea_icons/icontextures/copper_ore_2"],
+            ["cotton_01a", "textures/azalea_icons/icontextures/cotton_01a"],
+            [
+                "crossbow_standby",
+                "textures/azalea_icons/icontextures/crossbow_standby",
+            ],
+            [
+                "crottin_de_chavignol",
+                "textures/azalea_icons/icontextures/crottin_de_chavignol",
+            ],
+            ["crystal_01a", "textures/azalea_icons/icontextures/crystal_01a"],
+            ["crystal_01b", "textures/azalea_icons/icontextures/crystal_01b"],
+            ["crystal_01c", "textures/azalea_icons/icontextures/crystal_01c"],
+            ["crystal_01d", "textures/azalea_icons/icontextures/crystal_01d"],
+            ["crystal_01e", "textures/azalea_icons/icontextures/crystal_01e"],
+            ["crystal_01f", "textures/azalea_icons/icontextures/crystal_01f"],
+            ["crystal_01g", "textures/azalea_icons/icontextures/crystal_01g"],
+            ["crystal_01h", "textures/azalea_icons/icontextures/crystal_01h"],
+            ["crystal_01i", "textures/azalea_icons/icontextures/crystal_01i"],
+            ["crystal_01j", "textures/azalea_icons/icontextures/crystal_01j"],
+            ["cup_01a", "textures/azalea_icons/icontextures/cup_01a"],
+            ["cup_01b", "textures/azalea_icons/icontextures/cup_01b"],
+            ["cup_02a", "textures/azalea_icons/icontextures/cup_02a"],
+            ["cup_02b", "textures/azalea_icons/icontextures/cup_02b"],
+            [
+                "demo_icons_no_outline1",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline1",
+            ],
+            [
+                "demo_icons_no_outline10",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline10",
+            ],
+            [
+                "demo_icons_no_outline11",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline11",
+            ],
+            [
+                "demo_icons_no_outline2",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline2",
+            ],
+            [
+                "demo_icons_no_outline3",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline3",
+            ],
+            [
+                "demo_icons_no_outline4",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline4",
+            ],
+            [
+                "demo_icons_no_outline5",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline5",
+            ],
+            [
+                "demo_icons_no_outline6",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline6",
+            ],
+            [
+                "demo_icons_no_outline7",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline7",
+            ],
+            [
+                "demo_icons_no_outline8",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline8",
+            ],
+            [
+                "demo_icons_no_outline9",
+                "textures/azalea_icons/icontextures/demo_icons_no_outline9",
+            ],
+            [
+                "demo_icons_thick_outline1",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline1",
+            ],
+            [
+                "demo_icons_thick_outline10",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline10",
+            ],
+            [
+                "demo_icons_thick_outline11",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline11",
+            ],
+            [
+                "demo_icons_thick_outline2",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline2",
+            ],
+            [
+                "demo_icons_thick_outline3",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline3",
+            ],
+            [
+                "demo_icons_thick_outline4",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline4",
+            ],
+            [
+                "demo_icons_thick_outline5",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline5",
+            ],
+            [
+                "demo_icons_thick_outline6",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline6",
+            ],
+            [
+                "demo_icons_thick_outline7",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline7",
+            ],
+            [
+                "demo_icons_thick_outline8",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline8",
+            ],
+            [
+                "demo_icons_thick_outline9",
+                "textures/azalea_icons/icontextures/demo_icons_thick_outline9",
+            ],
+            ["diamond", "textures/azalea_icons/icontextures/diamond"],
+            ["diamond_axe", "textures/azalea_icons/icontextures/diamond_axe"],
+            [
+                "diamond_boots",
+                "textures/azalea_icons/icontextures/diamond_boots",
+            ],
+            [
+                "diamond_chestplate",
+                "textures/azalea_icons/icontextures/diamond_chestplate",
+            ],
+            [
+                "diamond_helmet",
+                "textures/azalea_icons/icontextures/diamond_helmet",
+            ],
+            ["diamond_hoe", "textures/azalea_icons/icontextures/diamond_hoe"],
+            [
+                "diamond_horse_armor",
+                "textures/azalea_icons/icontextures/diamond_horse_armor",
+            ],
+            [
+                "diamond_leggings",
+                "textures/azalea_icons/icontextures/diamond_leggings",
+            ],
+            [
+                "diamond_pickaxe",
+                "textures/azalea_icons/icontextures/diamond_pickaxe",
+            ],
+            [
+                "diamond_shovel",
+                "textures/azalea_icons/icontextures/diamond_shovel",
+            ],
+            [
+                "diamond_sword",
+                "textures/azalea_icons/icontextures/diamond_sword",
+            ],
+            [
+                "dorset_blue_vinny",
+                "textures/azalea_icons/icontextures/dorset_blue_vinny",
+            ],
+            ["dried_kelp", "textures/azalea_icons/icontextures/dried_kelp"],
+            ["egg", "textures/azalea_icons/icontextures/egg"],
+            ["elytra", "textures/azalea_icons/icontextures/elytra"],
+            ["emerald", "textures/azalea_icons/icontextures/emerald"],
+            ["emmentaler", "textures/azalea_icons/icontextures/emmentaler"],
+            [
+                "enchanted_book",
+                "textures/azalea_icons/icontextures/enchanted_book",
+            ],
+            ["ender_eye", "textures/azalea_icons/icontextures/ender_eye"],
+            ["ender_pearl", "textures/azalea_icons/icontextures/ender_pearl"],
+            [
+                "experience_bottle",
+                "textures/azalea_icons/icontextures/experience_bottle",
+            ],
+            [
+                "fablic_clothe",
+                "textures/azalea_icons/icontextures/fablic_clothe",
+            ],
+            [
+                "fablic_clothe_2",
+                "textures/azalea_icons/icontextures/fablic_clothe_2",
+            ],
+            ["fabric", "textures/azalea_icons/icontextures/fabric"],
+            ["fabric_2", "textures/azalea_icons/icontextures/fabric_2"],
+            ["feather", "textures/azalea_icons/icontextures/feather"],
+            ["feather_a", "textures/azalea_icons/icontextures/feather_a"],
+            ["feather_a_2", "textures/azalea_icons/icontextures/feather_a_2"],
+            [
+                "fermented_spider_eye",
+                "textures/azalea_icons/icontextures/fermented_spider_eye",
+            ],
+            ["feta", "textures/azalea_icons/icontextures/feta"],
+            [
+                "firework_rocket",
+                "textures/azalea_icons/icontextures/firework_rocket",
+            ],
+            ["fire_charge", "textures/azalea_icons/icontextures/fire_charge"],
+            ["fish_01a", "textures/azalea_icons/icontextures/fish_01a"],
+            ["fish_01b", "textures/azalea_icons/icontextures/fish_01b"],
+            ["fish_01c", "textures/azalea_icons/icontextures/fish_01c"],
+            ["fish_01d", "textures/azalea_icons/icontextures/fish_01d"],
+            ["fish_01e", "textures/azalea_icons/icontextures/fish_01e"],
+            ["fish_a", "textures/azalea_icons/icontextures/fish_a"],
+            ["fish_a_2", "textures/azalea_icons/icontextures/fish_a_2"],
+            ["flint", "textures/azalea_icons/icontextures/flint"],
+            [
+                "flint_and_steel",
+                "textures/azalea_icons/icontextures/flint_and_steel",
+            ],
+            ["flower_01a", "textures/azalea_icons/icontextures/flower_01a"],
+            ["flower_02a", "textures/azalea_icons/icontextures/flower_02a"],
+            ["flower_pot", "textures/azalea_icons/icontextures/flower_pot"],
+            ["fontina", "textures/azalea_icons/icontextures/fontina"],
+            [
+                "fromage_frais",
+                "textures/azalea_icons/icontextures/fromage_frais",
+            ],
+            ["fruit_01a", "textures/azalea_icons/icontextures/fruit_01a"],
+            ["fruit_01b", "textures/azalea_icons/icontextures/fruit_01b"],
+            ["fur_a", "textures/azalea_icons/icontextures/fur_a"],
+            ["fur_a_2", "textures/azalea_icons/icontextures/fur_a_2"],
+            ["gem_01a", "textures/azalea_icons/icontextures/gem_01a"],
+            ["gem_01b", "textures/azalea_icons/icontextures/gem_01b"],
+            ["gem_01c", "textures/azalea_icons/icontextures/gem_01c"],
+            ["gem_01d", "textures/azalea_icons/icontextures/gem_01d"],
+            ["gem_01e", "textures/azalea_icons/icontextures/gem_01e"],
+            ["gem_01f", "textures/azalea_icons/icontextures/gem_01f"],
+            ["gem_01g", "textures/azalea_icons/icontextures/gem_01g"],
+            ["gem_01h", "textures/azalea_icons/icontextures/gem_01h"],
+            ["gem_01i", "textures/azalea_icons/icontextures/gem_01i"],
+            ["gem_01j", "textures/azalea_icons/icontextures/gem_01j"],
+            ["ghast_tear", "textures/azalea_icons/icontextures/ghast_tear"],
+            ["giftopen_01a", "textures/azalea_icons/icontextures/giftopen_01a"],
+            ["giftopen_01b", "textures/azalea_icons/icontextures/giftopen_01b"],
+            ["giftopen_01c", "textures/azalea_icons/icontextures/giftopen_01c"],
+            ["giftopen_01d", "textures/azalea_icons/icontextures/giftopen_01d"],
+            ["giftopen_01e", "textures/azalea_icons/icontextures/giftopen_01e"],
+            ["giftopen_01f", "textures/azalea_icons/icontextures/giftopen_01f"],
+            ["gift_01a", "textures/azalea_icons/icontextures/gift_01a"],
+            ["gift_01b", "textures/azalea_icons/icontextures/gift_01b"],
+            ["gift_01c", "textures/azalea_icons/icontextures/gift_01c"],
+            ["gift_01d", "textures/azalea_icons/icontextures/gift_01d"],
+            ["gift_01e", "textures/azalea_icons/icontextures/gift_01e"],
+            ["gift_01f", "textures/azalea_icons/icontextures/gift_01f"],
+            ["glasses", "textures/azalea_icons/icontextures/glasses"],
+            ["glasses_2", "textures/azalea_icons/icontextures/glasses_2"],
+            ["glass_bottle", "textures/azalea_icons/icontextures/glass_bottle"],
+            [
+                "glistering_melon_slice",
+                "textures/azalea_icons/icontextures/glistering_melon_slice",
+            ],
+            ["gloves_01a", "textures/azalea_icons/icontextures/gloves_01a"],
+            ["gloves_01b", "textures/azalea_icons/icontextures/gloves_01b"],
+            ["gloves_01c", "textures/azalea_icons/icontextures/gloves_01c"],
+            ["gloves_01d", "textures/azalea_icons/icontextures/gloves_01d"],
+            ["gloves_01e", "textures/azalea_icons/icontextures/gloves_01e"],
+            ["glove_01", "textures/azalea_icons/icontextures/glove_01"],
+            ["glove_01_2", "textures/azalea_icons/icontextures/glove_01_2"],
+            ["glove_02", "textures/azalea_icons/icontextures/glove_02"],
+            ["glove_02_2", "textures/azalea_icons/icontextures/glove_02_2"],
+            ["glowing_dust", "textures/azalea_icons/icontextures/glowing_dust"],
+            [
+                "glowing_dust_2",
+                "textures/azalea_icons/icontextures/glowing_dust_2",
+            ],
+            ["glow_berries", "textures/azalea_icons/icontextures/glow_berries"],
+            ["glow_ink_sac", "textures/azalea_icons/icontextures/glow_ink_sac"],
+            ["golden_apple", "textures/azalea_icons/icontextures/golden_apple"],
+            ["golden_axe", "textures/azalea_icons/icontextures/golden_axe"],
+            ["golden_boots", "textures/azalea_icons/icontextures/golden_boots"],
+            [
+                "golden_carrot",
+                "textures/azalea_icons/icontextures/golden_carrot",
+            ],
+            [
+                "golden_chestplate",
+                "textures/azalea_icons/icontextures/golden_chestplate",
+            ],
+            [
+                "golden_helmet",
+                "textures/azalea_icons/icontextures/golden_helmet",
+            ],
+            ["golden_hoe", "textures/azalea_icons/icontextures/golden_hoe"],
+            [
+                "golden_horse_armor",
+                "textures/azalea_icons/icontextures/golden_horse_armor",
+            ],
+            [
+                "golden_leggings",
+                "textures/azalea_icons/icontextures/golden_leggings",
+            ],
+            [
+                "golden_pickaxe",
+                "textures/azalea_icons/icontextures/golden_pickaxe",
+            ],
+            [
+                "golden_shovel",
+                "textures/azalea_icons/icontextures/golden_shovel",
+            ],
+            ["golden_sword", "textures/azalea_icons/icontextures/golden_sword"],
+            ["gold_ingot", "textures/azalea_icons/icontextures/gold_ingot"],
+            ["gold_ingot_2", "textures/azalea_icons/icontextures/gold_ingot_2"],
+            ["gold_nugget", "textures/azalea_icons/icontextures/gold_nugget"],
+            ["gold_ore", "textures/azalea_icons/icontextures/gold_ore"],
+            ["gold_ore_2", "textures/azalea_icons/icontextures/gold_ore_2"],
+            ["gorgonzola", "textures/azalea_icons/icontextures/gorgonzola"],
+            ["gouda", "textures/azalea_icons/icontextures/gouda"],
+            [
+                "green_mushroom",
+                "textures/azalea_icons/icontextures/green_mushroom",
+            ],
+            [
+                "green_mushroom_2",
+                "textures/azalea_icons/icontextures/green_mushroom_2",
+            ],
+            ["gruyere", "textures/azalea_icons/icontextures/gruyere"],
+            ["gunpowder", "textures/azalea_icons/icontextures/gunpowder"],
+            ["halloumi", "textures/azalea_icons/icontextures/halloumi"],
+            ["hat_01a", "textures/azalea_icons/icontextures/hat_01a"],
+            ["hat_01b", "textures/azalea_icons/icontextures/hat_01b"],
+            ["hat_01c", "textures/azalea_icons/icontextures/hat_01c"],
+            ["hat_01d", "textures/azalea_icons/icontextures/hat_01d"],
+            ["hat_01e", "textures/azalea_icons/icontextures/hat_01e"],
+            ["hat_01f", "textures/azalea_icons/icontextures/hat_01f"],
+            ["headgear_01", "textures/azalea_icons/icontextures/headgear_01"],
+            [
+                "headgear_01_2",
+                "textures/azalea_icons/icontextures/headgear_01_2",
+            ],
+            ["headgear_02", "textures/azalea_icons/icontextures/headgear_02"],
+            [
+                "headgear_02_2",
+                "textures/azalea_icons/icontextures/headgear_02_2",
+            ],
+            [
+                "heart_of_the_sea",
+                "textures/azalea_icons/icontextures/heart_of_the_sea",
+            ],
+            ["helmet_01a", "textures/azalea_icons/icontextures/helmet_01a"],
+            ["helmet_01b", "textures/azalea_icons/icontextures/helmet_01b"],
+            ["helmet_01c", "textures/azalea_icons/icontextures/helmet_01c"],
+            ["helmet_01d", "textures/azalea_icons/icontextures/helmet_01d"],
+            ["helmet_01e", "textures/azalea_icons/icontextures/helmet_01e"],
+            ["helmet_02a", "textures/azalea_icons/icontextures/helmet_02a"],
+            ["helmet_02b", "textures/azalea_icons/icontextures/helmet_02b"],
+            ["helmet_02c", "textures/azalea_icons/icontextures/helmet_02c"],
+            ["helmet_02d", "textures/azalea_icons/icontextures/helmet_02d"],
+            ["helmet_02e", "textures/azalea_icons/icontextures/helmet_02e"],
+            ["herb", "textures/azalea_icons/icontextures/herb"],
+            ["herb_2", "textures/azalea_icons/icontextures/herb_2"],
+            [
+                "hi_quality_pickaxe",
+                "textures/azalea_icons/icontextures/hi_quality_pickaxe",
+            ],
+            [
+                "hi_quality_pickaxe_2",
+                "textures/azalea_icons/icontextures/hi_quality_pickaxe_2",
+            ],
+            [
+                "hi_quality_scethe",
+                "textures/azalea_icons/icontextures/hi_quality_scethe",
+            ],
+            [
+                "hi_quality_scethe_2",
+                "textures/azalea_icons/icontextures/hi_quality_scethe_2",
+            ],
+            ["hoe", "textures/azalea_icons/icontextures/hoe"],
+            ["hoe_2", "textures/azalea_icons/icontextures/hoe_2"],
+            ["honeycomb", "textures/azalea_icons/icontextures/honeycomb"],
+            ["honey_bottle", "textures/azalea_icons/icontextures/honey_bottle"],
+            ["hopper", "textures/azalea_icons/icontextures/hopper"],
+            ["hp_potion", "textures/azalea_icons/icontextures/hp_potion"],
+            ["hp_potion_2", "textures/azalea_icons/icontextures/hp_potion_2"],
+            ["Icon14_40", "textures/azalea_icons/icontextures/Icon14_40"],
+            ["ingot_01a", "textures/azalea_icons/icontextures/ingot_01a"],
+            ["ingot_01b", "textures/azalea_icons/icontextures/ingot_01b"],
+            ["ingot_01c", "textures/azalea_icons/icontextures/ingot_01c"],
+            ["ingot_01d", "textures/azalea_icons/icontextures/ingot_01d"],
+            ["ingot_01e", "textures/azalea_icons/icontextures/ingot_01e"],
+            ["ink_sac", "textures/azalea_icons/icontextures/ink_sac"],
+            ["iron_armor", "textures/azalea_icons/icontextures/iron_armor"],
+            ["iron_armor_2", "textures/azalea_icons/icontextures/iron_armor_2"],
+            ["iron_axe", "textures/azalea_icons/icontextures/iron_axe"],
+            ["iron_boots", "textures/azalea_icons/icontextures/iron_boots"],
+            [
+                "iron_chestplate",
+                "textures/azalea_icons/icontextures/iron_chestplate",
+            ],
+            ["iron_helmet", "textures/azalea_icons/icontextures/iron_helmet"],
+            ["iron_hoe", "textures/azalea_icons/icontextures/iron_hoe"],
+            [
+                "iron_horse_armor",
+                "textures/azalea_icons/icontextures/iron_horse_armor",
+            ],
+            ["iron_ingot", "textures/azalea_icons/icontextures/iron_ingot"],
+            ["iron_ingot_2", "textures/azalea_icons/icontextures/iron_ingot_2"],
+            [
+                "iron_leggings",
+                "textures/azalea_icons/icontextures/iron_leggings",
+            ],
+            ["iron_nugget", "textures/azalea_icons/icontextures/iron_nugget"],
+            ["iron_ore", "textures/azalea_icons/icontextures/iron_ore"],
+            ["iron_ore_2", "textures/azalea_icons/icontextures/iron_ore_2"],
+            ["iron_pickaxe", "textures/azalea_icons/icontextures/iron_pickaxe"],
+            ["iron_shovel", "textures/azalea_icons/icontextures/iron_shovel"],
+            ["iron_sword", "textures/azalea_icons/icontextures/iron_sword"],
+            ["kelp", "textures/azalea_icons/icontextures/kelp"],
+            ["key_01a", "textures/azalea_icons/icontextures/key_01a"],
+            ["key_01b", "textures/azalea_icons/icontextures/key_01b"],
+            ["key_01c", "textures/azalea_icons/icontextures/key_01c"],
+            ["key_01d", "textures/azalea_icons/icontextures/key_01d"],
+            ["key_01e", "textures/azalea_icons/icontextures/key_01e"],
+            ["key_02a", "textures/azalea_icons/icontextures/key_02a"],
+            ["key_02b", "textures/azalea_icons/icontextures/key_02b"],
+            ["key_02c", "textures/azalea_icons/icontextures/key_02c"],
+            ["key_02d", "textures/azalea_icons/icontextures/key_02d"],
+            ["key_02e", "textures/azalea_icons/icontextures/key_02e"],
+            ["lantern", "textures/azalea_icons/icontextures/lantern"],
+            ["lapis_lazuli", "textures/azalea_icons/icontextures/lapis_lazuli"],
+            ["lava_bucket", "textures/azalea_icons/icontextures/lava_bucket"],
+            ["leaf_01a", "textures/azalea_icons/icontextures/leaf_01a"],
+            ["leather", "textures/azalea_icons/icontextures/leather"],
+            [
+                "leather_armor",
+                "textures/azalea_icons/icontextures/leather_armor",
+            ],
+            [
+                "leather_armor_2",
+                "textures/azalea_icons/icontextures/leather_armor_2",
+            ],
+            [
+                "leather_arm_guard",
+                "textures/azalea_icons/icontextures/leather_arm_guard",
+            ],
+            [
+                "leather_arm_guard_2",
+                "textures/azalea_icons/icontextures/leather_arm_guard_2",
+            ],
+            [
+                "leather_boots",
+                "textures/azalea_icons/icontextures/leather_boots",
+            ],
+            [
+                "leather_boots_01",
+                "textures/azalea_icons/icontextures/leather_boots_01",
+            ],
+            [
+                "leather_boots_01_2",
+                "textures/azalea_icons/icontextures/leather_boots_01_2",
+            ],
+            [
+                "leather_boots_02",
+                "textures/azalea_icons/icontextures/leather_boots_02",
+            ],
+            [
+                "leather_boots_02_2",
+                "textures/azalea_icons/icontextures/leather_boots_02_2",
+            ],
+            [
+                "leather_boots_overlay",
+                "textures/azalea_icons/icontextures/leather_boots_overlay",
+            ],
+            [
+                "leather_chestplate",
+                "textures/azalea_icons/icontextures/leather_chestplate",
+            ],
+            [
+                "leather_glove",
+                "textures/azalea_icons/icontextures/leather_glove",
+            ],
+            [
+                "leather_glove_2",
+                "textures/azalea_icons/icontextures/leather_glove_2",
+            ],
+            [
+                "leather_helmet",
+                "textures/azalea_icons/icontextures/leather_helmet",
+            ],
+            [
+                "leather_horse_armor",
+                "textures/azalea_icons/icontextures/leather_horse_armor",
+            ],
+            [
+                "leather_leggings",
+                "textures/azalea_icons/icontextures/leather_leggings",
+            ],
+            ["limburger", "textures/azalea_icons/icontextures/limburger"],
+            ["log", "textures/azalea_icons/icontextures/log"],
+            ["log_2", "textures/azalea_icons/icontextures/log_2"],
+            ["maasdam", "textures/azalea_icons/icontextures/maasdam"],
+            ["magma_cream", "textures/azalea_icons/icontextures/magma_cream"],
+            ["mana_potion", "textures/azalea_icons/icontextures/mana_potion"],
+            [
+                "mana_potion_2",
+                "textures/azalea_icons/icontextures/mana_potion_2",
+            ],
+            ["manchego", "textures/azalea_icons/icontextures/manchego"],
+            ["mantua", "textures/azalea_icons/icontextures/mantua"],
+            ["mantua_2", "textures/azalea_icons/icontextures/mantua_2"],
+            ["map", "textures/azalea_icons/icontextures/map"],
+            ["mascarpone", "textures/azalea_icons/icontextures/mascarpone"],
+            ["meat", "textures/azalea_icons/icontextures/meat"],
+            ["meat_2", "textures/azalea_icons/icontextures/meat_2"],
+            ["melon_slice", "textures/azalea_icons/icontextures/melon_slice"],
+            [
+                "mf_items_amphibian_reptile_1",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_1",
+            ],
+            [
+                "mf_items_amphibian_reptile_10",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_10",
+            ],
+            [
+                "mf_items_amphibian_reptile_11",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_11",
+            ],
+            [
+                "mf_items_amphibian_reptile_12",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_12",
+            ],
+            [
+                "mf_items_amphibian_reptile_2",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_2",
+            ],
+            [
+                "mf_items_amphibian_reptile_3",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_3",
+            ],
+            [
+                "mf_items_amphibian_reptile_4",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_4",
+            ],
+            [
+                "mf_items_amphibian_reptile_5",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_5",
+            ],
+            [
+                "mf_items_amphibian_reptile_6",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_6",
+            ],
+            [
+                "mf_items_amphibian_reptile_7",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_7",
+            ],
+            [
+                "mf_items_amphibian_reptile_8",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_8",
+            ],
+            [
+                "mf_items_amphibian_reptile_9",
+                "textures/azalea_icons/icontextures/mf_items_amphibian_reptile_9",
+            ],
+            [
+                "mf_items_animal_tool_1",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_1",
+            ],
+            [
+                "mf_items_animal_tool_10",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_10",
+            ],
+            [
+                "mf_items_animal_tool_11",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_11",
+            ],
+            [
+                "mf_items_animal_tool_12",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_12",
+            ],
+            [
+                "mf_items_animal_tool_2",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_2",
+            ],
+            [
+                "mf_items_animal_tool_3",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_3",
+            ],
+            [
+                "mf_items_animal_tool_4",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_4",
+            ],
+            [
+                "mf_items_animal_tool_5",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_5",
+            ],
+            [
+                "mf_items_animal_tool_6",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_6",
+            ],
+            [
+                "mf_items_animal_tool_7",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_7",
+            ],
+            [
+                "mf_items_animal_tool_8",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_8",
+            ],
+            [
+                "mf_items_animal_tool_9",
+                "textures/azalea_icons/icontextures/mf_items_animal_tool_9",
+            ],
+            [
+                "mf_items_armour_1",
+                "textures/azalea_icons/icontextures/mf_items_armour_1",
+            ],
+            [
+                "mf_items_armour_10",
+                "textures/azalea_icons/icontextures/mf_items_armour_10",
+            ],
+            [
+                "mf_items_armour_11",
+                "textures/azalea_icons/icontextures/mf_items_armour_11",
+            ],
+            [
+                "mf_items_armour_12",
+                "textures/azalea_icons/icontextures/mf_items_armour_12",
+            ],
+            [
+                "mf_items_armour_2",
+                "textures/azalea_icons/icontextures/mf_items_armour_2",
+            ],
+            [
+                "mf_items_armour_3",
+                "textures/azalea_icons/icontextures/mf_items_armour_3",
+            ],
+            [
+                "mf_items_armour_4",
+                "textures/azalea_icons/icontextures/mf_items_armour_4",
+            ],
+            [
+                "mf_items_armour_5",
+                "textures/azalea_icons/icontextures/mf_items_armour_5",
+            ],
+            [
+                "mf_items_armour_6",
+                "textures/azalea_icons/icontextures/mf_items_armour_6",
+            ],
+            [
+                "mf_items_armour_7",
+                "textures/azalea_icons/icontextures/mf_items_armour_7",
+            ],
+            [
+                "mf_items_armour_8",
+                "textures/azalea_icons/icontextures/mf_items_armour_8",
+            ],
+            [
+                "mf_items_armour_9",
+                "textures/azalea_icons/icontextures/mf_items_armour_9",
+            ],
+            [
+                "mf_items_bakery_misc_1",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_1",
+            ],
+            [
+                "mf_items_bakery_misc_10",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_10",
+            ],
+            [
+                "mf_items_bakery_misc_11",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_11",
+            ],
+            [
+                "mf_items_bakery_misc_12",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_12",
+            ],
+            [
+                "mf_items_bakery_misc_2",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_2",
+            ],
+            [
+                "mf_items_bakery_misc_3",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_3",
+            ],
+            [
+                "mf_items_bakery_misc_4",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_4",
+            ],
+            [
+                "mf_items_bakery_misc_5",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_5",
+            ],
+            [
+                "mf_items_bakery_misc_6",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_6",
+            ],
+            [
+                "mf_items_bakery_misc_7",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_7",
+            ],
+            [
+                "mf_items_bakery_misc_8",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_8",
+            ],
+            [
+                "mf_items_bakery_misc_9",
+                "textures/azalea_icons/icontextures/mf_items_bakery_misc_9",
+            ],
+            [
+                "mf_items_clothes_1",
+                "textures/azalea_icons/icontextures/mf_items_clothes_1",
+            ],
+            [
+                "mf_items_clothes_10",
+                "textures/azalea_icons/icontextures/mf_items_clothes_10",
+            ],
+            [
+                "mf_items_clothes_11",
+                "textures/azalea_icons/icontextures/mf_items_clothes_11",
+            ],
+            [
+                "mf_items_clothes_12",
+                "textures/azalea_icons/icontextures/mf_items_clothes_12",
+            ],
+            [
+                "mf_items_clothes_2",
+                "textures/azalea_icons/icontextures/mf_items_clothes_2",
+            ],
+            [
+                "mf_items_clothes_3",
+                "textures/azalea_icons/icontextures/mf_items_clothes_3",
+            ],
+            [
+                "mf_items_clothes_4",
+                "textures/azalea_icons/icontextures/mf_items_clothes_4",
+            ],
+            [
+                "mf_items_clothes_5",
+                "textures/azalea_icons/icontextures/mf_items_clothes_5",
+            ],
+            [
+                "mf_items_clothes_6",
+                "textures/azalea_icons/icontextures/mf_items_clothes_6",
+            ],
+            [
+                "mf_items_clothes_7",
+                "textures/azalea_icons/icontextures/mf_items_clothes_7",
+            ],
+            [
+                "mf_items_clothes_8",
+                "textures/azalea_icons/icontextures/mf_items_clothes_8",
+            ],
+            [
+                "mf_items_clothes_9",
+                "textures/azalea_icons/icontextures/mf_items_clothes_9",
+            ],
+            [
+                "mf_items_cooking_tool_1",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_1",
+            ],
+            [
+                "mf_items_cooking_tool_10",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_10",
+            ],
+            [
+                "mf_items_cooking_tool_11",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_11",
+            ],
+            [
+                "mf_items_cooking_tool_12",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_12",
+            ],
+            [
+                "mf_items_cooking_tool_2",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_2",
+            ],
+            [
+                "mf_items_cooking_tool_3",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_3",
+            ],
+            [
+                "mf_items_cooking_tool_4",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_4",
+            ],
+            [
+                "mf_items_cooking_tool_5",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_5",
+            ],
+            [
+                "mf_items_cooking_tool_6",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_6",
+            ],
+            [
+                "mf_items_cooking_tool_7",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_7",
+            ],
+            [
+                "mf_items_cooking_tool_8",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_8",
+            ],
+            [
+                "mf_items_cooking_tool_9",
+                "textures/azalea_icons/icontextures/mf_items_cooking_tool_9",
+            ],
+            [
+                "mf_items_craft_1",
+                "textures/azalea_icons/icontextures/mf_items_craft_1",
+            ],
+            [
+                "mf_items_craft_10",
+                "textures/azalea_icons/icontextures/mf_items_craft_10",
+            ],
+            [
+                "mf_items_craft_11",
+                "textures/azalea_icons/icontextures/mf_items_craft_11",
+            ],
+            [
+                "mf_items_craft_12",
+                "textures/azalea_icons/icontextures/mf_items_craft_12",
+            ],
+            [
+                "mf_items_craft_2",
+                "textures/azalea_icons/icontextures/mf_items_craft_2",
+            ],
+            [
+                "mf_items_craft_3",
+                "textures/azalea_icons/icontextures/mf_items_craft_3",
+            ],
+            [
+                "mf_items_craft_4",
+                "textures/azalea_icons/icontextures/mf_items_craft_4",
+            ],
+            [
+                "mf_items_craft_5",
+                "textures/azalea_icons/icontextures/mf_items_craft_5",
+            ],
+            [
+                "mf_items_craft_6",
+                "textures/azalea_icons/icontextures/mf_items_craft_6",
+            ],
+            [
+                "mf_items_craft_7",
+                "textures/azalea_icons/icontextures/mf_items_craft_7",
+            ],
+            [
+                "mf_items_craft_8",
+                "textures/azalea_icons/icontextures/mf_items_craft_8",
+            ],
+            [
+                "mf_items_craft_9",
+                "textures/azalea_icons/icontextures/mf_items_craft_9",
+            ],
+            [
+                "mf_items_crustacean_1",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_1",
+            ],
+            [
+                "mf_items_crustacean_10",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_10",
+            ],
+            [
+                "mf_items_crustacean_11",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_11",
+            ],
+            [
+                "mf_items_crustacean_12",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_12",
+            ],
+            [
+                "mf_items_crustacean_2",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_2",
+            ],
+            [
+                "mf_items_crustacean_3",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_3",
+            ],
+            [
+                "mf_items_crustacean_4",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_4",
+            ],
+            [
+                "mf_items_crustacean_5",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_5",
+            ],
+            [
+                "mf_items_crustacean_6",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_6",
+            ],
+            [
+                "mf_items_crustacean_7",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_7",
+            ],
+            [
+                "mf_items_crustacean_8",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_8",
+            ],
+            [
+                "mf_items_crustacean_9",
+                "textures/azalea_icons/icontextures/mf_items_crustacean_9",
+            ],
+            [
+                "mf_items_dish_1",
+                "textures/azalea_icons/icontextures/mf_items_dish_1",
+            ],
+            [
+                "mf_items_dish_10",
+                "textures/azalea_icons/icontextures/mf_items_dish_10",
+            ],
+            [
+                "mf_items_dish_11",
+                "textures/azalea_icons/icontextures/mf_items_dish_11",
+            ],
+            [
+                "mf_items_dish_12",
+                "textures/azalea_icons/icontextures/mf_items_dish_12",
+            ],
+            [
+                "mf_items_dish_2",
+                "textures/azalea_icons/icontextures/mf_items_dish_2",
+            ],
+            [
+                "mf_items_dish_3",
+                "textures/azalea_icons/icontextures/mf_items_dish_3",
+            ],
+            [
+                "mf_items_dish_4",
+                "textures/azalea_icons/icontextures/mf_items_dish_4",
+            ],
+            [
+                "mf_items_dish_5",
+                "textures/azalea_icons/icontextures/mf_items_dish_5",
+            ],
+            [
+                "mf_items_dish_6",
+                "textures/azalea_icons/icontextures/mf_items_dish_6",
+            ],
+            [
+                "mf_items_dish_7",
+                "textures/azalea_icons/icontextures/mf_items_dish_7",
+            ],
+            [
+                "mf_items_dish_8",
+                "textures/azalea_icons/icontextures/mf_items_dish_8",
+            ],
+            [
+                "mf_items_dish_9",
+                "textures/azalea_icons/icontextures/mf_items_dish_9",
+            ],
+            [
+                "mf_items_drink_oil_1",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_1",
+            ],
+            [
+                "mf_items_drink_oil_10",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_10",
+            ],
+            [
+                "mf_items_drink_oil_11",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_11",
+            ],
+            [
+                "mf_items_drink_oil_12",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_12",
+            ],
+            [
+                "mf_items_drink_oil_2",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_2",
+            ],
+            [
+                "mf_items_drink_oil_3",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_3",
+            ],
+            [
+                "mf_items_drink_oil_4",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_4",
+            ],
+            [
+                "mf_items_drink_oil_5",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_5",
+            ],
+            [
+                "mf_items_drink_oil_6",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_6",
+            ],
+            [
+                "mf_items_drink_oil_7",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_7",
+            ],
+            [
+                "mf_items_drink_oil_8",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_8",
+            ],
+            [
+                "mf_items_drink_oil_9",
+                "textures/azalea_icons/icontextures/mf_items_drink_oil_9",
+            ],
+            [
+                "mf_items_farming_tool_1",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_1",
+            ],
+            [
+                "mf_items_farming_tool_10",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_10",
+            ],
+            [
+                "mf_items_farming_tool_11",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_11",
+            ],
+            [
+                "mf_items_farming_tool_12",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_12",
+            ],
+            [
+                "mf_items_farming_tool_2",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_2",
+            ],
+            [
+                "mf_items_farming_tool_3",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_3",
+            ],
+            [
+                "mf_items_farming_tool_4",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_4",
+            ],
+            [
+                "mf_items_farming_tool_5",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_5",
+            ],
+            [
+                "mf_items_farming_tool_6",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_6",
+            ],
+            [
+                "mf_items_farming_tool_7",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_7",
+            ],
+            [
+                "mf_items_farming_tool_8",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_8",
+            ],
+            [
+                "mf_items_farming_tool_9",
+                "textures/azalea_icons/icontextures/mf_items_farming_tool_9",
+            ],
+            [
+                "mf_items_farm_1",
+                "textures/azalea_icons/icontextures/mf_items_farm_1",
+            ],
+            [
+                "mf_items_farm_10",
+                "textures/azalea_icons/icontextures/mf_items_farm_10",
+            ],
+            [
+                "mf_items_farm_11",
+                "textures/azalea_icons/icontextures/mf_items_farm_11",
+            ],
+            [
+                "mf_items_farm_12",
+                "textures/azalea_icons/icontextures/mf_items_farm_12",
+            ],
+            [
+                "mf_items_farm_2",
+                "textures/azalea_icons/icontextures/mf_items_farm_2",
+            ],
+            [
+                "mf_items_farm_3",
+                "textures/azalea_icons/icontextures/mf_items_farm_3",
+            ],
+            [
+                "mf_items_farm_4",
+                "textures/azalea_icons/icontextures/mf_items_farm_4",
+            ],
+            [
+                "mf_items_farm_5",
+                "textures/azalea_icons/icontextures/mf_items_farm_5",
+            ],
+            [
+                "mf_items_farm_6",
+                "textures/azalea_icons/icontextures/mf_items_farm_6",
+            ],
+            [
+                "mf_items_farm_7",
+                "textures/azalea_icons/icontextures/mf_items_farm_7",
+            ],
+            [
+                "mf_items_farm_8",
+                "textures/azalea_icons/icontextures/mf_items_farm_8",
+            ],
+            [
+                "mf_items_farm_9",
+                "textures/azalea_icons/icontextures/mf_items_farm_9",
+            ],
+            [
+                "mf_items_fishing_tool_1",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_1",
+            ],
+            [
+                "mf_items_fishing_tool_10",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_10",
+            ],
+            [
+                "mf_items_fishing_tool_11",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_11",
+            ],
+            [
+                "mf_items_fishing_tool_12",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_12",
+            ],
+            [
+                "mf_items_fishing_tool_2",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_2",
+            ],
+            [
+                "mf_items_fishing_tool_3",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_3",
+            ],
+            [
+                "mf_items_fishing_tool_4",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_4",
+            ],
+            [
+                "mf_items_fishing_tool_5",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_5",
+            ],
+            [
+                "mf_items_fishing_tool_6",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_6",
+            ],
+            [
+                "mf_items_fishing_tool_7",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_7",
+            ],
+            [
+                "mf_items_fishing_tool_8",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_8",
+            ],
+            [
+                "mf_items_fishing_tool_9",
+                "textures/azalea_icons/icontextures/mf_items_fishing_tool_9",
+            ],
+            [
+                "mf_items_flower_1",
+                "textures/azalea_icons/icontextures/mf_items_flower_1",
+            ],
+            [
+                "mf_items_flower_10",
+                "textures/azalea_icons/icontextures/mf_items_flower_10",
+            ],
+            [
+                "mf_items_flower_11",
+                "textures/azalea_icons/icontextures/mf_items_flower_11",
+            ],
+            [
+                "mf_items_flower_12",
+                "textures/azalea_icons/icontextures/mf_items_flower_12",
+            ],
+            [
+                "mf_items_flower_2",
+                "textures/azalea_icons/icontextures/mf_items_flower_2",
+            ],
+            [
+                "mf_items_flower_3",
+                "textures/azalea_icons/icontextures/mf_items_flower_3",
+            ],
+            [
+                "mf_items_flower_4",
+                "textures/azalea_icons/icontextures/mf_items_flower_4",
+            ],
+            [
+                "mf_items_flower_5",
+                "textures/azalea_icons/icontextures/mf_items_flower_5",
+            ],
+            [
+                "mf_items_flower_6",
+                "textures/azalea_icons/icontextures/mf_items_flower_6",
+            ],
+            [
+                "mf_items_flower_7",
+                "textures/azalea_icons/icontextures/mf_items_flower_7",
+            ],
+            [
+                "mf_items_flower_8",
+                "textures/azalea_icons/icontextures/mf_items_flower_8",
+            ],
+            [
+                "mf_items_flower_9",
+                "textures/azalea_icons/icontextures/mf_items_flower_9",
+            ],
+            [
+                "mf_items_fruit2_1",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_1",
+            ],
+            [
+                "mf_items_fruit2_10",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_10",
+            ],
+            [
+                "mf_items_fruit2_11",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_11",
+            ],
+            [
+                "mf_items_fruit2_12",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_12",
+            ],
+            [
+                "mf_items_fruit2_2",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_2",
+            ],
+            [
+                "mf_items_fruit2_3",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_3",
+            ],
+            [
+                "mf_items_fruit2_4",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_4",
+            ],
+            [
+                "mf_items_fruit2_5",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_5",
+            ],
+            [
+                "mf_items_fruit2_6",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_6",
+            ],
+            [
+                "mf_items_fruit2_7",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_7",
+            ],
+            [
+                "mf_items_fruit2_8",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_8",
+            ],
+            [
+                "mf_items_fruit2_9",
+                "textures/azalea_icons/icontextures/mf_items_fruit2_9",
+            ],
+            [
+                "mf_items_fruit3_1",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_1",
+            ],
+            [
+                "mf_items_fruit3_10",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_10",
+            ],
+            [
+                "mf_items_fruit3_11",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_11",
+            ],
+            [
+                "mf_items_fruit3_12",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_12",
+            ],
+            [
+                "mf_items_fruit3_2",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_2",
+            ],
+            [
+                "mf_items_fruit3_3",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_3",
+            ],
+            [
+                "mf_items_fruit3_4",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_4",
+            ],
+            [
+                "mf_items_fruit3_5",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_5",
+            ],
+            [
+                "mf_items_fruit3_6",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_6",
+            ],
+            [
+                "mf_items_fruit3_7",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_7",
+            ],
+            [
+                "mf_items_fruit3_8",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_8",
+            ],
+            [
+                "mf_items_fruit3_9",
+                "textures/azalea_icons/icontextures/mf_items_fruit3_9",
+            ],
+            [
+                "mf_items_fruit_1",
+                "textures/azalea_icons/icontextures/mf_items_fruit_1",
+            ],
+            [
+                "mf_items_fruit_10",
+                "textures/azalea_icons/icontextures/mf_items_fruit_10",
+            ],
+            [
+                "mf_items_fruit_11",
+                "textures/azalea_icons/icontextures/mf_items_fruit_11",
+            ],
+            [
+                "mf_items_fruit_12",
+                "textures/azalea_icons/icontextures/mf_items_fruit_12",
+            ],
+            [
+                "mf_items_fruit_2",
+                "textures/azalea_icons/icontextures/mf_items_fruit_2",
+            ],
+            [
+                "mf_items_fruit_3",
+                "textures/azalea_icons/icontextures/mf_items_fruit_3",
+            ],
+            [
+                "mf_items_fruit_4",
+                "textures/azalea_icons/icontextures/mf_items_fruit_4",
+            ],
+            [
+                "mf_items_fruit_5",
+                "textures/azalea_icons/icontextures/mf_items_fruit_5",
+            ],
+            [
+                "mf_items_fruit_6",
+                "textures/azalea_icons/icontextures/mf_items_fruit_6",
+            ],
+            [
+                "mf_items_fruit_7",
+                "textures/azalea_icons/icontextures/mf_items_fruit_7",
+            ],
+            [
+                "mf_items_fruit_8",
+                "textures/azalea_icons/icontextures/mf_items_fruit_8",
+            ],
+            [
+                "mf_items_fruit_9",
+                "textures/azalea_icons/icontextures/mf_items_fruit_9",
+            ],
+            [
+                "mf_items_gasteropods_1",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_1",
+            ],
+            [
+                "mf_items_gasteropods_10",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_10",
+            ],
+            [
+                "mf_items_gasteropods_11",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_11",
+            ],
+            [
+                "mf_items_gasteropods_12",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_12",
+            ],
+            [
+                "mf_items_gasteropods_2",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_2",
+            ],
+            [
+                "mf_items_gasteropods_3",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_3",
+            ],
+            [
+                "mf_items_gasteropods_4",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_4",
+            ],
+            [
+                "mf_items_gasteropods_5",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_5",
+            ],
+            [
+                "mf_items_gasteropods_6",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_6",
+            ],
+            [
+                "mf_items_gasteropods_7",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_7",
+            ],
+            [
+                "mf_items_gasteropods_8",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_8",
+            ],
+            [
+                "mf_items_gasteropods_9",
+                "textures/azalea_icons/icontextures/mf_items_gasteropods_9",
+            ],
+            [
+                "mf_items_ingredients_1",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_1",
+            ],
+            [
+                "mf_items_ingredients_10",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_10",
+            ],
+            [
+                "mf_items_ingredients_11",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_11",
+            ],
+            [
+                "mf_items_ingredients_12",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_12",
+            ],
+            [
+                "mf_items_ingredients_2",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_2",
+            ],
+            [
+                "mf_items_ingredients_3",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_3",
+            ],
+            [
+                "mf_items_ingredients_4",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_4",
+            ],
+            [
+                "mf_items_ingredients_5",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_5",
+            ],
+            [
+                "mf_items_ingredients_6",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_6",
+            ],
+            [
+                "mf_items_ingredients_7",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_7",
+            ],
+            [
+                "mf_items_ingredients_8",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_8",
+            ],
+            [
+                "mf_items_ingredients_9",
+                "textures/azalea_icons/icontextures/mf_items_ingredients_9",
+            ],
+            [
+                "mf_items_insect1_1",
+                "textures/azalea_icons/icontextures/mf_items_insect1_1",
+            ],
+            [
+                "mf_items_insect1_10",
+                "textures/azalea_icons/icontextures/mf_items_insect1_10",
+            ],
+            [
+                "mf_items_insect1_11",
+                "textures/azalea_icons/icontextures/mf_items_insect1_11",
+            ],
+            [
+                "mf_items_insect1_12",
+                "textures/azalea_icons/icontextures/mf_items_insect1_12",
+            ],
+            [
+                "mf_items_insect1_2",
+                "textures/azalea_icons/icontextures/mf_items_insect1_2",
+            ],
+            [
+                "mf_items_insect1_3",
+                "textures/azalea_icons/icontextures/mf_items_insect1_3",
+            ],
+            [
+                "mf_items_insect1_4",
+                "textures/azalea_icons/icontextures/mf_items_insect1_4",
+            ],
+            [
+                "mf_items_insect1_5",
+                "textures/azalea_icons/icontextures/mf_items_insect1_5",
+            ],
+            [
+                "mf_items_insect1_6",
+                "textures/azalea_icons/icontextures/mf_items_insect1_6",
+            ],
+            [
+                "mf_items_insect1_7",
+                "textures/azalea_icons/icontextures/mf_items_insect1_7",
+            ],
+            [
+                "mf_items_insect1_8",
+                "textures/azalea_icons/icontextures/mf_items_insect1_8",
+            ],
+            [
+                "mf_items_insect1_9",
+                "textures/azalea_icons/icontextures/mf_items_insect1_9",
+            ],
+            [
+                "mf_items_insect2_1",
+                "textures/azalea_icons/icontextures/mf_items_insect2_1",
+            ],
+            [
+                "mf_items_insect2_10",
+                "textures/azalea_icons/icontextures/mf_items_insect2_10",
+            ],
+            [
+                "mf_items_insect2_11",
+                "textures/azalea_icons/icontextures/mf_items_insect2_11",
+            ],
+            [
+                "mf_items_insect2_12",
+                "textures/azalea_icons/icontextures/mf_items_insect2_12",
+            ],
+            [
+                "mf_items_insect2_2",
+                "textures/azalea_icons/icontextures/mf_items_insect2_2",
+            ],
+            [
+                "mf_items_insect2_3",
+                "textures/azalea_icons/icontextures/mf_items_insect2_3",
+            ],
+            [
+                "mf_items_insect2_4",
+                "textures/azalea_icons/icontextures/mf_items_insect2_4",
+            ],
+            [
+                "mf_items_insect2_5",
+                "textures/azalea_icons/icontextures/mf_items_insect2_5",
+            ],
+            [
+                "mf_items_insect2_6",
+                "textures/azalea_icons/icontextures/mf_items_insect2_6",
+            ],
+            [
+                "mf_items_insect2_7",
+                "textures/azalea_icons/icontextures/mf_items_insect2_7",
+            ],
+            [
+                "mf_items_insect2_8",
+                "textures/azalea_icons/icontextures/mf_items_insect2_8",
+            ],
+            [
+                "mf_items_insect2_9",
+                "textures/azalea_icons/icontextures/mf_items_insect2_9",
+            ],
+            [
+                "mf_items_juice_1",
+                "textures/azalea_icons/icontextures/mf_items_juice_1",
+            ],
+            [
+                "mf_items_juice_10",
+                "textures/azalea_icons/icontextures/mf_items_juice_10",
+            ],
+            [
+                "mf_items_juice_11",
+                "textures/azalea_icons/icontextures/mf_items_juice_11",
+            ],
+            [
+                "mf_items_juice_12",
+                "textures/azalea_icons/icontextures/mf_items_juice_12",
+            ],
+            [
+                "mf_items_juice_2",
+                "textures/azalea_icons/icontextures/mf_items_juice_2",
+            ],
+            [
+                "mf_items_juice_3",
+                "textures/azalea_icons/icontextures/mf_items_juice_3",
+            ],
+            [
+                "mf_items_juice_4",
+                "textures/azalea_icons/icontextures/mf_items_juice_4",
+            ],
+            [
+                "mf_items_juice_5",
+                "textures/azalea_icons/icontextures/mf_items_juice_5",
+            ],
+            [
+                "mf_items_juice_6",
+                "textures/azalea_icons/icontextures/mf_items_juice_6",
+            ],
+            [
+                "mf_items_juice_7",
+                "textures/azalea_icons/icontextures/mf_items_juice_7",
+            ],
+            [
+                "mf_items_juice_8",
+                "textures/azalea_icons/icontextures/mf_items_juice_8",
+            ],
+            [
+                "mf_items_juice_9",
+                "textures/azalea_icons/icontextures/mf_items_juice_9",
+            ],
+            [
+                "mf_items_liquids_1",
+                "textures/azalea_icons/icontextures/mf_items_liquids_1",
+            ],
+            [
+                "mf_items_liquids_10",
+                "textures/azalea_icons/icontextures/mf_items_liquids_10",
+            ],
+            [
+                "mf_items_liquids_11",
+                "textures/azalea_icons/icontextures/mf_items_liquids_11",
+            ],
+            [
+                "mf_items_liquids_12",
+                "textures/azalea_icons/icontextures/mf_items_liquids_12",
+            ],
+            [
+                "mf_items_liquids_2",
+                "textures/azalea_icons/icontextures/mf_items_liquids_2",
+            ],
+            [
+                "mf_items_liquids_3",
+                "textures/azalea_icons/icontextures/mf_items_liquids_3",
+            ],
+            [
+                "mf_items_liquids_4",
+                "textures/azalea_icons/icontextures/mf_items_liquids_4",
+            ],
+            [
+                "mf_items_liquids_5",
+                "textures/azalea_icons/icontextures/mf_items_liquids_5",
+            ],
+            [
+                "mf_items_liquids_6",
+                "textures/azalea_icons/icontextures/mf_items_liquids_6",
+            ],
+            [
+                "mf_items_liquids_7",
+                "textures/azalea_icons/icontextures/mf_items_liquids_7",
+            ],
+            [
+                "mf_items_liquids_8",
+                "textures/azalea_icons/icontextures/mf_items_liquids_8",
+            ],
+            [
+                "mf_items_liquids_9",
+                "textures/azalea_icons/icontextures/mf_items_liquids_9",
+            ],
+            [
+                "mf_items_loot_1",
+                "textures/azalea_icons/icontextures/mf_items_loot_1",
+            ],
+            [
+                "mf_items_loot_10",
+                "textures/azalea_icons/icontextures/mf_items_loot_10",
+            ],
+            [
+                "mf_items_loot_11",
+                "textures/azalea_icons/icontextures/mf_items_loot_11",
+            ],
+            [
+                "mf_items_loot_12",
+                "textures/azalea_icons/icontextures/mf_items_loot_12",
+            ],
+            [
+                "mf_items_loot_2",
+                "textures/azalea_icons/icontextures/mf_items_loot_2",
+            ],
+            [
+                "mf_items_loot_3",
+                "textures/azalea_icons/icontextures/mf_items_loot_3",
+            ],
+            [
+                "mf_items_loot_4",
+                "textures/azalea_icons/icontextures/mf_items_loot_4",
+            ],
+            [
+                "mf_items_loot_5",
+                "textures/azalea_icons/icontextures/mf_items_loot_5",
+            ],
+            [
+                "mf_items_loot_6",
+                "textures/azalea_icons/icontextures/mf_items_loot_6",
+            ],
+            [
+                "mf_items_loot_7",
+                "textures/azalea_icons/icontextures/mf_items_loot_7",
+            ],
+            [
+                "mf_items_loot_8",
+                "textures/azalea_icons/icontextures/mf_items_loot_8",
+            ],
+            [
+                "mf_items_loot_9",
+                "textures/azalea_icons/icontextures/mf_items_loot_9",
+            ],
+            [
+                "mf_items_marine_fauna1_1",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_1",
+            ],
+            [
+                "mf_items_marine_fauna1_10",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_10",
+            ],
+            [
+                "mf_items_marine_fauna1_11",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_11",
+            ],
+            [
+                "mf_items_marine_fauna1_12",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_12",
+            ],
+            [
+                "mf_items_marine_fauna1_2",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_2",
+            ],
+            [
+                "mf_items_marine_fauna1_3",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_3",
+            ],
+            [
+                "mf_items_marine_fauna1_4",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_4",
+            ],
+            [
+                "mf_items_marine_fauna1_5",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_5",
+            ],
+            [
+                "mf_items_marine_fauna1_6",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_6",
+            ],
+            [
+                "mf_items_marine_fauna1_7",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_7",
+            ],
+            [
+                "mf_items_marine_fauna1_8",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_8",
+            ],
+            [
+                "mf_items_marine_fauna1_9",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna1_9",
+            ],
+            [
+                "mf_items_marine_fauna2_1",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_1",
+            ],
+            [
+                "mf_items_marine_fauna2_10",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_10",
+            ],
+            [
+                "mf_items_marine_fauna2_11",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_11",
+            ],
+            [
+                "mf_items_marine_fauna2_12",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_12",
+            ],
+            [
+                "mf_items_marine_fauna2_2",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_2",
+            ],
+            [
+                "mf_items_marine_fauna2_3",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_3",
+            ],
+            [
+                "mf_items_marine_fauna2_4",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_4",
+            ],
+            [
+                "mf_items_marine_fauna2_5",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_5",
+            ],
+            [
+                "mf_items_marine_fauna2_6",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_6",
+            ],
+            [
+                "mf_items_marine_fauna2_7",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_7",
+            ],
+            [
+                "mf_items_marine_fauna2_8",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_8",
+            ],
+            [
+                "mf_items_marine_fauna2_9",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna2_9",
+            ],
+            [
+                "mf_items_marine_fauna3_1",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_1",
+            ],
+            [
+                "mf_items_marine_fauna3_10",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_10",
+            ],
+            [
+                "mf_items_marine_fauna3_11",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_11",
+            ],
+            [
+                "mf_items_marine_fauna3_12",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_12",
+            ],
+            [
+                "mf_items_marine_fauna3_2",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_2",
+            ],
+            [
+                "mf_items_marine_fauna3_3",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_3",
+            ],
+            [
+                "mf_items_marine_fauna3_4",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_4",
+            ],
+            [
+                "mf_items_marine_fauna3_5",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_5",
+            ],
+            [
+                "mf_items_marine_fauna3_6",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_6",
+            ],
+            [
+                "mf_items_marine_fauna3_7",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_7",
+            ],
+            [
+                "mf_items_marine_fauna3_8",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_8",
+            ],
+            [
+                "mf_items_marine_fauna3_9",
+                "textures/azalea_icons/icontextures/mf_items_marine_fauna3_9",
+            ],
+            [
+                "mf_items_meat_fish_1",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_1",
+            ],
+            [
+                "mf_items_meat_fish_10",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_10",
+            ],
+            [
+                "mf_items_meat_fish_11",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_11",
+            ],
+            [
+                "mf_items_meat_fish_12",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_12",
+            ],
+            [
+                "mf_items_meat_fish_2",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_2",
+            ],
+            [
+                "mf_items_meat_fish_3",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_3",
+            ],
+            [
+                "mf_items_meat_fish_4",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_4",
+            ],
+            [
+                "mf_items_meat_fish_5",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_5",
+            ],
+            [
+                "mf_items_meat_fish_6",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_6",
+            ],
+            [
+                "mf_items_meat_fish_7",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_7",
+            ],
+            [
+                "mf_items_meat_fish_8",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_8",
+            ],
+            [
+                "mf_items_meat_fish_9",
+                "textures/azalea_icons/icontextures/mf_items_meat_fish_9",
+            ],
+            [
+                "mf_items_mineral_1",
+                "textures/azalea_icons/icontextures/mf_items_mineral_1",
+            ],
+            [
+                "mf_items_mineral_10",
+                "textures/azalea_icons/icontextures/mf_items_mineral_10",
+            ],
+            [
+                "mf_items_mineral_11",
+                "textures/azalea_icons/icontextures/mf_items_mineral_11",
+            ],
+            [
+                "mf_items_mineral_12",
+                "textures/azalea_icons/icontextures/mf_items_mineral_12",
+            ],
+            [
+                "mf_items_mineral_2",
+                "textures/azalea_icons/icontextures/mf_items_mineral_2",
+            ],
+            [
+                "mf_items_mineral_3",
+                "textures/azalea_icons/icontextures/mf_items_mineral_3",
+            ],
+            [
+                "mf_items_mineral_4",
+                "textures/azalea_icons/icontextures/mf_items_mineral_4",
+            ],
+            [
+                "mf_items_mineral_5",
+                "textures/azalea_icons/icontextures/mf_items_mineral_5",
+            ],
+            [
+                "mf_items_mineral_6",
+                "textures/azalea_icons/icontextures/mf_items_mineral_6",
+            ],
+            [
+                "mf_items_mineral_7",
+                "textures/azalea_icons/icontextures/mf_items_mineral_7",
+            ],
+            [
+                "mf_items_mineral_8",
+                "textures/azalea_icons/icontextures/mf_items_mineral_8",
+            ],
+            [
+                "mf_items_mineral_9",
+                "textures/azalea_icons/icontextures/mf_items_mineral_9",
+            ],
+            [
+                "mf_items_mushroom_1",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_1",
+            ],
+            [
+                "mf_items_mushroom_10",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_10",
+            ],
+            [
+                "mf_items_mushroom_11",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_11",
+            ],
+            [
+                "mf_items_mushroom_12",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_12",
+            ],
+            [
+                "mf_items_mushroom_2",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_2",
+            ],
+            [
+                "mf_items_mushroom_3",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_3",
+            ],
+            [
+                "mf_items_mushroom_4",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_4",
+            ],
+            [
+                "mf_items_mushroom_5",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_5",
+            ],
+            [
+                "mf_items_mushroom_6",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_6",
+            ],
+            [
+                "mf_items_mushroom_7",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_7",
+            ],
+            [
+                "mf_items_mushroom_8",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_8",
+            ],
+            [
+                "mf_items_mushroom_9",
+                "textures/azalea_icons/icontextures/mf_items_mushroom_9",
+            ],
+            [
+                "mf_items_nature_1",
+                "textures/azalea_icons/icontextures/mf_items_nature_1",
+            ],
+            [
+                "mf_items_nature_10",
+                "textures/azalea_icons/icontextures/mf_items_nature_10",
+            ],
+            [
+                "mf_items_nature_11",
+                "textures/azalea_icons/icontextures/mf_items_nature_11",
+            ],
+            [
+                "mf_items_nature_12",
+                "textures/azalea_icons/icontextures/mf_items_nature_12",
+            ],
+            [
+                "mf_items_nature_2",
+                "textures/azalea_icons/icontextures/mf_items_nature_2",
+            ],
+            [
+                "mf_items_nature_3",
+                "textures/azalea_icons/icontextures/mf_items_nature_3",
+            ],
+            [
+                "mf_items_nature_4",
+                "textures/azalea_icons/icontextures/mf_items_nature_4",
+            ],
+            [
+                "mf_items_nature_5",
+                "textures/azalea_icons/icontextures/mf_items_nature_5",
+            ],
+            [
+                "mf_items_nature_6",
+                "textures/azalea_icons/icontextures/mf_items_nature_6",
+            ],
+            [
+                "mf_items_nature_7",
+                "textures/azalea_icons/icontextures/mf_items_nature_7",
+            ],
+            [
+                "mf_items_nature_8",
+                "textures/azalea_icons/icontextures/mf_items_nature_8",
+            ],
+            [
+                "mf_items_nature_9",
+                "textures/azalea_icons/icontextures/mf_items_nature_9",
+            ],
+            [
+                "mf_items_potions_1",
+                "textures/azalea_icons/icontextures/mf_items_potions_1",
+            ],
+            [
+                "mf_items_potions_10",
+                "textures/azalea_icons/icontextures/mf_items_potions_10",
+            ],
+            [
+                "mf_items_potions_11",
+                "textures/azalea_icons/icontextures/mf_items_potions_11",
+            ],
+            [
+                "mf_items_potions_12",
+                "textures/azalea_icons/icontextures/mf_items_potions_12",
+            ],
+            [
+                "mf_items_potions_2",
+                "textures/azalea_icons/icontextures/mf_items_potions_2",
+            ],
+            [
+                "mf_items_potions_3",
+                "textures/azalea_icons/icontextures/mf_items_potions_3",
+            ],
+            [
+                "mf_items_potions_4",
+                "textures/azalea_icons/icontextures/mf_items_potions_4",
+            ],
+            [
+                "mf_items_potions_5",
+                "textures/azalea_icons/icontextures/mf_items_potions_5",
+            ],
+            [
+                "mf_items_potions_6",
+                "textures/azalea_icons/icontextures/mf_items_potions_6",
+            ],
+            [
+                "mf_items_potions_7",
+                "textures/azalea_icons/icontextures/mf_items_potions_7",
+            ],
+            [
+                "mf_items_potions_8",
+                "textures/azalea_icons/icontextures/mf_items_potions_8",
+            ],
+            [
+                "mf_items_potions_9",
+                "textures/azalea_icons/icontextures/mf_items_potions_9",
+            ],
+            [
+                "mf_items_precious_1",
+                "textures/azalea_icons/icontextures/mf_items_precious_1",
+            ],
+            [
+                "mf_items_precious_10",
+                "textures/azalea_icons/icontextures/mf_items_precious_10",
+            ],
+            [
+                "mf_items_precious_11",
+                "textures/azalea_icons/icontextures/mf_items_precious_11",
+            ],
+            [
+                "mf_items_precious_12",
+                "textures/azalea_icons/icontextures/mf_items_precious_12",
+            ],
+            [
+                "mf_items_precious_2",
+                "textures/azalea_icons/icontextures/mf_items_precious_2",
+            ],
+            [
+                "mf_items_precious_3",
+                "textures/azalea_icons/icontextures/mf_items_precious_3",
+            ],
+            [
+                "mf_items_precious_4",
+                "textures/azalea_icons/icontextures/mf_items_precious_4",
+            ],
+            [
+                "mf_items_precious_5",
+                "textures/azalea_icons/icontextures/mf_items_precious_5",
+            ],
+            [
+                "mf_items_precious_6",
+                "textures/azalea_icons/icontextures/mf_items_precious_6",
+            ],
+            [
+                "mf_items_precious_7",
+                "textures/azalea_icons/icontextures/mf_items_precious_7",
+            ],
+            [
+                "mf_items_precious_8",
+                "textures/azalea_icons/icontextures/mf_items_precious_8",
+            ],
+            [
+                "mf_items_precious_9",
+                "textures/azalea_icons/icontextures/mf_items_precious_9",
+            ],
+            [
+                "mf_items_rodents_1",
+                "textures/azalea_icons/icontextures/mf_items_rodents_1",
+            ],
+            [
+                "mf_items_rodents_10",
+                "textures/azalea_icons/icontextures/mf_items_rodents_10",
+            ],
+            [
+                "mf_items_rodents_11",
+                "textures/azalea_icons/icontextures/mf_items_rodents_11",
+            ],
+            [
+                "mf_items_rodents_12",
+                "textures/azalea_icons/icontextures/mf_items_rodents_12",
+            ],
+            [
+                "mf_items_rodents_2",
+                "textures/azalea_icons/icontextures/mf_items_rodents_2",
+            ],
+            [
+                "mf_items_rodents_3",
+                "textures/azalea_icons/icontextures/mf_items_rodents_3",
+            ],
+            [
+                "mf_items_rodents_4",
+                "textures/azalea_icons/icontextures/mf_items_rodents_4",
+            ],
+            [
+                "mf_items_rodents_5",
+                "textures/azalea_icons/icontextures/mf_items_rodents_5",
+            ],
+            [
+                "mf_items_rodents_6",
+                "textures/azalea_icons/icontextures/mf_items_rodents_6",
+            ],
+            [
+                "mf_items_rodents_7",
+                "textures/azalea_icons/icontextures/mf_items_rodents_7",
+            ],
+            [
+                "mf_items_rodents_8",
+                "textures/azalea_icons/icontextures/mf_items_rodents_8",
+            ],
+            [
+                "mf_items_rodents_9",
+                "textures/azalea_icons/icontextures/mf_items_rodents_9",
+            ],
+            [
+                "mf_items_seed_1",
+                "textures/azalea_icons/icontextures/mf_items_seed_1",
+            ],
+            [
+                "mf_items_seed_10",
+                "textures/azalea_icons/icontextures/mf_items_seed_10",
+            ],
+            [
+                "mf_items_seed_11",
+                "textures/azalea_icons/icontextures/mf_items_seed_11",
+            ],
+            [
+                "mf_items_seed_12",
+                "textures/azalea_icons/icontextures/mf_items_seed_12",
+            ],
+            [
+                "mf_items_seed_2",
+                "textures/azalea_icons/icontextures/mf_items_seed_2",
+            ],
+            [
+                "mf_items_seed_3",
+                "textures/azalea_icons/icontextures/mf_items_seed_3",
+            ],
+            [
+                "mf_items_seed_4",
+                "textures/azalea_icons/icontextures/mf_items_seed_4",
+            ],
+            [
+                "mf_items_seed_5",
+                "textures/azalea_icons/icontextures/mf_items_seed_5",
+            ],
+            [
+                "mf_items_seed_6",
+                "textures/azalea_icons/icontextures/mf_items_seed_6",
+            ],
+            [
+                "mf_items_seed_7",
+                "textures/azalea_icons/icontextures/mf_items_seed_7",
+            ],
+            [
+                "mf_items_seed_8",
+                "textures/azalea_icons/icontextures/mf_items_seed_8",
+            ],
+            [
+                "mf_items_seed_9",
+                "textures/azalea_icons/icontextures/mf_items_seed_9",
+            ],
+            [
+                "mf_items_shell_1",
+                "textures/azalea_icons/icontextures/mf_items_shell_1",
+            ],
+            [
+                "mf_items_shell_10",
+                "textures/azalea_icons/icontextures/mf_items_shell_10",
+            ],
+            [
+                "mf_items_shell_11",
+                "textures/azalea_icons/icontextures/mf_items_shell_11",
+            ],
+            [
+                "mf_items_shell_12",
+                "textures/azalea_icons/icontextures/mf_items_shell_12",
+            ],
+            [
+                "mf_items_shell_2",
+                "textures/azalea_icons/icontextures/mf_items_shell_2",
+            ],
+            [
+                "mf_items_shell_3",
+                "textures/azalea_icons/icontextures/mf_items_shell_3",
+            ],
+            [
+                "mf_items_shell_4",
+                "textures/azalea_icons/icontextures/mf_items_shell_4",
+            ],
+            [
+                "mf_items_shell_5",
+                "textures/azalea_icons/icontextures/mf_items_shell_5",
+            ],
+            [
+                "mf_items_shell_6",
+                "textures/azalea_icons/icontextures/mf_items_shell_6",
+            ],
+            [
+                "mf_items_shell_7",
+                "textures/azalea_icons/icontextures/mf_items_shell_7",
+            ],
+            [
+                "mf_items_shell_8",
+                "textures/azalea_icons/icontextures/mf_items_shell_8",
+            ],
+            [
+                "mf_items_shell_9",
+                "textures/azalea_icons/icontextures/mf_items_shell_9",
+            ],
+            [
+                "mf_items_tool_1",
+                "textures/azalea_icons/icontextures/mf_items_tool_1",
+            ],
+            [
+                "mf_items_tool_10",
+                "textures/azalea_icons/icontextures/mf_items_tool_10",
+            ],
+            [
+                "mf_items_tool_11",
+                "textures/azalea_icons/icontextures/mf_items_tool_11",
+            ],
+            [
+                "mf_items_tool_12",
+                "textures/azalea_icons/icontextures/mf_items_tool_12",
+            ],
+            [
+                "mf_items_tool_2",
+                "textures/azalea_icons/icontextures/mf_items_tool_2",
+            ],
+            [
+                "mf_items_tool_3",
+                "textures/azalea_icons/icontextures/mf_items_tool_3",
+            ],
+            [
+                "mf_items_tool_4",
+                "textures/azalea_icons/icontextures/mf_items_tool_4",
+            ],
+            [
+                "mf_items_tool_5",
+                "textures/azalea_icons/icontextures/mf_items_tool_5",
+            ],
+            [
+                "mf_items_tool_6",
+                "textures/azalea_icons/icontextures/mf_items_tool_6",
+            ],
+            [
+                "mf_items_tool_7",
+                "textures/azalea_icons/icontextures/mf_items_tool_7",
+            ],
+            [
+                "mf_items_tool_8",
+                "textures/azalea_icons/icontextures/mf_items_tool_8",
+            ],
+            [
+                "mf_items_tool_9",
+                "textures/azalea_icons/icontextures/mf_items_tool_9",
+            ],
+            [
+                "mf_items_vegetable2_1",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_1",
+            ],
+            [
+                "mf_items_vegetable2_10",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_10",
+            ],
+            [
+                "mf_items_vegetable2_11",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_11",
+            ],
+            [
+                "mf_items_vegetable2_12",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_12",
+            ],
+            [
+                "mf_items_vegetable2_2",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_2",
+            ],
+            [
+                "mf_items_vegetable2_3",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_3",
+            ],
+            [
+                "mf_items_vegetable2_4",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_4",
+            ],
+            [
+                "mf_items_vegetable2_5",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_5",
+            ],
+            [
+                "mf_items_vegetable2_6",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_6",
+            ],
+            [
+                "mf_items_vegetable2_7",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_7",
+            ],
+            [
+                "mf_items_vegetable2_8",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_8",
+            ],
+            [
+                "mf_items_vegetable2_9",
+                "textures/azalea_icons/icontextures/mf_items_vegetable2_9",
+            ],
+            [
+                "mf_items_vegetable_1",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_1",
+            ],
+            [
+                "mf_items_vegetable_10",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_10",
+            ],
+            [
+                "mf_items_vegetable_11",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_11",
+            ],
+            [
+                "mf_items_vegetable_12",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_12",
+            ],
+            [
+                "mf_items_vegetable_2",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_2",
+            ],
+            [
+                "mf_items_vegetable_3",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_3",
+            ],
+            [
+                "mf_items_vegetable_4",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_4",
+            ],
+            [
+                "mf_items_vegetable_5",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_5",
+            ],
+            [
+                "mf_items_vegetable_6",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_6",
+            ],
+            [
+                "mf_items_vegetable_7",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_7",
+            ],
+            [
+                "mf_items_vegetable_8",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_8",
+            ],
+            [
+                "mf_items_vegetable_9",
+                "textures/azalea_icons/icontextures/mf_items_vegetable_9",
+            ],
+            [
+                "mf_items_weapon_1",
+                "textures/azalea_icons/icontextures/mf_items_weapon_1",
+            ],
+            [
+                "mf_items_weapon_10",
+                "textures/azalea_icons/icontextures/mf_items_weapon_10",
+            ],
+            [
+                "mf_items_weapon_11",
+                "textures/azalea_icons/icontextures/mf_items_weapon_11",
+            ],
+            [
+                "mf_items_weapon_12",
+                "textures/azalea_icons/icontextures/mf_items_weapon_12",
+            ],
+            [
+                "mf_items_weapon_2",
+                "textures/azalea_icons/icontextures/mf_items_weapon_2",
+            ],
+            [
+                "mf_items_weapon_3",
+                "textures/azalea_icons/icontextures/mf_items_weapon_3",
+            ],
+            [
+                "mf_items_weapon_4",
+                "textures/azalea_icons/icontextures/mf_items_weapon_4",
+            ],
+            [
+                "mf_items_weapon_5",
+                "textures/azalea_icons/icontextures/mf_items_weapon_5",
+            ],
+            [
+                "mf_items_weapon_6",
+                "textures/azalea_icons/icontextures/mf_items_weapon_6",
+            ],
+            [
+                "mf_items_weapon_7",
+                "textures/azalea_icons/icontextures/mf_items_weapon_7",
+            ],
+            [
+                "mf_items_weapon_8",
+                "textures/azalea_icons/icontextures/mf_items_weapon_8",
+            ],
+            [
+                "mf_items_weapon_9",
+                "textures/azalea_icons/icontextures/mf_items_weapon_9",
+            ],
+            ["milk_bucket", "textures/azalea_icons/icontextures/milk_bucket"],
+            ["mimolette", "textures/azalea_icons/icontextures/mimolette"],
+            ["montasio", "textures/azalea_icons/icontextures/montasio"],
+            ["muenster", "textures/azalea_icons/icontextures/muenster"],
+            ["mutton", "textures/azalea_icons/icontextures/mutton"],
+            ["myzithra", "textures/azalea_icons/icontextures/myzithra"],
+            ["name_tag", "textures/azalea_icons/icontextures/name_tag"],
+            [
+                "nautilus_shell",
+                "textures/azalea_icons/icontextures/nautilus_shell",
+            ],
+            ["necklace_01", "textures/azalea_icons/icontextures/necklace_01"],
+            ["necklace_01a", "textures/azalea_icons/icontextures/necklace_01a"],
+            ["necklace_01b", "textures/azalea_icons/icontextures/necklace_01b"],
+            ["necklace_01c", "textures/azalea_icons/icontextures/necklace_01c"],
+            ["necklace_01d", "textures/azalea_icons/icontextures/necklace_01d"],
+            ["necklace_01e", "textures/azalea_icons/icontextures/necklace_01e"],
+            [
+                "necklace_01_2",
+                "textures/azalea_icons/icontextures/necklace_01_2",
+            ],
+            ["necklace_02", "textures/azalea_icons/icontextures/necklace_02"],
+            ["necklace_02a", "textures/azalea_icons/icontextures/necklace_02a"],
+            ["necklace_02b", "textures/azalea_icons/icontextures/necklace_02b"],
+            ["necklace_02c", "textures/azalea_icons/icontextures/necklace_02c"],
+            ["necklace_02d", "textures/azalea_icons/icontextures/necklace_02d"],
+            ["necklace_02e", "textures/azalea_icons/icontextures/necklace_02e"],
+            [
+                "necklace_02_2",
+                "textures/azalea_icons/icontextures/necklace_02_2",
+            ],
+            ["necklace_03a", "textures/azalea_icons/icontextures/necklace_03a"],
+            ["necklace_03b", "textures/azalea_icons/icontextures/necklace_03b"],
+            ["necklace_03c", "textures/azalea_icons/icontextures/necklace_03c"],
+            ["necklace_03d", "textures/azalea_icons/icontextures/necklace_03d"],
+            ["necklace_03e", "textures/azalea_icons/icontextures/necklace_03e"],
+            [
+                "netherite_axe",
+                "textures/azalea_icons/icontextures/netherite_axe",
+            ],
+            [
+                "netherite_boots",
+                "textures/azalea_icons/icontextures/netherite_boots",
+            ],
+            [
+                "netherite_chestplate",
+                "textures/azalea_icons/icontextures/netherite_chestplate",
+            ],
+            [
+                "netherite_helmet",
+                "textures/azalea_icons/icontextures/netherite_helmet",
+            ],
+            [
+                "netherite_hoe",
+                "textures/azalea_icons/icontextures/netherite_hoe",
+            ],
+            [
+                "netherite_ingot",
+                "textures/azalea_icons/icontextures/netherite_ingot",
+            ],
+            [
+                "netherite_leggings",
+                "textures/azalea_icons/icontextures/netherite_leggings",
+            ],
+            [
+                "netherite_pickaxe",
+                "textures/azalea_icons/icontextures/netherite_pickaxe",
+            ],
+            [
+                "netherite_scrap",
+                "textures/azalea_icons/icontextures/netherite_scrap",
+            ],
+            [
+                "netherite_shovel",
+                "textures/azalea_icons/icontextures/netherite_shovel",
+            ],
+            [
+                "netherite_sword",
+                "textures/azalea_icons/icontextures/netherite_sword",
+            ],
+            ["nether_brick", "textures/azalea_icons/icontextures/nether_brick"],
+            ["nether_star", "textures/azalea_icons/icontextures/nether_star"],
+            ["nether_wart", "textures/azalea_icons/icontextures/nether_wart"],
+            [
+                "oaxaca_cheese",
+                "textures/azalea_icons/icontextures/oaxaca_cheese",
+            ],
+            ["onigiri", "textures/azalea_icons/icontextures/onigiri"],
+            ["onigiri_2", "textures/azalea_icons/icontextures/onigiri_2"],
+            ["paint_icon_1", "textures/azalea_icons/icontextures/paint_icon_1"],
+            [
+                "paint_icon_10",
+                "textures/azalea_icons/icontextures/paint_icon_10",
+            ],
+            [
+                "paint_icon_11",
+                "textures/azalea_icons/icontextures/paint_icon_11",
+            ],
+            [
+                "paint_icon_12",
+                "textures/azalea_icons/icontextures/paint_icon_12",
+            ],
+            [
+                "paint_icon_13",
+                "textures/azalea_icons/icontextures/paint_icon_13",
+            ],
+            [
+                "paint_icon_14",
+                "textures/azalea_icons/icontextures/paint_icon_14",
+            ],
+            [
+                "paint_icon_15",
+                "textures/azalea_icons/icontextures/paint_icon_15",
+            ],
+            [
+                "paint_icon_16",
+                "textures/azalea_icons/icontextures/paint_icon_16",
+            ],
+            [
+                "paint_icon_17",
+                "textures/azalea_icons/icontextures/paint_icon_17",
+            ],
+            [
+                "paint_icon_18",
+                "textures/azalea_icons/icontextures/paint_icon_18",
+            ],
+            [
+                "paint_icon_19",
+                "textures/azalea_icons/icontextures/paint_icon_19",
+            ],
+            ["paint_icon_2", "textures/azalea_icons/icontextures/paint_icon_2"],
+            [
+                "paint_icon_20",
+                "textures/azalea_icons/icontextures/paint_icon_20",
+            ],
+            [
+                "paint_icon_21",
+                "textures/azalea_icons/icontextures/paint_icon_21",
+            ],
+            [
+                "paint_icon_22",
+                "textures/azalea_icons/icontextures/paint_icon_22",
+            ],
+            [
+                "paint_icon_23",
+                "textures/azalea_icons/icontextures/paint_icon_23",
+            ],
+            [
+                "paint_icon_24",
+                "textures/azalea_icons/icontextures/paint_icon_24",
+            ],
+            [
+                "paint_icon_25",
+                "textures/azalea_icons/icontextures/paint_icon_25",
+            ],
+            [
+                "paint_icon_26",
+                "textures/azalea_icons/icontextures/paint_icon_26",
+            ],
+            [
+                "paint_icon_27",
+                "textures/azalea_icons/icontextures/paint_icon_27",
+            ],
+            [
+                "paint_icon_28",
+                "textures/azalea_icons/icontextures/paint_icon_28",
+            ],
+            [
+                "paint_icon_29",
+                "textures/azalea_icons/icontextures/paint_icon_29",
+            ],
+            ["paint_icon_3", "textures/azalea_icons/icontextures/paint_icon_3"],
+            [
+                "paint_icon_30",
+                "textures/azalea_icons/icontextures/paint_icon_30",
+            ],
+            [
+                "paint_icon_31",
+                "textures/azalea_icons/icontextures/paint_icon_31",
+            ],
+            [
+                "paint_icon_32",
+                "textures/azalea_icons/icontextures/paint_icon_32",
+            ],
+            [
+                "paint_icon_33",
+                "textures/azalea_icons/icontextures/paint_icon_33",
+            ],
+            [
+                "paint_icon_34",
+                "textures/azalea_icons/icontextures/paint_icon_34",
+            ],
+            [
+                "paint_icon_35",
+                "textures/azalea_icons/icontextures/paint_icon_35",
+            ],
+            [
+                "paint_icon_36",
+                "textures/azalea_icons/icontextures/paint_icon_36",
+            ],
+            [
+                "paint_icon_37",
+                "textures/azalea_icons/icontextures/paint_icon_37",
+            ],
+            [
+                "paint_icon_38",
+                "textures/azalea_icons/icontextures/paint_icon_38",
+            ],
+            [
+                "paint_icon_39",
+                "textures/azalea_icons/icontextures/paint_icon_39",
+            ],
+            ["paint_icon_4", "textures/azalea_icons/icontextures/paint_icon_4"],
+            [
+                "paint_icon_40",
+                "textures/azalea_icons/icontextures/paint_icon_40",
+            ],
+            [
+                "paint_icon_41",
+                "textures/azalea_icons/icontextures/paint_icon_41",
+            ],
+            [
+                "paint_icon_42",
+                "textures/azalea_icons/icontextures/paint_icon_42",
+            ],
+            [
+                "paint_icon_43",
+                "textures/azalea_icons/icontextures/paint_icon_43",
+            ],
+            [
+                "paint_icon_44",
+                "textures/azalea_icons/icontextures/paint_icon_44",
+            ],
+            [
+                "paint_icon_45",
+                "textures/azalea_icons/icontextures/paint_icon_45",
+            ],
+            [
+                "paint_icon_46",
+                "textures/azalea_icons/icontextures/paint_icon_46",
+            ],
+            [
+                "paint_icon_47",
+                "textures/azalea_icons/icontextures/paint_icon_47",
+            ],
+            [
+                "paint_icon_48",
+                "textures/azalea_icons/icontextures/paint_icon_48",
+            ],
+            ["paint_icon_5", "textures/azalea_icons/icontextures/paint_icon_5"],
+            ["paint_icon_6", "textures/azalea_icons/icontextures/paint_icon_6"],
+            ["paint_icon_7", "textures/azalea_icons/icontextures/paint_icon_7"],
+            ["paint_icon_8", "textures/azalea_icons/icontextures/paint_icon_8"],
+            ["paint_icon_9", "textures/azalea_icons/icontextures/paint_icon_9"],
+            ["paneer", "textures/azalea_icons/icontextures/paneer"],
+            ["paper", "textures/azalea_icons/icontextures/paper"],
+            ["parmesan", "textures/azalea_icons/icontextures/parmesan"],
+            [
+                "parmigiano_reggiano",
+                "textures/azalea_icons/icontextures/parmigiano_reggiano",
+            ],
+            ["paski_sir", "textures/azalea_icons/icontextures/paski_sir"],
+            ["pearl_01a", "textures/azalea_icons/icontextures/pearl_01a"],
+            ["pearl_01b", "textures/azalea_icons/icontextures/pearl_01b"],
+            ["pearl_01c", "textures/azalea_icons/icontextures/pearl_01c"],
+            ["pearl_01d", "textures/azalea_icons/icontextures/pearl_01d"],
+            ["pearl_01e", "textures/azalea_icons/icontextures/pearl_01e"],
+            [
+                "pecorino_romano",
+                "textures/azalea_icons/icontextures/pecorino_romano",
+            ],
+            [
+                "phantom_membrane",
+                "textures/azalea_icons/icontextures/phantom_membrane",
+            ],
+            [
+                "pixilart-drawing_3",
+                "textures/azalea_icons/icontextures/pixilart-drawing_3",
+            ],
+            ["plank_01a", "textures/azalea_icons/icontextures/plank_01a"],
+            [
+                "popped_chorus_fruit",
+                "textures/azalea_icons/icontextures/popped_chorus_fruit",
+            ],
+            ["porkchop", "textures/azalea_icons/icontextures/porkchop"],
+            ["potato", "textures/azalea_icons/icontextures/potato"],
+            ["potion", "textures/azalea_icons/icontextures/potion"],
+            ["potion_01a", "textures/azalea_icons/icontextures/potion_01a"],
+            ["potion_01b", "textures/azalea_icons/icontextures/potion_01b"],
+            ["potion_01c", "textures/azalea_icons/icontextures/potion_01c"],
+            ["potion_01d", "textures/azalea_icons/icontextures/potion_01d"],
+            ["potion_01e", "textures/azalea_icons/icontextures/potion_01e"],
+            ["potion_01f", "textures/azalea_icons/icontextures/potion_01f"],
+            ["potion_01g", "textures/azalea_icons/icontextures/potion_01g"],
+            ["potion_01h", "textures/azalea_icons/icontextures/potion_01h"],
+            ["potion_02a", "textures/azalea_icons/icontextures/potion_02a"],
+            ["potion_02b", "textures/azalea_icons/icontextures/potion_02b"],
+            ["potion_02c", "textures/azalea_icons/icontextures/potion_02c"],
+            ["potion_02d", "textures/azalea_icons/icontextures/potion_02d"],
+            ["potion_02e", "textures/azalea_icons/icontextures/potion_02e"],
+            ["potion_02f", "textures/azalea_icons/icontextures/potion_02f"],
+            ["potion_02g", "textures/azalea_icons/icontextures/potion_02g"],
+            ["potion_02h", "textures/azalea_icons/icontextures/potion_02h"],
+            ["potion_03a", "textures/azalea_icons/icontextures/potion_03a"],
+            ["potion_03b", "textures/azalea_icons/icontextures/potion_03b"],
+            ["potion_03c", "textures/azalea_icons/icontextures/potion_03c"],
+            ["potion_03d", "textures/azalea_icons/icontextures/potion_03d"],
+            ["potion_03e", "textures/azalea_icons/icontextures/potion_03e"],
+            ["potion_03f", "textures/azalea_icons/icontextures/potion_03f"],
+            ["potion_03g", "textures/azalea_icons/icontextures/potion_03g"],
+            ["potion_03h", "textures/azalea_icons/icontextures/potion_03h"],
+            ["pouch", "textures/azalea_icons/icontextures/pouch"],
+            ["pouch_2", "textures/azalea_icons/icontextures/pouch_2"],
+            [
+                "powder_snow_bucket",
+                "textures/azalea_icons/icontextures/powder_snow_bucket",
+            ],
+            [
+                "prismarine_crystals",
+                "textures/azalea_icons/icontextures/prismarine_crystals",
+            ],
+            [
+                "prismarine_shard",
+                "textures/azalea_icons/icontextures/prismarine_shard",
+            ],
+            ["provolone", "textures/azalea_icons/icontextures/provolone"],
+            ["pufferfish", "textures/azalea_icons/icontextures/pufferfish"],
+            [
+                "pufferfish_bucket",
+                "textures/azalea_icons/icontextures/pufferfish_bucket",
+            ],
+            ["pumpkin_pie", "textures/azalea_icons/icontextures/pumpkin_pie"],
+            ["quartz", "textures/azalea_icons/icontextures/quartz"],
+            ["quiver", "textures/azalea_icons/icontextures/quiver"],
+            ["quiver_2", "textures/azalea_icons/icontextures/quiver_2"],
+            ["rabbit", "textures/azalea_icons/icontextures/rabbit"],
+            ["raw_copper", "textures/azalea_icons/icontextures/raw_copper"],
+            ["raw_gold", "textures/azalea_icons/icontextures/raw_gold"],
+            ["raw_iron", "textures/azalea_icons/icontextures/raw_iron"],
+            ["reblochon", "textures/azalea_icons/icontextures/reblochon"],
+            ["redstone", "textures/azalea_icons/icontextures/redstone"],
+            ["red_dye", "textures/azalea_icons/icontextures/red_dye"],
+            ["ricotta", "textures/azalea_icons/icontextures/ricotta"],
+            ["ring_01", "textures/azalea_icons/icontextures/ring_01"],
+            ["ring_01a", "textures/azalea_icons/icontextures/ring_01a"],
+            ["ring_01b", "textures/azalea_icons/icontextures/ring_01b"],
+            ["ring_01c", "textures/azalea_icons/icontextures/ring_01c"],
+            ["ring_01d", "textures/azalea_icons/icontextures/ring_01d"],
+            ["ring_01e", "textures/azalea_icons/icontextures/ring_01e"],
+            ["ring_01_2", "textures/azalea_icons/icontextures/ring_01_2"],
+            ["ring_02", "textures/azalea_icons/icontextures/ring_02"],
+            ["ring_02a", "textures/azalea_icons/icontextures/ring_02a"],
+            ["ring_02b", "textures/azalea_icons/icontextures/ring_02b"],
+            ["ring_02c", "textures/azalea_icons/icontextures/ring_02c"],
+            ["ring_02d", "textures/azalea_icons/icontextures/ring_02d"],
+            ["ring_02e", "textures/azalea_icons/icontextures/ring_02e"],
+            ["ring_02_2", "textures/azalea_icons/icontextures/ring_02_2"],
+            ["ring_03a", "textures/azalea_icons/icontextures/ring_03a"],
+            ["ring_03b", "textures/azalea_icons/icontextures/ring_03b"],
+            ["ring_03c", "textures/azalea_icons/icontextures/ring_03c"],
+            ["ring_03d", "textures/azalea_icons/icontextures/ring_03d"],
+            ["ring_03e", "textures/azalea_icons/icontextures/ring_03e"],
+            ["roquefort", "textures/azalea_icons/icontextures/roquefort"],
+            ["rotten_flesh", "textures/azalea_icons/icontextures/rotten_flesh"],
+            ["saddle", "textures/azalea_icons/icontextures/saddle"],
+            ["salmon", "textures/azalea_icons/icontextures/salmon"],
+            ["sandwich", "textures/azalea_icons/icontextures/sandwich"],
+            ["sandwich_2", "textures/azalea_icons/icontextures/sandwich_2"],
+            ["scamorza", "textures/azalea_icons/icontextures/scamorza"],
+            ["scroll_01a", "textures/azalea_icons/icontextures/scroll_01a"],
+            ["scroll_01b", "textures/azalea_icons/icontextures/scroll_01b"],
+            ["scroll_01c", "textures/azalea_icons/icontextures/scroll_01c"],
+            ["scroll_01d", "textures/azalea_icons/icontextures/scroll_01d"],
+            ["scroll_01e", "textures/azalea_icons/icontextures/scroll_01e"],
+            ["scroll_01f", "textures/azalea_icons/icontextures/scroll_01f"],
+            ["scroll_01g", "textures/azalea_icons/icontextures/scroll_01g"],
+            ["scroll_01h", "textures/azalea_icons/icontextures/scroll_01h"],
+            [
+                "scroll_leather",
+                "textures/azalea_icons/icontextures/scroll_leather",
+            ],
+            [
+                "scroll_leather_2",
+                "textures/azalea_icons/icontextures/scroll_leather_2",
+            ],
+            ["scute", "textures/azalea_icons/icontextures/scute"],
+            ["shard_01a", "textures/azalea_icons/icontextures/shard_01a"],
+            ["shard_01b", "textures/azalea_icons/icontextures/shard_01b"],
+            ["shard_01c", "textures/azalea_icons/icontextures/shard_01c"],
+            ["shard_01d", "textures/azalea_icons/icontextures/shard_01d"],
+            ["shard_01e", "textures/azalea_icons/icontextures/shard_01e"],
+            ["shard_01f", "textures/azalea_icons/icontextures/shard_01f"],
+            ["shard_01g", "textures/azalea_icons/icontextures/shard_01g"],
+            ["shard_01h", "textures/azalea_icons/icontextures/shard_01h"],
+            ["shard_01i", "textures/azalea_icons/icontextures/shard_01i"],
+            ["shard_01j", "textures/azalea_icons/icontextures/shard_01j"],
+            ["shears", "textures/azalea_icons/icontextures/shears"],
+            ["shield_01", "textures/azalea_icons/icontextures/shield_01"],
+            ["shield_01a", "textures/azalea_icons/icontextures/shield_01a"],
+            ["shield_01b", "textures/azalea_icons/icontextures/shield_01b"],
+            ["shield_01c", "textures/azalea_icons/icontextures/shield_01c"],
+            ["shield_01d", "textures/azalea_icons/icontextures/shield_01d"],
+            ["shield_01e", "textures/azalea_icons/icontextures/shield_01e"],
+            ["shield_01_2", "textures/azalea_icons/icontextures/shield_01_2"],
+            ["shield_02", "textures/azalea_icons/icontextures/shield_02"],
+            ["shield_02a", "textures/azalea_icons/icontextures/shield_02a"],
+            ["shield_02b", "textures/azalea_icons/icontextures/shield_02b"],
+            ["shield_02c", "textures/azalea_icons/icontextures/shield_02c"],
+            ["shield_02d", "textures/azalea_icons/icontextures/shield_02d"],
+            ["shield_02e", "textures/azalea_icons/icontextures/shield_02e"],
+            ["shield_02_2", "textures/azalea_icons/icontextures/shield_02_2"],
+            ["shield_03a", "textures/azalea_icons/icontextures/shield_03a"],
+            ["shield_03b", "textures/azalea_icons/icontextures/shield_03b"],
+            ["shield_03c", "textures/azalea_icons/icontextures/shield_03c"],
+            ["shield_03d", "textures/azalea_icons/icontextures/shield_03d"],
+            ["shield_03e", "textures/azalea_icons/icontextures/shield_03e"],
+            [
+                "shropshire_blue",
+                "textures/azalea_icons/icontextures/shropshire_blue",
+            ],
+            [
+                "shulker_shell",
+                "textures/azalea_icons/icontextures/shulker_shell",
+            ],
+            ["skull_01a", "textures/azalea_icons/icontextures/skull_01a"],
+            ["skull_01b", "textures/azalea_icons/icontextures/skull_01b"],
+            ["slime_ball", "textures/azalea_icons/icontextures/slime_ball"],
+            ["snowball", "textures/azalea_icons/icontextures/snowball"],
+            ["spear_01", "textures/azalea_icons/icontextures/spear_01"],
+            ["spear_01_2", "textures/azalea_icons/icontextures/spear_01_2"],
+            ["spear_02", "textures/azalea_icons/icontextures/spear_02"],
+            ["spear_02_2", "textures/azalea_icons/icontextures/spear_02_2"],
+            [
+                "spellbook_01a",
+                "textures/azalea_icons/icontextures/spellbook_01a",
+            ],
+            [
+                "spellbook_01b",
+                "textures/azalea_icons/icontextures/spellbook_01b",
+            ],
+            [
+                "spellbook_01c",
+                "textures/azalea_icons/icontextures/spellbook_01c",
+            ],
+            [
+                "spellbook_01d",
+                "textures/azalea_icons/icontextures/spellbook_01d",
+            ],
+            [
+                "spellbook_01e",
+                "textures/azalea_icons/icontextures/spellbook_01e",
+            ],
+            [
+                "spellbook_02a",
+                "textures/azalea_icons/icontextures/spellbook_02a",
+            ],
+            [
+                "spellbook_02b",
+                "textures/azalea_icons/icontextures/spellbook_02b",
+            ],
+            [
+                "spellbook_02c",
+                "textures/azalea_icons/icontextures/spellbook_02c",
+            ],
+            [
+                "spellbook_02d",
+                "textures/azalea_icons/icontextures/spellbook_02d",
+            ],
+            [
+                "spellbook_02e",
+                "textures/azalea_icons/icontextures/spellbook_02e",
+            ],
+            [
+                "spellbook_03a",
+                "textures/azalea_icons/icontextures/spellbook_03a",
+            ],
+            [
+                "spellbook_03b",
+                "textures/azalea_icons/icontextures/spellbook_03b",
+            ],
+            [
+                "spellbook_03c",
+                "textures/azalea_icons/icontextures/spellbook_03c",
+            ],
+            [
+                "spellbook_03d",
+                "textures/azalea_icons/icontextures/spellbook_03d",
+            ],
+            [
+                "spellbook_03e",
+                "textures/azalea_icons/icontextures/spellbook_03e",
+            ],
+            ["spider_eye", "textures/azalea_icons/icontextures/spider_eye"],
+            [
+                "splash_potion",
+                "textures/azalea_icons/icontextures/splash_potion",
+            ],
+            ["spyglass", "textures/azalea_icons/icontextures/spyglass"],
+            ["staff_01a", "textures/azalea_icons/icontextures/staff_01a"],
+            ["staff_01b", "textures/azalea_icons/icontextures/staff_01b"],
+            ["staff_01c", "textures/azalea_icons/icontextures/staff_01c"],
+            ["staff_01d", "textures/azalea_icons/icontextures/staff_01d"],
+            ["staff_01e", "textures/azalea_icons/icontextures/staff_01e"],
+            ["staff_02ab", "textures/azalea_icons/icontextures/staff_02ab"],
+            ["staff_02b", "textures/azalea_icons/icontextures/staff_02b"],
+            ["staff_02c", "textures/azalea_icons/icontextures/staff_02c"],
+            ["staff_02d", "textures/azalea_icons/icontextures/staff_02d"],
+            ["staff_02e", "textures/azalea_icons/icontextures/staff_02e"],
+            ["staff_03a", "textures/azalea_icons/icontextures/staff_03a"],
+            ["staff_03b", "textures/azalea_icons/icontextures/staff_03b"],
+            ["staff_03c", "textures/azalea_icons/icontextures/staff_03c"],
+            ["staff_03d", "textures/azalea_icons/icontextures/staff_03d"],
+            ["staff_03e", "textures/azalea_icons/icontextures/staff_03e"],
+            ["stick", "textures/azalea_icons/icontextures/stick"],
+            ["stilton", "textures/azalea_icons/icontextures/stilton"],
+            ["stone sword", "textures/azalea_icons/icontextures/stone sword"],
+            [
+                "stone sword_2",
+                "textures/azalea_icons/icontextures/stone sword_2",
+            ],
+            ["stone", "textures/azalea_icons/icontextures/stone"],
+            [
+                "stoneblock_01a",
+                "textures/azalea_icons/icontextures/stoneblock_01a",
+            ],
+            ["stone_2", "textures/azalea_icons/icontextures/stone_2"],
+            ["stone_axe", "textures/azalea_icons/icontextures/stone_axe"],
+            ["stone_hoe", "textures/azalea_icons/icontextures/stone_hoe"],
+            [
+                "stone_pickaxe",
+                "textures/azalea_icons/icontextures/stone_pickaxe",
+            ],
+            ["stone_shovel", "textures/azalea_icons/icontextures/stone_shovel"],
+            ["stone_sword", "textures/azalea_icons/icontextures/stone_sword"],
+            ["string", "textures/azalea_icons/icontextures/string"],
+            ["sugar_cane", "textures/azalea_icons/icontextures/sugar_cane"],
+            [
+                "sweet_berries",
+                "textures/azalea_icons/icontextures/sweet_berries",
+            ],
+            ["swiss", "textures/azalea_icons/icontextures/swiss"],
+            ["sword_01", "textures/azalea_icons/icontextures/sword_01"],
+            ["sword_01a", "textures/azalea_icons/icontextures/sword_01a"],
+            ["sword_01b", "textures/azalea_icons/icontextures/sword_01b"],
+            ["sword_01c", "textures/azalea_icons/icontextures/sword_01c"],
+            ["sword_01d", "textures/azalea_icons/icontextures/sword_01d"],
+            ["sword_01e", "textures/azalea_icons/icontextures/sword_01e"],
+            ["sword_01_2", "textures/azalea_icons/icontextures/sword_01_2"],
+            ["sword_02", "textures/azalea_icons/icontextures/sword_02"],
+            ["sword_02a", "textures/azalea_icons/icontextures/sword_02a"],
+            ["sword_02b", "textures/azalea_icons/icontextures/sword_02b"],
+            ["sword_02c", "textures/azalea_icons/icontextures/sword_02c"],
+            ["sword_02d", "textures/azalea_icons/icontextures/sword_02d"],
+            ["sword_02e", "textures/azalea_icons/icontextures/sword_02e"],
+            ["sword_02_2", "textures/azalea_icons/icontextures/sword_02_2"],
+            ["sword_03a", "textures/azalea_icons/icontextures/sword_03a"],
+            ["sword_03b", "textures/azalea_icons/icontextures/sword_03b"],
+            ["sword_03c", "textures/azalea_icons/icontextures/sword_03c"],
+            ["sword_03d", "textures/azalea_icons/icontextures/sword_03d"],
+            ["sword_03e", "textures/azalea_icons/icontextures/sword_03e"],
+            ["tail", "textures/azalea_icons/icontextures/tail"],
+            ["tail_2", "textures/azalea_icons/icontextures/tail_2"],
+            ["taleggio", "textures/azalea_icons/icontextures/taleggio"],
+            ["tile000", "textures/azalea_icons/icontextures/tile000"],
+            ["tile001", "textures/azalea_icons/icontextures/tile001"],
+            ["tile002", "textures/azalea_icons/icontextures/tile002"],
+            ["tile003", "textures/azalea_icons/icontextures/tile003"],
+            ["tile004", "textures/azalea_icons/icontextures/tile004"],
+            ["tile005", "textures/azalea_icons/icontextures/tile005"],
+            ["tile006", "textures/azalea_icons/icontextures/tile006"],
+            ["tile007", "textures/azalea_icons/icontextures/tile007"],
+            ["tile008", "textures/azalea_icons/icontextures/tile008"],
+            ["tile009", "textures/azalea_icons/icontextures/tile009"],
+            ["tile010", "textures/azalea_icons/icontextures/tile010"],
+            ["tile011", "textures/azalea_icons/icontextures/tile011"],
+            ["tile012", "textures/azalea_icons/icontextures/tile012"],
+            ["tile013", "textures/azalea_icons/icontextures/tile013"],
+            ["tile014", "textures/azalea_icons/icontextures/tile014"],
+            ["tile015", "textures/azalea_icons/icontextures/tile015"],
+            ["tile016", "textures/azalea_icons/icontextures/tile016"],
+            ["tile017", "textures/azalea_icons/icontextures/tile017"],
+            ["tile018", "textures/azalea_icons/icontextures/tile018"],
+            ["tile019", "textures/azalea_icons/icontextures/tile019"],
+            ["tile020", "textures/azalea_icons/icontextures/tile020"],
+            ["tile021", "textures/azalea_icons/icontextures/tile021"],
+            ["tile022", "textures/azalea_icons/icontextures/tile022"],
+            ["tile023", "textures/azalea_icons/icontextures/tile023"],
+            ["tile024", "textures/azalea_icons/icontextures/tile024"],
+            ["tile025", "textures/azalea_icons/icontextures/tile025"],
+            ["tile026", "textures/azalea_icons/icontextures/tile026"],
+            ["tile027", "textures/azalea_icons/icontextures/tile027"],
+            ["tile028", "textures/azalea_icons/icontextures/tile028"],
+            ["tile029", "textures/azalea_icons/icontextures/tile029"],
+            ["tile030", "textures/azalea_icons/icontextures/tile030"],
+            ["tile031", "textures/azalea_icons/icontextures/tile031"],
+            ["tile032", "textures/azalea_icons/icontextures/tile032"],
+            ["tile033", "textures/azalea_icons/icontextures/tile033"],
+            ["tile034", "textures/azalea_icons/icontextures/tile034"],
+            ["tile035", "textures/azalea_icons/icontextures/tile035"],
+            ["tile036", "textures/azalea_icons/icontextures/tile036"],
+            ["tile037", "textures/azalea_icons/icontextures/tile037"],
+            ["tile038", "textures/azalea_icons/icontextures/tile038"],
+            ["tile039", "textures/azalea_icons/icontextures/tile039"],
+            ["tile040", "textures/azalea_icons/icontextures/tile040"],
+            ["tile041", "textures/azalea_icons/icontextures/tile041"],
+            ["tile042", "textures/azalea_icons/icontextures/tile042"],
+            ["tile043", "textures/azalea_icons/icontextures/tile043"],
+            ["tile044", "textures/azalea_icons/icontextures/tile044"],
+            ["tile045", "textures/azalea_icons/icontextures/tile045"],
+            ["tile046", "textures/azalea_icons/icontextures/tile046"],
+            ["tile047", "textures/azalea_icons/icontextures/tile047"],
+            ["tile048", "textures/azalea_icons/icontextures/tile048"],
+            ["tile049", "textures/azalea_icons/icontextures/tile049"],
+            ["tile050", "textures/azalea_icons/icontextures/tile050"],
+            ["tile051", "textures/azalea_icons/icontextures/tile051"],
+            ["tile052", "textures/azalea_icons/icontextures/tile052"],
+            ["tile053", "textures/azalea_icons/icontextures/tile053"],
+            ["tile054", "textures/azalea_icons/icontextures/tile054"],
+            ["tile055", "textures/azalea_icons/icontextures/tile055"],
+            ["tile056", "textures/azalea_icons/icontextures/tile056"],
+            ["tile057", "textures/azalea_icons/icontextures/tile057"],
+            ["tile058", "textures/azalea_icons/icontextures/tile058"],
+            ["tile059", "textures/azalea_icons/icontextures/tile059"],
+            ["tile060", "textures/azalea_icons/icontextures/tile060"],
+            ["tile061", "textures/azalea_icons/icontextures/tile061"],
+            ["tile062", "textures/azalea_icons/icontextures/tile062"],
+            ["tile063", "textures/azalea_icons/icontextures/tile063"],
+            ["tile064", "textures/azalea_icons/icontextures/tile064"],
+            ["tile065", "textures/azalea_icons/icontextures/tile065"],
+            ["tile066", "textures/azalea_icons/icontextures/tile066"],
+            ["tile067", "textures/azalea_icons/icontextures/tile067"],
+            ["tile068", "textures/azalea_icons/icontextures/tile068"],
+            ["tile069", "textures/azalea_icons/icontextures/tile069"],
+            ["tile070", "textures/azalea_icons/icontextures/tile070"],
+            ["tile071", "textures/azalea_icons/icontextures/tile071"],
+            ["tile072", "textures/azalea_icons/icontextures/tile072"],
+            ["tile073", "textures/azalea_icons/icontextures/tile073"],
+            ["tile074", "textures/azalea_icons/icontextures/tile074"],
+            ["tile075", "textures/azalea_icons/icontextures/tile075"],
+            ["tile076", "textures/azalea_icons/icontextures/tile076"],
+            ["tile077", "textures/azalea_icons/icontextures/tile077"],
+            ["tile078", "textures/azalea_icons/icontextures/tile078"],
+            ["tile079", "textures/azalea_icons/icontextures/tile079"],
+            ["tile080", "textures/azalea_icons/icontextures/tile080"],
+            ["tile081", "textures/azalea_icons/icontextures/tile081"],
+            ["tile082", "textures/azalea_icons/icontextures/tile082"],
+            ["tile083", "textures/azalea_icons/icontextures/tile083"],
+            ["tile084", "textures/azalea_icons/icontextures/tile084"],
+            ["tile085", "textures/azalea_icons/icontextures/tile085"],
+            ["tile086", "textures/azalea_icons/icontextures/tile086"],
+            ["tile087", "textures/azalea_icons/icontextures/tile087"],
+            ["tile088", "textures/azalea_icons/icontextures/tile088"],
+            ["tile089", "textures/azalea_icons/icontextures/tile089"],
+            ["tile090", "textures/azalea_icons/icontextures/tile090"],
+            ["tile091", "textures/azalea_icons/icontextures/tile091"],
+            ["tile092", "textures/azalea_icons/icontextures/tile092"],
+            ["tile093", "textures/azalea_icons/icontextures/tile093"],
+            ["tile094", "textures/azalea_icons/icontextures/tile094"],
+            ["tile095", "textures/azalea_icons/icontextures/tile095"],
+            ["tile096", "textures/azalea_icons/icontextures/tile096"],
+            ["tile097", "textures/azalea_icons/icontextures/tile097"],
+            ["tile098", "textures/azalea_icons/icontextures/tile098"],
+            ["tile099", "textures/azalea_icons/icontextures/tile099"],
+            ["tile100", "textures/azalea_icons/icontextures/tile100"],
+            ["tile101", "textures/azalea_icons/icontextures/tile101"],
+            ["tile102", "textures/azalea_icons/icontextures/tile102"],
+            ["tile103", "textures/azalea_icons/icontextures/tile103"],
+            ["tile104", "textures/azalea_icons/icontextures/tile104"],
+            ["tile105", "textures/azalea_icons/icontextures/tile105"],
+            ["tile106", "textures/azalea_icons/icontextures/tile106"],
+            ["tile107", "textures/azalea_icons/icontextures/tile107"],
+            ["tile108", "textures/azalea_icons/icontextures/tile108"],
+            ["tile109", "textures/azalea_icons/icontextures/tile109"],
+            ["tile110", "textures/azalea_icons/icontextures/tile110"],
+            ["tile111", "textures/azalea_icons/icontextures/tile111"],
+            ["tile112", "textures/azalea_icons/icontextures/tile112"],
+            ["tile113", "textures/azalea_icons/icontextures/tile113"],
+            ["tile114", "textures/azalea_icons/icontextures/tile114"],
+            ["tile115", "textures/azalea_icons/icontextures/tile115"],
+            ["tile116", "textures/azalea_icons/icontextures/tile116"],
+            ["tile117", "textures/azalea_icons/icontextures/tile117"],
+            ["tile118", "textures/azalea_icons/icontextures/tile118"],
+            ["tile119", "textures/azalea_icons/icontextures/tile119"],
+            ["tile120", "textures/azalea_icons/icontextures/tile120"],
+            ["tile121", "textures/azalea_icons/icontextures/tile121"],
+            ["tile122", "textures/azalea_icons/icontextures/tile122"],
+            ["tile123", "textures/azalea_icons/icontextures/tile123"],
+            ["tile124", "textures/azalea_icons/icontextures/tile124"],
+            ["tile125", "textures/azalea_icons/icontextures/tile125"],
+            ["tile126", "textures/azalea_icons/icontextures/tile126"],
+            ["tile127", "textures/azalea_icons/icontextures/tile127"],
+            ["tile128", "textures/azalea_icons/icontextures/tile128"],
+            ["tile129", "textures/azalea_icons/icontextures/tile129"],
+            ["tile130", "textures/azalea_icons/icontextures/tile130"],
+            ["tile131", "textures/azalea_icons/icontextures/tile131"],
+            ["tile132", "textures/azalea_icons/icontextures/tile132"],
+            ["tile133", "textures/azalea_icons/icontextures/tile133"],
+            ["tile134", "textures/azalea_icons/icontextures/tile134"],
+            ["tile135", "textures/azalea_icons/icontextures/tile135"],
+            ["tile136", "textures/azalea_icons/icontextures/tile136"],
+            ["tile137", "textures/azalea_icons/icontextures/tile137"],
+            ["tile138", "textures/azalea_icons/icontextures/tile138"],
+            ["tile139", "textures/azalea_icons/icontextures/tile139"],
+            ["tile140", "textures/azalea_icons/icontextures/tile140"],
+            ["tile141", "textures/azalea_icons/icontextures/tile141"],
+            ["tile142", "textures/azalea_icons/icontextures/tile142"],
+            ["tile143", "textures/azalea_icons/icontextures/tile143"],
+            ["tile144", "textures/azalea_icons/icontextures/tile144"],
+            ["tile145", "textures/azalea_icons/icontextures/tile145"],
+            ["tile146", "textures/azalea_icons/icontextures/tile146"],
+            ["tile147", "textures/azalea_icons/icontextures/tile147"],
+            ["tile148", "textures/azalea_icons/icontextures/tile148"],
+            ["tile149", "textures/azalea_icons/icontextures/tile149"],
+            ["tile150", "textures/azalea_icons/icontextures/tile150"],
+            ["tile151", "textures/azalea_icons/icontextures/tile151"],
+            ["tile152", "textures/azalea_icons/icontextures/tile152"],
+            ["tile153", "textures/azalea_icons/icontextures/tile153"],
+            ["tile154", "textures/azalea_icons/icontextures/tile154"],
+            ["tile155", "textures/azalea_icons/icontextures/tile155"],
+            ["tile156", "textures/azalea_icons/icontextures/tile156"],
+            ["tile157", "textures/azalea_icons/icontextures/tile157"],
+            ["tile158", "textures/azalea_icons/icontextures/tile158"],
+            ["tile159", "textures/azalea_icons/icontextures/tile159"],
+            ["tile160", "textures/azalea_icons/icontextures/tile160"],
+            ["tile161", "textures/azalea_icons/icontextures/tile161"],
+            ["tile162", "textures/azalea_icons/icontextures/tile162"],
+            ["tile163", "textures/azalea_icons/icontextures/tile163"],
+            ["tile164", "textures/azalea_icons/icontextures/tile164"],
+            ["tile165", "textures/azalea_icons/icontextures/tile165"],
+            ["tile166", "textures/azalea_icons/icontextures/tile166"],
+            ["tile167", "textures/azalea_icons/icontextures/tile167"],
+            ["tile168", "textures/azalea_icons/icontextures/tile168"],
+            ["tile169", "textures/azalea_icons/icontextures/tile169"],
+            ["tile170", "textures/azalea_icons/icontextures/tile170"],
+            ["tile171", "textures/azalea_icons/icontextures/tile171"],
+            ["tile172", "textures/azalea_icons/icontextures/tile172"],
+            ["tile173", "textures/azalea_icons/icontextures/tile173"],
+            ["tile174", "textures/azalea_icons/icontextures/tile174"],
+            ["tile175", "textures/azalea_icons/icontextures/tile175"],
+            ["tile176", "textures/azalea_icons/icontextures/tile176"],
+            ["tile177", "textures/azalea_icons/icontextures/tile177"],
+            ["tile178", "textures/azalea_icons/icontextures/tile178"],
+            ["tile179", "textures/azalea_icons/icontextures/tile179"],
+            ["tile180", "textures/azalea_icons/icontextures/tile180"],
+            ["tile181", "textures/azalea_icons/icontextures/tile181"],
+            ["tile182", "textures/azalea_icons/icontextures/tile182"],
+            ["tile183", "textures/azalea_icons/icontextures/tile183"],
+            ["tile184", "textures/azalea_icons/icontextures/tile184"],
+            ["tile185", "textures/azalea_icons/icontextures/tile185"],
+            ["tile186", "textures/azalea_icons/icontextures/tile186"],
+            ["tile187", "textures/azalea_icons/icontextures/tile187"],
+            ["tile188", "textures/azalea_icons/icontextures/tile188"],
+            ["tile189", "textures/azalea_icons/icontextures/tile189"],
+            ["tile190", "textures/azalea_icons/icontextures/tile190"],
+            ["tile191", "textures/azalea_icons/icontextures/tile191"],
+            ["tile192", "textures/azalea_icons/icontextures/tile192"],
+            ["tile193", "textures/azalea_icons/icontextures/tile193"],
+            ["tile194", "textures/azalea_icons/icontextures/tile194"],
+            ["tile195", "textures/azalea_icons/icontextures/tile195"],
+            ["tile196", "textures/azalea_icons/icontextures/tile196"],
+            ["tile197", "textures/azalea_icons/icontextures/tile197"],
+            ["tile198", "textures/azalea_icons/icontextures/tile198"],
+            ["tile199", "textures/azalea_icons/icontextures/tile199"],
+            ["tile200", "textures/azalea_icons/icontextures/tile200"],
+            ["tile201", "textures/azalea_icons/icontextures/tile201"],
+            ["tile202", "textures/azalea_icons/icontextures/tile202"],
+            ["tile203", "textures/azalea_icons/icontextures/tile203"],
+            ["tile204", "textures/azalea_icons/icontextures/tile204"],
+            ["tile205", "textures/azalea_icons/icontextures/tile205"],
+            ["tile206", "textures/azalea_icons/icontextures/tile206"],
+            ["tile207", "textures/azalea_icons/icontextures/tile207"],
+            ["tile208", "textures/azalea_icons/icontextures/tile208"],
+            ["tile209", "textures/azalea_icons/icontextures/tile209"],
+            ["tile210", "textures/azalea_icons/icontextures/tile210"],
+            ["tile211", "textures/azalea_icons/icontextures/tile211"],
+            ["tile212", "textures/azalea_icons/icontextures/tile212"],
+            ["tile213", "textures/azalea_icons/icontextures/tile213"],
+            ["tile214", "textures/azalea_icons/icontextures/tile214"],
+            ["tile215", "textures/azalea_icons/icontextures/tile215"],
+            ["tile216", "textures/azalea_icons/icontextures/tile216"],
+            ["tile217", "textures/azalea_icons/icontextures/tile217"],
+            ["tile218", "textures/azalea_icons/icontextures/tile218"],
+            ["tile219", "textures/azalea_icons/icontextures/tile219"],
+            ["tile220", "textures/azalea_icons/icontextures/tile220"],
+            ["tile221", "textures/azalea_icons/icontextures/tile221"],
+            ["tile222", "textures/azalea_icons/icontextures/tile222"],
+            ["tile223", "textures/azalea_icons/icontextures/tile223"],
+            ["tile224", "textures/azalea_icons/icontextures/tile224"],
+            ["tile225", "textures/azalea_icons/icontextures/tile225"],
+            ["tile226", "textures/azalea_icons/icontextures/tile226"],
+            ["tile227", "textures/azalea_icons/icontextures/tile227"],
+            ["tile228", "textures/azalea_icons/icontextures/tile228"],
+            ["tile229", "textures/azalea_icons/icontextures/tile229"],
+            ["tile230", "textures/azalea_icons/icontextures/tile230"],
+            ["tile231", "textures/azalea_icons/icontextures/tile231"],
+            ["tile232", "textures/azalea_icons/icontextures/tile232"],
+            ["tile233", "textures/azalea_icons/icontextures/tile233"],
+            ["tile234", "textures/azalea_icons/icontextures/tile234"],
+            ["tile235", "textures/azalea_icons/icontextures/tile235"],
+            ["tile236", "textures/azalea_icons/icontextures/tile236"],
+            ["tile237", "textures/azalea_icons/icontextures/tile237"],
+            ["tile238", "textures/azalea_icons/icontextures/tile238"],
+            ["tile239", "textures/azalea_icons/icontextures/tile239"],
+            ["tile240", "textures/azalea_icons/icontextures/tile240"],
+            ["tile241", "textures/azalea_icons/icontextures/tile241"],
+            ["tile242", "textures/azalea_icons/icontextures/tile242"],
+            ["tile243", "textures/azalea_icons/icontextures/tile243"],
+            ["tile244", "textures/azalea_icons/icontextures/tile244"],
+            ["tile245", "textures/azalea_icons/icontextures/tile245"],
+            ["tile246", "textures/azalea_icons/icontextures/tile246"],
+            ["tile247", "textures/azalea_icons/icontextures/tile247"],
+            ["tile248", "textures/azalea_icons/icontextures/tile248"],
+            ["tile249", "textures/azalea_icons/icontextures/tile249"],
+            ["tile250", "textures/azalea_icons/icontextures/tile250"],
+            ["tile251", "textures/azalea_icons/icontextures/tile251"],
+            ["tile252", "textures/azalea_icons/icontextures/tile252"],
+            ["tile253", "textures/azalea_icons/icontextures/tile253"],
+            ["tile254", "textures/azalea_icons/icontextures/tile254"],
+            ["tile255", "textures/azalea_icons/icontextures/tile255"],
+            ["tile256", "textures/azalea_icons/icontextures/tile256"],
+            ["tile257", "textures/azalea_icons/icontextures/tile257"],
+            ["tile258", "textures/azalea_icons/icontextures/tile258"],
+            ["tile259", "textures/azalea_icons/icontextures/tile259"],
+            ["tile260", "textures/azalea_icons/icontextures/tile260"],
+            ["tile261", "textures/azalea_icons/icontextures/tile261"],
+            ["tile262", "textures/azalea_icons/icontextures/tile262"],
+            ["tile263", "textures/azalea_icons/icontextures/tile263"],
+            ["tile264", "textures/azalea_icons/icontextures/tile264"],
+            ["tile265", "textures/azalea_icons/icontextures/tile265"],
+            ["tile266", "textures/azalea_icons/icontextures/tile266"],
+            ["tile267", "textures/azalea_icons/icontextures/tile267"],
+            ["tile268", "textures/azalea_icons/icontextures/tile268"],
+            ["tile269", "textures/azalea_icons/icontextures/tile269"],
+            ["tile270", "textures/azalea_icons/icontextures/tile270"],
+            ["tile271", "textures/azalea_icons/icontextures/tile271"],
+            ["tile272", "textures/azalea_icons/icontextures/tile272"],
+            ["tile273", "textures/azalea_icons/icontextures/tile273"],
+            ["tile274", "textures/azalea_icons/icontextures/tile274"],
+            ["tile275", "textures/azalea_icons/icontextures/tile275"],
+            ["tile276", "textures/azalea_icons/icontextures/tile276"],
+            ["tile277", "textures/azalea_icons/icontextures/tile277"],
+            ["tile278", "textures/azalea_icons/icontextures/tile278"],
+            ["tile279", "textures/azalea_icons/icontextures/tile279"],
+            ["tile280", "textures/azalea_icons/icontextures/tile280"],
+            ["tile281", "textures/azalea_icons/icontextures/tile281"],
+            ["tile282", "textures/azalea_icons/icontextures/tile282"],
+            ["tile283", "textures/azalea_icons/icontextures/tile283"],
+            ["tile284", "textures/azalea_icons/icontextures/tile284"],
+            ["tile285", "textures/azalea_icons/icontextures/tile285"],
+            ["tile286", "textures/azalea_icons/icontextures/tile286"],
+            ["tile287", "textures/azalea_icons/icontextures/tile287"],
+            ["tile288", "textures/azalea_icons/icontextures/tile288"],
+            ["tile289", "textures/azalea_icons/icontextures/tile289"],
+            ["tile290", "textures/azalea_icons/icontextures/tile290"],
+            ["tile291", "textures/azalea_icons/icontextures/tile291"],
+            ["tile292", "textures/azalea_icons/icontextures/tile292"],
+            ["tile293", "textures/azalea_icons/icontextures/tile293"],
+            ["tile294", "textures/azalea_icons/icontextures/tile294"],
+            ["tile295", "textures/azalea_icons/icontextures/tile295"],
+            ["tile296", "textures/azalea_icons/icontextures/tile296"],
+            ["tile297", "textures/azalea_icons/icontextures/tile297"],
+            ["tile298", "textures/azalea_icons/icontextures/tile298"],
+            ["tile299", "textures/azalea_icons/icontextures/tile299"],
+            ["tile2_000", "textures/azalea_icons/icontextures/tile2_000"],
+            ["tile2_001", "textures/azalea_icons/icontextures/tile2_001"],
+            ["tile2_002", "textures/azalea_icons/icontextures/tile2_002"],
+            ["tile2_003", "textures/azalea_icons/icontextures/tile2_003"],
+            ["tile2_004", "textures/azalea_icons/icontextures/tile2_004"],
+            ["tile2_005", "textures/azalea_icons/icontextures/tile2_005"],
+            ["tile2_006", "textures/azalea_icons/icontextures/tile2_006"],
+            ["tile2_007", "textures/azalea_icons/icontextures/tile2_007"],
+            ["tile2_008", "textures/azalea_icons/icontextures/tile2_008"],
+            ["tile2_009", "textures/azalea_icons/icontextures/tile2_009"],
+            ["tile2_010", "textures/azalea_icons/icontextures/tile2_010"],
+            ["tile2_011", "textures/azalea_icons/icontextures/tile2_011"],
+            ["tile2_012", "textures/azalea_icons/icontextures/tile2_012"],
+            ["tile2_013", "textures/azalea_icons/icontextures/tile2_013"],
+            ["tile2_014", "textures/azalea_icons/icontextures/tile2_014"],
+            ["tile2_015", "textures/azalea_icons/icontextures/tile2_015"],
+            ["tile2_016", "textures/azalea_icons/icontextures/tile2_016"],
+            ["tile2_017", "textures/azalea_icons/icontextures/tile2_017"],
+            ["tile2_018", "textures/azalea_icons/icontextures/tile2_018"],
+            ["tile2_019", "textures/azalea_icons/icontextures/tile2_019"],
+            ["tile2_020", "textures/azalea_icons/icontextures/tile2_020"],
+            ["tile2_021", "textures/azalea_icons/icontextures/tile2_021"],
+            ["tile2_022", "textures/azalea_icons/icontextures/tile2_022"],
+            ["tile2_023", "textures/azalea_icons/icontextures/tile2_023"],
+            ["tile2_024", "textures/azalea_icons/icontextures/tile2_024"],
+            ["tile2_025", "textures/azalea_icons/icontextures/tile2_025"],
+            ["tile2_026", "textures/azalea_icons/icontextures/tile2_026"],
+            ["tile2_027", "textures/azalea_icons/icontextures/tile2_027"],
+            ["tile2_028", "textures/azalea_icons/icontextures/tile2_028"],
+            ["tile2_029", "textures/azalea_icons/icontextures/tile2_029"],
+            ["tile2_030", "textures/azalea_icons/icontextures/tile2_030"],
+            ["tile2_031", "textures/azalea_icons/icontextures/tile2_031"],
+            ["tile300", "textures/azalea_icons/icontextures/tile300"],
+            ["tile301", "textures/azalea_icons/icontextures/tile301"],
+            ["tile302", "textures/azalea_icons/icontextures/tile302"],
+            ["tile303", "textures/azalea_icons/icontextures/tile303"],
+            ["tile304", "textures/azalea_icons/icontextures/tile304"],
+            ["tile305", "textures/azalea_icons/icontextures/tile305"],
+            ["tile306", "textures/azalea_icons/icontextures/tile306"],
+            ["tile307", "textures/azalea_icons/icontextures/tile307"],
+            ["tile308", "textures/azalea_icons/icontextures/tile308"],
+            ["tile309", "textures/azalea_icons/icontextures/tile309"],
+            ["tile310", "textures/azalea_icons/icontextures/tile310"],
+            ["tile311", "textures/azalea_icons/icontextures/tile311"],
+            ["tile312", "textures/azalea_icons/icontextures/tile312"],
+            ["tile313", "textures/azalea_icons/icontextures/tile313"],
+            ["tile314", "textures/azalea_icons/icontextures/tile314"],
+            ["tile315", "textures/azalea_icons/icontextures/tile315"],
+            ["tile316", "textures/azalea_icons/icontextures/tile316"],
+            ["tile317", "textures/azalea_icons/icontextures/tile317"],
+            ["tile318", "textures/azalea_icons/icontextures/tile318"],
+            ["tile319", "textures/azalea_icons/icontextures/tile319"],
+            ["tile320", "textures/azalea_icons/icontextures/tile320"],
+            ["tile321", "textures/azalea_icons/icontextures/tile321"],
+            ["tile322", "textures/azalea_icons/icontextures/tile322"],
+            ["tile323", "textures/azalea_icons/icontextures/tile323"],
+            ["tile324", "textures/azalea_icons/icontextures/tile324"],
+            ["tile325", "textures/azalea_icons/icontextures/tile325"],
+            ["tile326", "textures/azalea_icons/icontextures/tile326"],
+            ["tile327", "textures/azalea_icons/icontextures/tile327"],
+            ["tile328", "textures/azalea_icons/icontextures/tile328"],
+            ["tile329", "textures/azalea_icons/icontextures/tile329"],
+            ["tile330", "textures/azalea_icons/icontextures/tile330"],
+            ["tile331", "textures/azalea_icons/icontextures/tile331"],
+            ["tile332", "textures/azalea_icons/icontextures/tile332"],
+            ["tile333", "textures/azalea_icons/icontextures/tile333"],
+            ["tile334", "textures/azalea_icons/icontextures/tile334"],
+            ["tile335", "textures/azalea_icons/icontextures/tile335"],
+            ["tile336", "textures/azalea_icons/icontextures/tile336"],
+            ["tile337", "textures/azalea_icons/icontextures/tile337"],
+            ["tile338", "textures/azalea_icons/icontextures/tile338"],
+            ["tile339", "textures/azalea_icons/icontextures/tile339"],
+            ["tile340", "textures/azalea_icons/icontextures/tile340"],
+            ["tile341", "textures/azalea_icons/icontextures/tile341"],
+            ["tile342", "textures/azalea_icons/icontextures/tile342"],
+            ["tile343", "textures/azalea_icons/icontextures/tile343"],
+            ["tile344", "textures/azalea_icons/icontextures/tile344"],
+            ["tile345", "textures/azalea_icons/icontextures/tile345"],
+            ["tile346", "textures/azalea_icons/icontextures/tile346"],
+            ["tile347", "textures/azalea_icons/icontextures/tile347"],
+            ["tile348", "textures/azalea_icons/icontextures/tile348"],
+            ["tile349", "textures/azalea_icons/icontextures/tile349"],
+            ["tile350", "textures/azalea_icons/icontextures/tile350"],
+            ["tile351", "textures/azalea_icons/icontextures/tile351"],
+            ["tile352", "textures/azalea_icons/icontextures/tile352"],
+            ["tile353", "textures/azalea_icons/icontextures/tile353"],
+            ["tile354", "textures/azalea_icons/icontextures/tile354"],
+            ["tile355", "textures/azalea_icons/icontextures/tile355"],
+            ["tile356", "textures/azalea_icons/icontextures/tile356"],
+            ["tile357", "textures/azalea_icons/icontextures/tile357"],
+            ["tile358", "textures/azalea_icons/icontextures/tile358"],
+            ["tile359", "textures/azalea_icons/icontextures/tile359"],
+            ["tile360", "textures/azalea_icons/icontextures/tile360"],
+            ["tile361", "textures/azalea_icons/icontextures/tile361"],
+            ["tile362", "textures/azalea_icons/icontextures/tile362"],
+            ["tile363", "textures/azalea_icons/icontextures/tile363"],
+            ["tile364", "textures/azalea_icons/icontextures/tile364"],
+            ["tile365", "textures/azalea_icons/icontextures/tile365"],
+            ["tile366", "textures/azalea_icons/icontextures/tile366"],
+            ["tile367", "textures/azalea_icons/icontextures/tile367"],
+            ["tile368", "textures/azalea_icons/icontextures/tile368"],
+            ["tile369", "textures/azalea_icons/icontextures/tile369"],
+            ["tile370", "textures/azalea_icons/icontextures/tile370"],
+            ["tile371", "textures/azalea_icons/icontextures/tile371"],
+            ["tile372", "textures/azalea_icons/icontextures/tile372"],
+            ["tile373", "textures/azalea_icons/icontextures/tile373"],
+            ["tile374", "textures/azalea_icons/icontextures/tile374"],
+            ["tile375", "textures/azalea_icons/icontextures/tile375"],
+            ["tile376", "textures/azalea_icons/icontextures/tile376"],
+            ["tile377", "textures/azalea_icons/icontextures/tile377"],
+            ["tile378", "textures/azalea_icons/icontextures/tile378"],
+            ["tile379", "textures/azalea_icons/icontextures/tile379"],
+            ["tile380", "textures/azalea_icons/icontextures/tile380"],
+            ["tile381", "textures/azalea_icons/icontextures/tile381"],
+            ["tile382", "textures/azalea_icons/icontextures/tile382"],
+            ["tile383", "textures/azalea_icons/icontextures/tile383"],
+            ["tile384", "textures/azalea_icons/icontextures/tile384"],
+            ["tile385", "textures/azalea_icons/icontextures/tile385"],
+            ["tile386", "textures/azalea_icons/icontextures/tile386"],
+            ["tile387", "textures/azalea_icons/icontextures/tile387"],
+            ["tile388", "textures/azalea_icons/icontextures/tile388"],
+            ["tile389", "textures/azalea_icons/icontextures/tile389"],
+            ["tile390", "textures/azalea_icons/icontextures/tile390"],
+            ["tile391", "textures/azalea_icons/icontextures/tile391"],
+            ["tile392", "textures/azalea_icons/icontextures/tile392"],
+            ["tile393", "textures/azalea_icons/icontextures/tile393"],
+            ["tile394", "textures/azalea_icons/icontextures/tile394"],
+            ["tile395", "textures/azalea_icons/icontextures/tile395"],
+            ["tile396", "textures/azalea_icons/icontextures/tile396"],
+            ["tile397", "textures/azalea_icons/icontextures/tile397"],
+            ["tile398", "textures/azalea_icons/icontextures/tile398"],
+            ["tile399", "textures/azalea_icons/icontextures/tile399"],
+            ["tile400", "textures/azalea_icons/icontextures/tile400"],
+            ["tile401", "textures/azalea_icons/icontextures/tile401"],
+            ["tile402", "textures/azalea_icons/icontextures/tile402"],
+            ["tile403", "textures/azalea_icons/icontextures/tile403"],
+            ["tile404", "textures/azalea_icons/icontextures/tile404"],
+            ["tile405", "textures/azalea_icons/icontextures/tile405"],
+            ["tile406", "textures/azalea_icons/icontextures/tile406"],
+            ["tile407", "textures/azalea_icons/icontextures/tile407"],
+            ["tile408", "textures/azalea_icons/icontextures/tile408"],
+            ["tile409", "textures/azalea_icons/icontextures/tile409"],
+            ["tile410", "textures/azalea_icons/icontextures/tile410"],
+            ["tile411", "textures/azalea_icons/icontextures/tile411"],
+            ["tile412", "textures/azalea_icons/icontextures/tile412"],
+            ["tile413", "textures/azalea_icons/icontextures/tile413"],
+            ["tile414", "textures/azalea_icons/icontextures/tile414"],
+            ["tile415", "textures/azalea_icons/icontextures/tile415"],
+            ["tile416", "textures/azalea_icons/icontextures/tile416"],
+            ["tile417", "textures/azalea_icons/icontextures/tile417"],
+            ["tile418", "textures/azalea_icons/icontextures/tile418"],
+            ["tile419", "textures/azalea_icons/icontextures/tile419"],
+            ["tile420", "textures/azalea_icons/icontextures/tile420"],
+            ["tile421", "textures/azalea_icons/icontextures/tile421"],
+            ["tile422", "textures/azalea_icons/icontextures/tile422"],
+            ["tile423", "textures/azalea_icons/icontextures/tile423"],
+            ["tile424", "textures/azalea_icons/icontextures/tile424"],
+            ["tile425", "textures/azalea_icons/icontextures/tile425"],
+            ["tile426", "textures/azalea_icons/icontextures/tile426"],
+            ["tile427", "textures/azalea_icons/icontextures/tile427"],
+            ["tile428", "textures/azalea_icons/icontextures/tile428"],
+            ["tile429", "textures/azalea_icons/icontextures/tile429"],
+            ["tile430", "textures/azalea_icons/icontextures/tile430"],
+            ["tile431", "textures/azalea_icons/icontextures/tile431"],
+            ["tile432", "textures/azalea_icons/icontextures/tile432"],
+            ["tile433", "textures/azalea_icons/icontextures/tile433"],
+            ["tile434", "textures/azalea_icons/icontextures/tile434"],
+            ["tile435", "textures/azalea_icons/icontextures/tile435"],
+            ["tile436", "textures/azalea_icons/icontextures/tile436"],
+            ["tile437", "textures/azalea_icons/icontextures/tile437"],
+            ["tile438", "textures/azalea_icons/icontextures/tile438"],
+            ["tile439", "textures/azalea_icons/icontextures/tile439"],
+            ["tile440", "textures/azalea_icons/icontextures/tile440"],
+            ["tile441", "textures/azalea_icons/icontextures/tile441"],
+            ["tile442", "textures/azalea_icons/icontextures/tile442"],
+            ["tile443", "textures/azalea_icons/icontextures/tile443"],
+            ["tile444", "textures/azalea_icons/icontextures/tile444"],
+            ["tile445", "textures/azalea_icons/icontextures/tile445"],
+            ["tile446", "textures/azalea_icons/icontextures/tile446"],
+            ["tile447", "textures/azalea_icons/icontextures/tile447"],
+            ["tile448", "textures/azalea_icons/icontextures/tile448"],
+            ["tile449", "textures/azalea_icons/icontextures/tile449"],
+            ["tile450", "textures/azalea_icons/icontextures/tile450"],
+            ["tile451", "textures/azalea_icons/icontextures/tile451"],
+            ["tile452", "textures/azalea_icons/icontextures/tile452"],
+            ["tile453", "textures/azalea_icons/icontextures/tile453"],
+            ["tile454", "textures/azalea_icons/icontextures/tile454"],
+            ["tile455", "textures/azalea_icons/icontextures/tile455"],
+            ["tile456", "textures/azalea_icons/icontextures/tile456"],
+            ["tile457", "textures/azalea_icons/icontextures/tile457"],
+            ["tile458", "textures/azalea_icons/icontextures/tile458"],
+            ["tile459", "textures/azalea_icons/icontextures/tile459"],
+            ["tile460", "textures/azalea_icons/icontextures/tile460"],
+            ["tile461", "textures/azalea_icons/icontextures/tile461"],
+            ["tile462", "textures/azalea_icons/icontextures/tile462"],
+            ["tile463", "textures/azalea_icons/icontextures/tile463"],
+            ["tile464", "textures/azalea_icons/icontextures/tile464"],
+            ["tile465", "textures/azalea_icons/icontextures/tile465"],
+            ["tile466", "textures/azalea_icons/icontextures/tile466"],
+            ["tile467", "textures/azalea_icons/icontextures/tile467"],
+            ["tile468", "textures/azalea_icons/icontextures/tile468"],
+            ["tile469", "textures/azalea_icons/icontextures/tile469"],
+            ["tile470", "textures/azalea_icons/icontextures/tile470"],
+            ["tile471", "textures/azalea_icons/icontextures/tile471"],
+            ["tile472", "textures/azalea_icons/icontextures/tile472"],
+            ["tile473", "textures/azalea_icons/icontextures/tile473"],
+            ["tile474", "textures/azalea_icons/icontextures/tile474"],
+            ["tile475", "textures/azalea_icons/icontextures/tile475"],
+            ["tile476", "textures/azalea_icons/icontextures/tile476"],
+            ["tile477", "textures/azalea_icons/icontextures/tile477"],
+            ["tile478", "textures/azalea_icons/icontextures/tile478"],
+            ["tile479", "textures/azalea_icons/icontextures/tile479"],
+            ["tile480", "textures/azalea_icons/icontextures/tile480"],
+            ["tile481", "textures/azalea_icons/icontextures/tile481"],
+            ["tile482", "textures/azalea_icons/icontextures/tile482"],
+            ["tile483", "textures/azalea_icons/icontextures/tile483"],
+            ["tile484", "textures/azalea_icons/icontextures/tile484"],
+            ["tile485", "textures/azalea_icons/icontextures/tile485"],
+            ["tile486", "textures/azalea_icons/icontextures/tile486"],
+            ["tile487", "textures/azalea_icons/icontextures/tile487"],
+            ["tile488", "textures/azalea_icons/icontextures/tile488"],
+            ["tile489", "textures/azalea_icons/icontextures/tile489"],
+            ["tile490", "textures/azalea_icons/icontextures/tile490"],
+            ["tile491", "textures/azalea_icons/icontextures/tile491"],
+            ["tile492", "textures/azalea_icons/icontextures/tile492"],
+            ["tile493", "textures/azalea_icons/icontextures/tile493"],
+            ["tile494", "textures/azalea_icons/icontextures/tile494"],
+            ["tile495", "textures/azalea_icons/icontextures/tile495"],
+            ["tile496", "textures/azalea_icons/icontextures/tile496"],
+            ["tile497", "textures/azalea_icons/icontextures/tile497"],
+            ["tile498", "textures/azalea_icons/icontextures/tile498"],
+            ["tile499", "textures/azalea_icons/icontextures/tile499"],
+            ["tile500", "textures/azalea_icons/icontextures/tile500"],
+            ["tile501", "textures/azalea_icons/icontextures/tile501"],
+            ["tile502", "textures/azalea_icons/icontextures/tile502"],
+            ["tile503", "textures/azalea_icons/icontextures/tile503"],
+            ["tile504", "textures/azalea_icons/icontextures/tile504"],
+            ["tile505", "textures/azalea_icons/icontextures/tile505"],
+            ["tomino", "textures/azalea_icons/icontextures/tomino"],
+            [
+                "tomme_de_savoie",
+                "textures/azalea_icons/icontextures/tomme_de_savoie",
+            ],
+            [
+                "totem_of_undying",
+                "textures/azalea_icons/icontextures/totem_of_undying",
+            ],
+            ["trident", "textures/azalea_icons/icontextures/trident"],
+            [
+                "tropical_fish",
+                "textures/azalea_icons/icontextures/tropical_fish",
+            ],
+            ["turtle_egg", "textures/azalea_icons/icontextures/turtle_egg"],
+            [
+                "turtle_helmet",
+                "textures/azalea_icons/icontextures/turtle_helmet",
+            ],
+            ["ubriaco", "textures/azalea_icons/icontextures/ubriaco"],
+            ["urda", "textures/azalea_icons/icontextures/urda"],
+            ["vacherin", "textures/azalea_icons/icontextures/vacherin"],
+            ["veggie", "textures/azalea_icons/icontextures/veggie"],
+            ["veggie_2", "textures/azalea_icons/icontextures/veggie_2"],
+            ["wand_01", "textures/azalea_icons/icontextures/wand_01"],
+            ["wand_01_2", "textures/azalea_icons/icontextures/wand_01_2"],
+            ["wand_02", "textures/azalea_icons/icontextures/wand_02"],
+            ["wand_02_2", "textures/azalea_icons/icontextures/wand_02_2"],
+            ["watering_can", "textures/azalea_icons/icontextures/watering_can"],
+            [
+                "watering_can_2",
+                "textures/azalea_icons/icontextures/watering_can_2",
+            ],
+            ["watermelon", "textures/azalea_icons/icontextures/watermelon"],
+            ["watermelon_2", "textures/azalea_icons/icontextures/watermelon_2"],
+            ["water_bucket", "textures/azalea_icons/icontextures/water_bucket"],
+            ["wheat", "textures/azalea_icons/icontextures/wheat"],
+            ["wheat_seeds", "textures/azalea_icons/icontextures/wheat_seeds"],
+            ["wooden_axe", "textures/azalea_icons/icontextures/wooden_axe"],
+            ["wooden_box", "textures/azalea_icons/icontextures/wooden_box"],
+            ["wooden_box_2", "textures/azalea_icons/icontextures/wooden_box_2"],
+            ["wooden_hoe", "textures/azalea_icons/icontextures/wooden_hoe"],
+            [
+                "wooden_pickaxe",
+                "textures/azalea_icons/icontextures/wooden_pickaxe",
+            ],
+            [
+                "wooden_shield",
+                "textures/azalea_icons/icontextures/wooden_shield",
+            ],
+            [
+                "wooden_shield_2",
+                "textures/azalea_icons/icontextures/wooden_shield_2",
+            ],
+            [
+                "wooden_shovel",
+                "textures/azalea_icons/icontextures/wooden_shovel",
+            ],
+            ["wooden_sword", "textures/azalea_icons/icontextures/wooden_sword"],
+            ["wood_01a", "textures/azalea_icons/icontextures/wood_01a"],
+            [
+                "writable_book",
+                "textures/azalea_icons/icontextures/writable_book",
+            ],
+            ["rabbit", "textures/azalea_icons/icontextures/mobs/spawn_rabbit"],
+            ["bee", "textures/azalea_icons/icontextures/mobs/spawn_bee"],
+            ["vex", "textures/azalea_icons/icontextures/mobs/spawn_vex"],
+            ["spider", "textures/azalea_icons/icontextures/mobs/spawn_spider"],
+            ["panda", "textures/azalea_icons/icontextures/mobs/spawn_panda"],
+            ["mooshroom", "textures/azalea_icons/icontextures/mobs/spawn_mooshroom"],
+            ["magma_cube", "textures/azalea_icons/icontextures/mobs/spawn_magma_cube"],
+            ["iron_golem", "textures/azalea_icons/icontextures/mobs/spawn_iron_golem"],
+            ["enderman", "textures/azalea_icons/icontextures/mobs/spawn_enderman"],
+            ["ender_dragon", "textures/azalea_icons/icontextures/mobs/spawn_ender_dragon"],
+            ["drowned", "textures/azalea_icons/icontextures/mobs/spawn_drowned"],
+            ["dolphin", "textures/azalea_icons/icontextures/mobs/spawn_dolphin"],
+            ["blaze", "textures/azalea_icons/icontextures/mobs/spawn_blaze"],
+            ["axolotl", "textures/azalea_icons/icontextures/mobs/spawn_axolotl"],
+            ["allay", "textures/azalea_icons/icontextures/mobs/spawn_allay"],
+            ["zombified_piglin", "textures/azalea_icons/icontextures/mobs/spawn_zombified_piglin"],
+            ["piglin_brute", "textures/azalea_icons/icontextures/mobs/spawn_piglin_brute"],
+            ["piglin", "textures/azalea_icons/icontextures/mobs/spawn_piglin"],
+            ["pig", "textures/azalea_icons/icontextures/mobs/spawn_pig"],
+            ["chicken", "textures/azalea_icons/icontextures/mobs/spawn_chicken"],
+            ["cow", "textures/azalea_icons/icontextures/mobs/spawn_cow"],
+            ["wolf", "textures/azalea_icons/icontextures/mobs/spawn_wolf"],
+            ["fox", "textures/azalea_icons/icontextures/mobs/spawn_fox"],
+            ["zombie", "textures/azalea_icons/icontextures/mobs/spawn_zombie"],
+            ["skeleton", "textures/azalea_icons/icontextures/mobs/spawn_skeleton"],
+            ["parrot", "textures/azalea_icons/icontextures/mobs/spawn_parrot"],
+            ["creeper", "textures/azalea_icons/icontextures/mobs/spawn_creeper"],
+            ["cat", "textures/azalea_icons/icontextures/mobs/spawn_cat"],
+            ["banner_yellow", "textures/azalea_icons/icontextures/banners/yellow_banner"],
+            ["banner_white", "textures/azalea_icons/icontextures/banners/white_banner"],
+            ["banner_red", "textures/azalea_icons/icontextures/banners/red_banner"],
+            ["banner_purple", "textures/azalea_icons/icontextures/banners/purple_banner"],
+            ["banner_pink", "textures/azalea_icons/icontextures/banners/pink_banner"],
+            ["banner_orange", "textures/azalea_icons/icontextures/banners/orange_banner"],
+            ["banner_magenta", "textures/azalea_icons/icontextures/banners/magenta_banner"],
+            ["banner_lime", "textures/azalea_icons/icontextures/banners/lime_banner"],
+            ["banner_light_gray", "textures/azalea_icons/icontextures/banners/light_gray_banner"],
+            ["banner_light_blue", "textures/azalea_icons/icontextures/banners/light_blue_banner"],
+            ["banner_green", "textures/azalea_icons/icontextures/banners/green_banner"],
+            ["banner_gray", "textures/azalea_icons/icontextures/banners/gray_banner"],
+            ["banner_cyan", "textures/azalea_icons/icontextures/banners/cyan_banner"],
+            ["banner_brown", "textures/azalea_icons/icontextures/banners/brown_banner"],
+            ["banner_blue", "textures/azalea_icons/icontextures/banners/blue_banner"],
+            ["banner_black", "textures/azalea_icons/icontextures/banners/black_banner"],
+            ["f_sweet_berries", "textures/azalea_icons/icontextures/flowers/sweet_berries"],
+            ["f_glow_berries", "textures/azalea_icons/icontextures/flowers/glow_berries"],
+            ["f_spore_blossom", "textures/azalea_icons/icontextures/flowers/spore_blossom"],
+            ["f_blue_orchid", "textures/azalea_icons/icontextures/flowers/blue_orchid"],
+            ["f_allium", "textures/azalea_icons/icontextures/flowers/allium"],
+            ["f_dandelion", "textures/azalea_icons/icontextures/flowers/dandelion"],
+            ["f_cherry", "textures/azalea_icons/icontextures/flowers/cherry_sapling"],
+            ["f_rose_bush", "textures/azalea_icons/icontextures/flowers/rose_bush"],
+            ["f_azalea", "textures/azalea_icons/icontextures/flowers/azalea"],
+            ["f_torchflower_seeds", "textures/azalea_icons/icontextures/flowers/torchflower_seeds"],
+            ["f_torchflower", "textures/azalea_icons/icontextures/flowers/torchflower"],
+            ["f_sunflower", "textures/azalea_icons/icontextures/flowers/sunflower"],
+            ["f_flowering_azalea", "textures/azalea_icons/icontextures/flowers/flowering_azalea"],
+            ["f_cornflower", "textures/azalea_icons/icontextures/flowers/cornflower"],
+            ["f_white_tulip", "textures/azalea_icons/icontextures/flowers/white_tulip"],
+            ["f_red_tulip", "textures/azalea_icons/icontextures/flowers/red_tulip"],
+            ["f_pink_tulip", "textures/azalea_icons/icontextures/flowers/pink_tulip"],
+            ["f_orange_tulip", "textures/azalea_icons/icontextures/flowers/orange_tulip"],
+            ["f_pink_petals", "textures/azalea_icons/icontextures/flowers/pink_petals"],
+            ["f_pitcher_plant", "textures/azalea_icons/icontextures/flowers/pitcher_plant"],
+            ["dye_yellow", "textures/azalea_icons/icontextures/dyes/yellow_dye"],
+            ["dye_white", "textures/azalea_icons/icontextures/dyes/white_dye"],
+            ["dye_red", "textures/azalea_icons/icontextures/dyes/red_dye"],
+            ["dye_purple", "textures/azalea_icons/icontextures/dyes/purple_dye"],
+            ["dye_pink", "textures/azalea_icons/icontextures/dyes/pink_dye"],
+            ["dye_orange", "textures/azalea_icons/icontextures/dyes/orange_dye"],
+            ["dye_magenta", "textures/azalea_icons/icontextures/dyes/magenta_dye"],
+            ["dye_lime", "textures/azalea_icons/icontextures/dyes/lime_dye"],
+            ["dye_light_gray", "textures/azalea_icons/icontextures/dyes/light_gray_dye"],
+            ["dye_light_blue", "textures/azalea_icons/icontextures/dyes/light_blue_dye"],
+            ["dye_green", "textures/azalea_icons/icontextures/dyes/green_dye"],
+            ["dye_gray", "textures/azalea_icons/icontextures/dyes/gray_dye"],
+            ["dye_cyan", "textures/azalea_icons/icontextures/dyes/cyan_dye"],
+            ["dye_brown", "textures/azalea_icons/icontextures/dyes/brown_dye"],
+            ["dye_blue", "textures/azalea_icons/icontextures/dyes/blue_dye"],
+            ["dye_black", "textures/azalea_icons/icontextures/dyes/black_dye"],
+        ]),
+    ],
+]);
+
+export default map;

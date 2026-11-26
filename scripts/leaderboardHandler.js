@@ -1,30 +1,70 @@
 import { system, world } from "@minecraft/server";
 import { prismarineDb } from "./lib/prismarinedb";
 import playerStorage from "./api/playerStorage";
+import playerUtils from "./api/playerUtils";
+import { formatStr } from "./api/azaleaFormatting";
+import scripting from "./api/scripting";
+import { SegmentedStoragePrismarine } from "./prismarineDbStorages/segmented";
+/*
+  ∧,,,∧
+(  ̳• · • ̳)
+/    づ♡ I would love you if you could make this not shit yk
+*/
 const abbrNum = (number, decPlaces) => {
-    decPlaces = Math.pow(10, decPlaces)
-    var abbrev = ['k', 'm', 'b', 't']
+    decPlaces = Math.pow(10, decPlaces);
+    var abbrev = ["k", "m", "b", "t"];
     for (var i = abbrev.length - 1; i >= 0; i--) {
-      var size = Math.pow(10, (i + 1) * 3)
-      if (size <= number) {
-        number = Math.round((number * decPlaces) / size) / decPlaces
-        if (number == 1000 && i < abbrev.length - 1) {
-          number = 1
-          i++
+        var size = Math.pow(10, (i + 1) * 3);
+        if (size <= number) {
+            number = Math.round((number * decPlaces) / size) / decPlaces;
+            if (number == 1000 && i < abbrev.length - 1) {
+                number = 1;
+                i++;
+            }
+            number += abbrev[i];
+            break;
         }
-        number += abbrev[i]
-        break
-      }
     }
-    return number
-  }
+    return number;
+};
 class LeaderboardHandler {
     constructor() {
-        this.db = prismarineDb.table("Leaderboards");
+        this.dbOld = prismarineDb.table("Leaderboards");
+        this.db = prismarineDb.customStorage("V2Leaderboards", SegmentedStoragePrismarine);
+        this.dbOld.waitLoad().then(()=>{
+            this.db.waitLoad().then(()=>{
+                if(this.dbOld.data.length && !this.db.data.length) {
+                    this.db.data = this.dbOld.data;
+                    this.db.save();
+                }
+        
+            })
+        })
         // this.db.clear();
-        system.runInterval(()=>{
+        system.runInterval(() => {
             this.updateLeaderboards();
-        },30);
+        }, 30);
+
+        this.themes = [
+            {
+                header: "§b",
+                headerSurroundings: "§8",
+                num: "§e",
+                player: "§a",
+                score: "§7",
+                scoreSurroundings: "§f",
+                name: "Default",
+            },
+            {
+                header: "§e",
+                headerSurroundings: "§8",
+                player: "§d",
+                score: "§5",
+                scoreSurroundings: "§a",
+                num: "§6",
+                name: "Purple",
+            },
+        ];
     }
     addLeaderboard(objective, vec3, dimension = "overworld") {
         this.db.insertDocument({
@@ -33,17 +73,18 @@ class LeaderboardHandler {
             showOffline: true,
             dimension: dimension,
             theme: 0,
-            id: Date.now().toString()
+            id: Date.now().toString(),
         });
     }
     updateLeaderboards() {
         // return;
-        let lbText = [`${Date.now()}`]
+        let lbText = [`${Date.now()}`];
         // for(const doc of this.db.data) {
         //     let lbText = [`a`];
         // }
-        for(const lb of this.db.data) {
-            // console.warn(JSON.stringify(lb.data))
+        for (const lb2 of this.db.data) {
+            let lb = JSON.parse(JSON.stringify(lb2))
+            // // // console.warn(JSON.stringify(lb.data))
             // let entityID = lb.data.entityID ? lb.data.entityID : null;
             // if(entityID) {
             //     try {
@@ -73,48 +114,162 @@ class LeaderboardHandler {
             //     this.db.overwriteDataByID(lb.id, lb.data);
             // }
             try {
-                let dimension = world.getDimension(lb.data.dimension ? lb.data.dimension : "overworld")
+                let curnc = lb.data.disableCurrency
+                    ? null
+                    : prismarineDb.economy.getCurrency(lb.data.objective);
+                let dimension = world.getDimension(
+                    lb.data.dimension ? lb.data.dimension : "overworld"
+                );
+                try {
+                    if(!dimension.getBlock(lb.data.loc)) {
+                        continue;
+                    }
+                } catch {
+                    continue;
+                }
                 let entities = dimension.getEntities({
-                    tags: [`lbid:${lb.id}`],
-                    type: "leaf:floating_text"
-                });
-                let lbText = [`§8-=-=-=-=- §r§b§l${lb.data.displayName ? lb.data.displayName : lb.data.objective} §r§8-=-=-=-=-`];
+                    type: "leaf:floating_text",
+                    tags: [`lbid:${lb.id}`]
+                })
+                // if(entities && entities.length) entities = entities.filter(_=>_.typeId == "leaf:floating_text")
+                //{
+                //     tags: [`lbid:${lb.id}`],
+                //     type: "leaf:floating_text",
+                // }
+                let lbText = [``];
                 let scores = [];
-                for(const player of playerStorage.keyval.keys()) {
+                for (const player of playerStorage.keyval.keys()) {
+                    let playerID = player;
+                    if (scores.find((_) => _.playerID == playerID)) continue;
+                    if (
+                        !lb.data.showOffline &&
+                        !world.getPlayers().find((_) => playerStorage.getID(_))
+                    )
+                        continue;
                     let playerData = playerStorage.keyval.get(player);
-                    let score = playerData.scores.find(_=>_.objective == lb.data.objective);
-                    if(score) {
-                        scores.push({playerData,score:score.score});
+                    if(!playerData) continue;
+                    let score = playerData.scores.find(
+                        (_) => _.objective == lb.data.objective
+                    );
+                    if (score) {
+                        scores.push({
+                            playerID,
+                            playerData,
+                            score: score.score,
+                        });
                     } else {
-                        scores.push({playerData,score:0});
+                        scores.push({ playerID, playerData, score: 0 });
                     }
                 }
-                scores = scores.sort((a,b)=>b.score - a.score);
+                scripting.callHooks(null, "lbScoreOverride", scores, lb)
+                scores = scores.sort((a, b) => b.score - a.score);
                 let num = 0;
-                let limit = lb.data.limit ? lb.data.limit : 10;
-                scores = scores.slice(0, limit)
-                for(const score of scores) {
+                let limit = lb.data.maxPlayers ? lb.data.maxPlayers : 10;
+                scores = lb.data.nums && lb.data.nums.length ? scores : scores.slice(0, limit);
+                for (const score of scores) {
                     num++;
-                    lbText.push(`§e${num}§7. §a${score.playerData.name}§r§f: §7${abbrNum(score.score, 1)}`)
+                    if(lb.data.nums && lb.data.nums.length && !lb.data.nums.includes(num)) continue;
+                    // lbText.push(`§e${num}§7. §a${score.playerData.name}§r§f: §7${abbrNum(score.score, 1)}`)
+                    let playerText = `${this.themes[lb.data.theme].player}${
+                        score.playerData.name
+                    }§r§f`;
+                    let enabledRanks = lb.data.disableRanks ? false : true;
+                    if (enabledRanks) {
+                        playerText = "";
+                        // let ranks = score.playerData.tags.filter(_=>_.startsWith('rank:')).map(_=>_.substring(5));
+                        // if(!ranks.length) ranks.push("§7Member");
+                        let ranks = playerUtils.getStrawberryRanksTags(
+                            score.playerData.tags
+                        );
+                        // playerText += `§8[§r§7${ranks.join('§r§8] [§7')}§r§8] `
+                        playerText += `§8[§r§7${ranks[0]}§r§8] `;
+
+                        let nameColor = score.playerData.tags.find((_) =>
+                            _.startsWith("name-color:")
+                        );
+                        playerText += `${
+                            nameColor
+                                ? nameColor.substring("name-color:".length)
+                                : this.themes[lb.data.theme].player
+                        }${score.playerData.name}`;
+                    }
+                    lbText.push( lb.data.lf ? formatStr(lb.data.lf, score.playerData, {num, score: (lb.data.abbreviate ? abbrNum(score.score, 1) : score.score).toString()}, {useOfflineMode: true}) :
+                        `${
+                            this.themes[lb.data.theme].num
+                        }${num}§7. ${playerText}: §r${
+                            this.themes[lb.data.theme].scoreSurroundings
+                        }§r${this.themes[lb.data.theme].score}${
+                            num == 1
+                                ? "§e"
+                                : num == 2
+                                ? "§f"
+                                : num == 3
+                                ? "§n"
+                                : ""
+                        }${curnc ? "$" : ""}${
+                            lb.data.abbreviate
+                                ? abbrNum(score.score, 1)
+                                : score.score
+                        }`
+                    );
                 }
-                if(entities && entities.length) {
-                    // console.warn('a')
-                    entities[0].nameTag = lbText.join('\n§r');
+                let longestLine = lbText
+                    .reduce((a, b) =>
+                        b.replace(/§./g, "").length >
+                        a.replace(/§./g, "").length
+                            ? b
+                            : a
+                    )
+                    .replace(/§./g, "");
+                let example = `§r§l${(lb.data.displayName
+                    ? lb.data.displayName
+                    : lb.data.objective
+                ).replace(/§./g, "")}`;
+                let newLength = Math.max(Math.floor(
+                    (longestLine.length - (example.length + (curnc ? 4 : 2))) /
+                        2
+                ), 1);
+                lbText[0] = lb.data.tf ? formatStr(lb.data.tf, null, { name: lb.data.displayName ? lb.data.displayName : lb.data.objective }) : `${
+                    this.themes[lb.data.theme].headerSurroundings
+                }${"-".repeat(newLength)} §r${
+                    this.themes[lb.data.theme].header
+                }§l${
+                    lb.data.displayName
+                        ? lb.data.displayName
+                        : lb.data.objective
+                } §r${
+                    this.themes[lb.data.theme].headerSurroundings
+                }${"-".repeat(newLength)}`;
+                if(lb.data.hideTitle) lbText.shift()
+                scripting.callHooks(null, "lbOverride", lbText, lb)
+
+                if (entities && entities.length && entities[0] && entities[0].isValid) {
+                    // // // console.warn('a')
+                    entities[0].nameTag = lbText.join("\n§r");
                     // for(const entity of entities.slice(1)) {
                     //     entity.kill();
                     // }
                 } else {
                     try {
-                        // console.warn("Entity not found. spawning now.")
-                        let entity = dimension.spawnEntity("leaf:floating_text", lb.data.loc);
+                        try {
+                            if(!dimension.getBlock(lb.data.loc)) {
+                                continue;
+                            }
+                        } catch {
+                            continue;
+                        }
+                        // // // console.warn("Entity not found. spawning now.")
+                        let entity = dimension.spawnEntity(
+                            "leaf:floating_text",
+                            lb.data.loc
+                        );
                         entity.addTag(`lbid:${lb.id}`);
-                        entity.nameTag = lbText.join('\n§r');
-                        // console.warn('Entity spawned!')
-                    } catch(e) {console.warn(e)}
+                        entity.nameTag = lbText.join("\n§r");
+                        // // // console.warn('Entity spawned!')
+                    } catch (e) {}
                 }
-    
-            } catch(e) {
-                console.warn(e)
+            } catch (e) {
+                // // console.warn(e, e.stack)
             }
         }
     }

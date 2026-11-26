@@ -3,26 +3,46 @@ import { prismarineDb } from "../lib/prismarinedb";
 import { SegmentedStoragePrismarine } from "../prismarineDbStorages/segmented";
 import itemdb from "./itemdb";
 import playerStorage from "./playerStorage";
+/*
+no wonder i havent updated this yet
+
+          ／＞　 フ
+         | 　_　_| 
+       ／` ミ＿xノ 
+      /　　　　 |
+     /　 ヽ　　 ﾉ
+    │　　|　|　|
+／￣|　　 |　|　|
+(￣ヽ＿_ヽ_)__)
+＼二)
+
+what the fuck is this codebase?
+*/
 
 class ShopAPI {
     constructor() {
-        this.shops = prismarineDb.customStorage("Shops", SegmentedStoragePrismarine);
+        this.shops = prismarineDb.customStorage(
+            "Shops",
+            SegmentedStoragePrismarine
+        );
         // this.shops.clear();
-        if(!this.shops.findFirst({default:true})) {
-            this.shops.insertDocument({
-                type: "ADMIN_SHOP",
-                default: true,
-                categories: [
-                    {
-                        id: Date.now(),
-                        name: "Example Category",
-                        items: []
-                    }
-                ],
-                title: "Server Shop",
-                description: ""
-            });
-        }
+        this.shops.waitLoad().then(() => {
+            if (!this.shops.findFirst({ default: true })) {
+                this.shops.insertDocument({
+                    type: "ADMIN_SHOP",
+                    default: true,
+                    categories: [
+                        {
+                            id: Date.now(),
+                            name: "Example Category",
+                            items: [],
+                        },
+                    ],
+                    title: "Server Shop",
+                    description: "",
+                });
+            }
+        });
     }
     createPlayerShop(title, owner) {
         return this.shops.insertDocument({
@@ -31,8 +51,13 @@ class ShopAPI {
             owner: playerStorage.getID(owner),
             categories: [],
             title: title,
-            description: ""
-        })
+            description: "",
+        });
+    }
+    setCherryTheme(shopID, cherryTheme) {
+        let shop = this.shops.getByID(shopID)
+        shop.data.cherryTheme = cherryTheme
+        return this.shops.overwriteDataByID(shop.id,shop.data)
     }
     createAdminShop(title) {
         return this.shops.insertDocument({
@@ -42,125 +67,125 @@ class ShopAPI {
                 {
                     id: Date.now(),
                     name: "Example Category",
-                    items: []
-                }
+                    items: [],
+                },
             ],
             title: title,
-            description: ""
-        })
+            description: "",
+        });
     }
     getDefaultShop() {
-        return this.shops.findFirst({default:true});
+        return this.shops.findFirst({ default: true });
     }
     getShops() {
-        return this.shops.findDocuments({type:"ADMIN_SHOP"})
+        return this.shops.findDocuments({ type: "ADMIN_SHOP" });
     }
     setShopIcon(shopID, iconID) {
         let doc = this.shops.getByID(shopID);
         doc.data.icon = iconID;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     deleteShop(shopID) {
         let doc = this.shops.getByID(shopID);
-        if(!doc || doc.data.default) return;
+        if (!doc || doc.data.default) return;
         this.shops.deleteDocumentByID(doc.id);
     }
     deleteCategory(shopID, categoryID) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
         doc.data.categories.splice(category, 1);
         this.shops.overwriteDataByID(doc.id, doc.data);
     }
     addItem(shopID, itemStack, categoryID, price, currency) {
-        if(!prismarineDb.economy.getCurrency(currency)) return;
-        if(!(itemStack instanceof ItemStack)) return;
+        if (!prismarineDb.economy.getCurrency(currency)) return;
+        if (!(itemStack instanceof ItemStack)) return;
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
-        let [stash, slot] = itemdb.saveItem(itemStack)
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
+        let [stash, slot] = itemdb.saveItem(itemStack);
         doc.data.categories[category].items.push({
             type: "ITEMDB_ITEM",
             stash,
             slot,
             price,
-            currency
-        })
-        this.shops.overwriteDataByID(doc.id, doc.data)
+            currency,
+        });
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     addCategory(shopID, name) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
+        if (!doc) return;
         doc.data.categories.push({
             id: Date.now(),
             name,
-            items: []
+            items: [],
         });
         this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setShopTitle(shopID, title) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        doc.data.title = title
+        if (!doc) return;
+        doc.data.title = title;
         this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setShopDescription(shopID, description) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
+        if (!doc) return;
         doc.data.description = description;
         this.shops.overwriteDataByID(doc.id, doc.data);
     }
 
     setCategoryIcon(shopID, categoryID, iconID) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
         doc.data.categories[category].icon = iconID;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setCategoryName(shopID, categoryID, name) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
         doc.data.categories[category].name = name;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setCategorySubtext(shopID, categoryID, subtext) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
         doc.data.categories[category].subtext = subtext;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setItemDisplayName(shopID, categoryID, itemIndex, displayName) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
-        doc.data.categories[category].items[itemIndex].displayName = displayName;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
+        doc.data.categories[category].items[itemIndex].displayName =
+            displayName;
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     setItemIcon(shopID, categoryID, itemIndex, iconID) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
         doc.data.categories[category].items[itemIndex].icon = iconID;
-        this.shops.overwriteDataByID(doc.id, doc.data)
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
     deleteItem(shopID, categoryID, itemIndex) {
         let doc = this.shops.getByID(shopID);
-        if(!doc) return;
-        let category = doc.data.categories.findIndex(_=>_.id == categoryID);
-        if(category < 0) return;
-        doc.data.categories[category].items.splice(itemIndex, 1)
-        this.shops.overwriteDataByID(doc.id, doc.data)
-
+        if (!doc) return;
+        let category = doc.data.categories.findIndex((_) => _.id == categoryID);
+        if (category < 0) return;
+        doc.data.categories[category].items.splice(itemIndex, 1);
+        this.shops.overwriteDataByID(doc.id, doc.data);
     }
 }
 export default new ShopAPI();

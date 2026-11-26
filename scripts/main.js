@@ -1,481 +1,200 @@
-import { world, system, ScriptEventSource, Player } from '@minecraft/server';
-import uiManager from './uiManager.js';
-import config from './config';
-import './api/Scriptevents/switchSidebar.js'
-import './uis/uiBuilder/root';
-import './test'
-import './uis/clans/root.js'
-import './uis/clans/create.js'
-import './uis/clans/invite.js';
-import './uis/clans/viewInvites.js';
-import './uis/clans/clanMembers.js';
-import './uis/uiBuilder/add';
-import './uis/uiBuilder/edit';
-import './uis/uiBuilder/editButtons';
-import './uis/uiBuilder/presets/add_preset.js'
-import './uis/uiBuilder/presets/root.js'
-import './uis/uiBuilder/tabbed/create_tab_ui.js'
-import './uis/uiBuilder/tabbed/edit_tab_ui.js'
-import './uis/uiBuilder/tabbed/edit_tabs.js'
-import './uis/uiBuilder/tabbed/root.js'
-import './uis/uiBuilder/info';
-import './uis/uiBuilder/addButton';
-import './uis/uiBuilder/editButton';
-import './uis/config/root'
-import './uis/config/main'
-import './uis/config/misc'
-import './uis/config/chatrankFormat.js'
-import './uis/config/credits.js'
-import './uis/config/clans/clansConfigRoot.js'
-import './uis/config/modules.js'
-import './commands/help';
-import './commands/uisList';
-import './commands/warp.js'
-import './commands/speakas.js';
-import './uis/chests/root';
-import './uis/chests/add';
-import './uis/chests/edit';
-import './uis/chests/editItems';
-import './uis/chests/addItem';
-import './uis/chests/editItem';
-import './uis/sidebar/root';
-import './uis/sidebar/add';
-import './uis/sidebar/settings';
-import './leaficon.js'
-import './uis/sidebar/edit';
-import './uis/sidebar/addLine';
-import './uis/sidebar/editLine';
-import './api/sidebarDisplay';
-import './uis/uiBuilder/onlineGuis.js';
-import './uis/sidebar/trash';
-import './uis/pay.js';
-import './uis/sidebar/trashEdit';
-import './uis/currencyEditor/root';
-import './uis/currencyEditor/add';
-import './crates/main';
-import './uis/basic/basicConfirmation.js';
-import './features/chestLocking'
-import './commands/bind.js';
-import './uis/crates/root.js'
-import icons from './api/icons';
-import azaleaIconPack from './icon_packs/azalea';
-import commandManager from './api/commands/commandManager';
-import chestUIBuilder from './api/chest/chestUIBuilder';
-import { formatStr } from './api/azaleaFormatting';
-import playerStorage from './api/playerStorage';
-import { generalConfig } from './configs';
-import './combatLog';
-import './uis/blockEditor.js';
-import './uis/entityEditor.js';
-import { prismarineDb } from './lib/prismarinedb.js';
-import emojis from './api/emojis.js';
-import './networkingLibs/currentNetworkingLib.js'
-import { leafIconPack, leafIconPack2 } from './icon_packs/leaf.js';
-import './uis/playershops/root.js'
-import { createMessage } from './createMessage.js';
-import translation from './api/translation.js';
-import http from './networkingLibs/currentNetworkingLib.js';
-import leaderboardHandler from './leaderboardHandler.js';
-import './api/iconViewer/root.js'
-import './uis/shop/root.js';
-import './uis/dailyrewards/rewards.js';
-import './uis/shop/admin.js'
-import './commands/what'
-import './uis/shop/categoryAdmin.js';
-import './uis/basic/itemSelect.js';
-import './uis/help.js'
-import './uis/config/advanced.js'
-import './uis/playerContentManager/editor/root.js';
-import './uis/basic/numberSelector.js';
-import './uis/dailyrewards/addReward.js';
-import './uis/dailyrewards/claim.js';
-import './uis/dailyrewards/editReward.js';
-import './uis/dailyrewards/root.js'
-import './uis/shop/item.js'
-import './commands/lb.js'
-import './uis/gifts/add.js'
-import './uis/playershops/lb.js';
-import './uis/gifts/edit.js'
-import './uis/gifts/redeem.js';
-import './uis/events/root.js'
-import './uis/gifts/root.js'
-import './uis/shop/category.js';
-import { createLandClaim, isOwner, vec3ToChunkCoordinates } from './landClaims.js';
-import { SegmentedStoragePrismarine } from './prismarineDbStorages/segmented.js';
-import OpenClanAPI from './api/OpenClanAPI.js';
-import itemdb from './api/itemdb.js';
-import './uis/generatorUI.js'
-import generator from './api/generator.js';
-import { uiManager as a} from '@minecraft/server-ui';
-import { leafFormatter } from './api/formatting.js';
-import hardCodedRanks from './api/hardCodedRanks.js';
-import configAPI from './api/config/configAPI.js';
-import uiBuilder from './api/uiBuilder.js';
-import actionParser from './api/actionParser.js';
-import { ActionForm } from './lib/form_func.js';
+import { Player, system, world, World } from "@minecraft/server";
+import { prismarineDb } from "./lib/prismarinedb";
+import { pluginsLoaded } from "./pluginStorage";
+import { getPluginToggle } from "./pluginToggles";
+import { leafIconPack, leafIconPack2 } from "./icon_packs/leaf";
+import icons from "./api/icons";
+import { ErrorHandlerModule } from "./modules_v2/errorHandler";
+import { ErrorTestingModule } from "./modules_v2/errorTesting";
+import './legacyLoader'
+import { ModuleToggler } from "./modules_v2/pluginToggler";
+import { Clock } from "./modules_v2/clock";
+import uiManager from "./uiManager";
+// import { ChatHandler } from "./modules_v2/chat";
+import { ConfigModule } from "./modules_v2/config/config";
+import { ChatModule } from "./modules_v2/chathandler/ChatHandlerModule";
+import { ChatRanksModule } from "./modules_v2/chatranks/ChatRanksModule";
+// import('./testymeow4')
+// import './testymeow'
+Player.prototype.error = function(message) {
+    this.sendMessage(`§c§lERROR §8>> §r§7${message}`)
+}
+World.prototype.moduleError = function(message) {
+    this.sendMessage(`§cMODULE ERROR §8§l>> §r§7${message}`)
+}
 
-Player.prototype.info = function(msg) {
-    this.sendMessage(translation.getTranslation(this, "info", msg));
+// Config should ALWAYS be the first one to load, while error handling should always be the second
+let plugins = [
+    ConfigModule,
+    ErrorHandlerModule,
+    ErrorTestingModule,
+    Clock,
+    ModuleToggler,
+    ChatModule,
+    ChatRanksModule
+]
+
+try {
+    icons.install(leafIconPack)
+    icons.install(leafIconPack2)
+} catch(e) {
+    world.sendMessage(e)
 }
-Player.prototype.success = function(msg) {
-    this.sendMessage(translation.getTranslation(this, "success", msg));
-}
-Player.prototype.error = function(msg) {
-    this.sendMessage(translation.getTranslation(this, "error", msg));
-}
-Player.prototype.warn = function(msg) {
-    this.sendMessage(translation.getTranslation(this, "warn", msg));
-}
-Player.prototype.getRanks = function() {
-    let rankTags = this.getTags().filter(_=>_.startsWith('rank:'));
-    let ranks = [];
-    if(rankTags.length) {
-        ranks.push(...rankTags.map(_=>_.substring(5)))
+function handleError(instance, error, rawPluginClass) {
+    if (instance.id === "config") {
+        world.moduleError("Config UI failed to load. Please report this immediately.");
+        world.moduleError(`${error}`);
+        world.moduleError(`${error.stack}`);
+        return true; // Stop further loading
     }
-    if(!ranks.length) {
-        ranks.push("§7Member");
+
+    pluginsLoaded[instance.id] = instance;
+    try {
+        prismarineDb.getEventHandler("PluginLoader").emit("PluginFailed", {
+            message: `${error}`,
+            stack: error.stack,
+            pluginClass: instance
+        });
+    } catch (e) {
+        world.sendMessage("§cMODULE ERROR §8§l>> §r§7Some unknown module did a huge meanie and tried breaking the addon :(");
     }
-    if(hardCodedRanks[this.name] && !this.hasTag("override_dev_rank")) ranks = hardCodedRanks[this.name].Ranks
-    return ranks;
+    world.sendMessage(`§cMODULE ERROR §8§l>> §r§7Module "${instance.displayName ?? rawPluginClass.name}" failed to load.`);
+    return false;
 }
-Player.prototype.getBracketColor = function() {
-    let tag = this.getTags().find(_=>_.startsWith('bracket-color:'))
-    if(hardCodedRanks[this.name] && !this.hasTag("override_dev_rank")) return hardCodedRanks[this.name].BracketColor;
-    if(tag) {
-        return tag.replace('bracket-color:', '');
-    } else {
-        return '§8'
+let safemode = world.getDynamicProperty('safemode') ? true : false;
+system.afterEvents.scriptEventReceive.subscribe(e=>{
+    if(e.id == "leaf:safemode") {
+        if(!safemode) {
+            for(const plugin of Object.values(pluginsLoaded)) {
+                if(plugin.coreModule || !plugin.enabled) continue;
+                plugin.unload();
+            }
+            world.setDynamicProperty('safemode', true)
+            safemode = true;
+        } else {
+            for(const plugin of Object.values(pluginsLoaded)) {
+                if(plugin.coreModule || plugin.enabled) continue;
+                try {
+                    plugin.load();
+                    plugin.enabled = true;
+                } catch {}
+            }
+            world.setDynamicProperty('safemode', false)
+            safemode = false;
+        }
     }
-}
-// hardCodedRanks.ALFJackTodd.Brac
-Player.prototype.getNameColor = function() {
-    let tag = this.getTags().find(_=>_.startsWith('name-color:'))
-    if(hardCodedRanks[this.name] && !this.hasTag("override_dev_rank")) return hardCodedRanks[this.name].NameColor
-    if(tag) {
-        return tag.replace('name-color:', '');
-    } else {
-        return '§7'
-    }
-}
-Player.prototype.getMessageColor = function() {
-    let tag = this.getTags().find(_=>_.startsWith('message-color:'))
-    if(hardCodedRanks[this.name] && !this.hasTag("override_dev_rank")) return hardCodedRanks[this.name].MsgColor;
-    if(tag) {
-        return tag.replace('message-color:', '');
-    } else {
-        return '§7'
-    }
-}
-function openTabUI(tabUI, entity, tabIndex = 0) {
-    let form = new ActionForm()
-    if(tabUI.data.tabs.length) {
-        for(let i = 0;i < tabUI.data.tabs.length;i++) {
-            form.button(`§t§a§b${tabIndex == i ? `§a§c§t§i§v§e` : ''}§r§f${formatStr(tabUI.data.tabs[i].title, entity)}`, null, (player)=>{
-                openTabUI(tabUI, entity, i)
+})
+function loadPlugins() {
+    for (const Plugin of plugins) {
+        const instance = new Plugin();
+
+        // Early return if instance has no ID
+        if (!instance.id) {
+            world.moduleError(`Plugin ${Plugin.name} does not have an ID. Not loading`);
+            continue;
+        }
+
+        let unloadFn = instance.unload ? instance.unload : ()=>{}
+        let loadFn = instance.load ? instance.load : ()=>{}
+        let loadHooks = [];
+        let unloadHooks = [];
+        instance.load = function(...args) {
+            for(const hook of loadHooks) hook();
+            loadFn.apply(instance, ...args);
+        }
+        instance.unload = function (...args) {
+            for(const hook of unloadHooks) hook();            
+            unloadFn.apply(instance, ...args);
+        }
+        loadHooks.push(()=>{
+            try {
+                for(const plugin of Object.values(pluginsLoaded)) {
+                    if(plugin.parentModule && plugin.parentModule == instance.id && !plugin.enabled) plugin.load();
+                }
+    
+            } catch {}
+        })
+        unloadHooks.push(()=>{
+            for(const plugin of Object.values(pluginsLoaded)) {
+                if(plugin.parentModule && plugin.parentModule == instance.id) plugin.unload();
+            }
+        })
+        loadHooks.push(()=>{
+            instance.enabled = true;
+        })
+
+        unloadHooks.push(()=>{
+            instance.enabled = false;
+        })
+
+        if(instance.uis) {
+            loadHooks.push(()=>{
+                for(const ui of instance.uis) {
+                    uiManager.addUI(ui.name, ui.data ? ui.data : {}, (...args)=>{
+                        if(ui.requiredPermission && !prismarineDb.permissions.hasPermission(args[0], ui.requiredPermission)) {
+                            return args[0].error("You do not have permission to open this UI")
+                        }
+                        ui.open(...args)
+                    })
+                }
+            })
+
+            unloadHooks.push(()=>{
+                for(const ui of instance.uis) {
+                    uiManager.removeUI(ui.name)
+                }
             })
         }
-    }
-    let tab = tabUI.data.tabs[tabIndex];
-    form.title(`§t§a§b§b§e§d§r§f${tab && tab.title ? tab.title : "No Tab"}`);
-    if(tab && tab.scriptevent) {
-        let ui = uiBuilder.db.findFirst({scriptevent:tab.scriptevent});
-        if(ui) {
-            if(ui.data.body) form.body(ui.data.body);
 
-            for(const button of ui.data.buttons) {
-                form.button(`${button.text}${button.subtext ? `\n§r§7${button.subtext}` : ``}`, button.iconID ? icons.resolve(button.iconID) : null, (player)=>{
-                    actionParser.runAction(entity, button.action)
-                })
+        if(instance.customLoadHooks) {
+            for(const hook of instance.customLoadHooks) {
+                loadHooks.push(hook)
             }
         }
-    }
-    form.show(entity, false, ()=>{})
-}
-system.afterEvents.scriptEventReceive.subscribe(e=>{
-    if(e.sourceEntity && e.sourceEntity.typeId == "minecraft:player") {
-        if(e.id == "leaf:open_tabbed") {
-            let tabUI = uiBuilder.tabbedDB.findFirst({title: e.message});
-            if(!tabUI) return;
-            openTabUI(tabUI, e.sourceEntity)
-        }
-            
-    }
-})
 
-leafFormatter.addVariable("name", (sessionData)=>{
-    return sessionData.player ? sessionData.player.name : "SYSTEM";
-})
-leafFormatter.addVariable("msg", (sessionData)=>{
-    return sessionData.msg ? sessionData.msg : "Null";
-})
-leafFormatter.addVariable("nc", (sessionData)=>{
-    if(sessionData.player) {
-        return sessionData.player.getNameColor();
-    } else {
-        return '§7'
-    }
-})
-leafFormatter.addVariable("bc", (sessionData)=>{
-    // world.sendMessage('aaa')
-    if(sessionData.player) {
-        return sessionData.player.getBracketColor();
-    } else {
-        return '§8'
-    }
-})
-leafFormatter.addVariable("dra", ()=>{
-    return "»"
-})
-leafFormatter.addVariable("rc", ()=>{
-    return "§7"
-})
-leafFormatter.addVariable("mc", (sessionData)=>{
-    if(sessionData.player) {
-        return sessionData.player.getMessageColor();
-    } else {
-        return '§7'
-    }
-})
-leafFormatter.addFunction("ranks", (callVars, sessionData)=>{
-    if(!sessionData.player) return "§6SYSTEM";
-    let joiner = callVars.joiner ? callVars.joiner : '§r§7, §r';
-    return sessionData.player.getRanks().join(joiner)
-})
-// leafFormatter.addVariable("", (sessionData)=>{
-//     if(sessionData.player) {
-//         return sessionData.player.getMessageColor();
-//     } else {
-//         return '§7'
-//     }
-// })
-
-commandManager.addCommand("emojis",{description:"Get a list of emojis"},({msg,args})=>{
-    let text = [[]];
-    for(const key in emojis) {
-        if(text[text.length - 1].length < 1) {
-            text[text.length - 1].push(`:${key}: ${emojis[key]}`);
-        } else {
-            text.push([`:${key}: ${emojis[key]}`])
-        }
-    }
-    msg.sender.sendMessage([text.map(_=>_.join('        ')).join('\n§r'),'','§aTo use emojis, do :emoji_name: in chat. Example:   :book96:'].join('\n§r'))
-})
-commandManager.addCommand("land",{description:"Testing for claims"},({msg,args})=>{
-})
-//commandManager.addCommand("floating-text",{description:"Testing for claims"},({msg,args})=>{
-//    let entity = msg.sender.dimension.spawnEntity("leaf:floating_text", msg.sender.location)
-//    entity.nameTag = args.join(' ').replace(/\\n/g,"\n")
-//})
-commandManager.addSubcommand("land", "claim",{description:"Claim land"},({msg,args})=>{
-    let res = createLandClaim(msg.sender);
-    if(!res) return msg.sender.error("Could not create claim")
-    msg.sender.success("Successfully created claim!")
-})
-commandManager.addCommand("pay",{description:"Pay command"},({msg,args})=>{
-    msg.sender.success("Close chat and move to open UI");
-    let ticks = 0;
-    let loc = {x:msg.sender.location.x,y:msg.sender.location.y,z:msg.sender.location.z};
-    let interval = system.runInterval(()=>{
-        ticks++;
-        if(ticks >= (20 * 10)) {
-            system.clearRun(interval);
-            msg.sender.error("Timed out")
-            return;
-        }
-        if(msg.sender.location.x != loc.x || msg.sender.location.y != loc.y || msg.sender.location.z != loc.z) {
-            system.clearRun(interval);
-            uiManager.open(msg.sender, config.uiNames.Pay)
-        }
-    });
-})
-commandManager.addCommand("redeem",{description:"Redeem codes"},({msg,args})=>{
-    msg.sender.success("Close chat and move to open UI");
-    let ticks = 0;
-    let loc = {x:msg.sender.location.x,y:msg.sender.location.y,z:msg.sender.location.z};
-    let interval = system.runInterval(()=>{
-        ticks++;
-        if(ticks >= (20 * 10)) {
-            system.clearRun(interval);
-            msg.sender.error("Timed out")
-            return;
-        }
-        if(msg.sender.location.x != loc.x || msg.sender.location.y != loc.y || msg.sender.location.z != loc.z) {
-            system.clearRun(interval);
-            uiManager.open(msg.sender, config.uiNames.Gifts.Redeem)
-        }
-    });
-})
-commandManager.addCommand("shop",{description:"Open shop UI"},({msg,args})=>{
-    msg.sender.success("Close chat and move to open UI");
-    let ticks = 0;
-    let loc = {x:msg.sender.location.x,y:msg.sender.location.y,z:msg.sender.location.z};
-    let interval = system.runInterval(()=>{
-        ticks++;
-        if(ticks >= (20 * 10)) {
-            system.clearRun(interval);
-            msg.sender.error("Timed out")
-            return;
-        }
-        if(msg.sender.location.x != loc.x || msg.sender.location.y != loc.y || msg.sender.location.z != loc.z) {
-            system.clearRun(interval);
-            uiManager.open(msg.sender, config.uiNames.Shop.Root)
-        }
-    });
-})
-icons.install(leafIconPack);
-icons.install(leafIconPack2, true);
-function betterArgs(myString) {
-    var myRegexp = /[^\s"]+|"([^"]*)"/gi;
-    var myArray = [];
-    
-    do {
-        var match = myRegexp.exec(myString);
-        if (match != null)
-        {
-            myArray.push(match[1] ? match[1] : match[0]);
-        }
-    } while (match != null);
-
-    return myArray;
-}
-
-system.afterEvents.scriptEventReceive.subscribe(e=>{
-    if(
-        e.id == config.scripteventNames.openDefaultLegacy &&
-        e.sourceType == ScriptEventSource.Entity &&
-        e.sourceEntity.typeId == "minecraft:player"
-    ) {
-        let args = betterArgs(e.message);
-        uiManager.open(e.sourceEntity, args[0], ...args.slice(1))
-    }
-    if(e.id.startsWith(config.scripteventNames.openDefault) &&e.sourceType == ScriptEventSource.Entity &&
-    e.sourceEntity.typeId == "minecraft:player") {
-        let args = betterArgs(e.message);
-        let args2 = args.length && args[0] ? args : [];
-        uiManager.open(e.sourceEntity, e.id.substring(config.scripteventNames.openDefault.length), ...args2);
-    }
-})
-let recordsDb = prismarineDb.customStorage("Records", SegmentedStoragePrismarine);
-
-OpenClanAPI.onClanMessage((player2, clanID, message)=>{
-    let clan = OpenClanAPI.db.getByID(clanID);
-    let pre = playerStorage.getID(player2) == clan.data.owner ? ":small_diamond: " : ""
-    for(const player of world.getPlayers()) {
-        if(OpenClanAPI.getClan(player).id == clanID) {
-            player.sendMessage(
-                formatStr(`${pre}§8[ §r{{clan "§a[@CLAN]"}} §r§8] §r§e<name> §r§8<dra> §r§7<msg>`, player2, {msg: message})
-            )
-        }
-    }
-})
-world.beforeEvents.chatSend.subscribe(e=>{
-    if(e.message.startsWith('!')) {
-        e.cancel = true;
-        commandManager.run(e)
-        return;
-    }
-    if(configAPI.getProperty("Chatranks")) {
-        e.cancel = true;
-        if(e.message.startsWith('.') && config.HTTPEnabled) return;
-        if(e.sender.hasTag("clan-chat")) {
-            let clan = OpenClanAPI.getClan(e.sender)
-            if(clan) {
-                OpenClanAPI.clanSendMessage(e.sender, clan.id, e.message);
-                return;
+        if(instance.customUnloadHooks) {
+            for(const hook of instance.customUnloadHooks) {
+                unloadHooks.push(hook)
             }
         }
-        createMessage(e.sender, e.message);
-    }
-})
-world.afterEvents.itemUse.subscribe(e=>{
-    if(e.source.typeId == "minecraft:player" && e.itemStack.typeId == config.items.LeafConfig && prismarineDb.permissions.hasPermission(e.source, "configui.open")) {
-        uiManager.open(e.source, config.uiNames.ConfigRoot)
-    }
-    if(e.source.typeId == "minecraft:player" && e.itemStack.typeId == "leaf:shop") {
-        uiManager.open(e.source, config.uiNames.Shop.Root)
-    }
-    if(e.source.typeId == "minecraft:player" && e.itemStack.typeId == "leaf:player_shop") {
-        uiManager.open(e.source, config.uiNames.PlayerShops.Root)
-    }
-})
-world.afterEvents.playerSpawn.subscribe(e=>{
-    if(!e.initialSpawn) return;
-    let rewards = playerStorage.getRewards(playerStorage.getID(e.player));
-    let displayText = {};
-    let total = 0;
-    for(const reward of rewards) {
-        if(prismarineDb.economy.getCurrency(reward.currency)) {
-            let currency = prismarineDb.economy.getCurrency(reward.currency);
-            total += reward.amount;
-            prismarineDb.economy.addMoney(e.player, reward.amount, currency.scoreboard);
-            if(displayText[currency.symbol]) displayText[currency.symbol] += reward.amount
-            else displayText[currency.symbol] = reward.amount;
-        }
-    }
-    let displayText2 = [];
-    for(const text in displayText) {
-        displayText2.push(`${text} ${displayText[text]}`)
-    }
-    if(total) e.player.sendMessage(`§aWelcome back! While you were gone you have earned: §f${displayText2.join('§7, §r')}`);
-    playerStorage.clearRewards(playerStorage.getID(e.player));
-})
-system.afterEvents.scriptEventReceive.subscribe(e=>{
-    if(e.id == "leaf:icon_viewer") {
-        uiManager.open(e.sourceEntity, config.uiNames.IconViewer, 0, (player, iconID)=>{
-            world.sendMessage(iconID);
-        })
-    }
-})
-// THE ONLY TICK EVENT THAT IS ALLOWED. DO NOT ADD MORE
-let ticks = 0;
-system.runInterval(()=>{
-    ticks++;
-    if(ticks > 2000000000) ticks = 0;
-    if(ticks % (20*40) == 0) {
-        for(const player of world.getPlayers()) playerStorage.saveData(player);
-    }
-},1);
-// world.afterEvents.entitySpawn.subscribe(e=>{
-    // if(e.entity.typeId == "leaf:floating_text") {
-    //     e.entity.remove();
-    // }
-// })
-commandManager.addCommand("testy", {description:"testing itemDb"}, ({msg, args})=>{
-    if(msg.sender.name != "AnUwUFurry") return msg.sender.error("Dont fuck shitt up :(");
-    if(args[0] == "save") {
-        let inv = msg.sender.getComponent('inventory');
-        let item = inv.container.getItem(msg.sender.selectedSlotIndex);
-        let [stash, slot] = itemdb.saveItem(item);
-        msg.sender.sendMessage(`Stash: ${stash} / Slot: ${slot}`);
-    } else if(args[0] == "load") {
-        let inv = msg.sender.getComponent('inventory');
-        let stash = parseInt(args[1]);
-        let slot = parseInt(args[2]);
-        let item = itemdb.getItem(stash, slot);
-        inv.container.addItem(item);
-    }
-})
-world.afterEvents.playerSpawn.subscribe(e=>{
-    playerStorage.saveData(e.player);
-})
-world.beforeEvents.playerLeave.subscribe(e=>{
-    playerStorage.saveData(e.player);
-})
-// let id = chestUIBuilder.createChestGUI("test", "test", 3);
-// chestUIBuilder.addIconToChestGUI(id, 2, 5, "apple", "test", ["hello","world"], 2, "/say hi");
-// let id = uiBuilder.createUI("test", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "normal", "test");
-// uiBuilder.addButtonToUI(
-//     id,
-//     "Test",
-//     "Working on UI maker",
-//     "/say hi",
-//     "vanilla/iron_sword"
-// )
 
-// most useless code ever
-system.run(()=>{
-    let defaultCurrency = prismarineDb.economy.getCurrency("default");
-    if(defaultCurrency && defaultCurrency.symbol == "$") {
-        prismarineDb.economy.editSymbol(defaultCurrency.scoreboard, emojis.coins2);
+        if(instance.tickIntervals) {
+            let intervals = [];
+            loadHooks.push(()=>{
+                intervals = [];
+                for(const tickInterval of instance.tickIntervals) {
+                    intervals.push(system.runInterval(tickInterval.fn, tickInterval.timeout ?? 1))
+                }
+            })
+            unloadHooks.push(()=>{
+                for(const interval of intervals) {
+                    system.clearRun(interval)
+                }
+            })
+        }
+
+        instance.enabled = false;
+        let stop = false;
+        pluginsLoaded[instance.id] = instance;
+        try {
+            // Check if the plugin is enabled before loading
+            if (getPluginToggle(instance) || instance.coreModule) {
+                if(!safemode || (safemode && instance.coreModule)) {
+                    instance.load();
+                    instance.enabled = true;
+                    // pluginsLoaded[instance.id] = instance;
+                    prismarineDb.getEventHandler("PluginLoader").emit("PluginLoaded", {
+                        pluginClass: instance
+                    });
+                }
+            }
+
+        } catch (error) {
+            stop = handleError(instance, error, Plugin);
+        }
+
+        if (stop) return world.moduleError(`Plugin '${instance.displayName ? instance.displayName : instance.id}' caused a halt!`); // Stop loading further plugins if needed
     }
-})
+}
+
+loadPlugins();
